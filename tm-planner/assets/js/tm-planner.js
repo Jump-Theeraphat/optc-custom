@@ -4083,6 +4083,27 @@ $(document).ready(function() {
             var imageDiv = $("<div></div>");
             imageDiv.append(createImgHtml(getThumb(data.id), 40, false));
             $('td:eq(0)', row).html(imageDiv);
+
+            if (currentSupportSlotId !== undefined) {
+                // Team ID is taken from first number of `currentSupportSlotId`
+                // "Invalid supports" here are those that have the same family
+                // name as the other team members.
+                // Note that supports that can't support the unit due to its
+                // condition are already filtered separately.
+                var teamId = Number(currentSupportSlotId.toString()[0]);
+                var names = getWholeTeamFamilyName(teamId);
+
+                var isInvalidSupport = names.some(function(name) {
+                    for (var supportName of data.name) {
+                        if (supportName.toLocaleUpperCase() == name.toLocaleUpperCase()) {
+                            return true;
+                        }
+                    }
+                    return false;
+                });
+                imageDiv.find('img').toggleClass('highlight', isInvalidSupport);
+                $(row).toggleClass('invalid-support', isInvalidSupport);
+            }
         }
     });
 
@@ -4132,26 +4153,31 @@ $(document).ready(function() {
             else if (cost <= 40)
                 searchStr = searchStr + "|cost 40 or less";
 
-            supportTable.column(0).search("").draw();
-            supportTable.column(1).search(searchStr, true, false).draw();
+            supportTable.column(0).search("");
+            supportTable.column(1).search(searchStr, true, false);
+
+            // Exclude supports that have the same family name of supported unit
+            // Family names of other team members will be evaluated in rowCallback
+            var nameStr = "^";
+
+            for (var name of family)
+                nameStr = nameStr + "(?!.*(^|,)" + name + "($|,))";
+
+            nameStr += ".*$";
+            supportTable.column(3).search(nameStr, true, false);
         } else {
-            supportTable.column(0).search("No Results").draw();
+            supportTable.column(0).search("No Results");
         }
 
-        // Get whole team's family name
-        var names = getWholeTeamFamilyName($(this).closest('.team').data('team'));
-        var nameStr = "^";
-
-        for (name of names)
-            nameStr = nameStr + "(?!.*(^|,)" + name + "($|,))";
-
-        nameStr += ".*$";
-        supportTable.column(3).search(nameStr, true, false).draw();
+        supportTable.draw();
         $("#support-character-modal").modal();
     });
 
     // Add Support
     $('#support-table tbody').on('click', 'tr', function () {
+        if (this.classList.contains('invalid-support')) {
+            return;
+        }
         var unitId = supportTable.row( this ).data().id;
         var supSlot = $(".support-slot[data-slot=" + currentSupportSlotId + "]");
         var imgDiv = $('<div></div>');

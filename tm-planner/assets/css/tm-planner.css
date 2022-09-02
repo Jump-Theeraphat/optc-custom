@@ -105,6 +105,18 @@
     background: red;
 }
 
+#support-table tr.invalid-support {
+    cursor: not-allowed;
+}
+
+#support-table tr div {
+    display: inline-block;
+}
+
+#support-table tr.invalid-support div{
+    background-color: red;
+}
+
 img.highlight {
     opacity: 0.5;
 }
@@ -631,7 +643,7 @@ div#tm-team-build-note-container {
 }
 
 ul.team-note-list {
-   list-style-type: none; 
+   list-style-type: none;
 }
 
 li.team-build-msg:before {
