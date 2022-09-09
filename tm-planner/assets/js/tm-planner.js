@@ -577,7 +577,7 @@ function getBoosters(tmId, server) {
             var class1;
             var class2;
 
-            if (Array.isArray(unitClass[0])) {
+            if (Array.isArray(unitClass[0]) || Array.isArray(unitClass[1])) {
                 if (unitClass.length === 2) {
                     // VS Units
                     var vsClass;
