@@ -10669,4 +10669,297 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== RED Chopper v2 ==========
+    3712: {
+        3695: {
+            name: 'Shanks',
+            type: 'STR',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Shooter/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shanks', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '4T, Row 1'],
+                                ['nao',             '99+T'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['def',             '7T, 30000x'],
+                                ['def-perc',        '6T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3697: {
+            name: 'Beckman & Lucky Roux',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/QCK/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Beckman & Lucky Roux', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['type-change',     'DEX/QCK/PSY/INT'],
+                                ['slot-block',      'All'],
+                                ['def-perc',        '5T, 90%'],
+                                ['desp',            '8T'],
+                                ['chain-atk-down',  '5T, <3x chain, 90%'],
+                                ['resil',           '5T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3698: {
+            name: 'Gordon',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Gordon', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 800000,
+                    atk_: 4000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['Ship Bind',       '5T'],
+                                ['Harder P',        '99+T'],
+                                ['slot-block',      'Bad/BLOCK/BOMB'],
+                                ['bind',            '6T, Row 1'],
+                                ['chain-down',      '10T, 0.1x'],
+                                ['immu-def',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3708: {
+            name: 'Usopp & Yasopp',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, DEX/QCK/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Usopp & Yasopp', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['Ship Bind',       '10T'],
+                                ['para',            '5T'],
+                                ['def-null',        '1T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3713: {
+            name: 'Uta',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Fighter/Free Spirit/Shooter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '7T, Friend Cap'],
+                                ['desp',            '7T, Captain'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Uta', 'INT'],
+                    hp: 3200000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '3T'],
+                                ['silence',         '10T, Row 1'],
+                                ['tap-limit',       '1T, 4x'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['nao',             '99+T'],
+                                ['immu-def',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3712: {
+            name: 'Chopper',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Cerebral/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'EMPTY'],
+                                ['para',            '4T'],
+                                ['bar-color',       '3T, 1x, QCK'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['Heal Team',       '100%'],
+                                ['no-heal',         '6T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Chopper', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '6T, 90%'],
+                                ['nao',             '99+T'],
+                                ['desp',            '9T'],
+                                ['clear-buff',      'Buff Only'],
+                                ['def',             '5T, 10000x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost, Orb Boost, Affinity',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['hp-cut',          '40%']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '50,000']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

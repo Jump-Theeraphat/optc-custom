@@ -533,6 +533,17 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 3712) {
+        // TM RED Chopper v2
+        $('#div_2x').show();
+        $('#div_1_8x').show();
+        $('#div_1_5x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -891,7 +902,8 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Ship Bind' ||
         iconKey === 'CD Lock' ||
         iconKey === 'Fear' ||
-        iconKey === 'Harder P'
+        iconKey === 'Harder P' ||
+        iconKey === 'Heal Team'
     )
         return iconKey;
 
