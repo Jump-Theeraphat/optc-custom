@@ -115002,7 +115002,7 @@ window.details = {
                 "cooldown": [ 13, 7 ]
             },
             {
-                "description": "Deals 50x character's ATK in [PSY] damage to all enemies, reduces Special Cooldown of [PSY] characters by 2 turns, reduces enemies' Threshold Damage Reduction and Increased Defense duration by 5 turns and reduces damage recieved by 90% for 1 turn.",
+                "description": "Deals 50x character's ATK in [PSY] damage to all enemies, reduces Special Cooldown of [PSY] characters by 2 turns, reduces enemies' Threshold Damage Reduction and Increased Defense duration by 5 turns and reduces damage received by 90% for 1 turn.",
                 "cooldown": [ 20, 14 ]
             }
         ],
