@@ -69,7 +69,7 @@ var icon_tooltips = {
     'bar-gt':                 'Great Barrier',
     'bar-gd':                 'Good Barrier',
     'bar-hit':                'Hit Barrier',
-    'bar-color':              'Color Barrier',
+    'bar-slot':               'Slot Barrier',
     'bar-hp':                 'HP Barrier',
     'dmg-eot-e':              'End of Turn Damage',
     'enrage':                 'Enrage',

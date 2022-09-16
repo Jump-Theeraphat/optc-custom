@@ -2685,7 +2685,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['bar-gt',          '99T, 3x'],
-                                ['bar-color',       '99T, 3x, PSY'],
+                                ['bar-slot',        '99T, 3x, PSY'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -2986,7 +2986,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['bar-color',       '1T, 3x, QCK'],
+                                ['bar-slot',        '1T, 3x, QCK'],
                                 ['def-thres',       '4T, 99%, 1000'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -2994,7 +2994,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1, Every Turn After',
                             action: [
-                                ['bar-color',       '3T, 3x, QCK']
+                                ['bar-slot',        '3T, 3x, QCK']
                             ]
                         },
                         {
@@ -3825,7 +3825,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'Bad'],
                                 ['atk-down',        '3T, 90%'],
-                                ['bar-color',       'Random, 2x']
+                                ['bar-slot',        'Random, 2x']
                             ]
                         }
                     ]
@@ -4265,7 +4265,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['slot-block',      'All'],
-                                ['bar-color',       '5T, 2x, STR'],
+                                ['bar-slot',        '5T, 2x, STR'],
                                 ['def-perc',        '10T, 50%'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -6315,7 +6315,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'Bad'],
                                 ['atk-down',        '4T, 90%'],
-                                ['bar-color',       '2T, 2x, STR'],
+                                ['bar-slot',        '2T, 2x, STR'],
                                 ['resil',           '4T'],
                                 ['immu-def',        '99+T']
                             ]
@@ -6324,7 +6324,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['atk',             '99+T, 2x'],
-                                ['bar-color',       '99+T, 4x, DEX']
+                                ['bar-slot',        '99+T, 4x, DEX']
                             ]
                         },
                         {
@@ -6754,7 +6754,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-block',      'Block/Bad'],
                                 ['tap-limit',       '10T, 5x'],
-                                ['bar-color',       '1T, 4x, DEX'],
+                                ['bar-slot',        '1T, 4x, DEX'],
                                 ['immu-delay',      '99+T']
                             ]
                         }
@@ -8093,7 +8093,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['bar-color',       '20T, 2x, Random'],
+                                ['bar-slot',        '20T, 2x, Random'],
                                 ['slot-change',     'PSY/INT/TND'],
                                 ['blow-away',       '99+T, Random 1']
                             ]
@@ -8335,7 +8335,7 @@ var tm_opponents = {
                             action: [
                                 ['sp-limit',        '1T, 2x'],
                                 ['slot-bind',       '5T, Row 1'],
-                                ['bar-color',       '10T, 4x, STR'],
+                                ['bar-slot',        '10T, 4x, STR'],
                                 ['immu-def',        '99+T']
                             ]
                         },
@@ -8866,7 +8866,7 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['slot-bind',       '2T'],
                                 ['resil',           '5T'],
-                                ['bar-color',       '1T, 2x, PSY'],
+                                ['bar-slot',        '1T, 2x, PSY'],
                                 ['nao',             '99+T'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -8874,7 +8874,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['bar-color',       '3T, 3x, PSY']
+                                ['bar-slot',        '3T, 3x, PSY']
                             ]
                         },
                         {
@@ -10287,7 +10287,7 @@ var tm_opponents = {
                                 ['para',            '5T'],
                                 ['burn',            '5T, 20,000'],
                                 ['cd-rew',          '3T'],
-                                ['bar-color',       '1T, 3x, PSY'],
+                                ['bar-slot',        '1T, 3x, PSY'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -10305,7 +10305,7 @@ var tm_opponents = {
                             action: [
                                 ['def-null',        '1T, STR/QCK/INT'],
                                 ['atk',             '10T'],
-                                ['bar-color',       '2T, 3x, DEX']
+                                ['bar-slot',        '2T, 3x, DEX']
                             ]
                         },
                         {
@@ -10608,7 +10608,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['bar-color',       '2T, 5x, INT'],
+                                ['bar-slot',        '2T, 5x, INT'],
                                 ['def-thres',       '5T, 99%, 1000'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -10912,7 +10912,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'EMPTY'],
                                 ['para',            '4T'],
-                                ['bar-color',       '3T, 1x, QCK'],
+                                ['bar-slot',        '3T, 1x, QCK'],
                                 ['immu-delay',      '99+T']
                             ]
                         },

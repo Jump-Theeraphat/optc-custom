@@ -2,7 +2,7 @@ var counters = {
     //'atk-boost':        'clear-buff',
     //'orb-boost':        'clear-buff',
     'atk-down':         'atk-down-red',
-    'bar-color':        'bar-red-e',
+    'bar-slot':         'bar-red-e',
     'bar-hit':          'bar-red-e',
     'bar-p':            'bar-red-e',
     'bar-gt':           'bar-red-e',
