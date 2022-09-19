@@ -10,13 +10,10 @@ var tm_boosters = [
     // Coliseums
 
     // Kizunas
-    3648,
     3669,
     3693,
 
     // Events
-    3657,
-    3672,
     3678,
     3701,
 ]
