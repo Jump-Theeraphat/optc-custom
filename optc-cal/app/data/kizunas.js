@@ -160,4 +160,9 @@ var kizunas = {
         name: 'Shiki (~ 6am)',
         thumb: 3693
     },
+    3721: {
+        name: 'Uta (~ 6am)',
+        thumb: 3721,
+        xch_id: 3720
+    },
 };
