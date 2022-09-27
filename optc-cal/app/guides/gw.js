@@ -210,7 +210,6 @@ var gw = {
     2819: '182533',     // Shanks & Mihawk
     2846: '185672',     // Bonney
     2867: '188620',     // Buggy Pirates
-    2883: '191097',     // Bullet
     2885: '191379',     // CP9
     2893: '193895',     // Jinbe
     2922: '198796',     // Kaido
@@ -531,6 +530,7 @@ var gw = {
     'ev_2475': '147515',// Black Blade Training
     'ev_2767': '176352',// Tragic Country's Conflict
     'ev_2799': '180947',// Wapol's Assault
+    'ev_2883': '191097',// Freedom VS Strongest
     'ev_2918': '196358',// Fight for Flame-Flame Fruit
     'ev_2957': '202523',// Treasure Hunt of the Powerful
     'ev_2988': '205053',// O-Toko

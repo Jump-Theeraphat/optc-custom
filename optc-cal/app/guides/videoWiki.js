@@ -60,7 +60,6 @@ var videoWiki = {
     2819: 'raidboss/shanksmihawk',
     2846: '',   // Bonney
     2867: '',   // Buggy Pirates
-    2883: '',   // Bullet
     2885: '',   // CP9
     2893: 'raidboss/jinbe',
     2922: 'raidboss/kaido',

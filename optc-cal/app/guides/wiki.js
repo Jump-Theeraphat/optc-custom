@@ -210,7 +210,6 @@ var wiki = {
     2819: '',                               // Shanks & Mihawk
     2846: '',                               // Bonney
     2867: '',                               // Buggy Pirates
-    2883: '',                               // Bullet
     2885: '',                               // CP9
     2893: '',                               // Jinbe
     2922: '',                               // Kaido

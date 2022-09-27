@@ -210,7 +210,6 @@ var nakama = {
     2819: '4281900',    // Shanks & Mihawk
     2846: '4284600',    // Bonney
     2867: '4286700',    // Buggy Pirates
-    2883: '4288300',    // Bullet
     2885: '4288500',    // CP9
     2893: '4289300',    // Jinbe
     2922: '4292200',    // Kaido
@@ -531,6 +530,7 @@ var nakama = {
     'ev_2475': '6247500',   // Black Blade Training
     'ev_2767': '6276700',   // Tragic Country's Conflict
     'ev_2799': '6279900',   // Wapol's Assault
+    'ev_2883': '4288300',   // Freedom VS Strongest
     'ev_2918': '6291500',   // Fight for Flame-Flame Fruit
     'ev_2957': '6295700',   // Treasure Hunt of the Powerful
     'ev_2988': '2298800',   // O-Toko

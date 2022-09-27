@@ -750,6 +750,11 @@ var specials = {
         name: 'Wapol\'s Assault',
         thumb: 2799
     },
+    'ev_2883': {
+        type: 'Special Event',
+        name: 'Freedom VS Strongest',
+        thumb: 2883
+    },
     'ev_2918': {
         type: 'Special Event',
         name: 'Fight for Flame-Flame Fruit',
