@@ -565,6 +565,7 @@ var gw = {
     'ev_3657': '',      // Red Flag, The Army of One
     'ev_3678': '',      // Land of Wano Summer Fair
     'ev_3701': '',      // Diva of the World
+    'ev_3728': '',      // Pops and the Little Brother
 
     'wa_2700': '181868',// Land of Wano Kaido
     'wa_2815': '182349',// Land of Wano O-Tama

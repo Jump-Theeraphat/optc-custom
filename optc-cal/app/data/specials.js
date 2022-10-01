@@ -925,4 +925,9 @@ var specials = {
         name: 'Diva of the World',
         thumb: 3701
     },
+    'ev_3728': {
+        type: 'Special Event',
+        name: 'Pops and the Little Brother',
+        thumb: 3728
+    },
 }

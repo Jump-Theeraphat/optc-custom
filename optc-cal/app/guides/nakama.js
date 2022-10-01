@@ -565,6 +565,7 @@ var nakama = {
     'ev_3657': '2365700',   // Red Flag, The Army of One
     'ev_3678': '2367800',   // Land of Wano Summer Fair
     'ev_3701': '2370100',   // Diva of the World
+    'ev_3728': '2372800',   // Pops and the Little Brother
 
     'wa_2700': '',          // Land of Wano Kaido
     'wa_2815': '6281500',   // Land of Wano O-Tama
