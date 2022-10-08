@@ -11071,4 +11071,308 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Law v2 ==========
+    3736: {
+        842: {
+            name: 'Monet',
+            type: 'INT',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Fighter/Free Spirit/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Monet', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['hp-cut',          '99%'],
+                                ['cd-rew',          '4T, Row 1'],
+                                ['silence',         '5T, Row 2 3'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '10,000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3285: {
+            name: 'Vergo',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Fighter/Slasher/Shooter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Vergo', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['type-change',     'Random'],
+                                ['para',            '5T'],
+                                ['nao',             '99+T'],
+                                ['tap-limit',       '1T, 4x'],
+                                ['atk-down',        '5T, 90%'],
+                                ['def-perc',        '5T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3732: {
+            name: 'Smoker',
+            type: 'PSY',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Smoker', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 800000,
+                    atk_: 4000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['bar-hit',         '3T, 15x'],
+                                ['Counter',         '?T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Affinity',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['- Max HP',        '10,000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3733: {
+            name: 'Tashigi',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/QCK/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Tashigi', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['chain-atk-down',  '5T, <2.5x chain, 90%'],
+                                ['nao',             '99+T'],
+                                ['def-thres',       '3T, 99%, 1000'],
+                                ['def',             '3T, 10000x'],
+                                ['immu-poison',     '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['type-change',     'DEX'],
+                                ['heal',            '75%'],
+                                ['sp-limit',        '3T, 1x']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3011: {
+            name: 'Caesar',
+            type: 'STR',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/PSY/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['resil',           '5T'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Caesar', 'STR'],
+                    hp: 3200000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '5T'],
+                                ['para',            '5T'],
+                                ['desp',            '5T'],
+                                ['atk-down',        '8T, 90%'],
+                                ['chain-atk-down',  '5T, <3.3x chain, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3736: {
+            name: 'Law',
+            type: 'STR',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Striker/Cerebral/Free Spirit'],
+                                ['Bad Slot+',       '9T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '5T, Row 2 3'],
+                                ['def',             '5T, 10000x'],
+                                ['chain-atk-down',  '10x, <2.5x chain, 90%'],
+                                ['bind',            '5T, Row 1'],
+                                ['chain-down',      '10T, 0.1x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Law', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'EMPTY/BLOCK/BOMB'],
+                                ['nao',             '99+T'],
+                                ['burn',            '5T, 30000'],
+                                ['cd-rew',          '1T'],
+                                ['def',             '6T, 10000x'],
+                                ['immu-def',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['bar-slot',        '3T, 4x, QCK'],
+                                ['slot-neg',        'Color'],
+                                ['heal',            '10%']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

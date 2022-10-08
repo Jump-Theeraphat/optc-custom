@@ -517,7 +517,8 @@ function getBoosters(tmId, server) {
         tmId == 3527 ||
         tmId == 3547 ||
         tmId == 3567 ||
-        tmId == 3645
+        tmId == 3645 ||
+        tmId == 3736
     ) {
         // TM Halloween Robin
         // TM Moria
@@ -525,6 +526,7 @@ function getBoosters(tmId, server) {
         // TM Perospero
         // TM Kanjuro
         // TM Moria v2
+        // TM Law v2
         $('#div_2x').show();
         $('#div_1_7x').show();
         $('#div_1_4x_v2').show();
@@ -903,7 +905,10 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'CD Lock' ||
         iconKey === 'Fear' ||
         iconKey === 'Harder P' ||
-        iconKey === 'Heal Team'
+        iconKey === 'Heal Team' ||
+        iconKey === 'Counter' ||
+        iconKey === '- Max HP' ||
+        iconKey === 'Bad Slot+'
     )
         return iconKey;
 
