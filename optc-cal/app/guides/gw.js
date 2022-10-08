@@ -448,6 +448,7 @@ var gw = {
     3663: '',           // Franky
     3689: '',           // RED Sanji
     3712: '',           // RED Chopper v2
+    3736: '',           // Law v2
 
     // Kizunas
     2518: '150056',     // Zoro & Sanji (Bartolomeo)
