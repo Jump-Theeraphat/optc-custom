@@ -34382,8 +34382,8 @@ window.details = {
                     "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, locks the supported character's orb for 1 turn.",
                     "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, locks the supported character's orb for 1 turn.",
                     "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, locks the supported character's orb for 1 turn.",
-                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, locks all character's orbs for 1 turn.",
-                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, locks all character's orbs for 2 turns."
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, locks all orbs for 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, locks all orbs for 2 turns."
                 ]
             }
         ],
