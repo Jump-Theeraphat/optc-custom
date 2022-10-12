@@ -1108,9 +1108,11 @@ function populateUnitDetail(unitId) {
                         lblv++;
                     }
 
-                    captainLb = decorateStr(captainLb);
-                    $('#unit-detail-captain-ability').append('<b>LB+:</b> ' + captainLb);
-                    $('#unit-detail-captain-ability').append('<br />');
+                    if (captainLb) {
+                        captainLb = decorateStr(captainLb);
+                        $('#unit-detail-captain-ability').append('<b>LB+:</b> ' + captainLb);
+                        $('#unit-detail-captain-ability').append('<br />');
+                    }
                 }
 
                 if (captain.llbbase) {
@@ -1121,9 +1123,11 @@ function populateUnitDetail(unitId) {
 
                     // LLB LB+ Captain
                     var captainLlb = captain.llblevel1;
-                    captainLlb = decorateStr(captainLlb);
-                    $('#unit-detail-captain-ability').append('<b>LLB LB+:</b> ' + captainLlb);
-                    $('#unit-detail-captain-ability').append('<br />');
+                    if (captainLlb) {
+                        captainLlb = decorateStr(captainLlb);
+                        $('#unit-detail-captain-ability').append('<b>LLB LB+:</b> ' + captainLlb);
+                        $('#unit-detail-captain-ability').append('<br />');
+                    }
                 }
             } else {
                 captain = decorateStr(captain);
