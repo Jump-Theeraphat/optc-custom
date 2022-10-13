@@ -20,6 +20,7 @@ var counters = {
     'def-perc':         'def-perc-red-e',
     'def-thres':        'def-thres-red-e',
     'desp':             ['desp-red', 'c_desp-red'],
+    'dmg-fixed':        'heal',
     'dmg-normal':       ['def-perc', 'def-thres', 'def-null', 'heal'],
     'dmg-up':           'dmg-up-red',
     'para':             ['para-red', 's_para-red', 'c_para-red'],

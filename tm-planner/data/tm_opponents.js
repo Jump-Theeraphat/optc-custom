@@ -3156,7 +3156,7 @@ var tm_opponents = {
                             action: [
                                 ['para',            '8T, Row 2 3'],
                                 ['dmg-eot-e',       '30%'],
-                                ['heal',            '1,000,000, EoT'],
+                                ['heal',            '1M, EoT'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -5252,7 +5252,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['bar-hp',          '5T, 2,000,000'],
+                                ['bar-hp',          '5T, 2M'],
                                 ['def',             '10T, 2000x'],
                                 ['immu-delay',      '99+T'],
                                 ['immu-def',        '99+T']
@@ -9376,7 +9376,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['clear-buff',      'Buff & Values'],
-                                ['dmg-limit',       '3T, 2,000,000']
+                                ['dmg-limit',       '3T, 2M']
                             ]
                         },
                         {
@@ -9459,7 +9459,7 @@ var tm_opponents = {
                                 ['heal',            '100%'],
                                 ['dmg-normal',      '80,000'],
                                 ['nao',             '99+T'],
-                                ['bar-hp',          '3T, 50,000,000']
+                                ['bar-hp',          '3T, 50M']
                             ]
                         },
                         {
@@ -11093,9 +11093,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Monet', 'INT'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -11111,7 +11110,22 @@ var tm_opponents = {
                         {
                             type: 'ON DEATH (0%)',
                             action: [
-                                ['dmg-normal',      '10,000']
+                                ['dmg-fixed',       '10,000']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['def-thres',       '5T'],
+                                ['bar-hp',          '5T, 10M']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['blow-away',       '99+T, Random 2'],
+                                ['slot-block',      'All']
                             ]
                         }
                     ]
@@ -11137,9 +11151,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Vergo', 'INT'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -11152,6 +11165,26 @@ var tm_opponents = {
                                 ['atk-down',        '5T, 90%'],
                                 ['def-perc',        '5T, 90%'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['heal',            '?%'],
+                                ['def-null',        '1T']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['heal',            '100%'],
+                                ['bind',            '8T, Row 1']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -11177,9 +11210,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Smoker', 'PSY'],
-                    hp: 0,
+                    hp: 800000,
                     atk: 0,
-                    hp_: 800000,
                     atk_: 4000,
                     detail: [
                         {
@@ -11187,7 +11219,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-block',      'All'],
                                 ['bar-hit',         '3T, 15x'],
-                                ['Counter',         '?T'],
+                                ['Counter',         '50%'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -11221,9 +11253,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Tashigi', 'INT'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -11243,6 +11274,19 @@ var tm_opponents = {
                                 ['type-change',     'DEX'],
                                 ['heal',            '75%'],
                                 ['sp-limit',        '3T, 1x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['blow-away',       '99+T, Random 2']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['blow-away',       '99+T, Random 1']
                             ]
                         }
                     ]
@@ -11267,10 +11311,9 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
-                    hp: 0,
+                    boss: ['Brownbeard', 'STR'],
+                    hp: 2000000,
                     atk: 0,
-                    hp_: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -11280,6 +11323,13 @@ var tm_opponents = {
                                 ['resil',           '5T'],
                                 ['def-thres',       '5T, 99%, 1000'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '5T'],
+                                ['Ship Bind',       '10T']
                             ]
                         }
                     ]
@@ -11300,6 +11350,20 @@ var tm_opponents = {
                                 ['chain-atk-down',  '5T, <3.3x chain, 90%'],
                                 ['immu-delay',      '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['clear-buff',      'Buff & Values'],
+                                ['heal',            '?%']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['slot-block',      'EMPTY/BOMB/BLOCK'],
+                                ['dmg-limit',       '3T, 2M']
+                            ]
                         }
                     ]
                 }
@@ -11317,17 +11381,16 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Cerebral/Free Spirit'],
-                                ['Bad Slot+',       '9T']
+                                ['Bad Slot+',       '99+T']
                             ]
                         }
                     ]
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
-                    hp: 0,
+                    boss: ['Luffy', 'STR'],
+                    hp: 2000000,
                     atk: 0,
-                    hp_: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -11340,15 +11403,21 @@ var tm_opponents = {
                                 ['chain-down',      '10T, 0.1x'],
                                 ['immu-delay',      '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['Ship Bind',       '10T'],
+                                ['slot-bind',       '10T']
+                            ]
                         }
                     ]
                 },
                 {
                     stageNum: 3,
                     boss: ['Law', 'STR'],
-                    hp: 0,
+                    hp: 3500000,
                     atk: 0,
-                    hp_: 3500000,
                     atk_: 9600,
                     detail: [
                         {
@@ -11368,6 +11437,20 @@ var tm_opponents = {
                                 ['bar-slot',        '3T, 4x, QCK'],
                                 ['slot-neg',        'Color'],
                                 ['heal',            '10%']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1 (Not after revive)',
+                            action: [
+                                ['bind',            '5T, Row 2 3'],
+                                ['def-null',        '1T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['bind',            '8T, Row 1'],
+                                ['atk',             '99+T']
                             ]
                         }
                     ]
