@@ -141,7 +141,7 @@ var kizunas = {
         thumb: 3572
     },
     3592: {
-        name: 'Kuzan (~ 6am)',
+        name: 'Kuzan v2 6+ (~ 6am)',
         thumb: 3592
     },
     3627: {
@@ -157,12 +157,16 @@ var kizunas = {
         thumb: 3669
     },
     3693: {
-        name: 'Shiki (~ 6am)',
+        name: 'Shiki 6+ (~ 6am)',
         thumb: 3693
     },
     3721: {
-        name: 'Uta (~ 6am)',
+        name: 'Uta 6+ (~ 6am)',
         thumb: 3721,
         xch_id: 3720
+    },
+    3739: {
+        name: 'Blackbeard v2 6+ (~ 6am)',
+        thumb: 3739
     },
 };

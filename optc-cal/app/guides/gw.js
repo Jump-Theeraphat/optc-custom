@@ -483,12 +483,13 @@ var gw = {
     3532: '',           // Blackbeard
     3551: '',           // Chopper
     3572: '',           // Orochi
-    3592: '',           // Kuzan
+    3592: '',           // Kuzan v2 6+
     3627: '',           // Roger
     3648: '',           // Magellan & Hannyabal
     3669: '',           // Summer Luffy
-    3693: '',           // Shiki
-    3721: '',           // Uta
+    3693: '',           // Shiki 6+
+    3721: '',           // Uta 6+
+    3739: '',           // Blackbeard v2 6+
 
     // Events
     'bb_1314': '61665', // Three Admirals

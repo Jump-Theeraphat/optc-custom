@@ -483,12 +483,13 @@ var nakama = {
     3532: '9353200',    // Blackbeard
     3551: '9355100',    // Chopper
     3572: '9357200',    // Orochi
-    3592: '9359200',    // Kuzan
+    3592: '9359200',    // Kuzan v2 6+
     3627: '9362700',    // Roger
     3648: '9364800',    // Magellan & Hannyabal
     3669: '9366900',    // Summer Luffy
-    3693: '9369300',    // Shiki
-    3721: '9372100',    // Uta
+    3693: '9369300',    // Shiki 6+
+    3721: '9372100',    // Uta 6+
+    3739: '9373900',    // Blackbeard v2 6+
 
     // Events
     'bb_1314': '6131400',   // Three Admirals

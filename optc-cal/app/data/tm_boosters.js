@@ -10,6 +10,7 @@ var tm_boosters = [
     // Kizunas
     3720,
     3721,
+    3739,
 
     // Events
     3701,
