@@ -740,6 +740,11 @@ var specials = {
         name: 'Black Blade Training',
         thumb: 2475
     },
+    'ev_2749': {
+        type: 'Special Event',
+        name: 'Devilish Party',
+        thumb: 2749
+    },
     'ev_2767': {
         type: 'Special Event',
         name: 'Tragic Country\'s Conflict',

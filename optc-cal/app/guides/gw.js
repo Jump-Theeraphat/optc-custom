@@ -204,7 +204,6 @@ var gw = {
     2698: '168159',     // Croc
     2707: '168824',     // Zorojuro
     2709: '168822',     // Law
-    2749: '174437',     // Halloween Luffy
     2781: '178033',     // Carrot
     2795: '180268',     // Coby & Meppo
     2819: '182533',     // Shanks & Mihawk
@@ -530,6 +529,7 @@ var gw = {
     'ec_1983': '189644',// Escape! Loguetown
 
     'ev_2475': '147515',// Black Blade Training
+    'ev_2749': '174437',// Devilish Party
     'ev_2767': '176352',// Tragic Country's Conflict
     'ev_2799': '180947',// Wapol's Assault
     'ev_2883': '191097',// Freedom VS Strongest

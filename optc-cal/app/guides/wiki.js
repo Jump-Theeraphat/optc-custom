@@ -204,7 +204,6 @@ var wiki = {
     2698: 'wiki/raidboss/crocodile',
     2707: '',                               // Zorojuro
     2709: '',                               // Law
-    2749: '',                               // Halloween Luffy
     2781: '',                               // Carrot
     2795: '',                               // Coby & Meppo
     2819: '',                               // Shanks & Mihawk

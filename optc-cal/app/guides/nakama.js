@@ -204,7 +204,6 @@ var nakama = {
     2698: '4269800',    // Croc
     2707: '4270700',    // Zorojuro
     2709: '4270900',    // Law
-    2749: '6274900',    // Halloween Luffy
     2781: '4278100',    // Carrot
     2795: '4279500',    // Coby & Meppo
     2819: '4281900',    // Shanks & Mihawk
@@ -530,6 +529,7 @@ var nakama = {
     'ec_1983': '',          // Escape! Loguetown
 
     'ev_2475': '6247500',   // Black Blade Training
+    'ev_2749': '6274900',   // Devilish Party
     'ev_2767': '6276700',   // Tragic Country's Conflict
     'ev_2799': '6279900',   // Wapol's Assault
     'ev_2883': '4288300',   // Freedom VS Strongest
