@@ -15,4 +15,5 @@ var tm_boosters = [
     // Events
     3701,
     3728,
+    3743,
 ]
