@@ -940,4 +940,9 @@ var specials = {
         name: 'Pops and the Little Brother',
         thumb: 3728
     },
+    'ev_3750': {
+        type: 'Special Event',
+        name: 'Roof of Onigashima',
+        thumb: 3750
+    },
 }

@@ -569,6 +569,7 @@ var gw = {
     'ev_3678': '',      // Land of Wano Summer Fair
     'ev_3701': '',      // Diva of the World
     'ev_3728': '',      // Pops and the Little Brother
+    'ev_3750': '',      // Roof of Onigashima
 
     'wa_2700': '181868',// Land of Wano Kaido
     'wa_2815': '182349',// Land of Wano O-Tama
