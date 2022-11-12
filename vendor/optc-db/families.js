@@ -354,7 +354,7 @@ const Gladius = [ "Gladius" ];
 const Viola = [ "Viola", "Violet" ];
 const Dellinger = [ "Dellinger" ];
 const Diamante = [ "Diamante" ];
-const DonquixoteRosinante = [ "Donquixote Rosinante", "Corazon" ];
+const DonquixoteRosinante = [ "Donquixote Rosinante", "Donquixote Rocinante", "Corazon" ];
 const Sachi = [ "Sachi", "Shachi" ];
 const Penguin = [ "Penguin" ];
 const JeanBart = [ "Jean Bart" ];
@@ -4299,6 +4299,28 @@ window.families = {
     3734: [ ...Hina ],
     3735: [ ...Hina ],
     3736: [ ...TrafalgarDWaterLaw ],
+    3737: [ ...XDrake ],
+    3738: [ ...Coby ],
+    3739: [ ...MarshallDTeach ],
+    3740: [ ...DonquixoteRosinante, ...TrafalgarDWaterLaw ],
+    3741: [ ...DonquixoteRosinante, ...TrafalgarDWaterLaw ],
+    3742: [ ...PortgasDAce ],
+    3743: [ ...DonquixoteDoflamingo ],
+    3744: [ ...Kinemon, ...Denjiro, ...Inuarashi, ...AshuraDoji ],
+    3745: [ ...Kinemon, ...Denjiro, ...Inuarashi, ...AshuraDoji ],
+    3746: [ ...Nekomamushi ],
+    3747: [ ...Kawamatsu ],
+    3748: [ ...Kikunojo ],
+    3749: [ ...Raizo ],
+    3750: [ ...Kaido ],
+    3751: [ ...KurozumiOrochi ],
+    3752: [ ...KurozumiOrochi ],
+    3753: [ ...KurozumiKanjuro ],
+    3754: [ ...RoronoaZoro ],
+    3755: [ ...RoronoaZoro ],
+    3756: [ ...TrafalgarDWaterLaw ],
+    3757: [ ...Killer ],
+    3758: [ ...CharlotteLinlin ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
