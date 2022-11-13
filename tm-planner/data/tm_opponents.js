@@ -11458,4 +11458,305 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== O-Lin ==========
+    3758: {
+        3308: {
+            name: 'Apoo',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Apoo', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 800000,
+                    atk_: 4000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hp-cut',          '50%'],
+                                ['slot-block',      'All'],
+                                ['cd-rew',          '1T'],
+                                ['def',             '3T, 10000x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Dmg Reduction',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['hp-cut',          '30%']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '50%'],
+                                ['Swap Captain',    '3T'],
+                                ['dmg-normal',      '50000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3580: {
+            name: 'Hawkins',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Striker/Driven/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Hawkins', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['def-perc',        '5T, 80%'],
+                                ['silence',         '5T'],
+                                ['resil',           '10T'],
+                                ['hp-cut',          '50%'],
+                                ['immu-poison',     '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3752: {
+            name: 'Orochi',
+            type: 'PSY',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Cerebral/Free Spirit']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'BOMB'],
+                                ['atk',             '2.5x']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Orochi', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Super BLOCK'],
+                                ['nao',             '99+T'],
+                                ['desp',            '10T'],
+                                ['silence',         '5T, Row 2 3'],
+                                ['slot-lock',       '1x Good'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3753: {
+            name: 'Kanjuro',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/DEX/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kanjuro', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['bind',            '8T, Friend Cap'],
+                                ['cd-rew',          '3T, Row 2'],
+                                ['silence',         '6T, Row 3'],
+                                ['def',             '5T, 30000x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3609: {
+            name: 'Kaido',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Free Spirit/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'TND'],
+                                ['chain-atk-down',  '4T, <3.2x chain, 90%'],
+                                ['nao',             '99+T'],
+                                ['def',             '6T, 1000x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kaido', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['desp',            '8T'],
+                                ['bar-gd',          '2T, 3x'],
+                                ['def-perc',        '6T, 80%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3758: {
+            name: 'O-Lin',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/DEX/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['sp-limit',        '2T, 2x'],
+                                ['nao',             '99+T'],
+                                ['tap-limit',       '1T, 2x'],
+                                ['def-null',        '1T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['O-Lin', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['Swap Captain',    '3T, Bottom Right'],
+                                ['para',            '5T'],
+                                ['nao',             '99+T'],
+                                ['cd-rew',          '1T'],
+                                ['atk-down',        '5T, 90%'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

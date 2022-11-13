@@ -518,7 +518,8 @@ function getBoosters(tmId, server) {
         tmId == 3547 ||
         tmId == 3567 ||
         tmId == 3645 ||
-        tmId == 3736
+        tmId == 3736 ||
+        tmId == 3758
     ) {
         // TM Halloween Robin
         // TM Moria
@@ -527,6 +528,7 @@ function getBoosters(tmId, server) {
         // TM Kanjuro
         // TM Moria v2
         // TM Law v2
+        // TM O-Lin
         $('#div_2x').show();
         $('#div_1_7x').show();
         $('#div_1_4x_v2').show();
