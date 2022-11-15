@@ -28215,6 +28215,11 @@ var tm_boosters = {
             ver: 2,
             x_pts: 1.25
         },
+        {   // Dragon Kaido
+            id: 3389,
+            ver: 2,
+            x_pts: 1.25
+        },
         {   // Tashigi
             id: 3527,
             ver: 2,
