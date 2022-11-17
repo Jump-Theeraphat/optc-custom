@@ -11480,10 +11480,9 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Apoo', 'QCK'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 800000,
-                    atk_: 4000,
+                    atk_: 6000,
                     detail: [
                         {
                             type: 'Preemp',
