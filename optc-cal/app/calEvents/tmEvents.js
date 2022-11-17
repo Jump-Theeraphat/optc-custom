@@ -439,8 +439,13 @@ var tmEvents = [
     },
     {
         id: 3758,
-        start: '2022-11-16',
+        start: '2022-11-17',
         end: '2022-11-20',
+        pst_19: false
+    },
+    {
+        id: 3758,
+        start: '2022-11-20',
         pst_19: false
     },
 ]
