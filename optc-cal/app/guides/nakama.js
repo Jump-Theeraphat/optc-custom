@@ -490,6 +490,7 @@ var nakama = {
     3693: '9369300',    // Shiki 6+
     3721: '9372100',    // Uta 6+
     3739: '9373900',    // Blackbeard v2 6+
+    3764: '9376400',    // Samurai Brook
 
     // Events
     'bb_1314': '6131400',   // Three Admirals

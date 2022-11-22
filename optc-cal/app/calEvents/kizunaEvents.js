@@ -354,4 +354,10 @@ var kizunaEvents = [
         end: '2022-10-23',
         pst_19: true
     },
+    {
+        id: 3764,
+        start: '2022-11-22',
+        end: '2022-11-27',
+        pst_19: true
+    },
 ]

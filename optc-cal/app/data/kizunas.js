@@ -169,4 +169,8 @@ var kizunas = {
         name: 'Blackbeard v2 6+ (~ 6am)',
         thumb: 3739
     },
+    3764: {
+        name: 'Samurai Brook (~ 6am)',
+        thumb: 3764
+    },
 };

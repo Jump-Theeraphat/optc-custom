@@ -490,6 +490,7 @@ var gw = {
     3693: '',           // Shiki 6+
     3721: '',           // Uta 6+
     3739: '',           // Blackbeard v2 6+
+    3764: '',           // Samurai Brook
 
     // Events
     'bb_1314': '61665', // Three Admirals
