@@ -945,4 +945,9 @@ var specials = {
         name: 'Roof of Onigashima',
         thumb: 3750
     },
+    'ev_3770': {
+        type: 'Special Event',
+        name: 'Tobi Roppo! Ulti',
+        thumb: 3770
+    },
 }
