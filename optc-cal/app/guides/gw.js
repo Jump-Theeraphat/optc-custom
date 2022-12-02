@@ -380,6 +380,7 @@ var gw = {
     3540: '',           // Queen
     3580: '',           // Hawkins
     3635: '',           // Devon
+    3773: '',           // Sasaki
 
     1863: '80292',      // Kinemon (N)
     1899: '84586',      // Killer (N)
