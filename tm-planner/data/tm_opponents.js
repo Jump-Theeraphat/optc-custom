@@ -8476,7 +8476,7 @@ var tm_opponents = {
             ]
         },
         3435: {
-            name: 'Who\'s Who',
+            name: 'Who\'s-Who',
             type: 'INT',
             pos: 1,
             guide: [
@@ -8493,7 +8493,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 3,
-                    boss: ['Who\'s Who', 'INT'],
+                    boss: ['Who\'s-Who', 'INT'],
                     hp: 0,
                     atk: 0,
                     hp_: 1200000,
@@ -11848,6 +11848,302 @@ var tm_opponents = {
                             type: '<20%',
                             action: [
                                 ['dmg-normal',      'Deadly']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Who's-Who  ==========
+    3778: {
+        3210: {
+            name: 'X Drake',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['X Drake', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hp-cut',          '70%'],
+                                ['def-thres',       '3T, 99%, 1000'],
+                                ['bind',            '8T, Row 2 3'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3654: {
+            name: 'Sasaki',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, DEX/PSY/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sasaki', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '5T, 90%'],
+                                ['slot-block',      'All'],
+                                ['silence',         '5T'],
+                                ['cd-rew',          '1T, Row 2 3'],
+                                ['nao',             '99+T'],
+                                ['dmg-eot-e',       '99+T, 10%']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Affinity',
+                            action: [
+                                ['bind',            '5T, Row 2 3'],
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3655: {
+            name: 'Ulti',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Driven/Slasher/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ulti', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-neg',        '5T, Color'],
+                                ['def-thres',       '7T, 99%, 1000'],
+                                ['def',             '6T, 100Kx'],
+                                ['bar-hp',          '3T, 3M'],
+                                ['resil',           '6T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3656: {
+            name: 'Page One',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Free Spirit/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Page One', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['hunger',          '2x'],
+                                ['atk-down',        '5T, 90%'],
+                                ['slot-neg',        '3T, Color'],
+                                ['immu-poison',     '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3650: {
+            name: 'Black Maria',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Fighter/Powerhouse/Slasher']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['desp',            '7T'],
+                                ['def-thres',       '3T, 99%, 1000'],
+                                ['atk-down',        '5T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Black Maria', 'INT'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '5T'],
+                                ['slot-change',     'Bad'],
+                                ['def-perc',        '10T, 90%'],
+                                ['def',             '5T, 100Kx'],
+                                ['atk-down',        '5T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3778: {
+            name: 'Who\'s-Who',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/PSY/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['cd-rew',          '3T, Col R'],
+                                ['para',            '5T, Row 2-L, Row 3-L'],
+                                ['def-perc',        '5T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Who\'s-Who', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['hp-cut',          '50%'],
+                                ['nao',             '99+T'],
+                                ['chain-down',      '5T, 0.1x'],
+                                ['chain-atk-down',  '5T, <2.8x chain, 90%'],
+                                ['def-perc',        '6T, 90%'],
+                                ['def-thres',       '3T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['bind',            'Row 3-R'],
+                                ['def-thres',       '3T, 99%, 1000']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '50000']
                             ]
                         }
                     ]
