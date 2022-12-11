@@ -450,6 +450,7 @@ var gw = {
     3712: '',           // RED Chopper v2
     3736: '',           // Law v2
     3758: '',           // O-Lin
+    3778: '',           // Who's-Who
 
     // Kizunas
     2518: '150056',     // Zoro & Sanji (Bartolomeo)

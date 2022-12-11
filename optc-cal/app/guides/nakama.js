@@ -450,6 +450,7 @@ var nakama = {
     3712: '8371200',    // RED Chopper v2
     3736: '8373600',    // Law v2
     3758: '8375800',    // O-Lin
+    3778: '8377800',    // Who's-Who
 
     // Kizunas
     2518: '9251800',    // Zoro & Sanji (Bartolomeo)
