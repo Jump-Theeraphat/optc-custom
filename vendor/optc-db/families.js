@@ -613,7 +613,7 @@ const TenguyamaHitetsu = [ "Tenguyama Hitetsu" ];
 const CharlotteCustard = [ "Charlotte Custard" ];
 const Unluckies = [ "Unluckies" ];
 const BuenaFesta = [ "Buena Festa" ];
-const PageOne = [ "Page One", "Pay Pay", "PageOne", "Page 1" ];
+const PageOne = [ "Page One", "Pay Pay", "Pageone", "Page 1" ];
 const Toko = [ "Toko" ];
 const King = [ "King" ];
 const Onimaru = [ "Onimaru" ];
@@ -4321,6 +4321,26 @@ window.families = {
     3756: [ ...TrafalgarDWaterLaw ],
     3757: [ ...Killer ],
     3758: [ ...CharlotteLinlin ],
+    3759: [ ...Carrot ],
+    3760: [ ...MonkeyDLuffy ],
+    3761: [ ...TonyTonyChopper ],
+    3762: [ ...EustassKid ],
+    3763: [ ...Brook ],
+    3764: [ ...Brook ],
+    3765: [ ...CharlotteLinlin ],
+    3766: [ ...CharlotteLinlin ],
+    3767: [ ...Franky ],
+    3768: [ ...Tama ],
+    3769: [ ...Usopp ],
+    3770: [ ...Ulti ],
+    3771: [ ...PageOne ],
+    3772: [ ...PageOne ],
+    3773: [ ...Sasaki ],
+    3774: [ ...Jinbe ],
+    3775: [ ...Jinbe ],
+    3776: [ ...TonyTonyChopper, ...Tristan ],
+    3777: [ ...VinsmokeSanji, ...RoronoaZoro ],
+    3778: [ ...WhosWho ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
