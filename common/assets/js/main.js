@@ -71,6 +71,11 @@ function getThumb(thumbId) {
         return '/tm-planner/assets/img/new-thumbs/3355-1.png';
     if (paddedThumbId === '9006')
         return '/tm-planner/assets/img/new-thumbs/3355-2.png';
+    // Kaido VS Yamato
+    if (paddedThumbId === '9007')
+        return 'https://optc-db.github.io/api/images/thumbnail/jap/3/700/3788-1.png';
+    if (paddedThumbId === '9008')
+        return 'https://optc-db.github.io/api/images/thumbnail/jap/3/700/3788-2.png';
 
     // Special cases for new thumbs
     if (

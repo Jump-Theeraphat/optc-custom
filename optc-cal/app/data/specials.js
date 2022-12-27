@@ -950,4 +950,9 @@ var specials = {
         name: 'Tobi Roppo! Ulti',
         thumb: 3770
     },
+    'ev_3788': {
+        type: 'Special Event',
+        name: 'Thunder Bagua',
+        thumb: 9007
+    },
 }

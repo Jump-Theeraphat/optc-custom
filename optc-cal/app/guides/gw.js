@@ -576,6 +576,7 @@ var gw = {
     'ev_3728': '',      // Pops and the Little Brother
     'ev_3750': '',      // Roof of Onigashima
     'ev_3770': '',      // Tobi Roppo! Ulti
+    'ev_3788': '',      // Thunder Bagua
 
     'wa_2700': '181868',// Land of Wano Kaido
     'wa_2815': '182349',// Land of Wano O-Tama
