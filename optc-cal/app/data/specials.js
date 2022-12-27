@@ -120,6 +120,11 @@ var specials = {
         name: 'Heart Vs. Heavenly Demon (1am ~ 6am)',
         thumb: 3743
     },
+    'bb_3796': {
+        type: 'Blitz Battle',
+        name: 'Battle of Demon and Spider (1am ~ 6am)',
+        thumb: 3796
+    },
 
     'wc_2401': {
         type: 'World Clash',
