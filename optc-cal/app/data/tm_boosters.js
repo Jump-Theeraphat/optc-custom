@@ -3,6 +3,7 @@ var tm_boosters = [
     3736,
     3758,
     3778,
+    3801,
 
     // Raids
 
