@@ -475,13 +475,15 @@ function getBoosters(tmId, server) {
         tmId == 3416 ||
         tmId == 3588 ||
         tmId == 3663 ||
-        tmId == 3689
+        tmId == 3689 ||
+        tmId == 3801
     ) {
         // TM Dragon Kaido
         // TM Stussy
         // TM Ulti
         // TM Franky
         // TM RED Sanji
+        // TM Wyper
         $('#div_2x').show();
         $('#div_1_8x').show();
         $('#div_1_6x').show();
@@ -912,7 +914,8 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Heal Team' ||
         iconKey === 'Counter' ||
         iconKey === '- Max HP' ||
-        iconKey === 'Bad Slot+'
+        iconKey === 'Bad Slot+' ||
+        iconKey === 'VS Reduction'
     )
         return iconKey;
 
@@ -934,6 +937,9 @@ function parseVsUnitId(vsId) {
     // Whitebeard VS Shanks
     if (vsId === 9005 || vsId === 9006)
         return 3355;
+    // Kaido VS Yamato
+    if (vsId === 9007 || vsId === 9008)
+        return 3788;
 
     return vsId;
 }

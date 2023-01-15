@@ -12251,4 +12251,317 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Wyper ==========
+    3801: {
+        583: {
+            name: 'Raki',
+            type: 'INT',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/DEX/PSY'],
+                                ['VS Reduction',    '10T, STR/DEX/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Raki', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '10T'],
+                                ['blind',           '5T'],
+                                ['atk-down',        '8T, 90%'],
+                                ['nao',             '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2207: {
+            name: 'Luffy',
+            type: 'QCK',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, DEX/QCK/PSY'],
+                                ['VS Reduction',    '10T, DEX/QCK/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['desp',            '15T'],
+                                ['chain-lock',      '5T, 1.1x'],
+                                ['slot-neg',        '3T, Color'],
+                                ['nao',             '99+T'],
+                                ['chain-atk-down',  '5T, <2.2x chain, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2209: {
+            name: 'Ganfor',
+            type: 'PSY',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Striker/Driven/Cerebral'],
+                                ['VS Reduction',    '10T, Striker/Driven/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ganfor', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-boost',       '5T, 1.1x'],
+                                ['silence',         '3T, Col L'],
+                                ['cd-rew',          '3T, Col R'],
+                                ['slot-neg',        '8T, TND'],
+                                ['def-perc',        '6T, 90%']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3062: {
+            name: 'Conis',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Reduction',    '10T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Conis', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 950000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['burn',            '5T, 30000'],
+                                ['def-perc',        '5T, 90%'],
+                                ['def-thres',       '5T, 90%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '300,000'],
+                                ['dmg-normal',      '30000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3801: {
+            name: 'Wyper',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Striker/Free Spirit/Cerebral'],
+                                ['VS Reduction',    '10T, Striker/Free Spirit/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Wyper', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Para'],
+                                ['def-perc',        '3T, 90%'],
+                                ['def-thres',       '3T, 90%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Wyper', 'INT'],
+                    hp: 3000000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '10T'],
+                                ['def-perc',        '5T, 90%'],
+                                ['def',             '9T, 10000x'],
+                                ['def-thres',       '3T, 90%, 1000'],
+                                ['resil',           '10T'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3798: {
+            name: 'Eneru',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Striker/Cerebral/Free Spirit'],
+                                ['VS Reduction',    '10T, Striker/Cerebral/Free Spirit']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['def',             '3T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['resil',           '?T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 4,
+                    boss: ['Eneru', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '5T, Row 1'],
+                                ['def-perc',        '3T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 5,
+                    boss: ['Eneru', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 4500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '9T'],
+                                ['bind',            '9T, Row 1'],
+                                ['Swap Captain',    '5T, Row 3'],
+                                ['nao',             '99+T'],
+                                ['resil',           '7T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Orb Boost',
+                            action: [
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
