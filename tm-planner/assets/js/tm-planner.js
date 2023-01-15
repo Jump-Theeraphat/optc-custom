@@ -969,6 +969,12 @@ function parseVsUnitIdForCalc(vsId) {
     if (vsId === 9006)
         return 5340;
 
+    // Kaido VS Yamato
+    if (vsId === 9007)
+        return 5431;
+    if (vsId === 9008)
+        return 5432;
+
     return vsId;
 }
 
@@ -2109,6 +2115,10 @@ function getFamiliesForUnit(unitId) {
         family = [ "Edward Newgate", "Whitebeard" ];
     else if (unitId == 9006)
         family = [ "Shanks" ];
+    else if (unitId == 9007)
+        family = [ "Kaido" ];
+    else if (unitId == 9008)
+        family = [ "Yamato" ];
     else
         family = families[unitId];
     return family;
