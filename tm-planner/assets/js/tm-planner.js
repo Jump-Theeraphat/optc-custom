@@ -1575,6 +1575,9 @@ function createCloneInSlot(orig, slot, isAmbush, isAmbushClone) {
     clone.removeClass('booster');
     clone.addClass('booster-clone');
 
+    if (origId > 9000)
+        origId = parseVsUnitId(origId);
+
     createTooltipForUnit(clone, units[origId - 1]);
 
     clone.css({
