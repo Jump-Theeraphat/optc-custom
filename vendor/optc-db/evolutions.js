@@ -5385,7 +5385,7 @@ window.evolutions = {
     },
     3765: {
         evolution: 3766,
-        evolvers: [  ]
+        evolvers: [ 118, 2662, 304, 104, 267 ]
     },
     3771: {
         evolution: 3772,
@@ -5394,6 +5394,34 @@ window.evolutions = {
     3774: {
         evolution: 3775,
         evolvers: [  ]
+    },
+    3779: {
+        evolution: 3780,
+        evolvers: [  ]
+    },
+    2797: {
+        evolution: 3784,
+        evolvers: [  ]
+    },
+    3177: {
+        evolution: 3786,
+        evolvers: [ "skullRoger2", "skullRoger2", "skullRoger2", "skullRoger2", "skullRoger2" ]
+    },
+    3787: {
+        evolution: 3788,
+        evolvers: [  ]
+    },
+    3789: {
+        evolution: 3790,
+        evolvers: [  ]
+    },
+    3791: {
+        evolution: 3792,
+        evolvers: [  ]
+    },
+    3721: {
+        evolution: 3816,
+        evolvers: [ "skullUta3", "skullUta3", "skullUta3", "skullUta3", "skullUta3" ]
     },
     4986: {
         evolution: 4987,

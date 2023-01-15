@@ -660,6 +660,7 @@ const Sarutobi = [ "Sarutobi" ];
 const Uta = [ "Uta" ];
 const Gordon = [ "Gordon" ];
 const Sunny = [ "Sunny", "Thousand Sunny" ];
+const AdioSuerte = [ "Adio Suerte" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -3968,7 +3969,7 @@ window.families = {
     3396: [ ...ShimotsukiRyuma ],
     3397: [ ...Jack ],
     3398: [ ...MonkeyDLuffy, ...RoronoaZoro, ...Nami, ...Usopp, ...VinsmokeSanji, ...TonyTonyChopper, ...NicoRobin, ...Franky, ...Brook, ...Jinbe ],
-    3399: [ ...Buggy, ...Alvida, ...Cabaji, ...Mohji, ...Richie ],
+    3399: [ ...Buggy, ...Alvida, ...Cabaji, ...Mohji, ...Richie, ...Galdino ],
     3400: [ ...Monet ],
     3401: [ ...Baby5 ],
     3402: [ ...VinsmokeReiju ],
@@ -4265,6 +4266,7 @@ window.families = {
     3699: [ ...Blueno, ...Coby ],
     3700: [ ...Sunny ],
     3701: [ ...Uta ],
+    3702: [ ...AdioSuerte ],
     3703: [ ...Issho ],
     3704: [ ...Borsalino ],
     3705: [ ...MonkeyDLuffy ],
@@ -4341,6 +4343,29 @@ window.families = {
     3776: [ ...TonyTonyChopper, ...Tristan ],
     3777: [ ...VinsmokeSanji, ...RoronoaZoro ],
     3778: [ ...WhosWho ],
+    3779: [ ...BoaHancock ],
+    3780: [ ...BoaHancock ],
+    3781: [ ...JewelryBonney ],
+    3782: [ ...CharlottePudding ],
+    3784: [ ...TonyTonyChopper ],
+    3785: [ ...MonkeyDLuffy ],
+    3786: [ ...GolDRoger ],
+    3787: [ ...Kaido, ...Yamato ],
+    3788: [ ...Kaido, ...Yamato ],
+    3789: [ ...Nami ],
+    3790: [ ...Nami ],
+    3791: [ ...NicoRobin ],
+    3792: [ ...NicoRobin ],
+    3793: [ ...RoronoaZoro ],
+    3794: [ ...VinsmokeSanji ],
+    3795: [ ...TrafalgarDWaterLaw, ...EustassKid ],
+    3796: [ ...BlackMaria ],
+    3797: [ ...King ],
+    3798: [ ...Enel ],
+    3799: [ ...Ohm ],
+    3800: [ ...Gedatsu, ...Shura, ...Satori ],
+    3801: [ ...Wyper ],
+    3816: [ ...Uta ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
