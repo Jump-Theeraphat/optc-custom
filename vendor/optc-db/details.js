@@ -22231,7 +22231,7 @@ window.details = {
     },
     1353: {//Rayleigh
         captain: "Boosts ATK of Cerebral characters by 2.5x",
-        special: "Deals 50,000 Fixed damage to one enemy, adds 0.5 to Chain multiplier for 1 turn",
+        special: "Deals 50,000 Fixed damage to one enemy, adds 0.5x to Chain multiplier for 1 turn",
         specialName: "Guidance to Control Haki",
     },
     1354: {//Secret Rayleigh
@@ -115615,7 +115615,7 @@ window.details = {
         captainNotes: "You do not need to actively use Barrier Penetration to damage through a barrier in order to proc the Buff Reduction on PERFECT. The character only needs to fulfill the requirements to have Barrier Penetration active.",
         special: "Boosts Orb Effects of [QCK] and Shooter characters by 2.25x for 3 turns and sets Chain Boundaries to 2.75x and 35.0x for 3 turns. If your crew has Orb Amplification, increases boost effects of Orb Amplification buffs by +0.3x. If your crew has Chain Lock, increases boost effects of Chain Lock buffs by +0.25x.",
         specialName: "Emotional Bullet",
-        superSpecial: "Reduces enemies Increased Defense, Percent Damage Reduction and Threshold Damage Reduction duration by 2 turns, boosts ATK of Shooter characters by 2x for 2 turns and transforms all Shooter characters into Super Shooter characters.",
+        superSpecial: "Reduces enemies' Increased Defense, Percent Damage Reduction and Threshold Damage Reduction duration by 2 turns, boosts ATK of Shooter characters by 2x for 2 turns and transforms all Shooter characters into Super Shooter characters.",
         superSpecialCriteria: "This character must be captain and your crew must consist of: 5 Shooter characters, excluding Support members.",
         sailor: {
             level1: "If your Captain is a Shooter character, boosts base ATK, HP and RCV of all characters by 100",
@@ -121302,9 +121302,9 @@ window.details = {
     },
     3785: {//Luffy
         captain: "Boosts ATK of all characters by 3.75x, boosts HP of all characters by 1.3x, makes [RCV] and [TND] orbs beneficial for all characters and boosts EXP and amount of Beli received by 1.25x.",
-        special: "Deals 56x character's ATK in Fixed True Typeless damage to one enemy, reduces enemies Threshold Damage Reduction and Percent Damage Reduction duration by 4 turns, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into [TND] orbs and boosts ATK of all characters by 2x for 1 turn.",
+        special: "Deals 56x character's ATK in Fixed True Typeless damage to one enemy, reduces enemies' Threshold Damage Reduction and Percent Damage Reduction duration by 4 turns, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into [TND] orbs and boosts ATK of all characters by 2x for 1 turn.",
         specialName: "Searing Gum-Gum Red Hawk",
-        superSpecial: "Changes [BLOCK] orbs into [TND] orbs, reduces Percent Damage Reduction and Threshold Damage Reduction duration by 1 turn, boosts Color Affinity of all characters by 1.75x for 1 turn and transforms all Free Spirit characters into Super Free Spirit characters.",
+        superSpecial: "Changes [BLOCK] orbs into [TND] orbs, reduces enemies' Percent Damage Reduction and Threshold Damage Reduction duration by 1 turn, boosts Color Affinity of all characters by 1.75x for 1 turn and transforms all Free Spirit characters into Super Free Spirit characters.",
         superSpecialCriteria: "This character must be captain and your crew must consist of: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook and Jinbe, excluding Support members.",
         sailor: {
             base: "Makes [TND] orbs beneficial for all characters",
@@ -121632,13 +121632,13 @@ window.details = {
         },
     },
     3789: {//Nami
-        captain: "Reduces Special Cooldown of this character by 3 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], Striker and Free Spirit characters by 5.25x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of [PSY], Striker and Free Spirit characters by 1.3x, makes [PSY], [RCV] and [TND] orbs benedicial for [PSY], Striker and Free Spirit characters and boosts chances of getting [TND] orbs. When an enemy inflicts you with Paralysis, reduce Paralysis duration completely and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+        captain: "Reduces Special Cooldown of this character by 3 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], Striker and Free Spirit characters by 5.25x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of [PSY], Striker and Free Spirit characters by 1.3x, makes [PSY], [RCV] and [TND] orbs benedicial for [PSY], Striker and Free Spirit characters and boosts chances of getting [TND] orbs. When an enemy inflicts you with Paralysis, reduces Paralysis duration completely and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
         special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Percent Damage Reduction and Resilience duration by 7 turns, deals 200x character's ATK in Typeless damage to all enemies, ignores debuff protection and paralyzes (75%) all enemies for 3 turns, adds 1.5x-2.5x to Chain multiplier for 1 turn and boosts base ATK of [PSY], Striker and Free Spirit characters by 1,250-3,000 for 1 turn.",
         specialNotes: "For every <b>5 turns</b> after this special is charged to MAX, the Chain Addition increases by +0.1x and the Base ATK increases by +250 until their respective maximum values.",
         specialName: "Penetrating Maser Cannon",
     },
     3790: {//Nami
-        captain: "Reduces Special Cooldown of this character by 3 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], Striker and Free Spirit characters by 5.25x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of [PSY], Striker and Free Spirit characters by 1.3x, makes [PSY], [RCV] and [TND] orbs benedicial for [PSY], Striker and Free Spirit characters and boosts chances of getting [TND] orbs. When an enemy inflicts you with Paralysis, reduce Paralysis duration completely and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+        captain: "Reduces Special Cooldown of this character by 3 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], Striker and Free Spirit characters by 5.25x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of [PSY], Striker and Free Spirit characters by 1.3x, makes [PSY], [RCV] and [TND] orbs benedicial for [PSY], Striker and Free Spirit characters and boosts chances of getting [TND] orbs. When an enemy inflicts you with Paralysis, reduces Paralysis duration completely and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
         special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Percent Damage Reduction and Resilience duration by 7 turns, deals 200x character's ATK in Typeless damage to all enemies, ignores debuff protection and paralyzes (75%) all enemies for 3 turns, adds 1.5x-2.5x to Chain multiplier for 1 turn and boosts base ATK of [PSY], Striker and Free Spirit characters by 1,250-3,000 for 1 turn.",
         specialNotes: "For every <b>5 turns</b> after this special is charged to MAX, the Chain Addition increases by +0.1x and the Base ATK increases by +250 until their respective maximum values.",
         specialName: "Penetrating Maser Cannon",
@@ -122224,7 +122224,7 @@ window.details = {
     },
     3799: {//Ohm
         captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK], [PSY] and [INT] characters by 3.5x and boosts HP of [QCK], [PSY] and [INT] characters by 1.2x.",
-        special: "Deals 100,000 Fixed damage to all enemies, reduces enemies Percent Damage Reduction duration by 3 turns, reduces Bind duration by 3 turns and changes orbs of adjacent characters into Matching Orbs.",
+        special: "Deals 100,000 Fixed damage to all enemies, reduces enemies' Percent Damage Reduction duration by 3 turns, reduces Bind duration by 3 turns and changes orbs of adjacent characters into Matching Orbs.",
         specialNotes: "Special is limited to 2 uses per adventure.",
         specialName: "Eisen Whip",
         sailor: {
@@ -122285,7 +122285,7 @@ window.details = {
     },
     3800: {//GedatsuShuraSatori
         captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK], [PSY] and [INT] characters by 3.5x and boosts RCV of [QCK], [PSY] and [INT] characters by 1.2x.",
-        special: "Deals 55x character's ATK in True Typeless damage to one enemy, reduces enemies Threshold Damage Reduction duration by 3 turns, reduces Despair duration by 3 turns and changes orbs of adjacent characters into Matching Orbs.",
+        special: "Deals 55x character's ATK in True Typeless damage to one enemy, reduces enemies' Threshold Damage Reduction duration by 3 turns, reduces Despair duration by 3 turns and changes orbs of adjacent characters into Matching Orbs.",
         specialNotes: "Special is limited to 2 uses per adventure.",
         specialName: "Assault of the Priests",
         sailor: {
