@@ -12546,7 +12546,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['desp',            '9T'],
-                                ['bind',            '9T, Row 1'],
+                                ['bind',            '6T, Row 1'],
                                 ['Swap Captain',    '5T, Row 3'],
                                 ['nao',             '99+T'],
                                 ['resil',           '7T'],
