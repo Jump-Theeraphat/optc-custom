@@ -12274,9 +12274,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Raki', 'INT'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -12286,6 +12285,18 @@ var tm_opponents = {
                                 ['blind',           '5T'],
                                 ['atk-down',        '8T, 90%'],
                                 ['nao',             '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['blow-away',       '3T, Random 2']
                             ]
                         }
                     ]
@@ -12312,9 +12323,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Luffy', 'QCK'],
-                    hp: 0,
+                    hp: 3000000,
                     atk: 0,
-                    hp_: 3000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -12327,6 +12337,18 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['chain-atk-down',  '5T, <2.2x chain, 90%'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '10T, Row 1']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -12353,9 +12375,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Ganfor', 'PSY'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -12366,6 +12387,19 @@ var tm_opponents = {
                                 ['cd-rew',          '3T, Col R'],
                                 ['slot-neg',        '8T, TND'],
                                 ['def-perc',        '6T, 90%']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['hp-cut',          '?%'],
+                                ['slot-block',      'All']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -12392,9 +12426,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Conis', 'STR'],
-                    hp: 0,
+                    hp: 1500000,
                     atk: 0,
-                    hp_: 950000,
                     atk_: 6000,
                     detail: [
                         {
@@ -12412,6 +12445,13 @@ var tm_opponents = {
                             action: [
                                 ['heal',            '300,000'],
                                 ['dmg-normal',      '30000']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['heal',            '100%'],
+                                ['clear-buff',      'Buff Only']
                             ]
                         }
                     ]
@@ -12438,9 +12478,8 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Wyper', 'INT'],
-                    hp: 0,
+                    hp: 2000000,
                     atk: 0,
-                    hp_: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -12450,6 +12489,13 @@ var tm_opponents = {
                                 ['def-perc',        '3T, 90%'],
                                 ['def-thres',       '3T, 90%, 1000'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['Ship Bind',       '2T'],
+                                ['slot-block',      'All']
                             ]
                         }
                     ]
@@ -12469,6 +12515,26 @@ var tm_opponents = {
                                 ['def-thres',       '3T, 90%, 1000'],
                                 ['resil',           '10T'],
                                 ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-block',      'All']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['blow-away',       '99+T, Row 3']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -12498,7 +12564,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['nao',             '99+T'],
+                                ['nao',             '1T'],
                                 ['def',             '3T']
                             ]
                         }
@@ -12510,8 +12576,15 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['nao',             '99+T'],
-                                ['resil',           '?T']
+                                ['nao',             '1T'],
+                                ['resil',           '1T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['para',            '2T'],
+                                ['Ship Bind',       '5T']
                             ]
                         }
                     ]
@@ -12519,9 +12592,8 @@ var tm_opponents = {
                 {
                     stageNum: 4,
                     boss: ['Eneru', 'INT'],
-                    hp: 0,
+                    hp: 2000000,
                     atk: 0,
-                    hp_: 3000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -12531,15 +12603,28 @@ var tm_opponents = {
                                 ['def-perc',        '3T, 90%'],
                                 ['immu-delay',      '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['para',            '4T'],
+                                ['atk-down',        '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['blow-away',       '10T, Random 1']
+                            ]
                         }
                     ]
                 },
                 {
                     stageNum: 5,
                     boss: ['Eneru', 'INT'],
-                    hp: 0,
+                    hp: 4000000,
                     atk: 0,
-                    hp_: 4500000,
                     atk_: 9600,
                     detail: [
                         {
@@ -12557,6 +12642,25 @@ var tm_opponents = {
                             type: 'Interrupt - Orb Boost',
                             action: [
                                 ['clear-buff',      'Buff Only']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['blow-away',       '99+T, Captain']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
