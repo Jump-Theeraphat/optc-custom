@@ -495,6 +495,7 @@ var gw = {
     3739: '',           // Blackbeard v2 6+
     3764: '',           // Samurai Brook
     3784: '',           // Chopper 6+
+    3807: '',           // Doffy v2
 
     // Events
     'bb_1314': '61665', // Three Admirals

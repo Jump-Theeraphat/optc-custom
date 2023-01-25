@@ -495,6 +495,7 @@ var nakama = {
     3739: '9373900',    // Blackbeard v2 6+
     3764: '9376400',    // Samurai Brook
     3784: '9378400',    // Chopper 6+
+    3807: '9380700',    // Doffy v2
 
     // Events
     'bb_1314': '6131400',   // Three Admirals
