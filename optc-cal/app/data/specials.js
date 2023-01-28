@@ -960,4 +960,9 @@ var specials = {
         name: 'Thunder Bagua',
         thumb: 9007
     },
+    'ev_3815': {
+        type: 'Special Event',
+        name: 'I Am Oden',
+        thumb: 3815
+    },
 }

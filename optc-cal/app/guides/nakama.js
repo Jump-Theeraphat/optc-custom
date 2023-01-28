@@ -580,6 +580,7 @@ var nakama = {
     'ev_3750': '2375000',   // Roof of Onigashima
     'ev_3770': '2377000',   // Tobi Roppo! Ulti
     'ev_3788': '2378800',   // Thunder Bagua
+    'ev_3815': '2381500',   // I Am Oden
 
     'wa_2700': '',          // Land of Wano Kaido
     'wa_2815': '6281500',   // Land of Wano O-Tama
