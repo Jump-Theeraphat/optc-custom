@@ -802,12 +802,6 @@ function init(tmId, server, isTransfer) {
     for (var teamId = 0; teamId < 6; teamId++)
         doTeamBuildCheck(teamId);
 
-    // TEMP
-    if (tmId >= 3801)
-        $('#pt-calc-info').show();
-    else
-        $('#pt-calc-info').hide();
-
     return true;
 }
 
@@ -1676,10 +1670,20 @@ function updateAllPts() {
 
 function calculateTargetPts() {
     var targetPts = Number($('#target-pts').val());
-    const baseMain = 4000;
-    const growthMain = 200;
-    const baseMini = 1000;
-    const growthMini = 50;
+
+    var baseAmbush = 12000;
+    var growthAmbush = baseAmbush * 0.05;
+    var baseMain = 8000;
+    var growthMain = baseMain * 0.05;
+    var baseMini = 1500;
+    var growthMini = baseMini * 0.05;
+
+    if (tmId < 3801) {
+        baseMain = 4000;
+        growthMain = baseMain * 0.05;
+        baseMini = 1000;
+        growthMini = baseMini * 0.05;
+    }
 
     var navLv = 0;
     var totalPts = 0;
@@ -1688,10 +1692,26 @@ function calculateTargetPts() {
         $('.team').each(function() {
             var multiplier = Number($(this).find('.x_pts').text());
 
-            if (Number($(this).data('team')) < 4)
-                totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
-            else
-                totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
+            if (tmId >= 3801) {
+                if ((navLv + 1) % 5 != 0) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * navLv)
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv)
+                } else {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
+                }
+            } else {
+                if (Number($(this).data('team')) < 4)
+                    totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
+                else
+                    totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
+            }
         });
 
         navLv++;
@@ -1702,10 +1722,20 @@ function calculateTargetPts() {
 
 function calculateNavLv() {
     var navLv = Number($('#nav-lv').val());
-    const baseMain = 4000;
-    const growthMain = 200;
-    const baseMini = 1000;
-    const growthMini = 50;
+
+    var baseAmbush = 12000;
+    var growthAmbush = baseAmbush * 0.05;
+    var baseMain = 8000;
+    var growthMain = baseMain * 0.05;
+    var baseMini = 1500;
+    var growthMini = baseMini * 0.05;
+
+    if (tmId < 3801) {
+        baseMain = 4000;
+        growthMain = baseMain * 0.05;
+        baseMini = 1000;
+        growthMini = baseMini * 0.05;
+    }
 
     var totalPts = 0;
 
@@ -1713,10 +1743,26 @@ function calculateNavLv() {
         $('.team').each(function() {
             var multiplier = Number($(this).find('.x_pts').text());
 
-            if (Number($(this).data('team')) < 4)
-                totalPts += multiplier * (baseMini + growthMini * i) * 1.5
-            else
-                totalPts += multiplier * (baseMain + growthMain * i) * 1.5
+            if (tmId >= 3801) {
+                if ((i + 1) % 5 != 0) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * i)
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i)
+                } else {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * i) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.5
+                }
+            } else {
+                if (Number($(this).data('team')) < 4)
+                    totalPts += multiplier * (baseMini + growthMini * i) * 1.5
+                else
+                    totalPts += multiplier * (baseMain + growthMain * i) * 1.5
+            }
         });
     }
 
