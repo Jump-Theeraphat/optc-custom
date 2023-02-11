@@ -476,7 +476,8 @@ function getBoosters(tmId, server) {
         tmId == 3588 ||
         tmId == 3663 ||
         tmId == 3689 ||
-        tmId == 3801
+        tmId == 3801 ||
+        tmId == 3822
     ) {
         // TM Dragon Kaido
         // TM Stussy
@@ -484,6 +485,7 @@ function getBoosters(tmId, server) {
         // TM Franky
         // TM RED Sanji
         // TM Wyper
+        // TM Izo
         $('#div_2x').show();
         $('#div_1_8x').show();
         $('#div_1_6x').show();
@@ -915,7 +917,8 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Counter' ||
         iconKey === '- Max HP' ||
         iconKey === 'Bad Slot+' ||
-        iconKey === 'VS Reduction'
+        iconKey === 'VS Gauge -' ||
+        iconKey === 'S Switch -'
     )
         return iconKey;
 

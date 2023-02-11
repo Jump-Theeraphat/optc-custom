@@ -12266,7 +12266,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/DEX/PSY'],
-                                ['VS Reduction',    '10T, STR/DEX/PSY']
+                                ['VS Gauge -',      '10T, STR/DEX/PSY']
                             ]
                         }
                     ]
@@ -12315,7 +12315,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, DEX/QCK/PSY'],
-                                ['VS Reduction',    '10T, DEX/QCK/PSY']
+                                ['VS Gauge -',      '10T, DEX/QCK/PSY']
                             ]
                         }
                     ]
@@ -12367,7 +12367,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Driven/Cerebral'],
-                                ['VS Reduction',    '10T, Striker/Driven/Cerebral']
+                                ['VS Gauge -',      '10T, Striker/Driven/Cerebral']
                             ]
                         }
                     ]
@@ -12418,7 +12418,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Reduction',    '10T, All']
+                                ['VS Gauge -',      '10T, All']
                             ]
                         }
                     ]
@@ -12470,7 +12470,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Free Spirit/Cerebral'],
-                                ['VS Reduction',    '10T, Striker/Free Spirit/Cerebral']
+                                ['VS Gauge -',      '10T, Striker/Free Spirit/Cerebral']
                             ]
                         }
                     ]
@@ -12553,7 +12553,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Cerebral/Free Spirit'],
-                                ['VS Reduction',    '10T, Striker/Cerebral/Free Spirit']
+                                ['VS Gauge -',      '10T, Striker/Cerebral/Free Spirit']
                             ]
                         }
                     ]
@@ -12661,6 +12661,332 @@ var tm_opponents = {
                             type: '<20%',
                             action: [
                                 ['dmg-normal',      'Deadly']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Izo ==========
+    3822: {
+        2726: {
+            name: 'Raizo',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Raizo', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '8T'],
+                                ['chain-down',      '5T, 0.1x'],
+                                ['chain-atk-down',  '5T, <1.5x chain, 90%'],
+                                ['slot-change',     'Bad'],
+                                ['hunger',          '3x'],
+                                ['bar-p',           '5T, 3x'],
+                                ['nao',             '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3385: {
+            name: 'Ashura Doji',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, DEX/QCK/PSY'],
+                                ['VS Gauge -',      '5T, DEX/QCK/PSY'],
+                                ['S Switch -',      '5T, DEX/QCK/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ashura Doji', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '1T'],
+                                ['bind',            '7T, Row 1'],
+                                ['slot-change',     'Bad'],
+                                ['slot-neg',        '5T, Color/TND'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Damage',
+                            action: [
+                                ['hp-cut',          '75%']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '1,500,000'],
+                                ['silence',         '5T, Row 1'],
+                                ['bind',            '5T, Row 2 3'],
+                                ['slot-change',     'Bad']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3502: {
+            name: 'Kinemon',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Cerebral/Slasher'],
+                                ['VS Gauge -',      '5T, Free Spirit/Cerebral/Slasher'],
+                                ['S Switch -',      '5T, Free Spirit/Cerebral/Slasher']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kinemon', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '7T, 90%'],
+                                ['nao',             '99+T'],
+                                ['silence',         '7T'],
+                                ['burn',            '5T, 10000'],
+                                ['slot-block',      'BOMB/EMPTY/BLOCK'],
+                                ['slot-lock',       '1T'],
+                                ['resil',           '4T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '50%'],
+                                ['sp-limit',        '2T, 1x']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3503: {
+            name: 'Denjiro',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/DEX/PSY'],
+                                ['VS Gauge -',      '5T, QCK/DEX/PSY'],
+                                ['S Switch -',      '5T, QCK/DEX/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Denjiro', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '2T, Row 1 [if has cost>40]'],
+                                ['atk-down',        '5T, 90%'],
+                                ['para',            '7T, Row 2 3 [if has cost>40]'],
+                                ['para',            '5T, Row 2 3'],
+                                ['nao',             '99+T'],
+                                ['blind',           '5T'],
+                                ['bar-p',           '2T, 3x']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3619: {
+            name: 'Oden',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, DEX/QCK/PSY'],
+                                ['VS Gauge -',      '5T, DEX/QCK/PSY'],
+                                ['S Switch -',      '5T, DEX/QCK/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hp-cut',          '50%'],
+                                ['atk-down',        '5T, 90%'],
+                                ['resil',           '5T'],
+                                ['def-perc',        '5T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Oden', 'QCK'],
+                    hp: 3200000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '5T'],
+                                ['def',             '5T, 3619x'],
+                                ['cd-rew',          '1T'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3822: {
+            name: 'Izo',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Powerhouse/Striker'],
+                                ['VS Gauge -',      '5T, Free Spirit/Powerhouse/Striker'],
+                                ['S Switch -',      '5T, Free Spirit/Powerhouse/Striker']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 4,
+                    boss: ['Izo', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['dmg-eot-e',       '4T, 20%'],
+                                ['bind',            '5T, Row 1'],
+                                ['para',            '3T, Row 2 3'],
+                                ['desp',            '4T'],
+                                ['slot-block',      'All'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 5,
+                    boss: ['Izo', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['resil',           '5T'],
+                                ['def-perc',        '5T, 90%'],
+                                ['bar-hp',          '3T, 10M'],
+                                ['silence',         '7T'],
+                                ['chain-atk-down',  '5T, <2.5x chain, 90%'],
+                                ['dmg-up',          '5T, 10x'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Chain Lock, Add Chain',
+                            action: [
+                                ['clear-buff',      'Buff & Values'],
+                                ['blow-away',       '4T, Random 2']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '50000']
                             ]
                         }
                     ]
