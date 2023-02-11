@@ -452,6 +452,7 @@ var gw = {
     3758: '',           // O-Lin
     3778: '',           // Who's-Who
     3801: '',           // Wyper
+    3822: '',           // Izo
 
     // Kizunas
     2518: '150056',     // Zoro & Sanji (Bartolomeo)
