@@ -661,6 +661,8 @@ const Uta = [ "Uta" ];
 const Gordon = [ "Gordon" ];
 const Sunny = [ "Sunny", "Thousand Sunny" ];
 const AdioSuerte = [ "Adio Suerte" ];
+const Nozudon = [ "Nozudon" ];
+const Sambel = [ "Sambel" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4365,7 +4367,27 @@ window.families = {
     3799: [ ...Ohm ],
     3800: [ ...Gedatsu, ...Shura, ...Satori ],
     3801: [ ...Wyper ],
+    3802: [ ...Queen ],
+    3803: [ ...Bartolomeo ],
+    3804: [ ...Cavendish ],
+    3805: [ ...Sugar ],
+    3806: [ ...DonquixoteDoflamingo ],
+    3807: [ ...DonquixoteDoflamingo ],
+    3808: [ ...EdwardNewgate ],
+    3809: [ ...EdwardNewgate ],
+    3810: [ ...SilversRayleigh, ...Gaban ],
+    3811: [ ...SilversRayleigh, ...Gaban ],
+    3812: [ ...Shanks ],
+    3813: [ ...Buggy ],
+    3814: [ ...MonkeyDLuffy ],
+    3815: [ ...KozukiOden ],
     3816: [ ...Uta ],
+    3817: [ ...Crocus ],
+    3818: [ ...Nozudon, ...Sambel ],
+    3819: [ ...Marco ],
+    3820: [ ...WhiteyBay ],
+    3821: [ ...MarshallDTeach ],
+    3822: [ ...Izo ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],

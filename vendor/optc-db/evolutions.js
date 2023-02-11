@@ -5321,7 +5321,7 @@ window.evolutions = {
     },
     3707: {
         evolution: 3708,
-        evolvers: [  ]
+        evolvers: [ "skullDoflamingo3", "skullDoflamingo3", "skullDoflamingo3", "skullDoflamingo3", "skullDoflamingo3" ]
     },
     3701: {
         evolution: 3713,
@@ -5418,6 +5418,26 @@ window.evolutions = {
     3791: {
         evolution: 3792,
         evolvers: [  ]
+    },
+    3009: {
+        evolution: 3805,
+        evolvers: [ "skullSugar", "skullSugar", "skullSugar", "skullSugar", "skullSugar" ]
+    },
+    3806: {
+        evolution: 3807,
+        evolvers: [ "skullDoflamingo4", "skullDoflamingo4", "skullDoflamingo4", "skullDoflamingo4", "skullDoflamingo4" ]
+    },
+    3808: {
+        evolution: 3809,
+        evolvers: [  ]
+    },
+    3810: {
+        evolution: 3811,
+        evolvers: [  ]
+    },
+    3334: {
+        evolution: 3814,
+        evolvers: [ 'skullLuffy2', 'skullLuffy2', 'skullLuffy2', 'skullLuffy2', 'skullLuffy2' ]
     },
     3721: {
         evolution: 3816,
