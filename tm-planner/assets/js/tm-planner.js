@@ -4242,7 +4242,7 @@ $(document).ready(function() {
             // Search for name
             var family = getFamiliesForUnit(origId);
             $.each(family, function(i, e) {
-                searchStr = searchStr + "|(^.*(^|, |and )" + e + "($|,| and).*$)";
+                searchStr = searchStr + "|(^.*(^|, |and )" + e + "($|,| and| \\().*$)";
             });
 
             // Search for cost
