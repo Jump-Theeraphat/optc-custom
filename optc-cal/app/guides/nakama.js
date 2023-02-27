@@ -520,6 +520,7 @@ var nakama = {
     'bb_3672': '6367200',   // Film RED I'm Invincible
     'bb_3743': '6374300',   // Heart Vs. Heavenly Demon
     'bb_3796': '6379600',   // Battle of Demon and Spider
+    'bb_3832': '6383200',   // Little Bro Vs. Big Bros
 
     'wc_2401': '6240700',   // World Clash
 

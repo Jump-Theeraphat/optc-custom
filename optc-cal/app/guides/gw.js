@@ -520,6 +520,7 @@ var gw = {
     'bb_3672': '',      // Film RED I'm Invincible
     'bb_3743': '',      // Heart Vs. Heavenly Demon
     'bb_3796': '',      // Battle of Demon and Spider
+    'bb_3832': '',      // Little Bro Vs. Big Bros
 
     'wc_2401': '130091',// World Clash
 
