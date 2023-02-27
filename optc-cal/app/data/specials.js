@@ -965,4 +965,9 @@ var specials = {
         name: 'I Am Oden',
         thumb: 3815
     },
+    'ev_3835': {
+        type: 'Special Event',
+        name: 'Can I Have A Piece?',
+        thumb: 3835
+    },
 }
