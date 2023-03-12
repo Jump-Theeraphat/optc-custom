@@ -453,6 +453,7 @@ var nakama = {
     3778: '8377800',    // Who's-Who
     3801: '8380100',    // Wyper
     3822: '8382200',    // Izo
+    3842: '8384200',    // Fujitora
 
     // Kizunas
     2518: '9251800',    // Zoro & Sanji (Bartolomeo)

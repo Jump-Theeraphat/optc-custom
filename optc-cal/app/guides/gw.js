@@ -453,6 +453,7 @@ var gw = {
     3778: '',           // Who's-Who
     3801: '',           // Wyper
     3822: '',           // Izo
+    3842: '',           // Fujitora
 
     // Kizunas
     2518: '150056',     // Zoro & Sanji (Bartolomeo)
