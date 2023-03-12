@@ -663,6 +663,10 @@ const Sunny = [ "Sunny", "Thousand Sunny" ];
 const AdioSuerte = [ "Adio Suerte" ];
 const Nozudon = [ "Nozudon" ];
 const Sambel = [ "Sambel" ];
+const Leonero = [ "Leonero" ];
+const Ganryu = [ "Ganryu" ];
+const Skull = [ "Skull" ];
+const Mihal = [ "Mihal" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4388,6 +4392,24 @@ window.families = {
     3820: [ ...WhiteyBay ],
     3821: [ ...MarshallDTeach ],
     3822: [ ...Izo ],
+    3823: [ ...CharlottePerospero ],
+    3824: [ ...CharlottePerospero ],
+    3825: [ ...Jack ],
+    3828: [ ...Inuarashi, ...Nekomamushi ],
+    3829: [ ...PortgasDAce ],
+    3830: [ ...PortgasDAce ],
+    3831: [ ...MonkeyDLuffy ],
+    3832: [ ...MonkeyDLuffy ],
+    3833: [ ...Leonero, ...Ganryu ],
+    3834: [ ...Skull, ...Mihal ],
+    3835: [ ...Yamato ],
+    3836: [ ...Bluejam ],
+    3837: [ ...Porchemy ],
+    3837: [ ...Sabo ],
+    3837: [ ...Sabo ],
+    3837: [ ...Koala ],
+    3837: [ ...Hack ],
+    3837: [ ...Issho ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
