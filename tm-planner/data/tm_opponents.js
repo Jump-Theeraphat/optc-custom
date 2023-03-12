@@ -13078,4 +13078,324 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Fujitora ==========
+    3842: {
+        1871: {
+            name: 'Bellamy',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Fighter/Shooter'],
+                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Shooter'],
+                                ['S Switch -',      '5T, Free Spirit/Fighter/Shooter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Bellamy', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['cd-rew',          '1T'],
+                                ['slot-neg',        '5T, Color'],
+                                ['hp-cut',          '99%'],
+                                ['bar-p',           '2T, 2x']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['slot-change',     'Bad']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '5000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1908: {
+            name: 'Trebol',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/DEX/PSY'],
+                                ['VS Gauge -',      '5T, QCK/DEX/PSY'],
+                                ['S Switch -',      '5T, QCK/DEX/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Trebol', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['bind',            '8T, Row 1'],
+                                ['slot-change',     'Bad, Row 2'],
+                                ['slot-block',      'Row 3'],
+                                ['burn',            '6T, 15000'],
+                                ['def',             '5T, 10000x'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '50%'],
+                                ['chain-down',      '5T, 0.1x']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2418: {
+            name: 'Barto & Cavendish',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Barto & Cavendish', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Empty'],
+                                ['hp-cut',          '10%'],
+                                ['cd-rew',          '2T, Row 2 3'],
+                                ['resil',           '8T'],
+                                ['bar-hit',         '1T, 25x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3642: {
+            name: 'Burgess',
+            type: 'DEX',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Striker/Cerebral/Shooter'],
+                                ['VS Gauge -',      '5T, Striker/Cerebral/Shooter'],
+                                ['S Switch -',      '5T, Striker/Cerebral/Shooter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Burgess', 'DEX'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '4T'],
+                                ['nao',             '99+T'],
+                                ['slot-bind',       '10T, Row 1'],
+                                ['bar-slot',        '1T, 2x, STR'],
+                                ['desp',            '13T, Captain'],
+                                ['chain-down',      '5T, 0.1x'],
+                                ['chain-atk-down',  '5T, <1.5x chain, 90%']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3550: {
+            name: 'Doffy',
+            type: 'STR',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, DEX/QCK/PSY'],
+                                ['VS Gauge -',      '5T, DEX/QCK/PSY'],
+                                ['S Switch -',      '5T, DEX/QCK/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '3T'],
+                                ['atk-down',        '5T, 90%'],
+                                ['nao',             '99+T'],
+                                ['chain-atk-down',  '5T, <2.75x chain, 90%'],
+                                ['desp',            '8T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Doffy', 'STR'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '5T, Col L'],
+                                ['cd-rew',          '2T, Col R'],
+                                ['def-null',        '1T'],
+                                ['def-perc',        '7T, 80%'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Affinity',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['stun',            'Row 3']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3842: {
+            name: 'Fujitora',
+            type: 'STR',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Cerebral/Shooter/Free Spirit'],
+                                ['VS Gauge -',      '5T, Cerebral/Shooter/Free Spirit'],
+                                ['S Switch -',      '5T, Cerebral/Shooter/Free Spirit']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 4,
+                    boss: ['Fujitora', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '3T, Row 2 3'],
+                                ['Fear',            '3T, Row 2 3'],
+                                ['nao',             '99+T'],
+                                ['slot-block',      'All'],
+                                ['bar-p',           '1T, 4x'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 5,
+                    boss: ['Fujitora', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '5T, Row 1'],
+                                ['silence',         '5T, Row 2 3'],
+                                ['chain-down',      '5T, 0.1x'],
+                                ['chain-atk-down',  '1T, <4x chain, 90%'],
+                                ['bar-slot',        '1T, 3x, DEX'],
+                                ['def',             '5T, 10000x'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
