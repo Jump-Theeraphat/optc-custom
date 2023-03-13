@@ -993,6 +993,10 @@ function createActionCounterBtn(guideActionClone, counter) {
         guideFilterClone = $('#guide-ca-filter-clone').clone();
         guideFilterClass = 'guide-ca-filter';
         counter = counter.substring(2);
+    } else if (counter.indexOf('sv_') !== -1) {
+        guideFilterClone = $('#guide-sv-filter-clone').clone();
+        guideFilterClass = 'guide-sv-filter';
+        counter = counter.substring(3);
     } else {
         guideFilterClone = $('#guide-sp-filter-clone').clone();
         guideFilterClass = 'guide-sp-filter';
@@ -1008,6 +1012,8 @@ function createActionCounterBtn(guideActionClone, counter) {
         tooltip = "Sailor: " + tooltip;
     else if (guideFilterClass === 'guide-ca-filter')
         tooltip = "Captain: " + tooltip;
+    else if (guideFilterClass === 'guide-sv-filter')
+        tooltip = "Super/VS: " + tooltip;
     createTooltip(guideFilterClone.find('.' + guideFilterClass), tooltip);
 
     guideActionClone.find('.guide-filter-list').append(guideFilterClone);
@@ -2093,6 +2099,13 @@ function clearCaptainFilters() {
     });
 }
 
+function clearSuperFilters() {
+    $('.sv-filter').removeClass('selected');
+    $('.booster, .booster-clone').removeClass(function(i, cName) {
+        return (cName.match(/(^|\s)sv-filtered-\S+/g) || []).join(' ');
+    });
+}
+
 function modifyCharStyle(chars) {
     chars = chars.replace(/\[/g, "");
     chars = chars.replace(/\]/g, "");
@@ -2724,6 +2737,11 @@ $(document).ready(function() {
         createTooltip($(this), getIconTooltip(filter));
     });
 
+    $('.sv-filter').each(function() {
+        var filter = $(this).data('filter');
+        createTooltip($(this), getIconTooltip(filter));
+    });
+
     $('.sup-filter').each(function() {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
@@ -3096,6 +3114,7 @@ $(document).ready(function() {
         clearSpecialFilters();
         clearSailorFilters();
         clearCaptainFilters();
+        clearSuperFilters();
 
         var opId = $(this).closest('.team').data('op_id');
         var op = tm_opponents[tmId][opId];
@@ -3292,6 +3311,15 @@ $(document).ready(function() {
         // Activate actual Filter
         var filter = $(this).data('filter');
         $('.ca-filter[data-filter=' + filter  + ']').click();
+    });
+
+    // Activate Counter Super/VS Filter after clicking from Mini Guide
+    $(document).on('click', '.guide-sv-filter', function() {
+        $(this).toggleClass('selected');
+
+        // Activate actual Filter
+        var filter = $(this).data('filter');
+        $('.sv-filter[data-filter=' + filter  + ']').click();
     });
 
     // Change Boss HP and ATK based on Nav Lv
@@ -3793,6 +3821,49 @@ $(document).ready(function() {
         }
     });
 
+    // Super/VS Filter
+    $('.sv-filter').click(function() {
+        var filter = $(this).data('filter');
+        var filterClass = 'sv-filtered-' + filter;
+        var filterRegex = filter_map_sp[filter];
+
+        if ($(this).hasClass('selected')) {
+            // Clear filters of units filtered by this special
+            $(this).removeClass('selected');
+            $('.' + filterClass).removeClass(filterClass);
+        } else {
+            $(this).addClass('selected');
+
+            $('.booster, .booster-clone').each(function() {
+                var unitId = $(this).data('id');
+                var origId = unitId;
+
+                if (unitId > 9000)
+                    unitId = parseVsUnitId(unitId);
+
+                var unitDetail = details[unitId];
+
+                if (unitDetail.superSpecial || unitDetail.VSSpecial) {
+                    var superVs;
+                    if (origId > 9000) {
+                        // VS Units
+                        if (origId % 2 === 1)
+                            superVs = unitDetail.VSSpecial.character1;
+                        else
+                            superVs = unitDetail.VSSpecial.character2;
+                    } else
+                        superVs = unitDetail.superSpecial;
+
+                    if (!filterRegex.test(superVs))
+                        $(this).addClass(filterClass);
+                } else {
+                    // Units w/ no Super/VS Special
+                    $(this).addClass(filterClass);
+                }
+            });
+        }
+    });
+
     // Support filter
     var supportFilters = [];
     $('.sup-filter').click(function() {
@@ -3849,6 +3920,8 @@ $(document).ready(function() {
             clearSailorFilters();
         } else if ('captain' === target) {
             clearCaptainFilters();
+        } else if ('super' === target) {
+            clearSuperFilters();
         }
     });
 
@@ -3866,6 +3939,8 @@ $(document).ready(function() {
         clearSailorFilters();
 
         clearCaptainFilters();
+
+        clearSuperFilters();
     });
 
     $('.sup-filter-clear-all-btn').click(function() {

@@ -245,7 +245,11 @@ span.x_pts {
 .booster[class^="ca-filtered-"],
 .booster[class*=" ca-filtered-"],
 .booster-clone[class^="ca-filtered-"],
-.booster-clone[class*=" ca-filtered-"] {
+.booster-clone[class*=" ca-filtered-"],
+.booster[class^="sv-filtered-"],
+.booster[class*=" sv-filtered-"],
+.booster-clone[class^="sv-filtered-"],
+.booster-clone[class*=" sv-filtered-"] {
     opacity: .3;
 }
 
@@ -368,7 +372,7 @@ div#support-filters {
 
 #tm-filter-sets {
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px 250px 250px 250px 250px 250px 250px;
     overflow: auto;
 }
 
@@ -525,6 +529,7 @@ button.cal-button:hover {
 #guide-sp-filter-clone,
 #guide-sl-filter-clone,
 #guide-ca-filter-clone,
+#guide-sv-filter-clone,
 #guide-tc-filter-clone {
     display: none;
 }
@@ -545,6 +550,7 @@ button.cal-button:hover {
 .guide-sp-filter,
 .guide-sl-filter,
 .guide-ca-filter,
+.guide-sv-filter,
 .guide-tc-filter {
     float: left;
     height: 25px;
@@ -559,6 +565,7 @@ button.cal-button:hover {
 .guide-sp-filter,
 .guide-sl-filter,
 .guide-ca-filter,
+.guide-sv-filter,
 .guide-tc-filter {
     opacity: .3;
 }
@@ -566,6 +573,7 @@ button.cal-button:hover {
 .guide-sp-filter.selected,
 .guide-sl-filter.selected,
 .guide-ca-filter.selected,
+.guide-sv-filter.selected,
 .guide-tc-filter.selected {
     opacity: 1;
 }
