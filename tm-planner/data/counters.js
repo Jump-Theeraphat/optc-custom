@@ -1,7 +1,7 @@
 var counters = {
     //'atk-boost':        'clear-buff',
     //'orb-boost':        'clear-buff',
-    'atk-down':         'atk-down-red',
+    'atk-down':         ['atk-down-red', 'c_atk-down-red'],
     'bar-slot':         'bar-red-e',
     'bar-hit':          'bar-red-e',
     'bar-p':            'bar-red-e',
@@ -10,7 +10,7 @@ var counters = {
     'bar-hp':           'bar-red-e',
     'bind':             ['bind-red', 'c_bind-red'],
     'blind':            ['blind-red', 's_blind-red'],
-    'burn':             'burn-red',
+    'burn':             ['burn-red', 's_burn-red', 'c_burn-red'],
     'cd-rew':           ['cd-red', 's_cd-red', 'c_cd-red'],
     'chain-atk-down':   ['chain-boost', 'chain-lock', 'chain-bound'],
     'chain-down':       ['chain-lock', 'chain-bound', 'chain-down-red'],
