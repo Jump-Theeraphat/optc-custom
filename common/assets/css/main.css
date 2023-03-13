@@ -138,6 +138,10 @@ body {
     display: none;
 }
 
+#tm-footer {
+    display: none;
+}
+
 .nav-button {
     margin: 5px;
     width: 100%;

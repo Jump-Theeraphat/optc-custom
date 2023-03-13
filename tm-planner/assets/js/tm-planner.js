@@ -3,6 +3,11 @@ function highlightNavbar() {
     $('#tm-planner-nav').addClass('active');
 }
 
+// Show footer
+function showFooter() {
+    $('#tm-footer').show();
+}
+
 function createTooltip(imgDiv, text) {
     imgDiv.data('toggle', 'tooltip');
     imgDiv.data('placement', 'top');
