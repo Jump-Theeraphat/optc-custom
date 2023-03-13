@@ -2533,12 +2533,17 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                     special = spDesc.character1;
                 else
                     special = spDesc.character2;
-            } else if (Array.isArray(spDesc))
+            } else if (Array.isArray(spDesc)) {
                 special = spDesc[spDesc.length - 1].description;
-            else if (spDesc.character1)
+            } else if (spDesc.character1) {
+                // Dual Units w/ different Special
                 special = spDesc.character1;
-            else
+            } else if (spDesc.llbbase) {
+                // LLB Special
+                special = spDesc.llbbase;
+            } else {
                 special = spDesc;
+            }
 
             if (specialRegex.test(special)) {
                 if (turnsNeeded) {
