@@ -13102,9 +13102,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Bellamy', 'STR'],
-                    hp: 0,
+                    hp: 1600000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -13127,6 +13126,19 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['dmg-normal',      '5000']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-block',      'All']
                             ]
                         }
                     ]
@@ -13154,9 +13166,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Trebol', 'INT'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -13177,6 +13188,26 @@ var tm_opponents = {
                             action: [
                                 ['heal',            '50%'],
                                 ['chain-down',      '5T, 0.1x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-block',      'All']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['dmg-up',          '8T'],
+                                ['def-perc',        '3T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -13204,9 +13235,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Barto & Cavendish', 'QCK'],
-                    hp: 0,
+                    hp: 1200000,
                     atk: 0,
-                    hp_: 1500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -13218,6 +13248,14 @@ var tm_opponents = {
                                 ['resil',           '8T'],
                                 ['bar-hit',         '1T, 25x'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['hp-cut',          '?%'],
+                                ['dmg-up',          '6T'],
+                                ['def',             '6T']
                             ]
                         }
                     ]
@@ -13245,9 +13283,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Burgess', 'DEX'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -13260,6 +13297,27 @@ var tm_opponents = {
                                 ['desp',            '13T, Captain'],
                                 ['chain-down',      '5T, 0.1x'],
                                 ['chain-atk-down',  '5T, <1.5x chain, 90%']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-bind',       '5T, Row 2 3']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['hp-cut',          '30%'],
+                                ['no-heal',         '5T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['atk',             '5T'],
+                                ['atk-down',        '5T']
                             ]
                         }
                     ]
@@ -13286,10 +13344,9 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
-                    hp: 0,
+                    boss: ['Doffy', 'STR'],
+                    hp: 3000000,
                     atk: 0,
-                    hp_: 2500000,
                     atk_: 6600,
                     detail: [
                         {
@@ -13301,6 +13358,18 @@ var tm_opponents = {
                                 ['chain-atk-down',  '5T, <2.75x chain, 90%'],
                                 ['desp',            '8T'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['slot-bind',       '10T']
                             ]
                         }
                     ]
@@ -13328,6 +13397,26 @@ var tm_opponents = {
                                 ['cd-rew',          '2T'],
                                 ['stun',            'Row 3']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def',             '5T'],
+                                ['slot-bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['blow-away',       '99+T, Random 1']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
+                            ]
                         }
                     ]
                 }
@@ -13353,10 +13442,9 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 4,
-                    boss: ['Fujitora', '?'],
-                    hp: 0,
+                    boss: ['Fujitora', 'STR'],
+                    hp: 2000000,
                     atk: 0,
-                    hp_: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -13370,15 +13458,32 @@ var tm_opponents = {
                                 ['def-thres',       '6T, 99%, 1000'],
                                 ['immu-delay',      '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['Ship Bind',       '10T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['atk-down',        '5T']
+                            ]
                         }
                     ]
                 },
                 {
                     stageNum: 5,
                     boss: ['Fujitora', 'STR'],
-                    hp: 0,
+                    hp: 3500000,
                     atk: 0,
-                    hp_: 3500000,
                     atk_: 9600,
                     detail: [
                         {
@@ -13391,6 +13496,31 @@ var tm_opponents = {
                                 ['bar-slot',        '1T, 3x, DEX'],
                                 ['def',             '5T, 10000x'],
                                 ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def-perc',        '6T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['blow-away',       '5T, Random 2']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-change',     'Para']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
