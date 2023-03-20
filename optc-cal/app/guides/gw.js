@@ -499,6 +499,7 @@ var gw = {
     3784: '',           // Chopper 6+
     3807: '',           // Doffy v2
     3828: '',           // Inu & Neko 6+
+    3848: '',           // Garp
 
     // Events
     'bb_1314': '61665', // Three Admirals
