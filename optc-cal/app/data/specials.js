@@ -975,4 +975,9 @@ var specials = {
         name: 'Can I Have A Piece?',
         thumb: 3835
     },
+    'ev_3855': {
+        type: 'Special Event',
+        name: 'Plotting Numbers',
+        thumb: 3855
+    },
 }
