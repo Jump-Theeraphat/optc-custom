@@ -3630,4 +3630,9 @@ var specialBgEvents = [
         start: '2023-04-01',
         pst_19: false
     },
+    {
+        id: 'laboon_ship',
+        start: '2023-04-03',
+        end: '2023-04-20'
+    },
 ]

@@ -146,4 +146,7 @@ var specials_bg = {
     'stampede_ship': {
         thumb: 'stampede_ship'
     },
+    'laboon_ship': {
+        thumb: 'laboon_ship'
+    },
 }
