@@ -224,6 +224,7 @@ var nakama = {
     3399: '4339900',    // Buggy's Delivery
     3671: '4367100',    // Summer Jinbe
     3856: '',           // Three Captains
+    3857: '',           // Three Captains
 
     1623: '4162300',    // Doflamingo (N)
     1647: '4164700',    // Pica (N)

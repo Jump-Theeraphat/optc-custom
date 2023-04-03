@@ -297,6 +297,10 @@ var raids = {
         name: 'Three Captains',
         thumb: 3856
     },
+    3857: {
+        name: 'Three Captains (99*)',
+        thumb: 3857
+    },
 
     // Neo Raids
     1623: {
