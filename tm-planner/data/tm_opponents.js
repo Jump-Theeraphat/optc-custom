@@ -13003,7 +13003,7 @@ var tm_opponents = {
                     ]
                 },
                 {
-                    stageNum: 4,
+                    stageNum: 2,
                     boss: ['Izo', 'QCK'],
                     hp: 2000000,
                     atk: 0,
@@ -13029,7 +13029,7 @@ var tm_opponents = {
                     ]
                 },
                 {
-                    stageNum: 5,
+                    stageNum: 3,
                     boss: ['Izo', 'QCK'],
                     hp: 3500000,
                     atk: 0,
@@ -13441,7 +13441,7 @@ var tm_opponents = {
                     ]
                 },
                 {
-                    stageNum: 4,
+                    stageNum: 2,
                     boss: ['Fujitora', 'STR'],
                     hp: 2000000,
                     atk: 0,
@@ -13480,7 +13480,7 @@ var tm_opponents = {
                     ]
                 },
                 {
-                    stageNum: 5,
+                    stageNum: 3,
                     boss: ['Fujitora', 'STR'],
                     hp: 3500000,
                     atk: 0,
@@ -13521,6 +13521,337 @@ var tm_opponents = {
                             type: '<20%',
                             action: [
                                 ['dmg-normal',      'Deadly']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Bege ==========
+    3864: {
+        654: {
+            name: 'Duval',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Duval', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '4T'],
+                                ['burn',            '4T, 20000'],
+                                ['def',             '5T, 10000x'],
+                                ['def-perc',        '5T, 90%']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '1.5M'],
+                                ['dmg-normal',      '30000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        924: {
+            name: ['Ki', 'd'],
+            type: ['STR', 'INT'],
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/PSY/INT'],
+                                ['VS Gauge -',      '5T, QCK/PSY/INT'],
+                                ['S Switch -',      '5T, QCK/PSY/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kid', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['type-change',     'STR/INT'],
+                                ['silence',         '7T'],
+                                ['slot-block',      'All'],
+                                ['chain-atk-down',  '3T, <3x chain, 90%'],
+                                ['chain-atk-down',  '3T, >4x chain, 90%'],
+                                ['resil',           '5T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        967: {
+            name: 'Law',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Cerebral/Slasher/Powerhouse'],
+                                ['VS Gauge -',      '5T, Cerebral/Slasher/Powerhouse'],
+                                ['S Switch -',      '5T, Cerebral/Slasher/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Law', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['chain-lock',      '5T, 1.1x'],
+                                ['slot-block',      'All'],
+                                ['blind',           '5T'],
+                                ['Swap Captain',    '5T, Bottom Right'],
+                                ['def-perc',        '5T, 90%']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Affinity',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['cd-rew',          '2T, Row 2 3']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2193: {
+            name: 'Kuma',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Driven/Striker/Slasher'],
+                                ['VS Gauge -',      '5T, Driven/Striker/Slasher'],
+                                ['S Switch -',      '5T, Driven/Striker/Slasher']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kuma', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['cd-rew',          '1T'],
+                                ['nao',             '99+T'],
+                                ['chain-down',      '5T, 0.01x'],
+                                ['atk-down',        '5T, 99%'],
+                                ['def-perc',        '6T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1239: {
+            name: 'Kizaru',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Fighter/Free Spirit/Powerhouse'],
+                                ['VS Gauge -',      '5T, Fighter/Free Spirit/Powerhouse'],
+                                ['S Switch -',      '5T, Fighter/Free Spirit/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '3T'],
+                                ['desp',            '6T'],
+                                ['slot-change',     'Bad'],
+                                ['slot-neg',        '5T, Color'],
+                                ['nao',             '99+T'],
+                                ['bar-hp',          '2T, 10M']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kizaru', 'INT'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hunger',          '3x'],
+                                ['bind',            '9T, Row 1'],
+                                ['cd-rew',          '1T'],
+                                ['atk-down',        '5T, 90%'],
+                                ['para',            '2T'],
+                                ['slot-block',      'All'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '100K']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3864: {
+            name: 'Bege',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/PSY/INT'],
+                                ['VS Gauge -',      '5T, QCK/PSY/INT'],
+                                ['S Switch -',      '5T, QCK/PSY/INT'],
+                                ['slot-change',     'INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['dmg-normal',      '30000'],
+                                ['Fear',            '3T, Row 2 3'],
+                                ['bind',            '9T, Row 1'],
+                                ['nao',             '99+T'],
+                                ['chain-atk-down',  '5T, <2.5x chain, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '30000']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 4,
+                    boss: ['Bege', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '4T, Row 2 3'],
+                                ['slot-block',      'All'],
+                                ['chain-down',      '5T, 0.1x'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['def',             '5T, 100Kx'],
+                                ['bar-hit',         '2T, 20x']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Chain Lock',
+                            action: [
+                                ['bind',            '6T, Row 3'],
+                                ['def-null',        '1T']
                             ]
                         }
                     ]
