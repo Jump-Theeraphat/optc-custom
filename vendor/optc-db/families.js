@@ -667,6 +667,12 @@ const Leonero = [ "Leonero" ];
 const Ganryu = [ "Ganryu" ];
 const Skull = [ "Skull" ];
 const Mihal = [ "Mihal" ];
+const WoopSlap = [ "Woop Slap" ];
+const Cornelia = [ "Cornelia" ];
+const Kotatsu = [ "Kotatsu" ];
+const Inbi = [ "Inbi" ];
+const Fuga = [ "Fuga" ];
+const Zanki = [ "Zanki" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4410,6 +4416,28 @@ window.families = {
     3840: [ ...Koala ],
     3841: [ ...Hack ],
     3842: [ ...Issho ],
+    3843: [ ...Dadan ],
+    3844: [ ...Makino, ...WoopSlap ],
+    3845: [ ...Shanks, ...BenBeckman, ...LuckyRoux, ...Yasopp ],
+    3846: [ ...Cornelia, ...Kotatsu ],
+    3847: [ ...MonkeyDGarp ],
+    3848: [ ...MonkeyDGarp ],
+    3849: [ ...Killer ],
+    3850: [ ...Killer ],
+    3851: [ ...BasilHawkins ],
+    3852: [ ...BasilHawkins ],
+    3853: [ ...RoronoaZoro ],
+    3854: [ ...XDrake ],
+    3855: [ ...Inbi, ...Fuga, ...Zanki ],
+    3856: [ ...MonkeyDLuffy, ...TrafalgarDWaterLaw, ...EustassKid ],
+    3857: [ ...MonkeyDLuffy, ...TrafalgarDWaterLaw, ...EustassKid ],
+    3858: [ ...ScratchmenApoo ],
+    3859: [ ...ScratchmenApoo ],
+    3860: [ ...JewelryBonney ],
+    3861: [ ...JewelryBonney ],
+    3862: [ ...MarshallDTeach ],
+    3863: [ ...Urouge ],
+    3864: [ ...CaponeBege ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
