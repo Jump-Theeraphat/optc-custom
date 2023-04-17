@@ -503,6 +503,7 @@ var nakama = {
     3807: '9380700',    // Doffy v2
     3828: '9382800',    // Inu & Neko 6+
     3848: '9384800',    // Garp
+    3868: '9386800',    // Barto & Hakuba 6+
 
     // Events
     'bb_1314': '6131400',   // Three Admirals

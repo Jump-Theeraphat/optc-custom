@@ -503,6 +503,7 @@ var gw = {
     3807: '',           // Doffy v2
     3828: '',           // Inu & Neko 6+
     3848: '',           // Garp
+    3868: '',           // Barto & Hakuba 6+
 
     // Events
     'bb_1314': '61665', // Three Admirals
