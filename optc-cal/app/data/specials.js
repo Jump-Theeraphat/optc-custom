@@ -980,4 +980,9 @@ var specials = {
         name: 'Plotting Numbers',
         thumb: 3855
     },
+    'ev_3874': {
+        type: 'Special Event',
+        name: 'Blue Flame to the Rescue',
+        thumb: 3874
+    },
 }

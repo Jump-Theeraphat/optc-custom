@@ -592,6 +592,7 @@ var gw = {
     'ev_3815': '',      // I Am Oden
     'ev_3835': '',      // Can I Have A Piece?
     'ev_3855': '',      // Plotting Numbers
+    'ev_3874': '',      // Blue Flame to the Rescue
 
     'wa_2700': '181868',// Land of Wano Kaido
     'wa_2815': '182349',// Land of Wano O-Tama
