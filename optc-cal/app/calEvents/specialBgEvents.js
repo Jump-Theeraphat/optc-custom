@@ -3635,4 +3635,21 @@ var specialBgEvents = [
         start: '2023-04-03',
         end: '2023-04-20'
     },
+    {
+        id: 'free_pull',
+        start: '2023-05-06',
+        end: '2023-05-11'
+    },
+    {
+        id: '3rd_anni_ship_sp',
+        start: '2023-04-28',
+        end: '2023-05-17',
+        pst_19: true
+    },
+    {
+        id: '3rd_anni_ship',
+        start: '2023-05-17',
+        end: '2023-06-24',
+        pst_19: true
+    },
 ]
