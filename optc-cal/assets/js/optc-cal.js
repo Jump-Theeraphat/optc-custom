@@ -16,6 +16,7 @@ function showFooter() {
     const coliColorRep = 'rgba(30, 144, 255, 0.3)';
     const tmColor = 'rgba(255, 165, 0, 0.6)';
     const kizunaColor = 'rgba(255, 140, 0, 0.6)';
+    const pkaColor = 'rgba(250, 128, 114, 0.6)';
     const spColor = 'rgba(147, 112, 219, 0.6)';
 
     function createFortnightEvent(eventArray, isPST) {
@@ -326,7 +327,7 @@ function showFooter() {
             var start = e['start'];
             var end = e['end'];
 
-            if (!isPST && e['pst_19']) {
+            if (!isPST) {
                 var startDate = moment(start);
                 startDate.add(1, 'd');
                 start = startDate.format('YYYY-MM-DD');
@@ -343,6 +344,46 @@ function showFooter() {
             res['end'] = end;
 
             res['color'] = kizunaColor;
+            res['textColor'] = 'black';
+
+            eventArray.push(res);
+        });
+    }
+
+    function createPkaEvent(eventArray, isPST) {
+        pkaEvents.forEach(function(e) {
+            var res = {};
+
+            var eId = e['id'];
+
+            var pka = pkas[eId];
+            res['id'] = eId;
+            res['title'] = '『PKA』\n' + pka['name'];
+            res['thumb'] = pka['thumb'];
+
+            res['type'] = 'pka';
+
+            // Add one day for 19:00 events for GMT mode
+            var start = e['start'];
+            var end = e['end'];
+
+            if (!isPST) {
+                var startDate = moment(start);
+                startDate.add(1, 'd');
+                start = startDate.format('YYYY-MM-DD');
+
+                if (end) {
+                    var endDate = moment(end);
+                    endDate.add(1, 'd');
+                    end = endDate.format('YYYY-MM-DD');
+                }
+            }
+
+            start += ' 02:30';
+            res['start'] = start;
+            res['end'] = end;
+
+            res['color'] = pkaColor;
             res['textColor'] = 'black';
 
             eventArray.push(res);
@@ -552,6 +593,8 @@ function showFooter() {
                     data = tms[id];
                 else if (e['type'] === 'kizuna')
                     data = kizunas[id];
+                else if (e['type'] === 'pka')
+                    data = pkas[id];
                 else if (e['type'] === 'special')
                     data = specials[id];
 
@@ -568,7 +611,8 @@ function showFooter() {
                 if (
                     e['type'] === 'raid' ||
                     e['type'] === 'coliseum' ||
-                    e['type'] === 'tm'
+                    e['type'] === 'tm' ||
+                    e['type'] === 'pka'
                 )
                     createListItem(ed, '.db', 'https://optc-db.github.io/characters/#/view/', id, 'OPTC-DB Character Page');
 
@@ -685,6 +729,7 @@ function showFooter() {
         createColiseumEvent(eventArray, isPST);
         createTmEvent(eventArray, isPST);
         createKizunaEvent(eventArray, isPST);
+        createPkaEvent(eventArray, isPST);
         createSpecialEvent(eventArray, isPST);
         createSpecialBgEvent(eventArray, isPST);
 
@@ -727,6 +772,7 @@ function showFooter() {
                     || event['type'] === 'raid'
                     || event['type'] === 'tm'
                     || event['type'] === 'kizuna'
+                    || event['type'] === 'pka'
                     || (event['type'] === 'special' && event['id'] !== 'dummy')
                 ) {
                     var thumbArray = [];
@@ -815,6 +861,7 @@ function showFooter() {
                     || event['type'] === 'coliseum'
                     || event['type'] === 'tm'
                     || event['type'] === 'kizuna'
+                    || event['type'] === 'pka'
                     || (event['type'] === 'special' && event['subType'] === 'Blitz Battle')
                     || (event['type'] === 'special' && event['subType'] === 'Face Off')
                     || (event['type'] === 'special' && event['subType'] === 'World Clash')
