@@ -130,6 +130,11 @@ var specials = {
         name: 'Little Bro Vs. Big Bros (1am ~ 6am)',
         thumb: 3832
     },
+    'bb_3887': {
+        type: 'Blitz Battle',
+        name: '9th Anniversary (1am ~ 6am)',
+        thumb: 3887
+    },
 
     'wc_2401': {
         type: 'World Clash',
