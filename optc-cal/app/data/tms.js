@@ -314,4 +314,9 @@ var tms = {
         thumb: 3864,
         info: ''
     },
+    3894: {
+        name: 'Momonosuke (1am ~ 6am)',
+        thumb: 3894,
+        info: ''
+    },
 };
