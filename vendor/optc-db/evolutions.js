@@ -5487,6 +5487,34 @@ window.evolutions = {
         evolution: 3861,
         evolvers: [  ]
     },
+    2418: {
+        evolution: 3868,
+        evolvers: [ "skullBartoCav", "skullBartoCav", "skullBartoCav", "skullDEX", "skullQCK" ]
+    },
+    3869: {
+        evolution: 3870,
+        evolvers: [  ]
+    },
+    3877: {
+        evolution: 3878,
+        evolvers: [  ]
+    },
+    3879: {
+        evolution: 3880,
+        evolvers: [  ]
+    },
+    2936: {
+        evolution: 3886,
+        evolvers: [ "skullRookieLuffy", "skullRookieLuffy", "skullRookieLuffy", "skullRookieLuffy", "skullRookieLuffy" ]
+    },
+    3888: {
+        evolution: 3889,
+        evolvers: [  ]
+    },
+    3890: {
+        evolution: 3891,
+        evolvers: [  ]
+    },
     4986: {
         evolution: 4987,
         evolvers: [ 118, 86, 266, 302, 267 ]
