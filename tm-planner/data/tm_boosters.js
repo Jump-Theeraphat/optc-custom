@@ -14955,39 +14955,39 @@ var tm_boosters = {
             id: 2976,
             x_pts: 1.35
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             x_pts: 1.35
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             x_pts: 1.35
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             x_pts: 1.35
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             x_pts: 1.35
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             x_pts: 1.35
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             x_pts: 1.35
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             x_pts: 1.35
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             x_pts: 1.35
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             x_pts: 1.35
         },
@@ -15745,47 +15745,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -16260,47 +16260,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -16820,47 +16820,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -17354,47 +17354,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -17935,47 +17935,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -18404,47 +18404,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -18988,47 +18988,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -19748,39 +19748,39 @@ var tm_boosters = {
             id: 3150,
             x_pts: 1.1
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             x_pts: 1.1
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             x_pts: 1.1
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             x_pts: 1.1
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             x_pts: 1.1
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             x_pts: 1.1
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             x_pts: 1.1
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             x_pts: 1.1
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             x_pts: 1.1
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             x_pts: 1.1
         },
@@ -20368,39 +20368,39 @@ var tm_boosters = {
             id: 3197,
             x_pts: 1.1
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             x_pts: 1.1
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             x_pts: 1.1
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             x_pts: 1.1
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             x_pts: 1.1
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             x_pts: 1.1
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             x_pts: 1.1
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             x_pts: 1.1
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             x_pts: 1.1
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             x_pts: 1.1
         },
@@ -20986,39 +20986,39 @@ var tm_boosters = {
             id: 3197,
             x_pts: 1.1
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             x_pts: 1.1
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             x_pts: 1.1
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             x_pts: 1.1
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             x_pts: 1.1
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             x_pts: 1.1
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             x_pts: 1.1
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             x_pts: 1.1
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             x_pts: 1.1
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             x_pts: 1.1
         },
@@ -21438,47 +21438,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -21913,47 +21913,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -22434,47 +22434,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -22910,47 +22910,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -23381,47 +23381,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -23842,47 +23842,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -24293,47 +24293,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -24749,47 +24749,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -25252,47 +25252,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -25733,47 +25733,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -26189,47 +26189,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -26820,47 +26820,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -27458,47 +27458,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -27964,47 +27964,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -28520,47 +28520,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -29026,47 +29026,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -29542,47 +29542,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -30038,47 +30038,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -30534,47 +30534,47 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2
@@ -30660,7 +30660,7 @@ var tm_boosters = {
             ver: 4,
             x_pts: 1.35
         },
-        {   // Zoro
+        {   // Onigashima Zoro v3
             id: 3853,
             ver: 4,
             x_pts: 1.35
@@ -31035,47 +31035,587 @@ var tm_boosters = {
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Luffy
+        {   // PSY Luffy
             id: 2936,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Zoro
+        {   // PSY Zoro
             id: 2938,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Nami
+        {   // PSY Nami
             id: 2940,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Usopp
+        {   // PSY Usopp
             id: 2942,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Sanji
+        {   // PSY Sanji
             id: 2944,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Chopper
+        {   // PSY Chopper
             id: 2946,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Robin
+        {   // PSY Robin
             id: 2948,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Franky
+        {   // PSY Franky
             id: 2950,
             type: 'other',
             x_pts: 1.2
         },
-        {   // ST Brook
+        {   // PSY Brook
+            id: 2952,
+            type: 'other',
+            x_pts: 1.2
+        },
+    ],
+
+    // ========== Momonosuke ==========
+    3894: [
+        {   // Sanji v5
+            id: 3889,
+            x_pts: 1.8
+        },
+        {   // Queen v2
+            id: 3891,
+            x_pts: 1.65
+        },
+        {   // Onigashima Jinbe
+            id: 3892,
+            x_pts: 1.5
+        },
+        {   // Onigashima Chopper
+            id: 3893,
+            x_pts: 1.5
+        },
+        {   // Jack v2
+            id: 3870,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {   // Luffy & Yamato
+            id: 3877,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {   // Luffy & Yamato
+            id: 3878,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {   // Oden & Toki
+            id: 3880,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {   // Bege
+            id: 3864,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {   // Big Mom v2
+            id: 2536,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Killer
+            id: 3850,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Hawkins v2
+            id: 3852,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Barto & Cavendish 6+
+            id: 3868,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Onigashima Zoro v3
+            id: 3853,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Drake v4
+            id: 3854,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Ulti v2
+            id: 3871,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Black Maria v2
+            id: 3872,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Page One v3
+            id: 3873,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Onigashima Nami
+            id: 3881,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Onigashima Robin v2
+            id: 3882,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Onigashima Usopp v2
+            id: 3883,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // PKA Roger
+            id: 3885,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Marco
+            id: 3874,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // Kaido
+            id: 3887,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // PSY Luffy 5+
+            id: 3886,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // PSY Jinbe
+            id: 3884,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {   // MUGIWARA 56 Sanji
+            id: 3364,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Koala
+            id: 3462,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Croc v2
+            id: 3483,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Mr. 2
+            id: 3523,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Carrot & Wanda
+            id: 3543,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Izo & Kiku
+            id: 3563,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Blackbeard v4
+            id: 3641,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Hina
+            id: 3735,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Jinbe v3
+            id: 3775,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Bonney v2
+            id: 3861,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Kizaru
+            id: 2064,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Reiju
+            id: 3022,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Pudding
+            id: 3115,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Koala
+            id: 3339,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Hyogoro
+            id: 3506,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Sabo
+            id: 3621,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // O-Lin
+            id: 3758,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Wyper
+            id: 3801,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Fujitora
+            id: 3842,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Momonosuke
+            id: 3894,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Luffy & Law & Kid 5+
+            id: 3857,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Garp 5+
+            id: 3848,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Numbers
+            id: 3855,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {   // Sanji 6+
+            id: 2245,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Red Hair Pirates 6+
+            id: 3845,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Urouge
+            id: 3582,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Kaido VS Yamato (Kaido)
+            id: 9007,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Kaido VS Yamato (Yamato)
+            id: 9008,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Ace v3
+            id: 3830,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Kid Luffy
+            id: 3832,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Sabo v5
+            id: 3839,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {   // Leonero & Ganryu
+            id: 3833,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Skull & Mihal
+            id: 3834,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Koala v5
+            id: 3840,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Hack v2
+            id: 3841,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // MUGIWARA 56 Luffy
+            id: 3365,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // MUGIWARA 56 Chopper
+            id: 3366,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // MUGIWARA 56 Nami
+            id: 3367,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Lucci
+            id: 3484,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Eneru
+            id: 3485,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Blackbeard
+            id: 3862,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Urouge
+            id: 3863,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {   // Shiki
+            id: 1108,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Blackbeard v2
+            id: 2197,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Arlong
+            id: 2356,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Shanks & Mihawk
+            id: 2819,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Bonney
+            id: 2846,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Kaido
+            id: 2922,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Kaido 5+
+            id: 2923,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Brook
+            id: 3078,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Nami & Shinobu
+            id: 3143,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Marco
+            id: 3263,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Buggy's Delivery
+            id: 3399,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Summer Jinbe
+            id: 3671,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {   // Saga
+            id: 1089,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Nekomamushi
+            id: 1733,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Law
+            id: 2649,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Shutenmaru
+            id: 2813,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Komurasaki
+            id: 2869,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Inuarashi v2
+            id: 2908,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // King
+            id: 2990,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // O-Kiku
+            id: 3083,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Drake v2
+            id: 3210,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Kawamatsu
+            id: 3269,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Luffy
+            id: 3499,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Hawkins v2
+            id: 3580,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Sasaki
+            id: 3773,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {   // Perona
+            id: 392,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {   // Haruta
+            id: 1509,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {   // Marco
+            id: 1995,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {   // Pizza Festival Chopper
+            id: 2093,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {   // Ann
+            id: 2665,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {   // Yamato
+            id: 3835,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Luffy
+            id: 2936,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Zoro
+            id: 2938,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Nami
+            id: 2940,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Usopp
+            id: 2942,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Sanji
+            id: 2944,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Chopper
+            id: 2946,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Robin
+            id: 2948,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Franky
+            id: 2950,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {   // PSY Brook
             id: 2952,
             type: 'other',
             x_pts: 1.2

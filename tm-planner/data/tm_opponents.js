@@ -13969,4 +13969,378 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Momonosuke ==========
+    3894: {
+        3595: {
+            name: 'Marco',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Driven/Powerhouse/Cerebral'],
+                                ['VS Gauge -',      '5T, Driven/Powerhouse/Cerebral'],
+                                ['S Switch -',      '5T, Driven/Powerhouse/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '5T, 90%'],
+                                ['desp',            '8T'],
+                                ['def-perc',        '5T, 90%'],
+                                ['bar-hit',         '1T, 25x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Marco', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['silence',         '5T'],
+                                ['para',            '6T, Row 1'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['resil',           '3T'],
+                                ['def',             '1T, 10000x']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['blow-away',       '3T, Captain']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3870: {
+            name: 'Jack',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/DEX/STR'],
+                                ['VS Gauge -',      '5T, QCK/DEX/STR'],
+                                ['S Switch -',      '5T, QCK/DEX/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Jack', 'STR'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '5T, Row 2 3'],
+                                ['atk-down',        '6T, 90%'],
+                                ['nao',             '99+T'],
+                                ['chain-down',      '6T, 0.1x'],
+                                ['burn',            '6T, 10000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Bind Reduction',
+                            action: [
+                                ['bind',            '5T, Row 2 3']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['bind',            '5T, Row 2 3'],
+                                ['heal',            '1.6M']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3871: {
+            name: 'Ulti',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/QCK/DEX'],
+                                ['VS Gauge -',      '5T, PSY/QCK/DEX'],
+                                ['S Switch -',      '5T, PSY/QCK/DEX']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ulti', 'INT'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['dmg-limit',       '2T, 50%'],
+                                ['slot-change',     'Bad'],
+                                ['cd-rew',          '1T, Row 2 3'],
+                                ['Ship Bind',       '2T'],
+                                ['def',             '8T, 10000x'],
+                                ['resil',           '5T'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3893: {
+            name: 'Chopper',
+            type: 'PSY',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Chopper', 'PSY'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '8T, Row 2 3'],
+                                ['slot-block',      'Col L'],
+                                ['slot-change',     'Para, Col R'],
+                                ['chain-down',      '5T, 0.1x'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3891: {
+            name: 'Queen',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Fighter/Free Spirit/Cerebral'],
+                                ['VS Gauge -',      '5T, Fighter/Free Spirit/Cerebral'],
+                                ['S Switch -',      '8T, Fighter/Free Spirit/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Queen', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['poison',          '10T, 3600'],
+                                ['slot-change',     'Poison, Row 2'],
+                                ['slot-lock',       '3T, Row 2'],
+                                ['bind',            '9T, Row 1 3'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['cd-rew',          '1T'],
+                                ['nao',             '99+T'],
+                                ['immu-poison',     '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Queen', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['chain-atk-down',  '2T, < 3.75x chain, 90%'],
+                                ['desp',            '8T'],
+                                ['def',             '7T, 10000x'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '30%'],
+                                ['dmg-normal',      '150K']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3894: {
+            name: 'Momonosuke',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/DEX/INT'],
+                                ['VS Gauge -',      '5T, STR/DEX/INT'],
+                                ['S Switch -',      '8T, STR/DEX/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['def-null',        '1T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['para',            '9T, Captain'],
+                                ['slot-bind',       '9T, Captain']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['?', '?'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['def',             '6T, 10000x'],
+                                ['resil',           '2T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 4,
+                    boss: ['Momonosuke', 'QCK'],
+                    hp: 0,
+                    atk: 0,
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['cd-rew',          '2T, Row 2 3'],
+                                ['bar-slot',        '1T, 4x, RCV'],
+                                ['def-perc',        '7T, 80%'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['bind',            '8T, Col L'],
+                                ['heal',            '4M'],
+                                ['tap-limit',       '7T, 3x']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
