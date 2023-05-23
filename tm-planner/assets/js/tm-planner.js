@@ -1267,9 +1267,19 @@ function populateUnitDetail(unitId) {
 
                 // LLB Special
                 var spLlb = special.llbbase;
-                spLlb = decorateStr(spLlb);
-                $('#unit-detail-special').append('<b>LLB:</b> ' + spLlb);
-                $('#unit-detail-special').append('<br />');
+                if (spLlb) {
+                    spLlb = decorateStr(spLlb);
+                    $('#unit-detail-special').append('<b>LLB:</b> ' + spLlb);
+                    $('#unit-detail-special').append('<br />');
+                }
+
+                // Dual Unit Combined Special
+                var combinedSp = special.combined;
+                if (combinedSp) {
+                    combinedSp = decorateStr(combinedSp);
+                    $('#unit-detail-special').append('<b>Combined:</b> ' + combinedSp);
+                    $('#unit-detail-special').append('<br />');
+                }
             } else {
                 special = decorateStr(special);
                 $('#unit-detail-special').html(special);
