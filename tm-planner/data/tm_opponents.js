@@ -14272,7 +14272,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
+                    boss: ['Kaido', 'QCK'],
                     hp: 0,
                     atk: 0,
                     hp_: 2000000,
@@ -14290,12 +14290,21 @@ var tm_opponents = {
                                 ['para',            '9T, Captain'],
                                 ['slot-bind',       '9T, Captain']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def-perc',        '3T'],
+                                ['slot-bind',       '?T'],
+                                ['No Heal',         '?T'],
+                                ['bar-hit',         '2T, 2x']
+                            ]
                         }
                     ]
                 },
                 {
                     stageNum: 3,
-                    boss: ['?', '?'],
+                    boss: ['Momonosuke', 'PSY'],
                     hp: 0,
                     atk: 0,
                     hp_: 2000000,
@@ -14309,12 +14318,25 @@ var tm_opponents = {
                                 ['resil',           '2T'],
                                 ['immu-delay',      '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['hunger',          '2x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['sp-limit',        '2T, 1x']
+                            ]
                         }
                     ]
                 },
                 {
                     stageNum: 4,
-                    boss: ['Momonosuke', 'QCK'],
+                    boss: ['Kaido', 'QCK'],
                     hp: 0,
                     atk: 0,
                     hp_: 3500000,
@@ -14336,6 +14358,32 @@ var tm_opponents = {
                                 ['bind',            '8T, Col L'],
                                 ['heal',            '4M'],
                                 ['tap-limit',       '7T, 3x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['No Heal',         '5T'],
+                                ['Ship Bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['sp-limit',        '3T, 1x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['stun',            '?'],
+                                ['desp',            '5T']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['atk',             '5T']
                             ]
                         }
                     ]
