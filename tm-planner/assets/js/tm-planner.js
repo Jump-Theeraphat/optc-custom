@@ -1714,6 +1714,8 @@ function calculateTargetPts() {
     var growthAmbush = baseAmbush * 0.05;
     var baseMain = 8000;
     var growthMain = baseMain * 0.05;
+    var base4th = 4000;
+    var growth4th = base4th * 0.05;
     var baseMini = 1500;
     var growthMini = baseMini * 0.05;
 
@@ -1731,7 +1733,25 @@ function calculateTargetPts() {
         $('.team').each(function() {
             var multiplier = Number($(this).find('.x_pts').text());
 
-            if (tmId >= 3801) {
+            if (tmId == 3894) {
+                if ((navLv + 1) % 5 != 0) {
+                    if (Number($(this).data('team')) < 3)
+                        totalPts += multiplier * (baseMini + growthMini * navLv)
+                    else if (Number($(this).data('team')) == 3)
+                        totalPts += multiplier * (base4th + growth4th * navLv)
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv)
+                } else {
+                    if (Number($(this).data('team')) < 3)
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
+                    else if (Number($(this).data('team')) == 3)
+                        totalPts += multiplier * (base4th + growth4th * navLv) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
+                }
+            } else if (tmId >= 3801) {
                 if ((navLv + 1) % 5 != 0) {
                     if (Number($(this).data('team')) < 4)
                         totalPts += multiplier * (baseMini + growthMini * navLv)
@@ -1766,6 +1786,8 @@ function calculateNavLv() {
     var growthAmbush = baseAmbush * 0.05;
     var baseMain = 8000;
     var growthMain = baseMain * 0.05;
+    var base4th = 4000;
+    var growth4th = base4th * 0.05;
     var baseMini = 1500;
     var growthMini = baseMini * 0.05;
 
@@ -1782,7 +1804,25 @@ function calculateNavLv() {
         $('.team').each(function() {
             var multiplier = Number($(this).find('.x_pts').text());
 
-            if (tmId >= 3801) {
+            if (tmId == 3894) {
+                if ((i + 1) % 5 != 0) {
+                    if (Number($(this).data('team')) < 3)
+                        totalPts += multiplier * (baseMini + growthMini * i)
+                    else if (Number($(this).data('team')) == 3)
+                        totalPts += multiplier * (base4th + growth4th * i)
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i)
+                } else {
+                    if (Number($(this).data('team')) < 3)
+                        totalPts += multiplier * (baseMini + growthMini * i) * 1.5
+                    else if (Number($(this).data('team')) == 3)
+                        totalPts += multiplier * (base4th + growth4th * i) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.5
+                }
+            } else if (tmId >= 3801) {
                 if ((i + 1) % 5 != 0) {
                     if (Number($(this).data('team')) < 4)
                         totalPts += multiplier * (baseMini + growthMini * i)
