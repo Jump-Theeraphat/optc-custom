@@ -13992,10 +13992,9 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
-                    hp: 0,
+                    boss: ['Inuarashi', 'PSY'],
+                    hp: 1500000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14007,15 +14006,35 @@ var tm_opponents = {
                                 ['bar-hit',         '1T, 25x'],
                                 ['immu-delay',      '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['slot-change',     'Bad']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['def',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['atk',             '?T'],
+                                ['def-thres',       '1T']
+                            ]
                         }
                     ]
                 },
                 {
                     stageNum: 3,
                     boss: ['Marco', 'PSY'],
-                    hp: 0,
+                    hp: 1800000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14034,6 +14053,30 @@ var tm_opponents = {
                             action: [
                                 ['clear-buff',      'Buff Only'],
                                 ['blow-away',       '3T, Captain']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['def-null',        '1T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['atk',             '?T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -14061,9 +14104,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Jack', 'STR'],
-                    hp: 0,
+                    hp: 1600000,
                     atk: 0,
-                    hp_: 1800000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14088,6 +14130,20 @@ var tm_opponents = {
                             action: [
                                 ['bind',            '5T, Row 2 3'],
                                 ['heal',            '1.6M']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['bar-gd',          '3T, 1x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-bind',       '3T'],
+                                ['blind',           '5T']
                             ]
                         }
                     ]
@@ -14115,9 +14171,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Ulti', 'INT'],
-                    hp: 0,
+                    hp: 1600000,
                     atk: 0,
-                    hp_: 1600000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14130,6 +14185,26 @@ var tm_opponents = {
                                 ['def',             '8T, 10000x'],
                                 ['resil',           '5T'],
                                 ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['dmg-normal',      '80000']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['def-thres',       '5T'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['bar-hp',          '2T, 10M'],
+                                ['blind',           '5T']
                             ]
                         }
                     ]
@@ -14157,9 +14232,8 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Chopper', 'PSY'],
-                    hp: 0,
+                    hp: 1200000,
                     atk: 0,
-                    hp_: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14171,6 +14245,19 @@ var tm_opponents = {
                                 ['chain-down',      '5T, 0.1x'],
                                 ['def-thres',       '6T, 99%, 1000'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1, Every Turn After',
+                            action: [
+                                ['para',            '1T'],
+                                ['silence',         '1T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['clear-buff',      'Buff Only']
                             ]
                         }
                     ]
@@ -14198,9 +14285,8 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Queen', 'QCK'],
-                    hp: 0,
+                    hp: 3000000,
                     atk: 0,
-                    hp_: 3000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -14214,6 +14300,20 @@ var tm_opponents = {
                                 ['cd-rew',          '1T'],
                                 ['nao',             '99+T'],
                                 ['immu-poison',     '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '5T'],
+                                ['slot-block',      'All']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['def-perc',        '5T']
                             ]
                         }
                     ]
@@ -14246,6 +14346,35 @@ var tm_opponents = {
                             action: [
                                 ['heal',            '30%'],
                                 ['dmg-normal',      '150K']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['atk',             '?T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['hunger',          '3x'],
+                                ['slot-block',      'All'],
+                                ['slot-lock',       '1x Great']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['def-thres',       '3T'],
+                                ['resil',           '3T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['No Heal',         '5T'],
+                                ['slot-change',     'Poison']
                             ]
                         }
                     ]
