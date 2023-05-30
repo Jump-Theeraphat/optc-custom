@@ -193,4 +193,9 @@ var kizunas = {
         name: 'Barto & Hakuba 6+ (~ 6am)',
         thumb: 3868
     },
+    3898: {
+        name: 'Alber (~ 6am)',
+        thumb: 3898,
+        xch_id: 3903
+    },
 };
