@@ -39731,49 +39731,49 @@ window.details = {
     },
     1983: {//Smoker&Tashigi
         captain: {
-            "character1": "Boosts ATK of [INT] and [PSY] characters by 2.5x, reduces damage received by 7% and makes [INT] and [PSY] orbs beneficial for [INT] and [PSY] characters",
-            "character2": "Boosts ATK of [INT] and [PSY] characters by 2.5x and recovers 300 HP at the end of each turn",
-            "combined": "Boosts ATK of [INT] and [PSY] characters by 2.75x, reduces damage received by 7%, recovers 1,000 HP at the end of each turn and makes [TND], [INT] and [PSY] orbs beneficial for [INT] and [PSY] characters"
+            character1: "Boosts ATK of [INT] and [PSY] characters by 2.5x, reduces damage received by 7% and makes [INT] and [PSY] orbs beneficial for [INT] and [PSY] characters",
+            character2: "Boosts ATK of [INT] and [PSY] characters by 2.5x and recovers 300 HP at the end of each turn",
+            combined: "Boosts ATK of [INT] and [PSY] characters by 2.75x, reduces damage received by 7%, recovers 1,000 HP at the end of each turn and makes [TND], [INT] and [PSY] orbs beneficial for [INT] and [PSY] characters"
         },
         captainNotes: "#{beneficial}",
         special: "Deals 5,000 Fixed damage to one enemy, changes the orb of this character into a Matching orb, reduces damage received by 50% for 1 turn, boosts ATK of [PSY] and [INT] characters by 1.5x for 1 turn and becomes Smoker & Tashigi for 2 turns",
         swap: "Recovers 2x character's RCV",
         specialName: "White Slash",
         sailor: {
-            "character1": "Boosts base ATK of [INT] and [PSY] characters by 50",
-            "character2": "Boosts base RCV of [INT] and [PSY] characters by 30",
-            "combined": "Boosts base ATK, HP and RCV of [INT] and [PSY] characters by 75"
+            character1: "Boosts base ATK of [INT] and [PSY] characters by 50",
+            character2: "Boosts base RCV of [INT] and [PSY] characters by 30",
+            combined: "Boosts base ATK, HP and RCV of [INT] and [PSY] characters by 75"
         },
     },
     1984: {//Luffy&Ace
         captain: {
-            "character1": "Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x and reduces damage received by 15%",
-            "character2": "Boosts ATK of Free Spirit characters by 2.25x, by 3.5x instead if they have a beneficial orb, and boosts HP of Free Spirit characters by 1.2x",
-            "combined": "Boosts ATK of Free Spirit characters by 3x, by 4.25x instead if they have a beneficial orb, boosts HP of Free Spirit characters by 1.2x and reduces damage received by 20%"
+            character1: "Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x and reduces damage received by 15%",
+            character2: "Boosts ATK of Free Spirit characters by 2.25x, by 3.5x instead if they have a beneficial orb, and boosts HP of Free Spirit characters by 1.2x",
+            combined: "Boosts ATK of Free Spirit characters by 3x, by 4.25x instead if they have a beneficial orb, boosts HP of Free Spirit characters by 1.2x and reduces damage received by 20%"
         },
         special: "Deals 75x character's ATK in Typeless damage to all enemies, changes [STR], [DEX], [QCK], [INT] and [PSY] orbs of Free Spirit characters into Matching orbs, boosts Orb Effects of all characters by 2x for 1 turn and becomes Luffy & Ace for 3 turns",
         swap: "Removes Despair, Paralysis and Slot Bind duration completely on this character and changes the orb, including [BLOCK] orbs, of this character into a Matching orb",
         specialName: "Brotherly Bond",
         sailor: {
-            "character1": "Makes [QCK] orbs beneficial for Free Spirit characters",
-            "character2": "Makes [STR] orbs beneficial for Free Spirit characters",
-            "combined": "Boosts base ATK, HP and RCV of Free Spirit characters by 150"
+            character1: "Makes [QCK] orbs beneficial for Free Spirit characters",
+            character2: "Makes [STR] orbs beneficial for Free Spirit characters",
+            combined: "Boosts base ATK, HP and RCV of Free Spirit characters by 150"
         },
         sailorNotes: "#{beneficial}",
     },
     1985: {//Luffy&Ace
         captain: {
-            "character1": "Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x and reduces damage received by 15%",
-            "character2": "Boosts ATK of Free Spirit characters by 2.25x, by 3.5x instead if they have a beneficial orb, and boosts HP of Free Spirit characters by 1.2x",
-            "combined": "Boosts ATK of Free Spirit characters by 3x, by 4.25x instead if they have a beneficial orb, boosts HP of Free Spirit characters by 1.2x and reduces damage received by 20%"
+            character1: "Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x and reduces damage received by 15%",
+            character2: "Boosts ATK of Free Spirit characters by 2.25x, by 3.5x instead if they have a beneficial orb, and boosts HP of Free Spirit characters by 1.2x",
+            combined: "Boosts ATK of Free Spirit characters by 3x, by 4.25x instead if they have a beneficial orb, boosts HP of Free Spirit characters by 1.2x and reduces damage received by 20%"
         },
         special: "Deals 75x character's ATK in Typeless damage to all enemies, changes [STR], [DEX], [QCK], [INT] and [PSY] orbs of Free Spirit characters into Matching orbs, boosts Orb Effects of all characters by 2x for 1 turn and becomes Luffy & Ace for 3 turns",
         swap: "Removes Despair, Paralysis and Slot Bind duration completely on this character and changes the orb, including [BLOCK] orbs, of this character into a Matching orb",
         specialName: "Brotherly Bond",
         sailor: {
-            "character1": "Makes [QCK] orbs beneficial for Free Spirit characters",
-            "character2": "Makes [STR] orbs beneficial for Free Spirit characters",
-            "combined": "Boosts base ATK, HP and RCV of Free Spirit characters by 150",
+            character1: "Makes [QCK] orbs beneficial for Free Spirit characters",
+            character2: "Makes [STR] orbs beneficial for Free Spirit characters",
+            combined: "Boosts base ATK, HP and RCV of Free Spirit characters by 150",
             level1: "Makes [TND] and [RCV] orbs beneficial for this character"
         },
         sailorNotes: "#{beneficial}",
@@ -40236,9 +40236,9 @@ window.details = {
     },
     2000: {//TM Sanji & Zoro
         captain: {
-            "character1": "Reduces Special Cooldown of [DEX] and [PSY] characters by 2 turns at the start of the fight. Boosts ATK of [PSY] characters by 2.75x and boosts ATK of [DEX] characters by 2x",
-            "character2": "Reduces Special Cooldown of [DEX] and [PSY] characters by 2 turns at the start of the fight. Boosts ATK of [DEX] characters by 2.75x and boosts ATK of [PSY] characters by 2x",
-            "combined": "Boosts ATK of [DEX] and [PSY] characters by 3.75x and makes [PSY] and [DEX] orbs beneficial for [PSY] and [DEX] characters"
+            character1: "Reduces Special Cooldown of [DEX] and [PSY] characters by 2 turns at the start of the fight. Boosts ATK of [PSY] characters by 2.75x and boosts ATK of [DEX] characters by 2x",
+            character2: "Reduces Special Cooldown of [DEX] and [PSY] characters by 2 turns at the start of the fight. Boosts ATK of [DEX] characters by 2.75x and boosts ATK of [PSY] characters by 2x",
+            combined: "Boosts ATK of [DEX] and [PSY] characters by 3.75x and makes [PSY] and [DEX] orbs beneficial for [PSY] and [DEX] characters"
         },
         captainNotes: "#{beneficial}",
         special: "Deals 30x character's ATK in character's Type True damage to one enemy, boosts Orb Effects of [PSY] and [DEX] characters by 2.25x for 1 turn and becomes Sanji & Zoro for 1 turn",
@@ -40246,9 +40246,9 @@ window.details = {
         swap: "Randomizes all non-Matching orbs of [PSY] and [DEX] characters and adds 0.5x to Chain multiplier for 1 turn",
         specialName: "Armée de L'Air Power Shoot",
         sailor: {
-            "character1": "Boosts base ATK of [PSY] characters by 30",
-            "character2": "Boosts base ATK of [DEX] characters by 30",
-            "combined": "Boosts base ATK, HP and RCV of [DEX] and [PSY] characters by 50",
+            character1: "Boosts base ATK of [PSY] characters by 30",
+            character2: "Boosts base ATK of [DEX] characters by 30",
+            combined: "Boosts base ATK, HP and RCV of [DEX] and [PSY] characters by 50",
             level1: "Makes [TND] orbs beneficial for [DEX] and [PSY] characters",
         },
         sailorNotes: "#{beneficial}",
@@ -45958,34 +45958,34 @@ window.details = {
     },
     2180: {//Whitebeard&Marco
         captain: {
-            "character1": "Boosts ATK of [PSY] characters by 3.5x, boosts ATK of all other characters by 2.75x, reduces damage received by 20% and makes [PSY] orbs beneficial for all characters",
-            "character2": "Boosts ATK of [INT] characters by 3.5x, boosts ATK of all other characters by 2.75x, boosts RCV of all characters by 1.25x and makes [INT] orbs beneficial for all characters",
-            "combined": "Boosts ATK of [PSY] and [INT] characters by 4.25x, boosts ATK of all other characters by 3x, boosts RCV of all characters by 1.5x, reduces damage received by 20% and makes [PSY] and [INT] orbs beneficial for all characters"
+            character1: "Boosts ATK of [PSY] characters by 3.5x, boosts ATK of all other characters by 2.75x, reduces damage received by 20% and makes [PSY] orbs beneficial for all characters",
+            character2: "Boosts ATK of [INT] characters by 3.5x, boosts ATK of all other characters by 2.75x, boosts RCV of all characters by 1.25x and makes [INT] orbs beneficial for all characters",
+            combined: "Boosts ATK of [PSY] and [INT] characters by 4.25x, boosts ATK of all other characters by 3x, boosts RCV of all characters by 1.5x, reduces damage received by 20% and makes [PSY] and [INT] orbs beneficial for all characters"
         },
         special: "Deals 30% of enemies' current HP in damage to all enemies, recovers 20,000 HP, randomizes all orbs into either [PSY], [INT] or [RCV] orbs and becomes Whitebeard & Marco for 3 turns",
         swap: "Reduces Paralysis and Silence duration by 1 turn, makes [RCV] orbs beneficial for all characters for 1 turn and changes orb of this character into a [RCV] orb",
         swapNotes: "#{beneficial}",
         specialName: "Immortal Blue Flame Shockwave",
         sailor: {
-            "character1": "Boosts base ATK of [PSY] and [INT] characters by 75",
-            "character2": "Boosts base HP and RCV of [PSY] and [INT] characters by 75",
-            "combined": "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 100"
+            character1: "Boosts base ATK of [PSY] and [INT] characters by 75",
+            character2: "Boosts base HP and RCV of [PSY] and [INT] characters by 75",
+            combined: "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 100"
         },
     },
     2181: {//Whitebeard&Marco
         captain: {
-            "character1": "Boosts ATK of [PSY] characters by 3.5x, boosts ATK of all other characters by 2.75x, reduces damage received by 20% and makes [PSY] orbs beneficial for all characters",
-            "character2": "Boosts ATK of [INT] characters by 3.5x, boosts ATK of all other characters by 2.75x, boosts RCV of all characters by 1.25x and makes [INT] orbs beneficial for all characters",
-            "combined": "Boosts ATK of [PSY] and [INT] characters by 4.25x, boosts ATK of all other characters by 3x, boosts RCV of all characters by 1.5x, reduces damage received by 20% and makes [PSY] and [INT] orbs beneficial for all characters"
+            character1: "Boosts ATK of [PSY] characters by 3.5x, boosts ATK of all other characters by 2.75x, reduces damage received by 20% and makes [PSY] orbs beneficial for all characters",
+            character2: "Boosts ATK of [INT] characters by 3.5x, boosts ATK of all other characters by 2.75x, boosts RCV of all characters by 1.25x and makes [INT] orbs beneficial for all characters",
+            combined: "Boosts ATK of [PSY] and [INT] characters by 4.25x, boosts ATK of all other characters by 3x, boosts RCV of all characters by 1.5x, reduces damage received by 20% and makes [PSY] and [INT] orbs beneficial for all characters"
         },
         special: "Deals 30% of enemies' current HP in damage to all enemies, recovers 20,000 HP, randomizes all orbs into either [PSY], [INT] or [RCV] orbs and becomes Whitebeard & Marco for 3 turns",
         swap: "Reduces Paralysis and Silence duration by 1 turn, makes [RCV] orbs beneficial for all characters for 1 turn and changes orb of this character into a [RCV] orb",
         swapNotes: "#{beneficial}",
         specialName: "Immortal Blue Flame Shockwave",
         sailor: {
-            "character1": "Boosts base ATK of [PSY] and [INT] characters by 75",
-            "character2": "Boosts base HP and RCV of [PSY] and [INT] characters by 75",
-            "combined": "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 100",
+            character1: "Boosts base ATK of [PSY] and [INT] characters by 75",
+            character2: "Boosts base HP and RCV of [PSY] and [INT] characters by 75",
+            combined: "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 100",
             level1: "Reduces Paralysis and Silence duration completely on this character"
         },
         limit: [
@@ -53164,18 +53164,18 @@ window.details = {
     },
     2399: {//Crocodile&Daz
         captain: {
-            "character1": "Boosts ATK of [STR] and [DEX] characters by 2x, by 2.75x instead if they have a beneficial orb, and makes [TND] and [DEX] orbs beneficial for [STR] and [DEX] characters",
-            "character2": "Boosts ATK of [STR] and [DEX] characters by 2.5x and reduces damage received by 10%",
-            "combined": "Boosts ATK of [STR] and [DEX] characters by 2.5x, by 2.75x instead if they have a beneficial orb, reduces damage received by 20% and makes [TND], [RCV], [STR] and [DEX] orbs beneficial for [STR] and [DEX] characters"
+            character1: "Boosts ATK of [STR] and [DEX] characters by 2x, by 2.75x instead if they have a beneficial orb, and makes [TND] and [DEX] orbs beneficial for [STR] and [DEX] characters",
+            character2: "Boosts ATK of [STR] and [DEX] characters by 2.5x and reduces damage received by 10%",
+            combined: "Boosts ATK of [STR] and [DEX] characters by 2.5x, by 2.75x instead if they have a beneficial orb, reduces damage received by 20% and makes [TND], [RCV], [STR] and [DEX] orbs beneficial for [STR] and [DEX] characters"
         },
         captainNotes: "#{beneficial}",
         special: "Deals 10% of enemies' current HP in damage to one enemy, reduces damage received by 50% for 1 turn, changes the orb of this character into a Matching orb, boosts ATK of [STR] and [DEX] characters by 1.5x for 1 turn and becomes Crocodile & Daz for 2 turns",
         swap: "Randomizes all non-Matching orbs, including [BLOCK] orbs, reduces Bind duration by 1 turn",
         specialName: "Neverending Sand and Blades",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of [DEX] characters by 30",
-            "character2": "Boosts base ATK, HP and RCV of [STR] characters by 30",
-            "combined": "Boosts base ATK, HP and RCV of [STR] and [DEX] characters by 50"
+            character1: "Boosts base ATK, HP and RCV of [DEX] characters by 30",
+            character2: "Boosts base ATK, HP and RCV of [STR] characters by 30",
+            combined: "Boosts base ATK, HP and RCV of [STR] and [DEX] characters by 50"
         },
     },
     2400: {//World Clash Luffy
@@ -53470,32 +53470,32 @@ window.details = {
     },
     2417: {//Bartolomeo&Cavendish
         captain: {
-            "character1": "Boosts ATK of Driven characters by 3.25x. If you don't attack with Bartolomeo, reduces damage received by 25% for that turn.",
-            "character2": "Boosts ATK of Driven characters by 3.25x, but boosts ATK of this character by 3.75x",
-            "combined": "Boosts ATK of Driven characters by 4.25x, reduces damage received by 25% and makes [STR], [DEX] and [QCK] orbs beneficial for Driven characters"
+            character1: "Boosts ATK of Driven characters by 3.25x. If you don't attack with Bartolomeo, reduces damage received by 25% for that turn.",
+            character2: "Boosts ATK of Driven characters by 3.25x, but boosts ATK of this character by 3.75x",
+            combined: "Boosts ATK of Driven characters by 4.25x, reduces damage received by 25% and makes [STR], [DEX] and [QCK] orbs beneficial for Driven characters"
         },
         special: "Deals 75x character's ATK in Typeless damage to all enemies, reduces any damage received above 5,000 HP by 97% for 1 turn, boosts ATK of Driven characters by 2.25x for 1 turn and becomes Bartolomeo & Cavendish for 3 turns",
         swap: "Boosts Orb Effects of this character by 1.5x for 1 turn, reduces damage received by 25% for 1 turn, recovers 5% of crew's MAX HP and changes orb of this character into a Matching orb.",
         specialName: "Beautiful Sword Barrier Barrage",
         sailor: {
-            "character1": "Boosts base HP of Driven characters by 50",
-            "character2": "Boosts base ATK of Driven characters by 50",
-            "combined": "Boosts base ATK and HP of Driven characters by 100"
+            character1: "Boosts base HP of Driven characters by 50",
+            character2: "Boosts base ATK of Driven characters by 50",
+            combined: "Boosts base ATK and HP of Driven characters by 100"
         },
     },
     2418: {//Bartolomeo&Cavendish
         captain: {
-            "character1": "Boosts ATK of Driven characters by 3.25x. If you don't attack with Bartolomeo, reduces damage received by 25% for that turn.",
-            "character2": "Boosts ATK of Driven characters by 3.25x, but boosts ATK of this character by 3.75x",
-            "combined": "Boosts ATK of Driven characters by 4.25x, reduces damage received by 25% and makes [STR], [DEX] and [QCK] orbs beneficial for Driven characters"
+            character1: "Boosts ATK of Driven characters by 3.25x. If you don't attack with Bartolomeo, reduces damage received by 25% for that turn.",
+            character2: "Boosts ATK of Driven characters by 3.25x, but boosts ATK of this character by 3.75x",
+            combined: "Boosts ATK of Driven characters by 4.25x, reduces damage received by 25% and makes [STR], [DEX] and [QCK] orbs beneficial for Driven characters"
         },
         special: "Deals 75x character's ATK in Typeless damage to all enemies, reduces any damage received above 5,000 HP by 97% for 1 turn, boosts ATK of Driven characters by 2.25x for 1 turn and becomes Bartolomeo & Cavendish for 3 turns",
         swap: "Boosts Orb Effects of this character by 1.5x for 1 turn, reduces damage received by 25% for 1 turn, recovers 5% of crew's MAX HP and changes orb of this character into a Matching orb.",
         specialName: "Beautiful Sword Barrier Barrage",
         sailor: {
-            "character1": "Boosts base HP of Driven characters by 50",
-            "character2": "Boosts base ATK of Driven characters by 50",
-            "combined": "Boosts base ATK and HP of Driven characters by 100",
+            character1: "Boosts base HP of Driven characters by 50",
+            character2: "Boosts base ATK of Driven characters by 50",
+            combined: "Boosts base ATK and HP of Driven characters by 100",
             level1: "Boosts base ATK of this character by 250 if this character is the last in the chain to attack"
         },
         limit: [
@@ -54713,32 +54713,32 @@ window.details = {
     },
     2445: {//Sanji&Judge
         captain: {
-            "character1": "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 3.5x, their HP by 1.25x and makes [RCV] and [TND] orbs beneficial for Powerhouse characters.",
-            "character2": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 3.5x, their HP by 1.25x and makes [PSY] orbs beneficial for all characters.",
-            "combined": "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 4.25x. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts HP of Powerhouse characters by 1.25x and makes [PSY], [RCV] and [TND] orbs beneficial for all characters."
+            character1: "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 3.5x, their HP by 1.25x and makes [RCV] and [TND] orbs beneficial for Powerhouse characters.",
+            character2: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 3.5x, their HP by 1.25x and makes [PSY] orbs beneficial for all characters.",
+            combined: "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 4.25x. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts HP of Powerhouse characters by 1.25x and makes [PSY], [RCV] and [TND] orbs beneficial for all characters."
         },
         special: "Boosts ATK of Powerhouse characters by 2x for 1 turn, boosts Orb Effects of Powerhouse characters by 2x for 1 turn, reduces Paralysis duration by 5 turns and becomes Sanji & Judge for 3 turns",
         swap: "Removes Silence duration completely on this character, changes orb, including [BLOCK] orbs, of this character into a [TND] orb and boosts Chain Multiplier Growth Rate by 1.25x for 1 turn.",
         specialName: "Crack & Strike",
         sailor: {
-            "character1": "Makes [TND] and [RCV] orbs beneficial for this character",
-            "character2": "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Powerhouse characters by 75"
+            character1: "Makes [TND] and [RCV] orbs beneficial for this character",
+            character2: "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Powerhouse characters by 75"
         },
     },
     2446: {//Sanji&Judge
         captain: {
-            "character1": "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 3.5x, their HP by 1.25x and makes [RCV] and [TND] orbs beneficial for Powerhouse characters.",
-            "character2": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 3.5x, their HP by 1.25x and makes [PSY] orbs beneficial for all characters.",
-            "combined": "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 4.25x. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts HP of Powerhouse characters by 1.25x and makes [PSY], [RCV] and [TND] orbs beneficial for all characters."
+            character1: "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 3.5x, their HP by 1.25x and makes [RCV] and [TND] orbs beneficial for Powerhouse characters.",
+            character2: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 3.5x, their HP by 1.25x and makes [PSY] orbs beneficial for all characters.",
+            combined: "If your crew has 6 Powerhouse characters, boosts ATK of Powerhouse characters by 4.25x. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts HP of Powerhouse characters by 1.25x and makes [PSY], [RCV] and [TND] orbs beneficial for all characters."
         },
         special: "Boosts ATK of Powerhouse characters by 2x for 1 turn, boosts Orb Effects of Powerhouse characters by 2x for 1 turn, reduces Paralysis duration by 5 turns and becomes Sanji & Judge for 3 turns",
         swap: "Removes Silence duration completely on this character, changes orb, including [BLOCK] orbs, of this character into a [TND] orb and boosts Chain Multiplier Growth Rate by 1.25x for 1 turn.",
         specialName: "Crack & Strike",
         sailor: {
-            "character1": "Makes [TND] and [RCV] orbs beneficial for this character",
-            "character2": "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Powerhouse characters by 75",
+            character1: "Makes [TND] and [RCV] orbs beneficial for this character",
+            character2: "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Powerhouse characters by 75",
             level1: "Makes [PSY], [TND] and [RCV] orbs beneficial for Powerhouse characters",
         },
         limit: [
@@ -55664,32 +55664,32 @@ window.details = {
     },
     2468: {//Smoothie&Oven
         captain: {
-            "character1": "Boosts ATK of [PSY] characters by 2x.",
-            "character2": "Boosts ATK of [QCK] characters by 2x.",
-            "combined": "Boosts ATK of [QCK], [PSY] and [INT] characters by 2.5x and recovers 1x character's RCV in HP at the end of each turn."
+            character1: "Boosts ATK of [PSY] characters by 2x.",
+            character2: "Boosts ATK of [QCK] characters by 2x.",
+            combined: "Boosts ATK of [QCK], [PSY] and [INT] characters by 2.5x and recovers 1x character's RCV in HP at the end of each turn."
         },
         special: "Boosts chances of getting [QCK] and [PSY] orbs for 2 turns, randomizes all orbs, boosts Orb Effects of [QCK], [PSY] and [INT] characters by 2x for 2 turns and becomes Smoothie & Oven for 2 turns",
         swap: "Makes [QCK] and [PSY] orbs beneficial for [QCK], [PSY] and [INT] characters for 1 turn and deals 20x character's ATK in character's Type damage to all enemies at the end of each turn for 1 turn.",
         specialName: "Burning Blade Slash",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 25",
-            "character2": "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of [QCK], [PSY] and [INT] characters by 50",
+            character1: "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 25",
+            character2: "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 25",
+            combined: "Boosts base ATK, HP and RCV of [QCK], [PSY] and [INT] characters by 50",
         },
     },
     2469: {//Smoothie&Oven
         captain: {
-            "character1": "Boosts ATK of [PSY] characters by 3x and boosts ATK of [QCK] and [INT] characters by 2.5x.",
-            "character2": "Boosts ATK of [QCK] characters by 3x and boosts ATK of [PSY] and [INT] characters by 2.5x.",
-            "combined": "Boosts ATK of [QCK], [PSY] and [INT] characters by 3.75x and recovers 3x character's RCV in HP at the end of each turn."
+            character1: "Boosts ATK of [PSY] characters by 3x and boosts ATK of [QCK] and [INT] characters by 2.5x.",
+            character2: "Boosts ATK of [QCK] characters by 3x and boosts ATK of [PSY] and [INT] characters by 2.5x.",
+            combined: "Boosts ATK of [QCK], [PSY] and [INT] characters by 3.75x and recovers 3x character's RCV in HP at the end of each turn."
         },
         special: "Boosts chances of getting [QCK] and [PSY] orbs for 2 turns, randomizes all orbs, boosts Orb Effects of [QCK], [PSY] and [INT] characters by 2x for 2 turns and becomes Smoothie & Oven for 2 turns",
         swap: "Makes [QCK] and [PSY] orbs beneficial for [QCK], [PSY] and [INT] characters for 1 turn and deals 20x character's ATK in character's Type damage to all enemies at the end of each turn for 1 turn.",
         specialName: "Burning Blade Slash",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 25",
-            "character2": "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of [QCK], [PSY] and [INT] characters by 50",
+            character1: "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 25",
+            character2: "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 25",
+            combined: "Boosts base ATK, HP and RCV of [QCK], [PSY] and [INT] characters by 50",
             level1: "Cannot be blown away",
         },
         limit: [
@@ -57440,34 +57440,34 @@ window.details = {
     },
     2516: {//Magellan&Hannyabal
         captain: {
-            "character1": "Boosts ATK of [INT] characters by 2x",
-            "character2": "Boosts ATK of [QCK] characters by 2x",
-            "combined": "Boosts ATK of [QCK] and [INT] characters by 2x and makes [QCK] and [INT] orbs beneficial for all characters"
+            character1: "Boosts ATK of [INT] characters by 2x",
+            character2: "Boosts ATK of [QCK] characters by 2x",
+            combined: "Boosts ATK of [QCK] and [INT] characters by 2x and makes [QCK] and [INT] orbs beneficial for all characters"
         },
         captainNotes: "#{beneficial}",
         special: "Poisons all enemies, randomizes all orbs into either [QCK] or [INT] orbs and becomes Magellan & Hannyabal for 2 turns. If your captain is a [QCK] or [INT] character, boosts the Color Affinity of [QCK] and [INT] characters by 2x for 1 turn.",
         swap: "Reduces Poison duration by 5 turns and changes orb of this character into a Matching orb",
         specialName: "Poison Rush",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of [INT] characters by 25",
-            "character2": "Boosts base ATK, HP and RCV of [QCK] characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 50",
+            character1: "Boosts base ATK, HP and RCV of [INT] characters by 25",
+            character2: "Boosts base ATK, HP and RCV of [QCK] characters by 25",
+            combined: "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 50",
         },
     },
     2517: {//Magellan&Hannyabal
         captain: {
-            "character1": "Boosts ATK of [INT] characters by 2.5x, boosts ATK of [QCK] characters by 2x and makes [QCK] orbs beneficial for all characters",
-            "character2": "Boosts ATK of [QCK] characters by 2.5x, boosts ATK of [INT] characters by 2x and makes [INT] orbs beneficial for all characters",
-            "combined": "Boosts ATK of [QCK] and [INT] characters by 3x and makes [QCK] and [INT] orbs beneficial for all characters"
+            character1: "Boosts ATK of [INT] characters by 2.5x, boosts ATK of [QCK] characters by 2x and makes [QCK] orbs beneficial for all characters",
+            character2: "Boosts ATK of [QCK] characters by 2.5x, boosts ATK of [INT] characters by 2x and makes [INT] orbs beneficial for all characters",
+            combined: "Boosts ATK of [QCK] and [INT] characters by 3x and makes [QCK] and [INT] orbs beneficial for all characters"
         },
         captainNotes: "#{beneficial}",
         special: "Poisons all enemies, randomizes all orbs into either [QCK] or [INT] orbs and becomes Magellan & Hannyabal for 2 turns. If your captain is a [QCK] or [INT] character, boosts the Color Affinity of [QCK] and [INT] characters by 2x for 1 turn.",
         swap: "Reduces Poison duration by 5 turns and changes orb of this character into a Matching orb",
         specialName: "Poison Rush",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of [INT] characters by 25",
-            "character2": "Boosts base ATK, HP and RCV of [QCK] characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 50",
+            character1: "Boosts base ATK, HP and RCV of [INT] characters by 25",
+            character2: "Boosts base ATK, HP and RCV of [QCK] characters by 25",
+            combined: "Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 50",
             level1: "Reduces Paralysis duration completely on this character",
         },
         limit: [
@@ -57767,9 +57767,9 @@ window.details = {
     },
     2531: {//Zoro&Sanji
         captain: {
-            "character1": "Boosts ATK of Slasher and Fighter characters by 2.75x and makes [DEX] orbs beneficial for Slasher and Fighter characters. If you defeated an enemy last turn, boosts ATK of Slasher and Fighter characters by 3.3x instead.",
-            "character2": "Boosts ATK of Slasher and Fighter characters by 2.75x, recovers 2x character's RCV in HP at the end of each turn and makes [QCK] orbs beneficial for Slasher and Fighter characters.",
-            "combined": "Boosts ATK of Slasher and Fighter characters by 3.75x and makes [DEX], [QCK], [RCV] and [TND] orbs beneficial for Slasher and Fighter characters."
+            character1: "Boosts ATK of Slasher and Fighter characters by 2.75x and makes [DEX] orbs beneficial for Slasher and Fighter characters. If you defeated an enemy last turn, boosts ATK of Slasher and Fighter characters by 3.3x instead.",
+            character2: "Boosts ATK of Slasher and Fighter characters by 2.75x, recovers 2x character's RCV in HP at the end of each turn and makes [QCK] orbs beneficial for Slasher and Fighter characters.",
+            combined: "Boosts ATK of Slasher and Fighter characters by 3.75x and makes [DEX], [QCK], [RCV] and [TND] orbs beneficial for Slasher and Fighter characters."
         },
         sailor: {
             level1: "Boosts base ATK of Slasher and Fighter characters by 100",
@@ -57845,9 +57845,9 @@ window.details = {
     },
     2532: {//Chopper&Carrot
         captain: {
-            "character1": "Boosts ATK of all characters by 2.5x and recovers 500 HP at the end of each turn",
-            "character2": "Boosts ATK of all characters by 2.5x at the start of the chain, by 2.75x after 3 PERFECTs in a row",
-            "combined": "Boosts ATK of all characters by 2.5x at the start of the chain, by 3.25x after 3 PERFECTs in a row and recovers 1,000 HP at the end of each turn"
+            character1: "Boosts ATK of all characters by 2.5x and recovers 500 HP at the end of each turn",
+            character2: "Boosts ATK of all characters by 2.5x at the start of the chain, by 2.75x after 3 PERFECTs in a row",
+            combined: "Boosts ATK of all characters by 2.5x at the start of the chain, by 3.25x after 3 PERFECTs in a row and recovers 1,000 HP at the end of each turn"
         },
         special: "Reduces damage received by 50% for 1 turn, boosts ATK of all characters by 1.75x for 1 turn and becomes Chobro & Carrot for 2 turns",
         swap: "Makes PERFECTs easier to hit for 1 turn and recovers 2x character's RCV",
@@ -57855,18 +57855,18 @@ window.details = {
     },
     2533: {//Luffy&Law
         captain: {
-            "character1": "Boosts ATK of all characters by 3.5x and their HP by 1.25x.",
-            "character2": "Boosts ATK of all characters by 3x, their HP by 1.25x and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "combined": "Boosts ATK of all characters by 4.5x, their HP by 1.25x and recovers 1x their RCV at the end of the turn for each time you hit a PERFECT."
+            character1: "Boosts ATK of all characters by 3.5x and their HP by 1.25x.",
+            character2: "Boosts ATK of all characters by 3x, their HP by 1.25x and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            combined: "Boosts ATK of all characters by 4.5x, their HP by 1.25x and recovers 1x their RCV at the end of the turn for each time you hit a PERFECT."
         },
         sailor: {
-            "character1": "Boosts base ATK of all characters by 50",
-            "character2": "Boosts base HP of all characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100"
+            character1: "Boosts base ATK of all characters by 50",
+            character2: "Boosts base HP of all characters by 50",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100"
         },
         special: {
-            "character1": "Deals 400x character's ATK in Typeless damage to one enemy, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
-            "character2": "Deals 75x character's ATK in Typeless True damage to all enemies, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
+            character1: "Deals 400x character's ATK in Typeless damage to one enemy, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
+            character2: "Deals 75x character's ATK in Typeless True damage to all enemies, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
         },
         swap: "Removes Slot Bind duration completely on this character and changes orb, including [BLOCK] orbs, of this character into a Matching orb, boosts ATK of this character by 2x for 1 turn and makes own normal attacks ignore damage reducing Barriers and Buffs.",
         swapNotes: "Attacks that ignore damage reducing Barriers and Buffs are still affected by Defense and Increased Defense buffs.",
@@ -57874,19 +57874,19 @@ window.details = {
     },
     2534: {//Luffy&Law
         captain: {
-            "character1": "Boosts ATK of all characters by 3.5x and their HP by 1.25x.",
-            "character2": "Boosts ATK of all characters by 3x, their HP by 1.25x and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "combined": "Boosts ATK of all characters by 4.5x, their HP by 1.25x and recovers 1x their RCV at the end of the turn for each time you hit a PERFECT."
+            character1: "Boosts ATK of all characters by 3.5x and their HP by 1.25x.",
+            character2: "Boosts ATK of all characters by 3x, their HP by 1.25x and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            combined: "Boosts ATK of all characters by 4.5x, their HP by 1.25x and recovers 1x their RCV at the end of the turn for each time you hit a PERFECT."
         },
         sailor: {
-            "character1": "Boosts base ATK of all characters by 50",
-            "character2": "Boosts base HP of all characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100",
+            character1: "Boosts base ATK of all characters by 50",
+            character2: "Boosts base HP of all characters by 50",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100",
             level1: "Reduces Paralysis and Silence duration completely on this character"
         },
         special: {
-            "character1": "Deals 400x character's ATK in Typeless damage to one enemy, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
-            "character2": "Deals 75x character's ATK in Typeless True damage to all enemies, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
+            character1: "Deals 400x character's ATK in Typeless damage to one enemy, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
+            character2: "Deals 75x character's ATK in Typeless True damage to all enemies, makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law for 3 turns.",
         },
         swap: "Removes Slot Bind duration completely on this character and changes orb, including [BLOCK] orbs, of this character into a Matching orb, boosts ATK of this character by 2x for 1 turn and makes own normal attacks ignore damage reducing Barriers and Buffs.",
         swapNotes: "Attacks that ignore damage reducing Barriers and Buffs are still affected by Defense and Increased Defense buffs.",
@@ -57968,15 +57968,15 @@ window.details = {
     },
     2535: {//Homies&Big Mom
         captain: {
-            "character1": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
-            "character2": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
-            "combined": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 4x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn."
+            character1: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
+            character2: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
+            combined: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 4x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn."
         },
         captainNotes: "The amount healed each turn is equal to the number of enemies defeated times the crew's total base RCV.",
         sailor: {
-            "character1": "Makes [STR], [PSY] and [RCV] orbs beneficial for this character",
-            "character2": "Makes [DEX], [QCK] and [TND] orbs beneficial for this character",
-            "combined": "Makes [STR], [DEX], [QCK], [PSY], [INT], [TND] and [RCV] orbs beneficial for this character"
+            character1: "Makes [STR], [PSY] and [RCV] orbs beneficial for this character",
+            character2: "Makes [DEX], [QCK] and [TND] orbs beneficial for this character",
+            combined: "Makes [STR], [DEX], [QCK], [PSY], [INT], [TND] and [RCV] orbs beneficial for this character"
         },
         special: "Boosts base ATK of all characters by 1-1,000 for 1 turn, depending on your current HP and becomes Zeus & Prometheus & Big Mom for 3 turns. If HP is above 50% when the special is activated, locks the chain multiplier at 3.5x for 1 turn.",
         specialNotes: "Base ATK boost is equal to current HP/100, the maximum effect at 100,000 HP will give a 1,000 base ATK boost.",
@@ -57985,15 +57985,15 @@ window.details = {
     },
     2536: {//Homies&Big Mom
         captain: {
-            "character1": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
-            "character2": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
-            "combined": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 4x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn."
+            character1: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
+            character2: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 3.25x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn.",
+            combined: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, Increases damage received by 1.75x boosts ATK of all characters by 4x and their HP by 2x. Recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn."
         },
         captainNotes: "The amount healed each turn is equal to the number of enemies defeated times the crew's total base RCV.",
         sailor: {
-            "character1": "Makes [STR], [PSY] and [RCV] orbs beneficial for this character",
-            "character2": "Makes [DEX], [QCK] and [TND] orbs beneficial for this character",
-            "combined": "Makes [STR], [DEX], [QCK], [PSY], [INT], [TND] and [RCV] orbs beneficial for this character",
+            character1: "Makes [STR], [PSY] and [RCV] orbs beneficial for this character",
+            character2: "Makes [DEX], [QCK] and [TND] orbs beneficial for this character",
+            combined: "Makes [STR], [DEX], [QCK], [PSY], [INT], [TND] and [RCV] orbs beneficial for this character",
             level1: "Boosts base HP of all characters by 150"
         },
         special: "Boosts base ATK of all characters by 1-1,000 for 1 turn, depending on your current HP and becomes Zeus & Prometheus & Big Mom for 3 turns. If HP is above 50% when the special is activated, locks the chain multiplier at 3.5x for 1 turn.",
@@ -58078,14 +58078,14 @@ window.details = {
     },
     2537: {//Lucci&Kaku
         captain: {
-            "character1": "Boosts ATK of Powerhouse characters by 2.25x, by 2.75x instead if they have a beneficial orb. Reduces RCV of all characters by 50%.",
-            "character2": "Boosts ATK of Powerhouse characters by 2.25x and boosts damage of Powerhouse Typed specials by 1.2x.",
-            "combined": "Boosts ATK of Powerhouse characters by 2.5x, by 3x instead if they have a beneficial orb, and boosts damage of Powerhouse Typed specials by 1.5x."
+            character1: "Boosts ATK of Powerhouse characters by 2.25x, by 2.75x instead if they have a beneficial orb. Reduces RCV of all characters by 50%.",
+            character2: "Boosts ATK of Powerhouse characters by 2.25x and boosts damage of Powerhouse Typed specials by 1.2x.",
+            combined: "Boosts ATK of Powerhouse characters by 2.5x, by 3x instead if they have a beneficial orb, and boosts damage of Powerhouse Typed specials by 1.5x."
         },
         sailor: {
-            "character1": "Boosts base ATK and HP of Powerhouse and Fighter characters by 30",
-            "character2": "Boosts base ATK and HP of Powerhouse and Slasher characters by 30",
-            "combined": "Boosts base ATK and HP of Powerhouse, Fighter and Slasher characters by 50",
+            character1: "Boosts base ATK and HP of Powerhouse and Fighter characters by 30",
+            character2: "Boosts base ATK and HP of Powerhouse and Slasher characters by 30",
+            combined: "Boosts base ATK and HP of Powerhouse, Fighter and Slasher characters by 50",
         },
         special: "Deals 50x character's ATK in character's Type damage to all enemies and becomes Lucci & Kaku for 2 turns. If your Captain is a Powerhouse, Fighter or Slasher character, boosts ATK of Powerhouse, Fighter and Slasher characters by 2x for 1 turn.",
         swap: "Makes [TND] orbs beneficial for Powerhouse, Fighter or Slasher characters for 1 turn and adds 0.3x to Chain multiplier for 1 turn.",
@@ -58093,14 +58093,14 @@ window.details = {
     },
     2538: {//Lucci&Kaku
         captain: {
-            "character1": "Boosts ATK of Powerhouse characters by 2.25x, by 2.75x instead if they have a beneficial orb. Reduces RCV of all characters by 50%.",
-            "character2": "Boosts ATK of Powerhouse characters by 2.25x and boosts damage of Powerhouse Typed specials by 1.2x.",
-            "combined": "Boosts ATK of Powerhouse characters by 2.5x, by 3x instead if they have a beneficial orb, and boosts damage of Powerhouse Typed specials by 1.5x."
+            character1: "Boosts ATK of Powerhouse characters by 2.25x, by 2.75x instead if they have a beneficial orb. Reduces RCV of all characters by 50%.",
+            character2: "Boosts ATK of Powerhouse characters by 2.25x and boosts damage of Powerhouse Typed specials by 1.2x.",
+            combined: "Boosts ATK of Powerhouse characters by 2.5x, by 3x instead if they have a beneficial orb, and boosts damage of Powerhouse Typed specials by 1.5x."
         },
         sailor: {
-            "character1": "Boosts base ATK and HP of Powerhouse and Fighter characters by 30",
-            "character2": "Boosts base ATK and HP of Powerhouse and Slasher characters by 30",
-            "combined": "Boosts base ATK and HP of Powerhouse, Fighter and Slasher characters by 50",
+            character1: "Boosts base ATK and HP of Powerhouse and Fighter characters by 30",
+            character2: "Boosts base ATK and HP of Powerhouse and Slasher characters by 30",
+            combined: "Boosts base ATK and HP of Powerhouse, Fighter and Slasher characters by 50",
             level1: "If your Captain is a Powerhouse, Fighter or Slasher character, removes Blindness duration completely"
         },
         special: "Deals 50x character's ATK in character's Type damage to all enemies and becomes Lucci & Kaku for 2 turns. If your Captain is a Powerhouse, Fighter or Slasher character, boosts ATK of Powerhouse, Fighter and Slasher characters by 2x for 1 turn.",
@@ -58158,14 +58158,14 @@ window.details = {
     },
     2539: {//Ivankov&Bon Clay
         captain: {
-            "character1": "Boosts ATK of Free Spirit characters by 2x and recovers 2x character's RCV in HP at the end of each turn.",
-            "character2": "Boosts ATK of Free Spirit characters by 2.25x at the start of the chain, by 2.7x after 4 PERFECTs in a row.",
-            "combined": "Boosts ATK of Free Spirit characters by 2.75x at the start of the chain, by 3.43x after 4 PERFECTs in a row and recovers 3x character's RCV in HP at the end of each turn."
+            character1: "Boosts ATK of Free Spirit characters by 2x and recovers 2x character's RCV in HP at the end of each turn.",
+            character2: "Boosts ATK of Free Spirit characters by 2.25x at the start of the chain, by 2.7x after 4 PERFECTs in a row.",
+            combined: "Boosts ATK of Free Spirit characters by 2.75x at the start of the chain, by 3.43x after 4 PERFECTs in a row and recovers 3x character's RCV in HP at the end of each turn."
         },
         sailor: {
-            "character1": "Boosts base RCV of Free Spirit characters by 50",
-            "character2": "Boosts base ATK of Free Spirit characters by 50",
-            "combined": "Boosts base ATK and RCV of Free Spirit characters by 75",
+            character1: "Boosts base RCV of Free Spirit characters by 50",
+            character2: "Boosts base ATK of Free Spirit characters by 50",
+            combined: "Boosts base ATK and RCV of Free Spirit characters by 75",
         },
         special: "Removes Poison, RCV DOWN and Blindness duration completely, reduces Bind and Despair duration by 5 turns, recovers 13x character's RCV in HP at the end of each turn for 5 turns and becomes Ivankov & Bon Clay for 2 turns.",
         swap: "Reduces Paralysis duration by 1 turn and reduces damage received by 20% for 1 turn.",
@@ -58173,14 +58173,14 @@ window.details = {
     },
     2540: {//Ivankov&Bon Clay
         captain: {
-            "character1": "Boosts ATK of Free Spirit characters by 2x and recovers 2x character's RCV in HP at the end of each turn.",
-            "character2": "Boosts ATK of Free Spirit characters by 2.25x at the start of the chain, by 2.7x after 4 PERFECTs in a row.",
-            "combined": "Boosts ATK of Free Spirit characters by 2.75x at the start of the chain, by 3.43x after 4 PERFECTs in a row and recovers 3x character's RCV in HP at the end of each turn."
+            character1: "Boosts ATK of Free Spirit characters by 2x and recovers 2x character's RCV in HP at the end of each turn.",
+            character2: "Boosts ATK of Free Spirit characters by 2.25x at the start of the chain, by 2.7x after 4 PERFECTs in a row.",
+            combined: "Boosts ATK of Free Spirit characters by 2.75x at the start of the chain, by 3.43x after 4 PERFECTs in a row and recovers 3x character's RCV in HP at the end of each turn."
         },
         sailor: {
-            "character1": "Boosts base RCV of Free Spirit characters by 50",
-            "character2": "Boosts base ATK of Free Spirit characters by 50",
-            "combined": "Boosts base ATK and RCV of Free Spirit characters by 75",
+            character1: "Boosts base RCV of Free Spirit characters by 50",
+            character2: "Boosts base ATK of Free Spirit characters by 50",
+            combined: "Boosts base ATK and RCV of Free Spirit characters by 75",
             level1: "Reduces Silence duration by 5 turns on this character"
         },
         special: "Removes Poison, RCV DOWN and Blindness duration completely, reduces Bind and Despair duration by 5 turns, recovers 13x character's RCV in HP at the end of each turn for 5 turns and becomes Ivankov & Bon Clay for 2 turns.",
@@ -58238,14 +58238,14 @@ window.details = {
     },
     2541: {//Smoker&Tashigi
         captain: {
-            "character1": "Boosts ATK of [QCK] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
-            "character2": "Boosts ATK of [PSY] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
-            "combined": "Boosts ATK of [QCK] and [PSY] characters by 3.25x, boosts ATK of all other characters by 2.5x, and boosts HP of all characters by 1.2x."
+            character1: "Boosts ATK of [QCK] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
+            character2: "Boosts ATK of [PSY] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
+            combined: "Boosts ATK of [QCK] and [PSY] characters by 3.25x, boosts ATK of all other characters by 2.5x, and boosts HP of all characters by 1.2x."
         },
         sailor: {
-            "character1": "Boosts base HP of [QCK] and [PSY] characters by 50",
-            "character2": "Boosts base RCV of [QCK] and [PSY] characters by 50",
-            "combined": "Boosts base HP and RCV of [QCK] and [PSY] characters by 75",
+            character1: "Boosts base HP of [QCK] and [PSY] characters by 50",
+            character2: "Boosts base RCV of [QCK] and [PSY] characters by 50",
+            combined: "Boosts base HP and RCV of [QCK] and [PSY] characters by 75",
         },
         special: "Deals 100,000 Fixed damage to all enemies, changes [STR], [DEX], [QCK], [PSY], [INT] and [BLOCK] orbs into Matching orbs, locks all orbs for 1 turn and becomes Smoker & Tashigi for 2 turns.",
         swap: "Randomizes [RCV], [EMPTY], [G], [BOMB] orbs and recovers 1,000 HP.",
@@ -58253,14 +58253,14 @@ window.details = {
     },
     2542: {//Smoker&Tashigi
         captain: {
-            "character1": "Boosts ATK of [QCK] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
-            "character2": "Boosts ATK of [PSY] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
-            "combined": "Boosts ATK of [QCK] and [PSY] characters by 3.25x, boosts ATK of all other characters by 2.5x, and boosts HP of all characters by 1.2x."
+            character1: "Boosts ATK of [QCK] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
+            character2: "Boosts ATK of [PSY] characters by 2.5x, boosts ATK of all other characters by 2x, and boosts HP of all characters by 1.2x.",
+            combined: "Boosts ATK of [QCK] and [PSY] characters by 3.25x, boosts ATK of all other characters by 2.5x, and boosts HP of all characters by 1.2x."
         },
         sailor: {
-            "character1": "Boosts base HP of [QCK] and [PSY] characters by 50",
-            "character2": "Boosts base RCV of [QCK] and [PSY] characters by 50",
-            "combined": "Boosts base HP and RCV of [QCK] and [PSY] characters by 75",
+            character1: "Boosts base HP of [QCK] and [PSY] characters by 50",
+            character2: "Boosts base RCV of [QCK] and [PSY] characters by 50",
+            combined: "Boosts base HP and RCV of [QCK] and [PSY] characters by 75",
             level1: "Makes [TND] orbs beneficial for [QCK] and [PSY] characters"
         },
         special: "Deals 100,000 Fixed damage to all enemies, changes [STR], [DEX], [QCK], [PSY], [INT] and [BLOCK] orbs into Matching orbs, locks all orbs for 1 turn and becomes Smoker & Tashigi for 2 turns.",
@@ -58328,14 +58328,14 @@ window.details = {
     },
     2543: {//Crocodile&Robin
         captain: {
-            "character1": "Boosts ATK of Cerebral characters by 2.5x and makes [DEX] orbs beneficial for Cerebral characters.",
-            "character2": "Boosts ATK of Cerebral characters by 2.25x and reduces damage received by 15%.",
-            "combined": "Boosts ATK of Cerebral characters by 3x, reduces damage received by 20% and makes [DEX] orbs beneficial for Cerebral characters."
+            character1: "Boosts ATK of Cerebral characters by 2.5x and makes [DEX] orbs beneficial for Cerebral characters.",
+            character2: "Boosts ATK of Cerebral characters by 2.25x and reduces damage received by 15%.",
+            combined: "Boosts ATK of Cerebral characters by 3x, reduces damage received by 20% and makes [DEX] orbs beneficial for Cerebral characters."
         },
         sailor: {
-            "character1": "Restores Special Cooldown of this character by 2 turns when it is rewinded",
-            "character2": "Reduces Silence duration by 2 turns on this character",
-            "combined": "Boosts base ATK, HP and RCV of Cerebral characters by 50",
+            character1: "Restores Special Cooldown of this character by 2 turns when it is rewinded",
+            character2: "Reduces Silence duration by 2 turns on this character",
+            combined: "Boosts base ATK, HP and RCV of Cerebral characters by 50",
         },
         special: "Reduces damage received by 80% for 1 turn, boosts the Color Affinity of all characters by 1.75x for 1 turn and becomes Mr. 0 & Miss All Sunday for 2 turns.",
         swap: "Slightly boosts chances of getting Matching orbs for 1 turn.",
@@ -58343,14 +58343,14 @@ window.details = {
     },
     2544: {//Crocodile&Robin
         captain: {
-            "character1": "Boosts ATK of Cerebral characters by 2.5x and makes [DEX] orbs beneficial for Cerebral characters.",
-            "character2": "Boosts ATK of Cerebral characters by 2.25x and reduces damage received by 15%.",
-            "combined": "Boosts ATK of Cerebral characters by 3x, reduces damage received by 20% and makes [DEX] orbs beneficial for Cerebral characters."
+            character1: "Boosts ATK of Cerebral characters by 2.5x and makes [DEX] orbs beneficial for Cerebral characters.",
+            character2: "Boosts ATK of Cerebral characters by 2.25x and reduces damage received by 15%.",
+            combined: "Boosts ATK of Cerebral characters by 3x, reduces damage received by 20% and makes [DEX] orbs beneficial for Cerebral characters."
         },
         sailor: {
-            "character1": "Restores Special Cooldown of this character by 2 turns when it is rewinded",
-            "character2": "Reduces Silence duration by 2 turns on this character",
-            "combined": "Boosts base ATK, HP and RCV of Cerebral characters by 50",
+            character1: "Restores Special Cooldown of this character by 2 turns when it is rewinded",
+            character2: "Reduces Silence duration by 2 turns on this character",
+            combined: "Boosts base ATK, HP and RCV of Cerebral characters by 50",
             level1: "Makes [DEX] orbs beneficial for Cerebral characters"
         },
         special: "Reduces damage received by 80% for 1 turn, boosts the Color Affinity of all characters by 1.75x for 1 turn and becomes Mr. 0 & Miss All Sunday for 2 turns.",
@@ -58522,14 +58522,14 @@ window.details = {
     },
     2549: {//Doflamingo&Trebol
         captain: {
-            "character1": "Boosts ATK of Driven and Cerebral characters by 2.5x and their HP by 1.2x.",
-            "character2": "Boosts ATK of Driven and Cerebral characters by 2.25x and their HP and RCV by 1.2x.",
-            "combined": "Boosts ATK of Driven and Cerebral characters by 2.75x and their HP and RCV by 1.2x and makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters."
+            character1: "Boosts ATK of Driven and Cerebral characters by 2.5x and their HP by 1.2x.",
+            character2: "Boosts ATK of Driven and Cerebral characters by 2.25x and their HP and RCV by 1.2x.",
+            combined: "Boosts ATK of Driven and Cerebral characters by 2.75x and their HP and RCV by 1.2x and makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters."
         },
         sailor: {
-            "character1": "Boosts base ATK of Driven and Cerebral characters by 30",
-            "character2": "Boosts base HP and RCV of Driven and Cerebral characters by 30",
-            "combined": "Boosts base ATK, HP and RCV of Driven and Cerebral characters by 50",
+            character1: "Boosts base ATK of Driven and Cerebral characters by 30",
+            character2: "Boosts base HP and RCV of Driven and Cerebral characters by 30",
+            combined: "Boosts base ATK, HP and RCV of Driven and Cerebral characters by 50",
         },
         special: "Switches orbs between slots 2 times, locks all orbs for 1 turn, locks the chain multiplier at 2.75x for 1 turn and becomes Doflamingo & Trebol for 2 turns. If during that turn, you hit 4 PERFECTS, locks the chain multiplier at 3.25x for 1 turn.",
         swap: "Makes [STR] and [DEX] orbs beneficial for all characters for 1 turn and changes orb of this character into a Matching orb.",
@@ -58537,14 +58537,14 @@ window.details = {
     },
     2550: {//Doflamingo&Trebol
         captain: {
-            "character1": "Boosts ATK of Driven and Cerebral characters by 2.5x and their HP by 1.2x.",
-            "character2": "Boosts ATK of Driven and Cerebral characters by 2.25x and their HP and RCV by 1.2x.",
-            "combined": "Boosts ATK of Driven and Cerebral characters by 2.75x and their HP and RCV by 1.2x and makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters."
+            character1: "Boosts ATK of Driven and Cerebral characters by 2.5x and their HP by 1.2x.",
+            character2: "Boosts ATK of Driven and Cerebral characters by 2.25x and their HP and RCV by 1.2x.",
+            combined: "Boosts ATK of Driven and Cerebral characters by 2.75x and their HP and RCV by 1.2x and makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters."
         },
         sailor: {
-            "character1": "Boosts base ATK of Driven and Cerebral characters by 30",
-            "character2": "Boosts base HP and RCV of Driven and Cerebral characters by 30",
-            "combined": "Boosts base ATK, HP and RCV of Driven and Cerebral characters by 50",
+            character1: "Boosts base ATK of Driven and Cerebral characters by 30",
+            character2: "Boosts base HP and RCV of Driven and Cerebral characters by 30",
+            combined: "Boosts base ATK, HP and RCV of Driven and Cerebral characters by 50",
             level1: "Makes [RCV] orbs beneficial for Driven and Cerebral characters",
         },
         special: "Switches orbs between slots 2 times, locks all orbs for 1 turn, locks the chain multiplier at 2.75x for 1 turn and becomes Doflamingo & Trebol for 2 turns. If during that turn, you hit 4 PERFECTS, locks the chain multiplier at 3.25x for 1 turn.",
@@ -58592,34 +58592,34 @@ window.details = {
     },
     2551: {//Sengoku&Garp
         captain: {
-            "character1": "Boosts ATK of Fighter characters by 2.25x and their HP by 1.2x and makes [INT] orbs beneficial for Fighter characters",
-            "character2": "Boosts ATK of Fighter characters by 2x and their HP by 1.2x, but boosts ATK of this character by 2.5x and makes [DEX] orbs beneficial for Fighter characters",
-            "combined": "Boosts ATK of Fighter characters by 3x and their HP by 1.2x, but boosts ATK of this character by 4x and makes [DEX], [INT], [RCV] and [TND] orbs beneficial for Fighter characters"
+            character1: "Boosts ATK of Fighter characters by 2.25x and their HP by 1.2x and makes [INT] orbs beneficial for Fighter characters",
+            character2: "Boosts ATK of Fighter characters by 2x and their HP by 1.2x, but boosts ATK of this character by 2.5x and makes [DEX] orbs beneficial for Fighter characters",
+            combined: "Boosts ATK of Fighter characters by 3x and their HP by 1.2x, but boosts ATK of this character by 4x and makes [DEX], [INT], [RCV] and [TND] orbs beneficial for Fighter characters"
         },
         captainNotes: "#{beneficial}",
         special: "Removes all positive buffs on your team and reduces Despair duration by 2 turns. Boosts ATK of Fighter characters by 1.75x for 1 turn and boosts Orb Effects of Fighter characters by 1.75x for 1 turn and becomes Sengoku & Garp for 3 turns",
         swap: "Boosts ATK of Fighter characters by 1.2x for 1 turn and changes orb of this character into a Matching orb",
         specialName: "Twin Fists of Justice",
         sailor: {
-            "character1": "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
-            "character2": "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
-            "combined": "Boosts base ATK of all characters by 40 if your Captain is a Fighter character"
+            character1: "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
+            character2: "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
+            combined: "Boosts base ATK of all characters by 40 if your Captain is a Fighter character"
         },
     },
     2552: {//Sengoku&Garp
         captain: {
-            "character1": "Boosts ATK of Fighter characters by 2.5x and their HP by 1.2x and makes [INT] orbs beneficial for Fighter characters",
-            "character2": "Boosts ATK of Fighter characters by 2.25x and their HP by 1.2x, but boosts ATK of this character by 3x and makes [DEX] orbs beneficial for Fighter characters",
-            "combined": "Boosts ATK of Fighter characters by 3x and their HP by 1.2x, but boosts ATK of this character by 4x and makes [DEX], [INT], [RCV] and [TND] orbs beneficial for Fighter characters"
+            character1: "Boosts ATK of Fighter characters by 2.5x and their HP by 1.2x and makes [INT] orbs beneficial for Fighter characters",
+            character2: "Boosts ATK of Fighter characters by 2.25x and their HP by 1.2x, but boosts ATK of this character by 3x and makes [DEX] orbs beneficial for Fighter characters",
+            combined: "Boosts ATK of Fighter characters by 3x and their HP by 1.2x, but boosts ATK of this character by 4x and makes [DEX], [INT], [RCV] and [TND] orbs beneficial for Fighter characters"
         },
         captainNotes: "#{beneficial}",
         special: "Removes all positive buffs on your team and reduces Despair duration by 2 turns. Boosts ATK of Fighter characters by 1.75x for 1 turn and boosts Orb Effects of Fighter characters by 1.75x for 1 turn and becomes Sengoku & Garp for 3 turns",
         swap: "Boosts ATK of Fighter characters by 1.2x for 1 turn and changes orb of this character into a Matching orb",
         specialName: "Twin Fists of Justice",
         sailor: {
-            "character1": "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
-            "character2": "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
-            "combined": "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
+            character1: "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
+            character2: "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
+            combined: "Boosts base ATK of all characters by 40 if your Captain is a Fighter character",
             level1: "Boosts base ATK of this character by 200 if this character is the last in the chain to attack",
         },
         limit: [
@@ -58778,9 +58778,9 @@ window.details = {
     },
     2556: {//Shanks&Ben Beckman
         captain: {
-            "character1": "Boosts ATK of [INT] characters by 2.5x and boosts ATK of all other characters by 1.5x.",
-            "character2": "Boosts ATK of [DEX] characters by 2.5x and boosts ATK of all other characters by 1.5x.",
-            "combined": "Boosts ATK of [DEX] and [INT] characters by 3x and boosts ATK of all other characters by 2x."
+            character1: "Boosts ATK of [INT] characters by 2.5x and boosts ATK of all other characters by 1.5x.",
+            character2: "Boosts ATK of [DEX] characters by 2.5x and boosts ATK of all other characters by 1.5x.",
+            combined: "Boosts ATK of [DEX] and [INT] characters by 3x and boosts ATK of all other characters by 2x."
         },
         special: "Changes all orbs, including [BLOCK] orbs, into [EMPTY] orbs, boosts the Color Affinity of all characters by 3x for 1 turn, locks the chain multiplier at 3x for 1 turn and becomes Shanks & Ben Beckman for 2 turns.",
         specialNotes: "This special can only be activated if no other special has been activated this turn and removes the ability to activate any other specials this turn.",
@@ -58790,9 +58790,9 @@ window.details = {
     },
     2557: {//Shanks&Ben Beckman
         captain: {
-            "character1": "Boosts ATK of [INT] characters by 3x and boosts ATK of all other characters by 2x.",
-            "character2": "Boosts ATK of [DEX] characters by 3x and boosts ATK of all other characters by 2x.",
-            "combined": "Boosts ATK of [DEX] and [INT] characters by 3.75x and boosts ATK of all other characters by 2.5x."
+            character1: "Boosts ATK of [INT] characters by 3x and boosts ATK of all other characters by 2x.",
+            character2: "Boosts ATK of [DEX] characters by 3x and boosts ATK of all other characters by 2x.",
+            combined: "Boosts ATK of [DEX] and [INT] characters by 3.75x and boosts ATK of all other characters by 2.5x."
         },
         special: "Changes all orbs, including [BLOCK] orbs, into [EMPTY] orbs, boosts the Color Affinity of all characters by 3x for 1 turn, locks the chain multiplier at 3x for 1 turn and becomes Shanks & Ben Beckman for 2 turns.",
         specialNotes: "This special can only be activated if no other special has been activated this turn and removes the ability to activate any other specials this turn.",
@@ -58942,14 +58942,14 @@ window.details = {
     },
     2560: {//Sabo&Koala
         captain: {
-            "character1": "Boosts ATK of Free Spirit and Cerebral characters by 3.25x and their HP and RCV by 1.2x.",
-            "character2": "Boosts ATK of Free Spirit and Cerebral characters by 3x, their HP by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row.",
-            "combined": "Boosts ATK of Free Spirit and Cerebral characters by 4x and their HP and RCV by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row."
+            character1: "Boosts ATK of Free Spirit and Cerebral characters by 3.25x and their HP and RCV by 1.2x.",
+            character2: "Boosts ATK of Free Spirit and Cerebral characters by 3x, their HP by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row.",
+            combined: "Boosts ATK of Free Spirit and Cerebral characters by 4x and their HP and RCV by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row."
         },
         sailor: {
-            "character1": "Makes [QCK] and [INT] orbs beneficial for this character",
-            "character2": "Makes [STR] and [PSY] orbs beneficial for this character",
-            "combined": "Makes [STR], [DEX], [QCK], [PSY], and [INT] orbs beneficial for this character"
+            character1: "Makes [QCK] and [INT] orbs beneficial for this character",
+            character2: "Makes [STR] and [PSY] orbs beneficial for this character",
+            combined: "Makes [STR], [DEX], [QCK], [PSY], and [INT] orbs beneficial for this character"
         },
         special: "Changes [BLOCK] and Badly Matching orbs into Matching orbs, boosts ATK of Free Spirit and Cerebral characters by 2.25x for 1 turn, removes Beneficial Orb Buff and Non-beneficial Orb Debuff duration completely and becomes Sabo & Koala for 3 turns.",
         swap: "Removes Despair and Paralysis duration completely on this character and changes orb of this character into a Matching orb, boosts the Color Affinity of Free Spirit and Cerebral characters by 1.5x for 1 turn.",
@@ -58957,14 +58957,14 @@ window.details = {
     },
     2561: {//Sabo&Koala
         captain: {
-            "character1": "Boosts ATK of Free Spirit and Cerebral characters by 3.25x and their HP and RCV by 1.2x.",
-            "character2": "Boosts ATK of Free Spirit and Cerebral characters by 3x, their HP by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row.",
-            "combined": "Boosts ATK of Free Spirit and Cerebral characters by 4x and their HP and RCV by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row."
+            character1: "Boosts ATK of Free Spirit and Cerebral characters by 3.25x and their HP and RCV by 1.2x.",
+            character2: "Boosts ATK of Free Spirit and Cerebral characters by 3x, their HP by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row.",
+            combined: "Boosts ATK of Free Spirit and Cerebral characters by 4x and their HP and RCV by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an additive 0.1x after each PERFECT in a row."
         },
         sailor: {
-            "character1": "Makes [QCK] and [INT] orbs beneficial for this character",
-            "character2": "Makes [STR] and [PSY] orbs beneficial for this character",
-            "combined": "Makes [STR], [DEX], [QCK], [PSY], and [INT] orbs beneficial for this character",
+            character1: "Makes [QCK] and [INT] orbs beneficial for this character",
+            character2: "Makes [STR] and [PSY] orbs beneficial for this character",
+            combined: "Makes [STR], [DEX], [QCK], [PSY], and [INT] orbs beneficial for this character",
             level1: "Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters by 100"
         },
         special: "Changes [BLOCK] and Badly Matching orbs into Matching orbs, boosts ATK of Free Spirit and Cerebral characters by 2.25x for 1 turn, removes Beneficial Orb Buff and Non-beneficial Orb Debuff duration completely and becomes Sabo & Koala for 3 turns.",
@@ -59529,15 +59529,15 @@ window.details = {
     },
     2576: {//Inuarashi&Nekomamushi
         captain: {
-            "character1": "Boosts ATK of Cerebral characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Striker characters by 3x and makes [STR] orbs beneficial for Cerebral and Striker characters.",
-            "character2": "Boosts ATK of Striker characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Cerebral characters by 3x and makes [PSY] orbs beneficial for Cerebral and Striker characters.",
-            "combined": "Boosts ATK of Cerebral and Striker characters by 3.5x-4x based on the timing of the attack of the previous unit in the chain, makes [STR] and [PSY] orbs beneficial for Cerebral and Striker characters and recovers 1.5x their RCV at the end of the turn for each time you hit a PERFECT."
+            character1: "Boosts ATK of Cerebral characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Striker characters by 3x and makes [STR] orbs beneficial for Cerebral and Striker characters.",
+            character2: "Boosts ATK of Striker characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Cerebral characters by 3x and makes [PSY] orbs beneficial for Cerebral and Striker characters.",
+            combined: "Boosts ATK of Cerebral and Striker characters by 3.5x-4x based on the timing of the attack of the previous unit in the chain, makes [STR] and [PSY] orbs beneficial for Cerebral and Striker characters and recovers 1.5x their RCV at the end of the turn for each time you hit a PERFECT."
         },
         captainNotes: "#{beneficial}",
         sailor: {
-            "character1": "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
-            "character2": "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
-            "combined": "Boosts base ATK of this character by 250 if this character is the last in the chain to attack"
+            character1: "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
+            character2: "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
+            combined: "Boosts base ATK of this character by 250 if this character is the last in the chain to attack"
         },
         special: "Boosts ATK of Cerebral and Striker characters by 1.75x for 1 turn and boosts the Color Affinity of Cerebral and Striker characters by 1.75x for 1 turn, and becomes Inuarashi & Nekomamushi for 3 turns. If during that turn, you hit 2 PERFECTS, boosts Orb Effects of Cerebral and Striker characters by 2.25x for 1 turn in the following turn.",
         swap: "Removes Despair and Slot Bind duration completely on this character and reduces Paralysis duration by 1 turn.",
@@ -59545,14 +59545,14 @@ window.details = {
     },
     2577: {//Inuarashi&Nekomamushi
         captain: {
-            "character1": "Boosts ATK of Cerebral characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Striker characters by 3x and makes [STR] orbs beneficial for Cerebral and Striker characters.",
-            "character2": "Boosts ATK of Striker characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Cerebral characters by 3x and makes [PSY] orbs beneficial for Cerebral and Striker characters.",
-            "combined": "Boosts ATK of Cerebral and Striker characters by 3.5x-4x based on the timing of the attack of the previous unit in the chain, makes [STR] and [PSY] orbs beneficial for Cerebral and Striker characters and recovers 1.5x their RCV at the end of the turn for each time you hit a PERFECT."
+            character1: "Boosts ATK of Cerebral characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Striker characters by 3x and makes [STR] orbs beneficial for Cerebral and Striker characters.",
+            character2: "Boosts ATK of Striker characters by 3x-3.3x based on the timing of the attack of the previous unit in the chain, boosts ATK of Cerebral characters by 3x and makes [PSY] orbs beneficial for Cerebral and Striker characters.",
+            combined: "Boosts ATK of Cerebral and Striker characters by 3.5x-4x based on the timing of the attack of the previous unit in the chain, makes [STR] and [PSY] orbs beneficial for Cerebral and Striker characters and recovers 1.5x their RCV at the end of the turn for each time you hit a PERFECT."
         },
         sailor: {
-            "character1": "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
-            "character2": "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
-            "combined": "Boosts base ATK of this character by 250 if this character is the last in the chain to attack",
+            character1: "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
+            character2: "Boosts base ATK of this character by 150 if this character is the last in the chain to attack",
+            combined: "Boosts base ATK of this character by 250 if this character is the last in the chain to attack",
             level1: "Boosts base ATK of Cerebral and Striker characters by 75"
         },
         special: "Boosts ATK of Cerebral and Striker characters by 1.75x for 1 turn and boosts the Color Affinity of Cerebral and Striker characters by 1.75x for 1 turn, and becomes Inuarashi & Nekomamushi for 3 turns. If during that turn, you hit 2 PERFECTS, boosts Orb Effects of Cerebral and Striker characters by 2.25x for 1 turn in the following turn.",
@@ -60231,15 +60231,15 @@ window.details = {
     },
     2600: {//Vivi&Rebecca
         captain: {
-            "character1": "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 1.75x, makes [PSY] orbs beneficial for all characters and reduces damage received by 20%.",
-            "character2": "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2x and makes [INT] orbs beneficial for all characters.",
-            "combined": "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2.5x, makes [PSY] and [INT] orbs beneficial for all characters and reduces damage received by 20%."
+            character1: "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 1.75x, makes [PSY] orbs beneficial for all characters and reduces damage received by 20%.",
+            character2: "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2x and makes [INT] orbs beneficial for all characters.",
+            combined: "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2.5x, makes [PSY] and [INT] orbs beneficial for all characters and reduces damage received by 20%."
         },
         captainNotes: "#{beneficial}",
         sailor: {
-            "character1": "Boosts base HP and RCV of Striker and Cerebral characters by 50",
-            "character2": "Boosts base ATK of Striker and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75"
+            character1: "Boosts base HP and RCV of Striker and Cerebral characters by 50",
+            character2: "Boosts base ATK of Striker and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75"
         },
         special: "Removes enemies' Increased Defense and Percent Damage Reduction buffs duration completely, boosts the Color Affinity of Striker and Cerebral characters by 2x for 2 turns and becomes Vivi & Rebecca for 3 turns.",
         swap: "Changes [STR] and [DEX] orbs of Striker and Cerebral characters into Matching orbs, recovers 2,000 HP at the end of each turn for 1 turn and locks the chain multiplier at 2.5x for 1 turn.",
@@ -60247,15 +60247,15 @@ window.details = {
     },
     2601: {//Vivi&Rebecca
         captain: {
-            "character1": "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 1.75x, makes [PSY] orbs beneficial for all characters and reduces damage received by 20%.",
-            "character2": "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2x and makes [INT] orbs beneficial for all characters.",
-            "combined": "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2.5x, makes [PSY] and [INT] orbs beneficial for all characters and reduces damage received by 20%."
+            character1: "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 1.75x, makes [PSY] orbs beneficial for all characters and reduces damage received by 20%.",
+            character2: "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2x and makes [INT] orbs beneficial for all characters.",
+            combined: "Boosts ATK of all characters by 1.75x, their HP by 1.2x, their Color Affinity by 2.5x, makes [PSY] and [INT] orbs beneficial for all characters and reduces damage received by 20%."
         },
         captainNotes: "#{beneficial}",
         sailor: {
-            "character1": "Boosts base HP and RCV of Striker and Cerebral characters by 50",
-            "character2": "Boosts base ATK of Striker and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
+            character1: "Boosts base HP and RCV of Striker and Cerebral characters by 50",
+            character2: "Boosts base ATK of Striker and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
             level1: "Makes [QCK] orbs beneficial for Striker and Cerebral characters"
         },
         sailorNotes: "#{beneficial}",
@@ -60340,14 +60340,14 @@ window.details = {
     },
     2602: {//Shirahoshi&Mansherry
         captain: {
-            "character1": "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3x, but boosts ATK of this character by 1.2x and recovers 5x character's RCV in HP at the end of each turn.",
-            "character2": "Boosts ATK of Striker, Cerebral and Free Spirit characters by 2.75x and recovers 5x character's RCV in HP at the end of each turn.",
-            "combined": "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3.5x, recovers 5x character's RCV in HP at the end of each turn and protects from defeat as long as HP is above 50%."
+            character1: "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3x, but boosts ATK of this character by 1.2x and recovers 5x character's RCV in HP at the end of each turn.",
+            character2: "Boosts ATK of Striker, Cerebral and Free Spirit characters by 2.75x and recovers 5x character's RCV in HP at the end of each turn.",
+            combined: "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3.5x, recovers 5x character's RCV in HP at the end of each turn and protects from defeat as long as HP is above 50%."
         },
         sailor: {
-            "character1": "Reduces Silence duration by 7 turns on this character",
-            "character2": "Reduces Silence duration by 7 turns on this character",
-            "combined": "Boosts base ATK, HP and RCV of Striker, Cerebral and Free Spirit characters by 75"
+            character1: "Reduces Silence duration by 7 turns on this character",
+            character2: "Reduces Silence duration by 7 turns on this character",
+            combined: "Boosts base ATK, HP and RCV of Striker, Cerebral and Free Spirit characters by 75"
         },
         special: "Changes all orbs, including [BLOCK] orbs, into Matching orbs, recovers 100x character's RCV in HP, reduces 2 selected debuffs duration by 10 turns and becomes Shirahoshi & Mansherry for 1 turn.",
         specialNotes: "The debuff reduction only works on debuffs whose icons are located in the bottom left of the adventure screen, above the HP bar. This DOES NOT include: Bind, Despair, Paralysis, Silence, Slot Bind, and Target Lock. Additionally, this debuff reduction will not trigger any enemy interupts, however the healing or orb manipulation of the special may still activate interupts.",
@@ -60356,14 +60356,14 @@ window.details = {
     },
     2603: {//Shirahoshi&Mansherry
         captain: {
-            "character1": "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3x, but boosts ATK of this character by 1.2x and recovers 5x character's RCV in HP at the end of each turn.",
-            "character2": "Boosts ATK of Striker, Cerebral and Free Spirit characters by 2.75x and recovers 5x character's RCV in HP at the end of each turn.",
-            "combined": "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3.5x, recovers 5x character's RCV in HP at the end of each turn and protects from defeat as long as HP is above 50%."
+            character1: "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3x, but boosts ATK of this character by 1.2x and recovers 5x character's RCV in HP at the end of each turn.",
+            character2: "Boosts ATK of Striker, Cerebral and Free Spirit characters by 2.75x and recovers 5x character's RCV in HP at the end of each turn.",
+            combined: "Boosts ATK of Striker, Cerebral and Free Spirit characters by 3.5x, recovers 5x character's RCV in HP at the end of each turn and protects from defeat as long as HP is above 50%."
         },
         sailor: {
-            "character1": "Reduces Silence duration by 7 turns on this character",
-            "character2": "Reduces Silence duration by 7 turns on this character",
-            "combined": "Boosts base ATK, HP and RCV of Striker, Cerebral and Free Spirit characters by 75",
+            character1: "Reduces Silence duration by 7 turns on this character",
+            character2: "Reduces Silence duration by 7 turns on this character",
+            combined: "Boosts base ATK, HP and RCV of Striker, Cerebral and Free Spirit characters by 75",
             level1: "Boosts base HP and RCV of Striker, Cerebral and Free Spirit characters by 100"
         },
         special: "Changes all orbs, including [BLOCK] orbs, into Matching orbs, recovers 100x character's RCV in HP, reduces 2 selected debuffs duration by 10 turns and becomes Shirahoshi & Mansherry for 1 turn.",
@@ -60807,14 +60807,14 @@ window.details = {
     },
     2618: {//Akainu&Fujitora
         captain: {
-            "character1": "Boosts ATK of [STR] characters by 3.25x, boosts ATK of [DEX] and [INT] characters by 2.5x and makes [STR] orbs beneficial for [DEX] and [INT] characters.",
-            "character2": "Boosts ATK of [INT] characters by 3.25x, boosts ATK of [STR] and [DEX] characters by 2.5x and makes [INT] orbs beneficial for [STR] and [DEX] characters.",
-            "combined": "Boosts ATK of [STR], [DEX] and [INT] characters by 3.75x, makes [STR] and [INT] orbs beneficial for [STR], [DEX] and [INT] characters and deals 10% of enemies' current HP in damage to all enemies at the end of each turn.",
+            character1: "Boosts ATK of [STR] characters by 3.25x, boosts ATK of [DEX] and [INT] characters by 2.5x and makes [STR] orbs beneficial for [DEX] and [INT] characters.",
+            character2: "Boosts ATK of [INT] characters by 3.25x, boosts ATK of [STR] and [DEX] characters by 2.5x and makes [INT] orbs beneficial for [STR] and [DEX] characters.",
+            combined: "Boosts ATK of [STR], [DEX] and [INT] characters by 3.75x, makes [STR] and [INT] orbs beneficial for [STR], [DEX] and [INT] characters and deals 10% of enemies' current HP in damage to all enemies at the end of each turn.",
         },
         sailor: {
-            "character1": "Boosts base ATK and HP of [STR], [DEX] and [INT] characters by 25",
-            "character2": "Boosts base ATK and RCV of [STR], [DEX] and [INT] characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of [STR], [DEX] and [INT] characters by 50",
+            character1: "Boosts base ATK and HP of [STR], [DEX] and [INT] characters by 25",
+            character2: "Boosts base ATK and RCV of [STR], [DEX] and [INT] characters by 25",
+            combined: "Boosts base ATK, HP and RCV of [STR], [DEX] and [INT] characters by 50",
             level1: "When any other [STR], [DEX] or [INT] character uses a special, reduces special cooldown of this character by 4 turns"
         },
         special: "Instantly defeats all enemies with HP equal to or below 120x character's ATK, randomizes all orbs into either [STR] or [INT] orbs, deals 20% of enemies' current HP in damage to all enemies and becomes Sakazuki & Issho for 2 turns.",
@@ -67138,18 +67138,18 @@ window.details = {
     },
     2795: {//Coby&Helmeppo
         captain: {
-            "character1": "Boosts ATK of [PSY] characters by 2.5x, boosts ATK of [INT] characters by 2.25x and makes [PSY] orbs beneficial for all characters. Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a row.",
-            "character2": "Boosts ATK of [INT] characters by 2.5x, boosts ATK of [PSY] characters by 2.25x and makes [INT] orbs beneficial for all characters. Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a row.",
-            "combined": "Boosts ATK of [PSY] and [INT] characters by 3x and makes [PSY] and [INT] orbs beneficial for all characters. Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a row."
+            character1: "Boosts ATK of [PSY] characters by 2.5x, boosts ATK of [INT] characters by 2.25x and makes [PSY] orbs beneficial for all characters. Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a row.",
+            character2: "Boosts ATK of [INT] characters by 2.5x, boosts ATK of [PSY] characters by 2.25x and makes [INT] orbs beneficial for all characters. Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a row.",
+            combined: "Boosts ATK of [PSY] and [INT] characters by 3x and makes [PSY] and [INT] orbs beneficial for all characters. Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a row."
         },
         captainNotes: "#{beneficial}",
         special: "Reduces enemies' Threshold Damage Reduction duration by 4 turns, deals 10% of enemies' current HP in damage to all enemies and becomes Coby & Helmeppo for 2 turns. If your crew has 5 or more [PSY] or [INT] characters when the special is activated, boosts ATK of [PSY] and [INT] characters by 2x for 1 turn, by 1.75x for 1 turn otherwise.",
         swap: "Reduces Despair duration by 1 turn and changes orb of this character into a Matching orb",
         specialName: "Cooperative Attack of Garp's Training",
         sailor: {
-            "character1": "Boosts base RCV of [PSY] and [INT] characters by 30",
-            "character2": "Boosts base RCV of [PSY] and [INT] characters by 30",
-            "combined": "Boosts base RCV of [PSY] and [INT] characters by 30",
+            character1: "Boosts base RCV of [PSY] and [INT] characters by 30",
+            character2: "Boosts base RCV of [PSY] and [INT] characters by 30",
+            combined: "Boosts base RCV of [PSY] and [INT] characters by 30",
             level1: "Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 50",
         },
         limit: [
@@ -67442,9 +67442,9 @@ window.details = {
     },
     2801: {//Luffy&Zoro
         captain: {
-            "character1": "Boosts ATK of Slasher and Free Spirit characters by 3x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "character2": "Boosts ATK of Slasher and Free Spirit characters by 3.25x and their HP by 1.3x. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "combined": "Boosts ATK of Slasher and Free Spirit characters by 4x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking."
+            character1: "Boosts ATK of Slasher and Free Spirit characters by 3x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            character2: "Boosts ATK of Slasher and Free Spirit characters by 3.25x and their HP by 1.3x. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            combined: "Boosts ATK of Slasher and Free Spirit characters by 4x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking."
         },
         captainNotes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all characters, but boost by 2.5x instead, and can not be swapped by special abilities.",
         special: "Deals 250x character's ATK in character's Type damage to all enemies, locks the chain multiplier at 3x for 1 turn and becomes Luffy & Zoro for 3 turns. Boosts Orb Effects of Slasher and Free Spirit characters by 2x-2.75x for 1 turn, depending on how many [WANO] or [TND] orbs were used in attacks.",
@@ -67452,16 +67452,16 @@ window.details = {
         swap: "Changes orb of this character into a [TND] orb and reduces Bind, Despair, Silence and Slot Bind duration by 1 turn",
         specialName: "Gomu Gomu no Toro Red Hawk",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
-            "character2": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
+            character1: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
+            character2: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
         },
     },
     2802: {//Luffy&Zoro
         captain: {
-            "character1": "Boosts ATK of Slasher and Free Spirit characters by 3x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "character2": "Boosts ATK of Slasher and Free Spirit characters by 3.25x and their HP by 1.3x. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "combined": "Boosts ATK of Slasher and Free Spirit characters by 4x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking."
+            character1: "Boosts ATK of Slasher and Free Spirit characters by 3x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            character2: "Boosts ATK of Slasher and Free Spirit characters by 3.25x and their HP by 1.3x. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            combined: "Boosts ATK of Slasher and Free Spirit characters by 4x, their HP by 1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking."
         },
         captainNotes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all characters, but boost by 2.5x instead, and can not be swapped by special abilities.",
         special: "Deals 250x character's ATK in character's Type damage to all enemies, locks the chain multiplier at 3x for 1 turn and becomes Luffy & Zoro for 3 turns. Boosts Orb Effects of Slasher and Free Spirit characters by 2x-2.75x for 1 turn, depending on how many [WANO] or [TND] orbs were used in attacks.",
@@ -67469,9 +67469,9 @@ window.details = {
         swap: "Changes orb of this character into a [TND] orb and reduces Bind, Despair, Silence and Slot Bind duration by 1 turn",
         specialName: "Gomu Gomu no Toro Red Hawk",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
-            "character2": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
+            character1: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
+            character2: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75",
             level1: "Makes [TND] orbs beneficial for all characters",
         },
         limit: [
@@ -68218,34 +68218,34 @@ window.details = {
     },
     2818: {//Shanks&Mihawk
         captain: {
-            "character1": "Boosts ATK of Slasher characters by 2x and reduces damage received by 10%",
-            "character2": "Boosts ATK of Slasher characters by 2.25x and makes [TND] and [RCV] orbs beneficial for Slasher characters",
-            "combined": "Boosts ATK of Slasher characters by 3x, reduces damage received by 20% and makes [TND] and [RCV] orbs beneficial for Slasher characters"
+            character1: "Boosts ATK of Slasher characters by 2x and reduces damage received by 10%",
+            character2: "Boosts ATK of Slasher characters by 2.25x and makes [TND] and [RCV] orbs beneficial for Slasher characters",
+            combined: "Boosts ATK of Slasher characters by 3x, reduces damage received by 20% and makes [TND] and [RCV] orbs beneficial for Slasher characters"
         },
         captainNotes: "#{beneficial}",
         special: "Reduces Bind, Silence and ATK DOWN duration by 2 turns and becomes Shanks & Mihawk for 2 turns. If HP is below 50% when the special is activated, delays all enemies by 2 turns and boosts ATK against delayed enemies by 1.75x for 2 turns",
         swap: "Boosts chances of getting [QCK], [INT] and [RCV] orbs for 1 turn and randomizes all non-Matching orbs",
         specialName: "A Feast for the New Age",
         sailor: {
-            "character1": "Boosts base ATK of [QCK] characters by 50",
-            "character2": "Boosts base ATK of [INT] characters by 50",
-            "combined": "Boosts base ATK of [QCK] and [INT] characters by 50",
+            character1: "Boosts base ATK of [QCK] characters by 50",
+            character2: "Boosts base ATK of [INT] characters by 50",
+            combined: "Boosts base ATK of [QCK] and [INT] characters by 50",
         },
     },
     2819: {//Shanks&Mihawk
         captain: {
-            "character1": "Boosts ATK of Slasher characters by 2.25x and reduces damage received by 10%",
-            "character2": "Boosts ATK of Slasher characters by 2.5x and makes [TND] and [RCV] orbs beneficial for Slasher characters",
-            "combined": "Boosts ATK of Slasher characters by 3x, reduces damage received by 20% and makes [TND] and [RCV] orbs beneficial for Slasher characters"
+            character1: "Boosts ATK of Slasher characters by 2.25x and reduces damage received by 10%",
+            character2: "Boosts ATK of Slasher characters by 2.5x and makes [TND] and [RCV] orbs beneficial for Slasher characters",
+            combined: "Boosts ATK of Slasher characters by 3x, reduces damage received by 20% and makes [TND] and [RCV] orbs beneficial for Slasher characters"
         },
         captainNotes: "#{beneficial}",
         special: "Reduces Bind, Silence and ATK DOWN duration by 2 turns and becomes Shanks & Mihawk for 2 turns. If HP is below 50% when the special is activated, delays all enemies by 2 turns and boosts ATK against delayed enemies by 1.75x for 2 turns",
         swap: "Boosts chances of getting [QCK], [INT] and [RCV] orbs for 1 turn and randomizes all non-Matching orbs",
         specialName: "A Feast for the New Age",
         sailor: {
-            "character1": "Boosts base ATK of [QCK] characters by 50",
-            "character2": "Boosts base ATK of [INT] characters by 50",
-            "combined": "Boosts base ATK of [QCK] and [INT] characters by 50",
+            character1: "Boosts base ATK of [QCK] characters by 50",
+            character2: "Boosts base ATK of [INT] characters by 50",
+            combined: "Boosts base ATK of [QCK] and [INT] characters by 50",
             level1: "Reduces Silence duration by 3 turns on this character",
         },
         limit: [
@@ -68730,18 +68730,18 @@ window.details = {
     },
     2831: {//Marco&Ace
         captain: {
-            "character1": "Boosts ATK of [STR] characters by 2.75x, their RCV by 1.25x and makes [RCV] orbs beneficial for [STR] characters.",
-            "character2": "Boosts ATK of [STR] characters by 3x and makes [TND] orbs beneficial for [STR] characters.",
-            "combined": "Boosts ATK of [STR] characters by 3.75x, their RCV by 1.25x and makes [TND] and [RCV] orbs beneficial for [STR] characters."
+            character1: "Boosts ATK of [STR] characters by 2.75x, their RCV by 1.25x and makes [RCV] orbs beneficial for [STR] characters.",
+            character2: "Boosts ATK of [STR] characters by 3x and makes [TND] orbs beneficial for [STR] characters.",
+            combined: "Boosts ATK of [STR] characters by 3.75x, their RCV by 1.25x and makes [TND] and [RCV] orbs beneficial for [STR] characters."
         },
         captainNotes: "#{beneficial}",
         special: "Reduces crew's current HP by 99%, deals 30x the amount of HP subtracted in Typeless damage to one enemy, recovers 50x character's RCV in HP at the end of each turn for 1 turn, boosts ATK of [STR] characters by 2.75x for 1 turn removes enemies' ATK Up and Enrage duration completely and becomes Marco & Ace for 3 turns",
         swap: "Changes the orb of this character into a [STR] orb and changes Badly Matching orbs into [STR] orbs",
         specialName: "A Feast for the New Age",
         sailor: {
-            "character1": null,
-            "character2": null,
-            "combined": null,
+            character1: null,
+            character2: null,
+            combined: null,
             level1: "Boosts base ATK, HP and RCV of [STR] characters by 100",
             level2: "Makes [STR] orbs beneficial for all characters",
         },
@@ -68866,9 +68866,9 @@ window.details = {
     },
     2834: {//Nami&Robin
         captain: {
-            "character1": "Boosts ATK of [DEX] and [INT] characters by 3.5x, by 3.75x instead if they have a beneficial orb, their HP by 1.3x and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
-            "character2": "Boosts ATK of [DEX] and [INT] characters by 3.25x, their HP and RCV by 1.3x, reduces damage received by 10% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
-            "combined": "Boosts ATK of [DEX] and [INT] characters by 4.5x, their HP and RCV by 1.3x, reduces damage received by 20% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 6x instead."
+            character1: "Boosts ATK of [DEX] and [INT] characters by 3.5x, by 3.75x instead if they have a beneficial orb, their HP by 1.3x and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
+            character2: "Boosts ATK of [DEX] and [INT] characters by 3.25x, their HP and RCV by 1.3x, reduces damage received by 10% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
+            combined: "Boosts ATK of [DEX] and [INT] characters by 4.5x, their HP and RCV by 1.3x, reduces damage received by 20% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 6x instead."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 25% of enemies' current HP in damage to one enemy, boosts Orb Effects of [DEX] and [INT] characters by 2.5x for 1 turn, reduces Paralysis duration by 10 turns and becomes Nami & Robin for 3 turns",
@@ -68876,16 +68876,16 @@ window.details = {
         swapNotes: "The storing and emptying of orbs will work on all orbs, including [BLOCK], [RAINBOW], [SEMLA] and [WANO]. However, you can not override [RAINBOW], [SEMLA] or [WANO] orbs with other orbs. The Swap can not store [EMPTY] orbs; if all orbs are empty, the swap will occur without any additional effects if there's no stored orbs.",
         specialName: "Mil Fleur Tempo",
         sailor: {
-            "character1": "Makes [DEX] and [INT] orbs beneficial for all characters",
-            "character2": "Makes [DEX] and [INT] orbs beneficial for all characters",
-            "combined": "Makes [DEX] and [INT] orbs beneficial for all characters",
+            character1: "Makes [DEX] and [INT] orbs beneficial for all characters",
+            character2: "Makes [DEX] and [INT] orbs beneficial for all characters",
+            combined: "Makes [DEX] and [INT] orbs beneficial for all characters",
         },
     },
     2835: {//Nami&Robin
         captain: {
-            "character1": "Boosts ATK of [DEX] and [INT] characters by 3.5x, by 3.75x instead if they have a beneficial orb, their HP by 1.3x and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
-            "character2": "Boosts ATK of [DEX] and [INT] characters by 3.25x, their HP and RCV by 1.3x, reduces damage received by 10% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
-            "combined": "Boosts ATK of [DEX] and [INT] characters by 4.5x, their HP and RCV by 1.3x, reduces damage received by 20% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 6x instead."
+            character1: "Boosts ATK of [DEX] and [INT] characters by 3.5x, by 3.75x instead if they have a beneficial orb, their HP by 1.3x and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
+            character2: "Boosts ATK of [DEX] and [INT] characters by 3.25x, their HP and RCV by 1.3x, reduces damage received by 10% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.",
+            combined: "Boosts ATK of [DEX] and [INT] characters by 4.5x, their HP and RCV by 1.3x, reduces damage received by 20% and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has an [EMPTY] orb, boosts their ATK by 6x instead."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 25% of enemies' current HP in damage to one enemy, boosts Orb Effects of [DEX] and [INT] characters by 2.5x for 1 turn, reduces Paralysis duration by 10 turns and becomes Nami & Robin for 3 turns",
@@ -68893,9 +68893,9 @@ window.details = {
         swapNotes: "The storing and emptying of orbs will work on all orbs, including [BLOCK], [RAINBOW], [SEMLA] and [WANO]. However, you can not override [RAINBOW], [SEMLA] or [WANO] orbs with other orbs. The Swap can not store [EMPTY] orbs; if all orbs are empty, the swap will occur without any additional effects if there's no stored orbs.",
         specialName: "Mil Fleur Tempo",
         sailor: {
-            "character1": "Makes [DEX] and [INT] orbs beneficial for all characters",
-            "character2": "Makes [DEX] and [INT] orbs beneficial for all characters",
-            "combined": "Makes [DEX] and [INT] orbs beneficial for all characters",
+            character1: "Makes [DEX] and [INT] orbs beneficial for all characters",
+            character2: "Makes [DEX] and [INT] orbs beneficial for all characters",
+            combined: "Makes [DEX] and [INT] orbs beneficial for all characters",
             level1: "Reduces Paralysis duration by 1 turn",
         },
         limit: [
@@ -69489,9 +69489,9 @@ window.details = {
     },
     2850: {//Rebecca&Viola
         captain: {
-            "character1": "Boosts ATK of [DEX] characters by 3x and boosts ATK of [INT] characters by 2.25x.",
-            "character2": "Boosts ATK of [INT] characters by 3x and boosts ATK of [DEX] characters by 2.25x.",
-            "combined": "Boosts ATK of [DEX] and [INT] characters by 3.75x and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters."
+            character1: "Boosts ATK of [DEX] characters by 3x and boosts ATK of [INT] characters by 2.25x.",
+            character2: "Boosts ATK of [INT] characters by 3x and boosts ATK of [DEX] characters by 2.25x.",
+            combined: "Boosts ATK of [DEX] and [INT] characters by 3.75x and makes [DEX] and [INT] orbs beneficial for [DEX] and [INT] characters."
         },
         captainNotes: "#{beneficial}",
         special: "Reduces Burn and Silence duration by 5 turns and becomes Rebecca & Viola for 2 turns and locks the chain multiplier at 3x-3.5x for 1 turn, depending on the number of enemies on the stage when the special is activated.",
@@ -69499,9 +69499,9 @@ window.details = {
         swap: "Displays the status of all enemies for 1 turn, randomizes all [EMPTY] orbs and recovers 5% of crew's MAX HP.",
         specialName: "Memories of a Nostalgic Country",
         sailor: {
-            "character1": "Reduces Silence duration by 3 turns on this character",
-            "character2": "Reduces Silence duration by 3 turns on this character",
-            "combined": "Reduces Silence duration by 3 turns on this character",
+            character1: "Reduces Silence duration by 3 turns on this character",
+            character2: "Reduces Silence duration by 3 turns on this character",
+            combined: "Reduces Silence duration by 3 turns on this character",
             level1: "Boosts base ATK, HP and RCV of [DEX] and [INT] characters by 75",
         },
         limit: [
@@ -69783,9 +69783,9 @@ window.details = {
     },
     2859: {//Arlong&Crew
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 3.75x and boosts ATK of all other characters by 3.25x.",
-            "character2": "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 3.25x.",
-            "combined": "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 4.25x."
+            character1: "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 3.75x and boosts ATK of all other characters by 3.25x.",
+            character2: "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 3.25x.",
+            combined: "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 4.25x."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 250x character's ATK in Typeless damage to all enemies, reduces Special Cooldown of all characters by 2 turns and becomes Arlong Pirates for 3 turns. If HP is below 30% when the special is activated, boosts ATK of all characters by 2.5x for 1 turn, by 2x otherwise.",
@@ -69793,16 +69793,16 @@ window.details = {
         swapNotes: "Base ATK boost is equal to 10 + 240*(1 - currentHP/maxHP), the maximum effect at 1 HP will give a 250 base ATK boost",
         specialName: "Shark On Pirates",
         sailor: {
-            "character1": "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
-            "character2": "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
-            "combined": "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
+            character1: "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
+            character2: "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
+            combined: "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
         },
     },
     2860: {//Arlong&Crew
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 3.75x and boosts ATK of all other characters by 3.25x.",
-            "character2": "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 3.25x.",
-            "combined": "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 4.25x."
+            character1: "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 3.75x and boosts ATK of all other characters by 3.25x.",
+            character2: "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 3.25x.",
+            combined: "Reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces crew's current HP by 10% at the end of each turn, makes [STR] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew and boosts ATK of all characters by 4.25x."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 250x character's ATK in Typeless damage to all enemies, reduces Special Cooldown of all characters by 2 turns and becomes Arlong Pirates for 3 turns. If HP is below 30% when the special is activated, boosts ATK of all characters by 2.5x for 1 turn, by 2x otherwise.",
@@ -69810,9 +69810,9 @@ window.details = {
         swapNotes: "Base ATK boost is equal to 10 + 240*(1 - currentHP/maxHP), the maximum effect at 1 HP will give a 250 base ATK boost",
         specialName: "Shark On Pirates",
         sailor: {
-            "character1": "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
-            "character2": "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
-            "combined": "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
+            character1: "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
+            character2: "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
+            combined: "Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this character",
             level1: "Restores Special Cooldown of this character completely when it is rewinded",
         },
         limit: [
@@ -69893,34 +69893,34 @@ window.details = {
     },
     2861: {//Shanks&Crew
         captain: {
-            "character1": "Boosts ATK of all characters by 3.5x, their HP by 1.2x, makes [QCK] orbs beneficial for all characters, reduces Silence duration by 10 turns.",
-            "character2": "Boosts ATK of all characters by 3.25x, their HP by 1.2x, makes [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 10%.",
-            "combined": "Boosts ATK of all characters by 4.5x, their HP by 1.2x, makes [QCK] and [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 20%. Deals 0x-1000x character's ATK in Typeless damage to all enemies at the end of each turn depending on how many PERFECTs scored that turn."
+            character1: "Boosts ATK of all characters by 3.5x, their HP by 1.2x, makes [QCK] orbs beneficial for all characters, reduces Silence duration by 10 turns.",
+            character2: "Boosts ATK of all characters by 3.25x, their HP by 1.2x, makes [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 10%.",
+            combined: "Boosts ATK of all characters by 4.5x, their HP by 1.2x, makes [QCK] and [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 20%. Deals 0x-1000x character's ATK in Typeless damage to all enemies at the end of each turn depending on how many PERFECTs scored that turn."
         },
         captainNotes: "End of turn damage is based on how many PERFECTs you hit this turn: 0 PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs - 32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs - 1000x ATK<br>#{beneficial}",
         special: "Deals 20% of enemies' current HP in True damage to all enemies, locks the chain multiplier at 3.5x for 3 turns and becomes Red Hair Pirates for 3 turns.",
         swap: "Changes orbs of adjacent characters into Matching Orbs and boosts ATK of all characters by 1.5x for 1 turn.",
         specialName: "Anger for their Friend",
         sailor: {
-            "character1": "Reduces Silence duration completely on this character",
-            "character2": "Reduces Silence duration completely on this character",
-            "combined": "Reduces Silence duration completely on this character",
+            character1: "Reduces Silence duration completely on this character",
+            character2: "Reduces Silence duration completely on this character",
+            combined: "Reduces Silence duration completely on this character",
         },
     },
     2862: {//Shanks&Crew
         captain: {
-            "character1": "Boosts ATK of all characters by 3.5x, their HP by 1.2x, makes [QCK] orbs beneficial for all characters, reduces Silence duration by 10 turns.",
-            "character2": "Boosts ATK of all characters by 3.25x, their HP by 1.2x, makes [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 10%.",
-            "combined": "Boosts ATK of all characters by 4.5x, their HP by 1.2x, makes [QCK] and [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 20%. Deals 0x-1000x character's ATK in Typeless damage to all enemies at the end of each turn depending on how many PERFECTs scored that turn."
+            character1: "Boosts ATK of all characters by 3.5x, their HP by 1.2x, makes [QCK] orbs beneficial for all characters, reduces Silence duration by 10 turns.",
+            character2: "Boosts ATK of all characters by 3.25x, their HP by 1.2x, makes [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 10%.",
+            combined: "Boosts ATK of all characters by 4.5x, their HP by 1.2x, makes [QCK] and [PSY] orbs beneficial for all characters, reduces Silence duration by 10 turns and reduces damage taken by 20%. Deals 0x-1000x character's ATK in Typeless damage to all enemies at the end of each turn depending on how many PERFECTs scored that turn."
         },
         captainNotes: "End of turn damage is based on how many PERFECTs you hit this turn: 0 PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs - 32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs - 1000x ATK<br>#{beneficial}",
         special: "Deals 20% of enemies' current HP in True damage to all enemies, locks the chain multiplier at 3.5x for 3 turns and becomes Red Hair Pirates for 3 turns.",
         swap: "Changes orbs of adjacent characters into Matching Orbs and boosts ATK of all characters by 1.5x for 1 turn.",
         specialName: "Anger for their Friend",
         sailor: {
-            "character1": "Reduces Silence duration completely on this character",
-            "character2": "Reduces Silence duration completely on this character",
-            "combined": "Reduces Silence duration completely on this character",
+            character1: "Reduces Silence duration completely on this character",
+            character2: "Reduces Silence duration completely on this character",
+            combined: "Reduces Silence duration completely on this character",
             level1: "Boosts base ATK of this character by 250 if this character is the last in the chain to attack",
         },
         limit: [
@@ -70001,32 +70001,32 @@ window.details = {
     },
     2863: {//Krieg&Gin
         captain: {
-            "character1": "Boosts ATK of [STR] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
-            "character2": "Boosts ATK of [QCK] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
-            "combined": "Boosts ATK of [STR] and [QCK] characters by 3.25x and boosts ATK of all other characters by 2.5x and reduces damage taken by 20%."
+            character1: "Boosts ATK of [STR] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
+            character2: "Boosts ATK of [QCK] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
+            combined: "Boosts ATK of [STR] and [QCK] characters by 3.25x and boosts ATK of all other characters by 2.5x and reduces damage taken by 20%."
         },
         special: "Deals 50x character's ATK in character's Type damage to all enemies, reduces Paralysis duration by 5 turns, reduces enemies' Increased Defense duration by 5 turns and becomes Krieg & Gin for 2 turns. If enemies have Delay Debuff Protection or All Debuff Protection when the special is activated, boosts Orb Effects of all characters by 2x for 1 turn.",
         swap: "Changes orb of this character into a Matching orb and reduces damage received by 20% for 1 turn.",
         specialName: "Man-Demon War Spear",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
-            "character2": "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 50",
+            character1: "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
+            character2: "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
+            combined: "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 50",
         },
     },
     2864: {//Krieg&Gin
         captain: {
-            "character1": "Boosts ATK of [STR] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
-            "character2": "Boosts ATK of [QCK] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
-            "combined": "Boosts ATK of [STR] and [QCK] characters by 3.25x and boosts ATK of all other characters by 2.5x and reduces damage taken by 20%."
+            character1: "Boosts ATK of [STR] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
+            character2: "Boosts ATK of [QCK] characters by 2.5x and boosts ATK of all other characters by 2x and reduces damage taken by 10%.",
+            combined: "Boosts ATK of [STR] and [QCK] characters by 3.25x and boosts ATK of all other characters by 2.5x and reduces damage taken by 20%."
         },
         special: "Deals 50x character's ATK in character's Type damage to all enemies, reduces Paralysis duration by 5 turns, reduces enemies' Increased Defense duration by 5 turns and becomes Krieg & Gin for 2 turns. If enemies have Delay Debuff Protection or All Debuff Protection when the special is activated, boosts Orb Effects of all characters by 2x for 1 turn.",
         swap: "Changes orb of this character into a Matching orb and reduces damage received by 20% for 1 turn.",
         specialName: "Man-Demon War Spear",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
-            "character2": "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 50",
+            character1: "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
+            character2: "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25",
+            combined: "Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 50",
             level1: "Makes [QCK] orbs beneficial for Powerhouse characters",
         },
         limit: [
@@ -70092,32 +70092,32 @@ window.details = {
     },
     2865: {//Kuro&Django
         captain: {
-            "character1": "Boosts ATK of Slasher characters by 2.25x, by 2.75x instead if they have a beneficial orb.",
-            "character2": "Boosts ATK of Slasher characters by 2.5x and makes [DEX] orbs beneficial for Slasher characters.",
-            "combined": "Boosts ATK of Slasher characters by 2.5x, by 3x instead if they have a beneficial orb, and makes [DEX] orbs beneficial for Slasher characters."
+            character1: "Boosts ATK of Slasher characters by 2.25x, by 2.75x instead if they have a beneficial orb.",
+            character2: "Boosts ATK of Slasher characters by 2.5x and makes [DEX] orbs beneficial for Slasher characters.",
+            combined: "Boosts ATK of Slasher characters by 2.5x, by 3x instead if they have a beneficial orb, and makes [DEX] orbs beneficial for Slasher characters."
         },
         special: "Deals 96x character's ATK in Typeless damage to all enemies, reduces Despair duration by 5 turns, changes [RCV], [TND], [EMPTY] and [BLOCK] orbs into Matching orbs, boosts ATK against delayed enemies by 1.75x for 2 turns and becomes Kuro & Django for 2 turns.",
         swap: "Reduces Paralysis and Bind duration by 1 turn.",
         specialName: "Calculated Cooperative Assassination",
         sailor: {
-            "character1": "Reduces Blindness duration by 5 turns",
-            "character2": "Reduces Blindness duration by 5 turns",
-            "combined": "Reduces Blindness duration by 5 turns",
+            character1: "Reduces Blindness duration by 5 turns",
+            character2: "Reduces Blindness duration by 5 turns",
+            combined: "Reduces Blindness duration by 5 turns",
         },
     },
     2866: {//Kuro&Django
         captain: {
-            "character1": "Boosts ATK of Slasher characters by 2.25x, by 2.75x instead if they have a beneficial orb.",
-            "character2": "Boosts ATK of Slasher characters by 2.5x and makes [DEX] orbs beneficial for Slasher characters.",
-            "combined": "Boosts ATK of Slasher characters by 2.5x, by 3x instead if they have a beneficial orb, and makes [DEX] orbs beneficial for Slasher characters."
+            character1: "Boosts ATK of Slasher characters by 2.25x, by 2.75x instead if they have a beneficial orb.",
+            character2: "Boosts ATK of Slasher characters by 2.5x and makes [DEX] orbs beneficial for Slasher characters.",
+            combined: "Boosts ATK of Slasher characters by 2.5x, by 3x instead if they have a beneficial orb, and makes [DEX] orbs beneficial for Slasher characters."
         },
         special: "Deals 96x character's ATK in Typeless damage to all enemies, reduces Despair duration by 5 turns, changes [RCV], [TND], [EMPTY] and [BLOCK] orbs into Matching orbs, boosts ATK against delayed enemies by 1.75x for 2 turns and becomes Kuro & Django for 2 turns.",
         swap: "Reduces Paralysis and Bind duration by 1 turn.",
         specialName: "Calculated Cooperative Assassination",
         sailor: {
-            "character1": "Reduces Blindness duration by 5 turns",
-            "character2": "Reduces Blindness duration by 5 turns",
-            "combined": "Reduces Blindness duration by 5 turns",
+            character1: "Reduces Blindness duration by 5 turns",
+            character2: "Reduces Blindness duration by 5 turns",
+            combined: "Reduces Blindness duration by 5 turns",
             level1: "Makes [DEX] orbs beneficial for Slasher characters",
         },
         limit: [
@@ -70183,17 +70183,17 @@ window.details = {
     },
     2867: {//Buggy&Crew
         captain: {
-            "character1": "Boosts ATK of this character by 2.75x, boosts ATK of all other characters by 2.5x, their HP by 1.2x and gives chance of duplicating a drop upon completion of the island.",
-            "character2": "Boosts ATK of all characters by 2.5x, their HP by 1.2x, makes [INT] orbs beneficial for all characters and gives chance of duplicating a drop upon completion of the island.",
-            "combined": "Boosts ATK of this character by 3.25x, boosts ATK of all other characters by 3x, their HP by 1.2x, makes [INT] orbs beneficial for all characters and gives chance of duplicating a drop upon completion of the island."
+            character1: "Boosts ATK of this character by 2.75x, boosts ATK of all other characters by 2.5x, their HP by 1.2x and gives chance of duplicating a drop upon completion of the island.",
+            character2: "Boosts ATK of all characters by 2.5x, their HP by 1.2x, makes [INT] orbs beneficial for all characters and gives chance of duplicating a drop upon completion of the island.",
+            combined: "Boosts ATK of this character by 3.25x, boosts ATK of all other characters by 3x, their HP by 1.2x, makes [INT] orbs beneficial for all characters and gives chance of duplicating a drop upon completion of the island."
         },
         special: "Reduces enemies' Damage Nullification duration by 2 turns, deals 100,000 Fixed damage to all enemies, delays all enemies by 2 turns, changes [G], [BOMB] and Badly Matching orbs into Matching orbs and becomes Buggy Pirates for 3 turns.",
         swap: "Changes orb of this character into a Matching orb and boosts the Color Affinity of Slasher and Driven characters by 1.2x for 1 turn.",
         specialName: "Buggy Pirates Festival",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of all characters by 25",
-            "character2": "Boosts base ATK, HP and RCV of all characters by 25",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 25",
+            character1: "Boosts base ATK, HP and RCV of all characters by 25",
+            character2: "Boosts base ATK, HP and RCV of all characters by 25",
+            combined: "Boosts base ATK, HP and RCV of all characters by 25",
             level1: "Makes [PSY] orbs beneficial for this character",
         },
         limit: [
@@ -71713,9 +71713,9 @@ window.details = {
     },
     2894: {//Mihawk&Perona
         captain: {
-            "character1": "Boosts ATK of [STR] and [PSY] characters by 3x, by 3.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR] orbs beneficial for [PSY] characters, lowers chances of getting [RCV] and [TND] orbs.",
-            "character2": "Boosts ATK of [STR] and [PSY] characters by 3.25x, their HP by 1.3x, makes [PSY] orbs beneficial for [STR] characters, lowers chances of getting [RCV] and [TND] orbs.",
-            "combined": "Boosts ATK of [STR] and [PSY] characters by 4x, by 4.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for [STR] and [PSY] characters, lowers chances of getting [RCV] and [TND] orbs."
+            character1: "Boosts ATK of [STR] and [PSY] characters by 3x, by 3.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR] orbs beneficial for [PSY] characters, lowers chances of getting [RCV] and [TND] orbs.",
+            character2: "Boosts ATK of [STR] and [PSY] characters by 3.25x, their HP by 1.3x, makes [PSY] orbs beneficial for [STR] characters, lowers chances of getting [RCV] and [TND] orbs.",
+            combined: "Boosts ATK of [STR] and [PSY] characters by 4x, by 4.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for [STR] and [PSY] characters, lowers chances of getting [RCV] and [TND] orbs."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 20% of enemies' current HP in damage to all enemies, changes [BLOCK] orbs into Matching orbs, boosts ATK against enemies inflicted with Negative by 2x for 1 turn and becomes Mihawk and Perona for 3 turns.",
@@ -71723,16 +71723,16 @@ window.details = {
         swapNotes: "Negative reduces the ATK and DEF of enemies by 20%. More info about how ATK reduction is calculated will be updated here soon.",
         specialName: "Spirit Sword",
         sailor: {
-            "character1": "Boosts base ATK and HP of [STR] and [PSY] characters by 75",
-            "character2": "Boosts base ATK and RCV of [STR] and [PSY] characters by 75",
-            "combined": "Boosts base ATK, HP and RCV of [STR] and [PSY] characters by 100",
+            character1: "Boosts base ATK and HP of [STR] and [PSY] characters by 75",
+            character2: "Boosts base ATK and RCV of [STR] and [PSY] characters by 75",
+            combined: "Boosts base ATK, HP and RCV of [STR] and [PSY] characters by 100",
         },
     },
     2895: {//Mihawk&Perona
         captain: {
-            "character1": "Boosts ATK of [STR] and [PSY] characters by 3x, by 3.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR] orbs beneficial for [PSY] characters, lowers chances of getting [RCV] and [TND] orbs.",
-            "character2": "Boosts ATK of [STR] and [PSY] characters by 3.25x, their HP by 1.3x, makes [PSY] orbs beneficial for [STR] characters, lowers chances of getting [RCV] and [TND] orbs.",
-            "combined": "Boosts ATK of [STR] and [PSY] characters by 4x, by 4.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for [STR] and [PSY] characters, lowers chances of getting [RCV] and [TND] orbs."
+            character1: "Boosts ATK of [STR] and [PSY] characters by 3x, by 3.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR] orbs beneficial for [PSY] characters, lowers chances of getting [RCV] and [TND] orbs.",
+            character2: "Boosts ATK of [STR] and [PSY] characters by 3.25x, their HP by 1.3x, makes [PSY] orbs beneficial for [STR] characters, lowers chances of getting [RCV] and [TND] orbs.",
+            combined: "Boosts ATK of [STR] and [PSY] characters by 4x, by 4.5x instead if they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for [STR] and [PSY] characters, lowers chances of getting [RCV] and [TND] orbs."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 20% of enemies' current HP in damage to all enemies, changes [BLOCK] orbs into Matching orbs, boosts ATK against enemies inflicted with Negative by 2x for 1 turn and becomes Mihawk and Perona for 3 turns.",
@@ -71740,9 +71740,9 @@ window.details = {
         swapNotes: "Negative reduces the ATK and DEF of enemies by 20%. More info about how ATK reduction is calculated will be updated here soon.",
         specialName: "Spirit Sword",
         sailor: {
-            "character1": "Boosts base ATK and HP of [STR] and [PSY] characters by 75",
-            "character2": "Boosts base ATK and RCV of [STR] and [PSY] characters by 75",
-            "combined": "Boosts base ATK, HP and RCV of [STR] and [PSY] characters by 100",
+            character1: "Boosts base ATK and HP of [STR] and [PSY] characters by 75",
+            character2: "Boosts base ATK and RCV of [STR] and [PSY] characters by 75",
+            combined: "Boosts base ATK, HP and RCV of [STR] and [PSY] characters by 100",
             level1: "Makes [STR] and [PSY] orbs beneficial for [STR] and [PSY] characters",
         },
         limit: [
@@ -72704,9 +72704,9 @@ window.details = {
     },
     2919: {//Sanji&Pudding
         captain: {
-            "character1": "Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x, their RCV by 1.2x and boosts chances of getting [RCV] orbs",
-            "character2": "Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x, their RCV by 1.2x and makes [RCV] orbs beneficial for all characters",
-            "combined": "Boosts ATK of [STR], [DEX] and [QCK] characters by 3.25x, their RCV by 1.5x, boosts chances of getting [RCV] orbs and makes [RCV] orbs beneficial for all characters.<br><b>Boosted Ability:</b> Boosts ATK of [STR], [DEX] and [QCK] characters by 4.25x, their RCV by 1.75x, boosts chances of getting [RCV] orbs and makes [RCV] orbs beneficial for all characters."
+            character1: "Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x, their RCV by 1.2x and boosts chances of getting [RCV] orbs",
+            character2: "Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x, their RCV by 1.2x and makes [RCV] orbs beneficial for all characters",
+            combined: "Boosts ATK of [STR], [DEX] and [QCK] characters by 3.25x, their RCV by 1.5x, boosts chances of getting [RCV] orbs and makes [RCV] orbs beneficial for all characters.<br><b>Boosted Ability:</b> Boosts ATK of [STR], [DEX] and [QCK] characters by 4.25x, their RCV by 1.75x, boosts chances of getting [RCV] orbs and makes [RCV] orbs beneficial for all characters."
         },
         sailor: {
             base: "Boosts base ATK of top row characters by 60",
@@ -76842,18 +76842,18 @@ window.details = {
     },
     2999: {//Luffy&Hancock
         captain: {
-            "character1": "Boosts ATK of [PSY] characters by 2.75x, their HP by 1.25x and makes [INT] orbs beneficial for [PSY] characters.",
-            "character2": "Boosts ATK of [INT] characters by 2.75x, their HP by 1.25x and makes [PSY] orbs beneficial for [INT] characters.",
-            "combined": "Boosts ATK of [PSY] and [INT] characters by 3.75x, their HP by 1.25x and makes [PSY] and [INT] orbs beneficial for [PSY] and [INT] characters."
+            character1: "Boosts ATK of [PSY] characters by 2.75x, their HP by 1.25x and makes [INT] orbs beneficial for [PSY] characters.",
+            character2: "Boosts ATK of [INT] characters by 2.75x, their HP by 1.25x and makes [PSY] orbs beneficial for [INT] characters.",
+            combined: "Boosts ATK of [PSY] and [INT] characters by 3.75x, their HP by 1.25x and makes [PSY] and [INT] orbs beneficial for [PSY] and [INT] characters."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 300x character's ATK in character's Type damage to all enemies, changes all orbs, including [BLOCK] orbs, of [PSY] and [INT] characters into Matching orbs, locks all orbs for 1 turn, boosts the Color Affinity of [PSY] and [INT] characters by 2.25x for 1 turn and becomes Luffy & Boa for 3 turns.",
         swap: "Recovers 3% of crew's MAX HP and changes orb of this character into a Matching orb.",
         specialName: "Gomu Gomu no Gatling Gun & Slave Arrow",
         sailor: {
-            "character1": null,
-            "character2": null,
-            "combined": null,
+            character1: null,
+            character2: null,
+            combined: null,
             level1: "Boosts base ATK and HP of [PSY], [INT] characters by 100",
             level2: "Makes [PSY] and [INT] orbs beneficial for all characters",
         },
@@ -79767,17 +79767,17 @@ window.details = {
     },
     3060: {//Nami&Sanji
         captain: {
-            "character1": "Boosts ATK of Fighter and Free Spirit characters by 3x, their RCV by 1.2x and restores Special Cooldown of all characters by 2 turns when they are rewinded.",
-            "character2": "Boosts ATK of Fighter and Free Spirit characters by 3.25x and restores Special Cooldown of all characters by 2 turns when they are rewinded.",
-            "combined": "Boosts ATK of Fighter and Free Spirit characters by 4x, their RCV by 1.2x and restores Special Cooldown of all characters by 2 turns when they are rewinded."
+            character1: "Boosts ATK of Fighter and Free Spirit characters by 3x, their RCV by 1.2x and restores Special Cooldown of all characters by 2 turns when they are rewinded.",
+            character2: "Boosts ATK of Fighter and Free Spirit characters by 3.25x and restores Special Cooldown of all characters by 2 turns when they are rewinded.",
+            combined: "Boosts ATK of Fighter and Free Spirit characters by 4x, their RCV by 1.2x and restores Special Cooldown of all characters by 2 turns when they are rewinded."
         },
         special: "Reduces Silence duration by 5 turns, removes Stun duration completely, boosts Orb Effects of Free Spirit and Fighter characters by 2x for 1 turn and becomes Nami & Sanji for 2 turns.",
         swap: "Changes Badly Matching orbs of Fighter and Free Spirit characters into Matching orbs.",
         specialName: "Festival Stall Stroll",
         sailor: {
-            "character1": "Reduces Silence duration by 5 turns on this character",
-            "character2": "Reduces Silence duration by 5 turns on this character",
-            "combined": "Reduces Silence duration by 5 turns on this character",
+            character1: "Reduces Silence duration by 5 turns on this character",
+            character2: "Reduces Silence duration by 5 turns on this character",
+            combined: "Reduces Silence duration by 5 turns on this character",
             level1: "Boosts base ATK, HP and RCV of Free Spirit and Fighter characters by 50",
         },
         limit: [
@@ -80047,34 +80047,34 @@ window.details = {
     },
     3064: {//Luffy&Sanji
         captain: {
-            "character1": "If HP is above 99% at the start of the turn, boosts ATK of all characters by 4x, by 3.5x otherwise, boosts HP of all characters by 1.2x and allows HP Overfill up to 2x MAX HP.",
-            "character2": "If HP is above 99% at the start of the turn, boosts ATK of all characters by 3.75x, by 3.25x otherwise, boosts HP of all characters by 1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP.",
-            "combined": "If HP is above 99% at the start of the turn, boosts ATK of all characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.2x, recovers 2,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP."
+            character1: "If HP is above 99% at the start of the turn, boosts ATK of all characters by 4x, by 3.5x otherwise, boosts HP of all characters by 1.2x and allows HP Overfill up to 2x MAX HP.",
+            character2: "If HP is above 99% at the start of the turn, boosts ATK of all characters by 3.75x, by 3.25x otherwise, boosts HP of all characters by 1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP.",
+            combined: "If HP is above 99% at the start of the turn, boosts ATK of all characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.2x, recovers 2,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP."
         },
         captainNotes: "Having Overfill HP counts as being above 99% HP for ability conditions.",
         special: "Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, recovers 50x character's RCV in HP, allowing HP Overfill up to 2x MAX HP and becomes Luffy & Sanji for 3 turns. If HP is above 99% when the special is activated, boosts ATK of all characters by 2.5x for 1 turn, by 2x for 1 turn otherwise.",
         swap: "Reduces Bind, Despair and Paralysis duration by 1 turn, makes [RCV] orbs beneficial for all characters for 1 turn and changes orb of this character into a [RCV] orb.",
         specialName: "Cross Fists and Legs",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of all characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of all characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100",
+            character1: "Boosts base ATK, HP and RCV of all characters by 50",
+            character2: "Boosts base ATK, HP and RCV of all characters by 50",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100",
         },
     },
     3065: {//Luffy&Sanji
         captain: {
-            "character1": "If HP is above 99% at the start of the turn, boosts ATK of all characters by 4x, by 3.5x otherwise, boosts HP of all characters by 1.2x and allows HP Overfill up to 2x MAX HP.",
-            "character2": "If HP is above 99% at the start of the turn, boosts ATK of all characters by 3.75x, by 3.25x otherwise, boosts HP of all characters by 1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP.",
-            "combined": "If HP is above 99% at the start of the turn, boosts ATK of all characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP."
+            character1: "If HP is above 99% at the start of the turn, boosts ATK of all characters by 4x, by 3.5x otherwise, boosts HP of all characters by 1.2x and allows HP Overfill up to 2x MAX HP.",
+            character2: "If HP is above 99% at the start of the turn, boosts ATK of all characters by 3.75x, by 3.25x otherwise, boosts HP of all characters by 1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP.",
+            combined: "If HP is above 99% at the start of the turn, boosts ATK of all characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill up to 2x MAX HP."
         },
         captainNotes: "Having Overfill HP counts as being above 99% HP for ability conditions.",
         special: "Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, recovers 50x character's RCV in HP, allowing HP Overfill up to 2x MAX HP and becomes Luffy & Sanji for 3 turns. If HP is above 99% when the special is activated, boosts ATK of all characters by 2.5x for 1 turn, by 2x for 1 turn otherwise.",
         swap: "Reduces Bind, Despair and Paralysis duration by 1 turn, makes [RCV] orbs beneficial for all characters for 1 turn and changes orb of this character into a [RCV] orb.",
         specialName: "Cross Fists and Legs",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of all characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of all characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100",
+            character1: "Boosts base ATK, HP and RCV of all characters by 50",
+            character2: "Boosts base ATK, HP and RCV of all characters by 50",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100",
             level1: "Boosts amount healed from [RCV] orbs by 300 each",
         },
         limit: [
@@ -81526,18 +81526,18 @@ window.details = {
     },
     3098: {//Akainu&Kizaru
         captain: {
-            "character1": "Boosts ATK of Slasher and Driven characters by 2.75x, their HP by 1.25x and makes [STR] orbs beneficial for Slasher and Driven characters.",
-            "character2": "Boosts ATK of Slasher and Driven characters by 2.75x, their HP by 1.25x and makes [PSY] orbs beneficial for Slasher and Driven characters.",
-            "combined": "Boosts ATK of Slasher and Driven characters by 3.75x, their HP by 1.25x and makes [STR] and [PSY] orbs beneficial for Slasher and Driven characters."
+            character1: "Boosts ATK of Slasher and Driven characters by 2.75x, their HP by 1.25x and makes [STR] orbs beneficial for Slasher and Driven characters.",
+            character2: "Boosts ATK of Slasher and Driven characters by 2.75x, their HP by 1.25x and makes [PSY] orbs beneficial for Slasher and Driven characters.",
+            combined: "Boosts ATK of Slasher and Driven characters by 3.75x, their HP by 1.25x and makes [STR] and [PSY] orbs beneficial for Slasher and Driven characters."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 100x character's ATK in Typeless Fixed True damage to all enemies. If your Captain is a [STR] or [PSY] character, boosts Orb Effects of Slasher and Driven characters by 2.75x for 1 turn, by 2x for 2 turns otherwise and becomes Sakazuki & Borsalino for 3 turns.",
         swap: "Changes orb of this character into a Matching orb and reduces Slot Bind and Silence duration by 1 turn.",
         specialName: "Magma and Light Assault",
         sailor: {
-            "character1": null,
-            "character2": null,
-            "combined": null,
+            character1: null,
+            character2: null,
+            combined: null,
             level1: "Boosts base ATK and HP of Driven and Slasher characters by 100",
             level2: "Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character",
         },
@@ -83069,42 +83069,42 @@ window.details = {
     },
     3134: {//KaidoVSBigMom
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [STR], [DEX] and [INT] characters by 5x, their HP by 1.3x, deals 20% of enemies' current HP in damage to all enemies at the end of each turn, boosts chances of getting [TND] orbs and makes [TND] orbs beneficial for all characters.",
-            "character2": "Boosts ATK of [STR], [PSY] and [INT] characters by 5x, their HP by 1.5x, boosts chances of getting [RCV] orbs, makes [RCV] and [SEMLA] orbs beneficial for all characters and PERFECTs will consume [RCV] and [SEMLA] orbs.",
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [STR], [DEX] and [INT] characters by 5x, their HP by 1.3x, deals 20% of enemies' current HP in damage to all enemies at the end of each turn, boosts chances of getting [TND] orbs and makes [TND] orbs beneficial for all characters.",
+            character2: "Boosts ATK of [STR], [PSY] and [INT] characters by 5x, their HP by 1.5x, boosts chances of getting [RCV] orbs, makes [RCV] and [SEMLA] orbs beneficial for all characters and PERFECTs will consume [RCV] and [SEMLA] orbs.",
         },
         special: {
-            "character1": "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [RCV] orbs into [TND] orbs, boosts ATK of [STR], [DEX] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [DEX] and [INT] characters by 2.5x for 1 turn.",
-            "character2": "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [TND] orbs into [RCV] orbs, boosts ATK of [STR], [PSY] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [PSY] and [INT] characters by 2.5x for 1 turn.",
+            character1: "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [RCV] orbs into [TND] orbs, boosts ATK of [STR], [DEX] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [DEX] and [INT] characters by 2.5x for 1 turn.",
+            character2: "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [TND] orbs into [RCV] orbs, boosts ATK of [STR], [PSY] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [PSY] and [INT] characters by 2.5x for 1 turn.",
         },
         VSCondition: "When the crew consumes/uses 10 [TND], [RCV] or [SEMLA] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 3 turns and deals 3x the damage dealt by this character with normal attacks in Typeless damage to the enemy with the highest current HP at the end of the turn for 3 turns.",
-            "character2": "Makes own normal attacks ignore damage reducing Barriers, Buffs and DEF for 3 turns, changes [RCV] orbs into [SEMLA] orbs for 3 turns and recovers HP proportional to the number of enemies you defeated in that turn ✕ 15x character's RCV at the end of the enemy turn.",
+            character1: "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 3 turns and deals 3x the damage dealt by this character with normal attacks in Typeless damage to the enemy with the highest current HP at the end of the turn for 3 turns.",
+            character2: "Makes own normal attacks ignore damage reducing Barriers, Buffs and DEF for 3 turns, changes [RCV] orbs into [SEMLA] orbs for 3 turns and recovers HP proportional to the number of enemies you defeated in that turn ✕ 15x character's RCV at the end of the enemy turn.",
         },
         specialName: "Beast Blow • Soul Rending Blow",
         sailor: {
-            "character1": "Cannot be Blown Away",
-            "character2": "Cannot be Blown Away",
+            character1: "Cannot be Blown Away",
+            character2: "Cannot be Blown Away",
         },
     },
     3135: {//KaidoVSBigMom
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [STR], [DEX] and [INT] characters by 5x, their HP by 1.3x, deals 20% of enemies' current HP in damage to all enemies at the end of each turn, boosts chances of getting [TND] orbs and makes [TND] orbs beneficial for all characters.",
-            "character2": "Boosts ATK of [STR], [PSY] and [INT] characters by 5x, their HP by 1.5x, boosts chances of getting [RCV] orbs, makes [RCV] and [SEMLA] orbs beneficial for all characters and PERFECTs will consume [RCV] and [SEMLA] orbs.",
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [STR], [DEX] and [INT] characters by 5x, their HP by 1.3x, deals 20% of enemies' current HP in damage to all enemies at the end of each turn, boosts chances of getting [TND] orbs and makes [TND] orbs beneficial for all characters.",
+            character2: "Boosts ATK of [STR], [PSY] and [INT] characters by 5x, their HP by 1.5x, boosts chances of getting [RCV] orbs, makes [RCV] and [SEMLA] orbs beneficial for all characters and PERFECTs will consume [RCV] and [SEMLA] orbs.",
         },
         special: {
-            "character1": "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [RCV] orbs into [TND] orbs, boosts ATK of [STR], [DEX] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [DEX] and [INT] characters by 2.5x for 1 turn.",
-            "character2": "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [TND] orbs into [RCV] orbs, boosts ATK of [STR], [PSY] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [PSY] and [INT] characters by 2.5x for 1 turn.",
+            character1: "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [RCV] orbs into [TND] orbs, boosts ATK of [STR], [DEX] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [DEX] and [INT] characters by 2.5x for 1 turn.",
+            character2: "Deals 20% of enemies' current HP in True damage to all enemies, changes [BLOCK] and [TND] orbs into [RCV] orbs, boosts ATK of [STR], [PSY] and [INT] characters by 2.25x for 1 turn. If during that turn you score 3 PERFECT hits, boosts Orb Effects of [STR], [PSY] and [INT] characters by 2.5x for 1 turn.",
         },
         VSCondition: "When the crew consumes/uses 10 [TND], [RCV] or [SEMLA] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 3 turns and deals 3x the damage dealt by this character with normal attacks in Typeless damage to the enemy with the highest current HP at the end of the turn for 3 turns.",
-            "character2": "Makes own normal attacks ignore damage reducing Barriers, Buffs and DEF for 3 turns, changes [RCV] orbs into [SEMLA] orbs for 3 turns and recovers HP proportional to the number of enemies you defeated in that turn ✕ 15x character's RCV at the end of the enemy turn.",
+            character1: "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 3 turns and deals 3x the damage dealt by this character with normal attacks in Typeless damage to the enemy with the highest current HP at the end of the turn for 3 turns.",
+            character2: "Makes own normal attacks ignore damage reducing Barriers, Buffs and DEF for 3 turns, changes [RCV] orbs into [SEMLA] orbs for 3 turns and recovers HP proportional to the number of enemies you defeated in that turn ✕ 15x character's RCV at the end of the enemy turn.",
         },
         specialName: "Beast Blow • Soul Rending Blow",
         sailor: {
-            "character1": "Cannot be Blown Away",
-            "character2": "Cannot be Blown Away",
+            character1: "Cannot be Blown Away",
+            character2: "Cannot be Blown Away",
             level1: "Makes [TND], [RCV] and [SEMLA] orbs beneficial for [STR] and [INT] characters",
         },
         limit: [
@@ -84517,32 +84517,32 @@ window.details = {
     },
     3163: {//Vivi&Rebecca
         captain: {
-            "character1": "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [QCK] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
-            "character2": "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [DEX] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
-            "combined": "Boosts ATK of Striker and Cerebral characters by 4x, their HP by 1.3x, their Color Affinity by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 4,000 HP at the end of each turn"
+            character1: "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [QCK] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
+            character2: "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [DEX] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
+            combined: "Boosts ATK of Striker and Cerebral characters by 4x, their HP by 1.3x, their Color Affinity by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 4,000 HP at the end of each turn"
         },
         special: "Reduces Bind and Silence duration by 6 turns, boosts ATK of Striker and Cerebral characters by 2x for 1 turn, boosts Orb Effects of Striker and Cerebral characters by 2x for 1 turn and becomes Vivi & Rebecca for 3 turns.",
         swap: "Removes Silence duration completely on this character, recovers 1,500 HP and boosts Chain Multiplier Growth Rate by 1.25x for 1 turn.",
         specialName: "Colorful Night",
         sailor: {
-            "character1": "Boosts base HP and RCV of Striker and Cerebral characters by 50",
-            "character2": "Boosts base ATK of Striker and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
+            character1: "Boosts base HP and RCV of Striker and Cerebral characters by 50",
+            character2: "Boosts base ATK of Striker and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
         },
     },
     3164: {//Vivi&Rebecca
         captain: {
-            "character1": "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [QCK] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
-            "character2": "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [DEX] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
-            "combined": "Boosts ATK of Striker and Cerebral characters by 4x, their HP by 1.3x, their Color Affinity by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 4,000 HP at the end of each turn"
+            character1: "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [QCK] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
+            character2: "Boosts ATK of Striker and Cerebral characters by 3.25x, their HP by 1.3x, their Color Affinity by 1.3x, makes [DEX] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 2,000 HP at the end of each turn.",
+            combined: "Boosts ATK of Striker and Cerebral characters by 4x, their HP by 1.3x, their Color Affinity by 1.3x, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Striker and Cerebral characters, reduces chances of getting [TND] and [RCV] orbs and recovers 4,000 HP at the end of each turn"
         },
         special: "Reduces Bind and Silence duration by 6 turns, boosts ATK of Striker and Cerebral characters by 2x for 1 turn, boosts Orb Effects of Striker and Cerebral characters by 2x for 1 turn and becomes Vivi & Rebecca for 3 turns.",
         swap: "Removes Silence duration completely on this character, recovers 1,500 HP and boosts Chain Multiplier Growth Rate by 1.25x for 1 turn.",
         specialName: "Colorful Night",
         sailor: {
-            "character1": "Boosts base HP and RCV of Striker and Cerebral characters by 50",
-            "character2": "Boosts base ATK of Striker and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
+            character1: "Boosts base HP and RCV of Striker and Cerebral characters by 50",
+            character2: "Boosts base ATK of Striker and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
             level1: "Makes [DEX] and [QCK] orbs beneficial for Striker and Cerebral characters",
         },
         limit: [
@@ -84622,34 +84622,34 @@ window.details = {
     },
     3165: {//Shirahoshi&Mansherry
         captain: {
-            "character1": "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
-            "character2": "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
-            "combined": "Boosts ATK of Striker and Cerebral characters by 3.5x-4.5x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT, 1.5x this character's RCV at the end of the turn each time you hit a GREAT, 2x this character's RCV at the end of the turn each time you hit a GOOD and allows HP Overfill up to 2x MAX HP."
+            character1: "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
+            character2: "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
+            combined: "Boosts ATK of Striker and Cerebral characters by 3.5x-4.5x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT, 1.5x this character's RCV at the end of the turn each time you hit a GREAT, 2x this character's RCV at the end of the turn each time you hit a GOOD and allows HP Overfill up to 2x MAX HP."
         },
         captainNotes: "Having Overfill HP counts as being above 99% HP for ability conditions.",
         special: "Removes Paralysis, Poison, RCV DOWN and Blindness duration completely, reduces Despair and Burn duration by 7 turns, changes all orbs into [RAINBOW] orbs, adds 1.2x to Chain multiplier for 1 turn, recovers 50x character's RCV in HP and becomes Shirahoshi & Mansherry for 3 turns.",
         swap: "Allows HP Overfill up to 2x MAX HP for 1 turn, reduces Slot Bind, Silence, Bind and Despair duration by 1 turn and recovers 1,500 HP.",
         specialName: "Sharing the Joy",
         sailor: {
-            "character1": "Boosts base ATK of Striker and Cerebral characters by 50",
-            "character2": "Boosts base HP and RCV of Striker and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
+            character1: "Boosts base ATK of Striker and Cerebral characters by 50",
+            character2: "Boosts base HP and RCV of Striker and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
         },
     },
     3166: {//Shirahoshi&Mansherry
         captain: {
-            "character1": "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
-            "character2": "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
-            "combined": "Boosts ATK of Striker and Cerebral characters by 3.5x-4.5x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT, 1.5x this character's RCV at the end of the turn each time you hit a GREAT, 2x this character's RCV at the end of the turn each time you hit a GOOD and allows HP Overfill up to 2x MAX HP."
+            character1: "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
+            character2: "Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, 0.75x this character's RCV at the end of the turn each time you hit a GREAT and 1x this character's RCV at the end of the turn each time you hit a GOOD.",
+            combined: "Boosts ATK of Striker and Cerebral characters by 3.5x-4.5x depending on the crew's current HP, boosts HP of all characters by 1.2x, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT, 1.5x this character's RCV at the end of the turn each time you hit a GREAT, 2x this character's RCV at the end of the turn each time you hit a GOOD and allows HP Overfill up to 2x MAX HP."
         },
         captainNotes: "Having Overfill HP counts as being above 99% HP for ability conditions.",
         special: "Removes Paralysis, Poison, RCV DOWN and Blindness duration completely, reduces Despair and Burn duration by 7 turns, changes all orbs into [RAINBOW] orbs, adds 1.2x to Chain multiplier for 1 turn, recovers 50x character's RCV in HP and becomes Shirahoshi & Mansherry for 3 turns.",
         swap: "Allows HP Overfill up to 2x MAX HP for 1 turn, reduces Slot Bind, Silence, Bind and Despair duration by 1 turn and recovers 1,500 HP.",
         specialName: "Sharing the Joy",
         sailor: {
-            "character1": "Boosts base ATK of Striker and Cerebral characters by 50",
-            "character2": "Boosts base HP and RCV of Striker and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
+            character1: "Boosts base ATK of Striker and Cerebral characters by 50",
+            character2: "Boosts base HP and RCV of Striker and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75",
             level1: "Makes [STR] orbs beneficial for all characters",
         },
         limit: [
@@ -86500,32 +86500,32 @@ window.details = {
     },
     3203: {//Sanji&Pudding
         captain: {
-            "character1": "Boosts ATK of Fighter and Cerebral characters by 4x, their HP by 1.35x, reduces damage received by 10%, and makes [STR] and [DEX] orbs beneficial for Fighter and Cerebral characters.",
-            "character2": "Boosts ATK of Fighter and Cerebral characters by 3.75x, their HP by 1.35x, their RCV by 1.5x, and makes [STR] and [QCK] orbs beneficial for Fighter and Cerebral characters.",
-            "combined": "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.35x, their RCV by 1.5x, reduces damage received by 10%, and makes [STR], [DEX] and [QCK] orbs beneficial for Fighter and Cerebral characters."
+            character1: "Boosts ATK of Fighter and Cerebral characters by 4x, their HP by 1.35x, reduces damage received by 10%, and makes [STR] and [DEX] orbs beneficial for Fighter and Cerebral characters.",
+            character2: "Boosts ATK of Fighter and Cerebral characters by 3.75x, their HP by 1.35x, their RCV by 1.5x, and makes [STR] and [QCK] orbs beneficial for Fighter and Cerebral characters.",
+            combined: "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.35x, their RCV by 1.5x, reduces damage received by 10%, and makes [STR], [DEX] and [QCK] orbs beneficial for Fighter and Cerebral characters."
         },
         special: "Recovers 15,000 HP, removes enemies' Percent Damage Reduction and Threshold Damage Reduction duration completely, boosts the Color Affinity of Fighter and Cerebral characters by 2.25x for 2 turns and becomes Sanji & Pudding for 3 turns.",
         swap: "Removes Despair, Paralysis and Slot Bind duration completely on this character, changes the orb, including [BLOCK] orb, of this character into a Matching orb and recovers 25% of damage taken from enemies on the stage when entering a new stage for 1 stage.",
         specialName: "Duo's Prepared Special Cake",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
+            character2: "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 100",
         },
     },
     3204: {//Sanji&Pudding
         captain: {
-            "character1": "Boosts ATK of Fighter and Cerebral characters by 4x, their HP by 1.35x, reduces damage received by 10%, and makes [STR] and [DEX] orbs beneficial for Fighter and Cerebral characters.",
-            "character2": "Boosts ATK of Fighter and Cerebral characters by 3.75x, their HP by 1.35x, their RCV by 1.5x, and makes [STR] and [QCK] orbs beneficial for Fighter and Cerebral characters.",
-            "combined": "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.35x, their RCV by 1.5x, reduces damage received by 10%, and makes [STR], [DEX] and [QCK] orbs beneficial for Fighter and Cerebral characters."
+            character1: "Boosts ATK of Fighter and Cerebral characters by 4x, their HP by 1.35x, reduces damage received by 10%, and makes [STR] and [DEX] orbs beneficial for Fighter and Cerebral characters.",
+            character2: "Boosts ATK of Fighter and Cerebral characters by 3.75x, their HP by 1.35x, their RCV by 1.5x, and makes [STR] and [QCK] orbs beneficial for Fighter and Cerebral characters.",
+            combined: "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.35x, their RCV by 1.5x, reduces damage received by 10%, and makes [STR], [DEX] and [QCK] orbs beneficial for Fighter and Cerebral characters."
         },
         special: "Recovers 15,000 HP, removes enemies' Percent Damage Reduction and Threshold Damage Reduction duration completely, boosts the Color Affinity of Fighter and Cerebral characters by 2.25x for 2 turns and becomes Sanji & Pudding for 3 turns.",
         swap: "Removes Despair, Paralysis and Slot Bind duration completely on this character, changes the orb, including [BLOCK] orb, of this character into a Matching orb and recovers 25% of damage taken from enemies on the stage when entering a new stage for 1 stage.",
         specialName: "Duo's Prepared Special Cake",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
+            character2: "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 100",
             level1: "Reduces Silence duration by 5 turns on this character",
         },
         limit: [
@@ -89313,46 +89313,46 @@ window.details = {
     },
     3252: {//AceVSAkainu
         captain: {
-            "character1": "Boosts ATK of Shooter and Free Spirit characters by 5x, their HP by 1.3x, makes [STR], [DEX] and [QCK] orbs beneficial for Shooter and Free Spirit characters and restores Special Cooldown of all characters by 10 turns when they are rewinded.",
-            "character2": "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.5x, boosts chances of getting [QCK] orbs and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns that will ignore debuff protection after each turn you take damage.",
+            character1: "Boosts ATK of Shooter and Free Spirit characters by 5x, their HP by 1.3x, makes [STR], [DEX] and [QCK] orbs beneficial for Shooter and Free Spirit characters and restores Special Cooldown of all characters by 10 turns when they are rewinded.",
+            character2: "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.5x, boosts chances of getting [QCK] orbs and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns that will ignore debuff protection after each turn you take damage.",
         },
         special: {
-            "character1": "Deals 200x character's ATK in Typeless damage to all enemies, changes all orbs into Matching orbs and boosts Orb Effects of Shooter and Free Spirit characters by 2.5x for 2 turns. If your Captain's orb is [STR], sets Chain Boundaries to 2.5x and 35.0x for 2 turns.",
-            "character2": "Deals 400x character's ATK in Typeless damage to all enemies, changes all orbs, including [BLOCK] orbs, into [QCK] orbs, boosts Orb Effects of Driven and Powerhouse characters by 2.5x for 2 turns. Locks the chain multiplier at 3x-3.5x for 1 turn, depending on how many [QCK] orbs used in attacks.",
+            character1: "Deals 200x character's ATK in Typeless damage to all enemies, changes all orbs into Matching orbs and boosts Orb Effects of Shooter and Free Spirit characters by 2.5x for 2 turns. If your Captain's orb is [STR], sets Chain Boundaries to 2.5x and 35.0x for 2 turns.",
+            character2: "Deals 400x character's ATK in Typeless damage to all enemies, changes all orbs, including [BLOCK] orbs, into [QCK] orbs, boosts Orb Effects of Driven and Powerhouse characters by 2.5x for 2 turns. Locks the chain multiplier at 3x-3.5x for 1 turn, depending on how many [QCK] orbs used in attacks.",
         },
         specialNotes: "<br><b>0-7 orbs consumed:</b> 3x chain lock<br><b>8-14 orbs consumed:</b> 3.25x chain lock<br><b>15+ orbs consumed:</b> 3.5x chain lock",
         VSCondition: "When the crew consumes/uses 12 [STR], [DEX] or [QCK] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 2 turns, boosts ATK against enemies inflicted with Burn by 2x for 2 turns and changes [BLOCK], [EMPTY], [BOMB], [TND], [RCV], [G] orbs of all characters into [STR] orbs and changes orb of this character into a [STR] orb.",
-            "character2": "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns, boosts ATK against enemies inflicted with Burn by 1.75x for 4 turns and makes [QCK] orbs beneficial for Driven and Powerhouse characters for 4 turns.",
+            character1: "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 2 turns, boosts ATK against enemies inflicted with Burn by 2x for 2 turns and changes [BLOCK], [EMPTY], [BOMB], [TND], [RCV], [G] orbs of all characters into [STR] orbs and changes orb of this character into a [STR] orb.",
+            character2: "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns, boosts ATK against enemies inflicted with Burn by 1.75x for 4 turns and makes [QCK] orbs beneficial for Driven and Powerhouse characters for 4 turns.",
         },
         VSSpecialNotes: "Burn Damage deals 100x enemies' ATK in typeless damage at the end of the enemy turn.",
         specialName: "Fire Fist Ablaze • Great Eruption Boil",
         sailor: {
-            "character1": "Makes [STR] orbs beneficial for all characters",
-            "character2": "Makes [QCK] orbs beneficial for all characters",
+            character1: "Makes [STR] orbs beneficial for all characters",
+            character2: "Makes [QCK] orbs beneficial for all characters",
         },
     },
     3253: {//AceVSAkainu
         captain: {
-            "character1": "Boosts ATK of Shooter and Free Spirit characters by 5x, their HP by 1.3x, makes [STR], [DEX] and [QCK] orbs beneficial for Shooter and Free Spirit characters and restores Special Cooldown of all characters by 10 turns when they are rewinded.",
-            "character2": "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.5x, boosts chances of getting [QCK] orbs and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns that will ignore debuff protection after each turn you take damage.",
+            character1: "Boosts ATK of Shooter and Free Spirit characters by 5x, their HP by 1.3x, makes [STR], [DEX] and [QCK] orbs beneficial for Shooter and Free Spirit characters and restores Special Cooldown of all characters by 10 turns when they are rewinded.",
+            character2: "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.5x, boosts chances of getting [QCK] orbs and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns that will ignore debuff protection after each turn you take damage.",
         },
         special: {
-            "character1": "Deals 200x character's ATK in Typeless damage to all enemies, changes all orbs into Matching orbs and boosts Orb Effects of Shooter and Free Spirit characters by 2.5x for 2 turns. If your Captain's orb is [STR], sets Chain Boundaries to 2.5x and 35.0x for 2 turns.",
-            "character2": "Deals 400x character's ATK in Typeless damage to all enemies, changes all orbs, including [BLOCK] orbs, into [QCK] orbs, boosts Orb Effects of Driven and Powerhouse characters by 2.5x for 2 turns. Locks the chain multiplier at 3x-3.5x for 1 turn, depending on how many [QCK] orbs used in attacks.",
+            character1: "Deals 200x character's ATK in Typeless damage to all enemies, changes all orbs into Matching orbs and boosts Orb Effects of Shooter and Free Spirit characters by 2.5x for 2 turns. If your Captain's orb is [STR], sets Chain Boundaries to 2.5x and 35.0x for 2 turns.",
+            character2: "Deals 400x character's ATK in Typeless damage to all enemies, changes all orbs, including [BLOCK] orbs, into [QCK] orbs, boosts Orb Effects of Driven and Powerhouse characters by 2.5x for 2 turns. Locks the chain multiplier at 3x-3.5x for 1 turn, depending on how many [QCK] orbs used in attacks.",
         },
         specialNotes: "<br><b>0-7 orbs consumed:</b> 3x chain lock<br><b>8-14 orbs consumed:</b> 3.25x chain lock<br><b>15+ orbs consumed:</b> 3.5x chain lock",
         VSCondition: "When the crew consumes/uses 12 [STR], [DEX] or [QCK] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 2 turns, boosts ATK against enemies inflicted with Burn by 2x for 2 turns and changes [BLOCK], [EMPTY], [BOMB], [TND], [RCV], [G] orbs of all characters into [STR] orbs and changes orb of this character into a [STR] orb.",
-            "character2": "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns, boosts ATK against enemies inflicted with Burn by 1.75x for 4 turns and makes [QCK] orbs beneficial for Driven and Powerhouse characters for 4 turns.",
+            character1: "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 2 turns, boosts ATK against enemies inflicted with Burn by 2x for 2 turns and changes [BLOCK], [EMPTY], [BOMB], [TND], [RCV], [G] orbs of all characters into [STR] orbs and changes orb of this character into a [STR] orb.",
+            character2: "Inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 4 turns, boosts ATK against enemies inflicted with Burn by 1.75x for 4 turns and makes [QCK] orbs beneficial for Driven and Powerhouse characters for 4 turns.",
         },
         VSSpecialNotes: "Burn Damage deals 100x enemies' ATK in typeless damage at the end of the enemy turn.",
         specialName: "Fire Fist Ablaze • Great Eruption Boil",
         sailor: {
-            "character1": "Makes [STR] orbs beneficial for all characters",
-            "character2": "Makes [QCK] orbs beneficial for all characters",
+            character1: "Makes [STR] orbs beneficial for all characters",
+            character2: "Makes [QCK] orbs beneficial for all characters",
             level1: "Boosts base ATK of all characters by 125",
         },
         limit: [
@@ -90723,34 +90723,34 @@ window.details = {
     },
     3279: {//Blackbeard
         captain: {
-            "character1": "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and reduces Special Cooldown of this character by 2 turns after each turn you take damage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
-            "character2": "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
-            "combined": "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.75x, reduces Special Cooldown of this character by 2 turns after each turn you take damage and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn."
+            character1: "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and reduces Special Cooldown of this character by 2 turns after each turn you take damage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
+            character2: "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
+            combined: "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.75x, reduces Special Cooldown of this character by 2 turns after each turn you take damage and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn."
         },
         special: "Adds 1.0x to Chain multiplier for 1 turn and becomes Blackbeard, Two Overwhelming Abilities for 3-8 turns depending on the total Damage Taken before the special is activated. If your Captain is a Powerhouse or Driven character, increases duration of any ATK boosting buffs and Orb Amplification buffs by 1 turn.",
         swap: "Removes Despair and Silence duration completely on this character and changes the orb, including [BLOCK] orbs, of this character into a Matching orb.",
         specialNotes: "0 damage: 3 turns<br>? damage: 4 turns<br>? damage: 5 turns<br>? damage: 6 turns<br>? damage: 7 turns<br>50,000 damage: 8 turns",
         specialName: "Tremendous Dismay of Darkness and Earthquakes",
         sailor: {
-            "character1": "Boosts base ATK of Driven characters by 75",
-            "character2": "Boosts base ATK of Powerhouse characters by 75",
-            "combined": "Boosts base ATK of Driven and Powerhouse characters by 125",
+            character1: "Boosts base ATK of Driven characters by 75",
+            character2: "Boosts base ATK of Powerhouse characters by 75",
+            combined: "Boosts base ATK of Driven and Powerhouse characters by 125",
         },
     },
     3280: {//Blackbeard
         captain: {
-            "character1": "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and reduces Special Cooldown of this character by 2 turns after each turn you take damage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
-            "character2": "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
-            "combined": "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.75x, reduces Special Cooldown of this character by 2 turns after each turn you take damage and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn."
+            character1: "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and reduces Special Cooldown of this character by 2 turns after each turn you take damage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
+            character2: "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by 1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases damage received by 1.5x and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.",
+            combined: "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by 1.75x, reduces Special Cooldown of this character by 2 turns after each turn you take damage and deals 10% of enemies' current HP in True damage, ignoring Normal Attack Only, to all enemies at the start of every stage. If a crew member uses a special with a Percent Damage Reduction, Threshold Damage Reduction or Damage Nullification buff, replaces those buffs with an ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of Driven and Powerhouse characters by 2x for 1 turn."
         },
         special: "Adds 1.0x to Chain multiplier for 1 turn and becomes Blackbeard, Two Overwhelming Abilities for 3-8 turns depending on the total Damage Taken before the special is activated. If your Captain is a Powerhouse or Driven character, increases duration of any ATK boosting buffs and Orb Amplification buffs by 1 turn.",
         swap: "Removes Despair and Silence duration completely on this character and changes the orb, including [BLOCK] orbs, of this character into a Matching orb.",
         specialNotes: "0 damage: 3 turns<br>? damage: 4 turns<br>? damage: 5 turns<br>? damage: 6 turns<br>? damage: 7 turns<br>50,000 damage: 8 turns",
         specialName: "Tremendous Dismay of Darkness and Earthquakes",
         sailor: {
-            "character1": "Boosts base ATK of Driven characters by 75",
-            "character2": "Boosts base ATK of Powerhouse characters by 75",
-            "combined": "Boosts base ATK of Driven and Powerhouse characters by 125",
+            character1: "Boosts base ATK of Driven characters by 75",
+            character2: "Boosts base ATK of Powerhouse characters by 75",
+            combined: "Boosts base ATK of Driven and Powerhouse characters by 125",
             level1: "Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character",
         },
         limit: [
@@ -91892,32 +91892,32 @@ window.details = {
     },
     3299: {//FireTank Pirates
         captain: {
-            "character1": "Boosts ATK of Shooter and Driven characters by 3.75x, but boosts ATK of this character by 4.5x, their HP by 1.3x, reduces damage received by 20%, makes [PSY], [DEX] and [QCK] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
-            "character2": "Boosts ATK of Shooter and Driven characters by 4.25x, their HP by 1.3x, recovers 3x character's RCV in HP at the end of each turn, makes [PSY], [DEX] and [STR] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
-            "combined": "Boosts ATK of Shooter and Driven characters by 5x, their HP by 1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away."
+            character1: "Boosts ATK of Shooter and Driven characters by 3.75x, but boosts ATK of this character by 4.5x, their HP by 1.3x, reduces damage received by 20%, makes [PSY], [DEX] and [QCK] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
+            character2: "Boosts ATK of Shooter and Driven characters by 4.25x, their HP by 1.3x, recovers 3x character's RCV in HP at the end of each turn, makes [PSY], [DEX] and [STR] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
+            combined: "Boosts ATK of Shooter and Driven characters by 5x, their HP by 1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away."
         },
         special: "Reduces Silence duration by 5 turns, reduces enemies' Percent Damage Reduction and Threshold Damage Reduction duration by 5 turns, changes [BLOCK], [RCV], [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching orbs, barriers Shooter and Driven character's orbs for 1 PERFECT hit, boosts ATK of Shooter and Driven characters by 2.5x for 2 turns and becomes Fire Tank Pirates for 3 turns.",
         swap: "Removes Silence duration completely on this character, reduces damage received by 25% for 1 turn, recovers 5% of crew's MAX HP and changes orb of this character into a Matching orb.",
         specialName: "Coordinated-Bonding Shooting",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Shooter and Driven characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Shooter and Driven characters by 50",
+            character2: "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
+            combined: "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
         },
     },
     3300: {//FireTank Pirates
         captain: {
-            "character1": "Boosts ATK of Shooter and Driven characters by 3.75x, but boosts ATK of this character by 4.5x, their HP by 1.3x, reduces damage received by 20%, makes [PSY], [DEX] and [QCK] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
-            "character2": "Boosts ATK of Shooter and Driven characters by 4.25x, their HP by 1.3x, recovers 3x character's RCV in HP at the end of each turn, makes [PSY], [DEX] and [STR] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
-            "combined": "Boosts ATK of Shooter and Driven characters by 5x, their HP by 1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.<br><b>Boosted Ability:</b> Boosts ATK of all characters by 5x, their HP by 1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters and makes crew immune to Blow Away."
+            character1: "Boosts ATK of Shooter and Driven characters by 3.75x, but boosts ATK of this character by 4.5x, their HP by 1.3x, reduces damage received by 20%, makes [PSY], [DEX] and [QCK] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
+            character2: "Boosts ATK of Shooter and Driven characters by 4.25x, their HP by 1.3x, recovers 3x character's RCV in HP at the end of each turn, makes [PSY], [DEX] and [STR] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.",
+            combined: "Boosts ATK of Shooter and Driven characters by 5x, their HP by 1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Shooter and Driven characters and makes crew immune to Blow Away.<br><b>Boosted Ability:</b> Boosts ATK of all characters by 5x, their HP by 1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters and makes crew immune to Blow Away."
         },
         special: "Reduces Silence duration by 5 turns, reduces enemies' Percent Damage Reduction and Threshold Damage Reduction duration by 5 turns, changes [BLOCK], [RCV], [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching orbs, barriers Shooter and Driven character's orbs for 1 PERFECT hit, boosts ATK of Shooter and Driven characters by 2.5x for 2 turns and becomes Fire Tank Pirates for 3 turns.",
         swap: "Removes Silence duration completely on this character, reduces damage received by 25% for 1 turn, recovers 5% of crew's MAX HP and changes orb of this character into a Matching orb.",
         specialName: "Coordinated-Bonding Shooting",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Shooter and Driven characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Shooter and Driven characters by 50",
+            character2: "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
+            combined: "Boosts base ATK, HP and RCV of Shooter and Driven characters by 100",
             level1: "Reduces Silence duration completely on this character",
         },
         limit: [
@@ -93423,9 +93423,9 @@ window.details = {
     },
     3330: {//Law&Chopper
         captain: {
-            "character1": "Boosts ATK of all characters by 2.5x, recovers 0.3x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "character2": "Boosts ATK of all characters excluding himself by 2.5x and reduces damage received by 20% if you don't attack with Chopper.",
-            "combined": "Boosts ATK of all characters by 2.75x, recovers 0.3x their RCV at the end of the turn for each time you hit a PERFECT and reduces damage received by 20%."
+            character1: "Boosts ATK of all characters by 2.5x, recovers 0.3x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character2: "Boosts ATK of all characters excluding himself by 2.5x and reduces damage received by 20% if you don't attack with Chopper.",
+            combined: "Boosts ATK of all characters by 2.75x, recovers 0.3x their RCV at the end of the turn for each time you hit a PERFECT and reduces damage received by 20%."
         },
         special: "Reduces Paralysis duration by 3 turns, recovers 10x character's RCV in HP, recovers 3,000 HP at the end of the turn for 2 turns and becomes Law & Chopper for 2 turns.",
         swap: {
@@ -93435,9 +93435,9 @@ window.details = {
         },
         specialName: "Scope Injection Shot",
         sailor: {
-            "character1": "Boosts base RCV of all characters by 40",
-            "character2": "Boosts base RCV of all characters by 40",
-            "combined": "Boosts base RCV of all characters by 40",
+            character1: "Boosts base RCV of all characters by 40",
+            character2: "Boosts base RCV of all characters by 40",
+            combined: "Boosts base RCV of all characters by 40",
         },
         limit: [
             { "description": "Boosts base RCV by 20" },
@@ -93481,18 +93481,18 @@ window.details = {
     },
     3331: {//Usopp&Chopper
         captain: {
-            "character1": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 2.75x, their HP by 1.25x and makes [TND] and [RCV] orbs beneficial for all characters.",
-            "character2": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 2.75x, their HP by 1.25x and boosts chances of getting Matching orbs.",
-            "combined": "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 3.25x, their HP by 1.25x, boosts chances of getting Matching orbs and makes [TND] and [RCV] orbs beneficial for all characters."
+            character1: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 2.75x, their HP by 1.25x and makes [TND] and [RCV] orbs beneficial for all characters.",
+            character2: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 2.75x, their HP by 1.25x and boosts chances of getting Matching orbs.",
+            combined: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 3.25x, their HP by 1.25x, boosts chances of getting Matching orbs and makes [TND] and [RCV] orbs beneficial for all characters."
         },
         captainNotes: "#{beneficial}",
         special: "Deals 80x character's ATK in [QCK] damage to one enemy and becomes Usopp & Chopper for 2 turns. If the enemy is delayed, recovers 20% of crew's MAX HP, boosts Orb Effects of all characters by 1.75x for 2 turns and boosts ATK of all characters by 1.75x for 2 turns. Otherwise, delays all enemies by 1 turn, boosts Orb Effects of all characters by 1.5x for 1 turn and boosts ATK of all characters by 1.5x for 1 turn.",
         swap: "Recovers 3% of crew's MAX HP and adds 0.3x to Chain multiplier for 1 turn",
         specialName: "Killer UsoCho Horn Explosion",
         sailor: {
-            "character1": "Makes [STR] orbs beneficial for this character",
-            "character2": "Makes [STR] orbs beneficial for this character",
-            "combined": "Makes [STR] orbs beneficial for this character",
+            character1: "Makes [STR] orbs beneficial for this character",
+            character2: "Makes [STR] orbs beneficial for this character",
+            combined: "Makes [STR] orbs beneficial for this character",
             level1: "Boosts base ATK of top row characters by 40",
         },
         limit: [
@@ -94537,18 +94537,18 @@ window.details = {
     },
     3346: {//Kaido&Mom
         captain: {
-            "character1": "Boosts ATK of [STR], [DEX] and [QCK] characters by 3.5x, their HP by 1.2x and makes [STR] orbs beneficial for [STR], [DEX] and [QCK] characters.",
-            "character2": "Boosts ATK of [STR], [DEX] and [QCK] characters by 3.5x, their HP by 1.2x and makes [DEX] orbs beneficial for [STR], [DEX] and [QCK] characters.",
-            "combined": "Boosts ATK of [STR], [DEX] and [QCK] characters by 4.25x, their HP by 1.2x and makes [STR] and [DEX] orbs beneficial for [STR], [DEX] and [QCK] characters."
+            character1: "Boosts ATK of [STR], [DEX] and [QCK] characters by 3.5x, their HP by 1.2x and makes [STR] orbs beneficial for [STR], [DEX] and [QCK] characters.",
+            character2: "Boosts ATK of [STR], [DEX] and [QCK] characters by 3.5x, their HP by 1.2x and makes [DEX] orbs beneficial for [STR], [DEX] and [QCK] characters.",
+            combined: "Boosts ATK of [STR], [DEX] and [QCK] characters by 4.25x, their HP by 1.2x and makes [STR] and [DEX] orbs beneficial for [STR], [DEX] and [QCK] characters."
         },
         captainNotes: "#{beneficial}",
         special: "Reduces Bind duration by 7 turns, randomizes all orbs into either [STR] or [DEX] orbs, boosts Orb Effects of [STR], [DEX] and [QCK] characters by 2.25x for 1 turn and becomes Kaido & Big Mom for 2 turns.",
         swap: "Changes orb of this character into a Matching orb and boosts ATK of this character by 2x for 1 turn",
         specialName: "Alliance Announcement",
         sailor: {
-            "character1": "Boosts base ATK of all characters by 50",
-            "character2": "Boosts base ATK of all characters by 50",
-            "combined": "Boosts base ATK of all characters by 100",
+            character1: "Boosts base ATK of all characters by 50",
+            character2: "Boosts base ATK of all characters by 50",
+            combined: "Boosts base ATK of all characters by 100",
             level1: "Makes [QCK] orbs beneficial for this character",
         },
         limit: [
@@ -94636,9 +94636,9 @@ window.details = {
     },
     3348: {//Ace&Sabo
         captain: {
-            "character1": "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [QCK] orbs beneficial for all characters, reduces Despair duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "character2": "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] orbs beneficial for all characters, reduces Silence duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "combined": "Boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] and [QCK] orbs beneficial for all characters, reduces Despair and Silence duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT."
+            character1: "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [QCK] orbs beneficial for all characters, reduces Despair duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character2: "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] orbs beneficial for all characters, reduces Silence duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            combined: "Boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] and [QCK] orbs beneficial for all characters, reduces Despair and Silence duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT."
         },
         special: "Reduces Bind, Despair and Silence duration by 5 turns, changes [BLOCK] orbs into Matching orbs and becomes Ace & Sabo for 3 turns. If your crew has Monkey D. Luffy as a member or supporting this character, boosts Orb Effects of Shooter and Free Spirit characters by 2.5x for 3 turns, by 2.5x for 1 turn otherwise.",
         swap: {
@@ -94648,16 +94648,16 @@ window.details = {
         },
         specialName: "Flame-Dragon Pincer Attack",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of all characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of all characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100",
+            character1: "Boosts base ATK, HP and RCV of all characters by 50",
+            character2: "Boosts base ATK, HP and RCV of all characters by 50",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100",
         },
     },
     3349: {//Ace&Sabo
         captain: {
-            "character1": "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [QCK] orbs beneficial for all characters, reduces Despair duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "character2": "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] orbs beneficial for all characters, reduces Silence duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "combined": "Boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] and [QCK] orbs beneficial for all characters, reduces Despair and Silence duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT."
+            character1: "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [QCK] orbs beneficial for all characters, reduces Despair duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character2: "Boosts ATK of all characters by 4x, by 4.25x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] orbs beneficial for all characters, reduces Silence duration by 10 turns and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            combined: "Boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.3x, makes [DEX] and [QCK] orbs beneficial for all characters, reduces Despair and Silence duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT."
         },
         special: "Reduces Bind, Despair and Silence duration by 5 turns, changes [BLOCK] orbs into Matching orbs and becomes Ace & Sabo for 3 turns. If your crew has Monkey D. Luffy as a member or supporting this character, boosts Orb Effects of Shooter and Free Spirit characters by 2.5x for 3 turns, by 2.5x for 1 turn otherwise.",
         swap: {
@@ -94667,9 +94667,9 @@ window.details = {
         },
         specialName: "Flame-Dragon Pincer Attack",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of all characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of all characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100",
+            character1: "Boosts base ATK, HP and RCV of all characters by 50",
+            character2: "Boosts base ATK, HP and RCV of all characters by 50",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100",
             level1: "Reduces Silence duration completely on this character",
         },
         limit: [
@@ -95074,42 +95074,42 @@ window.details = {
     },
     3354: {//WhitebeardVSShanks
         captain: {
-            "character1": "Boosts ATK of [PSY], [INT] and Striker characters by 5x, their HP by 1.2x, boosts chances of getting [INT] orbs, makes [INT] orbs beneficial for all characters and reduces damage received by 20%.",
-            "character2": "Boosts ATK of [PSY], [INT] and Slasher characters by 5x, their HP by 1.5x, boosts chances of getting [PSY] orbs, makes [PSY] orbs beneficial for all characters and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character1: "Boosts ATK of [PSY], [INT] and Striker characters by 5x, their HP by 1.2x, boosts chances of getting [INT] orbs, makes [INT] orbs beneficial for all characters and reduces damage received by 20%.",
+            character2: "Boosts ATK of [PSY], [INT] and Slasher characters by 5x, their HP by 1.5x, boosts chances of getting [PSY] orbs, makes [PSY] orbs beneficial for all characters and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
         },
         special: {
-            "character1": "Boosts base ATK of [PSY], [INT] and Striker characters by 1000 for 1 turn and boosts ATK of [PSY], [INT] and Striker characters by 2.5x for 1 turn. If the HP of the enemy with the highest Maximum HP is above 80%, deals 30% of enemies' current HP in damage to all enemies, otherwise, boosts Orb Effects of [PSY], [INT] and Striker characters by 2x for 1 turn.",
-            "character2": "Boosts base ATK of [PSY], [INT] and Slasher characters by 1000 for 1 turn and boosts Orb Effects of [PSY], [INT] and Slasher characters by 2.5x for 1 turn and changes all orbs, including [BLOCK] orbs, into Matching orbs. After 1 turn, reduces the defense of all enemies by 100% for 1 turn.",
+            character1: "Boosts base ATK of [PSY], [INT] and Striker characters by 1000 for 1 turn and boosts ATK of [PSY], [INT] and Striker characters by 2.5x for 1 turn. If the HP of the enemy with the highest Maximum HP is above 80%, deals 30% of enemies' current HP in damage to all enemies, otherwise, boosts Orb Effects of [PSY], [INT] and Striker characters by 2x for 1 turn.",
+            character2: "Boosts base ATK of [PSY], [INT] and Slasher characters by 1000 for 1 turn and boosts Orb Effects of [PSY], [INT] and Slasher characters by 2.5x for 1 turn and changes all orbs, including [BLOCK] orbs, into Matching orbs. After 1 turn, reduces the defense of all enemies by 100% for 1 turn.",
         },
         VSCondition: "When the crew consumes/uses 10 [PSY] or [INT] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Reduces damage received by 90% for 1 turn and deals 30% of enemies' current HP in True damage to all enemies.",
-            "character2": "Reduces the defense of all enemies by 100% for 3 turns and boosts ATK against enemies with reduced defense by 1.75x for 3 turns.",
+            character1: "Reduces damage received by 90% for 1 turn and deals 30% of enemies' current HP in True damage to all enemies.",
+            character2: "Reduces the defense of all enemies by 100% for 3 turns and boosts ATK against enemies with reduced defense by 1.75x for 3 turns.",
         },
         specialName: "Mighty Blow • Slashing Blow",
         sailor: {
-            "character1": "Makes [INT] orbs beneficial for all characters",
-            "character2": "Makes [PSY] orbs beneficial for all characters",
+            character1: "Makes [INT] orbs beneficial for all characters",
+            character2: "Makes [PSY] orbs beneficial for all characters",
         },
     },
     3355: {//WhitebeardVSShanks
         captain: {
-            "character1": "Boosts ATK of [PSY], [INT] and Striker characters by 5x, their HP by 1.2x, boosts chances of getting [INT] orbs, makes [INT] orbs beneficial for all characters and reduces damage received by 20%.",
-            "character2": "Boosts ATK of [PSY], [INT] and Slasher characters by 5x, their HP by 1.5x, boosts chances of getting [PSY] orbs, makes [PSY] orbs beneficial for all characters and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character1: "Boosts ATK of [PSY], [INT] and Striker characters by 5x, their HP by 1.2x, boosts chances of getting [INT] orbs, makes [INT] orbs beneficial for all characters and reduces damage received by 20%.",
+            character2: "Boosts ATK of [PSY], [INT] and Slasher characters by 5x, their HP by 1.5x, boosts chances of getting [PSY] orbs, makes [PSY] orbs beneficial for all characters and recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT.",
         },
         special: {
-            "character1": "Boosts base ATK of [PSY], [INT] and Striker characters by 1000 for 1 turn and boosts ATK of [PSY], [INT] and Striker characters by 2.5x for 1 turn. If the HP of the enemy with the highest Maximum HP is above 80%, deals 30% of enemies' current HP in damage to all enemies, otherwise, boosts Orb Effects of [PSY], [INT] and Striker characters by 2x for 1 turn.",
-            "character2": "Boosts base ATK of [PSY], [INT] and Slasher characters by 1000 for 1 turn and boosts Orb Effects of [PSY], [INT] and Slasher characters by 2.5x for 1 turn and changes all orbs, including [BLOCK] orbs, into Matching orbs. After 1 turn, reduces the defense of all enemies by 100% for 1 turn.",
+            character1: "Boosts base ATK of [PSY], [INT] and Striker characters by 1000 for 1 turn and boosts ATK of [PSY], [INT] and Striker characters by 2.5x for 1 turn. If the HP of the enemy with the highest Maximum HP is above 80%, deals 30% of enemies' current HP in damage to all enemies, otherwise, boosts Orb Effects of [PSY], [INT] and Striker characters by 2x for 1 turn.",
+            character2: "Boosts base ATK of [PSY], [INT] and Slasher characters by 1000 for 1 turn and boosts Orb Effects of [PSY], [INT] and Slasher characters by 2.5x for 1 turn and changes all orbs, including [BLOCK] orbs, into Matching orbs. After 1 turn, reduces the defense of all enemies by 100% for 1 turn.",
         },
         VSCondition: "When the crew consumes/uses 10 [PSY] or [INT] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Reduces damage received by 90% for 1 turn and deals 30% of enemies' current HP in True damage to all enemies.",
-            "character2": "Reduces the defense of all enemies by 100% for 3 turns and boosts ATK against enemies with reduced defense by 1.75x for 3 turns.",
+            character1: "Reduces damage received by 90% for 1 turn and deals 30% of enemies' current HP in True damage to all enemies.",
+            character2: "Reduces the defense of all enemies by 100% for 3 turns and boosts ATK against enemies with reduced defense by 1.75x for 3 turns.",
         },
         specialName: "Mighty Blow • Slashing Blow",
         sailor: {
-            "character1": "Makes [INT] orbs beneficial for all characters",
-            "character2": "Makes [PSY] orbs beneficial for all characters",
+            character1: "Makes [INT] orbs beneficial for all characters",
+            character2: "Makes [PSY] orbs beneficial for all characters",
             level1: "Boosts base ATK, HP and RCV of all characters by 100",
         },
         limit: [
@@ -97480,6 +97480,16 @@ window.details = {
             { "description": "Boosts base RCV by 25" },
             { "description": "Boosts base ATK by 25" },
             { "description": "Acquire Potential 2: Critical Hit" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 3: Enrage/Reduce Increase Damage Taken duration" },
         ],
         potential: [
             {
@@ -97500,6 +97510,16 @@ window.details = {
                     "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
                     "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
                     "If you hit a PERFECT with this character, there is an 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
                 ]
             },
         ],
@@ -99820,6 +99840,16 @@ window.details = {
             { "description": "Boosts base ATK by 150" },
             { "description": "Acquire 1 additional Socket slot" },
             { "description": "Acquire Potential 2: [QCK] Damage Reduction" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Acquire Potential 3: Enrage/Reduce Increase Damage Taken duration" },
         ],
         potential: [
             {
@@ -99840,6 +99870,16 @@ window.details = {
                     "Reduces damage taken from [QCK] characters by 3%",
                     "Reduces damage taken from [QCK] characters by 4%",
                     "Reduces damage taken from [QCK] characters by 5%"
+                ]
+            },
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
                 ]
             },
         ],
@@ -100142,9 +100182,9 @@ window.details = {
     },
     3432: {//Ulti & Page One
         captain: {
-            "character1": "Boosts ATK of Driven and Powerhouse characters by 4x, by 4.5x instead if they have a beneficial orb, and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
-            "character2": "Boosts ATK of Driven and Powerhouse characters by 4.25x and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
-            "combined": "Boosts ATK of Driven and Powerhouse characters by 4.75x, by 5x instead if they have a beneficial orb, and makes [DEX], [QCK], [RCV] and [TND] orbs beneficial for all characters and deals 500x character's ATK in character's Type damage to all enemies at the end of each turn. If there is a Powerful Enemy, reduces damage received by 30%"
+            character1: "Boosts ATK of Driven and Powerhouse characters by 4x, by 4.5x instead if they have a beneficial orb, and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
+            character2: "Boosts ATK of Driven and Powerhouse characters by 4.25x and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
+            combined: "Boosts ATK of Driven and Powerhouse characters by 4.75x, by 5x instead if they have a beneficial orb, and makes [DEX], [QCK], [RCV] and [TND] orbs beneficial for all characters and deals 500x character's ATK in character's Type damage to all enemies at the end of each turn. If there is a Powerful Enemy, reduces damage received by 30%"
         },
         special: "Deals 300x character's ATK in Typeless damage to all enemies, changes all orbs into Matching orbs, removes Target Lock duration completely and becomes Ulti & Page One for 3 turns. If your Captain is a Powerhouse or Driven character, marks all enemies with 10,000,000 or more MAX HP as a Powerful Enemy and boosts ATK against Powerful Enemies by 2.25x for 1 turn.",
         specialNotes: "Powerful Enemy marker is not a debuff, so it bypasses debuff protection.",
@@ -100155,16 +100195,16 @@ window.details = {
         },
         specialName: "No Rest for the Wicked",
         sailor: {
-            "character1": "Makes [RCV] orbs beneficial for Driven and Powerhouse characters",
-            "character2": "Makes [TND] orbs beneficial for Driven and Powerhouse characters",
-            "combined": "Makes [RCV] and [TND] orbs beneficial for Driven and Powerhouse characters",
+            character1: "Makes [RCV] orbs beneficial for Driven and Powerhouse characters",
+            character2: "Makes [TND] orbs beneficial for Driven and Powerhouse characters",
+            combined: "Makes [RCV] and [TND] orbs beneficial for Driven and Powerhouse characters",
         },
     },
     3433: {//Ulti & Page One
         captain: {
-            "character1": "Boosts ATK of Driven and Powerhouse characters by 4x, by 4.5x instead if they have a beneficial orb, and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
-            "character2": "Boosts ATK of Driven and Powerhouse characters by 4.25x and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
-            "combined": "Boosts ATK of Driven and Powerhouse characters by 4.75x, by 5x instead if they have a beneficial orb, and makes [DEX], [QCK], [RCV] and [TND] orbs beneficial for all characters and deals 500x character's ATK in character's Type damage to all enemies at the end of each turn. If there is a Powerful Enemy, reduces damage received by 30%"
+            character1: "Boosts ATK of Driven and Powerhouse characters by 4x, by 4.5x instead if they have a beneficial orb, and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
+            character2: "Boosts ATK of Driven and Powerhouse characters by 4.25x and makes [RCV] and [TND] orbs beneficial for all characters. If there is a Powerful Enemy, reduces damage received by 20%.",
+            combined: "Boosts ATK of Driven and Powerhouse characters by 4.75x, by 5x instead if they have a beneficial orb, and makes [DEX], [QCK], [RCV] and [TND] orbs beneficial for all characters and deals 500x character's ATK in character's Type damage to all enemies at the end of each turn. If there is a Powerful Enemy, reduces damage received by 30%"
         },
         special: "Deals 300x character's ATK in Typeless damage to all enemies, changes all orbs into Matching orbs, removes Target Lock duration completely and becomes Ulti & Page One for 3 turns. If your Captain is a Powerhouse or Driven character, marks all enemies with 10,000,000 or more MAX HP as a Powerful Enemy and boosts ATK against Powerful Enemies by 2.25x for 1 turn.",
         specialNotes: "Powerful Enemy marker is not a debuff, so it bypasses debuff protection.",
@@ -100175,9 +100215,9 @@ window.details = {
         },
         specialName: "No Rest for the Wicked",
         sailor: {
-            "character1": "Makes [RCV] orbs beneficial for Driven and Powerhouse characters",
-            "character2": "Makes [TND] orbs beneficial for Driven and Powerhouse characters",
-            "combined": "Makes [RCV] and [TND] orbs beneficial for Driven and Powerhouse characters",
+            character1: "Makes [RCV] orbs beneficial for Driven and Powerhouse characters",
+            character2: "Makes [TND] orbs beneficial for Driven and Powerhouse characters",
+            combined: "Makes [RCV] and [TND] orbs beneficial for Driven and Powerhouse characters",
             level1: "Boosts base ATK of Driven and Powerhouse characters by 100",
         },
         limit: [
@@ -101846,6 +101886,16 @@ window.details = {
             { "description": "Boosts base ATK by 150" },
             { "description": "Acquire 1 additional Socket slot" },
             { "description": "Acquire Potential 2: [PSY] Damage Reduction" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Acquire Potential 3: Critical Hit" },
         ],
         potential: [
             {
@@ -101866,6 +101916,16 @@ window.details = {
                     "Reduces damage taken from [PSY] characters by 3%",
                     "Reduces damage taken from [PSY] characters by 4%",
                     "Reduces damage taken from [PSY] characters by 5%"
+                ]
+            },
+            {
+                "Name": "Critical Hit",
+                "description": [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
                 ]
             },
         ],
@@ -101886,6 +101946,16 @@ window.details = {
             { "description": "Boosts base HP by 150" },
             { "description": "Acquire 1 additional Socket slot" },
             { "description": "Acquire Potential 2: [PSY] Damage Reduction" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Acquire Potential 3: Reduce Slot Bind duration" },
         ],
         potential: [
             {
@@ -101906,6 +101976,16 @@ window.details = {
                     "Reduces damage taken from [PSY] characters by 3%",
                     "Reduces damage taken from [PSY] characters by 4%",
                     "Reduces damage taken from [PSY] characters by 5%"
+                ]
+            },
+            {
+                "Name": "Reduce Slot Bind duration",
+                "description": [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 4 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character"
                 ]
             },
         ],
@@ -103486,6 +103566,16 @@ window.details = {
             { "description": "Boosts base HP by 50" },
             { "description": "Boosts base ATK by 25" },
             { "description": "Acquire Potential 2: Reduce Slot Bind duration" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 3: Reduce Special Use Limit duration" },
         ],
         potential: [
             {
@@ -103506,6 +103596,16 @@ window.details = {
                     "Reduces Slot Bind duration by 3 turns on this character",
                     "Reduces Slot Bind duration by 4 turns on this character",
                     "Reduces Slot Bind duration by 5 turns on this character"
+                ]
+            },
+            {
+                "Name": "Reduce Special Use Limit duration",
+                "description": [
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 2 turns."
                 ]
             },
         ],
@@ -103857,9 +103957,9 @@ window.details = {
     },
     3492: {//Nami & Usopp
         captain: {
-            "character1": "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
-            "character2": "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 3.75x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
-            "combined": "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn. At the beginning of each Stage, increases the Attack Timer of all enemies by 1 turn."
+            character1: "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
+            character2: "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 3.75x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
+            combined: "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn. At the beginning of each Stage, increases the Attack Timer of all enemies by 1 turn."
         },
         captainNotes: "Delay chance is based on damage dealt with normal attacks and does not stack with any other delay specials or effects<br><b>Base Chances</b><br><b>100,000 damage or more:</b> 20% chance to delay<br><b>1,000,000 damage or more:</b> 50% chance to delay<br><b>3,000,000 damage or more:</b> 100% chance to delay<br><b>5,000,000 damage or more:</b> 100% chance to delay ignoring Delay Debuff Protection",
         special: "Paralyzes (75%) all enemies for 5 turns, delays all enemies by 2 turns, reduces Paralysis and Silence duration by 6 turns, boosts the Color Affinity of Shooter and Cerebral characters by 2.25x for 1 turn and becomes Nami & Usopp for 3 turns. If your crew has Delay Status ATK Boost when the special is activated, increases boost effects of Delay Status ATK Boost buffs by +0.3x.",
@@ -103871,16 +103971,16 @@ window.details = {
         },
         specialName: "Encounter to Stop the Chase",
         sailor: {
-            "character1": "Boosts base ATK and HP of all characters by 50",
-            "character2": "Boosts base ATK and HP of all characters by 50",
-            "combined": "Boosts base ATK and HP of all characters by 75",
+            character1: "Boosts base ATK and HP of all characters by 50",
+            character2: "Boosts base ATK and HP of all characters by 50",
+            combined: "Boosts base ATK and HP of all characters by 75",
         },
     },
     3493: {//Nami & Usopp
         captain: {
-            "character1": "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
-            "character2": "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 3.75x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
-            "combined": "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn. At the beginning of each Stage, increases the Attack Timer of all enemies by 1 turn."
+            character1: "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
+            character2: "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 3.75x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn.",
+            combined: "Boosts ATK of Shooter, Cerebral and Free Spirit characters by 4.25x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit characters' ATK against delayed enemies by 1.2x and has a chance to ignore Debuff Protection and delays all enemies by 1 turn based on damage dealt in previous turn. At the beginning of each Stage, increases the Attack Timer of all enemies by 1 turn."
         },
         captainNotes: "Delay chance is based on damage dealt with normal attacks and does not stack with any other delay specials or effects<br><b>Base Chances</b><br><b>100,000 damage or more:</b> 20% chance to delay<br><b>1,000,000 damage or more:</b> 50% chance to delay<br><b>3,000,000 damage or more:</b> 100% chance to delay<br><b>5,000,000 damage or more:</b> 100% chance to delay ignoring Delay Debuff Protection",
         special: "Paralyzes (75%) all enemies for 5 turns, delays all enemies by 2 turns, reduces Paralysis and Silence duration by 6 turns, boosts the Color Affinity of Shooter and Cerebral characters by 2.25x for 1 turn and becomes Nami & Usopp for 3 turns. If your crew has Delay Status ATK Boost when the special is activated, increases boost effects of Delay Status ATK Boost buffs by +0.3x.",
@@ -103892,9 +103992,9 @@ window.details = {
         },
         specialName: "Encounter to Stop the Chase",
         sailor: {
-            "character1": "Boosts base ATK and HP of all characters by 50",
-            "character2": "Boosts base ATK and HP of all characters by 50",
-            "combined": "Boosts base ATK and HP of all characters by 75",
+            character1: "Boosts base ATK and HP of all characters by 50",
+            character2: "Boosts base ATK and HP of all characters by 50",
+            combined: "Boosts base ATK and HP of all characters by 75",
             level1: "Makes [TND] orbs beneficial for all characters",
         },
         limit: [
@@ -103974,9 +104074,9 @@ window.details = {
     },
     3494: {//Robin & Jinbe
         captain: {
-            "character1": "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, their RCV by 1.3x and makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
-            "character2": "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
-            "combined": "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.5x, their RCV by 1.3x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns."
+            character1: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, their RCV by 1.3x and makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
+            character2: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
+            combined: "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.5x, their RCV by 1.3x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns."
         },
         special: "Reduces enemies' Threshold Damage Reduction and Percent Damage Reduction duration by 6 turns, reduces ATK DOWN duration by 6 turns, reduces Special Cooldown of all characters by 2 turns, boosts base ATK of all characters by 1000 for 1 turn and becomes Robin & Jinbe for 3 turns.",
         swap: {
@@ -103986,16 +104086,16 @@ window.details = {
         },
         specialName: "Encounter of Gentle Strength",
         sailor: {
-            "character1": "Boosts base ATK and HP of all characters by 50",
-            "character2": "Boosts base ATK and HP of all characters by 50",
-            "combined": "Boosts base ATK and HP of all characters by 75",
+            character1: "Boosts base ATK and HP of all characters by 50",
+            character2: "Boosts base ATK and HP of all characters by 50",
+            combined: "Boosts base ATK and HP of all characters by 75",
         },
     },
     3495: {//Robin & Jinbe
         captain: {
-            "character1": "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, their RCV by 1.3x and makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
-            "character2": "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
-            "combined": "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.5x, their RCV by 1.3x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns."
+            character1: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, their RCV by 1.3x and makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
+            character2: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by 1.5x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns.",
+            combined: "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by 1.5x, their RCV by 1.3x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral characters and reduces damage received by 10%. At the start of the fight, applies the following buff: Reduces any damage received above 10,000 HP by 60% for 99 turns."
         },
         special: "Reduces enemies' Threshold Damage Reduction and Percent Damage Reduction duration by 6 turns, reduces ATK DOWN duration by 6 turns, reduces Special Cooldown of all characters by 2 turns, boosts base ATK of all characters by 1000 for 1 turn and becomes Robin & Jinbe for 3 turns.",
         swap: {
@@ -104005,9 +104105,9 @@ window.details = {
         },
         specialName: "Encounter of Gentle Strength",
         sailor: {
-            "character1": "Boosts base ATK and HP of all characters by 50",
-            "character2": "Boosts base ATK and HP of all characters by 50",
-            "combined": "Boosts base ATK and HP of all characters by 75",
+            character1: "Boosts base ATK and HP of all characters by 50",
+            character2: "Boosts base ATK and HP of all characters by 50",
+            combined: "Boosts base ATK and HP of all characters by 75",
             level1: "Restores Special Cooldown of this character completely when it is rewinded",
         },
         limit: [
@@ -104789,9 +104889,9 @@ window.details = {
     },
     3507: {//Beast Pirates
         captain: {
-            "character1": "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [STR] damage to all enemies at the end of each turn.",
-            "character2": "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [QCK] damage to all enemies at the end of each turn.",
-            "combined": "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 600x character's ATK in character's Type damage to all enemies at the end of each turn."
+            character1: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [STR] damage to all enemies at the end of each turn.",
+            character2: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [QCK] damage to all enemies at the end of each turn.",
+            combined: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 600x character's ATK in character's Type damage to all enemies at the end of each turn."
         },
         special: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 1 turn, deals 500x character's ATK in Typeless damage to all enemies and becomes Kaido & Lead Performers for 3 turns. If your crew has 5 or more Powerhouse characters when the special is activated, boosts the Color Affinity of [STR], [QCK] and Powerhouse characters by 2.5x for 1 turn, by 2.25x otherwise.",
         swap: {
@@ -104801,16 +104901,16 @@ window.details = {
         },
         specialName: "Absolute Destruction",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Powerhouse characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
+            character2: "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Powerhouse characters by 100",
         },
     },
     3508: {//Beast Pirates
         captain: {
-            "character1": "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [STR] damage to all enemies at the end of each turn.",
-            "character2": "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [QCK] damage to all enemies at the end of each turn.",
-            "combined": "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 600x character's ATK in character's Type damage to all enemies at the end of each turn."
+            character1: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [STR] damage to all enemies at the end of each turn.",
+            character2: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 4.5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 400x character's ATK in [QCK] damage to all enemies at the end of each turn.",
+            combined: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 2 turns at the start of the fight, reduces Super Swap cooldown of this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters by 5x and their HP by 1.3x. If your crew has 6 Powerhouse characters, deals 600x character's ATK in character's Type damage to all enemies at the end of each turn."
         },
         special: "Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters by 1 turn, deals 500x character's ATK in Typeless damage to all enemies and becomes Kaido & Lead Performers for 3 turns. If your crew has 5 or more Powerhouse characters when the special is activated, boosts the Color Affinity of [STR], [QCK] and Powerhouse characters by 2.5x for 1 turn, by 2.25x otherwise.",
         swap: {
@@ -104820,9 +104920,9 @@ window.details = {
         },
         specialName: "Absolute Destruction",
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
-            "character2": "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
-            "combined": "Boosts base ATK, HP and RCV of Powerhouse characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
+            character2: "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
+            combined: "Boosts base ATK, HP and RCV of Powerhouse characters by 100",
             level1: "Cannot be Blown Away",
         },
         limit: [
@@ -105142,13 +105242,13 @@ window.details = {
     },
     3512: {//Roger&WB
         captain: {
-            "character1": "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn.",
-            "character2": "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, boosts ATK of this character by 5.25x and makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters.",
-            "combined": "Boosts ATK of Slasher and Striker characters by 5.5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn."
+            character1: "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn.",
+            character2: "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, boosts ATK of this character by 5.25x and makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters.",
+            combined: "Boosts ATK of Slasher and Striker characters by 5.5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn."
         },
         special: {
-            "character1": "Reduces Despair duration by 20 turns, increases boost effects of ATK UP buffs to 3x, increases boost effects of Color Affinity buffs by +0.5x and becomes Roger & Newgate for 3 turns.",
-            "character2": "Reduces Despair duration by 20 turns, increases boost effects of Orb Amplification buffs to 3x, boosts the Color Affinity of Slasher and Striker characters by 2x for 1 turn and becomes Roger & Newgate for 3 turns.",
+            character1: "Reduces Despair duration by 20 turns, increases boost effects of ATK UP buffs to 3x, increases boost effects of Color Affinity buffs by +0.5x and becomes Roger & Newgate for 3 turns.",
+            character2: "Reduces Despair duration by 20 turns, increases boost effects of Orb Amplification buffs to 3x, boosts the Color Affinity of Slasher and Striker characters by 2x for 1 turn and becomes Roger & Newgate for 3 turns.",
         },
         swap: {
             base: "Changes orbs of adjacent characters into Matching Orbs, boosts ATK of all characters by 1.5x for 1 turn and boosts Orb Effects of all characters by 1.5x for 1 turn.",
@@ -105157,20 +105257,20 @@ window.details = {
         },
         specialName: "Clash of Powers",
         sailor: {
-            "character1": "Boosts base ATK and HP of Slasher and Striker characters by 150",
-            "character2": "Boosts base ATK and HP of Slasher and Striker characters by 150",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Striker characters by 150",
+            character1: "Boosts base ATK and HP of Slasher and Striker characters by 150",
+            character2: "Boosts base ATK and HP of Slasher and Striker characters by 150",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Striker characters by 150",
         },
     },
     3513: {//Roger&WB
         captain: {
-            "character1": "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn.",
-            "character2": "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, boosts ATK of this character by 5.25x and makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters.",
-            "combined": "Boosts ATK of Slasher and Striker characters by 5.5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn."
+            character1: "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn.",
+            character2: "Boosts ATK of Slasher and Striker characters by 5x, their HP by 1.2x, boosts ATK of this character by 5.25x and makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters.",
+            combined: "Boosts ATK of Slasher and Striker characters by 5.5x, their HP by 1.2x, makes [INT] and [PSY] orbs beneficial for Slasher and Striker characters and reduces Bind, Paralysis and Silence duration by 1 turn."
         },
         special: {
-            "character1": "Reduces Despair duration by 20 turns, increases boost effects of ATK UP buffs to 3x, increases boost effects of Color Affinity buffs by +0.5x and becomes Roger & Newgate for 3 turns.",
-            "character2": "Reduces Despair duration by 20 turns, increases boost effects of Orb Amplification buffs to 3x, boosts the Color Affinity of Slasher and Striker characters by 2x for 1 turn and becomes Roger & Newgate for 3 turns.",
+            character1: "Reduces Despair duration by 20 turns, increases boost effects of ATK UP buffs to 3x, increases boost effects of Color Affinity buffs by +0.5x and becomes Roger & Newgate for 3 turns.",
+            character2: "Reduces Despair duration by 20 turns, increases boost effects of Orb Amplification buffs to 3x, boosts the Color Affinity of Slasher and Striker characters by 2x for 1 turn and becomes Roger & Newgate for 3 turns.",
         },
         swap: {
             base: "Changes orbs of adjacent characters into Matching Orbs, boosts ATK of all characters by 1.5x for 1 turn and boosts Orb Effects of all characters by 1.5x for 1 turn.",
@@ -105179,9 +105279,9 @@ window.details = {
         },
         specialName: "Clash of Powers",
         sailor: {
-            "character1": "Boosts base ATK and HP of Slasher and Striker characters by 150",
-            "character2": "Boosts base ATK and HP of Slasher and Striker characters by 150",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Striker characters by 150",
+            character1: "Boosts base ATK and HP of Slasher and Striker characters by 150",
+            character2: "Boosts base ATK and HP of Slasher and Striker characters by 150",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Striker characters by 150",
             level1: "Makes [PSY] and [INT] orbs beneficial for Slasher and Striker characters",
         },
         limit: [
@@ -105271,9 +105371,9 @@ window.details = {
     },
     3514: {//Luffy&SHP
         captain: {
-            "character1": "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.75x, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
-            "character2": "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
-            "combined": "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 5x, by 5.25x instead if they have a beneficial orb, their HP by 1.5x recovers 2,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead."
+            character1: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.75x, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
+            character2: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
+            combined: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 5x, by 5.25x instead if they have a beneficial orb, their HP by 1.5x recovers 2,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead."
         },
         captainNotes: "Buff restriction override does not apply to \"Partial\" buffs. The buff restriction override applies to any effect that would normally affect only certain classes or types, including, but not restricted to: ATK buffs, Orb buffs, Base ATK buffs, Cooldown Reduction, Normal Attack Defensive Effect Bypass, Orb Lock buffs and Slot Barrier debuffs, but does not effect defensive buffs. This effect doesn't not effect Swap abilities, Support abilities, Super Special abilities, VS Special abilities or effects obtained from Following Turn or Tap-Timing Following Turn buffs.",
         special: "Deals 300x character's ATK in Typeless damage to all enemies, changes all orbs, including [BLOCK] orbs, into [RAINBOW] orbs and becomes Luffy & Straw Hat Pirates for 3 turns. If your crew has 1 or fewer buffs when the special is activated, boosts ATK of all characters by 2x for 2 turns, boosts the Color Affinity of all characters by 2x for 2 turns, boosts Orb Effects of all characters by 2x for 2 turns, adds 0.8x to Chain multiplier for 2 turns and prevents adding any additional buffs to your team this turn. If your crew has 2 or more buffs when the special is activated, locks all orbs for 2 turns and increases duration of any ATK boosting, Orb Amplification, Base ATK boosting, Status ATK boosting, Affinity boosting, Chain Addition, Chain Multiplication buffs and Chain Lock/Limit/Boundary debuffs/buffs by 1 turn.",
@@ -105284,16 +105384,16 @@ window.details = {
         },
         specialName: "Charging Straw Hats",
         sailor: {
-            "character1": "Boosts base ATK and HP of all characters by 100",
-            "character2": "Boosts base ATK and HP of all characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100",
+            character1: "Boosts base ATK and HP of all characters by 100",
+            character2: "Boosts base ATK and HP of all characters by 100",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100",
         },
     },
     3515: {//Luffy&SHP
         captain: {
-            "character1": "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.75x, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
-            "character2": "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
-            "combined": "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 5x, by 5.25x instead if they have a beneficial orb, their HP by 1.5x recovers 2,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead."
+            character1: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.75x, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
+            character2: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, their HP by 1.5x recovers 1,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead.",
+            combined: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of all characters by 5x, by 5.25x instead if they have a beneficial orb, their HP by 1.5x recovers 2,000 HP at the end of each turn and makes all Specials that apply Class or Type restricted buffs apply to the whole crew instead."
         },
         captainNotes: "Buff restriction override does not apply to \"Partial\" buffs. The buff restriction override applies to any effect that would normally affect only certain classes or types, including, but not restricted to: ATK buffs, Orb buffs, Base ATK buffs, Cooldown Reduction, Normal Attack Defensive Effect Bypass, Orb Lock buffs and Slot Barrier debuffs, but does not effect defensive buffs. This effect doesn't not effect Swap abilities, Support abilities, Super Special abilities, VS Special abilities or effects obtained from Following Turn or Tap-Timing Following Turn buffs.",
         special: "Deals 300x character's ATK in Typeless damage to all enemies, changes all orbs, including [BLOCK] orbs, into [RAINBOW] orbs and becomes Luffy & Straw Hat Pirates for 3 turns. If your crew has 1 or fewer buffs when the special is activated, boosts ATK of all characters by 2x for 2 turns, boosts the Color Affinity of all characters by 2x for 2 turns, boosts Orb Effects of all characters by 2x for 2 turns, adds 0.8x to Chain multiplier for 2 turns and prevents adding any additional buffs to your team this turn. If your crew has 2 or more buffs when the special is activated, locks all orbs for 2 turns and increases duration of any ATK boosting, Orb Amplification, Base ATK boosting, Status ATK boosting, Affinity boosting, Chain Addition, Chain Multiplication buffs and Chain Lock/Limit/Boundary debuffs/buffs by 1 turn.",
@@ -105304,9 +105404,9 @@ window.details = {
         },
         specialName: "Charging Straw Hats",
         sailor: {
-            "character1": "Boosts base ATK and HP of all characters by 100",
-            "character2": "Boosts base ATK and HP of all characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of all characters by 100",
+            character1: "Boosts base ATK and HP of all characters by 100",
+            character2: "Boosts base ATK and HP of all characters by 100",
+            combined: "Boosts base ATK, HP and RCV of all characters by 100",
             level1: "Reduces Silence duration completely on this character",
         },
         limit: [
@@ -107045,9 +107145,9 @@ window.details = {
     },
     3542: {//Carrot & Wanda
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [QCK] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
-            "character2": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
-            "combined": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.25x, makes [QCK] and [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters and deals 100,000 Fixed damage to all enemies at the end of each turn. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3."
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [QCK] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
+            character2: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
+            combined: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.25x, makes [QCK] and [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters and deals 100,000 Fixed damage to all enemies at the end of each turn. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3."
         },
         captainNotes: "The bonus is cumulative. Characters with 2 of the boosted classes get a 4.84x bonus.",
         special: [
@@ -107068,16 +107168,16 @@ window.details = {
             superTurns: 4,
         },
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
-            "character2": "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
+            character2: "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
         },
     },
     3543: {//Carrot & Wanda
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [QCK] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
-            "character2": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
-            "combined": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.25x, makes [QCK] and [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters and deals 100,000 Fixed damage to all enemies at the end of each turn. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3."
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [QCK] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
+            character2: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.2x and makes [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3.",
+            combined: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter, Slasher, Striker, Cerebral and Powerhouse characters by 2.25x, makes [QCK] and [DEX] orbs beneficial for Fighter, Slasher, Striker, Cerebral and Powerhouse characters and deals 100,000 Fixed damage to all enemies at the end of each turn. Reduces Special Cooldown of all characters by 2 turns at the start of Stage 3."
         },
         captainNotes: "The bonus is cumulative. Characters with 2 of the boosted classes get a 4.84x bonus.",
         special: [
@@ -107098,9 +107198,9 @@ window.details = {
             superTurns: 4,
         },
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
-            "character2": "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
+            character2: "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 100",
             level1: "Restores Special Cooldown of this character completely when it is rewinded",
         },
         limit: [
@@ -107890,9 +107990,9 @@ window.details = {
     },
     3554: {//Kinemon&Denjiro
         captain: {
-            "character1": "Boosts ATK of Slasher and Free Spirit characters by 4.25x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "character2": "Boosts ATK of Slasher and Free Spirit characters by 4.5x and their HP by 1.5x and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "combined": "Boosts ATK of Slasher and Free Spirit characters by 5x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            character1: "Boosts ATK of Slasher and Free Spirit characters by 4.25x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            character2: "Boosts ATK of Slasher and Free Spirit characters by 4.5x and their HP by 1.5x and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            combined: "Boosts ATK of Slasher and Free Spirit characters by 5x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
         },
         special: "Deals 20% of enemies' current HP in True damage to one enemy, reduces enemies' Percent Damage Reduction and Increased Defense duration by 6 turns, boosts Orb Effects of Slasher and Free Spirit characters by 2.75x for 1 turn, boosts base ATK of Slasher and Free Spirit characters by 500 for 1 turn and becomes Kin'emon & Denjiro for 3 turns.",
         specialName: "Unrelenting Onslaught",
@@ -107902,16 +108002,16 @@ window.details = {
             superTurns: 6,
         },
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
-            "character2": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
+            character2: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
         },
     },
     3555: {//Kinemon&Denjiro
         captain: {
-            "character1": "Boosts ATK of Slasher and Free Spirit characters by 4.25x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "character2": "Boosts ATK of Slasher and Free Spirit characters by 4.5x and their HP by 1.5x and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
-            "combined": "Boosts ATK of Slasher and Free Spirit characters by 5x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            character1: "Boosts ATK of Slasher and Free Spirit characters by 4.25x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            character2: "Boosts ATK of Slasher and Free Spirit characters by 4.5x and their HP by 1.5x and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
+            combined: "Boosts ATK of Slasher and Free Spirit characters by 5x and their HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking.",
         },
         special: "Deals 20% of enemies' current HP in True damage to one enemy, reduces enemies' Percent Damage Reduction and Increased Defense duration by 6 turns, boosts Orb Effects of Slasher and Free Spirit characters by 2.75x for 1 turn, boosts base ATK of Slasher and Free Spirit characters by 500 for 1 turn and becomes Kin'emon & Denjiro for 3 turns.",
         specialName: "Unrelenting Onslaught",
@@ -107921,9 +108021,9 @@ window.details = {
             superTurns: 6,
         },
         sailor: {
-            "character1": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
-            "character2": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
-            "combined": "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
+            character1: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
+            character2: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
+            combined: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100",
             level1: "Makes [QCK] orbs beneficial for Slasher and Free Spirit characters",
         },
         limit: [
@@ -109049,9 +109149,9 @@ window.details = {
     },
     3573: {//Franky
         captain: {
-            "character1": "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces ATK DOWN duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher, Striker and Free Spirit characters by 1.25x.",
-            "character2": "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces Burn duration by 10 turns. Boosts Color Affinity of Class 1 Fighter, Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
-            "combined": "Boosts ATK of all characters by 4x, their HP by 1.5x and reduces ATK DOWN and Burn duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher and Striker characters by 1.25x. Boosts Color Affinity of Class 1 Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
+            character1: "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces ATK DOWN duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher, Striker and Free Spirit characters by 1.25x.",
+            character2: "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces Burn duration by 10 turns. Boosts Color Affinity of Class 1 Fighter, Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
+            combined: "Boosts ATK of all characters by 4x, their HP by 1.5x and reduces ATK DOWN and Burn duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher and Striker characters by 1.25x. Boosts Color Affinity of Class 1 Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
         },
         special: "Recovers 30% of crew's MAX HP, reduces Poison duration completely, boosts ATK of Fighter, Slasher, Shooter and Striker characters by 2.5x for 1 turn, boosts Orb Effects of Free Spirit, Cerebral, Powerhouse and Driven characters by 2.5x for 1 turn and becomes Black Rhino FR-U4 & Brachio-Tank 5 for 3 turns.",
         specialName: "General Franky Docking",
@@ -109061,16 +109161,16 @@ window.details = {
             superTurns: 4,
         },
         sailor: {
-            "character1": "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
-            "character2": "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
-            "combined": "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
+            character1: "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
+            character2: "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
+            combined: "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
         },
     },
     3574: {//Franky
         captain: {
-            "character1": "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces ATK DOWN duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher, Striker and Free Spirit characters by 1.25x.",
-            "character2": "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces Burn duration by 10 turns. Boosts Color Affinity of Class 1 Fighter, Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
-            "combined": "Boosts ATK of all characters by 4x, their HP by 1.5x and reduces ATK DOWN and Burn duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher and Striker characters by 1.25x. Boosts Color Affinity of Class 1 Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
+            character1: "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces ATK DOWN duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher, Striker and Free Spirit characters by 1.25x.",
+            character2: "Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces Burn duration by 10 turns. Boosts Color Affinity of Class 1 Fighter, Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
+            combined: "Boosts ATK of all characters by 4x, their HP by 1.5x and reduces ATK DOWN and Burn duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter, Slasher and Striker characters by 1.25x. Boosts Color Affinity of Class 1 Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.",
         },
         special: "Recovers 30% of crew's MAX HP, reduces Poison duration completely, boosts ATK of Fighter, Slasher, Shooter and Striker characters by 2.5x for 1 turn, boosts Orb Effects of Free Spirit, Cerebral, Powerhouse and Driven characters by 2.5x for 1 turn and becomes General Franky for 3 turns.",
         specialName: "General Franky Docking",
@@ -109080,9 +109180,9 @@ window.details = {
             superTurns: 4,
         },
         sailor: {
-            "character1": "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
-            "character2": "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
-            "combined": "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
+            character1: "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
+            character2: "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
+            combined: "Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and Striker characters",
             level1: "Makes [PSY] orbs beneficial for Free Spirit, Cerebral, Powerhouse and Driven characters",
         },
         limit: [
@@ -110547,6 +110647,16 @@ window.details = {
             { "description": "Boosts base ATK by 30" },
             { "description": "Reduce base Special Cooldown by 1 turn" },
             { "description": "Acquire Potential 2: Reduce No Healing duration" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Reduce base Special Cooldown by 2 turn" },
+            { "description": "Acquire Potential 3: Reduce Slot Bind duration" },
         ],
         potential: [
             {
@@ -110567,6 +110677,16 @@ window.details = {
                     "Reduces No Healing duration by 3 turns",
                     "Reduces No Healing duration by 4 turns",
                     "Reduces No Healing duration by 5 turns"
+                ]
+            },
+            {
+                "Name": "Reduce Slot Bind duration",
+                "description": [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 4 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character"
                 ]
             },
         ],
@@ -110616,6 +110736,16 @@ window.details = {
             { "description": "Boosts base HP by 60" },
             { "description": "Reduce base Special Cooldown by 1 turn" },
             { "description": "Acquire Potential 2: Reduce Slot Bind duration" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 3: Reduce No Healing duration" },
         ],
         potential: [
             {
@@ -110636,6 +110766,16 @@ window.details = {
                     "Reduces Slot Bind duration by 3 turns on this character",
                     "Reduces Slot Bind duration by 4 turns on this character",
                     "Reduces Slot Bind duration by 5 turns on this character"
+                ]
+            },
+            {
+                "Name": "Reduce No Healing duration",
+                "description": [
+                    "Reduces No Healing duration by 1 turn",
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 4 turns",
+                    "Reduces No Healing duration by 5 turns"
                 ]
             },
         ],
@@ -111051,9 +111191,9 @@ window.details = {
     },
     3610: {//Yamato Ace
         captain: {
-            "character1": "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
-            "character2": "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT and reduces Bind and Silence duration by 10 turns.",
-            "combined": "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.75x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
+            character1: "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
+            character2: "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT and reduces Bind and Silence duration by 10 turns.",
+            combined: "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.75x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
         },
         special: [
             {
@@ -111079,9 +111219,9 @@ window.details = {
     },
     3611: {//Yamato Ace
         captain: {
-            "character1": "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
-            "character2": "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT and reduces Bind and Silence duration by 10 turns.",
-            "combined": "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.75x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
+            character1: "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
+            character2: "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.5x-5.25x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT and reduces Bind and Silence duration by 10 turns.",
+            combined: "Boosts ATK of Striker, Shooter and Free Spirit characters by 4.75x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT, reduces damage received by 20% and reduces Bind and Silence duration by 10 turns.",
         },
         special: [
             {
@@ -117153,9 +117293,9 @@ window.details = {
     },
     3707: {//Usopp Yasopp
         captain: {
-            "character1": "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
-            "character2": "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
-            "combined": "Boosts ATK of Shooter and Free Spirit characters by 5.25x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] and [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] and [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
+            character1: "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
+            character2: "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
+            combined: "Boosts ATK of Shooter and Free Spirit characters by 5.25x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] and [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] and [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
         },
         special: "Boosts base ATK of Shooter and Free Spirit characters by 1,250 for 1 turn, boosts ATK against delayed enemies by 2.25x for 1 turn and becomes Usopp & Yasopp for 3 turns. If enemies are delayed when the special is activated, increases duration of any delay debuffs by 1 turn. If your Captain is a Shooter or Free Spirit character, ignores Debuff Protection and delays all enemies by 1 turn; delays all enemies by 1 turn otherwise.",
         specialName: "Marksmanship of Father and Son",
@@ -117172,9 +117312,9 @@ window.details = {
     },
     3708: {//Usopp Yasopp
         captain: {
-            "character1": "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
-            "character2": "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
-            "combined": "Boosts ATK of Shooter and Free Spirit characters by 5.25x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] and [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] and [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
+            character1: "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
+            character2: "Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
+            combined: "Boosts ATK of Shooter and Free Spirit characters by 5.25x, boosts HP of [PSY] and Shooter characters by 1.3x, makes [QCK] and [PSY] orbs beneficial for Shooter and Free Spirit characters, boosts chance of getting [QCK] and [PSY] orbs and ignores Debuff Protection and delays all enemies by 1 turn after each turn you take damage.",
         },
         special: "Boosts base ATK of Shooter and Free Spirit characters by 1,250 for 1 turn, boosts ATK against delayed enemies by 2.25x for 1 turn and becomes Usopp & Yasopp for 3 turns. If enemies are delayed when the special is activated, increases duration of any delay debuffs by 1 turn. If your Captain is a Shooter or Free Spirit character, ignores Debuff Protection and delays all enemies by 1 turn; delays all enemies by 1 turn otherwise.",
         specialName: "Marksmanship of Father and Son",
@@ -119736,10 +119876,10 @@ window.details = {
                 "Characters": "Donquixote Rocinante (Corazon)",
                 "description": [
                     "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.1x for 3 turns reduces Bind duration by 1 turn",
-                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.1x for 3 turns reduces Bind duration by 1 turn",
-                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.1x for 3 turns reduces Bind duration by 2 turns",
-                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.1x for 3 turns reduces Bind duration by 2 turns",
-                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.1x for 3 turns reduces Bind duration by 3 turns"
+                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.2x for 3 turns reduces Bind duration by 1 turn",
+                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.3x for 3 turns reduces Bind duration by 1 turn",
+                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.4x for 3 turns reduces Bind duration by 1 turn",
+                    "Once per adventure, when an enemy inflicts you with Bind, boosts Orb Effects of Driven and Cerebral characters by 1.5x for 3 turns reduces Bind duration by 1 turn"
                 ]
             }
         ]
@@ -122465,19 +122605,19 @@ window.details = {
     },
     3787: {//KaidoVSYamato
         captain: {
-            "character1": "Boosts ATK of Striker and Driven characters by 5.25x, by 5.5x instead if they have a beneficial orb, boosts HP of Striker and Driven characters by 1.5x, makes [INT] and [TND] orbs beneficial for Striker and Driven characters, changes [RCV] orbs into [WANO] orbs, reduces Silence duration by 10 turns on this character and restores Special Cooldown of this character by 10 turns when it is rewinded. If a crew member uses a special with an ATK UP, Orb Effect or Color Affinity buff, increases those ATK Up, Orb Amplification and Color Affinity buffs by +0.25x.",
-            "character2": "Boosts ATK of Striker and Free Spirit characters by 5.5x, by 5.75x instead if they have a beneficial orb, boosts HP of Striker and Free Spirit characters by 1.3x, makes [TND] orbs beneficial for Striker and Free Spirit characters, boosts chances of getting [TND] orbs and reduces Despair duration by 10 turns.",
+            character1: "Boosts ATK of Striker and Driven characters by 5.25x, by 5.5x instead if they have a beneficial orb, boosts HP of Striker and Driven characters by 1.5x, makes [INT] and [TND] orbs beneficial for Striker and Driven characters, changes [RCV] orbs into [WANO] orbs, reduces Silence duration by 10 turns on this character and restores Special Cooldown of this character by 10 turns when it is rewinded. If a crew member uses a special with an ATK UP, Orb Effect or Color Affinity buff, increases those ATK Up, Orb Amplification and Color Affinity buffs by +0.25x.",
+            character2: "Boosts ATK of Striker and Free Spirit characters by 5.5x, by 5.75x instead if they have a beneficial orb, boosts HP of Striker and Free Spirit characters by 1.3x, makes [TND] orbs beneficial for Striker and Free Spirit characters, boosts chances of getting [TND] orbs and reduces Despair duration by 10 turns.",
         },
         captainNotes: "Kaido: The Boost buffs are stackable with other effects.",
         special: {
-            "character1": "Removes all positive buffs on your team, reduces Special Cooldown of all characters by 20 turns, changes all orbs, including [BLOCK] orbs, of left column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of right column characters into [WANO] orbs, boosts Orb Effects Striker and Driven characters by 3.25x for 2 turns and boosts ATK of Striker and Driven characters by 3x for 2 turns. Limits Special Uses to 2.",
-            "character2": "Changes all orbs, including [BLOCK] orbs, of right column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of left column characters into [WANO] orbs and boosts ATK of Striker and Free Spirit characters by 3x for 1 turn. If your Captain is a Striker or Free Spirit character, boosts ATK of all characters with Percent Damage Reduction by 1x-2x for 3 turns, proportional to the strength of the Percent Damage Reduction buff. If your crew has Crew Damage Reduction ATK UP when the special is activated, boosts Orb Effects of Striker and Free Spirit characters by 2.75x for 1 turn and reduces damage received by 80% for 1 turn.",
+            character1: "Removes all positive buffs on your team, reduces Special Cooldown of all characters by 20 turns, changes all orbs, including [BLOCK] orbs, of left column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of right column characters into [WANO] orbs, boosts Orb Effects Striker and Driven characters by 3.25x for 2 turns and boosts ATK of Striker and Driven characters by 3x for 2 turns. Limits Special Uses to 2.",
+            character2: "Changes all orbs, including [BLOCK] orbs, of right column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of left column characters into [WANO] orbs and boosts ATK of Striker and Free Spirit characters by 3x for 1 turn. If your Captain is a Striker or Free Spirit character, boosts ATK of all characters with Percent Damage Reduction by 1x-2x for 3 turns, proportional to the strength of the Percent Damage Reduction buff. If your crew has Crew Damage Reduction ATK UP when the special is activated, boosts Orb Effects of Striker and Free Spirit characters by 2.75x for 1 turn and reduces damage received by 80% for 1 turn.",
         },
         specialNotes: "Kaido: This special removes the ability to activate more than 2 Specials total after the Special has been used. If you use another special that limits Special uses, you can not use any more Specials.",
         VSCondition: "When the crew consumes/uses 10 [WANO] or [TND] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 2 turns and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.5x for 2 turns.",
-            "character2": "Reduces damage received by 60% for 2 turns, makes [TND] orbs beneficial for all characters for 2 turns and increases Orb Effects of beneficial [TND] orbs to 2.25x for 1 turn.",
+            character1: "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 2 turns and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.5x for 2 turns.",
+            character2: "Reduces damage received by 60% for 2 turns, makes [TND] orbs beneficial for all characters for 2 turns and increases Orb Effects of beneficial [TND] orbs to 2.25x for 1 turn.",
         },
         specialName: "Vajra Arrow • Hallowed Glacier Slash",
         sailor: {
@@ -122487,19 +122627,19 @@ window.details = {
     },
     3788: {//KaidoVSYamato
         captain: {
-            "character1": "Boosts ATK of Striker and Driven characters by 5.25x, by 5.5x instead if they have a beneficial orb, boosts HP of Striker and Driven characters by 1.5x, makes [INT] and [TND] orbs beneficial for Striker and Driven characters, changes [RCV] orbs into [WANO] orbs, reduces Silence duration by 10 turns on this character and restores Special Cooldown of this character by 10 turns when it is rewinded. If a crew member uses a special with an ATK UP, Orb Effect or Color Affinity buff, increases those ATK Up, Orb Amplification and Color Affinity buffs by +0.25x.",
-            "character2": "Boosts ATK of Striker and Free Spirit characters by 5.5x, by 5.75x instead if they have a beneficial orb, boosts HP of Striker and Free Spirit characters by 1.3x, makes [TND] orbs beneficial for Striker and Free Spirit characters, boosts chances of getting [TND] orbs and reduces Despair duration by 10 turns.",
+            character1: "Boosts ATK of Striker and Driven characters by 5.25x, by 5.5x instead if they have a beneficial orb, boosts HP of Striker and Driven characters by 1.5x, makes [INT] and [TND] orbs beneficial for Striker and Driven characters, changes [RCV] orbs into [WANO] orbs, reduces Silence duration by 10 turns on this character and restores Special Cooldown of this character by 10 turns when it is rewinded. If a crew member uses a special with an ATK UP, Orb Effect or Color Affinity buff, increases those ATK Up, Orb Amplification and Color Affinity buffs by +0.25x.",
+            character2: "Boosts ATK of Striker and Free Spirit characters by 5.5x, by 5.75x instead if they have a beneficial orb, boosts HP of Striker and Free Spirit characters by 1.3x, makes [TND] orbs beneficial for Striker and Free Spirit characters, boosts chances of getting [TND] orbs and reduces Despair duration by 10 turns.",
         },
         captainNotes: "Kaido: The Boost buffs are stackable with other effects.",
         special: {
-            "character1": "Removes all positive buffs on your team, reduces Special Cooldown of all characters by 20 turns, changes all orbs, including [BLOCK] orbs, of left column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of right column characters into [WANO] orbs, boosts Orb Effects Striker and Driven characters by 3.25x for 2 turns and boosts ATK of Striker and Driven characters by 3x for 2 turns. Limits Special Uses to 2.",
-            "character2": "Changes all orbs, including [BLOCK] orbs, of right column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of left column characters into [WANO] orbs and boosts ATK of Striker and Free Spirit characters by 3x for 1 turn. If your Captain is a Striker or Free Spirit character, boosts ATK of all characters with Percent Damage Reduction by 1x-2x for 3 turns, proportional to the strength of the Percent Damage Reduction buff. If your crew has Crew Damage Reduction ATK UP when the special is activated, boosts Orb Effects of Striker and Free Spirit characters by 2.75x for 1 turn and reduces damage received by 80% for 1 turn.",
+            character1: "Removes all positive buffs on your team, reduces Special Cooldown of all characters by 20 turns, changes all orbs, including [BLOCK] orbs, of left column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of right column characters into [WANO] orbs, boosts Orb Effects Striker and Driven characters by 3.25x for 2 turns and boosts ATK of Striker and Driven characters by 3x for 2 turns. Limits Special Uses to 2.",
+            character2: "Changes all orbs, including [BLOCK] orbs, of right column characters into [TND] orbs, changes all orbs, including [BLOCK] orbs, of left column characters into [WANO] orbs and boosts ATK of Striker and Free Spirit characters by 3x for 1 turn. If your Captain is a Striker or Free Spirit character, boosts ATK of all characters with Percent Damage Reduction by 1x-2x for 3 turns, proportional to the strength of the Percent Damage Reduction buff. If your crew has Crew Damage Reduction ATK UP when the special is activated, boosts Orb Effects of Striker and Free Spirit characters by 2.75x for 1 turn and reduces damage received by 80% for 1 turn.",
         },
         specialNotes: "Kaido: This special removes the ability to activate more than 2 Specials total after the Special has been used. If you use another special that limits Special uses, you can not use any more Specials.",
         VSCondition: "When the crew consumes/uses 10 [WANO] or [TND] orbs with normal attacks.",
         VSSpecial: {
-            "character1": "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 2 turns and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.5x for 2 turns.",
-            "character2": "Reduces damage received by 60% for 2 turns, makes [TND] orbs beneficial for all characters for 2 turns and increases Orb Effects of beneficial [TND] orbs to 2.25x for 1 turn.",
+            character1: "Deals 500x character's ATK in Typeless damage to all enemies at the end of the turn for 2 turns and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.5x for 2 turns.",
+            character2: "Reduces damage received by 60% for 2 turns, makes [TND] orbs beneficial for all characters for 2 turns and increases Orb Effects of beneficial [TND] orbs to 2.25x for 1 turn.",
         },
         specialName: "Vajra Arrow • Hallowed Glacier Slash",
         sailor: {
@@ -122621,13 +122761,13 @@ window.details = {
     3789: {//Nami
         captain: "Reduces Special Cooldown of this character by 3 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], Striker and Free Spirit characters by 5.25x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of [PSY], Striker and Free Spirit characters by 1.3x, makes [PSY], [RCV] and [TND] orbs benedicial for [PSY], Striker and Free Spirit characters and boosts chances of getting [TND] orbs. When an enemy inflicts you with Paralysis, reduces Paralysis duration completely and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
         special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Percent Damage Reduction and Resilience duration by 7 turns, deals 200x character's ATK in Typeless damage to all enemies, ignores debuff protection and paralyzes (75%) all enemies for 3 turns, adds 1.5x-2.5x to Chain multiplier for 1 turn and boosts base ATK of [PSY], Striker and Free Spirit characters by 1,250-3,000 for 1 turn.",
-        specialNotes: "For every <b>5 turns</b> after this special is charged to MAX, the Chain Addition increases by +0.1x and the Base ATK increases by +250 until their respective maximum values.",
+        specialNotes: "For every <b>5 Special Cooldown charges</b> after this special is charged to MAX, the Chain Addition increases by +0.1x and the Base ATK increases by +250 until their respective maximum values.",
         specialName: "Penetrating Maser Cannon",
     },
     3790: {//Nami
         captain: "Reduces Special Cooldown of this character by 3 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], Striker and Free Spirit characters by 5.25x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of [PSY], Striker and Free Spirit characters by 1.3x, makes [PSY], [RCV] and [TND] orbs benedicial for [PSY], Striker and Free Spirit characters and boosts chances of getting [TND] orbs. When an enemy inflicts you with Paralysis, reduces Paralysis duration completely and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
         special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Percent Damage Reduction and Resilience duration by 7 turns, deals 200x character's ATK in Typeless damage to all enemies, ignores debuff protection and paralyzes (75%) all enemies for 3 turns, adds 1.5x-2.5x to Chain multiplier for 1 turn and boosts base ATK of [PSY], Striker and Free Spirit characters by 1,250-3,000 for 1 turn.",
-        specialNotes: "For every <b>5 turns</b> after this special is charged to MAX, the Chain Addition increases by +0.1x and the Base ATK increases by +250 until their respective maximum values.",
+        specialNotes: "For every <b>5 Special Cooldown charges</b> after this special is charged to MAX, the Chain Addition increases by +0.1x and the Base ATK increases by +250 until their respective maximum values.",
         specialName: "Penetrating Maser Cannon",
         superSpecial: "Deals 100x character's ATK in Typeless Fixed True damage to all enemies, reduces enemies' Threshold Damage Reduction duration by 5 turns, changes the orb, including [BLOCK] orbs, of this character into a [TND] orb, boosts ATK against enemies inflicted with Paralysis by 2.25x for 1 turn and transforms all Striker characters into Super Striker characters.",
         superSpecialCriteria: "This character must be captain and your crew must consist of: Monkey D. Luffy, Roronoa Zoro, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook and Yamato, excluding Support members or your crew uses 4 Special Abilities.",
@@ -123986,9 +124126,9 @@ window.details = {
     },
     3810: {//Rayleigh Gaban
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 4.75x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "character2": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] orbs beneficial for all characters and reduces ATK DOWN duration by 10 turns.",
-            "combined": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.75x, by 5.25x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] and [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 4.75x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character2: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] orbs beneficial for all characters and reduces ATK DOWN duration by 10 turns.",
+            combined: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.75x, by 5.25x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] and [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
         },
         special: "Reduces Silence duration by 7 turns, boosts Orb Effects of all characters by 2.5x-3x for 1 turn depending on the amount of normal attack damage dealt before this special was activated and becomes Rayleigh & Gaban for 3 turns. If this character is a Sailor, increases boost effects of ATK UP buffs applied by all characters by 0.25x for 1 turn.",
         specialNotes: "0-2,999,999 damage: 2.5x Orb boost<br>3,000,000-9,999,999 damage: 2.75x Orb boost<br>10,000,000+ damage: 3x Orb boost",
@@ -124006,9 +124146,9 @@ window.details = {
     },
     3811: {//Rayleigh Gaban
         captain: {
-            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 4.75x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
-            "character2": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] orbs beneficial for all characters and reduces ATK DOWN duration by 10 turns.",
-            "combined": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.75x, by 5.25x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] and [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 4.75x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
+            character2: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.5x, by 5x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] orbs beneficial for all characters and reduces ATK DOWN duration by 10 turns.",
+            combined: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4.75x, by 5.25x instead if they have a beneficial orb, boosts HP of all characters by 1.2x, makes [DEX] and [PSY] orbs beneficial for all characters, reduces ATK DOWN duration by 10 turns and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT.",
         },
         special: "Reduces Silence duration by 7 turns, boosts Orb Effects of all characters by 2.5x-3x for 1 turn depending on the amount of normal attack damage dealt before this special was activated and becomes Rayleigh & Gaban for 3 turns. If this character is a Sailor, increases boost effects of ATK UP buffs applied by all characters by 0.25x for 1 turn.",
         specialNotes: "0-2,999,999 damage: 2.5x Orb boost<br>3,000,000-9,999,999 damage: 2.75x Orb boost<br>10,000,000+ damage: 3x Orb boost",
@@ -127711,6 +127851,7 @@ window.details = {
             },
             { rSpecial: true },
             { special: "Reduces enemies' Threshold Damage Reduction duration by 6 turns, deals 100x character's ATK in Typeless damage to all enemies, reduces any damage received above 3,000 HP by 100% for 1 turn, boosts ATK of Driven characters by 2.5x for 1 turn and becomes Bartolomeo & Hakuba for 3 turns. If your crew has Orb Amplification when the special is activated, increases boost effects of Orb Amplification buffs by +0.25x. If total Damage Taken is 30,000 or more, boosts Color Affinity of Driven characters by 2.25x for 1 turn.",
+            rResilience: true
             },
         ],
         potential: [
@@ -127986,7 +128127,7 @@ window.details = {
     },
     3873: {//Page One
         captain: "Boosts ATK of [INT] and Driven characters by 3x, by 4.25x instead if there is a Powerful Enemy, boosts HP of [INT] and Driven characters by 1.5x and makes [TND] orbs beneficial for all characters.",
-        special: "Reduces Special Cooldown of all characters by 1 turn and reduces Bind duration by 5 turns. If your crew has Chain Lock when the special is activated, increases boost effects of Chain Lock buffs by +0.3x and and increases duration of any Chain Lock/Limit/Boundary buffs/debuffs by 1 turn; locks the chain multiplier at 3.25x for 2 turns otherwise.",
+        special: "Reduces Special Cooldown of all characters by 1 turn and reduces Bind duration by 5 turns. If your crew has Chain Lock when the special is activated, increases boost effects of Chain Lock buffs by +0.3x and increases duration of any Chain Lock/Limit/Boundary buffs/debuffs by 1 turn; locks the chain multiplier at 3.25x for 2 turns otherwise.",
         specialName: "Uncontrollable Sister",
         sailor: {
             base: "If your crew has 6 Driven characters, restores Special Cooldown of bottom row characters by 2 turns when it is rewinded.",
@@ -128802,7 +128943,7 @@ window.details = {
     },
     3885: {//Roger
         captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of all characters by 3.5x at the start of the chain, boosts ATK of all characters by 5.25x following a chain of Good > Great > PERFECT hits, boosts HP of all characters by 1.3x and makes [QCK] orbs beneficial for all characters.",
-        special: "Reduces Bind duration by 2 turns, recovers 5,000 HP and boosts base ATK of Slasher characters by 800 for 1 turn. Increases duration of any base ATK boosting buffs by 0-1 turns and increases boost effects of Base ATK Boost buffs by +0-200, depending on how many times this character used \"Man's Farewell\" this adventure.",
+        special: "Reduces Bind duration by 2 turns, recovers 5,000 HP and boosts base ATK of Slasher characters by 800 for 1 turn. Increases duration of any base ATK boosting buffs by 0-1 turns and increases boost effects of Base ATK Boost buffs by +0-200, depending on how many times this character used \"Man's Farewell\" this adventure, including effects activated in the same Special.",
         specialNotes: "0 times: No Additional Effects<br>1 time: 1 turn extension<br>2 times: 1 turn extension and +200 base ATK boost buff",
         specialName: "Man's Farewell",
         sailor: {
@@ -128884,7 +129025,7 @@ window.details = {
             base: "Changes the orb of this character into a Matching orb and boosts ATK of [PSY] characters by 2x for 3 turns. If during that turn you score 3 PERFECT hits, increases boost effects of ATK UP and Orb Amplification buffs by +0.25x, including effects activated in the same Special.",
             llbbase: "Reduces Special Cooldown of all characters by 1 turn, changes the orb of this character into a Matching orb and boosts ATK of [PSY] characters by 2.5x for 3 turns. If during that turn you score 3 PERFECT hits, increases boost effects of ATK UP and Orb Amplification buffs by +0.25x, including effects activated in the same Special.",
         },
-        superSpecial: "Deals 50x character's ATK in [PSY] damage to all enemies, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching orbs, increases Orb Effects of beneficial TND orbs to 2.25x for 1 turn and transforms all [PSY] characters into Super [PSY] characters.",
+        superSpecial: "Deals 50x character's ATK in [PSY] damage to all enemies, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching orbs, increases Orb Effects of beneficial [PSY] orbs to 2.25x for 1 turn and transforms all [PSY] characters into Super [PSY] characters.",
         superSpecialCriteria: "This character must be captain and your crew must consist of: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook or Jinbe, excluding Support members.",
         specialName: "Sentimental Declaration",
         sailor: {
@@ -128924,7 +129065,7 @@ window.details = {
             { captain: { 
                 base: "Reduces Special Cooldown of [PSY] characters by 1 turn at the start of the fight, boosts ATK of [PSY] characters by 4.5x, boosts ATK of all other characters by 4.25x, boosts HP of all characters by 1.4x and boosts EXP gained by 1.25x.",
                 level1: "Reduces Special Cooldown of [PSY] characters by 1 turn at the start of the fight, boosts ATK of [PSY] characters by 4.5x, boosts ATK of all other characters by 4.25x, boosts HP of all characters by 1.4x and boosts EXP gained by 1.25x.",
-                level1: "Reduces Special Cooldown of [PSY] characters by 1 turn at the start of the fight, boosts ATK of [PSY] characters by 5.25x, boosts ATK of all other characters by 4.55x, boosts HP of all characters by 1.4x, reduces Despair and Paralysis duration by 3 turns and boosts EXP gained by 1.5x.",
+                level2: "Reduces Special Cooldown of [PSY] characters by 1 turn at the start of the fight, boosts ATK of [PSY] characters by 5.25x, boosts ATK of all other characters by 4.55x, boosts HP of all characters by 1.4x, reduces Despair and Paralysis duration by 3 turns and boosts EXP gained by 1.5x.",
                 }
             },
             { rSpecial: true  },
@@ -128988,6 +129129,21 @@ window.details = {
             level1: "Boosts base HP of Driven characters by 200"
         },
         limit: [
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Acquire Sailor Ability 1: Boosts base HP of Driven characters by 200" },
+            { "description": "Acquire Potential 2: Reduce Special Use Limit duration" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Acquire Potential 3: Last Tap" },
         ],
         potential: [
             {
@@ -129061,6 +129217,46 @@ window.details = {
             level2: "Boosts base ATK of all characters by 100",
         },
         limit: [
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire Potential 1: Reduce No Healing duration" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Acquire Sailor Ability 1: Makes [RCV] orbs beneficial for all characters" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Acquire Potential 2: Pinch Healing" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire Sailor Ability 2: Boosts base ATK of all characters by 100" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Acquire Potential 3: Rush" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Boosts base ATK by 60" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base ATK by 90" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
         ],
         potential: [
             {
@@ -129144,6 +129340,46 @@ window.details = {
             level2: "When any other character uses a special, reduces special cooldown of this character by 2 turns"
         },
         limit: [
+            { "description": "Boosts base HP by 10" },
+            { "description": "Boosts base HP by 10" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Acquire Potential 1: Reduce Sailor Despair duration" },
+            { "description": "Boosts base HP by 10" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire Sailor Ability 1: Makes [TND] orbs beneficial for all characters" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 40" },
+            { "description": "Acquire Potential 2: Reduce Special Use Limit duration" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 40" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Acquire Sailor Ability 2: When any other character uses a special, reduces special cooldown of this character by 2 turns" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Acquire Potential 3: Super Tandem" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base HP by 150" },
+            { "description": "Boosts base HP by 250" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
         ],
         potential: [
             {
@@ -129186,11 +129422,11 @@ window.details = {
                 "Any 2 of the following: Kaido, King, Jack, Ulti, Page One, Black Maria, Who's-Who or Sasaki."
             ],
             "description": [
-                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Slasher characters by 1.25x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Slasher characters by 1.5x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Slasher characters by 1.75x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 2 turns and boosts Tandem ATK of Slasher characters by 2x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 3 turns and boosts Tandem ATK of Slasher characters by 2.25x."
+                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.25x.",
+                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.5x.",
+                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.75x.",
+                "Reduces enemies' Threshold Damage Reduction duration by 2 turns and boosts Tandem ATK of Driven characters by 2x.",
+                "Reduces enemies' Threshold Damage Reduction duration by 3 turns and boosts Tandem ATK of Driven characters by 2.25x."
             ]
         },
         support: [
@@ -129215,6 +129451,21 @@ window.details = {
             level1: "Makes [PSY] orbs beneficial for all characters"
         },
         limit: [
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base RCV by 5" },
+            { "description": "Acquire Potential 1: Nutrition/Reduce Hunger stacks" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base RCV by 15" },
+            { "description": "Acquire Sailor Ability 1: Makes [PSY] orbs beneficial for all characters" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
         ],
         potential: [
             {
@@ -129269,6 +129520,21 @@ window.details = {
             level1: "Recovers 500 HP at the end of each turn"
         },
         limit: [
+            { "description": "Boosts base RCV by 5" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Acquire Potential 1: Reduce Healing Reduction duration" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base RCV by 15" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Acquire Sailor Ability 1: Recovers 500 HP at the end of each turn" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 2: Reduce Sailor Despair duration" },
         ],
         potential: [
             {
@@ -129307,13 +129573,13 @@ window.details = {
     },
     3894: {//Momonosuke
         captain: {
-            base: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.25x, boosts HP of Slasher characters by 1.1x and eals 0x-90x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
-            level1: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.25x, boosts HP of Slasher characters by 1.1x and eals 0x-90x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
-            level2: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.25x, boosts HP of Slasher characters by 1.1x and eals 0x-90x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
-            level3: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.25x, boosts HP of Slasher characters by 1.1x and eals 0x-90x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
-            level4: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.25x, boosts HP of Slasher characters by 1.1x and eals 0x-90x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
-            level5: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.25x, boosts HP of Slasher characters by 1.1x and eals 0x-90x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
-            level6: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 4x, boosts HP of Slasher characters by 1.25x and eals 0x-150x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+            base: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.25x, boosts HP of Slasher characters by 1.1x and deals 0x-90x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+            level1: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.5x, boosts HP of Slasher characters by 1.1x and deals 0x-100x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+            level2: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 2x, boosts HP of Slasher characters by 1.15x and deals 0x-110x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+            level3: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 2.5x, boosts HP of Slasher characters by 1.15x and deals 0x-120x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+            level4: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 3x, boosts HP of Slasher characters by 1.2x and deals 0x-130x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+            level5: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 3.5x, boosts HP of Slasher characters by 1.2x and deals 0x-140x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+            level6: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 4x, boosts HP of Slasher characters by 1.25x and deals 0x-150x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
         },
         special: "Reduces Despair duration by 3 turns, changes the orb, including [BLOCK] orbs, of this character into a [WANO] orb and boosts Orb Effects of Slasher characters by 2.75x for 1 turn.",
         specialName: "Declaration of the Next Shogun",
@@ -129322,6 +129588,56 @@ window.details = {
             level2: "Makes [STR] orbs beneficial for all characters",
         },
         limit: [
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Acquire Potential 1: [DEX] Damage Reduction" },
+            { "description": "Acquire new Captain Ability: Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 1.5x, boosts HP of Slasher characters by 1.1x and deals 0x-100x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn." },
+            { "description": "Acquire Sailor Ability 1: When any other Slasher character uses a special, reduces special cooldown of this character by 1 turn" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Acquire new Captain Ability: Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 2x, boosts HP of Slasher characters by 1.15x and deals 0x-110x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn." },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 40" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Acquire new Captain Ability: Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 2.5x, boosts HP of Slasher characters by 1.15x and deals 0x-120x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn." },
+            { "description": "Reduce base Special Cooldown by 2 turns" },
+            { "description": "Boosts base ATK by 15" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Reduce base Special Cooldown by 3 turns" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Reduce base Special Cooldown by 4 turns" },
+            { "description": "Acquire new Captain Ability: Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 3x, boosts HP of Slasher characters by 1.2x and deals 0x-130x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn." },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire Sailor Ability 2: Makes [STR] orbs beneficial for all characters" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Reduce base Special Cooldown by 5 turns" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Acquire new Captain Ability: Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 3.5x, boosts HP of Slasher characters by 1.2x and deals 0x-140x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn." },
+            { "description": "Boosts base ATK by 35" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Acquire new Captain Ability: Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight, boosts ATK of Slasher characters by 4x, boosts HP of Slasher characters by 1.25x and deals 0x-150x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn." },
+            { "description": "Acquire Potential 2: Pinch Healing" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base RCV by 40" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base ATK by 90" },
+            { "description": "Boosts base RCV by 60" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base HP by 90" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base ATK by 110" },
+            { "description": "Acquire Potential 3: Critical Hit" },
         ],
         potential: [
             {
@@ -129368,17 +129684,1179 @@ window.details = {
             }
         ]
     },
+    3895: {//Zoro
+        captain: "<b>Always Active: </b>Boosts HP of Slasher and Free Spirit characters by 1.5x.<br><b>Sheathed Captain: </b>Reduces Special Cooldown of [STR], [DEX], [QCK] characters by 2 turns at the start of the fight, reduces Special Cooldown of Slasher and Free Spirit characters by 1 turn at the start of the fight, boosts ATK of Slasher and Free Spirit characters by 5.25x and makes [TND] orbs beneficial for Slasher and Free Spirit characters. Characters who attack with a Type advantage and with a [RCV] or [TND] orb will gain a [WANO] orb after attacking.<br><b>Enma Captain: </b>Boosts ATK of Slasher and Free Spirit characters by 5.5x, makes [TND] orbs beneficial for Slasher and Free Spirit characters, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking. Reduces crew's current HP by 15% crew's MAX HP at the end of each turn if enough HP is available, otherwise transforms into Weakened.<br><b>Enma Unleashed Captain: </b>Boosts ATK of Slasher and Free Spirit characters by 5.75x, makes [TND] orbs beneficial for Slasher and Free Spirit characters, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character, changes [RCV] orbs into [WANO] orbs, makes this character's own normal attacks count as Type Effective against all Types and increases enemies' Damage Limiter limit up to 2x. If this character has a [TND] or [WANO] orb and you attack with this character, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.5x for 1 turn. Reduces crew's current HP by 60% crew's MAX HP at the end of each turn if enough HP is available, otherwise transforms into Weakened.<br><b>Weakened Captain: </b>Boosts ATK of Slasher and Free Spirit characters by 2x.<br><b>Action: </b>Based on how full Enma Gauge is, transforms Zoro. At any Enma level, changes between Sheathed and Enma freely. If Enma is full, changes into Enma Unleashed. This can be used an unlimited number of times per turn.",
+        captainNotes: "Enma Gauge can be increased by using [WANO] orbs in normal attacks, up to 5 stacks per turn. To leave Weakened form, you must REDACTED.",
+        special: "Deals 150x character's ATK in Typeless Fixed True damage to all enemies and boosts ATK of Slasher and Free Spirit characters by 3.25x for 2 turns. If your Captain is a Slasher or Free Spirit character, boosts ATK against enemies inflicted with Increase Damage Taken by 2.25x for 2 turns. If your this character's orb is [WANO], increases Orb Effects of beneficial [TND] orbs to 2.5x for 1 turn, changes all orbs into [TND] orbs and changes [WANO] orb of this character into a [TND] orb.",
+        specialName: "King of Hell, Three-Sword Serpent: 103 Mercies Dragon Damnation",
+    },
+    3896: {//Zoro
+        captain: "<b>Always Active: </b>Boosts HP of Slasher and Free Spirit characters by 1.5x.<br><b>Sheathed Captain: </b>Reduces Special Cooldown of [STR], [DEX], [QCK] characters by 2 turns at the start of the fight, reduces Special Cooldown of Slasher and Free Spirit characters by 1 turn at the start of the fight, boosts ATK of Slasher and Free Spirit characters by 5.25x and makes [TND] orbs beneficial for Slasher and Free Spirit characters. Characters who attack with a Type advantage and with a [RCV] or [TND] orb will gain a [WANO] orb after attacking.<br><b>Enma Captain: </b>Boosts ATK of Slasher and Free Spirit characters by 5.5x, makes [TND] orbs beneficial for Slasher and Free Spirit characters, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character and changes [RCV] orbs into [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO] orb after attacking. Reduces crew's current HP by 15% crew's MAX HP at the end of each turn if enough HP is available, otherwise transforms into Weakened.<br><b>Enma Unleashed Captain: </b>Boosts ATK of Slasher and Free Spirit characters by 5.75x, makes [TND] orbs beneficial for Slasher and Free Spirit characters, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character, changes [RCV] orbs into [WANO] orbs, makes this character's own normal attacks count as Type Effective against all Types and increases enemies' Damage Limiter limit up to 2x. If this character has a [TND] or [WANO] orb and you attack with this character, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.5x for 1 turn. Reduces crew's current HP by 60% crew's MAX HP at the end of each turn if enough HP is available, otherwise transforms into Weakened.<br><b>Weakened Captain: </b>Boosts ATK of Slasher and Free Spirit characters by 2x.<br><b>Action: </b>Based on how full Enma Gauge is, transforms Zoro. At any Enma level, changes between Sheathed and Enma freely. If Enma is full, changes into Enma Unleashed. This can be used an unlimited number of times per turn.",
+        captainNotes: "Enma Gauge can be increased by using [WANO] orbs in normal attacks, up to 5 stacks per turn. To leave Weakened form, you must REDACTED.",
+        special: "Deals 150x character's ATK in Typeless Fixed True damage to all enemies and boosts ATK of Slasher and Free Spirit characters by 3.25x for 2 turns. If your Captain is a Slasher or Free Spirit character, boosts ATK against enemies inflicted with Increase Damage Taken by 2.25x for 2 turns. If your this character's orb is [WANO], increases Orb Effects of beneficial [TND] orbs to 2.5x for 1 turn, changes all orbs into [TND] orbs and changes [WANO] orb of this character into a [TND] orb.",
+        specialName: "King of Hell, Three-Sword Serpent: 103 Mercies Dragon Damnation",
+        sailor: {
+            level1: "Changes orb of this character into a [WANO] orb at the start of the fight.",
+            level2: "Reduces Paralysis duration completely on this character",
+        },
+        limit: [
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Acquire Sailor Ability 1: Changes orb of this character into a [WANO] orb at the start of the fight." },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Acquire Potential 2: Reduce Slot Bind duration" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Acquire Sailor Ability 2: Reduces Paralysis duration completely on this character" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Acquire Potential 3: Super Tandem" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base ATK by 100" },
+        ],
+        potential: [
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                "Name": "Reduce Slot Bind duration",
+                "description": [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character",
+                    "Reduces Slot Bind duration by 7 turns on this character",
+                    "Reduces Slot Bind duration by 10 turns on this character"
+                ]
+            },
+            {
+                "Name": "Super Tandem",
+                "description": [
+                    "Super Tandem Ability Lv.1",
+                    "Super Tandem Ability Lv.2",
+                    "Super Tandem Ability Lv.3",
+                    "Super Tandem Ability Lv.4",
+                    "Super Tandem Ability Lv.5"
+                ]
+            },
+        ],
+        superTandem: {
+            "condition": "On the last Stage.",
+            "characterCondition": [
+                "Any 3 of the following: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Yamato, Kozuki Oden, Kozuki Hiyori and Dracule Mihawk.",
+                "Any 3 of the following: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Yamato, Kozuki Oden, Kozuki Hiyori and Dracule Mihawk.",
+                "Any 1 of the following: Slasher and Free Spirit characters. Any 2 of the following: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Yamato, Kozuki Oden, Kozuki Hiyori and Dracule Mihawk.",
+                "Any 1 of the following: Slasher and Free Spirit characters. Any 2 of the following: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Yamato, Kozuki Oden, Kozuki Hiyori and Dracule Mihawk.",
+                "Any 2 of the following: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Yamato, Kozuki Oden, Kozuki Hiyori and Dracule Mihawk."
+            ],
+            "description": [
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 1.5x.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 1.75x.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2x.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2x and increases boost effects of Status ATK buffs by +0.25x for 1 turn.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2.5x and increases boost effects of Status ATK buffs by +0.25x for 1 turn."
+            ]
+        },
+        support: [
+            {
+                "Characters": "Usopp and Franky",
+                "description": [
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20% and reduces Special Cooldown of the supported character by 1 turn.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20% and reduces Special Cooldown of the supported character by 1 turn.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20% and reduces Special Cooldown of the supported character by 1 turn.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20% and reduces Special Cooldown of the supported character by 1 turn.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, reduces Special Cooldown of the supported character by 1 turn and changes the orb of the supported character into a [WANO] orb."
+                ]
+            }
+        ]
+    },
+    3897: {//Alber
+        captain: "Boosts ATK of Driven and Powerhouse by 5x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of Driven and Powerhouse characters by 1.25x, boosts chances of getting Matching orbs, changes [RCV] orbs into [WANO] orbs, reduces Bind, Despair, Silence and Paralysis duration completely on this character and restores Special Cooldown of this character completely when it is rewinded.",
+        special: "Reduces Special Cooldown of Driven and Powerhouse characters by 2 turns, reduces Silence duration on Driven and Powerhouse characters by 7 turns, deals 200x character's ATK in Typeless damage to all enemies and changes [STR], [DEX], [QCK], [PSY], [INT] and [BLOCK] orbs into into this character's orb. If your Captain is a Driven or Powerhouse character, adds 2.0x to Chain multiplier for 1 turn, preventing buff clears. If your crew has Chain Addition, ATK UP and Orb Amplification when the special is activated, boosts base ATK of Driven and Powerhouse characters by 1,500 for 1 turn and increases Chain Tap Timing Bonus of Driven and Powerhouse characters to +0x-0.7x for 1 turn.",
+        specialName: "Extra Large Imperial Flaming Wings",
+    },
+    3898: {//Alber
+        captain: "Boosts ATK of Driven and Powerhouse by 5x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of Driven and Powerhouse characters by 1.25x, boosts chances of getting Matching orbs, changes [RCV] orbs into [WANO] orbs, reduces Bind, Despair, Silence and Paralysis duration completely on this character and restores Special Cooldown of this character completely when it is rewinded.",
+        special: "Reduces Special Cooldown of Driven and Powerhouse characters by 2 turns, reduces Silence duration on Driven and Powerhouse characters by 7 turns, deals 200x character's ATK in Typeless damage to all enemies and changes [STR], [DEX], [QCK], [PSY], [INT] and [BLOCK] orbs into into this character's orb. If your Captain is a Driven or Powerhouse character, adds 2.0x to Chain multiplier for 1 turn, preventing buff clears. If your crew has Chain Addition, ATK UP and Orb Amplification when the special is activated, boosts base ATK of Driven and Powerhouse characters by 1,500 for 1 turn and increases Chain Tap Timing Bonus of Driven and Powerhouse characters to +0x-0.7x for 1 turn.",
+        specialName: "Extra Large Imperial Flaming Wings",
+        superSpecial: "Boosts Chain Multiplier Growth Rate by 1.5x for 1 turn, changes the orb, including [BLOCK] orbs, of this character into a [RCV] orb and transforms all [INT] characters into Super [INT] characters.",
+        superSpecialCriteria: "This character must be captain and your crew must consist of: Kaido, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who or Sasaki, excluding Support members.",
+        sailor: {
+            level1: "Reduces Silence duration completely on this character and restores Special Cooldown of this character completely when it is rewinded.",
+            level2: "Cannot be Blown Away and reduces Paralysis duration completely on this character.",
+        },
+        limit: [
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Acquire Potential 1: Reduce Sailor Despair duration" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire Sailor Ability 1: Reduces Silence duration completely on this character and restores Special Cooldown of this character completely when it is rewinded." },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 40" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire Potential 2: Nutrition/Reduce Hunger stacks" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Acquire Sailor Ability 2: Cannot be Blown Away and reduces Paralysis duration completely on this character." },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Acquire Potential 3: Super Tandem" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base HP by 150" },
+            { "description": "Boosts base HP by 150" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base ATK by 60" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Boosts base ATK by 90" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                "Name": "Reduce Sailor Despair duration",
+                "description": [
+                    "Reduces Sailor Despair duration by 1 turn on this character",
+                    "Reduces Sailor Despair duration by 2 turns on this character",
+                    "Reduces Sailor Despair duration by 3 turns on this character",
+                    "Reduces Sailor Despair duration by 4 turns on this character",
+                    "Reduces Sailor Despair duration by 5 turns on this character"
+                ]
+            },
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 200 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks"
+                ]
+            },
+            {
+                "Name": "Super Tandem",
+                "description": [
+                    "Super Tandem Ability Lv.1",
+                    "Super Tandem Ability Lv.2",
+                    "Super Tandem Ability Lv.3",
+                    "Super Tandem Ability Lv.4",
+                    "Super Tandem Ability Lv.5"
+                ]
+            },
+        ],
+        superTandem: {
+            "characterCondition": [
+                "Any 2 of the following: Kaido, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who and Sasaki. One of Kaido, Queen or Jack is required.",
+                "Any 2 of the following: Kaido, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who and Sasaki. One of Kaido, Queen or Jack is required.",
+                "Any 2 of the following: Kaido, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who and Sasaki. One of Kaido, Queen or Jack is required.",
+                "Any 2 of the following: Kaido, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who and Sasaki. One of Kaido, Queen or Jack is required.",
+                "Any 2 of the following: Kaido, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who and Sasaki."
+            ],
+            "description": [
+                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.25x.",
+                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.5x.",
+                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.75x.",
+                "Reduces enemies' Percent Damage Reduction duration by 2 turns and boosts Tandem ATK of Driven characters by 2x.",
+                "Reduces enemies' Percent Damage Reduction duration by 3 turns and boosts Tandem ATK of Driven characters by 2.25x."
+            ]
+        },
+        support: [
+            {
+                "Characters": "Jack, Kaido and Queen",
+                "description": [
+                    "Once per adventure, when you reach the final stage, adds 0.3x to Chain multiplier for 1 turn.",
+                    "Once per adventure, when you reach the final stage, adds 0.4x to Chain multiplier for 1 turn.",
+                    "Once per adventure, when you reach the final stage, adds 0.5x to Chain multiplier for 1 turn.",
+                    "Once per adventure, when you reach the final stage, adds 0.6x to Chain multiplier for 1 turn.",
+                    "Once per adventure, when you reach the final stage, adds 0.8x to Chain multiplier for 1 turn."
+                ]
+            }
+        ]
+    },
+    3899: {//Brook
+        captain: "Boosts ATK of Slasher and Free Spirit characters by 3.75x, boosts HP of Slasher and Free Spirit characters by 1.2x, reduces damage received by 10%, and makes [STR], [RCV] and [TND] orbs beneficial for Slasher and Free Spirit characters.",
+        special: "Deals 10% of enemies' current HP in damage to all enemies, reduces Despair duration by 6 turns, reduces enemies' Resilience duration by 6 turns and locks all orbs for 2 turns. If your crew has Color Affinity when the special is activated, increases boost effects of Color Affinity buffs by +0.3x, boosts Color Affinity of [STR], [DEX] and [QCK] characters by 2x for 2 turns.",
+        specialName: "Phrase d'armes: Orchestra",
+        sailor: {
+            base: "Changes orbs of bottom row characters into [WANO] orbs at the start of the fight.",
+            level1: "Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 70",
+        },
+        limit: [
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base RCV by 5" },
+            { "description": "Acquire Potential 1: " },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base RCV by 15" },
+            { "description": "Acquire Sailor Ability 1: " },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 2: " },
+        ],
+        potential: [
+            {
+                "Name": "Critical Hit",
+                "description": [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                "Name": "Cooldown Reduction",
+                "description": [
+                    "Reduces Special Cooldown of this character by 1 turn at the start of the fight",
+                    "Reduces Special Cooldown of this character by 3 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 5 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 7 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 10 turns at the start of the fight"
+                ]
+            },
+        ],
+        support: [
+            {
+                "Characters": "Sanji and Nico Robin",
+                "description": [
+                    "Once per adventure, when you reach the 2nd stage, randomizes supported character's orb.",
+                    "Once per adventure, when you reach the 2nd stage, randomizes supported character's orb.",
+                    "Once per adventure, when you reach the 2nd stage, randomizes supported character's orb.",
+                    "Once per adventure, when you reach the 2nd stage, changes the orb of the supported character into a Matching orb.",
+                    "Once per adventure, when you reach the 2nd stage, changes the orb of the supported character into a Matching orb and locks supported character's orb for 1 turn."
+                ]
+            }
+        ]
+    },
+    3900: {//Franky
+        captain: "Boosts ATK of Powerhouse and Free Spirit characters by 3.5x, boosts HP of Powerhouse and Free Spirit characters by 1.5x, reduces damage received by 10%, and makes [DEX], [RCV] and [TND] orbs beneficial for Powerhouse and Free Spirit characters.",
+        special: "Deals 80x character's ATK in Typeless damage to all enemies, reduces Paralysis duration by 6 turns, changes all orbs, including [BLOCK] orbs, of all characters into this character's orb, reduces the defense of all enemies by 100% for 1 turn and adds 1.2x to Chain multiplier for 1 turn.",
+        specialName: "General Cannon",
+        sailor: {
+            base: "Changes orbs of top row characters into [WANO] orbs at the start of the fight.",
+            level1: "Boosts base ATK, HP and RCV of Powerhouse and Free Spirit characters by 70",
+        },
+        limit: [
+            { "description": "Boosts base RCV by 5" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Acquire Potential 1: " },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base RCV by 15" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Acquire Sailor Ability 1: " },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 2: " },
+        ],
+        potential: [
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 25 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                "Name": "Reduce Ship Bind duration",
+                "description": [
+                    "Reduces Ship Bind duration by 1 turn",
+                    "Reduces Ship Bind duration by 2 turns",
+                    "Reduces Ship Bind duration by 3 turns",
+                    "Reduces Ship Bind duration by 4 turns",
+                    "Reduces Ship Bind duration by 5 turns"
+                ]
+            },
+        ],
+        support: [
+            {
+                "Characters": "Roronoa Zoro and Jinbe",
+                "description": [
+                    "Once per adventure, when the supported character uses their special, reduces the defense of all enemies by 50% for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces the defense of all enemies by 50% for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces the defense of all enemies by 80% for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces the defense of all enemies by 80% for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces the defense of all enemies by 90% for 1 turn."
+                ]
+            }
+        ]
+    },
+    3901: {//Tama
+        captain: "Boosts ATK of Fighter and Free Spirit characters by 2x and boosts HP of Fighter and Free Spirit characters by 1.2x.",
+        special: "Boosts ATK of Fighter and Free Spirit characters by 1.5x for 1 turn and reduces Paralysis duration by 1 turn.",
+        specialName: "Rallying Friends",
+        support: [
+            {
+                "Characters": "Roronoa Zoro and Momonosuke and Charlotte Linlin (Big Mom)",
+                "description": [
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, increases boost effects of Status ATK buffs by +0.11x for 1 turn and reduces ATK DOWN duration by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, increases boost effects of Status ATK buffs by +0.12x for 1 turn, reduces ATK DOWN duration by 1 turn and reduces enemies' Threshold Damage Reduction duration by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, increases boost effects of Status ATK buffs by +0.13x for 1 turn, reduces ATK DOWN and Paralysis duration by 1 turn and reduces enemies' Threshold Damage Reduction duration by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, increases boost effects of Status ATK buffs by +0.14x for 1 turn, reduces ATK DOWN and Paralysis duration by 1 turn and reduces enemies' Threshold Damage Reduction duration by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, increases boost effects of Status ATK buffs by +0.15x for 1 turn, reduces ATK DOWN and Paralysis duration by 1 turn and reduces enemies' Threshold Damage Reduction duration by 1 turn."
+                ]
+            }
+        ]
+    },
+    3902: {//Homies&Big Mom
+        captain: {
+            character1: "Increases damage received by 1.75x, boosts ATK of all characters by 4.25x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+            llbcharacter1: "Reduces Special Cooldown of this character by 2 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, increases damage received by 1.75x, boosts ATK of all characters by 4.5x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+            character2: "Increases damage received by 1.75x, boosts ATK of all characters by 4.25x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+            llbcharacter2: "Reduces Special Cooldown of this character by 2 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, increases damage received by 1.75x, boosts ATK of all characters by 4.5x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+            combined: "Increases damage received by 1.75x, boosts ATK of all characters by 4.75x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+            llbcombined: "Reduces Special Cooldown of this character by 2 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, increases damage received by 1.75x, boosts ATK of all characters by 5x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced."
+        },
+        captainNotes: "The amount healed each turn is equal to the number of enemies defeated times the crew's total base RCV.",
+        sailor: {
+            character1: "Makes [STR], [PSY] and [RCV] orbs beneficial for this character",
+            character2: "Makes [DEX], [QCK] and [TND] orbs beneficial for this character",
+            combined: "Makes [STR], [DEX], [QCK], [PSY], [INT], [TND] and [RCV] orbs beneficial for this character",
+            level1: "Boosts base HP of all characters by 150"
+        },
+        special: {
+            base: "Boosts base ATK of all characters by 1,000-2,000 for 1 turn, depending on your current HP, locks the chain multiplier at 3.5x-4x for 1 turn and becomes Zeus & Prometheus & Big Mom for 3 turns.",
+            llbbase: "Boosts base ATK of all characters by 1,000-2,000 for 3 turns, depending on your current HP, locks the chain multiplier at 3.5x-4.5x for 2 turns and becomes Zeus & Prometheus & Big Mom for 3 turns. If this character has 30 or more Special Cooldown charges beyond MAX, increases duration of any Chain Lock/Limit/Boundary buffs/debuffs by 1 turn, including effects activated in the same Special."
+        },
+        specialNotes: "Base ATK boost is equal to current HP/100, the maximum effect at 200,000 HP will give a 2,000 base ATK boost, if you are below 100,000 HP, the base ATK boost will be 1,000. For every <b>5 Special Cooldown charges</b> after this special is charged to MAX, the Chain Lock increases by +0.25x until its maximum value.",
+        swap: {
+            base: "Removes Paralysis duration completely on this character and changes orb of this character into a Matching orb, boosts ATK of this character by 1.5x for 1 turn and boosts Orb Effects of this character by 1.5x for 1 turn.",
+            super: "Removes Paralysis duration completely on this character, reduces Paralysis duration by 5 turns and changes orb of this character into a [WANO] orb, boosts ATK of all characters by 2x for 1 turn and boosts Orb Effects of all characters by 2x for 1 turn.",
+            superTurns: 6,
+        },
+        specialName: "Smashing Flame and Thunder",
+        limit: [
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Acquire Potential 1: [PSY] Damage Reduction" },
+            { "description": "Boosts base RCV by 5" },
+            { "description": "Boosts base RCV by 5" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base HP by 35" },
+            { "description": "Boosts base HP by 40" },
+            { "description": "Boosts base HP by 45" },
+            { "description": "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+            { "description": "Boosts base RCV by 15" },
+            { "description": "Boosts base RCV by 15" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 15" },
+            { "description": "Boosts base ATK by 15" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Acquire Sailor Ability 1: Boosts base HP of all characters by 150" },
+            { "description": "Boosts base HP by 150" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Acquire Potential 3: Reduce No Healing duration" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 25" },
+            { "description": "Boosts base RCV by 25" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 25" },
+            { "description": "Boosts base HP by 150" },
+            { "description": "Boosts base ATK by 100" },
+        ],
+        lLimit: [
+            null,
+            { rAbility: true },
+            { captain: {
+                character1: "Reduces Special Cooldown of this character by 2 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, increases damage received by 1.75x, boosts ATK of all characters by 4.5x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+                character2: "Reduces Special Cooldown of this character by 2 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, increases damage received by 1.75x, boosts ATK of all characters by 4.5x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+                combined: "Reduces Special Cooldown of this character by 2 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, increases damage received by 1.75x, boosts ATK of all characters by 5x, boosts HP of all characters by 2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, when an enemy inflicts you with Paralysis, reduce Paralysis duration by half and reduces Special Cooldown of this character by 1-99 turns, depending on how many turns of Paralysis reduced.",
+            },
+            },
+            { rSpecial: true },
+            { special: "Boosts base ATK of all characters by 1,000-2,000 for 3 turns, depending on your current HP, locks the chain multiplier at 3.5x-4.5x for 1 turn and becomes Zeus & Prometheus & Big Mom for 3 turns. If this character has 30 or more Special Cooldown charges beyond MAX, increases duration of any Chain Lock/Limit/Boundary buffs/debuffs by 1 turn, including effects activated in the same Special.",
+              rResilience: true
+            },
+        ],
+        potential: [
+            {
+                "Name": "[PSY] Damage Reduction",
+                "description": [
+                    "Reduces damage taken from [PSY] characters by 2%",
+                    "Reduces damage taken from [PSY] characters by 3%",
+                    "Reduces damage taken from [PSY] characters by 4%",
+                    "Reduces damage taken from [PSY] characters by 5%",
+                    "Reduces damage taken from [PSY] characters by 7%"
+                ]
+            },
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                "Name": "Reduce No Healing duration",
+                "description": [
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 5 turns",
+                    "Reduces No Healing duration by 7 turns",
+                    "Reduces No Healing duration by 10 turns"
+                ]
+            },
+        ],
+        potentialNotes: "#{enrage}"
+    },
+    3903: {//Kaido
+        captain: "Reduces Special Cooldown of this character by 3 turns at the start of the fight, boosts ATK of [INT] and Driven characters by 4.75x, by 5x instead if they have a [WANO] orb, boosts HP of [INT] and Driven characters by 1.5x and deals 0x-300x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn.",
+        special: "Deals 10 hits of random [INT] damage to random enemies, changes the orb, including [BLOCK] orbs, of this character into a [WANO] orb, boosts ATK of Driven characters by 2.5x for 1 turn and boosts Orb Effects of Driven characters by 2.5x for 1 turn.",
+        superSpecial: "Reduces Special Cooldown of this character by 2 turns, inflicts all enemies with Increase Damage Taken by 2x for 1 turn and transforms all [INT] characters into Super [INT] characters.",
+        superSpecialCriteria: "This character must be captain and your crew must consist of: King, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who or Sasaki, excluding Support members.",
+        specialName: "Bludgeoning Kundali Dragon Swarm",
+        sailor: {
+            base: "Boosts base ATK of this character by 300 if this character is the last in the chain to attack",
+            level1: "Boosts base HP of Driven characters by 200"
+        },
+        limit: [
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Acquire Sailor Ability 1: Boosts base HP of Driven characters by 200" },
+            { "description": "Acquire Potential 2: Reduce Special Use Limit duration" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Acquire Potential 3: Last Tap" },
+        ],
+        potential: [
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                "Name": "Reduce Special Use Limit duration",
+                "description": [
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 2 turns."
+                ]
+            },
+            {
+                "Name": "Last Tap",
+                "description": [
+                    "Last Tap Ability Lv.1",
+                    "Last Tap Ability Lv.2",
+                    "Last Tap Ability Lv.3",
+                    "Last Tap Ability Lv.4",
+                    "Last Tap Ability Lv.5"
+                ]
+            },
+        ],
+        lastTap: {
+            "condition": "On the last Stage",
+            "description": [
+                "Boosts base ATK of this character by 150 for 1 turn.",
+                "Boosts base ATK of this character by 300 for 1 turn.",
+                "Boosts base ATK of this character by 450 for 1 turn.",
+                "Boosts base ATK of this character by 600 for 1 turn.",
+                "Boosts base ATK of this character by 750 for 1 turn."
+            ]
+        },
+        lastTapNotes: "Base ATK boost will stack with special abilities that boost base ATK.",
+        support: [
+            {
+                "Characters": "Jack, King and Queen",
+                "description": [
+                    "Once per adventure, when the supported character uses their special, boosts ATK of Powerhouse and Driven characters by 1.1x for 1 turn and boosts Orb Effects of Powerhouse and Driven characters by 1.1x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, boosts ATK of Powerhouse and Driven characters by 1.2x for 1 turn and boosts Orb Effects of Powerhouse and Driven characters by 1.2x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, boosts ATK of Powerhouse and Driven characters by 1.3x for 1 turn and boosts Orb Effects of Powerhouse and Driven characters by 1.3x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, boosts ATK of Powerhouse and Driven characters by 1.4x for 1 turn and boosts Orb Effects of Powerhouse and Driven characters by 1.4x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, boosts ATK of Powerhouse and Driven characters by 1.5x for 1 turn and boosts Orb Effects of Powerhouse and Driven characters by 1.5x for 1 turn."
+                ]
+            }
+        ]
+    },
+    3904: {//Ivankov
+        captain: "Boosts ATK of all characters by 5x, by 5.5x instead if they have a [RCV], [TND], [WANO], [EMPTY], [G] or [RAINBOW] orb and makes [RCV] and [TND] orbs beneficial for all characters. Characters who attack with a Type advantage will gain a [RCV] orb after attacking. Wooo-Hoo!!!",
+        special: "Reduces Special Cooldown of top row characters by 3 turns. If your crew has Chain Lock when the special is activated, increases duration of any Chain Lock/Limit/Boundary buffs/debuffs by 1 turn. If your Captain is a Fighter or Slasher character when the special is activated, boosts ATK of all characters by 2.25x for 3 turns. If your Captain is a Shooter or Striker character when the special is activated, boosts Orb Effects of all characters by 2.25x for 3 turns. If your Captain is a Free Spirit or Powerhouse character when the special is activated, boosts Color Affinity of all characters by 2.25x for 3 turns. If your Captain is a Cerebral or Driven character when the special is activated, adds 1.3x to Chain multiplier for 3 turns. If your Captain is a [STR], [DEX] or [QCK] character when the special is activated, reduces enemies' Increased Defense and Percent Damage Reduction duration by 6 turns. If your Captain is a [PSY] or [INT] character when the special is activated, reduces Bind and Despair duration by 6 turns.",
+        specialName: "Face Spectrum Galaxy Wink",
+    },
+    3905: {//Ivankov
+        captain: "Boosts ATK of all characters by 5x, by 5.5x instead if they have a [RCV], [TND], [WANO], [EMPTY], [G] or [RAINBOW] orb and makes [RCV] and [TND] orbs beneficial for all characters. Characters who attack with a Type advantage will gain a [RCV] orb after attacking. Wooo-Hoo!!!",
+        special: "Reduces Special Cooldown of top row characters by 3 turns. If your crew has Chain Lock when the special is activated, increases duration of any Chain Lock/Limit/Boundary buffs/debuffs by 1 turn. If your Captain is a Fighter or Slasher character when the special is activated, boosts ATK of all characters by 2.25x for 3 turns. If your Captain is a Shooter or Striker character when the special is activated, boosts Orb Effects of all characters by 2.25x for 3 turns. If your Captain is a Free Spirit or Powerhouse character when the special is activated, boosts Color Affinity of all characters by 2.25x for 3 turns. If your Captain is a Cerebral or Driven character when the special is activated, adds 1.3x to Chain multiplier for 3 turns. If your Captain is a [STR], [DEX] or [QCK] character when the special is activated, reduces enemies' Increased Defense and Percent Damage Reduction duration by 6 turns. If your Captain is a [PSY] or [INT] character when the special is activated, reduces Bind and Despair duration by 6 turns.",
+        specialName: "Face Spectrum Galaxy Wink",
+        sailor: {
+            level1: "Makes [RCV] and [TND] orbs beneficial for all characters",
+            level2: "Changes all orbs into [RCV] orbs at the start of the fight",
+        },
+        limit: [
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Acquire Potential 1: Reduce No Healing duration" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Acquire Sailor Ability 1: Makes [RCV] and [TND] orbs beneficial for all characters" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire Potential 2: Pinch Healing" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Acquire Sailor Ability 2: Changes all orbs into [RCV] orbs at the start of the fight" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire Potential 3: Nutrition/Reduce Hunger stacks" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 300" },
+        ],
+        potential: [
+            {
+                "Name": "Reduce No Healing duration",
+                "description": [
+                    "Reduces No Healing duration by 1 turn",
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 4 turns",
+                    "Reduces No Healing duration by 5 turns"
+                ]
+            },
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 200 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 250 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 300 the turn after recovering 3,000 HP and reduces Hunger stack by 3 stacks"
+                ]
+            },
+        ],
+        support: [
+            {
+                "Characters": "Monkey D. Luffy, Buggy, Galdino (Mr. 3), Bentham (Mr. 2, Bon Clay), Sir Crocodile (Mr. 0), Daz Bones (Mr. 1), Jinbe, Bartholomew Kuma, Inazuma",
+                "description": [
+                    "Reduces damage received from [STR] characters by 1%. Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Reduces damage received from [STR] characters by 2%. Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Reduces damage received from [STR] characters by 3%. Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Reduces damage received from [STR] characters by 4%. Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Reduces damage received from [STR] characters by 5%. Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
+    3906: {//Inazuma
+        captain: "Boosts ATK of [QCK] characters by 2.5x and boosts HP of [QCK] characters by 1.2x.",
+        special: "Changes all orbs into [QCK] orbs and boosts Color Affinity of [QCK] characters by 2x for 1 turn.",
+        specialName: "Face Spectrum Galaxy Wink",
+        sailor: "Boosts base ATK, HP and RCV of Free Spirit characters by 45",
+        limit: [
+            { "description": "Boosts base RCV by 40" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Boosts base HP by 120" },
+            { "description": "Acquire Potential 1: [STR] Damage Reduction" },
+            { "description": "Boosts base ATK by 100" },
+            { "description": "Boosts base RCV by 60" },
+            { "description": "Boosts base ATK by 150" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Acquire Potential 2: [DEX] Damage Reduction" },
+        ],
+        potential: [
+            {
+                "Name": "[STR] Damage Reduction",
+                "description": [
+                    "Reduces damage taken from [STR] characters by 1%",
+                    "Reduces damage taken from [STR] characters by 2%",
+                    "Reduces damage taken from [STR] characters by 3%",
+                    "Reduces damage taken from [STR] characters by 4%",
+                    "Reduces damage taken from [STR] characters by 5%"
+                ]
+            },
+            {
+                "Name": "[DEX] Damage Reduction",
+                "description": [
+                    "Reduces damage taken from [DEX] characters by 1%",
+                    "Reduces damage taken from [DEX] characters by 2%",
+                    "Reduces damage taken from [DEX] characters by 3%",
+                    "Reduces damage taken from [DEX] characters by 4%",
+                    "Reduces damage taken from [DEX] characters by 5%"
+                ]
+            },
+        ],
+    },
+    3907: {//WBVVBB
+        captain: {
+            character1: "Reduces Special Cooldown of [PSY] and Powerhouse characters by 1 turn at the start of the fight, boosts ATK of [PSY] and Powerhouse characters by 5.5x, by 5.75x instead if HP is below 30% at the start of the turn, boosts HP of [PSY] and Powerhouse characters by 1.5x, makes [TND] orbs beneficial for [PSY] and Powerhouse characters, boosts chances of getting [TND] orbs, makes crew immune to Blow Away and reduces Despair duration by 10 turns.",
+            character2: "Reduces Special Cooldown of [DEX] and Powerhouse characters by 1 turn at the start of the fight, boosts ATK of [DEX] and Powerhouse characters by 5.5x, by 5.75x instead if HP is below 30% at the start of the turn, boosts HP of [DEX] and Powerhouse characters by 1.65x, makes [TND] orbs beneficial for [DEX] and Powerhouse characters, boosts chances of getting [TND] orbs and reduces crew's current HP by 10% at the end of each turn. If a crew member uses a special with a Despair debuff, including Support Abilities, or you are inflicted with Despair, replaces that debuff with a Chain boost that will overwrite Chain boosts in the same special: Adds 1.2x to Chain multiplier for 3 turns.",
+        },
+        captainNotes: "Blackbeard: Despair Interaction Untested.",
+        special: {
+            character1: "Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to all enemies, changes all orbs, including [BLOCK] orbs, into [TND] orbs and sets Chain Boundaries to 2.75x and 35.0x for 3 turns. If HP is above 50% when the special is activated, reduces crew's current HP by 80% and increases Chain Tap Timing Bonus of [PSY] and Powerhouse characters to +0.2x-0.6x for 1 turn depending on Tap Timing.",
+            character2: "Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to all enemies, changes all orbs, including [BLOCK] orbs, into [TND] orbs and boosts Orb Effects of [DEX] and Powerhouse characters by 2.5x for 3 turns and boosts base ATK of [DEX] and Powerhouse characters by 1,000-1,750 for 3 turns, depending on your current HP.",
+        },
+        specialName: "Tremoring Armosphere • All-Consuming Darkness",
+        specialNotes: "Blackbeard: Current HP 51% or more: 1,000 base ATK<br>Current HP 21%-51%: 1,500<br>Current HP less than 21%: 1,750 base ATK.",
+        VSCondition: "When the crew collectively consumes/uses [TND] orbs with normal attacks and scores PERFECT hits 24 times.",
+        VSSpecial: {
+            character1: "Reduces enemies' Percent Damage Reduction duration by 3 turns and boosts Color Affinity of [PSY] and Powerhouse characters by 2.5x for 3 turns.",
+            character2: "Reduces enemies' Increased Defense duration by 3 turns and boosts Color Affinity of [DEX] and Powerhouse characters by 2.5x for 3 turns.",
+        },
+        sailor: {
+            character1: "Cannot be Blown Away",
+            character2: "Boosts base ATK of all characters by 100",
+        },
+    },
+    3908: {//WBVVBB
+        captain: {
+            character1: "Reduces Special Cooldown of [PSY] and Powerhouse characters by 1 turn at the start of the fight, boosts ATK of [PSY] and Powerhouse characters by 5.5x, by 5.75x instead if HP is below 30% at the start of the turn, boosts HP of [PSY] and Powerhouse characters by 1.5x, makes [TND] orbs beneficial for [PSY] and Powerhouse characters, boosts chances of getting [TND] orbs, makes crew immune to Blow Away and reduces Despair duration by 10 turns.",
+            character2: "Reduces Special Cooldown of [DEX] and Powerhouse characters by 1 turn at the start of the fight, boosts ATK of [DEX] and Powerhouse characters by 5.5x, by 5.75x instead if HP is below 30% at the start of the turn, boosts HP of [DEX] and Powerhouse characters by 1.65x, makes [TND] orbs beneficial for [DEX] and Powerhouse characters, boosts chances of getting [TND] orbs and reduces crew's current HP by 10% at the end of each turn. If a crew member uses a special with a Despair debuff, including Support Abilities, or you are inflicted with Despair, replaces that debuff with a Chain boost that will overwrite Chain boosts in the same special: Adds 1.2x to Chain multiplier for 3 turns.",
+        },
+        captainNotes: "Blackbeard: Despair Interaction Untested.",
+        special: {
+            character1: "Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to all enemies, changes all orbs, including [BLOCK] orbs, into [TND] orbs and sets Chain Boundaries to 2.75x and 35.0x for 3 turns. If HP is above 50% when the special is activated, reduces crew's current HP by 80% and increases Chain Tap Timing Bonus of [PSY] and Powerhouse characters to +0.2x-0.6x for 1 turn depending on Tap Timing.",
+            character2: "Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to all enemies, changes all orbs, including [BLOCK] orbs, into [TND] orbs and boosts Orb Effects of [DEX] and Powerhouse characters by 2.5x for 3 turns and boosts base ATK of [DEX] and Powerhouse characters by 1,000-1,750 for 3 turns, depending on your current HP.",
+        },
+        specialName: "Tremoring Armosphere • All-Consuming Darkness",
+        specialNotes: "Blackbeard: Current HP 51% or more: 1,000 base ATK<br>Current HP 21%-51%: 1,500<br>Current HP less than 21%: 1,750 base ATK.",
+        VSCondition: "When the crew collectively consumes/uses [TND] orbs with normal attacks and scores PERFECT hits 24 times.",
+        VSSpecial: {
+            character1: "Reduces enemies' Percent Damage Reduction duration by 3 turns and boosts Color Affinity of [PSY] and Powerhouse characters by 2.5x for 3 turns.",
+            character2: "Reduces enemies' Increased Defense duration by 3 turns and boosts Color Affinity of [DEX] and Powerhouse characters by 2.5x for 3 turns.",
+        },
+        sailor: {
+            character1: "Cannot be Blown Away",
+            character2: "Boosts base ATK of all characters by 100",
+            level1: "If your Captain is a Powerhouse character, makes [PSY], [DEX] and [TND] orbs beneficial for all characters.",
+        },
+        limit: [
+        ],
+        potential: [
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                "Name": "Reduce Slot Bind duration",
+                "description": [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character",
+                    "Reduces Slot Bind duration by 7 turns on this character",
+                    "Reduces Slot Bind duration by 10 turns on this character"
+                ]
+            },
+            {
+                "Name": "Super Tandem",
+                "description": [
+                    "Super Tandem Ability Lv.1",
+                    "Super Tandem Ability Lv.2",
+                    "Super Tandem Ability Lv.3",
+                    "Super Tandem Ability Lv.4",
+                    "Super Tandem Ability Lv.5"
+                ]
+            },
+            {
+                "Name": "Last Tap",
+                "description": [
+                    "Last Tap Ability Lv.1",
+                    "Last Tap Ability Lv.2",
+                    "Last Tap Ability Lv.3",
+                    "Last Tap Ability Lv.4",
+                    "Last Tap Ability Lv.5"
+                ]
+            },
+        ],
+        lastTap: {
+            "condition": "On the last Stage, if HP is 51% or below at the start of the turn",
+            "description": [
+                "Makes normal attacks of this character deal damage to all enemies for 1 turn.",
+                "Makes normal attacks of this character deal damage to all enemies for 1 turn and reduces enemies' [DEX] Resistance by -10% for 1 turn.",
+                "Makes normal attacks of this character deal damage to all enemies for 1 turn and reduces enemies' [DEX] Resistance by -20% for 1 turn.",
+                "Makes normal attacks of this character deal damage to all enemies for 1 turn and reduces enemies' [DEX] Resistance by -35% for 1 turn.",
+                "Makes normal attacks of this character deal damage to all enemies for 1 turn and reduces enemies' [DEX] Resistance by -50% for 1 turn."
+            ]
+        },
+        superTandem: {
+            "characterCondition": [
+                "Any 1 of the following: Powerhouse or Striker characters. Any 2 of the following: Portgas D. Ace, Marco, Jozu, Vista, Izo, Fossa, Rakuyo, Kingdew, Atmos, Namule, Blenheim, Haruta, Blamenco, Speed Jil or Curiel.",
+                "Any 1 of the following: Powerhouse or Striker characters. Any 2 of the following: Portgas D. Ace, Marco, Jozu, Vista, Izo, Fossa, Rakuyo, Kingdew, Atmos, Namule, Blenheim, Haruta, Blamenco, Speed Jil or Curiel.",
+                "Any 2 of the following: Powerhouse or Striker characters. Any 1 of the following: Portgas D. Ace, Marco, Jozu, Vista, Izo, Fossa, Rakuyo, Kingdew, Atmos, Namule, Blenheim, Haruta, Blamenco, Speed Jil or Curiel.",
+                "Any 2 of the following: Powerhouse or Striker characters. Any 1 of the following: Portgas D. Ace, Marco, Jozu, Vista, Izo, Fossa, Rakuyo, Kingdew, Atmos, Namule, Blenheim, Haruta, Blamenco, Speed Jil or Curiel.",
+                "Any 1 of the following: Powerhouse or Striker characters. Any 1 of the following: Portgas D. Ace, Marco, Jozu, Vista, Izo, Fossa, Rakuyo, Kingdew, Atmos, Namule, Blenheim, Haruta, Blamenco, Speed Jil or Curiel."
+            ],
+            "description": [
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 1.5x.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 1.75x.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2x.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2x and reduces enemies' Powerhouse Resistance by -10% for 1 turn.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2.25x and reduces enemies' Powerhouse Resistance by -20% for 1 turn."
+            ]
+        },
+    },
+    3909: {//Shanks&Buggy
+        captain: {
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [DEX] and [PSY] characters by 4.75x, boosts Color Affinity of [DEX] and [PSY] characters by 1.1x, boosts HP of [DEX] and [PSY] characters by 1.2x, makes [PSY] and [TND] orbs beneficial for all characters, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT and increases duration of any Orb Amplification buffs applied by Specials by 1 turn.",
+            character2: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [DEX] and [PSY] characters by 4.75x, boosts Color Affinity of [DEX] and [PSY] characters by 1.1x, boosts HP of [DEX] and [PSY] characters by 1.2x, makes [DEX] and [TND] orbs beneficial for all characters, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT and increases duration of any Orb Amplification buffs applied by Specials by 1 turn.",
+            combined: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [DEX] and [PSY] characters by 5.25x, boosts Color Affinity of [DEX] and [PSY] characters by 1.1x, boosts HP of [DEX] and [PSY] characters by 1.2x, makes [DEX], [PSY] and [TND] orbs beneficial for all characters, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT and increases duration of any Orb Amplification buffs applied by Specials by 1 turn.",
+        },
+        special: "Reduces Paralysis and ATK DOWN duration by 7 turns, locks all orbs for 1 turn, boosts Color Affinity of [DEX] and [PSY] characters by 2.5x for 2 turns and becomes Shanks & Buggy for 3 turns. If your crew has Color Affinity for 3 or more turns when the special is activated, decreases duration of any Color Affinity buffs by 2 turns and increases boost effects of Color Affinity buffs by +0.75x.",
+        specialName: "Remembering the Apprentice Days",
+        sailor: {
+            character1: "Makes [TND] orbs beneficial for [DEX] and [PSY] characters",
+            character2: "Makes [TND] orbs beneficial for [DEX] and [PSY] characters",
+            combined: "Makes [TND] orbs beneficial for [DEX] and [PSY] characters",
+        },
+        swap: {
+            base: "Changes orb, including [BLOCK] orbs, of this character into a [TND] orb and reduces enemies' [DEX] and [PSY] Resistance by -15% for 1 turn.",
+            super: "Changes orb, including [BLOCK] orbs, of this character into a [TND] orb, changes orbs, including [BLOCK] orbs, of adjacent characters into [TND] orbs and reduces enemies' [DEX] and [PSY] Resistance by -30% for 1 turn.",
+            superTurns: 6,
+        },
+    },
+    3910: {//Shanks&Buggy
+        captain: {
+            character1: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [DEX] and [PSY] characters by 4.75x, boosts Color Affinity of [DEX] and [PSY] characters by 1.1x, boosts HP of [DEX] and [PSY] characters by 1.2x, makes [PSY] and [TND] orbs beneficial for all characters, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT and increases duration of any Orb Amplification buffs applied by Specials by 1 turn.",
+            character2: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [DEX] and [PSY] characters by 4.75x, boosts Color Affinity of [DEX] and [PSY] characters by 1.1x, boosts HP of [DEX] and [PSY] characters by 1.2x, makes [DEX] and [TND] orbs beneficial for all characters, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT and increases duration of any Orb Amplification buffs applied by Specials by 1 turn.",
+            combined: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [DEX] and [PSY] characters by 5.25x, boosts Color Affinity of [DEX] and [PSY] characters by 1.1x, boosts HP of [DEX] and [PSY] characters by 1.2x, makes [DEX], [PSY] and [TND] orbs beneficial for all characters, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT and increases duration of any Orb Amplification buffs applied by Specials by 1 turn.",
+        },
+        special: "Reduces Paralysis and ATK DOWN duration by 7 turns, locks all orbs for 1 turn, boosts Color Affinity of [DEX] and [PSY] characters by 2.5x for 2 turns and becomes Shanks & Buggy for 3 turns. If your crew has Color Affinity for 3 or more turns when the special is activated, decreases duration of any Color Affinity buffs by 2 turns and increases boost effects of Color Affinity buffs by +0.75x.",
+        specialName: "Remembering the Apprentice Days",
+        sailor: {
+            character1: "Makes [TND] orbs beneficial for [DEX] and [PSY] characters",
+            character2: "Makes [TND] orbs beneficial for [DEX] and [PSY] characters",
+            combined: "Makes [TND] orbs beneficial for [DEX] and [PSY] characters",
+            level1: "Boosts base ATK, HP and RCV of [DEX] and [PSY] characters by 100",
+        },
+        swap: {
+            base: "Changes orb, including [BLOCK] orbs, of this character into a [TND] orb and reduces enemies' [DEX] and [PSY] Resistance by -15% for 1 turn.",
+            super: "Changes orb, including [BLOCK] orbs, of this character into a [TND] orb, changes orbs, including [BLOCK] orbs, of adjacent characters into [TND] orbs and reduces enemies' [DEX] and [PSY] Resistance by -30% for 1 turn.",
+            superTurns: 6,
+        },
+        limit: [
+        ],
+        potential: [
+            {
+                "Name": "Critical Hit",
+                "description": [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 100% chance to deal 10% of this character's attack in extra damage"
+                ]
+            },
+            {
+                "Name": "Reduce Special Use Limit duration",
+                "description": [
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 2 turns.",
+                    "Reduces Special Use Limit duration by 2 turns.",
+                    "Reduces Special Use Limit duration by 3 turns."
+                ]
+            },
+            {
+                "Name": "Last Tap",
+                "description": [
+                    "Last Tap Ability Lv.1",
+                    "Last Tap Ability Lv.2",
+                    "Last Tap Ability Lv.3",
+                    "Last Tap Ability Lv.4",
+                    "Last Tap Ability Lv.5"
+                ]
+            },
+        ],
+        lastTap: {
+            "condition": "On the last Stage",
+            "description": [
+                "Boosts base ATK of this character by 300 for 1 turn.",
+                "Boosts base ATK of this character by 500 for 1 turn.",
+                "Reduces the defense of all enemies by 100% for 1 turn and boosts base ATK of this character by 750 for 1 turn.",
+                "Reduces the defense of all enemies by 100% for 1 turn, boosts ATK against enemies with reduced defense by 1.75x for 1 turn and boosts base ATK of this character by 750 for 1 turn.",
+                "Reduces the defense of all enemies by 100% for 1 turn, boosts ATK against enemies with reduced defense by 2.5x for 1 turn and boosts base ATK of this character by 1000 for 1 turn."
+            ]
+        },
+    },
+    3911: {//Marco&Vista
+        captain: "Boosts ATK of [PSY] and Powerhouse characters by 3.5x, boosts HP of [PSY] and Powerhouse characters by 1.3x and makes [PSY] orbs beneficial for Powerhouse characters.",
+        special: "Deals 50,000 Fixed damage to all enemies, reduces Special Cooldown of all characters by 1 turn, reduces Silence duration by 6 turns and boosts ATK of [PSY] and Powerhouse characters by 2x for 3 turns.",
+        specialName: "Flurries of Swords and Flames",
+        sailor: {
+            base: "If your Captain is a Slasher or Powerhouse character, reduces Silence duration by 6 turns on this character.",
+            level1: "If your Captain is a Slasher or Powerhouse character, restores Special Cooldown of this character by 2 turns when it is rewinded.",
+        },
+        limit: [
+        ],
+        potential: [
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks"
+                ]
+            },
+        ],
+        support: [
+            {
+                "Characters": "Portgas D. Ace, Jozu, Edward Newgate (Whitebeard), Namule and Blenheim",
+                "description": [
+                    "Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 1 turn on the supported character.",
+                    "Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 1 turn on the supported character.",
+                    "Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 1 turn on the supported character.",
+                    "Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 1 turn on the supported character.",
+                    "Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 2 turns on the supported character."
+                ]
+            }
+        ]
+    },
+    3912: {//Rakuyo&Namule&Blenheim
+        captain: "Boosts ATK of [PSY] and Powerhouse characters by 3.5x, boosts HP and RCV of [PSY] and Powerhouse characters by 1.3x.",
+        special: "Reduces enemies' Percent Damage Reduction duration by 6 turns, reduces crew's current HP by 80% and deals 30x the amount of HP subtracted in Typeless damage to one enemy. If your crew has ATK UP when the special is activated, increases boost effects of ATK UP buffs by +0.25x. Increases boost effects of ATK UP buffs applied by [PSY] and Powerhosue characters by 0.4x for 1 turn.",
+        specialName: "Trampling Charge",
+        sailor: {
+            base: "Boosts base ATK, HP and RCV of all characters by 70",
+            level1: "Reduces Blindness duration by 5 turns",
+        },
+        limit: [
+        ],
+        potential: [
+            {
+                "Name": "Reduce Slot Bind duration",
+                "description": [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 4 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character"
+                ]
+            },
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+        ],
+        support: [
+            {
+                "Characters": "Portgas D. Ace, Jozu, Vista, Edward Newgate (Whitebeard)",
+                "description": [
+                    "Once per adventure, when an enemy inflicts you with Bind, reduces Bind duration by 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with Bind, reduces Bind duration by 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with Bind, reduces Bind duration by 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with Bind, reduces Bind duration by 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with Paralysis or Bind, reduces Paralysis and Bind duration by 1 turn."
+                ]
+            }
+        ]
+    },
+    3913: {//Jozu
+        captain: "Boosts ATK of [DEX] and Powerhouse characters by 3.5x, reduces damage received by 10% and makes [DEX] orbs beneifical for [DEX] and Powerhouse characters.",
+        special: "Deals 60x character's ATK in Typeless damage to all enemies and reduces enemies' Increased Defense and Threshold Damage Reduction duration by 5 turns. If HP is above 50% when the special is activated, reduces damage received by 50% for 3 turns, adds 0.8x to Chain multiplier for 1 turn and if during that turn you score 2 PERFECT hits, adds 1.0x to Chain multiplier for 1 turn in the following turn; otherwise, reduces damage received by 70% for 3 turns, adds 1.2x to Chain multiplier for 1 turn and if during that turn you score 2 PERFECT hits, adds 1.2x to Chain multiplier for 1 turn in the following turn.",
+        specialName: "Retaliating Brilliant Punk",
+        sailor: {
+            base: "Makes [DEX] orbs beneficial for Powerhouse characters",
+            level1: "Boosts base ATK, HP and RCV of Powerhouse characters by 50",
+        },
+        limit: [
+        ],
+        potential: [
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 60 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 70 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 80 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                "Name": "Reduce Slot Bind duration",
+                "description": [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 4 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character"
+                ]
+            },
+        ],
+        support: [
+            {
+                "Characters": "Portgas D. Ace, Marco, Vista, Edward Newgate (Whitebeard), Namule, Blenheim",
+                "description": [
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Increased Defense duration by 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Increased Defense duration by 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Increased Defense duration by 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Increased Defense duration by 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Increased Defense and Threshold Damage Reduction duration by 1 turn."
+                ]
+            }
+        ]
+    },
+    3914: {//Squard
+        captain: "Boosts ATK of Striker and Powerhouse characters by 2x and boosts RCV of Striker and Powerhouse characters by 1.2x.",
+        special: "Boosts ATK of Striker and Powerhouse characters by 1.5x for 1 turn, reduces enemies' Resilience duration by 1 turn and makes PERFECTs easier to hit for 1 turn.",
+        specialName: "Raging Thrust",
+        support: [
+            {
+                "Characters": "Portgas D. Ace, Edward Newgate (Whitebeard), Marshall D. Teach (Blackbeard), Sengoku and Sakazuki (Akainu)",
+                "description": [
+                    "Once per adventure, when the supported character is your Captain and uses a Damage Dealing or Health Cutting special, Despairs supported character for 10 turns, boosts ATK of Powerhouse characters by 2x for 1 turn and reduces enemies' Resilience duration by 2 turns.",
+                    "Once per adventure, when the supported character is your Captain and uses a Damage Dealing or Health Cutting special, Despairs supported character for 10 turns, boosts ATK of Powerhouse characters by 2.25x for 1 turn and reduces enemies' Resilience duration by 2 turns.",
+                    "Once per adventure, when the supported character is your Captain and uses a Damage Dealing or Health Cutting special, Despairs supported character for 10 turns, boosts ATK of Powerhouse characters by 2.25x for 1 turn and reduces enemies' Resilience duration by 3 turns.",
+                    "Once per adventure, when the supported character is your Captain and uses a Damage Dealing or Health Cutting special, Despairs supported character for 10 turns, boosts ATK of Powerhouse characters by 2.5x for 1 turn and reduces enemies' Resilience duration by 3 turns.",
+                    "Once per adventure, when the supported character is your Captain and uses a Damage Dealing or Health Cutting special, Despairs supported character for 10 turns, boosts ATK of Powerhouse characters by 2.5x for 1 turn and reduces enemies' Resilience duration by 4 turns."
+                ]
+            }
+        ]
+    },
+    3915: {//Akainu
+        captain: {
+            base: "Boosts ATK of Driven characters by 2.5x, boosts HP of Driven characters by 1.1x, makes [DEX] and [PSY] orbs beneficial for Driven characters and reduces Despair duration by 1 turn.",
+            level1: "TBD",
+            level2: "TBD",
+            level3: "TBD",
+            level4: "TBD",
+            level5: "TBD",
+            level6: "Boosts ATK of Driven characters by 4x, boosts HP of Driven characters by 1.3x, makes [DEX] and [PSY] orbs beneficial for Driven characters and reduces Despair duration by 2 turns.",
+        },
+        special: "Deals 70x character's ATK in [DEX] damage to one enemy, inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 1 turn and reduces Despair and Burn duration by 6 turns. If your Captain is a Driven character, boosts ATK against enemies inflicted with Burn by 2.25x for 1 turn, boosts ATK against enemies inflicted with Burn by 1.75x for 1 turn otherwise.",
+        specialName: "Declaration of the Next Shogun",
+        sailor: {
+            level1: "Boosts base ATK of Driven characters by 100",
+            level2: "Makes [DEX] and [PSY] orbs beneficial for Driven characters",
+        },
+        limit: [
+        ],
+        potential: [
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                "Name": "Reduce Special Use Limit duration",
+                "description": [
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 1 turn.",
+                    "Reduces Special Use Limit duration by 2 turns."
+                ]
+            },
+        ],
+        support: [
+            {
+                "Characters": "Sengoku, Kuzan (Aokiji) and Borsalino (Kizaru)",
+                "description": [
+                    "Adds 5% of this character's base HP to the supported character's base HP.",
+                    "Adds 6% of this character's base HP to the supported character's base HP.",
+                    "Adds 7% of this character's base HP to the supported character's base HP.",
+                    "Adds 9% of this character's base HP to the supported character's base HP.",
+                    "Adds 11% of this character's base HP to the supported character's base HP."
+                ]
+            }
+        ]
+    },
     3928: {//Lim
         captain: "Boosts ATK of all characters by 3x, boosts RCV of all characters by 1.5x, makes [DEX] and [PSY] orbs beneficial for all characters and boosts EXP gained by 1.5x.",
         special: "Reduces Special Cooldown of all characters by 1 turn, reduces Despair duration by 5 turns, locks all orbs for 1 turn and changes orbs of adjacent characters into Matching orbs. If your crew has Percent Damage Reduction when the special is activated, recovers 25% of crew's MAX HP and sets Chain Boundaries to 2.25x and 20.0x for 2 turns; sets Chain Boundaries to 2.0x and 10.0x for 1 turn otherwise.",
         specialName: "Memory-Luring Cube",
         sailor: {
             base: "Restores Special Cooldown of this character by 2 turns when it is rewinded",
-            level1: "Not Available",
+            level1: "Boosts base ATK, HP and RCV of all characters by 50",
         },
         limit: [
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire Potential 1: Pinch Healing" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Acquire Sailor Ability 1: Boosts base ATK, HP and RCV of all characters by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Acquire Potential 2: Reduce No Healing duration" },
         ],
         potential: [
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                "Name": "Reduce No Healing duration",
+                "description": [
+                    "Reduces No Healing duration by 1 turn",
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 4 turns",
+                    "Reduces No Healing duration by 5 turns"
+                ]
+            },
         ],
         support: [
             {
@@ -129734,4 +131212,9 @@ if (UnitUtils){
     UnitUtils.extendDouble(calcGhostStartID, 3878, "dual");
     UnitUtils.extendDouble(calcGhostStartID, 3879, "dual");
     UnitUtils.extendDouble(calcGhostStartID, 3880, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 3902, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 3907, "vs");
+    UnitUtils.extendDouble(calcGhostStartID, 3908, "vs");
+    UnitUtils.extendDouble(calcGhostStartID, 3909, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 3910, "dual");
 }
