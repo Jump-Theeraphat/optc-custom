@@ -76,6 +76,11 @@ function getThumb(thumbId) {
         return 'https://optc-db.github.io/api/images/thumbnail/jap/3/700/3788-1.png';
     if (paddedThumbId === '9008')
         return 'https://optc-db.github.io/api/images/thumbnail/jap/3/700/3788-2.png';
+    // Whitebeard VS Blackbeard
+    if (paddedThumbId === '9009')
+        return 'https://optc-db.github.io/api/images/thumbnail/jap/3/900/3908-1.png';
+    if (paddedThumbId === '9010')
+        return 'https://optc-db.github.io/api/images/thumbnail/jap/3/900/3908-2.png';
 
     // Special cases for new thumbs
     if (

@@ -8388,7 +8388,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Sasaki', 'STR'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -8439,7 +8438,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Black Maria', 'QCK'],
                     hp: 500000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -8494,8 +8492,6 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Who\'s-Who', 'INT'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 1200000,
                     atk_: 6000,
                     detail: [
@@ -8543,8 +8539,6 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['X Drake', 'INT'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 500000,
                     atk_: 4000,
                     detail: [
@@ -8592,8 +8586,6 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Page One', 'STR'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 1300000,
                     atk_: 6600,
                     detail: [
@@ -8677,8 +8669,6 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Orochi', 'INT'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 1560000,
                     atk_: 7200,
                     detail: [
@@ -8703,8 +8693,6 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Kanjuro', 'STR'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 2750000,
                     atk_: 9600,
                     detail: [
@@ -8764,7 +8752,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Apoo', 'INT'],
                     hp: 500000,
-                    atk: 0,
                     atk_: 4000,
                     detail: [
                         {
@@ -8812,7 +8799,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['O-Lin', 'DEX'],
                     hp: 1500000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -8857,7 +8843,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Perospero', 'INT'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -8907,7 +8892,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Hawkins', 'STR'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -8958,7 +8942,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Lead Performers', 'STR'],
                     hp: 1300000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -9039,7 +9022,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Page One', 'QCK'],
                     hp: 1300000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -9063,7 +9045,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Ulti', 'STR'],
                     hp: 2500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -9129,7 +9110,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Shanks', 'DEX'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9178,7 +9158,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Chopper', 'QCK'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 4000,
                     detail: [
                         {
@@ -9228,7 +9207,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Luffy', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9279,7 +9257,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Hancock & Nami & Robin', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9329,7 +9306,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Perona', 'PSY'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -9416,7 +9392,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Rebecca', 'DEX'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -9441,7 +9416,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Sabo', 'DEX'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -9510,7 +9484,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Pizarro', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9550,7 +9523,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Devon', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9602,7 +9574,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Vasco Shot', 'QCK'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 4000,
                     detail: [
                         {
@@ -9655,7 +9626,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Shiryu', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9705,7 +9675,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Lafitte', 'PSY'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -9788,7 +9757,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Absalom', 'PSY'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -9818,7 +9786,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Moria', 'PSY'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -9886,7 +9853,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Nami', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9938,7 +9904,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Kalifa', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -9990,7 +9955,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Carrot', 'INT'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 4000,
                     detail: [
                         {
@@ -10043,7 +10007,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Robin', 'DEX'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -10095,7 +10058,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Marguerite', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -10185,7 +10147,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Franky', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -10214,7 +10175,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Franky', 'QCK'],
                     hp: 3200000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -10277,7 +10237,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Chopper', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -10338,7 +10297,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Brook', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -10389,7 +10347,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Nami', 'INT'],
                     hp: 800000,
-                    atk: 0,
                     atk_: 4000,
                     detail: [
                         {
@@ -10445,7 +10402,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Robin', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -10485,8 +10441,6 @@ var tm_opponents = {
                 {
                     stageNum: 1,
                     boss: ['Zoro', 'PSY'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -10503,7 +10457,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Jinbe', 'PSY'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -10578,8 +10531,6 @@ var tm_opponents = {
                 {
                     stageNum: 1,
                     boss: ['Usopp', 'PSY'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -10602,7 +10553,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Franky', 'PSY'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -10632,7 +10582,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Sanji', 'PSY'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -10692,7 +10641,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Shanks', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -10749,7 +10697,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Beckman & Lucky Roux', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -10800,8 +10747,6 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Gordon', 'STR'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 800000,
                     atk_: 4000,
                     detail: [
@@ -10854,7 +10799,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Usopp & Yasopp', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -10905,7 +10849,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Uta', 'INT'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -10988,7 +10931,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Usopp', 'INT'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -11020,7 +10962,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Chopper', 'INT'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -11094,7 +11035,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Monet', 'INT'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11152,7 +11092,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Vergo', 'INT'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11211,7 +11150,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Smoker', 'PSY'],
                     hp: 800000,
-                    atk: 0,
                     atk_: 4000,
                     detail: [
                         {
@@ -11254,7 +11192,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Tashigi', 'INT'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11313,7 +11250,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Brownbeard', 'STR'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -11390,7 +11326,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Luffy', 'STR'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -11417,7 +11352,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Law', 'STR'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -11481,7 +11415,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Apoo', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11533,7 +11466,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Hawkins', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11596,7 +11528,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Orochi', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11648,7 +11579,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Kanjuro', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11706,7 +11636,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['King', 'DEX'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -11789,7 +11718,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Perospero', 'DEX'],
                     hp: 1000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -11816,7 +11744,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['O-Lin', 'QCK'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -11878,7 +11805,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['X Drake', 'INT'],
                     hp: 950000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11928,7 +11854,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Sasaki', 'PSY'],
                     hp: 3000000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -11986,7 +11911,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Ulti', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12037,7 +11961,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Page One', 'QCK'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12087,7 +12010,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Black Maria', 'INT'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -12169,7 +12091,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Who\'s-Who', 'PSY'],
                     hp: 3000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -12196,7 +12117,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Who\'s-Who', 'INT'],
                     hp: 4500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -12275,7 +12195,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Raki', 'INT'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12324,7 +12243,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Luffy', 'QCK'],
                     hp: 3000000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12376,7 +12294,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Ganfor', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12427,7 +12344,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Conis', 'STR'],
                     hp: 1500000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12479,7 +12395,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Wyper', 'INT'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -12593,7 +12508,6 @@ var tm_opponents = {
                     stageNum: 4,
                     boss: ['Eneru', 'INT'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -12624,7 +12538,6 @@ var tm_opponents = {
                     stageNum: 5,
                     boss: ['Eneru', 'INT'],
                     hp: 4000000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -12693,7 +12606,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Raizo', 'STR'],
                     hp: 1500000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12747,7 +12659,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Ashura Doji', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12807,7 +12718,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Kinemon', 'INT'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12874,7 +12784,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Denjiro', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -12928,7 +12837,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Fodder', 'QCK'],
                     hp: 2500000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -13006,7 +12914,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Izo', 'QCK'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -13032,7 +12939,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Izo', 'QCK'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -13103,7 +13009,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Bellamy', 'STR'],
                     hp: 1600000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13167,7 +13072,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Trebol', 'INT'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13236,7 +13140,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Barto & Cavendish', 'QCK'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13284,7 +13187,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Burgess', 'DEX'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13346,7 +13248,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Doffy', 'STR'],
                     hp: 3000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -13444,7 +13345,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Fujitora', 'STR'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -13483,7 +13383,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Fujitora', 'STR'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -13553,7 +13452,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Duval', 'INT'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13617,7 +13515,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Kid', 'STR'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13672,7 +13569,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Law', 'STR'],
                     hp: 1600000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13733,7 +13629,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Kuma', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -13787,7 +13682,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Sentomaru', 'INT'],
                     hp: 3000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -13896,7 +13790,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Bege', 'INT'],
                     hp: 2000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -13936,7 +13829,6 @@ var tm_opponents = {
                     stageNum: 4,
                     boss: ['Bege', 'INT'],
                     hp: 3500000,
-                    atk: 0,
                     atk_: 9600,
                     detail: [
                         {
@@ -13994,7 +13886,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Inuarashi', 'PSY'],
                     hp: 1500000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -14034,7 +13925,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Marco', 'PSY'],
                     hp: 1800000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -14105,7 +13995,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Jack', 'STR'],
                     hp: 1600000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -14172,7 +14061,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Ulti', 'INT'],
                     hp: 1600000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -14233,7 +14121,6 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Chopper', 'PSY'],
                     hp: 1200000,
-                    atk: 0,
                     atk_: 6000,
                     detail: [
                         {
@@ -14286,7 +14173,6 @@ var tm_opponents = {
                     stageNum: 2,
                     boss: ['Queen', 'QCK'],
                     hp: 3000000,
-                    atk: 0,
                     atk_: 6600,
                     detail: [
                         {
@@ -14402,8 +14288,6 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Kaido', 'QCK'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -14434,8 +14318,6 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Momonosuke', 'PSY'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -14466,8 +14348,6 @@ var tm_opponents = {
                 {
                     stageNum: 4,
                     boss: ['Kaido', 'QCK'],
-                    hp: 0,
-                    atk: 0,
                     hp_: 3500000,
                     atk_: 9600,
                     detail: [
@@ -14513,6 +14393,305 @@ var tm_opponents = {
                             type: '<50%',
                             action: [
                                 ['atk',             '5T']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Akainu ==========
+    3915: {
+        1991: {
+            name: 'Garp',
+            type: 'PSY',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Powerhouse/Cerebral'],
+                                ['VS Gauge -',      '5T, Slasher/Powerhouse/Cerebral'],
+                                ['S Switch -',      '5T, Slasher/Powerhouse/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Garp', 'PSY'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '10T'],
+                                ['chain-atk-down',  '3T, < 3.25x chain, 90%'],
+                                ['chain-atk-down',  '3T, > 4.75x chain, 90%'],
+                                ['slot-block',      'All'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Orb Boost',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['stun',            'Row 3']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1993: {
+            name: 'Coby',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Coby', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '1T, Row 2 3'],
+                                ['desp',            '8T'],
+                                ['bind',            '8T, Row 2 3'],
+                                ['chain-atk-down',  '3T, < 2.25x chain, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '50000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3724: {
+            name: 'Kizaru',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Free Spirit/Powerhouse'],
+                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Powerhouse'],
+                                ['S Switch -',      '5T, Slasher/Free Spirit/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kizaru', 'STR'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'RCV'],
+                                ['desp',            '12T'],
+                                ['bar-slot',        '2T, 1x, WANO'],
+                                ['def',             '3T, 10000x'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3726: {
+            name: 'Aokiji',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, INT/PSY/DEX'],
+                                ['VS Gauge -',      '5T, INT/PSY/DEX'],
+                                ['S Switch -',      '5T, INT/PSY/DEX']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Aokiji', 'PSY'],
+                    hp_: 1800000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '7T'],
+                                ['slot-block',      'All'],
+                                ['slot-neg',        '3T, Color'],
+                                ['cd-rew',          '1T'],
+                                ['bar-hit',         '1T, 10x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Reduce CD',
+                            action: [
+                                ['bind',            '8T, Row 1'],
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3723: {
+            name: 'Sengoku',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '8T, STR/DEX/PSY'],
+                                ['VS Gauge -',      '20T, STR/DEX/PSY'],
+                                ['S Switch -',      '8T, STR/DEX/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Sengoku', 'QCK'],
+                    hp_: 3000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['silence',         '5T'],
+                                ['nao',             '99+T'],
+                                ['def-perc',        '6T, 80%']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sengoku', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Para'],
+                                ['desp',            '10T'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['def',             '8T, 10000x']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Affinity',
+                            action: [
+                                ['sp-limit',        '2T, 1x']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '10000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3915: {
+            name: 'Akainu',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Powerhouse/Slasher/Driven'],
+                                ['VS Gauge -',      '20T, Powerhouse/Slasher/Driven'],
+                                ['S Switch -',      '8T, Powerhouse/Slasher/Driven']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Sentomaru', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '12T, Friend Cap'],
+                                ['cd-rew',          '1T'],
+                                ['blow-away',       '3T, Captain'],
+                                ['nao',             '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Akainu', 'INT'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['atk-down',        '7T, 90%'],
+                                ['stun',            'Row 2'],
+                                ['chain-atk-down',  '3T, < 3x chain, 90%'],
+                                ['def-perc',        '8T, 80%'],
+                                ['def',             '5T, 10000x']
                             ]
                         }
                     ]

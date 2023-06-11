@@ -500,8 +500,12 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
-    } else if (tmId == 3621) {
+    } else if (
+        tmId == 3621 ||
+        tmId == 3915
+    ) {
         // TM Sabo
+        // TM Akainu
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
@@ -963,6 +967,9 @@ function parseVsUnitId(vsId) {
     // Kaido VS Yamato
     if (vsId === 9007 || vsId === 9008)
         return 3788;
+    // Whitebeard VS Blackbeard
+    if (vsId === 9009 || vsId === 9010)
+        return 3908;
 
     return vsId;
 }
@@ -991,6 +998,13 @@ function parseVsUnitIdForCalc(vsId) {
         return 5431;
     if (vsId === 9008)
         return 5432;
+
+    // Whitebeard VS Blackbeard
+    /*if (vsId === 9009)
+        return 5431;
+    if (vsId === 9010)
+        return 5432;
+    */
 
     return vsId;
 }
@@ -2254,6 +2268,10 @@ function getFamiliesForUnit(unitId) {
         family = [ "Kaido" ];
     else if (unitId == 9008)
         family = [ "Yamato" ];
+    else if (unitId == 9009)
+        family = [ "Edward Newgate", "Whitebeard" ];
+    else if (unitId == 9008)
+        family = [ "Marshall D. Teach", "Blackbeard"];
     else
         family = families[unitId];
     return family;
@@ -3224,14 +3242,14 @@ $(document).ready(function() {
                         var bossHp = g.hp;
                         var bossAtk = g.atk;
 
-                        if (bossHp == 0) {
+                        if (typeof bossHp === 'undefined') {
                             bossHp = g.hp_;
                             guideStageClone.find('#boss-hp-unconfirmed').css('display', 'flex');
                         } else {
                             guideStageClone.find('#boss-hp-unconfirmed').hide();
                         }
 
-                        if (bossAtk == 0) {
+                        if (typeof bossAtk === 'undefined') {
                             bossAtk = g.atk_;
                             guideStageClone.find('#boss-atk-unconfirmed').css('display', 'flex');
                         } else {
