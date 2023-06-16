@@ -14424,7 +14424,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Garp', 'PSY'],
-                    hp_: 1600000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14442,6 +14442,33 @@ var tm_opponents = {
                             action: [
                                 ['clear-buff',      'Buff Only'],
                                 ['stun',            'Row 3']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['silence',         '6T'],
+                                ['No Heal',         '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['def-perc',        '8T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -14487,6 +14514,26 @@ var tm_opponents = {
                             action: [
                                 ['dmg-normal',      '50000']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['No Heal',         '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['bar-gd',          '3T, 3x']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['atk-down',        '5T']
+                            ]
                         }
                     ]
                 }
@@ -14513,7 +14560,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Kizaru', 'STR'],
-                    hp_: 1600000,
+                    hp: 1600000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14524,6 +14571,26 @@ var tm_opponents = {
                                 ['bar-slot',        '2T, 1x, WANO'],
                                 ['def',             '3T, 10000x'],
                                 ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-bind',       '5T'],
+                                ['cd-rew',          '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['para',            '5T']
                             ]
                         }
                     ]
@@ -14551,7 +14618,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Aokiji', 'PSY'],
-                    hp_: 1800000,
+                    hp: 1600000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14570,6 +14637,27 @@ var tm_opponents = {
                             action: [
                                 ['bind',            '8T, Row 1'],
                                 ['clear-buff',      'Buff Only']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['sp-limit',        '1T, 1x'],
+                                ['desp',            '8T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['def-perc',        '2T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['slot-bind',       '3T'],
+                                ['atk',             '5T']
                             ]
                         }
                     ]
@@ -14608,6 +14696,25 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['def-perc',        '6T, 80%']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['No Heal',         '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['hp-cut',          '50%'],
+                                ['atk-down',        '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['slot-bind',       '3T']
+                            ]
                         }
                     ]
                 },
@@ -14637,6 +14744,25 @@ var tm_opponents = {
                             action: [
                                 ['dmg-normal',      '10000']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['No Heal',         '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['hp-cut',          '50%'],
+                                ['atk-down',        '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['slot-bind',       '3T']
+                            ]
                         }
                     ]
                 }
@@ -14663,7 +14789,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Sentomaru', 'INT'],
-                    hp_: 2000000,
+                    hp: 1500000,
                     atk_: 6600,
                     detail: [
                         {
@@ -14674,13 +14800,27 @@ var tm_opponents = {
                                 ['blow-away',       '3T, Captain'],
                                 ['nao',             '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['blind',           '5T'],
+                                ['blow-away',       '2T, Row 3']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['cd-rew',          '3T'],
+                                ['dmg-eot-e',       '3T']
+                            ]
                         }
                     ]
                 },
                 {
                     stageNum: 3,
                     boss: ['Akainu', 'INT'],
-                    hp_: 3500000,
+                    hp: 4000000,
                     atk_: 9600,
                     detail: [
                         {
@@ -14692,6 +14832,27 @@ var tm_opponents = {
                                 ['chain-atk-down',  '3T, < 3x chain, 90%'],
                                 ['def-perc',        '8T, 80%'],
                                 ['def',             '5T, 10000x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['desp',            '8T'],
+                                ['dmg-normal',      '?']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['slot-bind',       '3T'],
+                                ['atk',             '?T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['dmg-normal',      '?'],
+                                ['resil',           '3T']
                             ]
                         }
                     ]
