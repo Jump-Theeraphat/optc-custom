@@ -198,4 +198,8 @@ var kizunas = {
         thumb: 3898,
         xch_id: 3903
     },
+    3920: {
+        name: 'Luffy & Ace 6+ (~ 6am)',
+        thumb: 3920
+    },
 };
