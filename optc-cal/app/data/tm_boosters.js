@@ -5,12 +5,10 @@ var tm_boosters = [
     3915,
 
     // Raids
-    3857,
 
     // Coliseums
 
     // Kizunas
-    3848,
     3868,
     3903,
 
@@ -18,7 +16,6 @@ var tm_boosters = [
     3885,
 
     // Events
-    3855,
     3874,
     3887,
 ]
