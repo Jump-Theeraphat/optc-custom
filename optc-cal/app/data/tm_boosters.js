@@ -7,6 +7,7 @@ var tm_boosters = [
     // Raids
 
     // Coliseums
+    3931,
 
     // Kizunas
     3868,
