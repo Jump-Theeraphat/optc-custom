@@ -41665,7 +41665,7 @@ window.details = {
         special: "Recovers 3,960 HP, reduces enemies' ATK Up and End of Turn Damage/Percent Cut Buff duration by 7 turns and reduces damage received by 80% for 1 turn.",
         sailor: {
             base: "If your Captain is a [QCK] or [PSY] character, makes [TND] orbs beneficial for all characters",
-            "base2": "Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 40",
+            base2: "Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 40",
         },
         specialName: "Glorious Scenery",
     },
@@ -41675,7 +41675,7 @@ window.details = {
         special: "Recovers 3,960 HP, reduces enemies' ATK Up and End of Turn Damage/Percent Cut Buff duration by 7 turns and reduces damage received by 80% for 1 turn.",
         sailor: {
             base: "If your Captain is a [QCK] or [PSY] character, makes [TND] orbs beneficial for all characters",
-            "base2": "Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 40",
+            base2: "Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 40",
         },
         sailorNotes: "#{beneficial}",
         specialName: "Glorious Scenery",
@@ -41685,7 +41685,7 @@ window.details = {
         special: "Randomizes all orbs, into either [G] or [RCV] orbs and boosts ATK of this character by 2.25x for 1 turn. If your Captain is a Fighter character, locks all orbs for 1 turn.",
         sailor: {
             base: "Makes [RCV] orbs beneficial for all characters if your Captain is a Fighter character",
-            "base2": "Boosts base ATK, HP and RCV of Fighter characters by 40",
+            base2: "Boosts base ATK, HP and RCV of Fighter characters by 40",
         },
         sailorNotes: "#{beneficial}",
         specialName: "The Gentle Breeze of the Feast",
@@ -41695,7 +41695,7 @@ window.details = {
         special: "Randomizes all orbs, into either [G] or [RCV] orbs and boosts ATK of this character by 2.25x for 1 turn. If your Captain is a Fighter character, locks all orbs for 1 turn.",
         sailor: {
             base: "Makes [RCV] orbs beneficial for all characters if your Captain is a Fighter character",
-            "base2": "Boosts base ATK, HP and RCV of Fighter characters by 40",
+            base2: "Boosts base ATK, HP and RCV of Fighter characters by 40",
         },
         specialName: "The Gentle Breeze of the Feast",
     },
@@ -131903,11 +131903,61 @@ window.details = {
         specialName: "Second Farewell",
         sailor: {
             base: "Boosts base ATK of Cerebral and Powerhouse characters by 75",
-            level1: "TBD",
+            level1: "Recovers 500 HP at the end of each turn",
         },
         limit: [
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Reduce base Special Cooldown by 4 turn" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base RCV by 35" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire Potential 1: Reduce No Healing duration" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Reduce base Special Cooldown by 4 turn" },
+            { "description": "Boosts base HP by 90" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Acquire Potential 2: Nutrition/Reduce Hunger stacks" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base ATK by 60" },
+            { "description": "Acquire Sailor Ability 2: Recovers 500 HP at the end of each turn" },
+            { "description": "Reduce base Special Cooldown by 4 turn" },
+            { "description": "Acquire Potential 3: Pinch Healing" },
         ],
         potential: [
+            {
+                "Name": "Reduce No Healing duration",
+                "description": [
+                    "Reduces No Healing duration by 1 turn",
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 4 turns",
+                    "Reduces No Healing duration by 5 turns"
+                ]
+            },
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks"
+                ]
+            },
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
         ],
         support: [
             {
@@ -131918,6 +131968,351 @@ window.details = {
                     "Once per adventure, when an enemy inflicts you with Bind, recovers 1,000 HP.",
                     "Once per adventure, when an enemy inflicts you with Bind, recovers 1,500 HP.",
                     "Once per adventure, when an enemy inflicts you with Bind, recovers 2,000 HP and reduces Bind duration by 1 turn."
+                ]
+            }
+        ]
+    },
+    3932: {
+        "captain": {
+            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, recovers 1x character's RCV in HP at the end of each turn, boosts ATK of [INT], [DEX] and Cerebral characters by 4.25x, by 5x if HP is above 99% at the start of the turn, boosts HP of [INT], [DEX] and Cerebral characters by 1.2x, makes [INT], [DEX] and [RCV] slots beneficial for all characters, and allows HP Overfill up to 2x MAX HP",
+            "character2": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [INT], [DEX] and Cerebral characters by 4.5x, by 5.25x if HP is above 99% at the start of the turn, boosts HP of [INT], [DEX] and Cerebral characters by 1.2x, makes [INT], [DEX] and [RCV] slots beneficial for all characters, and allows HP Overfill up to 2x MAX HP",
+            "combined": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, recovers 2x character's RCV in HP at the end of each turn, boosts ATK of [INT], [DEX] and Cerebral characters by 5x, by 5.75x if HP is above 99% at the start of the turn, boosts HP of [INT], [DEX] and Cerebral characters by 1.2x, makes [INT], [DEX] and [RCV] slots beneficial for all characters, and allows HP Overfill up to 2x MAX HP"
+        },
+        "limit": [],
+        "potential": [],
+        "special": "Reduces Bind, Silence and Burn duration by 6 turns, recovers 30,000 HP, changes all orbs, including [BLOCK] orbs, into Matching orbs, sets Chain Boundaries to 2.75-3.25x and 40.0x for 1 turn depending on Excess Healing done when the special is activated, and becomes Nami & Carrot for 3 turns. If there is more than 50,000 Excess Healing done when the special is activated, adds 1.5x to Chain multiplier for 1 turn.",
+        "specialNotes": "Minimum 2.75, maximum 40.0 for 0 or more HP; minimum 3.0, maximum 40.0 for 20,000 or more HP; minimum 3.25, maximum 40.0 for 50,000 or more HP",
+        "specialName": "Girl Talk in the Bath",
+        "support": [],
+        "swap": {
+            "base": "Removes Silence duration completely on this character, reduces enemies' Increased Defense duration by 1 turn, reduces enemies' [INT] and [DEX] Resistance by -15% for 1 turn, changes the orb of this character into a [RCV] orb and recovers 2,000 HP at the end of each turn for 1 turn ",
+            "super": "Removes Silence duration completely on this character, reduces enemies' Increased Defense duration by 3 turns, reduces enemies' [INT] and [DEX] Resistance by -30% for 1 turn, changes the orb of this character into a [RCV] orb and recovers 7,000 HP at the end of each turn for 1 turn ",
+            "superTurns": 4
+        }
+    },
+    3933: {
+        "captain": {
+            "character1": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, recovers 1x character's RCV in HP at the end of each turn, boosts ATK of [INT], [DEX] and Cerebral characters by 4.25x, by 5x if HP is above 99% at the start of the turn, boosts HP of [INT], [DEX] and Cerebral characters by 1.2x, makes [INT], [DEX] and [RCV] slots beneficial for all characters, and allows HP Overfill up to 2x MAX HP",
+            "character2": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [INT], [DEX] and Cerebral characters by 4.5x, by 5.25x if HP is above 99% at the start of the turn, boosts HP of [INT], [DEX] and Cerebral characters by 1.2x, makes [INT], [DEX] and [RCV] slots beneficial for all characters, and allows HP Overfill up to 2x MAX HP",
+            "combined": "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, recovers 2x character's RCV in HP at the end of each turn, boosts ATK of [INT], [DEX] and Cerebral characters by 5x, by 5.75x if HP is above 99% at the start of the turn, boosts HP of [INT], [DEX] and Cerebral characters by 1.2x, makes [INT], [DEX] and [RCV] slots beneficial for all characters, and allows HP Overfill up to 2x MAX HP"
+        },
+        "sailor": {
+            "level1": "Makes [RCV] orbs beneficial for all characters",
+            "level2": "Recovers 800 HP at the end of each turn"
+        },
+        "special": "Reduces Bind, Silence and Burn duration by 6 turns, recovers 30,000 HP, changes all orbs, including [BLOCK] orbs, into Matching orbs, sets Chain Boundaries to 2.75-3.25x and 40.0x for 1 turn depending on Excess Healing done when the special is activated, and becomes Nami & Carrot for 3 turns. If there is more than 50,000 Excess Healing done when the special is activated, adds 1.5x to Chain multiplier for 1 turn.",
+        "specialNotes": "Minimum 2.75, maximum 40.0 for 0 or more HP; minimum 3.0, maximum 40.0 for 20,000 or more HP; minimum 3.25, maximum 40.0 for 50,000 or more HP",
+        "specialName": "Girl Talk in the Bath",
+        "support": [],
+        "swap": {
+            "base": "Removes Silence duration completely on this character, reduces enemies' Increased Defense duration by 1 turn, reduces enemies' [INT] and [DEX] Resistance by -15% for 1 turn, changes the orb of this character into a [RCV] orb and recovers 2,000 HP at the end of each turn for 1 turn ",
+            "super": "Removes Silence duration completely on this character, reduces enemies' Increased Defense duration by 3 turns, reduces enemies' [INT] and [DEX] Resistance by -30% for 1 turn, changes the orb of this character into a [RCV] orb and recovers 7,000 HP at the end of each turn for 1 turn ",
+            "superTurns": 4
+        },
+        "limit": [
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire Potential 1: Nutrition/Reduce Hunger stacks" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Acquire Sailor Ability 1: Makes [RCV] orbs beneficial for all characters" },
+            { "description": "Boosts base HP by 40" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Acquire Potential 2: Pinch Healing" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Acquire Sailor Ability 2: Recovers 800 HP at the end of each turn" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Boosts base HP by 80" },
+            { "description": "Acquire Potential 3: Reduce Healing Reduction duration" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 50" },
+            { "description": "Boosts base HP by 150" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base HP by 200" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base ATK by 100" },
+        ],
+        "potential": [
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 200 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 200 the turn after recovering 3,000 HP and reduces Hunger stack by 3 stacks"
+                ]
+            },
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                "Name": "Reduce Healing Reduction duration",
+                "description": [
+                    "Reduces Healing Reduction duration by 1 turn",
+                    "Reduces Healing Reduction duration by 2 turns",
+                    "Reduces Healing Reduction duration by 3 turns",
+                    "Reduces Healing Reduction duration by 4 turns",
+                    "Reduces Healing Reduction duration by 5 turns"
+                ]
+            },
+        ],
+    },
+    3934: {
+        "captain": "Reduces Special Cooldown of all characters by 1 turns at the start of the fight, boosts ATK of Fighter and Cerebral characters by 3.25x, by 3.75x instead if they have an orb that isn't [STR], [DEX], [QCK], [PSY] or [INT], boosts HP of Fighter and Cerebral characters by 1.2x and makes [RCV] orbs beneficial for all characters.",
+        "sailor": {
+            "base": "Changes all orbs into RCV orbs at the start of the fight",
+            "level1": "Boosts base RCV of Fighter and Cerebral characters by 75"
+        },
+        "special": "Recovers 40x character's RCV in HP, reduces Paralysis duration by 6 turns and changes orbs of adjacent characters into [RCV] orbs. If your Captain is a Fighter or Cerebral character, increases duration of any Base ATK boosting and Chain Lock/Limit/Boundary debuffs/buffs by 2 turns.",
+        "specialName": "Forgetting the Past",
+        "limit": [
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire Potential 1: Nutrition/Reduce Hunger stacks" },
+            { "description": "Boosts base HP by 20" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Acquire Sailor Ability 2: Boosts base RCV of Fighter and Cerebral characters by 75" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 2: Pinch Healing" },
+        ],
+        "potential": [
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks"
+                ]
+            },
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            }
+        ],
+        "support": [
+            {
+                "Characters": "Sanji",
+                "description": [
+                    "Once per adventure, when you reach the final stage, recovers 2,000 HP.",
+                    "Once per adventure, when you reach the final stage, recovers 2,500 HP.",
+                    "Once per adventure, when you reach the final stage, recovers 3,000 HP.",
+                    "Once per adventure, when you reach the final stage, recovers 3,500 HP.",
+                    "Once per adventure, when you reach the final stage, changes the orbs, including [BLOCK] orbs, of middle row characters into [RCV] orb and recovers 4,000 HP."
+                ]
+            }
+        ]
+    },
+    3935: {
+        "captain": "Reduces Special Cooldown of all characters by 1 turns at the start of the fight, boosts ATK of Powerhouse and Cerebral characters by 3.25x, boosts HP of Powerhouse and Cerebral characters by 1.2x and recovers HP proportional to the number of enemies you defeated in that turn ✕ 0.3x crew's RCV at the end of the enemy turn.",
+        "sailor": {
+            "base": "Boosts base ATK, HP and RCV of Powerhouse and Cerebral characters by 60",
+            "level1": "Cannot be Blown Away"
+        },
+        "special": "Reduces enemies' Increase Defense, Percent Damage Reduction and Threshold Damage Reduction duration by 4 turns and changes orbs of adjacent characters into [RCV] orbs. If there is more than 15,000 Excess Healing done when the special is activated, boosts Orb Effects of [INT], [DEX] and Cerebral characters by 2x for 1 turn. If there is more than 30,000 Excess Healing done when the special is activated, boosts ATK of [INT], [DEX] and Cerebral characters by 2.25x for 1 turn. If there is more than 50,000 Excess Healing done when the special is activated, boosts base ATK of [DEX], [INT] and Cerebral characters by 1,000 for 1 turn.",
+        "specialName": "Delectable Welcome Drink",
+        "limit": [
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base HP by 10" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Acquire Potential 1: Nutrition/Reduce Hunger stacks" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 40" },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base ATK by 60" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Acquire Sailor Ability 2: Cannot be Blown Away" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Acquire Potential 2: Pinch Healing" },
+        ],
+        "potential": [
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 50 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks"
+                ]
+            },
+            {
+                "Name": "Pinch Healing",
+                "description": [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            }
+        ],
+        "support": [
+            {
+                "Characters": "Charlotte Linlin (Big Mom), Charlotte Katakuri and Charlotte Cracker",
+                "description": [
+                    "Once per adventure, when you reach the final stage, recovers 500 HP",
+                    "Once per adventure, when you reach the final stage, recovers 750 HP",
+                    "Once per adventure, when you reach the final stage, recovers 1,200 HP",
+                    "Once per adventure, when you reach the final stage, recovers 1,500 HP",
+                    "Once per adventure, when you reach the final stage, changes the orb of the supported character into a [RCV] orb and recovers 2,000 HP"
+                ]
+            }
+        ]
+    },
+    3936: {
+        "captain": {
+            "base": "Boosts ATK of [INT] and Cerebral characters by 2.5x and boosts HP [INT] and Cerebral characters' HP by 1.1x.",
+            "level1": "Boosts ATK of [INT] and Cerebral characters by 2.75x and boosts HP [INT] and Cerebral characters' HP by 1.1x.",
+            "level2": "Boosts ATK of [INT] and Cerebral characters by 3x and boosts HP [INT] and Cerebral characters' HP by 1.2x.",
+            "level3": "Boosts ATK of [INT] and Cerebral characters by 3.25x and boosts HP [INT] and Cerebral characters' HP by 1.2x.",
+            "level4": "Boosts ATK of [INT] and Cerebral characters by 3.5x and boosts HP [INT] and Cerebral characters' HP by 1.3x.",
+            "level5": "Boosts ATK of [INT] and Cerebral characters by 3.75x and boosts HP [INT] and Cerebral characters' HP by 1.3x.",
+            "level6": "Boosts ATK of [INT] and Cerebral characters by 3.75x, by 4.25x if HP is above 90% or below 50% at the start of the turn, boosts HP [INT] and Cerebral characters' HP by 1.3x and reduces damage received by 10%."
+        },
+        "limit": [
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base ATK by 10" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Boosts base HP by 10" },
+            { "description": "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+            { "description": "Acquire new Captain Ability: Boosts ATK of [INT] and Cerebral characters by 2.75x and boosts HP [INT] and Cerebral characters' HP by 1.1x." },
+            { "description": "Acquire Sailor Ability 1: Boosts base ATK, HP and RCV of Fighter, Striker, Shooter, Cerebral, and Powerhouse characters by 60" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base ATK by 20" },
+            { "description": "Boosts base RCV by 10" },
+            { "description": "Acquire new Captain Ability: Boosts ATK of [INT] and Cerebral characters by 3x and boosts HP [INT] and Cerebral characters' HP by 1.2x." },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Reduce base Special Cooldown by 1 turn" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base HP by 30" },
+            { "description": "Acquire new Captain Ability: Boosts ATK of [INT] and Cerebral characters by 3.25x and boosts HP [INT] and Cerebral characters' HP by 1.2x." },
+            { "description": "Reduce base Special Cooldown by 2 turn" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base RCV by 20" },
+            { "description": "Boosts base HP by 50" },
+            { "description": "Reduce base Special Cooldown by 3 turn" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Boosts base ATK by 30" },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Reduce base Special Cooldown by 4 turn" },
+            { "description": "Acquire new Captain Ability: Boosts ATK of [INT] and Cerebral characters by 3.5x and boosts HP [INT] and Cerebral characters' HP by 1.3x." },
+            { "description": "Boosts base HP by 60" },
+            { "description": "Boosts base ATK by 40" },
+            { "description": "Boosts base HP by 70" },
+            { "description": "Acquire Sailor Ability 2: Boosts this character's damage against [PSY] characters by 1.1x" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Boosts base HP by 90" },
+            { "description": "Reduce base Special Cooldown by 5 turn" },
+            { "description": "Acquire 1 additional Socket slot" },
+            { "description": "Acquire new Captain Ability: Boosts ATK of [INT] and Cerebral characters by 3.75x and boosts HP [INT] and Cerebral characters' HP by 1.3x." },
+            { "description": "Boosts base ATK by 50" },
+            { "description": "Boosts base RCV by 30" },
+            { "description": "Acquire new Captain Ability: Boosts ATK of [INT] and Cerebral characters by 3.75x, by 4.25x if HP is above 90% or below 50% at the start of the turn, boosts HP [INT] and Cerebral characters' HP by 1.3x and reduces damage received by 10%." },
+            { "description": "Acquire Potential 2: Barrier Penetration" },
+            { "description": "LOCKED WITH KEY" },
+            { "description": "Boosts base HP by 100" },
+            { "description": "Boosts base RCV by 40" },
+            { "description": "Boosts base HP by 120" },
+            { "description": "Boosts base RCV by 60" },
+            { "description": "Boosts base ATK by 60" },
+            { "description": "Boosts base HP by 130" },
+            { "description": "Boosts base ATK by 70" },
+            { "description": "Boosts base ATK by 70" },
+            { "description": "Acquire Potential 3: Nutrition/Reduce Hunger stacks" },
+        ],
+        "potential": [
+            {
+                "Name": "Enrage/Reduce Increase Damage Taken duration",
+                "description": [
+                    "Boosts base ATK by 50 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                "Name": "Barrier Penetration",
+                "description": [
+                    "This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 80% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 60% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 50% at the start of the turn"
+                ]
+            },
+            {
+                "Name": "Nutrition/Reduce Hunger stacks",
+                "description": [
+                    "Boosts base ATK by 100 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 150 the turn after recovering 3,000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 200 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 250 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by 300 the turn after recovering 3,000 HP and reduces Hunger stack by 2 stacks"
+                ]
+            }
+        ],
+        "sailor": {
+            "level1": "Boosts base ATK, HP and RCV of Fighter, Striker, Shooter, Cerebral, and Powerhouse characters by 60",
+            "level2": "Boosts this character's damage against [PSY] characters by 1.1x"
+        },
+        "special": "Increases duration of any ATK boosting buffs by 1 turn and makes PERFECTs easier to hit for 3 turns. If your crew has Chain Addition when the special is activated, inflicts all enemies with Increase Damage Taken by 1.5x for 2 turns, adds 1.2x to Chain multiplier for 3 turns otherwise. If your crew has Charlotte Katakuri as a member or supporting this character, delays all enemies by 1 turn, and paralyzes (50%) all enemies for 1 turn.",
+        "specialName": "Big Brother's Praise",
+        "support": [
+            {
+                "Characters": "Charlotte Katakuri",
+                "description": [
+                    "Once per adventure, when you reach the final stage, changes the orb of the supported character into a Matching orb.",
+                    "Once per adventure, when you reach the final stage, changes the orb of the supported character into a Matching orb.",
+                    "Once per adventure, when you reach the final stage, changes the orb of the supported character into a Matching orb.",
+                    "Once per adventure, when you reach the final stage, changes the orb of the supported character into a Matching orb.",
+                    "Once per adventure, when you reach the final stage, changes the orb of the supported character into a Matching orb and makes PERFECTs easier to hit for 1 turn."
                 ]
             }
         ]
@@ -132275,4 +132670,6 @@ if (UnitUtils){
     UnitUtils.extendDouble(calcGhostStartID, 3922, "dual");
     UnitUtils.extendDouble(calcGhostStartID, 3923, "dual");
     UnitUtils.extendDouble(calcGhostStartID, 3924, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 3932, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 3933, "dual");
 }
