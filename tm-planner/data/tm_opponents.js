@@ -7962,7 +7962,7 @@ var tm_opponents = {
                             ]
                         },
                         {
-                            type: 'Interrup - Chain Lock / Add Chain',
+                            type: 'Interrupt - Chain Lock, Add Chain',
                             action: [
                                 ['blow-away',       '99+T, Random 2 Sailor'],
                                 ['clear-buff',      'Buff Only']
@@ -13843,7 +13843,7 @@ var tm_opponents = {
                             ]
                         },
                         {
-                            type: 'Interrupt - Chain Lock',
+                            type: 'Interrupt - Chain Lock, Chain Boundary',
                             action: [
                                 ['bind',            '6T, Row 3'],
                                 ['def-null',        '1T']
@@ -14853,6 +14853,318 @@ var tm_opponents = {
                             action: [
                                 ['dmg-normal',      '?'],
                                 ['resil',           '3T']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Flampe ==========
+    3936: {
+        2115: {
+            name: 'Brulee',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Fighter/Cerebral'],
+                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Cerebral'],
+                                ['S Switch -',      '5T, Free Spirit/Fighter/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Brulee', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Bad'],
+                                ['cd-rew',          '1T, Row 2 3'],
+                                ['silence',         '5T, Row 2 3'],
+                                ['chain-down',      '5T, 0.1x'],
+                                ['chain-atk-down',  '5T, < 2.25x chain, 90%'],
+                                ['def-null',        '1T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '100K']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2346: {
+            name: 'Galette',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Cerebral/Powerhouse/Fighter'],
+                                ['VS Gauge -',      '5T, Cerebral/Powerhouse/Fighter'],
+                                ['S Switch -',      '5T, Cerebral/Powerhouse/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Galette', 'QCK'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '9T, Row 2'],
+                                ['atk-down',        '6T, 90%'],
+                                ['cd-rew',          '1T'],
+                                ['def-thres',       '5T, 90%, 1000'],
+                                ['immu-poison',     '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '30%'],
+                                ['para',            '3T'],
+                                ['def',             '1T, 10000x']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3637: {
+            name: 'Smoothie',
+            type: 'STR',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/STR/INT'],
+                                ['VS Gauge -',      '5T, QCK/STR/INT'],
+                                ['S Switch -',      '5T, QCK/STR/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Smoothie', 'STR'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '3T'],
+                                ['bind',            '8T, Row 2 3'],
+                                ['slot-block',      'All'],
+                                ['desp',            '9T'],
+                                ['slot-bind',       '5T, Row 1']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Chain Lock, Chain Boundary',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['cd-rew',          '2T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3782: {
+            name: 'Pudding',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Pudding', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '12T'],
+                                ['burn',            '6T, 20000'],
+                                ['sp-limit',        '1T, 3x'],
+                                ['def-perc',        '3T, 90%'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2536: {
+            name: 'Big Mom',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/DEX/INT'],
+                                ['VS Gauge -',      '5T, QCK/DEX/INT'],
+                                ['S Switch -',      '8T, QCK/DEX/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Big Mom', 'QCK'],
+                    hp_: 3000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '1T'],
+                                ['burn',            '6T, 10000'],
+                                ['def-perc',        '3T, 90%'],
+                                ['def-thres',       '3T, 90%, 1000'],
+                                ['bar-p',           '2T, 4x']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Big Mom', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['bind',            '7T, Row 2 3'],
+                                ['def',             '7T, 10000x'],
+                                ['nao',             '99+T'],
+                                ['bar-slot',        '1T, 3x, RCV'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Dmg Reduction',
+                            action: [
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '10M'],
+                                ['dmg-normal',      '80000'],
+                                ['hunger',          '2x']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3936: {
+            name: 'Flampe',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Cerebral/Free Spirit/Fighter'],
+                                ['VS Gauge -',      '5T, Cerebral/Free Spirit/Fighter'],
+                                ['S Switch -',      '8T, Cerebral/Free Spirit/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Flampe', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['hunger',          '2x'],
+                                ['para',            '7T'],
+                                ['No Heal',         '5T'],
+                                ['cd-rew',          '2T'],
+                                ['Fear',            '1T, Row 2 3'],
+                                ['Pain',            '3T, 5%'],
+                                ['def',             '3T, 10000x']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Flampe', 'QCK'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Super BLOCK [if HP<99%]'],
+                                ['def-null',        '1T [if HP<99%]'],
+                                ['bind',            '9T, Col L'],
+                                ['silence',         '6T'],
+                                ['def-perc',        '6T, 80%'],
+                                ['def-thres',       '4T, 90%, 1000'],
+                                ['nao',             '99+T'],
+                                ['immu-delay',      '99+T']
                             ]
                         }
                     ]

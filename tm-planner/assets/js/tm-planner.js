@@ -502,10 +502,12 @@ function getBoosters(tmId, server) {
         $('#info_1_2x_alt').show();
     } else if (
         tmId == 3621 ||
-        tmId == 3915
+        tmId == 3915 ||
+        tmId == 3936
     ) {
         // TM Sabo
         // TM Akainu
+        // TM Flampe
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
@@ -941,6 +943,7 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Counter' ||
         iconKey === '- Max HP' ||
         iconKey === 'Bad Slot+' ||
+        iconKey === 'Pain' ||
         iconKey === 'VS Gauge -' ||
         iconKey === 'S Switch -'
     )
