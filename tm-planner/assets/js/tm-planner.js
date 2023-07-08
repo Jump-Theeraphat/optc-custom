@@ -1003,11 +1003,10 @@ function parseVsUnitIdForCalc(vsId) {
         return 5432;
 
     // Whitebeard VS Blackbeard
-    /*if (vsId === 9009)
-        return 5431;
+    if (vsId === 9009)
+        return 5474;
     if (vsId === 9010)
-        return 5432;
-    */
+        return 5475;
 
     return vsId;
 }
