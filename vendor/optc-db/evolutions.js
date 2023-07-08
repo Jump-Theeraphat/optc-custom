@@ -5467,6 +5467,10 @@ window.evolutions = {
         evolution: 3845,
         evolvers: [ "skullRedHair", "skullRedHair", "skullRedHair", "skullPSY", "skullQCK" ]
     },
+    3847: {
+        evolution: 3848,
+        evolvers: [  ]
+    },
     3849: {
         evolution: 3850,
         evolvers: [  ]
@@ -5541,6 +5545,22 @@ window.evolutions = {
     },
     3909: {
         evolution: 3910,
+        evolvers: [  ]
+    },
+    3916: {
+        evolution: 3917,
+        evolvers: [  ]
+    },
+    1985: {
+        evolution: 3920,
+        evolvers: [  ]
+    },
+    3921: {
+        evolution: 3922,
+        evolvers: [  ]
+    },
+    3923: {
+        evolution: 3924,
         evolvers: [  ]
     },
     4986: {
