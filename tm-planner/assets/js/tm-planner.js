@@ -2283,7 +2283,7 @@ function getSupportList() {
     var supportList = {};
     var count = 0;
     for (i in details) {
-        if (details[i].support) {
+        if (details[i].support && details[i].support.length > 0) {
             supportList[count] = {};
             supportList[count].id = i;
             supportList[count].supportChar = modifyCharStyle(details[i].support[0].Characters);
