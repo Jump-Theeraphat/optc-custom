@@ -12789,13 +12789,18 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['cd-rew',          '2T, Row 1 [if has cost>40]'],
                                 ['atk-down',        '5T, 90%'],
-                                ['para',            '7T, Row 2 3 [if has cost>40]'],
                                 ['para',            '5T, Row 2 3'],
                                 ['nao',             '99+T'],
                                 ['blind',           '5T'],
                                 ['bar-p',           '2T, 3x']
+                            ]
+                        },
+                        {
+                            type: 'Preemp (if has cost>40)',
+                            action: [
+                                ['cd-rew',          '2T, Row 1 [if has cost>40]'],
+                                ['para',            '7T, Row 2 3 [if has cost>40]']
                             ]
                         },
                         {
@@ -15157,14 +15162,19 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-change',     'Super BLOCK [if HP<99%]'],
-                                ['def-null',        '1T [if HP<99%]'],
                                 ['bind',            '9T, Col L'],
                                 ['silence',         '6T'],
                                 ['def-perc',        '6T, 80%'],
                                 ['def-thres',       '4T, 90%, 1000'],
                                 ['nao',             '99+T'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Preemp (if HP<99%)',
+                            action: [
+                                ['slot-change',     'Super BLOCK [if HP<99%]'],
+                                ['def-null',        '1T [if HP<99%]']
                             ]
                         }
                     ]
