@@ -934,6 +934,7 @@ function decorateStr(str, isGuide) {
 
 function decorateSpIcon(iconKey, isAction) {
     if (iconKey === 'No Heal' ||
+        iconKey === 'Low Heal' ||
         iconKey === 'Swap Captain' ||
         iconKey === 'Ship Bind' ||
         iconKey === 'CD Lock' ||
@@ -944,6 +945,7 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === '- Max HP' ||
         iconKey === 'Bad Slot+' ||
         iconKey === 'Pain' ||
+        iconKey === 'Bleed' ||
         iconKey === 'VS Gauge -' ||
         iconKey === 'S Switch -'
     )

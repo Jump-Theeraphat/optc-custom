@@ -14889,7 +14889,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Brulee', 'INT'],
-                    hp_: 2000000,
+                    hp: 1600000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14908,6 +14908,32 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['dmg-normal',      '100K']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['No Heal',         '5T'],
+                                ['slot-change',     'Bad']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['resil',           '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['def',             '4T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -14935,7 +14961,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Galette', 'QCK'],
-                    hp_: 1600000,
+                    hp: 1600000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14954,6 +14980,20 @@ var tm_opponents = {
                                 ['heal',            '30%'],
                                 ['para',            '3T'],
                                 ['def',             '1T, 10000x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['para',            '1T'],
+                                ['bar-slot',        '1T, 1x, INT']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['atk',             '3T'],
+                                ['Ship Bind',       '3T']
                             ]
                         }
                     ]
@@ -14981,7 +15021,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Smoothie', 'STR'],
-                    hp_: 1600000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -14999,6 +15039,26 @@ var tm_opponents = {
                             action: [
                                 ['clear-buff',      'Buff Only'],
                                 ['cd-rew',          '2T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def',             '5T'],
+                                ['dmg-normal',      '50000']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['atk',             '5T'],
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        },
+                        {
+                            type: '<50%',
+                            action: [
+                                ['para',            '5T']
                             ]
                         }
                     ]
@@ -15026,7 +15086,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Pudding', 'QCK'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -15037,6 +15097,24 @@ var tm_opponents = {
                                 ['sp-limit',        '1T, 3x'],
                                 ['def-perc',        '3T, 90%'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['tap-limit',       '5T, 4x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['clear-buff',      'Buff Only']
                             ]
                         }
                     ]
@@ -15064,7 +15142,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Big Mom', 'QCK'],
-                    hp_: 3000000,
+                    hp: 3000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -15075,6 +15153,26 @@ var tm_opponents = {
                                 ['def-perc',        '3T, 90%'],
                                 ['def-thres',       '3T, 90%, 1000'],
                                 ['bar-p',           '2T, 4x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['blow-away',       '?T, Random 2'],
+                                ['No Heal',         '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['cd-rew',          '3T'],
+                                ['hunger',          '3x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['atk',             '3T']
                             ]
                         }
                     ]
@@ -15108,6 +15206,22 @@ var tm_opponents = {
                                 ['heal',            '10M'],
                                 ['dmg-normal',      '80000'],
                                 ['hunger',          '2x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['dmg-eot-e',       '3T'],
+                                ['hunger',          '3x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['No Heal',         '5T'],
+                                ['Fear',            '3T, Row 2 3'],
+                                ['resil',           '3T']
                             ]
                         }
                     ]
@@ -15150,6 +15264,19 @@ var tm_opponents = {
                                 ['Pain',            '3T, 5%'],
                                 ['def',             '3T, 10000x']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['Low Heal',        '3T'],
+                                ['atk',             '3T']
+                            ]
                         }
                     ]
                 },
@@ -15175,6 +15302,29 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'Super BLOCK [if HP<99%]'],
                                 ['def-null',        '1T [if HP<99%]']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['blind',           '5T'],
+                                ['def',             '3T'],
+                                ['bar-p',           '3T, 2x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['blow-away',       '5T, Row 3'],
+                                ['desp',            '5T'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['Bleed',           '3T'],
+                                ['resil',           '3T']
                             ]
                         }
                     ]
