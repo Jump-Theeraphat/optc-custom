@@ -1,7 +1,5 @@
 var tm_boosters = [
     // TMs
-    3864,
-    3894,
     3915,
     3936,
 
@@ -11,8 +9,6 @@ var tm_boosters = [
     3931,
 
     // Kizunas
-    3868,
-    3903,
     3920,
 
     // PKAs
@@ -20,6 +16,4 @@ var tm_boosters = [
     3927,
 
     // Events
-    3874,
-    3887,
 ]
