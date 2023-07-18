@@ -202,4 +202,8 @@ var kizunas = {
         name: 'Luffy & Ace 6+ (~ 6am)',
         thumb: 3920
     },
+    3942: {
+        name: 'Perona (~ 6am)',
+        thumb: 3942
+    },
 };
