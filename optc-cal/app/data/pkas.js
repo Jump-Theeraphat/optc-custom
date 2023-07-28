@@ -7,4 +7,8 @@ var pkas = {
         name: 'Sanji',
         thumb: 3927
     },
+    3952: {
+        name: 'Maha',
+        thumb: 3952
+    },
 };
