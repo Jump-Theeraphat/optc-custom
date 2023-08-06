@@ -97,12 +97,12 @@ var specials = {
     },
     'bb_3520': {
         type: 'Blitz Battle',
-        name: 'Vs. Navy (1am ~ 6am)',
+        name: 'VS Navy (1am ~ 6am)',
         thumb: 3520
     },
     'bb_3560': {
         type: 'Blitz Battle',
-        name: 'Samurai Vs. Dragon (1am ~ 6am)',
+        name: 'Samurai VS Dragon (1am ~ 6am)',
         thumb: 3560
     },
     'bb_3620': {
@@ -117,7 +117,7 @@ var specials = {
     },
     'bb_3743': {
         type: 'Blitz Battle',
-        name: 'Heart Vs. Heavenly Demon (1am ~ 6am)',
+        name: 'Heart VS Heavenly Demon (1am ~ 6am)',
         thumb: 3743
     },
     'bb_3796': {
@@ -127,13 +127,18 @@ var specials = {
     },
     'bb_3832': {
         type: 'Blitz Battle',
-        name: 'Little Bro Vs. Big Bros (1am ~ 6am)',
+        name: 'Little Bro VS Big Bros (1am ~ 6am)',
         thumb: 3832
     },
     'bb_3887': {
         type: 'Blitz Battle',
         name: '9th Anniversary (1am ~ 6am)',
         thumb: 3887
+    },
+    'bb_3956': {
+        type: 'Blitz Battle',
+        name: 'Luffy VS Kaido (1am ~ 6am)',
+        thumb: 3956
     },
 
     'wc_2401': {
