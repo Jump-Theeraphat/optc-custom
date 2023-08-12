@@ -580,6 +580,18 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 3965) {
+        // TM Yamato
+        $('#div_2x').show();
+        $('#div_1_8x').show();
+        $('#div_1_6x').show();
+        $('#div_1_5x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -946,6 +958,7 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Bad Slot+' ||
         iconKey === 'Pain' ||
         iconKey === 'Bleed' ||
+        iconKey === 'Lock Target' ||
         iconKey === 'VS Gauge -' ||
         iconKey === 'S Switch -'
     )

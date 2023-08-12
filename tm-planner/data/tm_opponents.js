@@ -15332,4 +15332,347 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Yamato ==========
+    3965: {
+        3797: {
+            name: 'King',
+            type: 'DEX',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Shooter/Slasher/Fighter'],
+                                ['VS Gauge -',      '5T, Shooter/Slasher/Fighter'],
+                                ['S Switch -',      '5T, Shooter/Slasher/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['King', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '6T, 90%'],
+                                ['silence',         '5T'],
+                                ['para',            '5T'],
+                                ['nao',             '99+T'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['def-perc',        '6T, 80%'],
+                                ['def',             '6T, 100Kx'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '100%']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3962: {
+            name: 'Ushimaru',
+            type: 'PSY',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ushimaru', 'PSY'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '8T, Row 2 3'],
+                                ['atk-down',        '5T, 90%'],
+                                ['hunger',          '2x'],
+                                ['slot-bind',       '5T, Row 1']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '70000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3963: {
+            name: 'Omusubi',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/INT/STR'],
+                                ['VS Gauge -',      '5T, PSY/INT/STR'],
+                                ['S Switch -',      '5T, PSY/INT/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Omusubi', 'INT'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '8T'],
+                                ['silence',         '3T'],
+                                ['cd-rew',          '2T, Captain'],
+                                ['nao',             '99+T'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['def',             '6T, 10000x']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3964: {
+            name: 'Tempura',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Cerebral/Free Spirit/Powerhouse'],
+                                ['VS Gauge -',      '5T, Cerebral/Free Spirit/Powerhouse'],
+                                ['S Switch -',      '5T, Cerebral/Free Spirit/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Tempura', 'QCK'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '8T, Row 1 3'],
+                                ['desp',            '9T'],
+                                ['slot-block',      'All'],
+                                ['para',            '8T'],
+                                ['bar-slot',        '1T, 1x, TND'],
+                                ['nao',             '99+T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['slot-change',     'Color'],
+                                ['slot-neg',        '5T, Color']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3389: {
+            name: 'Kaido',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/QCK/PSY'],
+                                ['VS Gauge -',      '5T, STR/QCK/PSY'],
+                                ['S Switch -',      '8T, STR/QCK/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp_: 3000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '5T, Row 2 3'],
+                                ['resil',           '7T'],
+                                ['Lock Target',     '5T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - EoT Damage',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['cd-rew',          '2T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kaido', 'INT'],
+                    hp_: 3000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['atk-down',        '7T, 90%'],
+                                ['bind',            '12T, Row 1 3'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '50000']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 4,
+                    boss: ['Kaido', 'INT'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '6T'],
+                                ['stun',            'Row 1 3'],
+                                ['nao',             '99+T'],
+                                ['resil',           '5T'],
+                                ['def',             '6T, 10000x'],
+                                ['def-perc',        '7T, 80%'],
+                                ['hunger',          '5x']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['blow-away',       '5T, Captain'],
+                                ['slot-bind',       '5T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3430: {
+            name: 'Yamato',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Free Spirit/Fighter'],
+                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Fighter'],
+                                ['S Switch -',      '8T, Slasher/Free Spirit/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Yamato', 'INT'],
+                    hp_: 1500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'Para'],
+                                ['stun',            'Col L'],
+                                ['bind',            '9T, Row 1 3'],
+                                ['bar-slot',        '2T, 2x, WANO'],
+                                ['Counter',         '?%']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '50x atk']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Yamato', 'INT'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['chain-atk-down',  '3T, > 4x chain, 90%'],
+                                ['chain-atk-down',  '3T, < 3.25x chain, 90%'],
+                                ['slot-block',      'All'],
+                                ['bind',            '9T, Row 1'],
+                                ['cd-rew',          '5T, Row 1 3'],
+                                ['bar-hit',         '3T, 25x']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['slot-change',     'Super BLOCK']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
