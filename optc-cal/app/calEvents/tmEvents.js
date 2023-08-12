@@ -502,4 +502,10 @@ var tmEvents = [
         end: '2023-07-16',
         pst_19: false
     },
+    {
+        id: 3965,
+        start: '2023-08-16',
+        end: '2023-08-20',
+        pst_19: false
+    },
 ]
