@@ -137,7 +137,7 @@ const SeaCat = [ "Sea Cat" ];
 const Dugong = [ "Dugong" ];
 const BananaGator = [ "Banana Gator" ];
 const SandoraDragon = [ "Sandora Dragon" ];
-const Crocodile = [ "Crocodile", "Mr. 0" ];
+const Crocodile = [ "Crocodile", "Mr. 0", "Sir Crocodile" ];
 const Hogback = [ "Hogback" ];
 const VictoriaCindry = [ "Victoria Cindry" ];
 const EmporioIvankov = [ "Emporio Ivankov" ];
@@ -604,7 +604,7 @@ const Holdem = [ "Holdem" ];
 const Speed = [ "Speed" ];
 const CharlottePoire = [ "Charlotte Poire" ];
 const KozukiHiyori = [ "Kozuki Hiyori", "Komurasaki" ];
-const Kikunojo = [ "Kikunojo" ];
+const Kikunojo = [ "Kikunojo", "Okiku" ];
 const Tama = [ "Tama" ];
 const MissTsuru = [ "Miss Tsuru", "Otsuru", "Tsurunojo" ];
 const Denjiro = [ "Denjiro", "Kyoshiro" ];
@@ -674,6 +674,12 @@ const Inbi = [ "Inbi" ];
 const Fuga = [ "Fuga" ];
 const Zanki = [ "Zanki" ];
 const Lim = [ "Lim" ];
+const BaoHuang = [ "Bao Huang" ];
+const Moda = [ "Moda" ];
+const Maha = [ "Maha" ];
+const ShimotsukiUshimaru = [ "Shimotsuki Ushimaru" ];
+const FugetsuOmusubi = [ "Fugetsu Omusubi" ];
+const UzukiTempura = [ "Uzuki Tempura" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4511,6 +4517,34 @@ window.families = {
     3934: [ ...CharlottePudding ],
     3935: [ ...CharlotteSmoothie ],
     3936: [ ...CharlotteFlampe ],
+    3937: [ ...KozukiHiyori ],
+    3938: [ ...BaoHuang ],
+    3939: [ ...Moda ],
+    3940: [ ...Nami, ...NicoRobin ],
+    3941: [ ...Perona ],
+    3942: [ ...Perona ],
+    3943: [ ...NefertariVivi, ...Rebecca, ...Shirahoshi, ...Mansherry ],
+    3944: [ ...NefertariVivi, ...Rebecca, ...Shirahoshi, ...Mansherry ],
+    3945: [ ...Viola ],
+    3946: [ ...JewelryBonney ],
+    3947: [ ...Izo ],
+    3948: [ ...Izo ],
+    3949: [ ...Marco ],
+    3950: [ ...Kikunojo ],
+    3951: [ ...Usopp ],
+    3952: [ ...Maha ],
+    3953: [ ...Kawamatsu ],
+    3954: [ ...Kawamatsu ],
+    3955: [ ...MonkeyDLuffy ],
+    3956: [ ...MonkeyDLuffy ],
+    3958: [ ...KozukiMomonosuke ],
+    3959: [ ...KozukiMomonosuke ],
+    3960: [ ...KozukiHiyori ],
+    3961: [ ...Denjiro ],
+    3962: [ ...ShimotsukiUshimaru ],
+    3963: [ ...FugetsuOmusubi ],
+    3964: [ ...UzukiTempura ],
+    3965: [ ...Yamato ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
@@ -5048,6 +5082,10 @@ const ghostFamilies = {
     517: [ ...Nami, ...Carrot ],
     518: [ ...Nami, ...Carrot ],
     519: [ ...Nami, ...Carrot ],
+    520: [ ...Nami, ...NicoRobin ],
+    521: [ ...Nami, ...NicoRobin ],
+    522: [ ...Nami, ...NicoRobin ],
+    523: [ ...Nami, ...NicoRobin ],
 }
 
 Object.keys(ghostFamilies).forEach(function (key) {
