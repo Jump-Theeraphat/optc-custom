@@ -33249,4 +33249,538 @@ var tm_boosters = {
             x_pts: 1.2
         },
     ],
+
+    // ========== Lead Performers ==========
+    3981: [
+        {
+            id: 3978,
+            x_pts: 2
+        },
+        {
+            id: 3979,
+            x_pts: 1.8
+        },
+        {
+            id: 3980,
+            x_pts: 1.6
+        },
+        {
+            id: 3971,
+            x_pts: 1.5
+        },
+        {
+            id: 3973,
+            x_pts: 1.5
+        },
+        {
+            id: 3965,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 3944,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3948,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3959,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3969,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3967,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3954,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3956,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3945,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3949,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3950,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3951,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3960,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3961,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3974,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3975,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3976,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3940,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3364,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3462,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3483,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3523,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3543,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3563,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3641,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3735,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3775,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3861,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3933,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3946,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2064,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2659,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3060,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3645,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3663,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3712,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3864,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3915,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3936,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3981,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3941,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3942,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3952,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3920,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3922,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3924,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3925,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3926,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3776,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3777,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3819,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3820,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3821,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3934,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3935,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3962,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3963,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3964,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 390,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 836,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1374,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1879,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2015,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2158,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2356,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2394,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2552,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2684,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2795,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2885,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2886,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 3209,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1251,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1630,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2323,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2375,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2755,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2813,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2845,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3017,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3499,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3580,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3931,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 899,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1051,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1072,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1963,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2146,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 3108,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3539,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3927,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2936,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3886,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2938,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2940,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2942,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2944,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2946,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2948,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2950,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2952,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3884,
+            type: 'other',
+            x_pts: 1.2
+        },
+    ],
 };

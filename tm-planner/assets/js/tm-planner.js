@@ -580,8 +580,12 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
-    } else if (tmId == 3965) {
+    } else if (
+        tmId == 3965 ||
+        tmId == 3981
+    ) {
         // TM Yamato
+        // TM Lead Performers
         $('#div_2x').show();
         $('#div_1_8x').show();
         $('#div_1_6x').show();

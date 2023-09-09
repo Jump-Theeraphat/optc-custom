@@ -11533,7 +11533,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-change',     'Super BLOCK'],
+                                ['slot-change',     'S.BLOCK'],
                                 ['nao',             '99+T'],
                                 ['desp',            '10T'],
                                 ['silence',         '5T, Row 2 3'],
@@ -11551,7 +11551,7 @@ var tm_opponents = {
                         {
                             type: '<50%',
                             action: [
-                                ['slot-change',     'Super BLOCK'],
+                                ['slot-change',     'S.BLOCK'],
                                 ['desp',            '?T']
                             ]
                         }
@@ -15300,7 +15300,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp (if HP<99%)',
                             action: [
-                                ['slot-change',     'Super BLOCK [if HP<99%]'],
+                                ['slot-change',     'S.BLOCK [if HP<99%]'],
                                 ['def-null',        '1T [if HP<99%]']
                             ]
                         },
@@ -15801,7 +15801,7 @@ var tm_opponents = {
                         {
                             type: 'Interrupt - Slot Change',
                             action: [
-                                ['slot-change',     'Super BLOCK']
+                                ['slot-change',     'S.BLOCK']
                             ]
                         },
                         {
@@ -15833,6 +15833,317 @@ var tm_opponents = {
                             type: '<20%',
                             action: [
                                 ['dmg-normal',      'Deadly']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Lead Performers ==========
+    3981: {
+        3772: {
+            name: 'Page One',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Page One', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '6T'],
+                                ['hunger',          '2x'],
+                                ['silence',         '5T'],
+                                ['para',            '5T'],
+                                ['resil',           '6T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3773: {
+            name: 'Sasaki',
+            type: 'INT',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Powerhouse/Fighter/Free Spirit'],
+                                ['VS Gauge -',      '5T, Powerhouse/Fighter/Free Spirit'],
+                                ['S Switch -',      '5T, Powerhouse/Fighter/Free Spirit']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sasaki', 'INT'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['para',            '7T'],
+                                ['silence',         '7T, Row 1'],
+                                ['chain-atk-down',  '2T, > 4x chain, 90%'],
+                                ['chain-atk-down',  '2T, < 2.5x chain, 90%'],
+                                ['nao',             '99+T'],
+                                ['def',             '6T, 10000x'],
+                                ['bar-slot',        '2T, 1x, TND']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3876: {
+            name: 'Who\'s-Who',
+            type: 'QCK',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Driven/Powerhouse/Cerebral'],
+                                ['VS Gauge -',      '5T, Driven/Powerhouse/Cerebral'],
+                                ['S Switch -',      '5T, Driven/Powerhouse/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Who\'s-Who', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['dmg-up',          '3T'],
+                                ['slot-change',     'QCK'],
+                                ['sp-limit',        '2T, 2x'],
+                                ['burn',            '6T, 20000'],
+                                ['nao',             '99+T'],
+                                ['bar-slot',        '1T, 1x, WANO'],
+                                ['resil',           '5T'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['slot-bind',       '5T'],
+                                ['def-perc',        '5T, 90%']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3924: {
+            name: 'Black Maria & Ulti',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/QCK/STR'],
+                                ['VS Gauge -',      '5T, PSY/QCK/STR'],
+                                ['S Switch -',      '5T, PSY/QCK/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Black Maria & Ulti', 'INT'],
+                    hp_: 1400000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '10T'],
+                                ['cd-rew',          '1T, Row 2 3'],
+                                ['slot-block',      'All'],
+                                ['atk-down',        '5T, 90%'],
+                                ['bind',            '8T, Col L'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3981: {
+            name: 'Lead Performers',
+            type: 'PSY',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/INT/DEX'],
+                                ['VS Gauge -',      '5T, PSY/INT/DEX'],
+                                ['S Switch -',      '5T, PSY/INT/DEX']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Lead Performers', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['blind',           '3T'],
+                                ['burn',            '7T, 20000'],
+                                ['resil',           '7T'],
+                                ['bar-p',           '3T, 2x']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lead Performers', 'PSY'],
+                    hp_: 4000000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['silence',         '7T, Row 1'],
+                                ['para',            '6T'],
+                                ['nao',             '99+T'],
+                                ['chain-atk-down',  '3T, < 3.5x chain, 90%'],
+                                ['def',             '7T, 10000x'],
+                                ['def-perc',        '6T, 90%'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Orb Boost',
+                            action: [
+                                ['stun',            'Row 3'],
+                                ['slot-change',     'S.BLOCK, Row 1']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3973: {
+            name: 'O-Lin',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Free Spirit/Powerhouse'],
+                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Powerhouse'],
+                                ['S Switch -',      '5T, Slasher/Free Spirit/Powerhouse']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['O-Lin', '?'],
+                    hp_: 1500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bar-hit',         '2T, 25x'],
+                                ['slot-block',      'All'],
+                                ['nao',             '99+T'],
+                                ['def',             '5T, 10000x'],
+                                ['resil',           '3T'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['Lock Target',     '1T'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '100%'],
+                                ['burn',            '11T, 20000']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['O-Lin', 'INT'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['bind',            '9T, Row 1 2'],
+                                ['slot-block',      'BLOCK/PARA'],
+                                ['nao',             '99+T'],
+                                ['def',             '6T, 10000x'],
+                                ['bar-slot',        '2T, 1x, TND'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Orb Boost',
+                            action: [
+                                ['burn',            '5T, 20000'],
+                                ['resil',           '3T']
                             ]
                         }
                     ]
