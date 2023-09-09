@@ -334,4 +334,9 @@ var tms = {
         thumb: 3965,
         info: ''
     },
+    3981: {
+        name: 'Lead Performers (1am ~ 6am)',
+        thumb: 3981,
+        info: ''
+    },
 };
