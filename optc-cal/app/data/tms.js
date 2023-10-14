@@ -339,4 +339,9 @@ var tms = {
         thumb: 3981,
         info: ''
     },
+    4006: {
+        name: 'Baccarat & Dice & Mr. Tanaka (1am ~ 6am)',
+        thumb: 4006,
+        info: ''
+    },
 };
