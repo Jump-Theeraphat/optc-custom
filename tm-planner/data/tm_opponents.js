@@ -16313,4 +16313,318 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Baccarat & Dice & Mr. Tanaka ==========
+    4006: {
+        738: {
+            name: 'Spandam',
+            type: 'DEX',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Spandam', 'DEX'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '8T'],
+                                ['sp-limit',        '1T, 2x'],
+                                ['def',             '4T, 1Mx'],
+                                ['resil',           '4T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1165: {
+            name: 'Carina',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/DEX/STR'],
+                                ['VS Gauge -',      '5T, QCK/DEX/STR'],
+                                ['S Switch -',      '5T, QCK/DEX/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Carina', 'STR'],
+                    hp_: 1400000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['def-perc',        '5T, 90%'],
+                                ['slot-change',     'Bad'],
+                                ['def',             '6T, 1Mx'],
+                                ['nao',             '99+T'],
+                                ['chain-atk-down',  '2T, < 3.5x chain, 90%'],
+                                ['bar-slot',        '1T, 1x, RAINBOW'],
+                                ['Intimidate',      '3T, -2T, Lock Chain']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3422: {
+            name: 'Lucci',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/INT/QCK'],
+                                ['VS Gauge -',      '5T, PSY/INT/QCK'],
+                                ['S Switch -',      '5T, PSY/INT/QCK'],
+                                ['cd-rew',          '2T, Friend Cap'],
+                                ['blow-away',       '3T, Row 3'],
+                                ['bar-slot',        '1T, 3x, TND']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Lucci', 'INT'],
+                    hp_: 0,
+                    atk_: 0,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '8T'],
+                                ['silence',         '6T'],
+                                ['atk-down',        '6T, 90%']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lucci', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['Swap Captain',    '5T, Random Sailor'],
+                                ['chain-atk-down',  '3T, < 2.5x chain, 90%'],
+                                ['def-perc',        '5T, 90%'],
+                                ['def-thres',       '5T, 99%, 1000'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4004: {
+            name: 'Raise Max',
+            type: 'DEX',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/INT/PSY'],
+                                ['VS Gauge -',      '5T, STR/INT/PSY'],
+                                ['S Switch -',      '5T, STR/INT/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Raise Max', 'DEX'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['def-perc',        '6T, 90%'],
+                                ['slot-block',      'All'],
+                                ['atk-down',        '3T, 90%'],
+                                ['cd-rew',          '1T, Row 2 3'],
+                                ['def',             '4T, 1Mx'],
+                                ['def-thres',       '4T, 99%, 1000'],
+                                ['nao',             '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-up',          '4T'],
+                                ['heal',            '1000'],
+                                ['def-null',        '1T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4000: {
+            name: 'Tesoro',
+            type: 'STR',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Slasher/Fighter'],
+                                ['VS Gauge -',      '5T, Free Spirit/Slasher/Fighter'],
+                                ['S Switch -',      '5T, Free Spirit/Slasher/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Tesoro', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hp-cut',          '91%'],
+                                ['atk-down',        '5T, 90%'],
+                                ['cd-rew',          '2T, Row 1'],
+                                ['cd-rew',          '4T, Row 2'],
+                                ['nao',             '99+T'],
+                                ['def-thres',       '5T, 99%, 1000']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Tesoro', 'STR'],
+                    hp: 3000000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['dmg-normal',      '30000'],
+                                ['slot-block',      'All'],
+                                ['silence',         '7T'],
+                                ['para',            '6T'],
+                                ['resil',           '6T'],
+                                ['bar-slot',        '1T, 1x, BLOCK'],
+                                ['immu-all',        '99+T, Except Delay']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4006: {
+            name: 'Baccarat & Dice & Mr. Tanaka',
+            type: 'STR',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Slasher/Fighter'],
+                                ['VS Gauge -',      '5T, Free Spirit/Slasher/Fighter'],
+                                ['S Switch -',      '5T, Free Spirit/Slasher/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Baccarat', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['def-perc',        '6T, 90%'],
+                                ['orb-boost',       '3T, 1.1x'],
+                                ['silence',         '6T'],
+                                ['slot-change',     'PSY/INT'],
+                                ['nao',             '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Baccarat & Dice & Mr. Tanaka', 'STR'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'S.BLOCK, Row 1, 3'],
+                                ['atk-down',        '6T, 90%'],
+                                ['def',             '6T, 1Mx'],
+                                ['bar-slot',        '1T, 2x, G'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost',
+                            action: [
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '150,000']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

@@ -33783,4 +33783,773 @@ var tm_boosters = {
             x_pts: 1.2
         },
     ],
+
+    // ========== Baccarat & Dice & Mr. Tanaka ==========
+    4006: [
+        {
+            id: 4003,
+            x_pts: 2
+        },
+        {
+            id: 4004,
+            x_pts: 1.7
+        },
+        {
+            id: 4005,
+            x_pts: 1.7
+        },
+        {
+            id: 3993,
+            x_pts: 1.5
+        },
+        {
+            id: 3995,
+            x_pts: 1.5
+        },
+        {
+            id: 3981,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 3986,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3989,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4000,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3967,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3957,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3971,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3973,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3984,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3974,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3975,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3987,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3988,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3996,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3997,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3998,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3990,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3991,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3999,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3969,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3364,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3462,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3483,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3523,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3543,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3563,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3641,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3735,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3775,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3861,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3933,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 1941,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2823,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2995,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3239,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3506,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3567,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3689,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3801,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3894,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3965,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4006,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3976,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2099,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2201,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3693,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2330,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2681,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2991,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3811,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3940,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3944,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3948,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3959,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3954,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3680,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3721,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3816,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3956,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3839,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2101,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2103,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2105,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2107,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2203,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2205,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2332,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2334,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3698,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3700,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3945,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3949,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3950,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3951,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3960,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3961,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3463,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3464,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3686,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3687,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3688,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3962,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3963,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3964,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3978,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3979,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3980,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 353,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 355,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 575,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 978,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1108,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1163,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1165,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1298,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1595,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1815,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1943,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2517,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2819,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2893,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2922,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2923,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 3946,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 862,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 924,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 926,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1102,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1104,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1106,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2037,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2193,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2249,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2290,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2550,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3235,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3329,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1095,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1097,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1167,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1169,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1171,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1606,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2177,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2457,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2521,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2526,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2665,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2666,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2723,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 3941,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3942,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2883,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2884,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3701,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3713,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3952,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 4024,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2936,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3886,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2938,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2940,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2942,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2944,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2946,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2948,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2950,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2952,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3884,
+            type: 'other',
+            x_pts: 1.2
+        },
+    ],
 };

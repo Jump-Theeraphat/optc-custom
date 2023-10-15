@@ -596,6 +596,17 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 4006) {
+        // TM Baccarat & Dice & Mr. Tanaka
+        $('#div_2x').show();
+        $('#div_1_7x').show();
+        $('#div_1_5x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -963,6 +974,7 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Pain' ||
         iconKey === 'Bleed' ||
         iconKey === 'Lock Target' ||
+        iconKey === 'Intimidate' ||
         iconKey === 'VS Gauge -' ||
         iconKey === 'S Switch -'
     )
