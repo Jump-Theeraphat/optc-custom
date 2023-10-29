@@ -140,6 +140,11 @@ var specials = {
         name: 'Luffy VS Kaido (1am ~ 6am)',
         thumb: 3956
     },
+    'bb_3993': {
+        type: 'Blitz Battle',
+        name: 'Straw Hat And Diva (1am ~ 6am)',
+        thumb: 3993
+    },
 
     'wc_2401': {
         type: 'World Clash',
