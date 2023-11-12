@@ -607,6 +607,18 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 4033) {
+        // TM Blueno & Bepo & Sunny-kun
+        $('#div_2x').show();
+        $('#div_1_8x').show();
+        $('#div_1_7x').show();
+        $('#div_1_6x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();

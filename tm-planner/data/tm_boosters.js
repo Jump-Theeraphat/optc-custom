@@ -34552,4 +34552,764 @@ var tm_boosters = {
             x_pts: 1.2
         },
     ],
+
+    // ========== Blueno & Bepo & Sunny-kun ==========
+    4033: [
+        {
+            id: 4029,
+            x_pts: 2
+        },
+        {
+            id: 4032,
+            x_pts: 1.8
+        },
+        {
+            id: 4031,
+            x_pts: 1.7
+        },
+        {
+            id: 4030,
+            x_pts: 1.6
+        },
+        {
+            id: 4011,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4012,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4020,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4006,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4025,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4033,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 3986,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3993,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3995,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4010,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4008,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3984,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3987,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3988,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3996,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3997,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3998,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4022,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4023,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4021,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3989,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4000,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3364,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3462,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3483,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3523,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3543,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3563,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3641,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3735,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3775,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3861,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3933,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4003,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3957,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2261,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2299,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2729,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2763,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3060,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3094,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3339,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3491,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3547,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3621,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3981,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3990,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3991,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3999,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2099,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2201,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3693,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2330,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2681,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3969,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3967,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3680,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3721,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3816,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3971,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 3973,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 2101,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2103,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2105,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2107,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2203,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2205,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2332,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 2334,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3698,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3700,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3974,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3975,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3365,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3366,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3367,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3862,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3863,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3978,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3979,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3980,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4004,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4005,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4009,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4001,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4026,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4027,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 306,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 353,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 355,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 418,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 933,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1163,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1165,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1696,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1879,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2015,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2158,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2356,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2473,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2781,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2987,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 3331,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1043,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1102,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1104,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1106,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1339,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1667,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1733,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1792,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1897,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2354,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2489,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2869,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2953,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3189,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3269,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1051,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1095,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1097,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1167,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1169,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1171,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1217,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2089,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2091,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2640,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2665,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2666,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2707,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2883,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2884,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3701,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3713,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3976,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 4024,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2936,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3886,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2938,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2940,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2942,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2944,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2946,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2948,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2950,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2952,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3884,
+            type: 'other',
+            x_pts: 1.2
+        },
+    ],
 };

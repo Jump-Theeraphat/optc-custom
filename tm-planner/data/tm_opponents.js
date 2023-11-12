@@ -16815,4 +16815,308 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Blueno & Bepo & Sunny-kun ==========
+    4033: {
+        3697: {
+            name: 'Beckman & Lucky Roux',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/DEX/PSY'],
+                                ['VS Gauge -',      '5T, STR/DEX/PSY'],
+                                ['S Switch -',      '5T, STR/DEX/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Beckman & Lucky Roux', 'QCK'],
+                    hp_: 1400000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '5T'],
+                                ['nao',             '99+T'],
+                                ['slot-block',      'All'],
+                                ['stun',            'Row 3'],
+                                ['sp-limit',        '1T, 2x'],
+                                ['dmg-limit',       '1T, 80%'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def',             '?T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3995: {
+            name: 'Kizaru & Fujitora',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/STR/QCK'],
+                                ['VS Gauge -',      '5T, PSY/STR/QCK'],
+                                ['S Switch -',      '5T, PSY/STR/QCK']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kizaru & Fujitora', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '9T, Col L'],
+                                ['cd-rew',          '3T, Row 1'],
+                                ['cd-rew',          '2T, Row 2 3'],
+                                ['nao',             '99+T'],
+                                ['slot-block',      'All'],
+                                ['desp',            '10T, Captain'],
+                                ['sp-limit',        '1T, 2x'],
+                                ['def-perc',        '6T, 90%'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '10%'],
+                                ['dmg-normal',      '50000'],
+                                ['bar-slot',        '2T, 2x, TND']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4020: {
+            name: 'Katakuri & Oven',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/STR/DEX'],
+                                ['VS Gauge -',      '5T, PSY/STR/DEX'],
+                                ['S Switch -',      '5T, PSY/STR/DEX']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Katakuri & Oven', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['nao',             '99+T'],
+                                ['Ship Bind',       '5T'],
+                                ['atk-down',        '5T, 90%'],
+                                ['para',            '7T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4033: {
+            name: 'Blueno & Bepo & Sunny-kun',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Blueno & Bepo & Sunny-kun', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '9T, Row 3'],
+                                ['nao',             '99+T'],
+                                ['slot-block',      'All'],
+                                ['cd-rew',          '2T, Row 2 3'],
+                                ['hunger',          '2x'],
+                                ['Intimidate',      '2T, -2T, Atk Boost']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4011: {
+            name: 'Shanks',
+            type: 'DEX',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/DEX/PSY'],
+                                ['VS Gauge -',      '5T, STR/DEX/PSY'],
+                                ['S Switch -',      '5T, STR/DEX/PSY']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Shanks', 'DEX'],
+                    hp_: 3500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '1T'],
+                                ['nao',             '99+T'],
+                                ['para',            '6T'],
+                                ['def-perc',        '2T, 90%'],
+                                ['immu-all',        '99+T, Except Delay']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['atk-down',        '3T, 90%']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shanks', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '1T'],
+                                ['bind',            '8T, Row 3'],
+                                ['chain-atk-down',  '2T, < 2.75x chain, 90%'],
+                                ['Intimidate',      '2T, -1T, Lock Chain'],
+                                ['def',             '3T, 1Mx'],
+                                ['immu-all',        '99+T, Except Delay']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4012: {
+            name: 'Luffy',
+            type: 'DEX',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Cerebral/Slasher/Fighter'],
+                                ['VS Gauge -',      '5T, Cerebral/Slasher/Fighter'],
+                                ['S Switch -',      '5T, Cerebral/Slasher/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Luffy', 'DEX'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['cd-rew',          '2T, Row 2 3'],
+                                ['slot-block',      'All'],
+                                ['bar-slot',        '2T, 2x, TND']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['silence',         '4T, Row 1'],
+                                ['silence',         '7T, Row 2 3']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'DEX'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '3T, Row 1'],
+                                ['slot-bind',       '5T'],
+                                ['atk-down',        '4T, 90%'],
+                                ['def-thres',       '7T, 99%, 1000'],
+                                ['def',             '4T, 1Mx'],
+                                ['immu-def',        '99+T']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
