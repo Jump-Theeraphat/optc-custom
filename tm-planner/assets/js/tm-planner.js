@@ -869,6 +869,12 @@ function init(tmId, server, isTransfer) {
     for (var teamId = 0; teamId < 6; teamId++)
         doTeamBuildCheck(teamId);
 
+    // TEMP
+    if (tmId >= 4033)
+        $('#pt-calc-info').show();
+    else
+        $('#pt-calc-info').hide();
+
     return true;
 }
 
