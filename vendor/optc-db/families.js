@@ -689,6 +689,12 @@ const RaiseMax = [ "Raise Max" ];
 const DoubleDown = [ "Double Down" ];
 const Ricca = [ "Ricca" ];
 const Tempo = [ "Tempo" ];
+const LimeJuice = [ "Lime Juice" ];
+const Eboshi = [ "Eboshi" ];
+const Hanagasa = [ "Hanagasa" ];
+const Kaginote = [ "Kaginote" ];
+const Romy = [ "Romy" ];
+const Yorueka = [ "Yorueka" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4596,7 +4602,27 @@ window.families = {
     4004: [ ...RaiseMax ],
     4005: [ ...DoubleDown, ...Ricca, ...Tempo ],
     4006: [ ...Baccarat, ...Dice, ...Tanaka ],
+    4007: [ ...Ain ],
+    4008: [ ...Ain ],
+    4009: [ ...Binz ],
+    4010: [ ...Zephyr ],
+    4011: [ ...Shanks ],
+    4012: [ ...MonkeyDLuffy ],
+    4019: [ ...CharlotteKatakuri, ...CharlotteOven ],
+    4020: [ ...CharlotteKatakuri, ...CharlotteOven ],
+    4021: [ ...Makino, ...MonkeyDLuffy, ...Uta ],
+    4022: [ ...Rockstar ],
+    4023: [ ...LimeJuice ],
     4024: [ ...MonkeyDLuffy ],
+    4025: [ ...Blueno, ...Bepo, ...Sunny ],
+    4026: [ ...DouglasBullet ],
+    4027: [ ...Ann ],
+    4028: [ ...Coby ],
+    4029: [ ...Coby ],
+    4030: [ ...Eboshi, ...Hanagasa, ...Kaginote ],
+    4031: [ ...Romy, ...Yorueka ],
+    4032: [ ...TrafalgarDWaterLaw ],
+    4033: [ ...Blueno, ...Bepo, ...Sunny ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
