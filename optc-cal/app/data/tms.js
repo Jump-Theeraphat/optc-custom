@@ -344,4 +344,9 @@ var tms = {
         thumb: 4006,
         info: ''
     },
+    4033: {
+        name: 'Blueno & Bepo & Sunny-kun (1am ~ 6am)',
+        thumb: 4033,
+        info: ''
+    },
 };
