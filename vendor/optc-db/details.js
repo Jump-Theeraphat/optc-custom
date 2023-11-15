@@ -138911,7 +138911,7 @@ window.details = {
         },
         special: "If HP is above 61% when the special is activated, reduces crew's current HP by 60% crew's MAX HP and advances Special Cooldown of this character to MAX. Boosts chances of getting Matching orbs for 1 turn, randomizes non-Matching, non-[RCV] or non-[TND] orbs, including [BLOCK] orbs and boosts ATK against enemies with reduced defense by 2.5x for 2 turns. If your crew has Status ATK Boost when the special is activated, adds 1.5x to Chain multiplier for 2 turns. If your crew has Chain Addition when the special is activated, boosts base ATK of all characters by 1250 for 2 turns.",
         specialName: "Scorching Onslaught of Power",
-        superSpecial: "Deals 300x character's ATK in [DEX] damage to all enemies at end of each turn for 3 turns, reduces the defense of all enemies by 90% for 3 turns, recovers 30x character's RCV in HP, allowing HP Overfill up to 2x MAX HP, and transforms [DEX] characters into Super [DEX] characters.",
+        superSpecial: "Deals 300x character's ATK in [DEX] damage to all enemies at end of each turn for 3 turns, reduces the defense of all enemies by 90% for 3 turns, recovers 30% of crew's MAX HP, allowing HP Overfill up to 2x MAX HP, and transforms [DEX] characters into Super [DEX] characters.",
         superSpecialCriteria: "When any of the following characters are on the crew (except as Support Characters): Charlotte Linlin (Big Mom), Charlotte Smoothie, Charlotte Cracker, Charlotte Perospero, Monkey D. Luffy, Shanks, Coby",
         support: [
             {
@@ -139342,7 +139342,8 @@ window.details = {
     },
     4028: {
         captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts HP of all characters by 1.2x, boosts RCV of all characters by 1.3x, boosts ATK of all characters by 5.25x, by 5.5x instead if they have a [RCV], [TND], [WANO] or [RAINBOW] orb, makes [RCV] and [TND] orbs beneficial for all characters and boosts chance of getting [TND] orbs. If this character becomes your captain in the middle of an island, reduces damage received by 50%.",
-        special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Threshold Damage Reduction duration by 7 turns, and changes all orbs, including [BLOCK] orbs, into [TND] orbs. Boosts Color Affinity of all characters by 2.25x-2.75x for 1 turn and increases Orb Effects of beneficial [TND] orbs to 2x-2.75x for 1 turn, depending on how many times this character used \"Precise Defensive Formation\" this adventure. If your Captain is a Fighter or Cerebral character when the special is activated, optionally swaps 1 selected character with your captain for 1 turn.",
+        special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Threshold Damage Reduction duration by 7 turns, and changes all orbs, including [BLOCK] orbs, into [TND] orbs. Boosts Color Affinity of all characters by 2.25x-2.75x for 1 turn and increases Orb Effects of beneficial [TND] orbs to 2x-2.75x for 1 turn, depending on how many times your crew uses Special Abilities this adventure. If your Captain is a Fighter or Cerebral character when the special is activated, optionally swaps 1 selected character with your captain for 1 turn.",
+        specialNotes: "<b>0-3 Specials:</b> 2.25x Affinity Boost<br><b>4-7 Specials:</b> 2.5x Affinity Boost & 2.25x Beneficial [TND] Orb Multiplier<br><b>8+ Specials:</b> 2.75x Affinity Boost & 2.75x Beneficial [TND] Orb Multiplier",
         specialName: "Precise Defensive Formation",
     },
     4029: {
@@ -139425,7 +139426,8 @@ window.details = {
             level1: "Restores Special Cooldown of this character by 5 turns when it is rewinded",
             level2: "Makes [RCV] and [TND] orbs beneficial for all characters"
         },
-        special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Threshold Damage Reduction duration by 7 turns, and changes all orbs, including [BLOCK] orbs, into [TND] orbs. Boosts Color Affinity of all characters by 2.25x-2.75x for 1 turn and increases Orb Effects of beneficial [TND] orbs to 2x-2.75x for 1 turn, depending on how many times this character used \"Precise Defensive Formation\" this adventure. If your Captain is a Fighter or Cerebral character when the special is activated, optionally swaps 1 selected character with your captain for 1 turn.",
+        special: "Reduces Special Cooldown of all characters by 1 turn, reduces enemies' Threshold Damage Reduction duration by 7 turns, and changes all orbs, including [BLOCK] orbs, into [TND] orbs. Boosts Color Affinity of all characters by 2.25x-2.75x for 1 turn and increases Orb Effects of beneficial [TND] orbs to 2x-2.75x for 1 turn, depending on how many times your crew uses Special Abilities this adventure. If your Captain is a Fighter or Cerebral character when the special is activated, optionally swaps 1 selected character with your captain for 1 turn.",
+        specialNotes: "<b>0-3 Specials:</b> 2.25x Affinity Boost<br><b>4-7 Specials:</b> 2.5x Affinity Boost & 2.25x Beneficial [TND] Orb Multiplier<br><b>8+ Specials:</b> 2.75x Affinity Boost & 2.75x Beneficial [TND] Orb Multiplier",
         specialName: "Precise Defensive Formation",
         superSpecial: "Optionally removes Captain Swap duration completely, reduces Special Cooldown of all characters by 1 turn, recovers 25% of crew's MAX HP, boosts base ATK of all characters by 1,250 for 1 turn, and transforms [STR] characters into Super [STR] characters.",
         superSpecialCriteria: "Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Characters with Last Tap, Super Tandem or Rush.",
