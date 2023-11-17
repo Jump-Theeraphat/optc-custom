@@ -16839,7 +16839,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Beckman & Lucky Roux', 'QCK'],
-                    hp_: 1400000,
+                    hp: 2500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -16857,7 +16857,28 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['def',             '?T']
+                                ['def',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['dmg-up',          '3T'],
+                                ['blow-away',       '3T, Row 3']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['bind',            '5T, Row 2'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 4',
+                            action: [
+                                ['desp',            '5T'],
+                                ['slot-bind',       '5T']
                             ]
                         }
                     ]
@@ -16885,7 +16906,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Kizaru & Fujitora', 'INT'],
-                    hp_: 2000000,
+                    hp: 2500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -16908,6 +16929,20 @@ var tm_opponents = {
                                 ['heal',            '10%'],
                                 ['dmg-normal',      '50000'],
                                 ['bar-slot',        '2T, 2x, TND']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['blow-away',       '5T, Row 3'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['para',            '5T'],
+                                ['slot-bind',       '5T']
                             ]
                         }
                     ]
@@ -16935,7 +16970,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Katakuri & Oven', 'INT'],
-                    hp_: 1200000,
+                    hp: 1600000,
                     atk_: 6000,
                     detail: [
                         {
@@ -16947,6 +16982,27 @@ var tm_opponents = {
                                 ['atk-down',        '5T, 90%'],
                                 ['para',            '7T'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['slot-lock',       '1x Great']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['def-perc',        '5T'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['bind',            '5T, Row 2 3'],
+                                ['tap-limit',       '3T, 4x']
                             ]
                         }
                     ]
@@ -16974,7 +17030,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Blueno & Bepo & Sunny-kun', 'STR'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -16986,6 +17042,19 @@ var tm_opponents = {
                                 ['cd-rew',          '2T, Row 2 3'],
                                 ['hunger',          '2x'],
                                 ['Intimidate',      '2T, -2T, Atk Boost']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['para',            '6T'],
+                                ['def-perc',        '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['atk',             '5T']
                             ]
                         }
                     ]
@@ -17031,6 +17100,20 @@ var tm_opponents = {
                             action: [
                                 ['atk-down',        '3T, 90%']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['tap-limit',       '3T, 4x'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['para',            '2T']
+                            ]
                         }
                     ]
                 },
@@ -17049,6 +17132,31 @@ var tm_opponents = {
                                 ['Intimidate',      '2T, -1T, Lock Chain'],
                                 ['def',             '3T, 1Mx'],
                                 ['immu-all',        '99+T, Except Delay']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def',             '4T'],
+                                ['atk',             '4T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['blind',           '3T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['tap-limit',       '4T, 4x']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
@@ -17094,6 +17202,19 @@ var tm_opponents = {
                                 ['silence',         '4T, Row 1'],
                                 ['silence',         '7T, Row 2 3']
                             ]
+                        },
+                        {
+                            type: 'Turn 1, Every 2 Turns',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['def-perc',        '1T']
+                            ]
                         }
                     ]
                 },
@@ -17112,6 +17233,32 @@ var tm_opponents = {
                                 ['def-thres',       '7T, 99%, 1000'],
                                 ['def',             '4T, 1Mx'],
                                 ['immu-def',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['dmg-up',          '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['slot-bind',       '?T']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
