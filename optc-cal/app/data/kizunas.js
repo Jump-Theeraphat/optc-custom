@@ -218,4 +218,8 @@ var kizunas = {
         name: 'Zephyr 6+ (~ 6am)',
         thumb: 4010
     },
+    4039: {
+        name: 'Kid (OPCG) (~ 6am)',
+        thumb: 4039
+    },
 };

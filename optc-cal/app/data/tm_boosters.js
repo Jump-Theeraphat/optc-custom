@@ -9,6 +9,7 @@ var tm_boosters = [
     // Kizunas
     3991,
     4010,
+    4039,
 
     // PKAs
     3999,
