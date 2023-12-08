@@ -619,6 +619,16 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 4053) {
+        // TM Luffy
+        $('#div_2x').show();
+        $('#div_1_8x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -993,6 +1003,8 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Bleed' ||
         iconKey === 'Lock Target' ||
         iconKey === 'Intimidate' ||
+        iconKey === 'Action Silence' ||
+        iconKey === 'Slot Atk Down' ||
         iconKey === 'VS Gauge -' ||
         iconKey === 'S Switch -'
     )

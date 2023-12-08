@@ -17266,4 +17266,317 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Luffy ==========
+    4053: {
+        4053: {
+            name: 'Luffy',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '6T'],
+                                ['slot-block',      'All'],
+                                ['slot-neg',        '5T, Color'],
+                                ['bar-hit',         '2T, 15x'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3961: {
+            name: 'Denjiro',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, PSY/DEX/STR'],
+                                ['VS Gauge -',      '5T, PSY/DEX/STR'],
+                                ['S Switch -',      '5T, PSY/DEX/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Denjiro', 'INT'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '9T'],
+                                ['nao',             '99+T'],
+                                ['atk-down',        '5T, 99%'],
+                                ['para',            '6T'],
+                                ['slot-block',      'All'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3749: {
+            name: 'Raizo',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/DEX/QCK'],
+                                ['VS Gauge -',      '5T, STR/DEX/QCK'],
+                                ['S Switch -',      '5T, STR/DEX/QCK']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Raizo', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '6T'],
+                                ['desp',            '9T'],
+                                ['nao',             '99+T'],
+                                ['bind',            '9T, Row 1 2'],
+                                ['atk-down',        '6T, 99%'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '10%'],
+                                ['bar-slot',        '2T, 1x, WANO']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3569: {
+            name: 'Shinobu',
+            type: 'STR',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Free Spirit/Cerebral'],
+                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Cerebral'],
+                                ['S Switch -',      '5T, Slasher/Free Spirit/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shinobu', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '6T'],
+                                ['nao',             '99+T'],
+                                ['slot-change',     'Bad'],
+                                ['slot-lock',       '6T'],
+                                ['bar-hit',         '1T, 25x'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['def',             '6T, 1Mx'],
+                                ['immu-all',        '99+T, Except Delay']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '10%'],
+                                ['Action Silence',  '1T'],
+                                ['chain-atk-down',  '3T, < 3x chain, 90%']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3959: {
+            name: 'Momonosuke',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Powerhouse/Free Spirit/Fighter'],
+                                ['VS Gauge -',      '5T, Powerhouse/Free Spirit/Fighter'],
+                                ['S Switch -',      '5T, Powerhouse/Free Spirit/Fighter']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Kawamatsu', 'QCK'],
+                    hp_: 3500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['atk-down',        '6T, 99%'],
+                                ['burn',            '7T, 20000'],
+                                ['nao',             '99+T'],
+                                ['bar-slot',        '2T, 1x, DEX'],
+                                ['bar-p',           '3T, 1x'],
+                                ['immu-all',        '99+T, Except Ignite']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '100K']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Momonosuke', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '5T'],
+                                ['para',            '6T'],
+                                ['slot-block',      'All'],
+                                ['desp',            '8T'],
+                                ['Ship Bind',       '6T'],
+                                ['immu-all',        '99+T, Except Ignite']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['slot-lock',       '3T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3991: {
+            name: ['Yam', 'ato'],
+            type: ['STR', 'DEX'],
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Powerhouse/Slasher/Free Spirit'],
+                                ['VS Gauge -',      '5T, Powerhouse/Slasher/Free Spirit'],
+                                ['S Switch -',      '5T, Powerhouse/Slasher/Free Spirit']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Yamato', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '6T'],
+                                ['nao',             '99+T'],
+                                ['bar-slot',        '2T, 2x, STR'],
+                                ['atk-down',        '6T, 99%'],
+                                ['immu-all',        '99+T, Except Ignite']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '100K']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Yamato', 'STR'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-change',     'S.BLOCK'],
+                                ['slot-bind',       '7T'],
+                                ['Ship Bind',       '5T'],
+                                ['def-thres',       '7T, 99%, 1000'],
+                                ['Slot Atk Down',   '3T, WANO, 90%'],
+                                ['type-change',     'STR/DEX'],
+                                ['immu-def',        '99+T'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
