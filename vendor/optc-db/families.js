@@ -609,7 +609,7 @@ const Tama = [ "Tama" ];
 const MissTsuru = [ "Miss Tsuru", "Otsuru", "Tsurunojo" ];
 const Denjiro = [ "Denjiro", "Kyoshiro" ];
 const AshuraDoji = [ "Ashura Doji", "Shutenmaru" ];
-const TenguyamaHitetsu = [ "Tenguyama Hitetsu" ];
+const TenguyamaHitetsu = [ "Tenguyama Hitetsu", "Kozuki Sukiyaki" ];
 const CharlotteCustard = [ "Charlotte Custard" ];
 const Unluckies = [ "Unluckies" ];
 const BuenaFesta = [ "Buena Festa" ];
@@ -695,6 +695,8 @@ const Hanagasa = [ "Hanagasa" ];
 const Kaginote = [ "Kaginote" ];
 const Romy = [ "Romy" ];
 const Yorueka = [ "Yorueka" ];
+const Aramaki = [ "Aramaki", "Ryokugyu" ];
+const Tensei = [ "Tensei", "Kurouma" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4623,6 +4625,26 @@ window.families = {
     4031: [ ...Romy, ...Yorueka ],
     4032: [ ...TrafalgarDWaterLaw ],
     4033: [ ...Blueno, ...Bepo, ...Sunny ],
+    4034: [ ...Kaido ],
+    4035: [ ...Crocodile ],
+    4036: [ ...Bartolomeo ],
+    4037: [ ...MonkeyDLuffy ],
+    4038: [ ...EustassKid ],
+    4039: [ ...EustassKid ],
+    4040: [ ...KozukiMomonosuke ],
+    4041: [ ...KozukiMomonosuke ],
+    4042: [ ...KozukiHiyori ],
+    4043: [ ...KozukiHiyori ],
+    4044: [ ...TenguyamaHitetsu ],
+    4045: [ ...TrafalgarDWaterLaw, ...NicoRobin ],
+    4046: [ ...Kikunojo, ...Toko ],
+    4047: [ ...MonkeyDLuffy ],
+    4048: [ ...Shinobu, ...Raizo ],
+    4049: [ ...Nekomamushi ],
+    4050: [ ...Aramaki ],
+    4051: [ ...Sakazuki ],
+    4052: [ ...Tensei ],
+    4053: [ ...MonkeyDLuffy ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
