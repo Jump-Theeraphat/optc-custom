@@ -879,11 +879,11 @@ function init(tmId, server, isTransfer) {
     for (var teamId = 0; teamId < 6; teamId++)
         doTeamBuildCheck(teamId);
 
-    // TEMP
+    // Bird Luck
     if (tmId >= 4033)
-        $('#pt-calc-info').show();
+        $('#bird-luck-div').show();
     else
-        $('#pt-calc-info').hide();
+        $('#bird-luck-div').hide();
 
     return true;
 }
@@ -1828,6 +1828,40 @@ function calculateTargetPts() {
                     else
                         totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
                 }
+            } else if (tmId >= 4033) {
+                if ((navLv + 1) % 25 === 21) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 2
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 2
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 2
+                } else if ((navLv + 1) % 5 === 1) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
+                } else {
+                    var birdLuck = Number($('#bird-luck').val());
+
+                    if (birdLuck === 1 ||
+                        birdLuck === .75 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 4 || (navLv + 1) % 5 === 0) ||
+                        birdLuck === .5 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 0)) {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * navLv) * 1.2
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * navLv) * 1.2
+                        else
+                            totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.2
+                    } else {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * navLv)
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * navLv)
+                    }
+                }
             } else if (tmId >= 3801) {
                 if ((navLv + 1) % 5 != 0) {
                     if (Number($(this).data('team')) < 4)
@@ -1898,6 +1932,40 @@ function calculateNavLv() {
                         totalPts += multiplier * (baseMain + growthMain * i) * 1.5
                     else
                         totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.5
+                }
+            } else if (tmId >= 4033) {
+                if ((i + 1) % 25 === 21) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * i) * 2
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i) * 2
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * i) * 2
+                } else if ((i + 1) % 5 === 1) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * i) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.5
+                } else {
+                    var birdLuck = Number($('#bird-luck').val());
+
+                    if (birdLuck === 1 ||
+                        birdLuck === .75 && ((i + 1) % 5 === 3 || (i + 1) % 5 === 4 || (i + 1) % 5 === 0) ||
+                        birdLuck === .5 && ((i + 1) % 5 === 3 || (i + 1) % 5 === 0)) {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * i) * 1.2
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * i) * 1.2
+                        else
+                            totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.2
+                    } else {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * i)
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * i)
+                    }
                 }
             } else if (tmId >= 3801) {
                 if ((i + 1) % 5 != 0) {
@@ -3683,6 +3751,11 @@ $(document).ready(function() {
     // Target Pts / Nav Lv Calculation
     $('#target-pts-dd').change(function() {
         $('#target-pts').val($(this).val());
+        calculateTargetPts();
+    });
+
+    $('#bird-luck-dd').change(function() {
+        $('#bird-luck').val($(this).val());
         calculateTargetPts();
     });
 

@@ -1475,15 +1475,26 @@
         </div>
     </div>
 
-    <div class="row" id="pt-calc-info" style="display: none;">
-        <div class="col-md-6 col-12 filter-info">
-            Using old calculation, will update to new one next TM.
-        </div>
-    </div>
-
     <div class="row">
         <div class="col-md-6 col-12">
-            <div class="row align-items-center">
+            <div class="row mt-2 align-items-center" id="bird-luck-div">
+                <div class="col-6">
+                    <div class="form-row">
+                        <label for="bird-luck" class="col-6 col-form-label col-form-label-sm text-right">Bird Luck: </label>
+                        <div class="col-6">
+                            <select class="form-control form-control-sm" id="bird-luck-dd">
+                                <option value="1">100%</option>
+                                <option value=".75" selected>75% (approx.)</option>
+                                <option value=".5">50% (approx.)</option>
+                            </select>
+
+                            <input type="hidden" class="form-control form-control-sm" id="bird-luck" value=".75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-2 align-items-center">
                 <div class="col-6">
                     <div class="form-row">
                         <label for="target-pts" class="col-6 col-form-label col-form-label-sm text-right">Target Pts: </label>

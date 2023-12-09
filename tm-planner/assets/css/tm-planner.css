@@ -180,7 +180,8 @@ img.highlight {
 }
 
 #export-url-div,
-#read-only-button-div {
+#read-only-button-div,
+#bird-luck-div {
     display: none;
 }
 
