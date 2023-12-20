@@ -17290,7 +17290,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Luffy', 'QCK'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -17301,6 +17301,20 @@ var tm_opponents = {
                                 ['slot-neg',        '5T, Color'],
                                 ['bar-hit',         '2T, 15x'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def-perc',        '5T'],
+                                ['atk',             '5T, 2x'],
+                                ['slot-bind',       '3T, (mob)']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['dmg-up',          '5T']
                             ]
                         }
                     ]
@@ -17328,7 +17342,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Denjiro', 'INT'],
-                    hp_: 1600000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -17340,6 +17354,27 @@ var tm_opponents = {
                                 ['para',            '6T'],
                                 ['slot-block',      'All'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def-perc',        '5T'],
+                                ['atk',             '5T, 2x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['slot-lock',       '1x Great']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['slot-bind',       '5T'],
+                                ['tap-limit',       '3T, 4x']
                             ]
                         }
                     ]
@@ -17367,7 +17402,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Raizo', 'STR'],
-                    hp_: 2500000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -17386,6 +17421,26 @@ var tm_opponents = {
                             action: [
                                 ['heal',            '10%'],
                                 ['bar-slot',        '2T, 1x, WANO']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['dmg-up',          '3T'],
+                                ['blow-away',       '1T, Row 3']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['def-thres',       '4T'],
+                                ['tap-limit',       '3T, 4x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 4',
+                            action: [
+                                ['slot-bind',       '5T']
                             ]
                         }
                     ]
@@ -17413,7 +17468,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Shinobu', 'STR'],
-                    hp_: 2500000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -17435,6 +17490,20 @@ var tm_opponents = {
                                 ['heal',            '10%'],
                                 ['Action Silence',  '1T'],
                                 ['chain-atk-down',  '3T, < 3x chain, 90%']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['def-perc',        '4T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['para',            '5T'],
+                                ['slot-bind',       '5T']
                             ]
                         }
                     ]
@@ -17461,7 +17530,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Kawamatsu', 'QCK'],
+                    boss: ['Inuarashi/Nekomamushi/Kawamatsu', 'QCK'],
                     hp_: 3500000,
                     atk_: 6600,
                     detail: [
@@ -17481,6 +17550,22 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['dmg-normal',      '100K']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['atk',             '5T, (Inuarashi)'],
+                                ['slot-bind',       '5T, (Nekomamushi)'],
+                                ['tap-limit',       '3T, 4x, (Kawamatsu)']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only, (Inuarashi)'],
+                                ['def',             '4T, (Nekomamushi)'],
+                                ['def-perc',        '4T, (Kawamatsu)']
                             ]
                         }
                     ]
@@ -17508,6 +17593,33 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['slot-lock',       '3T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['atk',             '5T'],
+                                ['def',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['blind',           '3T'],
+                                ['bar-p',           '3T, 2x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['tap-limit',       '4T, 3x']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
+                            ]
                         }
                     ]
                 }
@@ -17534,7 +17646,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Yamato', 'QCK'],
-                    hp_: 2500000,
+                    hp: 1500000,
                     atk_: 6600,
                     detail: [
                         {
@@ -17572,6 +17684,32 @@ var tm_opponents = {
                                 ['type-change',     'STR/DEX'],
                                 ['immu-def',        '99+T'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['No Heal',         '5T'],
+                                ['dmg-up',          '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['Pain',            '3T'],
+                                ['clear-buff',      'Buff Only']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['stun',            'Row 3']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
