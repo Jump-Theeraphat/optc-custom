@@ -27,4 +27,8 @@ var pkas = {
         name: 'Luffy',
         thumb: 4047
     },
+    4066: {
+        name: 'Edward Newgate',
+        thumb: 4066
+    },
 };
