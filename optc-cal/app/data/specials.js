@@ -145,6 +145,11 @@ var specials = {
         name: 'Straw Hat And Diva (1am ~ 6am)',
         thumb: 3993
     },
+    'bb_3984': {
+        type: 'Blitz Battle',
+        name: 'Yamato VS Kaido (1am ~ 6am)',
+        thumb: 3984
+    },
 
     'wc_2401': {
         type: 'World Clash',
