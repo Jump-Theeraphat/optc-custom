@@ -697,6 +697,7 @@ const Romy = [ "Romy" ];
 const Yorueka = [ "Yorueka" ];
 const Aramaki = [ "Aramaki", "Ryokugyu" ];
 const Tensei = [ "Tensei", "Kurouma" ];
+const Hamlet = [ "Hamlet" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4645,6 +4646,26 @@ window.families = {
     4051: [ ...Sakazuki ],
     4052: [ ...Tensei ],
     4053: [ ...MonkeyDLuffy ],
+    4054: [ ...Tama ],
+    4055: [ ...Speed, ...Hamlet ],
+    4056: [ ...Shanks ],
+    4057: [ ...GolDRoger, ...KozukiOden ],
+    4058: [ ...GolDRoger, ...KozukiOden ],
+    4059: [ ...Yamato ],
+    4060: [ ...Yamato ],
+    4061: [ ...RoronoaZoro, ...VinsmokeSanji ],
+    4062: [ ...RoronoaZoro, ...VinsmokeSanji ],
+    4063: [ ...TrafalgarDWaterLaw ],
+    4064: [ ...Kinemon ],
+    4065: [ ...KozukiToki ],
+    4066: [ ...EdwardNewgate ],
+    4067: [ ...PortgasDAce ],
+    4068: [ ...PortgasDAce ],
+    4069: [ ...PortgasDAce ],
+    4071: [ ...MonkeyDLuffy ],
+    4072: [ ...Nami ],
+    4073: [ ...KozukiHiyori ],
+    4074: [ ...EdwardNewgate ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
