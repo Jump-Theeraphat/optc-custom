@@ -17717,4 +17717,308 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Edward Newgate ==========
+    4074: {
+        2706: {
+            name: 'Speed',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Speed', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['chain-atk-down',  '3T, <2.75x Chain, 99%'],
+                                ['stun',            'Row 2 3'],
+                                ['burn',            '5T, 20000'],
+                                ['bar-p',           '1T, 2x'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3212: {
+            name: 'Carrot',
+            type: 'PSY',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, INT/QCK/STR'],
+                                ['VS Gauge -',      '5T, INT/QCK/STR'],
+                                ['S Switch -',      '5T, INT/QCK/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Carrot', 'PSY'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '5T'],
+                                ['desp',            '8T'],
+                                ['para',            '5T'],
+                                ['slot-block',      'All'],
+                                ['immu-delay',      '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4049: {
+            name: 'Nekomamushi',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Cerebral/Slasher/Striker'],
+                                ['VS Gauge -',      '5T, Cerebral/Slasher/Striker'],
+                                ['S Switch -',      '5T, Cerebral/Slasher/Striker']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Nekomamushi', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hp-cut',          '80%'],
+                                ['para',            '6T'],
+                                ['nao',             '99+T'],
+                                ['desp',            '6T'],
+                                ['atk-down',        '3T, 99%'],
+                                ['slot-neg',        '5T, Color'],
+                                ['slot-block',      'All'],
+                                ['immu-all',        '99+T, Except Def Down']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '100,000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3495: {
+            name: 'Robin & Jinbe',
+            type: 'STR',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, QCK/STR/DEX'],
+                                ['VS Gauge -',      '5T, QCK/STR/DEX'],
+                                ['S Switch -',      '5T, QCK/STR/DEX']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Robin & Jinbe', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['Fear',            '5T'],
+                                ['nao',             '99+T'],
+                                ['silence',         '5T'],
+                                ['def-thres',       '7T, 99%, 1000'],
+                                ['def',             '7T, 1Mx'],
+                                ['cd-rew',          '1T'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Boost',
+                            action: [
+                                ['slot-bind',       '3T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3755: {
+            name: 'Zoro',
+            type: 'STR',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Fighter/Slasher'],
+                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Slasher'],
+                                ['S Switch -',      '7T, Free Spirit/Fighter/Slasher']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Zoro', 'STR'],
+                    hp_: 3500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['blind',           '5T'],
+                                ['nao',             '99+T'],
+                                ['silence',         '6T'],
+                                ['slot-change',     'Poison'],
+                                ['Lock Target',     '2T'],
+                                ['bar-p',           '2T, 2x'],
+                                ['bar-p',           '2T, 1x'],
+                                ['bar-p',           '2T, 1x']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['hp-cut',          '80%']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Zoro', 'STR'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '1T'],
+                                ['burn',            '6T, 15000'],
+                                ['para',            '6T'],
+                                ['def-perc',        '6T, 90%'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '50%'],
+                                ['para',            '3T'],
+                                ['silence',         '3T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3889: {
+            name: 'Sanji',
+            type: 'STR',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Free Spirit/Fighter/Slasher'],
+                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Slasher'],
+                                ['S Switch -',      '6T, Free Spirit/Fighter/Slasher']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'STR'],
+                    hp_: 1500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['poison',          '5T, 30000'],
+                                ['nao',             '99+T'],
+                                ['rcv-dmg',         '5T'],
+                                ['Pain',            '5T, 10000'],
+                                ['def',             '3T, 1Mx'],
+                                ['def-thres',       '3T, 99%, 1000']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sanji', 'STR'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '6T'],
+                                ['silence',         '6T'],
+                                ['cd-rew',          '1T'],
+                                ['slot-change',     'RCV'],
+                                ['atk-down',        '10T, 99%, Striker/Shooter/Driven/Cerebral/Powerhouse'],
+                                ['bar-slot',        '3T, 1x, RAINBOW']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

@@ -35888,4 +35888,565 @@ var tm_boosters = {
             x_pts: 1.2
         },
     ],
+
+    // ========== Edward Newgate ==========
+    4074: [
+        {
+            id: 4071,
+            x_pts: 2
+        },
+        {
+            id: 4072,
+            x_pts: 1.8
+        },
+        {
+            id: 4073,
+            x_pts: 1.8
+        },
+        {
+            id: 4058,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4060,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4062,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4063,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4053,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4066,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4074,
+            ver: 2,
+            x_pts: 1.4
+        },
+        {
+            id: 4041,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4043,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4056,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4054,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4048,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 3336,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4067,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4068,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4044,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4045,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4046,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4064,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4065,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4047,
+            ver: 4,
+            x_pts: 1.35
+        },
+        {
+            id: 4037,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3364,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3462,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3483,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3523,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3543,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3563,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3641,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3735,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3775,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3861,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3933,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4003,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4050,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 1972,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2299,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2792,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2850,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3022,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3217,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3689,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3736,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3894,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 3936,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4038,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4039,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4025,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 4033,
+            ver: 2,
+            x_pts: 1.25
+        },
+        {
+            id: 2195,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 4010,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 4020,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 4029,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 4011,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 4012,
+            type: 'legend',
+            x_pts: 1.2
+        },
+        {
+            id: 4022,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4023,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4030,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4031,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4032,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3544,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3545,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3962,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3963,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 3964,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4051,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 4052,
+            type: 'rr',
+            x_pts: 1.2
+        },
+        {
+            id: 418,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 447,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 603,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1432,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1815,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 1879,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2517,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2670,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 2956,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 3263,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 3671,
+            type: 'raid',
+            x_pts: 1.2
+        },
+        {
+            id: 882,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 924,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 926,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1733,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 1828,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2037,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2249,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2290,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2489,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2813,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 2908,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3210,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 3235,
+            type: 'coliseum',
+            x_pts: 1.2
+        },
+        {
+            id: 948,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 1566,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2021,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2091,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 2428,
+            type: 'fortnight',
+            x_pts: 1.2
+        },
+        {
+            id: 3835,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 4021,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2936,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3886,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2938,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2940,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2942,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2944,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2946,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2948,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2950,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 2952,
+            type: 'other',
+            x_pts: 1.2
+        },
+        {
+            id: 3884,
+            type: 'other',
+            x_pts: 1.2
+        },
+    ],
 };

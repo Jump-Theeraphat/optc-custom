@@ -619,8 +619,12 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
-    } else if (tmId == 4053) {
+    } else if (
+        tmId == 4053 ||
+        tmId == 4074
+    ) {
         // TM Luffy
+        // TM Edward Newgate
         $('#div_2x').show();
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
