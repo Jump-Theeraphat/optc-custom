@@ -17872,10 +17872,10 @@ var tm_opponents = {
                             action: [
                                 ['Fear',            '5T'],
                                 ['nao',             '99+T'],
-                                ['silence',         '5T'],
+                                ['silence',         '5T, Row 1 3'],
                                 ['def-thres',       '7T, 99%, 1000'],
                                 ['def',             '7T, 1Mx'],
-                                ['cd-rew',          '1T'],
+                                ['cd-rew',          '1T, Row 1 3'],
                                 ['immu-all',        '99+T']
                             ]
                         },
