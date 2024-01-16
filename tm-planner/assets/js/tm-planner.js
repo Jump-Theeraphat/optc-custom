@@ -12,7 +12,7 @@ function createTooltip(imgDiv, text) {
     imgDiv.data('toggle', 'tooltip');
     imgDiv.data('placement', 'top');
     imgDiv.attr('title', text);
-    imgDiv.tooltip({html: true});
+    imgDiv.tooltip({ html: true });
 }
 
 function createTooltipForUnit(imgDiv, unit) {
@@ -777,7 +777,7 @@ function getOpponents(tmId, server) {
                 $('.team-note-div[data-team=' + opPos + ']').find('.team-note-boss').empty();
 
                 for (var j = 0; j < opName.length && j < opType.length; j++) {
-                    var opHtml= $('<span></span>');
+                    var opHtml = $('<span></span>');
                     opHtml.html(opName[j]);
                     opHtml.addClass(opType[j]);
 
@@ -808,7 +808,7 @@ function getOpponents(tmId, server) {
                 $('.team-note-div[data-team=' + i + ']').find('.team-note-boss').empty();
 
                 for (var j = 0; j < opName.length && j < opType.length; j++) {
-                    var opHtml= $('<span></span>');
+                    var opHtml = $('<span></span>');
                     opHtml.html(opName[j]);
                     opHtml.addClass(opType[j]);
 
@@ -924,11 +924,11 @@ function resetAll() {
     from_list = "";
     to_list = "";
 
-    $('.booster.assigned').each(function() {
+    $('.booster.assigned').each(function () {
         resetPosition($(this).detach());
     });
 
-    $('.support-slot').each(function() {
+    $('.support-slot').each(function () {
         $(this).empty();
         $(this).addClass("empty");
     });
@@ -978,9 +978,9 @@ function decorateStr(str, isGuide) {
         .replace(/\[(RCV|TND|BLOCK|BOMB|RAINBOW|G|EMPTY)\]/g, '<span class="$1-div badge">$1</span>');
 
     // Decorate Class strings
-    str = str.replace(/(Fighter|Slasher|Striker|Shooter|Free Spirit|Cerebral|Powerhouse|Driven)/g, function(match) {
+    str = str.replace(/(Fighter|Slasher|Striker|Shooter|Free Spirit|Cerebral|Powerhouse|Driven)/g, function (match) {
         var matchClass = match.replace(' ', '-').toLowerCase();
-        return '<span class="badge"><div class="' + matchClass  + '-div class-decorate"></div>' + (isGuide ? '' : match) + '</span>';
+        return '<span class="badge"><div class="' + matchClass + '-div class-decorate"></div>' + (isGuide ? '' : match) + '</span>';
     });
 
     if (!isGuide) {
@@ -1335,6 +1335,13 @@ function populateUnitDetail(unitId) {
                     special2 = decorateStr(special2);
                     $('#unit-detail-special').append('<b>Character 2:</b> ' + special2);
                     $('#unit-detail-special').append('<br />');
+
+                    if (special.combined) {
+                        var specialComb = special.combined;
+                        specialComb = decorateStr(specialComb);
+                        $('#unit-detail-special').append('<b>Combined:</b> ' + specialComb);
+                        $('#unit-detail-special').append('<br />');
+                    }
                 }
             } else if (special.japan) {
                 // Special case where JPN version special is different
@@ -1511,7 +1518,7 @@ function populateUnitModal(src, selectedId, assigned) {
         var boosterList = $('.booster').not('.assigned, .assigned-dh, .type-filtered, .class-filtered');
 
         // Available units
-        boosterList.each(function() {
+        boosterList.each(function () {
             var b = $(this);
             var origId = b.data('id');
 
@@ -1537,7 +1544,7 @@ function populateUnitModal(src, selectedId, assigned) {
 
         // Units in this team
         if ($('#' + src).hasClass('friend-cap')) {
-            $('#' + src).closest('.team').find('.team-slot').not('.friend-cap').find('.booster').each(function() {
+            $('#' + src).closest('.team').find('.team-slot').not('.friend-cap').find('.booster').each(function () {
                 var b = $(this);
                 var origId = b.data('id');
 
@@ -1567,7 +1574,7 @@ function populateUnitModal(src, selectedId, assigned) {
         if ($('#' + src).length > 0 && $('#' + src).closest('.team').attr('id') == 'ambush-team') {
             var assignedList = $('.booster.assigned');
 
-            assignedList.each(function() {
+            assignedList.each(function () {
                 var ab = $(this);
                 var origId = ab.data('id');
 
@@ -1742,7 +1749,7 @@ function swapHandler(swapped, dest) {
 function getTeamUnits(team) {
     var teamUnits = [0, 0, 0, 0, 0, 0];
 
-    team.find('.team-slot, .ambush-team-slot').each(function() {
+    team.find('.team-slot, .ambush-team-slot').each(function () {
         var slot_num = $(this).data('slot');
 
         if ($(this).find('.booster').length !== 0)
@@ -1757,7 +1764,7 @@ function getTeamUnits(team) {
 function updatePts(teamDiv) {
     var x_pts = 1;
 
-    teamDiv.find('.booster').each(function() {
+    teamDiv.find('.booster').each(function () {
         var slot_x_pts = Number($(this).data('x_pts'));
         x_pts = x_pts * slot_x_pts;
 
@@ -1767,7 +1774,7 @@ function updatePts(teamDiv) {
     });
 
     // Check for Clones (Friend Captain or Ambush Team)
-    teamDiv.find('.booster-clone').each(function() {
+    teamDiv.find('.booster-clone').each(function () {
         var slot_x_pts = Number($(this).data('x_pts'));
         x_pts = x_pts * slot_x_pts;
 
@@ -1783,7 +1790,7 @@ function updatePts(teamDiv) {
 }
 
 function updateAllPts() {
-    $('.team').each(function() {
+    $('.team').each(function () {
         updatePts($(this));
     });
 }
@@ -1811,7 +1818,7 @@ function calculateTargetPts() {
     var totalPts = 0;
 
     while (totalPts < targetPts) {
-        $('.team').each(function() {
+        $('.team').each(function () {
             var multiplier = Number($(this).find('.x_pts').text());
 
             if (tmId == 3894) {
@@ -1916,7 +1923,7 @@ function calculateNavLv() {
     var totalPts = 0;
 
     for (var i = 0; i < navLv; i++) {
-        $('.team').each(function() {
+        $('.team').each(function () {
             var multiplier = Number($(this).find('.x_pts').text());
 
             if (tmId == 3894) {
@@ -2007,14 +2014,14 @@ function doSave(tmId, server) {
     var teams = {};
 
     if ((tmId > 1889 && server == 'glb') || (tmId > 2064 && server == 'jpn')) {
-        $('.team:visible').each(function() {
+        $('.team:visible').each(function () {
             var opId = $(this).data('op_id');
             var team = getTeamUnits($(this));
 
             teams[opId] = team;
         });
     } else {
-        $('.team:visible').each(function() {
+        $('.team:visible').each(function () {
             var team_num = $(this).data('team');
             var team = getTeamUnits($(this));
 
@@ -2027,7 +2034,7 @@ function doSave(tmId, server) {
 
     var dontHaves = [];
 
-    $('.booster.assigned-dh').each(function() {
+    $('.booster.assigned-dh').each(function () {
         dontHaves.push($(this).data('id'));
     });
 
@@ -2041,7 +2048,7 @@ function doSave(tmId, server) {
 
     // Save supports
     var supports = [];
-    $('.support-slot').not('.hidden').each(function() {
+    $('.support-slot').not('.hidden').each(function () {
         if ($(this).hasClass("empty"))
             supports.push(-1);
         else
@@ -2139,7 +2146,7 @@ function doLoad(tmId) {
                 }
             }
         } else {
-            $.each(teams, function(index, team) {
+            $.each(teams, function (index, team) {
                 for (var i = 0; i < team.length; i++) {
                     var unitId = team[i];
 
@@ -2222,12 +2229,12 @@ function applyTypeFilter(typeFilters) {
         // Clear filters if no Type Filters are currently selected
         $('.type-filtered').removeClass('type-filtered');
     } else {
-        $('.booster, .booster-clone').each(function() {
+        $('.booster, .booster-clone').each(function () {
             var unitType = $(this).data('type');
 
             if (Array.isArray(unitType)) {
                 if (typeFilters.indexOf(unitType[0]) !== -1 ||
-                        typeFilters.indexOf(unitType[1]) !== -1)
+                    typeFilters.indexOf(unitType[1]) !== -1)
                     $(this).removeClass('type-filtered');
                 else
                     $(this).addClass('type-filtered');
@@ -2246,19 +2253,19 @@ function applyClassFilter(classFilters, excludeOtherClasses, excludeSingleClass)
         // Clear filters if no Class Filters are currently selected
         $('.class-filtered').removeClass('class-filtered');
     } else {
-        $('.booster, .booster-clone').each(function() {
+        $('.booster, .booster-clone').each(function () {
             var unitClass1 = $(this).data('class1');
             var unitClass2 = $(this).data('class2');
 
             if (excludeOtherClasses) {
                 if (classFilters.indexOf(unitClass1) === -1 ||
-                        (unitClass2 && classFilters.indexOf(unitClass2) === -1))
+                    (unitClass2 && classFilters.indexOf(unitClass2) === -1))
                     $(this).addClass('class-filtered');
                 else
                     $(this).removeClass('class-filtered');
             } else {
                 if (classFilters.indexOf(unitClass1) !== -1 ||
-                        (unitClass2 && classFilters.indexOf(unitClass2) !== -1))
+                    (unitClass2 && classFilters.indexOf(unitClass2) !== -1))
                     $(this).removeClass('class-filtered');
                 else
                     $(this).addClass('class-filtered');
@@ -2292,28 +2299,28 @@ function clearClassFilters() {
 
 function clearSpecialFilters() {
     $('.sp-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function(i, cName) {
+    $('.booster, .booster-clone').removeClass(function (i, cName) {
         return (cName.match(/(^|\s)sp-filtered-\S+/g) || []).join(' ');
     });
 }
 
 function clearSailorFilters() {
     $('.sl-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function(i, cName) {
+    $('.booster, .booster-clone').removeClass(function (i, cName) {
         return (cName.match(/(^|\s)sl-filtered-\S+/g) || []).join(' ');
     });
 }
 
 function clearCaptainFilters() {
     $('.ca-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function(i, cName) {
+    $('.booster, .booster-clone').removeClass(function (i, cName) {
         return (cName.match(/(^|\s)ca-filtered-\S+/g) || []).join(' ');
     });
 }
 
 function clearSuperFilters() {
     $('.sv-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function(i, cName) {
+    $('.booster, .booster-clone').removeClass(function (i, cName) {
         return (cName.match(/(^|\s)sv-filtered-\S+/g) || []).join(' ');
     });
 }
@@ -2388,25 +2395,25 @@ function getTypesForUnit(origId, types) {
 
 function getFamiliesForUnit(unitId) {
     if (unitId == 9001)
-        family = [ "Kaido" ];
+        family = ["Kaido"];
     else if (unitId == 9002)
-        family = [ "Charlotte Linlin", "Big Mom" ];
+        family = ["Charlotte Linlin", "Big Mom"];
     else if (unitId == 9003)
-        family = [ "Portgas D. Ace" ];
+        family = ["Portgas D. Ace"];
     else if (unitId == 9004)
-        family = [ "Sakazuki", "Akainu" ];
+        family = ["Sakazuki", "Akainu"];
     else if (unitId == 9005)
-        family = [ "Edward Newgate", "Whitebeard" ];
+        family = ["Edward Newgate", "Whitebeard"];
     else if (unitId == 9006)
-        family = [ "Shanks" ];
+        family = ["Shanks"];
     else if (unitId == 9007)
-        family = [ "Kaido" ];
+        family = ["Kaido"];
     else if (unitId == 9008)
-        family = [ "Yamato" ];
+        family = ["Yamato"];
     else if (unitId == 9009)
-        family = [ "Edward Newgate", "Whitebeard" ];
+        family = ["Edward Newgate", "Whitebeard"];
     else if (unitId == 9008)
-        family = [ "Marshall D. Teach", "Blackbeard"];
+        family = ["Marshall D. Teach", "Blackbeard"];
     else
         family = families[unitId];
     return family;
@@ -2426,7 +2433,7 @@ function getSupportList() {
         }
     }
     // Convert to array
-    var arr = $.map(supportList, function(value, index) {
+    var arr = $.map(supportList, function (value, index) {
         return [value];
     });
     return arr;
@@ -2463,14 +2470,14 @@ function swapSupport() {
 function getWholeTeamFamilyName(teamId, isCheckDupe) {
     var teamFamilyNames = [];
     var dupeNames = [];
-    var currentTeam = $(".team[data-team=" + teamId +"]");
+    var currentTeam = $(".team[data-team=" + teamId + "]");
 
-    currentTeam.find(".team-slot:not(.friend-cap), .ambush-team-slot:not(.friend-cap), .support-slot:not(.empty)").each(function() {
+    currentTeam.find(".team-slot:not(.friend-cap), .ambush-team-slot:not(.friend-cap), .support-slot:not(.empty)").each(function () {
         var unit = $(this).find("div");
 
         if (unit.length > 0) {
             var familyNames = families[parseVsUnitId(unit.data("id"))];
-            $.each(familyNames, function(i, e) {
+            $.each(familyNames, function (i, e) {
                 if (!teamFamilyNames.includes(e))
                     teamFamilyNames.push(e);
                 else if (isCheckDupe) {
@@ -2499,17 +2506,17 @@ function doTeamBuildCheck(teamId) {
 
 function removeTeamBuildMsg(teamId) {
     $(".team-note-div[data-team=" + teamId + "]").find(".team-build-msg").remove();
-    $(".team[data-team=" + teamId +"]").find("img.highlight").removeClass("highlight");
+    $(".team[data-team=" + teamId + "]").find("img.highlight").removeClass("highlight");
 }
 
 function putDupeCharacterMsg(teamId, name) {
-    team = $(".team[data-team=" + teamId +"]");
+    team = $(".team[data-team=" + teamId + "]");
     msgStr = ("&nbspDuplicate character: [<mark>" + name + "</mark>]");
     msgDiv = ('<li class="team-build-msg error">' + msgStr + '</li>');
     $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
 
     // Highlight all units with that name
-    team.find(".team-slot:not(.friend-cap), .ambush-team-slot:not(.friend-cap), .support-slot:not(.empty)").each(function() {
+    team.find(".team-slot:not(.friend-cap), .ambush-team-slot:not(.friend-cap), .support-slot:not(.empty)").each(function () {
         var unit = $(this).find("div");
 
         if (unit.length > 0) {
@@ -2531,7 +2538,7 @@ function checkNoteStatus() {
     else
         $(".fixed-note-button").removeClass("warning");
 
-    $(".team-note-div").each(function() {
+    $(".team-note-div").each(function () {
         $(this).show();
 
         if ($(this).find(".error").length > 0)
@@ -2555,9 +2562,9 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
     if (superCriteria) {
         var slotIds = [];
         if (isFriend)
-            slotIds = [1,2,3,4,5];
+            slotIds = [1, 2, 3, 4, 5];
         else
-            slotIds = [0,2,3,4,5];
+            slotIds = [0, 2, 3, 4, 5];
 
         if (superCriteria.indexOf('must consist of') != -1) {
             var numStr = superCriteria.substring(superCriteria.indexOf('must consist of ') + 16, superCriteria.indexOf('must consist of ') + 18);
@@ -2602,7 +2609,7 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
                         var family = getFamiliesForUnit(unitId);
                         var found = false;
 
-                        $.each(family, function(i, e) {
+                        $.each(family, function (i, e) {
                             if (names.indexOf(e) >= 0) {
                                 found = true;
                                 return true;
@@ -2634,17 +2641,17 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
 }
 
 function checkTeamMiniGuideSpecialMet(teamId) {
-    var team = $(".team[data-team=" + teamId +"]");
+    var team = $(".team[data-team=" + teamId + "]");
     var opId = team.data('op_id');
     var op = tm_opponents[tmId][opId];
 
     var valuableSpecials = ['atk-down-red', 'bind-red', 'blind-red', 'burn-red',
-    'cd-red', 'chain-down-red', 'chain-lock-red', 'def-red-e', 'def-perc-red-e',
-    'def-thres-red-e', 'def-null-red-e', 'desp-red', 'dmg-up-red', 'para-red',
-    'resil-red-e', 'silence-red',];
+        'cd-red', 'chain-down-red', 'chain-lock-red', 'def-red-e', 'def-perc-red-e',
+        'def-thres-red-e', 'def-null-red-e', 'desp-red', 'dmg-up-red', 'para-red',
+        'resil-red-e', 'silence-red',];
 
     var valuableSpecialsWithoutTurns = ['chain-lock', 'chain-bound', 'def-down',
-    'dmg-eot', 'poison', 'slot-change', 'slot-change-block'];
+        'dmg-eot', 'poison', 'slot-change', 'slot-change-block'];
 
     var specialsNeeded = {};
 
@@ -2724,7 +2731,7 @@ function checkTeamMiniGuideSpecialMet(teamId) {
 }
 
 function putGuideSpecialNotMetMsg(teamId, specialsNeeded) {
-    var team = $(".team[data-team=" + teamId +"]");
+    var team = $(".team[data-team=" + teamId + "]");
     var msgStr = "&nbspCounter to Boss actions from Preemp may not be met (assuming max Bind and Despair sockets, and max Double Special; currently not including CA, Super SP, Swap Effect, Sailor, and Support):<br>";
     var specialStr = "";
 
@@ -2741,10 +2748,10 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded) {
 }
 
 function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, immuTypes) {
-    var team = $(".team[data-team=" + teamId +"]");
+    var team = $(".team[data-team=" + teamId + "]");
     var turnsNeeded = requiredTurns;
 
-    team.find(".booster, .booster-clone").each(function() {
+    team.find(".booster, .booster-clone").each(function () {
         var unitId = $(this).data('id');
         var origId = unitId;
 
@@ -2764,11 +2771,18 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                     special = spDesc.character2;
             } else if (Array.isArray(spDesc)) {
                 special = spDesc[spDesc.length - 1].description;
+            } else if (spDesc.character1 && spDesc.combined) {
+                // Dual Units with different Specials and a Combined Special
+                special = spDesc.combined;
             } else if (spDesc.character1) {
-                // Dual Units w/ different Special
+                // TODO: Check character 2 separately
+                // Dual Units with different Specials
                 special = spDesc.character1;
-            } else if (spDesc.llbbase) {
-                // LLB Special
+            } else if (spDesc.base && spDesc.combined) {
+                // Dual Units with same Base Special and a Combined Special
+                special = spDesc.combined;
+            } else if (spDesc.base && spDesc.llbbase) {
+                // Units with LLB
                 special = spDesc.llbbase;
             } else {
                 special = spDesc;
@@ -2888,7 +2902,7 @@ function checkSuperSpecialCriteria(teamId) {
 }
 
 function putSuperNotMetMsg(teamId, msg, isFriend, capId) {
-    team = $(".team[data-team=" + teamId +"]");
+    team = $(".team[data-team=" + teamId + "]");
 
     if (!isFriend)
         msgStr = "&nbsp(Own caption) ";
@@ -2915,7 +2929,7 @@ function clearTeamNotes() {
     $("img.highlight").removeClass("highlight");
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Retrieve Settings
     var server = 'glb'; // Used after content merge
 
@@ -2938,27 +2952,27 @@ $(document).ready(function() {
         }
     }
 
-    $('.sp-filter').each(function() {
+    $('.sp-filter').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.sl-filter').each(function() {
+    $('.sl-filter').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.ca-filter').each(function() {
+    $('.ca-filter').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.sv-filter').each(function() {
+    $('.sv-filter').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.sup-filter').each(function() {
+    $('.sup-filter').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
@@ -3060,7 +3074,7 @@ $(document).ready(function() {
                 var team4 = getUrlParameter('team4');
                 var teams = [team0, team1, team2, team3, team4];
 
-                $.each(teams, function(index, teamStr) {
+                $.each(teams, function (index, teamStr) {
                     var team = teamStr.split(',');
 
                     for (var i = 0; i < team.length; i++) {
@@ -3162,7 +3176,7 @@ $(document).ready(function() {
     }
 
     // Set Don't Have Mode
-    $('#dont-have-mode').change(function() {
+    $('#dont-have-mode').change(function () {
         localStorage.setItem('dontHaveMode', $(this).val());
 
         // Refresh page
@@ -3170,7 +3184,7 @@ $(document).ready(function() {
     });
 
     // Set confirm save
-    $('#confirm-save-checkbox').click(function() {
+    $('#confirm-save-checkbox').click(function () {
         if ($(this).prop('checked')) {
             confirmSave = true;
             localStorage.setItem('confirmSave', true);
@@ -3180,7 +3194,7 @@ $(document).ready(function() {
         }
     });
 
-    $(document).on('click', '.booster:not(.assigned)', function() {
+    $(document).on('click', '.booster:not(.assigned)', function () {
         var selectedId = $(this).data('id');
         var inDontHave = false;
         var src = null;
@@ -3195,7 +3209,7 @@ $(document).ready(function() {
         $(this).tooltip('hide');
     });
 
-    $(document).on('contextmenu', '.booster:not(.assigned)', function(event) {
+    $(document).on('contextmenu', '.booster:not(.assigned)', function (event) {
         event.preventDefault();
         if (dontHaveMode == 0) {
             if ($(this).hasClass('assigned-dh'))
@@ -3210,12 +3224,12 @@ $(document).ready(function() {
             $(this).toggleClass('assigned-dh');
     });
 
-    $('.stroke-double, .stroke-single').attr('title', function(){
+    $('.stroke-double, .stroke-single').attr('title', function () {
         return $(this).html();
     });
 
     // Click to add / remove
-    $('.team-slot, .ambush-team-slot').click(function() {
+    $('.team-slot, .ambush-team-slot').click(function () {
         var selectedId = 0;
         var assigned = false;
         var src = $(this).attr('id');
@@ -3238,12 +3252,12 @@ $(document).ready(function() {
         $('#unit-modal').modal();
     });
 
-    $('#add-button').click(function() {
+    $('#add-button').click(function () {
         populateUnitModal('dont-have', 0, false);
         $('#unit-modal').modal();
     });
 
-    $(document).on('click', '.select-modal-unit', function() {
+    $(document).on('click', '.select-modal-unit', function () {
         var unitId = $(this).data('id');
         var src = $(this).data('src');
         var b = $('#booster_' + unitId);
@@ -3292,7 +3306,7 @@ $(document).ready(function() {
         $(this).tooltip('hide');
     });
 
-    $('#remove-button').click(function() {
+    $('#remove-button').click(function () {
         var deleteId = $(this).data('id');
         var teamId = $(this).data("src");
 
@@ -3311,7 +3325,7 @@ $(document).ready(function() {
     });
 
     // OPTC-DB page
-    $('#db-button').click(function() {
+    $('#db-button').click(function () {
         var unitId = $(this).data('id');
 
         if (unitId > 9000)
@@ -3326,7 +3340,7 @@ $(document).ready(function() {
     });
 
     // Mini guide
-    $(document).on('click', '.op-guide-btn', function() {
+    $(document).on('click', '.op-guide-btn', function () {
         clearSpecialFilters();
         clearSailorFilters();
         clearCaptainFilters();
@@ -3346,7 +3360,7 @@ $(document).ready(function() {
             var opType = op.type;
             if (Array.isArray(opName) && Array.isArray(opType)) {
                 for (var i = 0; i < opName.length && i < opType.length; i++) {
-                    var opHtml= $('<span></span>');
+                    var opHtml = $('<span></span>');
                     opHtml.html(opName[i]);
                     opHtml.addClass(opType[i]);
 
@@ -3469,7 +3483,7 @@ $(document).ready(function() {
     });
 
     // Activate Type Class Filter after clicking from Mini Guide
-    $(document).on('click', '.guide-tc-filter', function() {
+    $(document).on('click', '.guide-tc-filter', function () {
         clearTypeFilters();
         clearClassFilters();
 
@@ -3503,43 +3517,43 @@ $(document).ready(function() {
     });
 
     // Activate Counter Special Filter after clicking from Mini Guide
-    $(document).on('click', '.guide-sp-filter', function() {
+    $(document).on('click', '.guide-sp-filter', function () {
         $(this).toggleClass('selected');
 
         // Activate actual Filter
         var filter = $(this).data('filter');
-        $('.sp-filter[data-filter=' + filter  + ']').click();
+        $('.sp-filter[data-filter=' + filter + ']').click();
     });
 
     // Activate Counter Sailor Filter after clicking from Mini Guide
-    $(document).on('click', '.guide-sl-filter', function() {
+    $(document).on('click', '.guide-sl-filter', function () {
         $(this).toggleClass('selected');
 
         // Activate actual Filter
         var filter = $(this).data('filter');
-        $('.sl-filter[data-filter=' + filter  + ']').click();
+        $('.sl-filter[data-filter=' + filter + ']').click();
     });
 
     // Activate Counter Captain Filter after clicking from Mini Guide
-    $(document).on('click', '.guide-ca-filter', function() {
+    $(document).on('click', '.guide-ca-filter', function () {
         $(this).toggleClass('selected');
 
         // Activate actual Filter
         var filter = $(this).data('filter');
-        $('.ca-filter[data-filter=' + filter  + ']').click();
+        $('.ca-filter[data-filter=' + filter + ']').click();
     });
 
     // Activate Counter Super/VS Filter after clicking from Mini Guide
-    $(document).on('click', '.guide-sv-filter', function() {
+    $(document).on('click', '.guide-sv-filter', function () {
         $(this).toggleClass('selected');
 
         // Activate actual Filter
         var filter = $(this).data('filter');
-        $('.sv-filter[data-filter=' + filter  + ']').click();
+        $('.sv-filter[data-filter=' + filter + ']').click();
     });
 
     // Change Boss HP and ATK based on Nav Lv
-    $('#guide-nav-lv').change(function() {
+    $('#guide-nav-lv').change(function () {
         var navLv = parseInt($(this).val());
         var hpMultiplier = 0.1;
         var atkMultiplier = 0.05;
@@ -3552,13 +3566,13 @@ $(document).ready(function() {
             atkMultiplier = 0.075;
         }
 
-        $('.guide-boss-hp').each(function() {
+        $('.guide-boss-hp').each(function () {
             var baseBossHp = parseInt($(this).closest('.guide-boss-hp-div').find('.guide-boss-hp-base').val());
             var cBossHp = baseBossHp + (baseBossHp * (navLv - 1) * hpMultiplier);
             $(this).text(new Intl.NumberFormat().format(cBossHp));
         });
 
-        $('.guide-boss-atk').each(function() {
+        $('.guide-boss-atk').each(function () {
             var baseBossAtk = parseInt($(this).closest('.guide-boss-atk-div').find('.guide-boss-atk-base').val());
             var cBossAtk = baseBossAtk + (baseBossAtk * (navLv - 1) * atkMultiplier);
             $(this).text(new Intl.NumberFormat().format(cBossAtk));
@@ -3566,14 +3580,14 @@ $(document).ready(function() {
     });
 
     // Point calculation button
-    $('.pts-button').click(function() {
+    $('.pts-button').click(function () {
         updatePts($(this));
     });
 
     $('#pts-all-button').click(updateAllPts);
 
     // DB Calculator button
-    $('.cal-button').click(function() {
+    $('.cal-button').click(function () {
         var teamDiv = $(this).closest('.team');
         var team = getTeamUnits(teamDiv);
 
@@ -3620,7 +3634,7 @@ $(document).ready(function() {
     });
 
     // Save teams
-    $('#save-button').click(function() {
+    $('#save-button').click(function () {
         var serverStr = server === 'glb' ? '' : '_jpn';
         var lastSave = localStorage.getItem('lastSave_' + tmId + serverStr);
 
@@ -3631,17 +3645,17 @@ $(document).ready(function() {
     });
 
     // Save teams from confirm save dialog
-    $('#confirm-save-button').click(function() {
+    $('#confirm-save-button').click(function () {
         doSave(tmId, server);
     });
 
     // Load teams
-    $('#load-button').click(function() {
+    $('#load-button').click(function () {
         doLoad(tmId);
     });
 
     // Reset teams
-    $('#reset-button').click(function() {
+    $('#reset-button').click(function () {
         resetAll();
     });
 
@@ -3656,7 +3670,7 @@ $(document).ready(function() {
         else
             option = { windowWidth: windowWidth, allowTaint: true };
 
-        html2canvas($("#tm-team-sets")[0], option).then(function(canvas) {
+        html2canvas($("#tm-team-sets")[0], option).then(function (canvas) {
             $("#export-image-modal-body").empty().append(canvas);
         });
 
@@ -3666,7 +3680,7 @@ $(document).ready(function() {
     }
 
     // Export image
-    $('#export-image-button').click(function() {
+    $('#export-image-button').click(function () {
         if ($(window).width() < 680)
             exportImage(350);
         else
@@ -3675,7 +3689,7 @@ $(document).ready(function() {
     });
 
     // Set export image size
-    $('.export-image-size').click(function() {
+    $('.export-image-size').click(function () {
         var windowWidth;
         if ($(this).val() == "3x2")
             windowWidth = 650;
@@ -3686,20 +3700,20 @@ $(document).ready(function() {
     });
 
     // Export url
-    $('#export-url-button').click(function() {
+    $('#export-url-button').click(function () {
         var url = 'https://' + window.location.hostname + window.location.pathname;
         url += '?transfer=true';
         url += '&tmId=' + tmId;
 
         if ((tmId > 1889 && server == 'glb') || (tmId > 2064 && server == 'jpn')) {
-            $('.team:visible').each(function() {
+            $('.team:visible').each(function () {
                 var opId = $(this).data('op_id');
                 var team = getTeamUnits($(this));
 
                 url += '&op' + opId + '=' + team.join();
             });
         } else {
-            $('.team:visible').each(function() {
+            $('.team:visible').each(function () {
                 var team_num = $(this).data('team');
                 var team = getTeamUnits($(this));
 
@@ -3709,7 +3723,7 @@ $(document).ready(function() {
 
         var dontHaves = [];
 
-        $('#dont-have').find('.booster').each(function() {
+        $('#dont-have').find('.booster').each(function () {
             dontHaves.push($(this).data('id'));
         });
 
@@ -3718,7 +3732,7 @@ $(document).ready(function() {
 
         // Save supports
         var supports = [];
-        $('.support-slot').not('.hidden').each(function() {
+        $('.support-slot').not('.hidden').each(function () {
             if ($(this).hasClass("empty"))
                 supports.push(-1);
             else
@@ -3732,12 +3746,12 @@ $(document).ready(function() {
     });
 
     // Copy export url
-    $('#copy-url-button').click(function() {
+    $('#copy-url-button').click(function () {
         navigator.clipboard.writeText($('#export-url-link').val());
     });
 
     // Copy export image
-    $('#copy-img-button').click(function() {
+    $('#copy-img-button').click(function () {
         var canvas = $('#export-image-modal-body > canvas').get(0);
         canvas.toBlob(blob => navigator.clipboard.write([
             new ClipboardItem({
@@ -3747,18 +3761,18 @@ $(document).ready(function() {
     });
 
     // Disable Read-only Mode
-    $('#read-only-button').click(function() {
+    $('#read-only-button').click(function () {
         $('#read-only-button-div').hide();
         $('.not-read-only').prop('disabled', false);
     });
 
     // Target Pts / Nav Lv Calculation
-    $('#target-pts-dd').change(function() {
+    $('#target-pts-dd').change(function () {
         $('#target-pts').val($(this).val());
         calculateTargetPts();
     });
 
-    $('#bird-luck-dd').change(function() {
+    $('#bird-luck-dd').change(function () {
         $('#bird-luck').val($(this).val());
         calculateTargetPts();
     });
@@ -3767,7 +3781,7 @@ $(document).ready(function() {
 
     // Type filter
     var typeFilters = [];
-    $('.type-filter').click(function() {
+    $('.type-filter').click(function () {
         var filter = $(this).data('filter');
 
         if ($(this).hasClass('selected')) {
@@ -3782,14 +3796,14 @@ $(document).ready(function() {
     });
 
     // Name filter
-    $('#name-filter').on('keyup', function() {
+    $('#name-filter').on('keyup', function () {
         var name = $(this).val().toLowerCase();
 
         if (name.length == 0) {
             // Clear filters if input is empty
             $('.name-filtered').removeClass('name-filtered');
         } else {
-            $('.booster, .booster-clone').each(function() {
+            $('.booster, .booster-clone').each(function () {
                 var unit = $(this);
                 var unitId = unit.data('id');
 
@@ -3798,7 +3812,7 @@ $(document).ready(function() {
 
                 var family = families[unitId];
 
-                $.each(family, function(i, e) {
+                $.each(family, function (i, e) {
                     if (e.toLowerCase().includes(name)) {
                         unit.removeClass('name-filtered');
                         return false;
@@ -3815,7 +3829,7 @@ $(document).ready(function() {
     var excludeOtherClasses = false;
 
     // Exclude other Classes
-    $('#exclude-other-checkbox').click(function() {
+    $('#exclude-other-checkbox').click(function () {
         if ($('#preset-filters').val() != -1) {
             $('#preset-filters').val(-1);
             classFilters = [];
@@ -3833,7 +3847,7 @@ $(document).ready(function() {
     });
 
     // Preset filters
-    $('#preset-filters').change(function() {
+    $('#preset-filters').change(function () {
         if ($(this).val() == -1) {
             $('#exclude-other-checkbox').removeClass('selected');
             excludeOtherClasses = false;
@@ -3868,7 +3882,7 @@ $(document).ready(function() {
         applyClassFilter(classFilters, excludeOtherClasses, true);
     });
 
-    $('.class-filter').click(function() {
+    $('.class-filter').click(function () {
         if ($('#preset-filters').val() != -1) {
             $('#preset-filters').val(-1);
             $('#exclude-other-checkbox').prop('checked', false);
@@ -3890,7 +3904,7 @@ $(document).ready(function() {
     });
 
     // Special Filter
-    $('.sp-filter').click(function() {
+    $('.sp-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'sp-filtered-' + filter;
         var filterRegex = filter_map_sp[filter];
@@ -3902,7 +3916,7 @@ $(document).ready(function() {
         } else {
             $(this).addClass('selected');
 
-            $('.booster, .booster-clone').each(function() {
+            $('.booster, .booster-clone').each(function () {
                 var unitId = $(this).data('id');
                 var origId = unitId;
 
@@ -3914,31 +3928,56 @@ $(document).ready(function() {
                 if (unitDetail) {
                     var spDesc = unitDetail.special;
 
-                    var special;
-                    if (origId > 9000) {
-                        // VS Units
-                        if (origId % 2 === 1)
-                            special = spDesc.character1;
-                        else
-                            special = spDesc.character2;
-                    } else if (Array.isArray(spDesc))
-                        special = spDesc[spDesc.length - 1].description;
-                    else if (spDesc.character1)
-                        special = spDesc.character1;
-                    else if (spDesc.llbbase)
-                        special = spDesc.llbbase;
-                    else
-                        special = spDesc;
+                    if (spDesc.character1 && spDesc.character2) {
+                        // Dual Units with different Specials
+                        var filtered = true;
+                        if (spDesc.character1) {
+                            if (filterRegex.test(spDesc.character1))
+                                filtered = false;
+                        }
 
-                    if (!filterRegex.test(special))
-                        $(this).addClass(filterClass);
+                        if (spDesc.character2) {
+                            if (filterRegex.test(spDesc.character2))
+                                filtered = false;
+                        }
+
+                        if (spDesc.combined) {
+                            if (filterRegex.test(spDesc.combined))
+                                filtered = false;
+                        }
+
+                        if (filtered)
+                            $(this).addClass(filterClass);
+                    } else {
+                        var special;
+                        if (origId > 9000) {
+                            // VS Units
+                            if (origId % 2 === 1)
+                                special = spDesc.character1;
+                            else
+                                special = spDesc.character2;
+                        } else if (Array.isArray(spDesc)) {
+                            special = spDesc[spDesc.length - 1].description;
+                        } else if (spDesc.base && spDesc.combined) {
+                            // Dual Units with same Base Special and a Combined Special
+                            special = spDesc.combined;
+                        } else if (spDesc.base && spDesc.llbbase) {
+                            // Units with LLB
+                            special = spDesc.llbbase;
+                        } else {
+                            special = spDesc;
+                        }
+
+                        if (!filterRegex.test(special))
+                            $(this).addClass(filterClass);
+                    }
                 }
             });
         }
     });
 
     // Sailor Filter
-    $('.sl-filter').click(function() {
+    $('.sl-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'sl-filtered-' + filter;
         var filterRegex = filter_map_sl[filter];
@@ -3950,7 +3989,7 @@ $(document).ready(function() {
         } else {
             $(this).addClass('selected');
 
-            $('.booster, .booster-clone').each(function() {
+            $('.booster, .booster-clone').each(function () {
                 var unitId = $(this).data('id');
 
                 if (unitId > 9000)
@@ -3983,7 +4022,7 @@ $(document).ready(function() {
     });
 
     // Captain Filter
-    $('.ca-filter').click(function() {
+    $('.ca-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'ca-filtered-' + filter;
         var filterRegex = filter_map_ca[filter];
@@ -3995,7 +4034,7 @@ $(document).ready(function() {
         } else {
             $(this).addClass('selected');
 
-            $('.booster, .booster-clone').each(function() {
+            $('.booster, .booster-clone').each(function () {
                 var unitId = $(this).data('id');
                 var origId = unitId;
 
@@ -4043,7 +4082,7 @@ $(document).ready(function() {
     });
 
     // Super/VS Filter
-    $('.sv-filter').click(function() {
+    $('.sv-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'sv-filtered-' + filter;
         var filterRegex = filter_map_sp[filter];
@@ -4055,7 +4094,7 @@ $(document).ready(function() {
         } else {
             $(this).addClass('selected');
 
-            $('.booster, .booster-clone').each(function() {
+            $('.booster, .booster-clone').each(function () {
                 var unitId = $(this).data('id');
                 var origId = unitId;
 
@@ -4087,7 +4126,7 @@ $(document).ready(function() {
 
     // Support filter
     var supportFilters = [];
-    $('.sup-filter').click(function() {
+    $('.sup-filter').click(function () {
         var filter = $(this).data('filter');
 
         if ($(this).hasClass('selected')) {
@@ -4124,7 +4163,7 @@ $(document).ready(function() {
     });
 
     // Clear Filters
-    $('.filter-clear-btn').click(function() {
+    $('.filter-clear-btn').click(function () {
         var target = $(this).data('target');
 
         if ('type' === target) {
@@ -4146,7 +4185,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.filter-clear-all-btn').click(function() {
+    $('.filter-clear-all-btn').click(function () {
         clearTypeFilters();
         typeFilters = [];
 
@@ -4164,8 +4203,8 @@ $(document).ready(function() {
         clearSuperFilters();
     });
 
-    $('.sup-filter-clear-all-btn').click(function() {
-        $('.sup-filter.selected').each(function() {
+    $('.sup-filter-clear-all-btn').click(function () {
+        $('.sup-filter.selected').each(function () {
             $(this).removeClass('selected');
         });
 
@@ -4175,12 +4214,12 @@ $(document).ready(function() {
     });
 
     // Help button
-    $('#help-button').click(function() {
+    $('#help-button').click(function () {
         $('#help-modal').modal();
     });
 
     // TM selection dropdown
-    $('#tm-select').change(function() {
+    $('#tm-select').change(function () {
         var parsedTmId = parseInt($(this).val());
 
         tmId = parsedTmId;
@@ -4189,18 +4228,18 @@ $(document).ready(function() {
     });
 
     // Press Esc to close modal
-    $(document).keyup(function(e) {
+    $(document).keyup(function (e) {
         if (e.keyCode == 27)
             $('.modal').modal('hide');
     });
 
     var elemTop;
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         elemTop = $("#dont-have").offset().top + 200;
     });
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var scrHeight = $(window).scrollTop();
         var win = $(window).height() + scrHeight;
 
@@ -4222,7 +4261,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#expand-icon").click(function() {
+    $("#expand-icon").click(function () {
         if ($(this).data("status") == "down") {
             $("#tm-team-sets").hide();
             $("#team-hints").hide();
@@ -4238,12 +4277,12 @@ $(document).ready(function() {
 
     // Set up drag and drop for each booster section
     var ids = ["booster_2_3x", "booster_2_25x", "booster_2_2x", "booster_2x", "booster_1_85x", "booster_1_8x", "booster_1_8x_v2", "booster_1_75x",
-                "booster_1_7x", "booster_1_65x", "booster_1_6x", "booster_1_5x", "booster_1_4x", "booster_1_4x_v2", "booster_1_35x", "booster_1_35x_valt",
-                "booster_1_35x_v2", "booster_1_35x_v3", "booster_1_35x_v4", "booster_1_3x", "booster_1_3x_v2",
-                "booster_1_3x_v3", "booster_1_25x", "booster_1_25x_v2", "booster_1_25x_v3", "booster_1_25x_v4",
-                "booster_1_2x_legend", "booster_1_2x_rr", "booster_1_2x_tm_rr", "booster_1_2x_tm_rr",
-                "booster_1_2x_coliseum", "booster_1_2x_raid", "booster_1_2x_fortnight", "booster_1_2x_tm",
-                "booster_1_2x_tm", "booster_1_2x_other", "booster_1_1x", "booster_1x"];
+        "booster_1_7x", "booster_1_65x", "booster_1_6x", "booster_1_5x", "booster_1_4x", "booster_1_4x_v2", "booster_1_35x", "booster_1_35x_valt",
+        "booster_1_35x_v2", "booster_1_35x_v3", "booster_1_35x_v4", "booster_1_3x", "booster_1_3x_v2",
+        "booster_1_3x_v3", "booster_1_25x", "booster_1_25x_v2", "booster_1_25x_v3", "booster_1_25x_v4",
+        "booster_1_2x_legend", "booster_1_2x_rr", "booster_1_2x_tm_rr", "booster_1_2x_tm_rr",
+        "booster_1_2x_coliseum", "booster_1_2x_raid", "booster_1_2x_fortnight", "booster_1_2x_tm",
+        "booster_1_2x_tm", "booster_1_2x_other", "booster_1_1x", "booster_1x"];
 
     for (var id of ids) {
         var boosterEl = document.getElementById(id);
@@ -4269,7 +4308,7 @@ $(document).ready(function() {
             pull: true,
             put: true
         },
-        onAdd: function(evt) {
+        onAdd: function (evt) {
             var item = $("#" + evt.item.id);
             item.data('team', -1);
             item.addClass('assigned-dh');
@@ -4278,7 +4317,7 @@ $(document).ready(function() {
             // Remove corresponding Clone
             $('#booster-clone_' + item.data('id') + '_clone').remove();
         },
-        onRemove: function(evt) {
+        onRemove: function (evt) {
             var item = $("#" + evt.item.id);
             item.removeClass('assigned-dh');
         },
@@ -4308,7 +4347,7 @@ $(document).ready(function() {
                     from_list = item.closest('.team-slot, .ambush-team-slot');
                     item.tooltip('hide');
                 },
-                onAdd: function(evt) {
+                onAdd: function (evt) {
                     var item = $("#" + evt.item.id);
 
                     var assigned = item.hasClass("assigned");
@@ -4319,7 +4358,7 @@ $(document).ready(function() {
                         item.closest('.team').find('.booster-fc').remove();
 
                     to_list.find('.booster-ambush').remove();
-                    to_list.find('.booster, .non-booster').each(function() {
+                    to_list.find('.booster, .non-booster').each(function () {
                         if ($(this).attr("id") != item.attr("id")) {
                             if (assigned) {
                                 from_list.append($(this));
@@ -4363,7 +4402,7 @@ $(document).ready(function() {
 
                     doTeamBuildCheck(to_list.closest('.team').data('team'));
                 },
-                onEnd: function(evt) {
+                onEnd: function (evt) {
                     updateAllInfo();
                 }
             });
@@ -4390,7 +4429,7 @@ $(document).ready(function() {
                 from_list = item.closest('.team-slot, .ambush-team-slot');
                 item.tooltip('hide');
             },
-            onAdd: function(evt) {
+            onAdd: function (evt) {
                 var item = $("#" + evt.item.id);
                 to_list = $("#" + evt.to.id);
                 from_list = $("#" + evt.from.id);
@@ -4399,7 +4438,7 @@ $(document).ready(function() {
                     $(".booster-ambush-fc").remove();
 
                 if (item.hasClass('booster-clone')) {
-                    to_list.find( ".booster-clone" ).each(function() {
+                    to_list.find(".booster-clone").each(function () {
                         if ($(this).attr("id") != item.attr("id"))
                             from_list.append($(this));
                     });
@@ -4427,14 +4466,14 @@ $(document).ready(function() {
 
                 doTeamBuildCheck(to_list.closest('.team').data('team'));
             },
-            onEnd: function() {
+            onEnd: function () {
                 updateAllInfo();
             }
         });
     }
 
     // Filter button events
-    $(".filter-button").click(function() {
+    $(".filter-button").click(function () {
         if ($(this).hasClass("active")) {
             $("#tm-team-container").show();
             $(".fixed-filters").fadeOut("slow");
@@ -4445,7 +4484,7 @@ $(document).ready(function() {
     });
 
     // Note button events
-    $(".fixed-note-button").click(function() {
+    $(".fixed-note-button").click(function () {
         if ($(this).hasClass("active")) {
             $(".fixed-note-button").removeClass("active");
             $("#tm-team-build-note-container").fadeOut("slow");
@@ -4456,7 +4495,7 @@ $(document).ready(function() {
     });
 
     // Support Filter button events
-    $(".sup-filter-button").click(function() {
+    $(".sup-filter-button").click(function () {
         if ($(this).hasClass("active")) {
             $("#support-filters").hide();
             $(this).removeClass("active");
@@ -4477,16 +4516,16 @@ $(document).ready(function() {
         ],
         "columnDefs": [
             {
-                "targets": [ 1,3 ],
+                "targets": [1, 3],
                 "visible": false
             }
         ],
-        "ordering":  false,
+        "ordering": false,
         "autoWidth": false,
         "search": {
             "regex": true
         },
-        "rowCallback": function(row, data, index) {
+        "rowCallback": function (row, data, index) {
             var imageDiv = $("<div></div>");
             imageDiv.append(createImgHtml(getThumb(data.id), 40, false));
             $('td:eq(0)', row).html(imageDiv);
@@ -4500,7 +4539,7 @@ $(document).ready(function() {
                 var teamId = Number(currentSupportSlotId.toString()[0]);
                 var names = getWholeTeamFamilyName(teamId);
 
-                var isInvalidSupport = names.some(function(name) {
+                var isInvalidSupport = names.some(function (name) {
                     for (var supportName of data.name) {
                         if (supportName.toLocaleUpperCase() == name.toLocaleUpperCase()) {
                             return true;
@@ -4515,7 +4554,7 @@ $(document).ready(function() {
     });
 
     var currentSupportSlotId;
-    $(".support-slot").click(function() {
+    $(".support-slot").click(function () {
         currentSupportSlotId = $(this).data("slot");
         teamSlot = $("#team-slot-" + $(this).data("slot") + "");
         var unit = teamSlot.find(".booster, .booster-clone");
@@ -4525,7 +4564,7 @@ $(document).ready(function() {
             var origId = unit.data("id");
             var uniqueClasses = getClassesForUnit(origId);
 
-            uniqueClasses.forEach(function(value) {
+            uniqueClasses.forEach(function (value) {
                 searchStr = searchStr + "|\\[" + value + " characters\\]";
             });
 
@@ -4535,26 +4574,26 @@ $(document).ready(function() {
                 for (type of types) {
                     searchStr = searchStr + "|\\[" + type + " characters\\]";
 
-                    uniqueClasses.forEach(function(value) {
+                    uniqueClasses.forEach(function (value) {
                         searchStr = searchStr + "|\\[" + type + " " + value + " characters\\]";
                     });
                 }
             } else {
                 searchStr = searchStr + "|\\[" + types + " characters\\]";
 
-                uniqueClasses.forEach(function(value) {
+                uniqueClasses.forEach(function (value) {
                     searchStr = searchStr + "|\\[" + types + " " + value + " characters\\]";
                 });
             }
 
             // Search for name
             var family = getFamiliesForUnit(origId);
-            $.each(family, function(i, e) {
+            $.each(family, function (i, e) {
                 searchStr = searchStr + "|(^.*(^|, |and )" + e + "($|,| and| \\().*$)";
             });
 
             // Search for cost
-            var cost = units[parseVsUnitId(origId)-1][4];
+            var cost = units[parseVsUnitId(origId) - 1][4];
             if (cost <= 29)
                 searchStr = searchStr + "|cost 29 or less|cost 40 or less";
             else if (cost <= 40)
@@ -4585,7 +4624,7 @@ $(document).ready(function() {
         if (this.classList.contains('invalid-support')) {
             return;
         }
-        var unitId = supportTable.row( this ).data().id;
+        var unitId = supportTable.row(this).data().id;
         var supSlot = $(".support-slot[data-slot=" + currentSupportSlotId + "]");
         var imgDiv = $('<div></div>');
         imgDiv.data("id", unitId);
@@ -4600,12 +4639,12 @@ $(document).ready(function() {
         $('#support-character-modal').modal('hide');
     });
 
-    $(".sup-filter-remove-btn").click(function() {
+    $(".sup-filter-remove-btn").click(function () {
         removeSupport(currentSupportSlotId);
         $('#support-character-modal').modal('hide');
     });
 
-    $("#non-booster-form").submit(function(evt) {
+    $("#non-booster-form").submit(function (evt) {
         evt.preventDefault();
 
         var unitId = parseInt($("#non-booster-unit").val());
