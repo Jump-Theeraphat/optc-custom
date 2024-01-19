@@ -17753,6 +17753,19 @@ var tm_opponents = {
                                 ['bar-p',           '1T, 2x'],
                                 ['immu-all',        '99+T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['def-perc',        '5T'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['dmg-up',          '5T']
+                            ]
                         }
                     ]
                 }
@@ -17790,6 +17803,26 @@ var tm_opponents = {
                                 ['para',            '5T'],
                                 ['slot-block',      'All'],
                                 ['immu-delay',      '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-bind',       '5T'],
+                                ['tap-limit',       '3T, 4x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['slot-lock',       '1x Good']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['atk',             '5T']
                             ]
                         }
                     ]
@@ -17838,6 +17871,26 @@ var tm_opponents = {
                             action: [
                                 ['dmg-normal',      '100,000']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['dmg-up',          '3T'],
+                                ['blow-away',       '3T, Row 3'],
+                                ['def-perc',        '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['tap-limit',       '3T, 4x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['slot-bind',       '5T']
+                            ]
                         }
                     ]
                 }
@@ -17884,6 +17937,27 @@ var tm_opponents = {
                             action: [
                                 ['slot-bind',       '3T']
                             ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['tap-limit',       '3T, 4x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['def-perc',        '4T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['para',            '5T'],
+                                ['slot-bind',       '?T']
+                            ]
                         }
                     ]
                 }
@@ -17910,7 +17984,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Zoro', 'STR'],
-                    hp_: 3500000,
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -17930,6 +18004,15 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['hp-cut',          '80%']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['atk',             '5T'],
+                                ['slot-bind',       '3T'],
+                                ['def-perc',        '4T'],
+                                ['tap-limit',       '3T, 4x']
                             ]
                         }
                     ]
@@ -17957,6 +18040,26 @@ var tm_opponents = {
                                 ['para',            '3T'],
                                 ['silence',         '3T']
                             ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['Pain',            '3T, 15000'],
+                                ['bar-p',           '3T, 2x']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['tap-limit',       '3T, 4x']
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
+                            ]
                         }
                     ]
                 }
@@ -17982,7 +18085,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'STR'],
+                    boss: ['Shinobu & Raizo', 'STR'],
                     hp_: 1500000,
                     atk_: 6600,
                     detail: [
@@ -17995,6 +18098,25 @@ var tm_opponents = {
                                 ['Pain',            '5T, 10000'],
                                 ['def',             '3T, 1Mx'],
                                 ['def-thres',       '3T, 99%, 1000']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['slot-bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['cd-rew',          '2T']
                             ]
                         }
                     ]
@@ -18014,6 +18136,31 @@ var tm_opponents = {
                                 ['slot-change',     'RCV'],
                                 ['atk-down',        '10T, 99%, Striker/Shooter/Driven/Cerebral/Powerhouse'],
                                 ['bar-slot',        '3T, 1x, RAINBOW']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['atk',             '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 2',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-bind',       '5T']
+                            ]
+                        },
+                        {
+                            type: 'Turn 3',
+                            action: [
+                                ['stun',            'Row 3'],
+                            ]
+                        },
+                        {
+                            type: '<20%',
+                            action: [
+                                ['dmg-normal',      'Deadly']
                             ]
                         }
                     ]
