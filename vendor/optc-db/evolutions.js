@@ -5651,6 +5651,10 @@ window.evolutions = {
         evolution: 4008,
         evolvers: [118, 86, 266, 97, 267]
     },
+    2330: {
+        evolution: 4010,
+        evolvers: [ "4010-skull", "4010-skull", "4010-skull", "4010-skull", "4010-skull" ]
+    },
     4019: {
         evolution: 4020,
         evolvers: [118, 2662, 302, 102, 267]
@@ -5706,6 +5710,18 @@ window.evolutions = {
     4066: {
         evolution: 4074,
         evolvers: [ "4074-skull", "4074-skull", "4074-skull", "4074-skull", "4074-skull" ]
+    },
+    4078: {
+        evolution: 4079,
+        evolvers: [ "4079-skull", "4079-skull", "4079-skull", "4079-skull", "4079-skull" ]
+    },
+    3227: {
+        evolution: 4080,
+        evolvers: [ "4080-skull", "4080-skull", "4080-skull", "4080-skull", "4080-skull" ]
+    },
+    4088: {
+        evolution: 4089,
+        evolvers: [ "4089-skull", "4089-skull", "4089-skull", "4089-skull", "4089-skull" ]
     },
     4986: {
         evolution: 4987,
