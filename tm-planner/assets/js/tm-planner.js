@@ -633,6 +633,16 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 4089) {
+        // TM Jinbe
+        $('#div_2_25x').show();
+        $('#div_2x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -999,6 +1009,7 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'CD Lock' ||
         iconKey === 'Fear' ||
         iconKey === 'Harder P' ||
+        iconKey === 'Easier P' ||
         iconKey === 'Heal Team' ||
         iconKey === 'Counter' ||
         iconKey === '- Max HP' ||

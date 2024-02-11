@@ -18168,4 +18168,312 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Jinbe ==========
+    4089: {
+        4086: {
+            name: 'Chopper',
+            type: 'PSY',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Chopper', 'PSY'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['slot-block',      'All'],
+                                ['hunger',          '2x'],
+                                ['def-perc',        '6T, 90%'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['immu-all',        '99+T, Except Def Down']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4091: {
+            name: 'Brook',
+            type: 'DEX',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Shooter/Striker/Cerebral'],
+                                ['VS Gauge -',      '5T, Shooter/Striker/Cerebral'],
+                                ['S Switch -',      '5T, Shooter/Striker/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Brook', 'DEX'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['chain-down',      '5T, 0.6x'],
+                                ['chain-atk-down',  '2T, <3.25x Chain, 90%'],
+                                ['stun',            'Row 2 3'],
+                                ['burn',            '6T, 15000'],
+                                ['bar-slot',        '2T, 2x, BLOCK'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4087: {
+            name: 'Franky & Usopp',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Driven/Powerhouse/Striker'],
+                                ['VS Gauge -',      '5T, Driven/Powerhouse/Striker'],
+                                ['S Switch -',      '5T, Driven/Powerhouse/Striker']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Franky & Usopp', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['slot-change',     'Bad'],
+                                ['def-perc',        '6T, 90%'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['immu-all',        '99+T, Except Increase Dmg Taken']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['heal',            '10%'],
+                                ['dmg-normal',      '20000'],
+                                ['bar-slot',        '2T, 1x, WANO'],
+                                ['Action Silence',  '1T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4089: {
+            name: 'Jinbe',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, INT/PSY/STR'],
+                                ['VS Gauge -',      '5T, INT/PSY/STR'],
+                                ['S Switch -',      '5T, INT/PSY/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Jinbe', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['para',            '6T'],
+                                ['nao',             '99+T'],
+                                ['slot-block',      'All'],
+                                ['bind',            '9T, Row 2 3'],
+                                ['Easier P',        '1T'],
+                                ['def-null',        '1T'],
+                                ['bar-gd',          '1T, 2x'],
+                                ['immu-all',        '99+T, Except Increase Dmg Taken / Weakened']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '100K']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4084: {
+            name: 'Bonney',
+            type: 'PSY',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, INT/PSY/DEX'],
+                                ['VS Gauge -',      '5T, INT/PSY/DEX'],
+                                ['S Switch -',      '5T, INT/PSY/DEX'],
+                                ['slot-pos',        '5T, INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Bonney', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '6T, 99%'],
+                                ['cd-rew',          '1T'],
+                                ['Intimidate',      '3T, -1T, Set Chain'],
+                                ['def',             '5T, 1Mx'],
+                                ['bar-slot',        '2T, 1x, INT'],
+                                ['nao',             '99+T']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Bonney', 'PSY'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['desp',            '12T'],
+                                ['slot-block',      'All'],
+                                ['chain-down',      '6T, 0.6x'],
+                                ['chain-atk-down',  '2T, <2.2x Chain, 90%'],
+                                ['Intimidate',      '3T, -1T, Slot Boost'],
+                                ['atk-boost',       '1T, 1.1x'],
+                                ['def',             '6T, 1Mx'],
+                                ['immu-all',        '99+T, Except Def Down']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Set Chain (once)',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['slot-bind',       '5T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4082: {
+            name: 'Lilith',
+            type: 'PSY',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, INT/PSY/STR'],
+                                ['VS Gauge -',      '5T, INT/PSY/STR'],
+                                ['S Switch -',      '5T, INT/PSY/STR']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Lilith', 'PSY'],
+                    hp_: 1500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hp-cut',          '50%'],
+                                ['para',            '6T'],
+                                ['hunger',          '3x'],
+                                ['nao',             '99+T'],
+                                ['slot-change',     'Color->Bad'],
+                                ['bind',            '9T, Row 1']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lilith', 'PSY'],
+                    hp_: 4000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['bind',            '10T, Row 2 3'],
+                                ['slot-bind',       '5T'],
+                                ['resil',           '6T'],
+                                ['atk-down',        '5T, 99%'],
+                                ['Pain',            '5T, 18000'],
+                                ['immu-all',        '99+T, Except Def Down / Increase Dmg Taken / Weakened']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost (once)',
+                            action: [
+                                ['clear-buff',      'Buff Only'],
+                                ['Swap Captain',    '3T, Random Sailor']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
