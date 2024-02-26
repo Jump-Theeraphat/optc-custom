@@ -35,4 +35,8 @@ var pkas = {
         name: 'Jinbe',
         thumb: 4088
     },
+    4107: {
+        name: 'Coby',
+        thumb: 4107
+    },
 };
