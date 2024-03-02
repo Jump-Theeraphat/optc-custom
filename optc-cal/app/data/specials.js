@@ -150,6 +150,11 @@ var specials = {
         name: 'Yamato VS Kaido (1am ~ 6am)',
         thumb: 3984
     },
+    'bb_4096': {
+        type: 'Blitz Battle',
+        name: 'Commodore VS Empress (1am ~ 6am)',
+        thumb: 4096
+    },
 
     'wc_2401': {
         type: 'World Clash',
