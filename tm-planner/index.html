@@ -17,6 +17,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="/tm-planner/assets/js/Sortable.js"></script>
 <script src="/tm-planner/assets/js/html2canvas.js"></script>
@@ -537,7 +538,8 @@
 
         <div class="col-lg-4 col-md-6 col-sm-6 col-8">
             <select class="form-control form-control-lg not-read-only" id="tm-select">
-                <option value="4089_glb" class="tm-option glb-tm" id="newest-tm-glb">Jinbe</option>
+                <option value="4108_glb" class="tm-option glb-tm" id="newest-tm-glb">Coby</option>
+                <option value="4089_glb" class="tm-option glb-tm">Jinbe</option>
                 <option value="4074_glb" class="tm-option glb-tm">Edward Newgate</option>
                 <option value="4053_glb" class="tm-option glb-tm">Luffy</option>
                 <option value="4033_glb" class="tm-option glb-tm">Blueno & Bepo & Sunny-kun</option>
@@ -689,6 +691,11 @@
     <div class="row">
         <div class="col-12">
             <div class="row">
+                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_5x">
+                    <h4>2.5x Booster(s)</h4>
+                    <div class="booster-info">Stats 2.5x, CD -10</div>
+                    <div class="booster-div" id="booster_2_5x"></div>
+                </div>
                 <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_3x">
                     <h4>2.3x Booster(s)</h4>
                     <div class="booster-info">Stats 2.5x, CD -15</div>
@@ -1503,8 +1510,8 @@
                         <div class="col-6">
                             <select class="form-control form-control-sm" id="target-pts-dd">
                                 <option value="20000000">20M</option>
-                                <option value="15000000">15M</option>
-                                <option value="10000000" selected>10M</option>
+                                <option value="15000000" selected>15M</option>
+                                <option value="10000000">10M</option>
                                 <option value="1000000">1M</option>
                                 <option value="1500000">1.5M</option>
                                 <option value="3000000">3M</option>
@@ -1512,7 +1519,7 @@
                                 <option value="7000000">7M</option>
                             </select>
 
-                            <input type="hidden" class="form-control form-control-sm" id="target-pts" value="10000000">
+                            <input type="hidden" class="form-control form-control-sm" id="target-pts" value="15000000">
                         </div>
                     </div>
                 </div>

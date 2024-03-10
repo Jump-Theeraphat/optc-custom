@@ -643,6 +643,16 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 4108) {
+        // TM Coby
+        $('#div_2_5x').show();
+        $('#div_1_6x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -651,8 +661,6 @@ function getBoosters(tmId, server) {
 
     var boosters = [];
     if (server === 'glb') {
-        boosters = tm_boosters[tmId];
-
         if (tmId < 3339) {
             $('#div_1_2x_tm_rr').show();
             $('#div_1_2x_tm').show();
@@ -660,9 +668,31 @@ function getBoosters(tmId, server) {
             $('#div_1_2x_tm_rr').hide();
             $('#div_1_2x_tm').hide();
         }
-    } else
-        boosters = tm_boosters_jpn[tmId];
 
+        if (tmId < 4108) {
+            boosters = tm_boosters[tmId];
+            populateBoosters(boosters);
+        } else {
+            $.ajax({
+                type: "get",
+                url: "data/tm-booster-raw/" + tmId + ".csv",
+                dataType: "text",
+                success: function (data) {
+                    boosters = $.csv.toObjects(data);
+                    populateBoosters(boosters);
+                },
+                error: function (jqxhr, status, err) {
+                    console.log(`Error getting csv data: err(${err})`);
+                }
+            });
+        }
+    } else {
+        boosters = tm_boosters_jpn[tmId];
+        populateBoosters(boosters);
+    }
+}
+
+function populateBoosters(boosters) {
     if (typeof boosters === 'undefined')
         return false;
 
@@ -726,37 +756,35 @@ function getBoosters(tmId, server) {
 
         var _x_pts = b.x_pts.toString().replace(".", "_");
 
-        if (b.x_pts === 1.2) {
+        if (b.x_pts == 1.2) {
             imgDiv.data('_type', b.type);
             $('#booster_' + _x_pts + 'x_' + b.type).append(imgDiv);
-        } else if (b.x_pts === 1.8 && b.ver)
+        } else if (b.x_pts == 1.8 && b.ver)
             $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
-        else if (b.x_pts === 1.4 && b.ver)
+        else if (b.x_pts == 1.4 && b.ver)
             $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
-        else if (b.x_pts === 1.35 && b.ver)
+        else if (b.x_pts == 1.35 && b.ver)
             $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
-        else if (b.x_pts === 1.3 && b.ver)
+        else if (b.x_pts == 1.3 && b.ver)
             $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
-        else if (b.x_pts === 1.25 && b.ver)
+        else if (b.x_pts == 1.25 && b.ver)
             $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
         else
             $('#booster_' + _x_pts + 'x').append(imgDiv);
 
         _x_pts += 'x';
 
-        if (b.x_pts === 1.4 && b.ver)
+        if (b.x_pts == 1.4 && b.ver)
             _x_pts += '_v' + b.ver;
-        else if (b.x_pts === 1.35 && b.ver)
+        else if (b.x_pts == 1.35 && b.ver)
             _x_pts += '_v' + b.ver;
-        else if (b.x_pts === 1.3 && b.ver)
+        else if (b.x_pts == 1.3 && b.ver)
             _x_pts += '_v' + b.ver;
-        else if (b.x_pts === 1.25 && b.ver)
+        else if (b.x_pts == 1.25 && b.ver)
             _x_pts += '_v' + b.ver;
 
         imgDiv.data('_x_pts', _x_pts);
     }
-
-    return true;
 }
 
 function getOpponents(tmId, server) {
@@ -851,10 +879,7 @@ function init(tmId, server, isTransfer) {
     $('#tm-select').val(tmId + '_' + server);
     $('.tm-select').text($("#tm-select option:selected").text());
 
-    if (!getBoosters(tmId, server)) {
-        alert('Invalid TM');
-        return false;
-    }
+    getBoosters(tmId, server);
 
     if (!getOpponents(tmId, server)) {
         alert('Invalid TM');
@@ -4290,7 +4315,7 @@ $(document).ready(function () {
     });
 
     // Set up drag and drop for each booster section
-    var ids = ["booster_2_3x", "booster_2_25x", "booster_2_2x", "booster_2x", "booster_1_85x", "booster_1_8x", "booster_1_8x_v2", "booster_1_75x",
+    var ids = ["booster_2_5x", "booster_2_3x", "booster_2_25x", "booster_2_2x", "booster_2x", "booster_1_85x", "booster_1_8x", "booster_1_8x_v2", "booster_1_75x",
         "booster_1_7x", "booster_1_65x", "booster_1_6x", "booster_1_5x", "booster_1_4x", "booster_1_4x_v2", "booster_1_35x", "booster_1_35x_valt",
         "booster_1_35x_v2", "booster_1_35x_v3", "booster_1_35x_v4", "booster_1_3x", "booster_1_3x_v2",
         "booster_1_3x_v3", "booster_1_25x", "booster_1_25x_v2", "booster_1_25x_v3", "booster_1_25x_v4",

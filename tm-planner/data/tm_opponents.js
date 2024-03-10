@@ -18627,4 +18627,305 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Coby ==========
+    4108: {
+        3466: {
+            name: 'Helmeppo',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Helmeppo', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['hp-cut',          '50%'],
+                                ['para',            '3T'],
+                                ['slot-block',      'All'],
+                                ['atk-down',        '3T, 99%'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '50000']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2996: {
+            name: 'Sandersonia & Marigold',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Slasher/Fighter/Cerebral'],
+                                ['VS Gauge -',      '5T, Slasher/Fighter/Cerebral'],
+                                ['S Switch -',      '5T, Slasher/Fighter/Cerebral']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sandersonia & Marigold', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '5T, 99%'],
+                                ['para',            '5T'],
+                                ['nao',             '99+T'],
+                                ['slot-block',      'All'],
+                                ['sp-limit',        '4T, 2x'],
+                                ['def-null',        '2T'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4098: {
+            name: 'Rayleigh',
+            type: 'PSY',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/QCK/INT'],
+                                ['VS Gauge -',      '5T, STR/QCK/INT'],
+                                ['S Switch -',      '5T, STR/QCK/INT']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Rayleigh', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['silence',         '5T'],
+                                ['nao',             '99+T'],
+                                ['atk-down',        '8T, 99%'],
+                                ['Ship Bind',       '3T'],
+                                ['def',             '5T, 1Mx'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4096: {
+            name: 'Hancock',
+            type: 'DEX',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Driven/Powerhouse/Striker'],
+                                ['VS Gauge -',      '5T, Driven/Powerhouse/Striker'],
+                                ['S Switch -',      '5T, Driven/Powerhouse/Striker']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Hancock', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '6T, 99%'],
+                                ['nao',             '99+T'],
+                                ['silence',         '5T'],
+                                ['slot-change',     'Bad'],
+                                ['Intimidate',      '3T, -2T, Slot Boost / Set Chain'],
+                                ['def-thres',       '2T, 99%, 1000'],
+                                ['def',             '6T, 1Mx'],
+                                ['bar-hit',         '1T, 20x'],
+                                ['immu-all',        '99+T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4109: {
+            name: 'S-Hawk',
+            type: 'STR',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, STR/QCK/DEX'],
+                                ['VS Gauge -',      '5T, STR/QCK/DEX'],
+                                ['S Switch -',      '5T, STR/QCK/DEX']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['burn',            '5T, 20000'],
+                                ['desp',            '8T'],
+                                ['dmg-eot-e',       '6T, 20000'],
+                                ['def',             '6T, 1Mx'],
+                                ['immu-all',        '99+T, Except Set Target']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Hawk', 'STR'],
+                    hp: 3500000,
+                    atk: 7200,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['atk-down',        '6T, 99%'],
+                                ['dmg-limit',       '5T, 70%'],
+                                ['cd-rew',          '4T, Row 1'],
+                                ['cd-rew',          '3T, Row 2 3'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['Lock Target',     '1T'],
+                                ['desp',            '5T'],
+                                ['slot-change',     'Poison'],
+                                ['bar-hit',         '1T, 12x'],
+                                ['bar-hit',         '2T, 12x, (Mob)'],
+                                ['immu-all',        '99+T, Except Set Target']
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                ['slot-bind',       '5T']
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4108: {
+            name: 'Coby',
+            type: 'STR',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-red',          '5T, Driven/Powerhouse/Slasher'],
+                                ['VS Gauge -',      '5T, Driven/Powerhouse/Slasher'],
+                                ['S Switch -',      '5T, Driven/Powerhouse/Slasher']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['nao',             '99+T'],
+                                ['cd-rew',          '2T'],
+                                ['desp',            '9T'],
+                                ['def',             '6T, 1Mx']
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Coby', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                ['cd-rew',          '2T'],
+                                ['sp-limit',        '3T, 2x'],
+                                ['def-perc',        '6T, 90%'],
+                                ['chain-atk-down',  '5T, <2.75x Chain, 99%'],
+                                ['Intimidate',      '3T, -2T, Set Chain / Color Affinity'],
+                                ['para',            '6T'],
+                                ['immu-all',        '99+T, Except Set Target']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '150K']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
