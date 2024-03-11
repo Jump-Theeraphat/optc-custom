@@ -1,128 +1,134 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="zl1814">
-<meta name="keywords" content="OPTC, One Piece Treasure Cruise, Clear Mob, Multiple Target">
-<meta name="description" content="One Piece Treasure Cruise list of Mob Clearing specials.">
 
-<title>Mob Clearing Specials | OPTC Voyage Log</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zl1814">
+    <meta name="keywords" content="OPTC, One Piece Treasure Cruise, Clear Mob, Multiple Target">
+    <meta name="description" content="One Piece Treasure Cruise list of Mob Clearing specials.">
 
-<link rel="icon" sizes="192x192" href="/pappagu.png">
+    <title>Mob Clearing Specials | OPTC Voyage Log</title>
 
-<!-- Vendor JS & CSS -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="icon" sizes="192x192" href="/pappagu.png">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Vendor JS & CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
 
-<!-- Self JS & CSS -->
-<link rel="stylesheet" href="/common/assets/css/main.css">
-<link rel="stylesheet" href="/useful-lists/assets/css/useful-lists.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 
-<script src="/common/assets/js/main.js"></script>
-<script src="/useful-lists/assets/js/useful-lists.js"></script>
-<script src="/useful-lists/assets/js/mob-clear-specials.js"></script>
-<script src="/vendor/optc-db/units.js"></script>
-<script src="/vendor/optc-db/details.js"></script>
-<script src="/vendor/optc-db/evolutions.js"></script>
-<script src="/vendor/optc-db/flags.js"></script>
+    <!-- Self JS & CSS -->
+    <link rel="stylesheet" href="/common/assets/css/main.css">
+    <link rel="stylesheet" href="/useful-lists/assets/css/useful-lists.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script src="/common/assets/js/main.js"></script>
+    <script src="/useful-lists/assets/js/useful-lists.js"></script>
+    <script src="/useful-lists/assets/js/mob-clear-specials.js"></script>
+    <script src="/vendor/optc-db/units.js"></script>
+    <script src="/vendor/optc-db/details.js"></script>
+    <script src="/vendor/optc-db/evolutions.js"></script>
+    <script src="/vendor/optc-db/flags.js"></script>
 
-  gtag('config', 'G-DY87MN0KG9');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<div id="header"></div>
+        gtag('config', 'G-DY87MN0KG9');
+    </script>
+</head>
 
-<div class="container-fluid my-5">
-    <div class="row">
-        <div class="offset-md-2 col-md-4 col-12">
-            <h4>Mob Clearing Specials</h4>
+<body>
+    <div id="header"></div>
+
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="offset-md-2 col-md-4 col-12">
+                <h4>Mob Clearing Specials</h4>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info">
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            Find units that deals damage to all enemies to clear the annoying mobs!
+                            <br>
+                            (Note: HP related / random damage not included)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info">
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            Unit data provided by <a href="https://optc-db.github.io/characters/#/search/"
+                                target="_blank">OPTC DB</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-4 col-12">
-            <div class="row">
-                <div class="col-12">
-                    <div class="info">
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        Find units that deals damage to all enemies to clear the annoying mobs!
-                        <br>
-                        (Note: HP related / random damage not included)
+        <div class="row">
+            <div class="offset-md-2 col-md-1 col-12">
+                <div class="row">
+                    <div class="col-md-12 col-6">
+                        <div class="filter type-filter STR-div btn" data-filter="STR">STR</div>
+                        <div class="filter type-filter DEX-div btn" data-filter="DEX">DEX</div>
+                        <div class="filter type-filter QCK-div btn" data-filter="QCK">QCK</div>
+                        <div class="filter type-filter PSY-div btn" data-filter="PSY">PSY</div>
+                        <div class="filter type-filter INT-div btn" data-filter="INT">INT</div>
+                    </div>
+
+                    <div class="col-md-12 col-6">
+                        <div class="filter class-filter fighter-div" data-filter="Fighter"></div>
+                        <div class="filter class-filter slasher-div" data-filter="Slasher"></div>
+                        <div class="filter class-filter striker-div" data-filter="Striker"></div>
+                        <div class="filter class-filter shooter-div" data-filter="Shooter"></div>
+                        <div class="filter class-filter free-spirit-div" data-filter="Free Spirit"></div>
+                        <div class="filter class-filter cerebral-div" data-filter="Cerebral"></div>
+                        <div class="filter class-filter powerhouse-div" data-filter="Powerhouse"></div>
+                        <div class="filter class-filter driven-div" data-filter="Driven"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="filter global-filter btn btn-secondary">
+                            <i class="fas fa-globe"></i>&nbsp;
+                            Global Units
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="info">
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        Unit data provided by <a href="https://optc-db.github.io/characters/#/search/" target="_blank">OPTC DB</a>
-                    </div>
-                </div>
+            <div class="col-md-7 col-12 table-responsive">
+                <table class="data-table table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">ATK</th>
+                            <th scope="col">ATK&nbsp;Multiplier</th>
+                            <th scope="col">Note</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rcv-specials"></tbody>
+                </table>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="offset-md-2 col-md-1 col-12">
-            <div class="row">
-                <div class="col-md-12 col-6">
-                    <div class="filter type-filter STR-div btn" data-filter="STR">STR</div>
-                    <div class="filter type-filter DEX-div btn" data-filter="DEX">DEX</div>
-                    <div class="filter type-filter QCK-div btn" data-filter="QCK">QCK</div>
-                    <div class="filter type-filter PSY-div btn" data-filter="PSY">PSY</div>
-                    <div class="filter type-filter INT-div btn" data-filter="INT">INT</div>
-                </div>
-
-                <div class="col-md-12 col-6">
-                    <div class="filter class-filter fighter-div" data-filter="Fighter"></div>
-                    <div class="filter class-filter slasher-div" data-filter="Slasher"></div>
-                    <div class="filter class-filter striker-div" data-filter="Striker"></div>
-                    <div class="filter class-filter shooter-div" data-filter="Shooter"></div>
-                    <div class="filter class-filter free-spirit-div" data-filter="Free Spirit"></div>
-                    <div class="filter class-filter cerebral-div" data-filter="Cerebral"></div>
-                    <div class="filter class-filter powerhouse-div" data-filter="Powerhouse"></div>
-                    <div class="filter class-filter driven-div" data-filter="Driven"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="filter global-filter btn btn-secondary">
-                        <i class="fas fa-globe"></i>&nbsp;
-                        Global Units
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-7 col-12 table-responsive">
-            <table class="data-table table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">ATK</th>
-                        <th scope="col">ATK&nbsp;Multiplier</th>
-                        <th scope="col">Note</th>
-                    </tr>
-                </thead>
-                <tbody id="rcv-specials"></tbody>
-            </table>
-        </div>
-    </div>
-</div>
-
-<div id="footer"></div>
+    <div id="footer"></div>
+</body>

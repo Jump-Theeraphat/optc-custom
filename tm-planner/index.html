@@ -1,906 +1,1199 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="zl1814">
-<meta name="keywords" content="OPTC, One Piece Treasure Cruise, Treasure Map, Planner">
-<meta name="description" content="One Piece Treasure Cruise Treasure Map Team Planner.">
 
-<title>OPTC Treasure Map Planner | OPTC Voyage Log</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zl1814">
+    <meta name="keywords" content="OPTC, One Piece Treasure Cruise, Treasure Map, Planner">
+    <meta name="description" content="One Piece Treasure Cruise Treasure Map Team Planner.">
 
-<link rel="icon" sizes="192x192" href="/pappagu.png">
+    <title>OPTC Treasure Map Planner | OPTC Voyage Log</title>
 
-<!-- Vendor JS & CSS -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="icon" sizes="192x192" href="/pappagu.png">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="/tm-planner/assets/js/Sortable.js"></script>
-<script src="/tm-planner/assets/js/html2canvas.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+    <!-- Vendor JS & CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
-<!-- Self JS & CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
-<link rel="stylesheet" href="/common/assets/css/main.css">
-<link rel="stylesheet" href="/tm-planner/assets/css/tm-planner.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"
+        integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="/tm-planner/assets/js/Sortable.js"></script>
+    <script src="/tm-planner/assets/js/html2canvas.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
 
-<script src="/common/assets/js/main.js"></script>
-<script src="/tm-planner/assets/js/tm-planner.js"></script>
+    <!-- Self JS & CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css" />
+    <link rel="stylesheet" href="/common/assets/css/main.css">
+    <link rel="stylesheet" href="/tm-planner/assets/css/tm-planner.css">
 
-<script src="/tm-planner/data/tm_boosters.js"></script>
-<script src="/tm-planner/data/tm_boosters_jpn.js"></script>
-<script src="/tm-planner/data/tm_opponents.js"></script>
-<script src="/tm-planner/data/filter_map_sp.js"></script>
-<script src="/tm-planner/data/filter_map_sl.js"></script>
-<script src="/tm-planner/data/filter_map_ca.js"></script>
-<script src="/tm-planner/data/filter_map_sup.js"></script>
-<script src="/tm-planner/data/counters.js"></script>
-<script src="/tm-planner/data/icon_tooltips.js"></script>
-<script src="/vendor/optc-db/units.js"></script>
-<script src="/vendor/optc-db/details.js"></script>
-<script src="/vendor/optc-db/cooldowns.js"></script>
-<script src="/vendor/optc-db/families.js"></script>
+    <script src="/common/assets/js/main.js"></script>
+    <script src="/tm-planner/assets/js/tm-planner.js"></script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script src="/tm-planner/data/tm_boosters.js"></script>
+    <script src="/tm-planner/data/tm_boosters_jpn.js"></script>
+    <script src="/tm-planner/data/tm_opponents.js"></script>
+    <script src="/tm-planner/data/filter_map_sp.js"></script>
+    <script src="/tm-planner/data/filter_map_sl.js"></script>
+    <script src="/tm-planner/data/filter_map_ca.js"></script>
+    <script src="/tm-planner/data/filter_map_sup.js"></script>
+    <script src="/tm-planner/data/counters.js"></script>
+    <script src="/tm-planner/data/icon_tooltips.js"></script>
+    <script src="/vendor/optc-db/units.js"></script>
+    <script src="/vendor/optc-db/details.js"></script>
+    <script src="/vendor/optc-db/cooldowns.js"></script>
+    <script src="/vendor/optc-db/families.js"></script>
 
-  gtag('config', 'G-DY87MN0KG9');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<div id="header"></div>
+        gtag('config', 'G-DY87MN0KG9');
+    </script>
+</head>
 
-<div class="modal fade" id="unit-modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="unit-modal-title"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+<body>
+    <div id="header"></div>
 
-            <div class="modal-body">
-                <div class="row mb-3">
-                    <div class="col-sm-1 col-2 unit-detail-el" id="unit-detail-thumb"></div>
-
-                    <div class="col-sm-3 col-6 unit-detail-el">
-                        <div id="unit-detail-class1"></div>
-                        <div id="unit-detail-class2"></div>
-                    </div>
-
-                    <div class="col-sm-2 col-4 unit-detail-el" id="unit-cost-div">
-                        Cost: <span id="unit-cost"></span>
-                    </div>
-
-                    <div class="col-sm-3 col-6">
-                        <button type="button" class="btn btn-sm btn-info unit-detail-el" id="db-button">OPTC-DB Page</button>
-                    </div>
-
-                    <div class="col-sm-3 col-6">
-                        <button type="button" class="btn btn-sm btn-danger remove-button-el" id="remove-button">Remove</button>
-                    </div>
+    <div class="modal fade" id="unit-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="unit-modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
 
-                <form id="non-booster-form">
-                    <div class="row form-group" id="non-booster-div">
-                        <label for="non-booster-unit" class="col-4 col-form-label">Add a non-booster: </label>
-                        <div class="col-8 input-group">
-                            <input type="number" class="form-control" id="non-booster-unit" placeholder="Character ID">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-sm btn-outline-primary" id="non-booster-unit-submit">Submit</button>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-1 col-2 unit-detail-el" id="unit-detail-thumb"></div>
+
+                        <div class="col-sm-3 col-6 unit-detail-el">
+                            <div id="unit-detail-class1"></div>
+                            <div id="unit-detail-class2"></div>
+                        </div>
+
+                        <div class="col-sm-2 col-4 unit-detail-el" id="unit-cost-div">
+                            Cost: <span id="unit-cost"></span>
+                        </div>
+
+                        <div class="col-sm-3 col-6">
+                            <button type="button" class="btn btn-sm btn-info unit-detail-el" id="db-button">OPTC-DB
+                                Page</button>
+                        </div>
+
+                        <div class="col-sm-3 col-6">
+                            <button type="button" class="btn btn-sm btn-danger remove-button-el"
+                                id="remove-button">Remove</button>
+                        </div>
+                    </div>
+
+                    <form id="non-booster-form">
+                        <div class="row form-group" id="non-booster-div">
+                            <label for="non-booster-unit" class="col-4 col-form-label">Add a non-booster: </label>
+                            <div class="col-8 input-group">
+                                <input type="number" class="form-control" id="non-booster-unit"
+                                    placeholder="Character ID">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-sm btn-outline-primary"
+                                        id="non-booster-unit-submit">Submit</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
 
-                <hr class="available-units-el">
+                    <hr class="available-units-el">
 
-                <h6 class="available-units-el">Available Units</h6>
-                <span class="available-units-el" style="font-size: 13px;">(No Filtered Units)</span>
-                <div class="available-units-el" id="available-units"></div>
+                    <h6 class="available-units-el">Available Units</h6>
+                    <span class="available-units-el" style="font-size: 13px;">(No Filtered Units)</span>
+                    <div class="available-units-el" id="available-units"></div>
 
-                <hr class="units-in-team-el">
+                    <hr class="units-in-team-el">
 
-                <h6 class="units-in-team-el">Units in this Team</h6>
-                <div class="units-in-team-el" id="units-in-team"></div>
+                    <h6 class="units-in-team-el">Units in this Team</h6>
+                    <div class="units-in-team-el" id="units-in-team"></div>
 
-                <hr class="units-assigned-el">
+                    <hr class="units-assigned-el">
 
-                <h6 class="units-assigned-el">Units Assigned</h6>
-                <div class="units-assigned-el" id="units-assigned"></div>
+                    <h6 class="units-assigned-el">Units Assigned</h6>
+                    <div class="units-assigned-el" id="units-assigned"></div>
 
-                <hr class="unit-detail-el">
+                    <hr class="unit-detail-el">
 
-                <h6 class="unit-detail-el">Captain Ability</h6>
-                <div class="unit-detail-el" id="unit-detail-captain-ability">None</div>
+                    <h6 class="unit-detail-el">Captain Ability</h6>
+                    <div class="unit-detail-el" id="unit-detail-captain-ability">None</div>
 
-                <h6 class="unit-detail-el unit-detail-swap-el">Swap Effect</h6>
-                <div class="unit-detail-el unit-detail-swap-el" id="unit-detail-swap">None</div>
+                    <h6 class="unit-detail-el unit-detail-swap-el">Swap Effect</h6>
+                    <div class="unit-detail-el unit-detail-swap-el" id="unit-detail-swap">None</div>
 
-                <h6 class="unit-detail-el">
-                    Special
-                    <span id="unit-detail-sp-cd-span">
-                        (Max: <span id="unit-detail-sp-cd"></span>
-                              <span id="unit-detail-sp-cd-ex"></span> Turns)
-                    </span>
-                </h6>
-                <div class="unit-detail-el" id="unit-detail-special">None</div>
+                    <h6 class="unit-detail-el">
+                        Special
+                        <span id="unit-detail-sp-cd-span">
+                            (Max: <span id="unit-detail-sp-cd"></span>
+                            <span id="unit-detail-sp-cd-ex"></span> Turns)
+                        </span>
+                    </h6>
+                    <div class="unit-detail-el" id="unit-detail-special">None</div>
 
-                <h6 class="unit-detail-el unit-detail-st-el">Super Type / Class</h6>
-                <div class="unit-detail-el unit-detail-st-el" id="unit-detail-st">None</div>
+                    <h6 class="unit-detail-el unit-detail-st-el">Super Type / Class</h6>
+                    <div class="unit-detail-el unit-detail-st-el" id="unit-detail-st">None</div>
 
-                <h6 class="unit-detail-el unit-detail-vs-el">VS Ability</h6>
-                <div class="unit-detail-el unit-detail-vs-el" id="unit-detail-vs">None</div>
+                    <h6 class="unit-detail-el unit-detail-vs-el">VS Ability</h6>
+                    <div class="unit-detail-el unit-detail-vs-el" id="unit-detail-vs">None</div>
 
-                <h6 class="unit-detail-el">Sailor</h6>
-                <div class="unit-detail-el" id="unit-detail-sailor">None</div>
+                    <h6 class="unit-detail-el">Sailor</h6>
+                    <div class="unit-detail-el" id="unit-detail-sailor">None</div>
 
-                <div class="unit-detail-el" id="optc-db-info">
-                    <i class="fas fa-info-circle"></i>&nbsp;
-                    Unit data provided by <a href="https://optc-db.github.io/characters/#/search/" target="_blank">OPTC DB</a>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
-                    <i class="fas fa-times"></i>&nbsp;Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="mini-guide-modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <i class="fas fa-book"></i>&nbsp;Mini Guide: <div class="d-inline" id="mini-guide-boss"></div>
-                </h5>
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <div class="row">
-                    <label for="guide-nav-lv" class="col-3 col-form-label">Nav Lv:</label>
-                    <div class="col-3">
-                        <input type="number" class="form-control form-control-sm" id="guide-nav-lv" min="1" value="1">
+                    <div class="unit-detail-el" id="optc-db-info">
+                        <i class="fas fa-info-circle"></i>&nbsp;
+                        Unit data provided by <a href="https://optc-db.github.io/characters/#/search/"
+                            target="_blank">OPTC DB</a>
                     </div>
                 </div>
 
-                <div id="mini-guide-content"></div>
-
-                <div id="guide-stage-clone">
-                    <h5>
-                        Stage <span class="guide-stage-num"></span>:
-                        <span class="guide-boss"></span>
-                    </h5>
-
-                    <div class="row guide-boss-hp-div">
-                        <div class="col-2">HP:</div>
-                        <div class="col-4">
-                            <input type="hidden" class="guide-boss-hp-base">
-                            <span class="guide-boss-hp"></span>
-                        </div>
-                        <div class="col-6 boss-stat-unconfirmed-msg" id="boss-hp-unconfirmed">
-                            (Unconfirmed HP)
-                        </div>
-                    </div>
-                    <div class="row guide-boss-atk-div">
-                        <div class="col-2">ATK:</div>
-                        <div class="col-4">
-                            <input type="hidden" class="guide-boss-atk-base">
-                            <span class="guide-boss-atk"></span>
-                        </div>
-                        <div class="col-6 boss-stat-unconfirmed-msg" id="boss-atk-unconfirmed">
-                            (Unconfirmed ATK)
-                        </div>
-                    </div>
-
-                    <div class="container-fluid guide-stage-list"></div>
-                </div>
-
-                <div class="row" id="guide-stage-type-clone">
-                    <div class="col-12">
-                        <span class="guide-stage-type"></span>:
-                    </div>
-
-                    <div class="container-fluid guide-action-list"></div>
-                </div>
-
-                <div class="row align-items-center" id="guide-action-clone">
-                    <div class="col-2 guide-action-type"></div>
-                    <div class="col-5">
-                        (<span class="guide-action-detail"></span>)
-                    </div>
-                    <div class="col-5 guide-filter-list"></div>
-                </div>
-
-                <div class="row align-items-center" id="guide-interrupt-clone">
-                    <div class="col-4 guide-action-type"></div>
-                </div>
-
-                <div id="guide-sp-filter-clone">
-                    <button type="button" class="btn btn-sm btn-warning guide-sp-filter"></button>
-                </div>
-
-                <div id="guide-sl-filter-clone">
-                    <button type="button" class="btn btn-sm btn-success guide-sl-filter"></button>
-                </div>
-
-                <div id="guide-ca-filter-clone">
-                    <button type="button" class="btn btn-sm btn-info guide-ca-filter"></button>
-                </div>
-
-                <div id="guide-sv-filter-clone">
-                    <button type="button" class="btn btn-sm btn-danger guide-sv-filter"></button>
-                </div>
-
-                <div id="guide-tc-filter-clone">
-                    <button type="button" class="btn btn-sm btn-warning guide-tc-filter">
-                        <i class="fas fa-filter"></i>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
+                        <i class="fas fa-times"></i>&nbsp;Close
                     </button>
                 </div>
             </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
-                    <i class="fas fa-times"></i>&nbsp;Close
-                </button>
-            </div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="help-modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <i class="fas fa-question-circle"></i>&nbsp;Help
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+    <div class="modal fade" id="mini-guide-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-book"></i>&nbsp;Mini Guide: <div class="d-inline" id="mini-guide-boss"></div>
+                    </h5>
 
-            <div class="modal-body" id="help-info">
-                <h6>IMPORTANT</h6>
-                <ul class="fa-ul">
-                    <li>
-                        <i class="fas fa-exclamation-triangle"></i>&nbsp;
-                        Team saves <strong>ONLY LOCALLY</strong>
-                    </li>
-                    <li>
-                        <i class="fas fa-exclamation-triangle"></i>&nbsp;
-                        Clearing your browser cache will delete your saves
-                    </li>
-                    <li>
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        If you want to view your teams in a difference device, you should Export
-                        your Teams and paste the link into the browser of the other device
-                    </li>
-                </ul>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
 
-                <h6>USAGE</h6>
-                <ul class="fa-ul">
-                    <li>
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        Drag & Drop Units into the slots below, or Click to Add using the add
-                        buttons to assign available Units
-                    </li>
-                    <li>
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        Remove Units from teams by dragging it outside, or Click and select Remove
-                    </li>
-                    <li>
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        Units cannot be used more than once, except in the Friend Captain slot or
-                        the Ambush Team (Team 6) (These Units are tinted to distinguish from the rest)
-                    </li>
-                    <li>
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        The Captain slot will be automatically mirrored to the Friend Captain slot
-                        if it is empty
-                    </li>
-                    <li>
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        The Captain slot should be assigned first before assigning the Friend Captain
-                        slot to allow using the same unit.
-                    </li>
-                </ul>
-
-                <h6>NOTABLE FEATURES</h6>
-                <ul class="fa-ul">
-                    <li>
-                        <i class="fas fa-filter"></i>&nbsp;
-                        <strong>FILTER</strong> <br>
-                        Filters are available by toggling the Filter button. Units can be filtered
-                        by Type, Class, and Special
-                    </li>
-                    <li>
-                        <i class="fas fa-list-alt"></i>&nbsp;
-                        <strong>UNIT DETAIL</strong> <br>
-                        Clicking on the Units will display the details: Captain, Special, etc
-                    </li>
-                    <li>
-                        <i class="fas fa-book"></i>&nbsp;
-                        <strong>MINI GUIDE</strong> <br>
-                        Click on the boss name to open its guide. Adjusting the Nav Lv will update
-                        the HP and ATK at the corresponding nav level. Clicking the button next to
-                        the boss actions will activate the corresponding Special Filter
-                    </li>
-                    <li>
-                        <i class="fas fa-user-slash"></i>&nbsp;
-                        <strong>UNITS I DON'T HAVE</strong> <br>
-                        Label Units you don't have by mouse right click (or long hold on touch
-                        devices), or by dragging them to the Don't Have Units section
-                    </li>
-                    <li>
-                        <i class="fas fa-info-circle"></i>&nbsp;
-                        Check out the News page for more features and their details!
-                    </li>
-                </ul>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
-                    <i class="fas fa-times"></i>&nbsp;Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="confirm-save-modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <i class="fas fa-exlaimation-circle"></i>&nbsp;Overwrite Existing Save Slot?
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body" id="confirm-save-info">
-                You have previously saved teams. Do you want to overwrite the saved data?
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-primary" id="confirm-save-button" data-dismiss="modal">
-                    <i class="fas fa-check"></i>&nbsp;Confirm
-                </button>
-                <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
-                    <i class="fas fa-times"></i>&nbsp;Cancel
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="export-image-modal">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <i class="far fa-image"></i>&nbsp;Export Image
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-8 export-image-size-div">
-                        Image Size:
-                        <div class="ml-2 d-inline">
-                            <input type="button" class="btn btn-sm btn-primary export-image-size not-read-only"
-                                id="export-image-3x2" value="3x2" checked>
-                        </div>
-
-                        <div class="d-inline">
-                            <input type="button" class="btn btn-sm btn-primary export-image-size not-read-only"
-                                id="export-image-2x3" value="2x3">
+                <div class="modal-body">
+                    <div class="row">
+                        <label for="guide-nav-lv" class="col-3 col-form-label">Nav Lv:</label>
+                        <div class="col-3">
+                            <input type="number" class="form-control form-control-sm" id="guide-nav-lv" min="1"
+                                value="1">
                         </div>
                     </div>
 
-                    <div class="col-4 d-flex justify-content-end">
-                        <!--button type="button" class="btn btn-sm btn-primary" id="copy-img-button">
+                    <div id="mini-guide-content"></div>
+
+                    <div id="guide-stage-clone">
+                        <h5>
+                            Stage <span class="guide-stage-num"></span>:
+                            <span class="guide-boss"></span>
+                        </h5>
+
+                        <div class="row guide-boss-hp-div">
+                            <div class="col-2">HP:</div>
+                            <div class="col-4">
+                                <input type="hidden" class="guide-boss-hp-base">
+                                <span class="guide-boss-hp"></span>
+                            </div>
+                            <div class="col-6 boss-stat-unconfirmed-msg" id="boss-hp-unconfirmed">
+                                (Unconfirmed HP)
+                            </div>
+                        </div>
+                        <div class="row guide-boss-atk-div">
+                            <div class="col-2">ATK:</div>
+                            <div class="col-4">
+                                <input type="hidden" class="guide-boss-atk-base">
+                                <span class="guide-boss-atk"></span>
+                            </div>
+                            <div class="col-6 boss-stat-unconfirmed-msg" id="boss-atk-unconfirmed">
+                                (Unconfirmed ATK)
+                            </div>
+                        </div>
+
+                        <div class="container-fluid guide-stage-list"></div>
+                    </div>
+
+                    <div class="row" id="guide-stage-type-clone">
+                        <div class="col-12">
+                            <span class="guide-stage-type"></span>:
+                        </div>
+
+                        <div class="container-fluid guide-action-list"></div>
+                    </div>
+
+                    <div class="row align-items-center" id="guide-action-clone">
+                        <div class="col-2 guide-action-type"></div>
+                        <div class="col-5">
+                            (<span class="guide-action-detail"></span>)
+                        </div>
+                        <div class="col-5 guide-filter-list"></div>
+                    </div>
+
+                    <div class="row align-items-center" id="guide-interrupt-clone">
+                        <div class="col-4 guide-action-type"></div>
+                    </div>
+
+                    <div id="guide-sp-filter-clone">
+                        <button type="button" class="btn btn-sm btn-warning guide-sp-filter"></button>
+                    </div>
+
+                    <div id="guide-sl-filter-clone">
+                        <button type="button" class="btn btn-sm btn-success guide-sl-filter"></button>
+                    </div>
+
+                    <div id="guide-ca-filter-clone">
+                        <button type="button" class="btn btn-sm btn-info guide-ca-filter"></button>
+                    </div>
+
+                    <div id="guide-sv-filter-clone">
+                        <button type="button" class="btn btn-sm btn-danger guide-sv-filter"></button>
+                    </div>
+
+                    <div id="guide-tc-filter-clone">
+                        <button type="button" class="btn btn-sm btn-warning guide-tc-filter">
+                            <i class="fas fa-filter"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
+                        <i class="fas fa-times"></i>&nbsp;Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="help-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-question-circle"></i>&nbsp;Help
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" id="help-info">
+                    <h6>IMPORTANT</h6>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fas fa-exclamation-triangle"></i>&nbsp;
+                            Team saves <strong>ONLY LOCALLY</strong>
+                        </li>
+                        <li>
+                            <i class="fas fa-exclamation-triangle"></i>&nbsp;
+                            Clearing your browser cache will delete your saves
+                        </li>
+                        <li>
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            If you want to view your teams in a difference device, you should Export
+                            your Teams and paste the link into the browser of the other device
+                        </li>
+                    </ul>
+
+                    <h6>USAGE</h6>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            Drag & Drop Units into the slots below, or Click to Add using the add
+                            buttons to assign available Units
+                        </li>
+                        <li>
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            Remove Units from teams by dragging it outside, or Click and select Remove
+                        </li>
+                        <li>
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            Units cannot be used more than once, except in the Friend Captain slot or
+                            the Ambush Team (Team 6) (These Units are tinted to distinguish from the rest)
+                        </li>
+                        <li>
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            The Captain slot will be automatically mirrored to the Friend Captain slot
+                            if it is empty
+                        </li>
+                        <li>
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            The Captain slot should be assigned first before assigning the Friend Captain
+                            slot to allow using the same unit.
+                        </li>
+                    </ul>
+
+                    <h6>NOTABLE FEATURES</h6>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fas fa-filter"></i>&nbsp;
+                            <strong>FILTER</strong> <br>
+                            Filters are available by toggling the Filter button. Units can be filtered
+                            by Type, Class, and Special
+                        </li>
+                        <li>
+                            <i class="fas fa-list-alt"></i>&nbsp;
+                            <strong>UNIT DETAIL</strong> <br>
+                            Clicking on the Units will display the details: Captain, Special, etc
+                        </li>
+                        <li>
+                            <i class="fas fa-book"></i>&nbsp;
+                            <strong>MINI GUIDE</strong> <br>
+                            Click on the boss name to open its guide. Adjusting the Nav Lv will update
+                            the HP and ATK at the corresponding nav level. Clicking the button next to
+                            the boss actions will activate the corresponding Special Filter
+                        </li>
+                        <li>
+                            <i class="fas fa-user-slash"></i>&nbsp;
+                            <strong>UNITS I DON'T HAVE</strong> <br>
+                            Label Units you don't have by mouse right click (or long hold on touch
+                            devices), or by dragging them to the Don't Have Units section
+                        </li>
+                        <li>
+                            <i class="fas fa-info-circle"></i>&nbsp;
+                            Check out the News page for more features and their details!
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
+                        <i class="fas fa-times"></i>&nbsp;Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-save-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-exlaimation-circle"></i>&nbsp;Overwrite Existing Save Slot?
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" id="confirm-save-info">
+                    You have previously saved teams. Do you want to overwrite the saved data?
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" id="confirm-save-button" data-dismiss="modal">
+                        <i class="fas fa-check"></i>&nbsp;Confirm
+                    </button>
+                    <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
+                        <i class="fas fa-times"></i>&nbsp;Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="export-image-modal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="far fa-image"></i>&nbsp;Export Image
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-8 export-image-size-div">
+                            Image Size:
+                            <div class="ml-2 d-inline">
+                                <input type="button" class="btn btn-sm btn-primary export-image-size not-read-only"
+                                    id="export-image-3x2" value="3x2" checked>
+                            </div>
+
+                            <div class="d-inline">
+                                <input type="button" class="btn btn-sm btn-primary export-image-size not-read-only"
+                                    id="export-image-2x3" value="2x3">
+                            </div>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-end">
+                            <!--button type="button" class="btn btn-sm btn-primary" id="copy-img-button">
                             <i class="fas fa-copy"></i>
                         </button-->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="export-image-modal-body"></div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
+                        <i class="fas fa-times"></i>&nbsp;Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="support-character-modal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-paw"></i>&nbsp;Support Character
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div style="display: flex;">
+                        <div class="sup-filter-button">
+                            Filter
+                        </div>
+                        <div class="sup-filter-clear-all-div">
+                            <button type="button" class="btn btn-danger sup-filter-clear-all-btn">CLEAR ALL</button>
+                        </div>
+                        <div class="sup-filter-remove-div">
+                            <button type="button" class="btn btn-danger sup-filter-remove-btn">REMOVE</button>
+                        </div>
+                    </div>
+
+                    <div id="support-filters" style="display: none;">
+                        <div class="filter-icons">
+                            <div class="filter sup-filter atk-boost-div" data-filter="atk-boost"></div>
+                            <div class="filter sup-filter orb-boost-div" data-filter="orb-boost"></div>
+                            <div class="filter sup-filter affinity-div" data-filter="affinity"></div>
+                            <div class="filter sup-filter atk-delay-div" data-filter="atk-delay"></div>
+                            <div class="filter sup-filter atk-def-down-div" data-filter="atk-def-down"></div>
+                            <div class="filter sup-filter atk-poison-div" data-filter="atk-poison"></div>
+                            <div class="filter sup-filter chain-boost-div" data-filter="chain-boost"></div>
+                            <div class="filter sup-filter chain-lock-div" data-filter="chain-lock"></div>
+                            <div class="filter sup-filter chain-bound-div" data-filter="chain-bound"></div>
+                        </div>
+                        <div class="filter-icons">
+                            <div class="filter sup-filter def-down-div" data-filter="def-down"></div>
+                            <div class="filter sup-filter poison-div" data-filter="poison"></div>
+                            <div class="filter sup-filter dmg-eot-div" data-filter="dmg-eot"></div>
+                            <div class="filter sup-filter dmg-add-div" data-filter="dmg-add"></div>
+                            <div class="filter sup-filter heal-div" data-filter="heal"></div>
+                            <div class="filter sup-filter def-perc-div" data-filter="def-perc"></div>
+                            <div class="filter sup-filter def-thres-div" data-filter="def-thres"></div>
+                            <div class="filter sup-filter def-null-div" data-filter="def-null"></div>
+                            <div class="filter sup-filter cd-red-div" data-filter="cd-red"></div>
+                        </div>
+                        <div class="filter-icons">
+                            <div class="filter sup-filter bind-red-div" data-filter="bind-red"></div>
+                            <div class="filter sup-filter desp-red-div" data-filter="desp-red"></div>
+                            <div class="filter sup-filter silence-red-div" data-filter="silence-red"></div>
+                            <div class="filter sup-filter para-red-div" data-filter="para-red"></div>
+                            <div class="filter sup-filter poison-red-div" data-filter="poison-red"></div>
+                            <div class="filter sup-filter blind-red-div" data-filter="blind-red"></div>
+                            <div class="filter sup-filter burn-red-div" data-filter="burn-red"></div>
+                            <div class="filter sup-filter atk-down-red-div" data-filter="atk-down-red"></div>
+                            <div class="filter sup-filter chain-lock-red-div" data-filter="chain-lock-red"></div>
+                            <div class="filter sup-filter chain-down-red-div" data-filter="chain-down-red"></div>
+                            <div class="filter sup-filter dmg-up-red-div" data-filter="dmg-up-red"></div>
+                        </div>
+                        <div class="filter-icons">
+                            <div class="filter sup-filter dmg-eot-red-e-div" data-filter="dmg-eot-red-e"></div>
+                            <div class="filter sup-filter def-red-e-div" data-filter="def-red-e"></div>
+                            <div class="filter sup-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
+                            <div class="filter sup-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
+                            <div class="filter sup-filter bar-red-e-div" data-filter="bar-red-e"></div>
+                            <div class="filter sup-filter resil-red-e-div" data-filter="resil-red-e"></div>
+                            <div class="filter sup-filter enrage-red-e-div" data-filter="enrage-red-e"></div>
+                        </div>
+                        <div class="filter-icons">
+                            <div class="filter sup-filter slot-change-div" data-filter="slot-change"></div>
+                            <div class="filter sup-filter slot-change-block-div" data-filter="slot-change-block"></div>
+                            <div class="filter sup-filter slot-lock-div" data-filter="slot-lock"></div>
+                            <div class="filter sup-filter slot-pos-div" data-filter="slot-pos"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <table id="support-table"></table>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
+                        <i class="fas fa-times"></i>&nbsp;Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                <button type="button" class="btn btn-sm btn-info" id="help-button">
+                    <i class="fas fa-question-circle"></i>
+                </button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-8">
+                <select class="form-control form-control-lg not-read-only" id="tm-select">
+                    <option value="4108_glb" class="tm-option glb-tm" id="newest-tm-glb">Coby</option>
+                    <option value="4089_glb" class="tm-option glb-tm">Jinbe</option>
+                    <option value="4074_glb" class="tm-option glb-tm">Edward Newgate</option>
+                    <option value="4053_glb" class="tm-option glb-tm">Luffy</option>
+                    <option value="4033_glb" class="tm-option glb-tm">Blueno & Bepo & Sunny-kun</option>
+                    <option value="4006_glb" class="tm-option glb-tm">Baccarat & Dice & Mr. Tanaka</option>
+                    <option value="3981_glb" class="tm-option glb-tm">Lead Performers</option>
+                    <option value="3965_glb" class="tm-option glb-tm">Yamato</option>
+                    <option value="3936_glb" class="tm-option glb-tm">Flampe</option>
+                    <option value="3915_glb" class="tm-option glb-tm">Akainu</option>
+                    <option value="3894_glb" class="tm-option glb-tm">Momonosuke</option>
+                    <option value="3864_glb" class="tm-option glb-tm">Bege</option>
+                    <option value="3842_glb" class="tm-option glb-tm">Fujitora</option>
+                    <option value="3822_glb" class="tm-option glb-tm">Izo</option>
+                    <option value="3801_glb" class="tm-option glb-tm">Wyper</option>
+                    <option value="3778_glb" class="tm-option glb-tm">Who's-Who</option>
+                    <option value="3758_glb" class="tm-option glb-tm">O-Lin</option>
+                    <option value="3736_glb" class="tm-option glb-tm">Law v2</option>
+                    <option value="3712_glb" class="tm-option glb-tm">RED Chopper v2</option>
+                    <option value="3689_glb" class="tm-option glb-tm">RED Sanji</option>
+                    <option value="3663_glb" class="tm-option glb-tm">Franky</option>
+                    <option value="3645_glb" class="tm-option glb-tm">Moria v2</option>
+                    <option value="3621_glb" class="tm-option glb-tm">Sabo</option>
+                    <option value="3588_glb" class="tm-option glb-tm">Ulti</option>
+                    <option value="3567_glb" class="tm-option glb-tm">Kanjuro</option>
+                    <option value="3547_glb" class="tm-option glb-tm">Perospero</option>
+                    <option value="3527_glb" class="tm-option glb-tm">Tashigi</option>
+                    <option value="3416_glb" class="tm-option glb-tm">Stussy</option>
+                    <option value="3389_glb" class="tm-option glb-tm">Dragon Kaido</option>
+                    <option value="3368_glb" class="tm-option glb-tm">MUGIWARA 56 Zoro</option>
+                    <option value="3339_glb" class="tm-option glb-tm">Koala</option>
+                    <option value="3297_glb" class="tm-option glb-tm">Shiryu</option>
+                    <option value="3273_glb" class="tm-option glb-tm">Luffy & Ace</option>
+                    <option value="3239_glb" class="tm-option glb-tm">Queen</option>
+                    <option value="3197_glb" class="tm-option glb-tm">Garp</option>
+                    <option value="3150_glb" class="tm-option glb-tm">Kid</option>
+                    <option value="3094_glb" class="tm-option glb-tm">Jinbe</option>
+                    <option value="3115_glb" class="tm-option glb-tm">Pudding</option>
+                    <option value="3060_glb" class="tm-option glb-tm">Nami & Sanji</option>
+                    <option value="3022_glb" class="tm-option glb-tm">Reiju</option>
+                    <option value="2995_glb" class="tm-option glb-tm">Zorojuro</option>
+                    <option value="2977_glb" class="tm-option glb-tm">Anni Luffy</option>
+                    <option value="2913_glb" class="tm-option glb-tm">Shirahoshi</option>
+                    <option value="2879_glb" class="tm-option glb-tm">Vivi</option>
+                    <option value="2850_glb" class="tm-option glb-tm">Rebecca & Viola</option>
+                    <option value="2823_glb" class="tm-option glb-tm">X Drake</option>
+                    <option value="2792_glb" class="tm-option glb-tm">O-Robi</option>
+                    <option value="2763_glb" class="tm-option glb-tm">Halloween Nami</option>
+                    <option value="2729_glb" class="tm-option glb-tm">Hawkins</option>
+                    <option value="2690_glb" class="tm-option glb-tm">Blackbeard</option>
+                    <option value="2659_glb" class="tm-option glb-tm">Smoker</option>
+                    <option value="2618_glb" class="tm-option glb-tm">Sakazuki & Issho</option>
+                    <option value="2583_glb" class="tm-option glb-tm">Lucci</option>
+                    <option value="2557_glb" class="tm-option glb-tm">Shanks & Beckman</option>
+                    <option value="2510_glb" class="tm-option glb-tm">Weevil</option>
+                    <option value="2443_glb" class="tm-option glb-tm">Doflamingo</option>
+                    <option value="2469_glb" class="tm-option glb-tm">Smoothie & Oven</option>
+                    <option value="2362_glb" class="tm-option glb-tm">Christmas Nami</option>
+                    <option value="2387_glb" class="tm-option glb-tm">Kaido</option>
+                    <option value="2336_glb" class="tm-option glb-tm">Law</option>
+                    <option value="2299_glb" class="tm-option glb-tm">Boa Hancock</option>
+                    <option value="2261_glb" class="tm-option glb-tm">Shanks</option>
+                    <option value="2211_glb" class="tm-option glb-tm">Eneru</option>
+                    <option value="2109_glb" class="tm-option glb-tm">Big Mom</option>
+                    <option value="2175_glb" class="tm-option glb-tm">Jack</option>
+                    <option value="2137_glb" class="tm-option glb-tm">Crocodile</option>
+                    <option value="2064_glb" class="tm-option glb-tm">Kizaru</option>
+                    <option value="2000_glb" class="tm-option glb-tm">Sanji & Zoro</option>
+                    <option value="1972_glb" class="tm-option glb-tm">Valentine Sabo</option>
+                    <option value="1941_glb" class="tm-option glb-tm">Ace</option>
+                    <option value="1916_glb" class="tm-option glb-tm">Gear 4</option>
+                    <option value="1889_glb" class="tm-option glb-tm">Cavendish</option>
+                    <option value="1853_glb" class="tm-option glb-tm">Whitebeard</option>
+                    <option value="1808_glb" class="tm-option glb-tm">Mihawk</option>
+
+                    <option value="3506_jpn" class="tm-option jpn-tm" id="newest-tm-jpn">Hyogoro</option>
+                    <option value="3491_jpn" class="tm-option jpn-tm">Moria</option>
+                    <option value="3467_jpn" class="tm-option jpn-tm">Halloween Robin</option>
+                    <option value="3443_jpn" class="tm-option jpn-tm">Beast Pirates Luffy</option>
+                    <option value="3416_jpn" class="tm-option jpn-tm">Stussy</option>
+                    <option value="3389_jpn" class="tm-option jpn-tm">Dragon Kaido</option>
+                    <option value="3368_jpn" class="tm-option jpn-tm">MUGIWARA 56 Zoro</option>
+                    <option value="3339_jpn" class="tm-option jpn-tm">Koala</option>
+                    <option value="3297_jpn" class="tm-option jpn-tm">Shiryu</option>
+                    <option value="3273_jpn" class="tm-option jpn-tm">Luffy & Ace</option>
+                    <option value="3239_jpn" class="tm-option jpn-tm">Queen</option>
+                    <option value="3217_jpn" class="tm-option jpn-tm">Komurasaki</option>
+                    <option value="3197_jpn" class="tm-option jpn-tm">Garp</option>
+                    <option value="3150_jpn" class="tm-option jpn-tm">Kid</option>
+                    <option value="3115_jpn" class="tm-option jpn-tm">Pudding</option>
+                    <option value="3094_jpn" class="tm-option jpn-tm">Jinbe</option>
+                    <option value="3060_jpn" class="tm-option jpn-tm">Nami & Sanji</option>
+                    <option value="3022_jpn" class="tm-option jpn-tm">Reiju</option>
+                    <option value="2995_jpn" class="tm-option jpn-tm">Zorojuro</option>
+                    <option value="2977_jpn" class="tm-option jpn-tm">Anni Luffy</option>
+                    <option value="2913_jpn" class="tm-option jpn-tm">Shirahoshi</option>
+                    <option value="2879_jpn" class="tm-option jpn-tm">Vivi</option>
+                    <option value="2850_jpn" class="tm-option jpn-tm">Rebecca & Viola</option>
+                    <option value="2823_jpn" class="tm-option jpn-tm">X Drake</option>
+                    <option value="2792_jpn" class="tm-option jpn-tm">O-Robi</option>
+                    <option value="2763_jpn" class="tm-option jpn-tm">Halloween Nami</option>
+                    <option value="2729_jpn" class="tm-option jpn-tm">Hawkins</option>
+                    <option value="2690_jpn" class="tm-option jpn-tm">Blackbeard</option>
+                    <option value="2659_jpn" class="tm-option jpn-tm">Smoker</option>
+                    <option value="2618_jpn" class="tm-option jpn-tm">Sakazuki & Issho</option>
+                    <option value="2583_jpn" class="tm-option jpn-tm">Lucci</option>
+                    <option value="2557_jpn" class="tm-option jpn-tm">Shanks & Beckman</option>
+                    <option value="2510_jpn" class="tm-option jpn-tm">Edward Weevil</option>
+                    <option value="2469_jpn" class="tm-option jpn-tm">Smoothie & Oven</option>
+                    <option value="2443_jpn" class="tm-option jpn-tm">Doflamingo</option>
+                    <option value="2387_jpn" class="tm-option jpn-tm">Kaido</option>
+                    <option value="2362_jpn" class="tm-option jpn-tm">Christmas Nami</option>
+                    <option value="2336_jpn" class="tm-option jpn-tm">Law</option>
+                    <option value="2299_jpn" class="tm-option jpn-tm">Boa Hancock</option>
+                    <option value="2261_jpn" class="tm-option jpn-tm">Shanks</option>
+                    <option value="2211_jpn" class="tm-option jpn-tm">Eneru</option>
+                    <option value="2175_jpn" class="tm-option jpn-tm">Jack</option>
+                    <option value="2137_jpn" class="tm-option jpn-tm">Crocodile</option>
+                    <option value="2109_jpn" class="tm-option jpn-tm">Big Mom</option>
+                    <option value="2064_jpn" class="tm-option jpn-tm">Kizaru</option>
+                </select>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-2 thumb-div"></div>
+        </div>
+
+        <div class="row justify-content-center" id="read-only-button-div">
+            <div class="col-auto">
+                <button type="button" class="btn btn-sm btn-warning" id="read-only-button">
+                    Read Only Mode - Click to Disable
+                </button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center my-2 text-center">
+            <div class="col-auto">
+                Don't Have Mode:
+                <select id="dont-have-mode">
+                    <option value="0">Separated Section</option>
+                    <option value="1">In Place</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="incomplete-notice">
+                <i class="fas fa-exclamation-circle"></i>&nbsp;
+                DB is not updated for this TM therefore the filters do not work with the new batch
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_5x">
+                        <h4>2.5x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_2_5x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_3x">
+                        <h4>2.3x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -15</div>
+                        <div class="booster-div" id="booster_2_3x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_25x">
+                        <h4>2.25x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_2_25x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_2x">
+                        <h4>2.2x Booster(s)</h4>
+                        <div class="booster-info">Stats 3x, CD -10</div>
+                        <div class="booster-div" id="booster_2_2x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2x">
+                        <h4>2x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_2x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_85x">
+                        <h4>1.85x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_85x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_8x">
+                        <h4>1.8x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_8x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_8x_v2">
+                        <h4>1.8x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -15</div>
+                        <div class="booster-div" id="booster_1_8x_v2"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_75x">
+                        <h4>1.75x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_75x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_7x">
+                        <h4>1.7x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_7x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_65x">
+                        <h4>1.65x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_65x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_6x">
+                        <h4>1.6x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_6x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_5x">
+                        <h4>1.5x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_5x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_4x">
+                        <h4>1.4x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.25x, CD -7</div>
+                        <div class="booster-div" id="booster_1_4x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_4x_v2">
+                        <h4>1.4x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_4x_v2"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x">
+                        <h4>1.35x booster(s)</h4>
+                        <div class="booster-info">stats 1.2x, cd -5</div>
+                        <div class="booster-div" id="booster_1_35x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_valt">
+                        <h4>1.35x booster(s)</h4>
+                        <div class="booster-info">stats 1.2x, cd -7</div>
+                        <div class="booster-div" id="booster_1_35x_valt"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_v2">
+                        <h4>1.35x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_35x_v2"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_v3">
+                        <h4>1.35x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.35x, CD -5</div>
+                        <div class="booster-div" id="booster_1_35x_v3"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_v4">
+                        <h4>1.35x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.25x, CD -7</div>
+                        <div class="booster-div" id="booster_1_35x_v4"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_3x">
+                        <h4>1.3x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.25x, CD -7</div>
+                        <div class="booster-div" id="booster_1_3x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_3x_v2">
+                        <h4>1.3x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.3x, CD -7</div>
+                        <div class="booster-div" id="booster_1_3x_v2"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_3x_v3">
+                        <h4>1.3x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1_3x_v3"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x">
+                        <h4>1.25x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.25x, CD -5</div>
+                        <div class="booster-div" id="booster_1_25x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x_v2">
+                        <h4>1.25x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.25x, CD -7</div>
+                        <div class="booster-div" id="booster_1_25x_v2"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x_v3">
+                        <h4>1.25x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.2x, CD -7</div>
+                        <div class="booster-div" id="booster_1_25x_v3"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x_v4">
+                        <h4>1.25x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.2x, CD -10</div>
+                        <div class="booster-div" id="booster_1_25x_v4"></div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div id="export-image-modal-body"></div>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
-                    <i class="fas fa-times"></i>&nbsp;Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="support-character-modal">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    <i class="fas fa-paw"></i>&nbsp;Support Character
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <div style="display: flex;">
-                    <div class="sup-filter-button">
-                        Filter
-                    </div>
-                    <div class="sup-filter-clear-all-div">
-                        <button type="button" class="btn btn-danger sup-filter-clear-all-btn">CLEAR ALL</button>
-                    </div>
-                    <div class="sup-filter-remove-div">
-                        <button type="button" class="btn btn-danger sup-filter-remove-btn">REMOVE</button>
-                    </div>
-                </div>
-
-                <div id="support-filters" style="display: none;">
-                    <div class="filter-icons">
-                        <div class="filter sup-filter atk-boost-div" data-filter="atk-boost"></div>
-                        <div class="filter sup-filter orb-boost-div" data-filter="orb-boost"></div>
-                        <div class="filter sup-filter affinity-div" data-filter="affinity"></div>
-                        <div class="filter sup-filter atk-delay-div" data-filter="atk-delay"></div>
-                        <div class="filter sup-filter atk-def-down-div" data-filter="atk-def-down"></div>
-                        <div class="filter sup-filter atk-poison-div" data-filter="atk-poison"></div>
-                        <div class="filter sup-filter chain-boost-div" data-filter="chain-boost"></div>
-                        <div class="filter sup-filter chain-lock-div" data-filter="chain-lock"></div>
-                        <div class="filter sup-filter chain-bound-div" data-filter="chain-bound"></div>
-                    </div>
-                    <div class="filter-icons">
-                        <div class="filter sup-filter def-down-div" data-filter="def-down"></div>
-                        <div class="filter sup-filter poison-div" data-filter="poison"></div>
-                        <div class="filter sup-filter dmg-eot-div" data-filter="dmg-eot"></div>
-                        <div class="filter sup-filter dmg-add-div" data-filter="dmg-add"></div>
-                        <div class="filter sup-filter heal-div" data-filter="heal"></div>
-                        <div class="filter sup-filter def-perc-div" data-filter="def-perc"></div>
-                        <div class="filter sup-filter def-thres-div" data-filter="def-thres"></div>
-                        <div class="filter sup-filter def-null-div" data-filter="def-null"></div>
-                        <div class="filter sup-filter cd-red-div" data-filter="cd-red"></div>
-                    </div>
-                    <div class="filter-icons">
-                        <div class="filter sup-filter bind-red-div" data-filter="bind-red"></div>
-                        <div class="filter sup-filter desp-red-div" data-filter="desp-red"></div>
-                        <div class="filter sup-filter silence-red-div" data-filter="silence-red"></div>
-                        <div class="filter sup-filter para-red-div" data-filter="para-red"></div>
-                        <div class="filter sup-filter poison-red-div" data-filter="poison-red"></div>
-                        <div class="filter sup-filter blind-red-div" data-filter="blind-red"></div>
-                        <div class="filter sup-filter burn-red-div" data-filter="burn-red"></div>
-                        <div class="filter sup-filter atk-down-red-div" data-filter="atk-down-red"></div>
-                        <div class="filter sup-filter chain-lock-red-div" data-filter="chain-lock-red"></div>
-                        <div class="filter sup-filter chain-down-red-div" data-filter="chain-down-red"></div>
-                        <div class="filter sup-filter dmg-up-red-div" data-filter="dmg-up-red"></div>
-                    </div>
-                    <div class="filter-icons">
-                        <div class="filter sup-filter dmg-eot-red-e-div" data-filter="dmg-eot-red-e"></div>
-                        <div class="filter sup-filter def-red-e-div" data-filter="def-red-e"></div>
-                        <div class="filter sup-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
-                        <div class="filter sup-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
-                        <div class="filter sup-filter bar-red-e-div" data-filter="bar-red-e"></div>
-                        <div class="filter sup-filter resil-red-e-div" data-filter="resil-red-e"></div>
-                        <div class="filter sup-filter enrage-red-e-div" data-filter="enrage-red-e"></div>
-                    </div>
-                    <div class="filter-icons">
-                        <div class="filter sup-filter slot-change-div" data-filter="slot-change"></div>
-                        <div class="filter sup-filter slot-change-block-div" data-filter="slot-change-block"></div>
-                        <div class="filter sup-filter slot-lock-div" data-filter="slot-lock"></div>
-                        <div class="filter sup-filter slot-pos-div" data-filter="slot-pos"></div>
-                    </div>
-                </div>
-                <div><table id="support-table"></table></div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-seconday" data-dismiss="modal">
-                    <i class="fas fa-times"></i>&nbsp;Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid my-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-1 col-md-1 col-sm-2 col-2">
-            <button type="button" class="btn btn-sm btn-info" id="help-button">
-                <i class="fas fa-question-circle"></i>
-            </button>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-6 col-8">
-            <select class="form-control form-control-lg not-read-only" id="tm-select">
-                <option value="4108_glb" class="tm-option glb-tm" id="newest-tm-glb">Coby</option>
-                <option value="4089_glb" class="tm-option glb-tm">Jinbe</option>
-                <option value="4074_glb" class="tm-option glb-tm">Edward Newgate</option>
-                <option value="4053_glb" class="tm-option glb-tm">Luffy</option>
-                <option value="4033_glb" class="tm-option glb-tm">Blueno & Bepo & Sunny-kun</option>
-                <option value="4006_glb" class="tm-option glb-tm">Baccarat & Dice & Mr. Tanaka</option>
-                <option value="3981_glb" class="tm-option glb-tm">Lead Performers</option>
-                <option value="3965_glb" class="tm-option glb-tm">Yamato</option>
-                <option value="3936_glb" class="tm-option glb-tm">Flampe</option>
-                <option value="3915_glb" class="tm-option glb-tm">Akainu</option>
-                <option value="3894_glb" class="tm-option glb-tm">Momonosuke</option>
-                <option value="3864_glb" class="tm-option glb-tm">Bege</option>
-                <option value="3842_glb" class="tm-option glb-tm">Fujitora</option>
-                <option value="3822_glb" class="tm-option glb-tm">Izo</option>
-                <option value="3801_glb" class="tm-option glb-tm">Wyper</option>
-                <option value="3778_glb" class="tm-option glb-tm">Who's-Who</option>
-                <option value="3758_glb" class="tm-option glb-tm">O-Lin</option>
-                <option value="3736_glb" class="tm-option glb-tm">Law v2</option>
-                <option value="3712_glb" class="tm-option glb-tm">RED Chopper v2</option>
-                <option value="3689_glb" class="tm-option glb-tm">RED Sanji</option>
-                <option value="3663_glb" class="tm-option glb-tm">Franky</option>
-                <option value="3645_glb" class="tm-option glb-tm">Moria v2</option>
-                <option value="3621_glb" class="tm-option glb-tm">Sabo</option>
-                <option value="3588_glb" class="tm-option glb-tm">Ulti</option>
-                <option value="3567_glb" class="tm-option glb-tm">Kanjuro</option>
-                <option value="3547_glb" class="tm-option glb-tm">Perospero</option>
-                <option value="3527_glb" class="tm-option glb-tm">Tashigi</option>
-                <option value="3416_glb" class="tm-option glb-tm">Stussy</option>
-                <option value="3389_glb" class="tm-option glb-tm">Dragon Kaido</option>
-                <option value="3368_glb" class="tm-option glb-tm">MUGIWARA 56 Zoro</option>
-                <option value="3339_glb" class="tm-option glb-tm">Koala</option>
-                <option value="3297_glb" class="tm-option glb-tm">Shiryu</option>
-                <option value="3273_glb" class="tm-option glb-tm">Luffy & Ace</option>
-                <option value="3239_glb" class="tm-option glb-tm">Queen</option>
-                <option value="3197_glb" class="tm-option glb-tm">Garp</option>
-                <option value="3150_glb" class="tm-option glb-tm">Kid</option>
-                <option value="3094_glb" class="tm-option glb-tm">Jinbe</option>
-                <option value="3115_glb" class="tm-option glb-tm">Pudding</option>
-                <option value="3060_glb" class="tm-option glb-tm">Nami & Sanji</option>
-                <option value="3022_glb" class="tm-option glb-tm">Reiju</option>
-                <option value="2995_glb" class="tm-option glb-tm">Zorojuro</option>
-                <option value="2977_glb" class="tm-option glb-tm">Anni Luffy</option>
-                <option value="2913_glb" class="tm-option glb-tm">Shirahoshi</option>
-                <option value="2879_glb" class="tm-option glb-tm">Vivi</option>
-                <option value="2850_glb" class="tm-option glb-tm">Rebecca & Viola</option>
-                <option value="2823_glb" class="tm-option glb-tm">X Drake</option>
-                <option value="2792_glb" class="tm-option glb-tm">O-Robi</option>
-                <option value="2763_glb" class="tm-option glb-tm">Halloween Nami</option>
-                <option value="2729_glb" class="tm-option glb-tm">Hawkins</option>
-                <option value="2690_glb" class="tm-option glb-tm">Blackbeard</option>
-                <option value="2659_glb" class="tm-option glb-tm">Smoker</option>
-                <option value="2618_glb" class="tm-option glb-tm">Sakazuki & Issho</option>
-                <option value="2583_glb" class="tm-option glb-tm">Lucci</option>
-                <option value="2557_glb" class="tm-option glb-tm">Shanks & Beckman</option>
-                <option value="2510_glb" class="tm-option glb-tm">Weevil</option>
-                <option value="2443_glb" class="tm-option glb-tm">Doflamingo</option>
-                <option value="2469_glb" class="tm-option glb-tm">Smoothie & Oven</option>
-                <option value="2362_glb" class="tm-option glb-tm">Christmas Nami</option>
-                <option value="2387_glb" class="tm-option glb-tm">Kaido</option>
-                <option value="2336_glb" class="tm-option glb-tm">Law</option>
-                <option value="2299_glb" class="tm-option glb-tm">Boa Hancock</option>
-                <option value="2261_glb" class="tm-option glb-tm">Shanks</option>
-                <option value="2211_glb" class="tm-option glb-tm">Eneru</option>
-                <option value="2109_glb" class="tm-option glb-tm">Big Mom</option>
-                <option value="2175_glb" class="tm-option glb-tm">Jack</option>
-                <option value="2137_glb" class="tm-option glb-tm">Crocodile</option>
-                <option value="2064_glb" class="tm-option glb-tm">Kizaru</option>
-                <option value="2000_glb" class="tm-option glb-tm">Sanji & Zoro</option>
-                <option value="1972_glb" class="tm-option glb-tm">Valentine Sabo</option>
-                <option value="1941_glb" class="tm-option glb-tm">Ace</option>
-                <option value="1916_glb" class="tm-option glb-tm">Gear 4</option>
-                <option value="1889_glb" class="tm-option glb-tm">Cavendish</option>
-                <option value="1853_glb" class="tm-option glb-tm">Whitebeard</option>
-                <option value="1808_glb" class="tm-option glb-tm">Mihawk</option>
-
-                <option value="3506_jpn" class="tm-option jpn-tm" id="newest-tm-jpn">Hyogoro</option>
-                <option value="3491_jpn" class="tm-option jpn-tm">Moria</option>
-                <option value="3467_jpn" class="tm-option jpn-tm">Halloween Robin</option>
-                <option value="3443_jpn" class="tm-option jpn-tm">Beast Pirates Luffy</option>
-                <option value="3416_jpn" class="tm-option jpn-tm">Stussy</option>
-                <option value="3389_jpn" class="tm-option jpn-tm">Dragon Kaido</option>
-                <option value="3368_jpn" class="tm-option jpn-tm">MUGIWARA 56 Zoro</option>
-                <option value="3339_jpn" class="tm-option jpn-tm">Koala</option>
-                <option value="3297_jpn" class="tm-option jpn-tm">Shiryu</option>
-                <option value="3273_jpn" class="tm-option jpn-tm">Luffy & Ace</option>
-                <option value="3239_jpn" class="tm-option jpn-tm">Queen</option>
-                <option value="3217_jpn" class="tm-option jpn-tm">Komurasaki</option>
-                <option value="3197_jpn" class="tm-option jpn-tm">Garp</option>
-                <option value="3150_jpn" class="tm-option jpn-tm">Kid</option>
-                <option value="3115_jpn" class="tm-option jpn-tm">Pudding</option>
-                <option value="3094_jpn" class="tm-option jpn-tm">Jinbe</option>
-                <option value="3060_jpn" class="tm-option jpn-tm">Nami & Sanji</option>
-                <option value="3022_jpn" class="tm-option jpn-tm">Reiju</option>
-                <option value="2995_jpn" class="tm-option jpn-tm">Zorojuro</option>
-                <option value="2977_jpn" class="tm-option jpn-tm">Anni Luffy</option>
-                <option value="2913_jpn" class="tm-option jpn-tm">Shirahoshi</option>
-                <option value="2879_jpn" class="tm-option jpn-tm">Vivi</option>
-                <option value="2850_jpn" class="tm-option jpn-tm">Rebecca & Viola</option>
-                <option value="2823_jpn" class="tm-option jpn-tm">X Drake</option>
-                <option value="2792_jpn" class="tm-option jpn-tm">O-Robi</option>
-                <option value="2763_jpn" class="tm-option jpn-tm">Halloween Nami</option>
-                <option value="2729_jpn" class="tm-option jpn-tm">Hawkins</option>
-                <option value="2690_jpn" class="tm-option jpn-tm">Blackbeard</option>
-                <option value="2659_jpn" class="tm-option jpn-tm">Smoker</option>
-                <option value="2618_jpn" class="tm-option jpn-tm">Sakazuki & Issho</option>
-                <option value="2583_jpn" class="tm-option jpn-tm">Lucci</option>
-                <option value="2557_jpn" class="tm-option jpn-tm">Shanks & Beckman</option>
-                <option value="2510_jpn" class="tm-option jpn-tm">Edward Weevil</option>
-                <option value="2469_jpn" class="tm-option jpn-tm">Smoothie & Oven</option>
-                <option value="2443_jpn" class="tm-option jpn-tm">Doflamingo</option>
-                <option value="2387_jpn" class="tm-option jpn-tm">Kaido</option>
-                <option value="2362_jpn" class="tm-option jpn-tm">Christmas Nami</option>
-                <option value="2336_jpn" class="tm-option jpn-tm">Law</option>
-                <option value="2299_jpn" class="tm-option jpn-tm">Boa Hancock</option>
-                <option value="2261_jpn" class="tm-option jpn-tm">Shanks</option>
-                <option value="2211_jpn" class="tm-option jpn-tm">Eneru</option>
-                <option value="2175_jpn" class="tm-option jpn-tm">Jack</option>
-                <option value="2137_jpn" class="tm-option jpn-tm">Crocodile</option>
-                <option value="2109_jpn" class="tm-option jpn-tm">Big Mom</option>
-                <option value="2064_jpn" class="tm-option jpn-tm">Kizaru</option>
-            </select>
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-2 col-2 thumb-div"></div>
-    </div>
-
-    <div class="row justify-content-center" id="read-only-button-div">
-        <div class="col-auto">
-            <button type="button" class="btn btn-sm btn-warning" id="read-only-button">
-                Read Only Mode - Click to Disable
-            </button>
-        </div>
-    </div>
-
-    <div class="row justify-content-center my-2 text-center">
-        <div class="col-auto">
-            Don't Have Mode:
-            <select id="dont-have-mode">
-                <option value="0">Separated Section</option>
-                <option value="1">In Place</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12" id="incomplete-notice">
-            <i class="fas fa-exclamation-circle"></i>&nbsp;
-            DB is not updated for this TM therefore the filters do not work with the new batch
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_5x">
-                    <h4>2.5x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_2_5x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_3x">
-                    <h4>2.3x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -15</div>
-                    <div class="booster-div" id="booster_2_3x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_25x">
-                    <h4>2.25x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_2_25x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_2x">
-                    <h4>2.2x Booster(s)</h4>
-                    <div class="booster-info">Stats 3x, CD -10</div>
-                    <div class="booster-div" id="booster_2_2x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2x">
-                    <h4>2x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_2x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_85x">
-                    <h4>1.85x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_85x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_8x">
-                    <h4>1.8x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_8x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_8x_v2">
-                    <h4>1.8x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -15</div>
-                    <div class="booster-div" id="booster_1_8x_v2"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_75x">
-                    <h4>1.75x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_75x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_7x">
-                    <h4>1.7x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_7x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_65x">
-                    <h4>1.65x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_65x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_6x">
-                    <h4>1.6x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_6x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_5x">
-                    <h4>1.5x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_5x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_4x">
-                    <h4>1.4x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.25x, CD -7</div>
-                    <div class="booster-div" id="booster_1_4x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_4x_v2">
-                    <h4>1.4x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_4x_v2"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x">
-                    <h4>1.35x booster(s)</h4>
-                    <div class="booster-info">stats 1.2x, cd -5</div>
-                    <div class="booster-div" id="booster_1_35x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_valt">
-                    <h4>1.35x booster(s)</h4>
-                    <div class="booster-info">stats 1.2x, cd -7</div>
-                    <div class="booster-div" id="booster_1_35x_valt"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_v2">
-                    <h4>1.35x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_35x_v2"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_v3">
-                    <h4>1.35x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.35x, CD -5</div>
-                    <div class="booster-div" id="booster_1_35x_v3"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_35x_v4">
-                    <h4>1.35x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.25x, CD -7</div>
-                    <div class="booster-div" id="booster_1_35x_v4"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_3x">
-                    <h4>1.3x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.25x, CD -7</div>
-                    <div class="booster-div" id="booster_1_3x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_3x_v2">
-                    <h4>1.3x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.3x, CD -7</div>
-                    <div class="booster-div" id="booster_1_3x_v2"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_3x_v3">
-                    <h4>1.3x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1_3x_v3"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x">
-                    <h4>1.25x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.25x, CD -5</div>
-                    <div class="booster-div" id="booster_1_25x"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x_v2">
-                    <h4>1.25x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.25x, CD -7</div>
-                    <div class="booster-div" id="booster_1_25x_v2"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x_v3">
-                    <h4>1.25x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.2x, CD -7</div>
-                    <div class="booster-div" id="booster_1_25x_v3"></div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_25x_v4">
-                    <h4>1.25x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.2x, CD -10</div>
-                    <div class="booster-div" id="booster_1_25x_v4"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <h4>1.2x Booster(s)</h4>
-                    <div class="booster-info" id="info_1_2x_main">Stats 1.2x, CD -3</div>
-                    <div class="booster-info" id="info_1_2x_alt">Stats 1.2x, CD -5</div>
-                    <div id="booster_1_2x">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 col-12">
-                                <h5>Legends</h5>
-                                <div class="booster-div" id="booster_1_2x_legend"></div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12">
-                                <h5>RRs</h5>
-                                <div class="booster-div" id="booster_1_2x_rr"></div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12" id="div_1_2x_tm_rr">
-                                <h5>TM RRs</h5>
-                                <div class="booster-div" id="booster_1_2x_tm_rr"></div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12">
-                                <h5>Raids</h5>
-                                <div class="booster-div" id="booster_1_2x_raid"></div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12">
-                                <h5>Coliseums</h5>
-                                <div class="booster-div" id="booster_1_2x_coliseum"></div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12">
-                                <h5>Fortnights</h5>
-                                <div class="booster-div" id="booster_1_2x_fortnight"></div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12" id="div_1_2x_tm">
-                                <h5>TMs</h5>
-                                <div class="booster-div" id="booster_1_2x_tm"></div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-12">
-                                <h5>Others</h5>
-                                <div class="booster-div" id="booster_1_2x_other"></div>
+                    <div class="col-12">
+                        <h4>1.2x Booster(s)</h4>
+                        <div class="booster-info" id="info_1_2x_main">Stats 1.2x, CD -3</div>
+                        <div class="booster-info" id="info_1_2x_alt">Stats 1.2x, CD -5</div>
+                        <div id="booster_1_2x">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <h5>Legends</h5>
+                                    <div class="booster-div" id="booster_1_2x_legend"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <h5>RRs</h5>
+                                    <div class="booster-div" id="booster_1_2x_rr"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12" id="div_1_2x_tm_rr">
+                                    <h5>TM RRs</h5>
+                                    <div class="booster-div" id="booster_1_2x_tm_rr"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <h5>Raids</h5>
+                                    <div class="booster-div" id="booster_1_2x_raid"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <h5>Coliseums</h5>
+                                    <div class="booster-div" id="booster_1_2x_coliseum"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <h5>Fortnights</h5>
+                                    <div class="booster-div" id="booster_1_2x_fortnight"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12" id="div_1_2x_tm">
+                                    <h5>TMs</h5>
+                                    <div class="booster-div" id="booster_1_2x_tm"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <h5>Others</h5>
+                                    <div class="booster-div" id="booster_1_2x_other"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_1x">
-                    <h4>1.1x Booster(s)</h4>
-                    <div class="booster-info">Stats 1.2x, CD -3</div>
-                    <div class="booster-div" id="booster_1_1x"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1_1x">
+                        <h4>1.1x Booster(s)</h4>
+                        <div class="booster-info">Stats 1.2x, CD -3</div>
+                        <div class="booster-div" id="booster_1_1x"></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1x">
+                        <h4>1x Booster(s)</h4>
+                        <div class="booster-info">Stats 2.5x, CD -10</div>
+                        <div class="booster-div" id="booster_1x"></div>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12 div_x" id="div_1x">
-                    <h4>1x Booster(s)</h4>
-                    <div class="booster-info">Stats 2.5x, CD -10</div>
-                    <div class="booster-div" id="booster_1x"></div>
-                </div>
-            </div>
 
-            <div class="row" id="dont-have-div">
-                <div class="col-12">
-                    <h4>Units I Don't Have</h4>
-                    <div class="booster-div" id="dont-have">
-                        <button type="button" class="btn btn-light" id="add-button"></button>
+                <div class="row" id="dont-have-div">
+                    <div class="col-12">
+                        <h4>Units I Don't Have</h4>
+                        <div class="booster-div" id="dont-have">
+                            <button type="button" class="btn btn-light" id="add-button"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="tm-team-container" class="row fixed-teams">
-        <div class="col-12">
-            <div class="row expand-collapse-icons-row">
-                <div class="filter-button-div col-11">
-                    <div class="filter-button" data-status="in-team">
+        <div id="tm-team-container" class="row fixed-teams">
+            <div class="col-12">
+                <div class="row expand-collapse-icons-row">
+                    <div class="filter-button-div col-11">
+                        <div class="filter-button" data-status="in-team">
+                            Filter
+                        </div>
+                        <div class="filter-clear-all-div">
+                            <button type="button" class="btn btn-danger filter-clear-all-btn">CLEAR ALL</button>
+                        </div>
+                        <div class="fixed-note-button">Team Status</div>
+                    </div>
+                    <div class="expand-button-div col-1">
+                        <img id="expand-icon" src="assets/img/details_down.png" data-img="details_down"
+                            data-status="down" />
+                    </div>
+                </div>
+
+                <div id="tm-team-sets" class="row">
+                    <div class="export-image-info" style="display: none;">
+                        <div class="export-image-title">
+                            <i class="fas fa-cat"></i>&nbsp;
+                            <div class="tm-select"></div>
+                            <div class="thumb-div"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-6 team" id="first-team" data-team="0">
+                            <div class="team-title">
+                                <button type="button" class="btn btn-outline-secondary op-guide-btn">
+                                    <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
+                                    <span class="op-name" id="op-1"></span>
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot friend hidden empty" data-slot="00"></div>
+                                    <div class="team-slot friend-cap" id="team-slot-00" data-slot="0"></div>
+                                    <div class="team-slot" id="team-slot-01" data-slot="1"></div>
+                                    <div class="support-slot empty" data-slot="01" data-index="0"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="02" data-index="1"></div>
+                                    <div class="team-slot" id="team-slot-02" data-slot="2"></div>
+                                    <div class="team-slot" id="team-slot-03" data-slot="3"></div>
+                                    <div class="support-slot empty" data-slot="03" data-index="2"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="04" data-index="3"></div>
+                                    <div class="team-slot" id="team-slot-04" data-slot="4"></div>
+                                    <div class="team-slot" id="team-slot-05" data-slot="5"></div>
+                                    <div class="support-slot empty" data-slot="05" data-index="4"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <span class="x_pts">1.00</span>x
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <button type="button" class="btn btn-dark btn-sm cal-button">Export to
+                                        Calculator</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-6 team" data-team="1">
+                            <div class="team-title">
+                                <button type="button" class="btn btn-outline-secondary op-guide-btn">
+                                    <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
+                                    <span class="op-name" id="op-2"></span>
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot friend hidden empty" data-slot="10"></div>
+                                    <div class="team-slot friend-cap" id="team-slot-10" data-slot="0"></div>
+                                    <div class="team-slot" id="team-slot-11" data-slot="1"></div>
+                                    <div class="support-slot empty" data-slot="11" data-index="5"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="12" data-index="6"></div>
+                                    <div class="team-slot" id="team-slot-12" data-slot="2"></div>
+                                    <div class="team-slot" id="team-slot-13" data-slot="3"></div>
+                                    <div class="support-slot empty" data-slot="13" data-index="7"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="14" data-index="8"></div>
+                                    <div class="team-slot" id="team-slot-14" data-slot="4"></div>
+                                    <div class="team-slot" id="team-slot-15" data-slot="5"></div>
+                                    <div class="support-slot empty" data-slot="15" data-index="9"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <span class="x_pts">1.00</span>x
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <button type="button" class="btn btn-dark btn-sm cal-button">Export to
+                                        Calculator</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-6 team" data-team="2">
+                            <div class="team-title">
+                                <button type="button" class="btn btn-outline-secondary op-guide-btn">
+                                    <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
+                                    <span class="op-name" id="op-3"></span>
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot friend hidden empty" data-slot="20"></div>
+                                    <div class="team-slot friend-cap" id="team-slot-20" data-slot="0"></div>
+                                    <div class="team-slot" id="team-slot-21" data-slot="1"></div>
+                                    <div class="support-slot empty" data-slot="21" data-index="10"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="22" data-index="11"></div>
+                                    <div class="team-slot" id="team-slot-22" data-slot="2"></div>
+                                    <div class="team-slot" id="team-slot-23" data-slot="3"></div>
+                                    <div class="support-slot empty" data-slot="23" data-index="12"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="24" data-index="13"></div>
+                                    <div class="team-slot" id="team-slot-24" data-slot="4"></div>
+                                    <div class="team-slot" id="team-slot-25" data-slot="5"></div>
+                                    <div class="support-slot empty" data-slot="25" data-index="14"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <span class="x_pts">1.00</span>x
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <button type="button" class="btn btn-dark btn-sm cal-button">Export to
+                                        Calculator</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-6 team" data-team="3">
+                            <div class="team-title">
+                                <button type="button" class="btn btn-outline-secondary op-guide-btn">
+                                    <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
+                                    <span class="op-name" id="op-4"></span>
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot friend hidden empty" data-slot="30"></div>
+                                    <div class="team-slot friend-cap" id="team-slot-30" data-slot="0"></div>
+                                    <div class="team-slot" id="team-slot-31" data-slot="1"></div>
+                                    <div class="support-slot empty" data-slot="31" data-index="15"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="32" data-index="16"></div>
+                                    <div class="team-slot" id="team-slot-32" data-slot="2"></div>
+                                    <div class="team-slot" id="team-slot-33" data-slot="3"></div>
+                                    <div class="support-slot empty" data-slot="33" data-index="17"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="34" data-index="18"></div>
+                                    <div class="team-slot" id="team-slot-34" data-slot="4"></div>
+                                    <div class="team-slot" id="team-slot-35" data-slot="5"></div>
+                                    <div class="support-slot empty" data-slot="35" data-index="19"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <span class="x_pts">1.00</span>x
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <button type="button" class="btn btn-dark btn-sm cal-button">Export to
+                                        Calculator</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-6 team" data-team="4">
+                            <div class="team-title">
+                                <button type="button" class="btn btn-outline-secondary op-guide-btn">
+                                    <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
+                                    <span class="op-name" id="op-5"></span>
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot friend hidden empty" data-slot="40"></div>
+                                    <div class="team-slot friend-cap" id="team-slot-40" data-slot="0"></div>
+                                    <div class="team-slot" id="team-slot-41" data-slot="1"></div>
+                                    <div class="support-slot empty" data-slot="41" data-index="20"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="42" data-index="21"></div>
+                                    <div class="team-slot" id="team-slot-42" data-slot="2"></div>
+                                    <div class="team-slot" id="team-slot-43" data-slot="3"></div>
+                                    <div class="support-slot empty" data-slot="43" data-index="22"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="44" data-index="23"></div>
+                                    <div class="team-slot" id="team-slot-44" data-slot="4"></div>
+                                    <div class="team-slot" id="team-slot-45" data-slot="5"></div>
+                                    <div class="support-slot empty" data-slot="45" data-index="24"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <span class="x_pts">1.00</span>x
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <button type="button" class="btn btn-dark btn-sm cal-button">Export to
+                                        Calculator</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-6 team" id="ambush-team" data-team="5">
+                            <div class="team-title">
+                                <button type="button" class="btn btn-outline-secondary op-guide-btn">
+                                    <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
+                                    <span class="op-name" id="op-6"></span>
+                                </button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot friend hidden empty" data-slot="50"></div>
+                                    <div class="ambush-team-slot friend-cap" id="team-slot-50" data-slot="0"></div>
+                                    <div class="ambush-team-slot" id="team-slot-51" data-slot="1"></div>
+                                    <div class="support-slot empty" data-slot="51" data-index="25"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="52" data-index="26"></div>
+                                    <div class="ambush-team-slot" id="team-slot-52" data-slot="2"></div>
+                                    <div class="ambush-team-slot" id="team-slot-53" data-slot="3"></div>
+                                    <div class="support-slot empty" data-slot="53" data-index="27"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <div class="support-slot empty" data-slot="54" data-index="28"></div>
+                                    <div class="ambush-team-slot" id="team-slot-54" data-slot="4"></div>
+                                    <div class="ambush-team-slot" id="team-slot-55" data-slot="5"></div>
+                                    <div class="support-slot empty" data-slot="55" data-index="29"></div>
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <span class="x_pts">1.00</span>x
+                                </div>
+
+                                <div class="col-md-12 col-12">
+                                    <button type="button" class="btn btn-dark btn-sm cal-button">Export to
+                                        Calculator</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="export-image-info filter-info" style="display: none;">
+                        Generated by https://lukforce.bitbucket.io/tm-planner/
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tm-filter-container" class="fixed-filters">
+            <div>
+                <div class="fixed-filter-button">
+                    <div class="filter-button active">
                         Filter
                     </div>
                     <div class="filter-clear-all-div">
@@ -908,660 +1201,404 @@
                     </div>
                     <div class="fixed-note-button">Team Status</div>
                 </div>
-                <div class="expand-button-div col-1">
-                    <img id="expand-icon" src="assets/img/details_down.png" data-img="details_down" data-status="down"/>
-                </div>
-            </div>
 
-            <div id="tm-team-sets" class="row">
-                <div class="export-image-info" style="display: none;">
-                    <div class="export-image-title">
-                        <i class="fas fa-cat"></i>&nbsp;
-                        <div class="tm-select"></div>
-                        <div class="thumb-div"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2 col-sm-4 col-6 team" id="first-team" data-team="0">
-                        <div class="team-title">
-                            <button type="button" class="btn btn-outline-secondary op-guide-btn">
-                                <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
-                                <span class="op-name" id="op-1"></span>
-                            </button>
+                <div id="tm-filter-sets">
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">TYPE</div>
+                            <button type="button" class="btn btn-danger filter-clear-btn"
+                                data-target="type">CLEAR</button>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot friend hidden empty" data-slot="00"></div>
-                                <div class="team-slot friend-cap" id="team-slot-00" data-slot="0"></div>
-                                <div class="team-slot" id="team-slot-01" data-slot="1"></div>
-                                <div class="support-slot empty" data-slot="01" data-index="0"></div>
-                            </div>
+                        <div class="filter-icons">
+                            <div class="filter type-filter STR-div" data-filter="STR"></div>
+                            <div class="filter type-filter DEX-div" data-filter="DEX"></div>
+                            <div class="filter type-filter QCK-div" data-filter="QCK"></div>
+                            <div class="filter type-filter PSY-div" data-filter="PSY"></div>
+                            <div class="filter type-filter INT-div" data-filter="INT"></div>
+                        </div>
 
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="02" data-index="1"></div>
-                                <div class="team-slot" id="team-slot-02" data-slot="2"></div>
-                                <div class="team-slot" id="team-slot-03" data-slot="3"></div>
-                                <div class="support-slot empty" data-slot="03" data-index="2"></div>
-                            </div>
+                        <div class="filter-title">
+                            <div class="stroke-single">NAME</div>
+                            <button type="button" class="btn btn-danger filter-clear-btn"
+                                data-target="name">CLEAR</button>
+                        </div>
 
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="04" data-index="3"></div>
-                                <div class="team-slot" id="team-slot-04" data-slot="4"></div>
-                                <div class="team-slot" id="team-slot-05" data-slot="5"></div>
-                                <div class="support-slot empty" data-slot="05" data-index="4"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <span class="x_pts">1.00</span>x
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <button type="button" class="btn btn-dark btn-sm cal-button">Export to Calculator</button>
-                            </div>
+                        <div class="filter-icons">
+                            <input type="text" class="form-control form-control-sm filter" id="name-filter"
+                                placeholder="Unit Family Name">
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-sm-4 col-6 team" data-team="1">
-                        <div class="team-title">
-                            <button type="button" class="btn btn-outline-secondary op-guide-btn">
-                                <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
-                                <span class="op-name" id="op-2"></span>
-                            </button>
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">CLASS</div>
+                            <button type="button" class="btn btn-danger filter-clear-btn"
+                                data-target="class">CLEAR</button>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot friend hidden empty" data-slot="10"></div>
-                                <div class="team-slot friend-cap" id="team-slot-10" data-slot="0"></div>
-                                <div class="team-slot" id="team-slot-11" data-slot="1"></div>
-                                <div class="support-slot empty" data-slot="11" data-index="5"></div>
+                        <div class="filter-icons">
+                            <div class="filter class-filter fighter-div" data-filter="Fighter"></div>
+                            <div class="filter class-filter slasher-div" data-filter="Slasher"></div />
+                            <div class="filter class-filter striker-div" data-filter="Striker"></div>
+                            <div class="filter class-filter shooter-div" data-filter="Shooter"></div>
+                            <div class="filter class-filter free-spirit-div" data-filter="Free Spirit"></div>
+                            <div class="filter class-filter driven-div" data-filter="Driven"></div>
+                            <div class="filter class-filter cerebral-div" data-filter="Cerebral"></div>
+                            <div class="filter class-filter powerhouse-div" data-filter="Powerhouse"></div>
+
+                            <div id="exclude-other-checkbox" class="class-mode btn btn-warning">
+                                Exclude other Classes
                             </div>
 
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="12" data-index="6"></div>
-                                <div class="team-slot" id="team-slot-12" data-slot="2"></div>
-                                <div class="team-slot" id="team-slot-13" data-slot="3"></div>
-                                <div class="support-slot empty" data-slot="13" data-index="7"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="14" data-index="8"></div>
-                                <div class="team-slot" id="team-slot-14" data-slot="4"></div>
-                                <div class="team-slot" id="team-slot-15" data-slot="5"></div>
-                                <div class="support-slot empty" data-slot="15" data-index="9"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <span class="x_pts">1.00</span>x
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <button type="button" class="btn btn-dark btn-sm cal-button">Export to Calculator</button>
+                            <div>
+                                <label for="preset-filters" id="preset-filter-label">
+                                    Presets
+                                </label>
+                                <select id="preset-filters">
+                                    <option value="-1">(none)</option>
+                                    <option value="2113">Katakuri</option>
+                                    <option value="2739">Katakuri 6+</option>
+                                    <option value="2365">Katakuri v2</option>
+                                    <option value="2338">Carrot</option>
+                                    <option value="3543">Carrot & Wanda</option>
+                                    <option value="2336">TM Law</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-sm-4 col-6 team" data-team="2">
-                        <div class="team-title">
-                            <button type="button" class="btn btn-outline-secondary op-guide-btn">
-                                <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
-                                <span class="op-name" id="op-3"></span>
-                            </button>
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">SPECIAL 1/3</div>
+                            <button type="button" class="btn btn-danger filter-clear-btn"
+                                data-target="special">CLEAR</button>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot friend hidden empty" data-slot="20"></div>
-                                <div class="team-slot friend-cap" id="team-slot-20" data-slot="0"></div>
-                                <div class="team-slot" id="team-slot-21" data-slot="1"></div>
-                                <div class="support-slot empty" data-slot="21" data-index="10"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="22" data-index="11"></div>
-                                <div class="team-slot" id="team-slot-22" data-slot="2"></div>
-                                <div class="team-slot" id="team-slot-23" data-slot="3"></div>
-                                <div class="support-slot empty" data-slot="23" data-index="12"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="24" data-index="13"></div>
-                                <div class="team-slot" id="team-slot-24" data-slot="4"></div>
-                                <div class="team-slot" id="team-slot-25" data-slot="5"></div>
-                                <div class="support-slot empty" data-slot="25" data-index="14"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <span class="x_pts">1.00</span>x
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <button type="button" class="btn btn-dark btn-sm cal-button">Export to Calculator</button>
-                            </div>
+                        <div class="filter-icons">
+                            <div class="filter sp-filter atk-boost-div" data-filter="atk-boost"></div>
+                            <div class="filter sp-filter orb-boost-div" data-filter="orb-boost"></div>
+                            <div class="filter sp-filter affinity-div" data-filter="affinity"></div>
+                            <div class="filter sp-filter atk-delay-div" data-filter="atk-delay"></div>
+                            <div class="filter sp-filter atk-def-down-div" data-filter="atk-def-down"></div>
+                            <div class="filter sp-filter atk-poison-div" data-filter="atk-poison"></div>
+                            <div class="filter sp-filter chain-boost-div" data-filter="chain-boost"></div>
+                            <div class="filter sp-filter chain-lock-div" data-filter="chain-lock"></div>
+                            <div class="filter sp-filter chain-bound-div" data-filter="chain-bound"></div>
+                            <div class="filter sp-filter slot-change-div" data-filter="slot-change"></div>
+                            <div class="filter sp-filter slot-change-block-div" data-filter="slot-change-block"></div>
+                            <div class="filter sp-filter slot-lock-div" data-filter="slot-lock"></div>
+                            <div class="filter sp-filter slot-pos-div" data-filter="slot-pos"></div>
+                            <div class="filter sp-filter delay-div" data-filter="delay"></div>
+                            <div class="filter sp-filter def-down-div" data-filter="def-down"></div>
+                            <div class="filter sp-filter poison-div" data-filter="poison"></div>
+                            <div class="filter sp-filter dmg-normal-div" data-filter="dmg-normal"></div>
+                            <div class="filter sp-filter dmg-eot-div" data-filter="dmg-eot"></div>
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-sm-4 col-6 team" data-team="3">
-                        <div class="team-title">
-                            <button type="button" class="btn btn-outline-secondary op-guide-btn">
-                                <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
-                                <span class="op-name" id="op-4"></span>
-                            </button>
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">SPECIAL 2/3</div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot friend hidden empty" data-slot="30"></div>
-                                <div class="team-slot friend-cap" id="team-slot-30" data-slot="0"></div>
-                                <div class="team-slot" id="team-slot-31" data-slot="1"></div>
-                                <div class="support-slot empty" data-slot="31" data-index="15"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="32" data-index="16"></div>
-                                <div class="team-slot" id="team-slot-32" data-slot="2"></div>
-                                <div class="team-slot" id="team-slot-33" data-slot="3"></div>
-                                <div class="support-slot empty" data-slot="33" data-index="17"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="34" data-index="18"></div>
-                                <div class="team-slot" id="team-slot-34" data-slot="4"></div>
-                                <div class="team-slot" id="team-slot-35" data-slot="5"></div>
-                                <div class="support-slot empty" data-slot="35" data-index="19"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <span class="x_pts">1.00</span>x
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <button type="button" class="btn btn-dark btn-sm cal-button">Export to Calculator</button>
-                            </div>
+                        <div class="filter-icons">
+                            <div class="filter sp-filter dmg-add-div" data-filter="dmg-add"></div>
+                            <div class="filter sp-filter heal-div" data-filter="heal"></div>
+                            <div class="filter sp-filter def-perc-div" data-filter="def-perc"></div>
+                            <div class="filter sp-filter def-thres-div" data-filter="def-thres"></div>
+                            <div class="filter sp-filter def-null-div" data-filter="def-null"></div>
+                            <div class="filter sp-filter resil-div" data-filter="resil"></div>
+                            <div class="filter sp-filter cd-red-div" data-filter="cd-red"></div>
+                            <div class="filter sp-filter bind-red-div" data-filter="bind-red"></div>
+                            <div class="filter sp-filter desp-red-div" data-filter="desp-red"></div>
+                            <div class="filter sp-filter silence-red-div" data-filter="silence-red"></div>
+                            <div class="filter sp-filter para-red-div" data-filter="para-red"></div>
+                            <div class="filter sp-filter poison-red-div" data-filter="poison-red"></div>
+                            <div class="filter sp-filter blind-red-div" data-filter="blind-red"></div>
+                            <div class="filter sp-filter burn-red-div" data-filter="burn-red"></div>
+                            <div class="filter sp-filter atk-down-red-div" data-filter="atk-down-red"></div>
+                            <div class="filter sp-filter chain-lock-red-div" data-filter="chain-lock-red"></div>
+                            <div class="filter sp-filter chain-down-red-div" data-filter="chain-down-red"></div>
+                            <div class="filter sp-filter dmg-up-red-div" data-filter="dmg-up-red"></div>
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-sm-4 col-6 team" data-team="4">
-                        <div class="team-title">
-                            <button type="button" class="btn btn-outline-secondary op-guide-btn">
-                                <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
-                                <span class="op-name" id="op-5"></span>
-                            </button>
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">SPECIAL 3/3</div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot friend hidden empty" data-slot="40"></div>
-                                <div class="team-slot friend-cap" id="team-slot-40" data-slot="0"></div>
-                                <div class="team-slot" id="team-slot-41" data-slot="1"></div>
-                                <div class="support-slot empty" data-slot="41" data-index="20"></div>
-                            </div>
+                        <div class="filter-icons">
+                            <div class="filter sp-filter dmg-eot-red-e-div" data-filter="dmg-eot-red-e"></div>
+                            <div class="filter sp-filter atk-red-e-div" data-filter="atk-red-e"></div>
+                            <div class="filter sp-filter def-red-e-div" data-filter="def-red-e"></div>
+                            <div class="filter sp-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
+                            <div class="filter sp-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
+                            <div class="filter sp-filter def-null-red-e-div" data-filter="def-null-red-e"></div>
+                            <div class="filter sp-filter bar-red-e-div" data-filter="bar-red-e"></div>
+                            <div class="filter sp-filter resil-red-e-div" data-filter="resil-red-e"></div>
+                            <div class="filter sp-filter enrage-red-e-div" data-filter="enrage-red-e"></div>
+                        </div>
 
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="42" data-index="21"></div>
-                                <div class="team-slot" id="team-slot-42" data-slot="2"></div>
-                                <div class="team-slot" id="team-slot-43" data-slot="3"></div>
-                                <div class="support-slot empty" data-slot="43" data-index="22"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="44" data-index="23"></div>
-                                <div class="team-slot" id="team-slot-44" data-slot="4"></div>
-                                <div class="team-slot" id="team-slot-45" data-slot="5"></div>
-                                <div class="support-slot empty" data-slot="45" data-index="24"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <span class="x_pts">1.00</span>x
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <button type="button" class="btn btn-dark btn-sm cal-button">Export to Calculator</button>
-                            </div>
+                        <div class="filter-info">
+                            Special Filter algorithm provided by OPTC-DB
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-sm-4 col-6 team" id="ambush-team" data-team="5">
-                        <div class="team-title">
-                            <button type="button" class="btn btn-outline-secondary op-guide-btn">
-                                <i class="fas fa-skull-crossbones op-icon"></i>&nbsp;
-                                <span class="op-name" id="op-6"></span>
-                            </button>
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">SAILOR</div>
+                            <button type="button" class="btn btn-danger filter-clear-btn"
+                                data-target="sailor">CLEAR</button>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot friend hidden empty" data-slot="50"></div>
-                                <div class="ambush-team-slot friend-cap" id="team-slot-50" data-slot="0"></div>
-                                <div class="ambush-team-slot" id="team-slot-51" data-slot="1"></div>
-                                <div class="support-slot empty" data-slot="51" data-index="25"></div>
-                            </div>
+                        <div class="filter-icons">
+                            <div class="filter sl-filter slot-pos-div" data-filter="slot-pos"></div>
+                            <div class="filter sl-filter cd-red-div" data-filter="cd-red"></div>
+                            <div class="filter sl-filter silence-red-div" data-filter="silence-red"></div>
+                            <div class="filter sl-filter para-red-div" data-filter="para-red"></div>
+                            <div class="filter sl-filter blind-red-div" data-filter="blind-red"></div>
+                            <div class="filter sl-filter burn-red-div" data-filter="burn-red"></div>
+                        </div>
 
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="52" data-index="26"></div>
-                                <div class="ambush-team-slot" id="team-slot-52" data-slot="2"></div>
-                                <div class="ambush-team-slot" id="team-slot-53" data-slot="3"></div>
-                                <div class="support-slot empty" data-slot="53" data-index="27"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <div class="support-slot empty" data-slot="54" data-index="28"></div>
-                                <div class="ambush-team-slot" id="team-slot-54" data-slot="4"></div>
-                                <div class="ambush-team-slot" id="team-slot-55" data-slot="5"></div>
-                                <div class="support-slot empty" data-slot="55" data-index="29"></div>
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <span class="x_pts">1.00</span>x
-                            </div>
-
-                            <div class="col-md-12 col-12">
-                                <button type="button" class="btn btn-dark btn-sm cal-button">Export to Calculator</button>
-                            </div>
+                        <div class="filter-info" style="margin-top: 65px;">
+                            Sailor Filter algorithm provided by OPTC-DB
                         </div>
                     </div>
-                </div>
-                <div class="export-image-info filter-info" style="display: none;">
-                    Generated by https://lukforce.bitbucket.io/tm-planner/
+
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">CAPTAIN</div>
+                            <button type="button" class="btn btn-danger filter-clear-btn"
+                                data-target="captain">CLEAR</button>
+                        </div>
+
+                        <div class="filter-icons">
+                            <div class="filter ca-filter slot-pos-div" data-filter="slot-pos"></div>
+                            <div class="filter ca-filter dmg-eot-div" data-filter="dmg-eot"></div>
+                            <div class="filter ca-filter bind-red-div" data-filter="bind-red"></div>
+                            <div class="filter ca-filter desp-red-div" data-filter="desp-red"></div>
+                            <div class="filter ca-filter cd-red-div" data-filter="cd-red"></div>
+                            <div class="filter ca-filter silence-red-div" data-filter="silence-red"></div>
+                            <div class="filter ca-filter para-red-div" data-filter="para-red"></div>
+                            <div class="filter ca-filter burn-red-div" data-filter="burn-red"></div>
+                            <div class="filter ca-filter atk-down-red-div" data-filter="atk-down-red"></div>
+                        </div>
+
+                        <div class="filter-info">
+                            Captain Filter algorithm provided by OPTC-DB
+                        </div>
+                    </div>
+
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">SUPER/VS 1/2</div>
+                            <button type="button" class="btn btn-danger filter-clear-btn"
+                                data-target="super">CLEAR</button>
+                        </div>
+
+                        <div class="filter-icons">
+                            <div class="filter sv-filter atk-boost-div" data-filter="atk-boost"></div>
+                            <div class="filter sv-filter orb-boost-div" data-filter="orb-boost"></div>
+                            <div class="filter sv-filter affinity-div" data-filter="affinity"></div>
+                            <div class="filter sv-filter atk-delay-div" data-filter="atk-delay"></div>
+                            <div class="filter sv-filter atk-def-down-div" data-filter="atk-def-down"></div>
+                            <div class="filter sv-filter chain-boost-div" data-filter="chain-boost"></div>
+                            <div class="filter sv-filter chain-lock-div" data-filter="chain-lock"></div>
+                            <div class="filter sv-filter slot-change-div" data-filter="slot-change"></div>
+                            <div class="filter sv-filter slot-change-block-div" data-filter="slot-change-block"></div>
+                            <div class="filter sv-filter slot-lock-div" data-filter="slot-lock"></div>
+                            <div class="filter sv-filter slot-pos-div" data-filter="slot-pos"></div>
+                            <div class="filter sv-filter delay-div" data-filter="delay"></div>
+                            <div class="filter sv-filter def-down-div" data-filter="def-down"></div>
+                            <div class="filter sv-filter dmg-normal-div" data-filter="dmg-normal"></div>
+                            <div class="filter sv-filter dmg-eot-div" data-filter="dmg-eot"></div>
+                            <div class="filter sv-filter dmg-add-div" data-filter="dmg-add"></div>
+                            <div class="filter sv-filter heal-div" data-filter="heal"></div>
+                            <div class="filter sv-filter def-perc-div" data-filter="def-perc"></div>
+                        </div>
+                    </div>
+
+                    <div class="tm-filter">
+                        <div class="filter-title">
+                            <div class="stroke-single">SUPER/VS 2/2</div>
+                        </div>
+
+                        <div class="filter-icons">
+                            <div class="filter sv-filter def-thres-div" data-filter="def-thres"></div>
+                            <div class="filter sv-filter cd-red-div" data-filter="cd-red"></div>
+                            <div class="filter sv-filter bind-red-div" data-filter="bind-red"></div>
+                            <div class="filter sv-filter para-red-div" data-filter="para-red"></div>
+                            <div class="filter sv-filter poison-red-div" data-filter="poison-red"></div>
+                            <div class="filter sv-filter burn-red-div" data-filter="burn-red"></div>
+                            <div class="filter sv-filter atk-down-red-div" data-filter="atk-down-red"></div>
+                            <div class="filter sv-filter def-red-e-div" data-filter="def-red-e"></div>
+                            <div class="filter sv-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
+                            <div class="filter sv-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
+                            <div class="filter sv-filter resil-red-e-div" data-filter="resil-red-e"></div>
+                        </div>
+
+                        <div class="filter-info">
+                            Super / VS Filter algorithm provided by OPTC-DB
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="tm-filter-container" class="fixed-filters">
-        <div>
-            <div class="fixed-filter-button">
-                <div class="filter-button active">
-                    Filter
+        <div id="tm-team-build-note-container" class="team-build-note">
+            <div id="team-build-note-header">Potential Team Errors</div>
+            <div class="team-note-div" data-team="0">
+                <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
+                <ul class="team-note-list"></ul>
+            </div>
+            <div class="team-note-div" data-team="1">
+                <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
+                <ul class="team-note-list"></ul>
+            </div>
+            <div class="team-note-div" data-team="2">
+                <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
+                <ul class="team-note-list"></ul>
+            </div>
+            <div class="team-note-div" data-team="3">
+                <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
+                <ul class="team-note-list"></ul>
+            </div>
+            <div class="team-note-div" data-team="4">
+                <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
+                <ul class="team-note-list"></ul>
+            </div>
+            <div class="team-note-div" data-team="5">
+                <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
+                <ul class="team-note-list"></ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="offset-md-2 col-md-4 col-12" id="export-url-div">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="export-url-link">
+
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-sm btn-outline-dark" id="copy-url-button">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="filter-clear-all-div">
-                    <button type="button" class="btn btn-danger filter-clear-all-btn">CLEAR ALL</button>
-                </div>
-                <div class="fixed-note-button">Team Status</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-2 col-md-4 col-12">
+                <button type="button" class="btn btn-sm btn-dark" id="export-image-button">Export Image</button>
+                <button type="button" class="btn btn-sm btn-dark" id="export-url-button">Export URL</button>
+                <button type="button" class="btn btn-sm btn-danger not-read-only" id="reset-button">Reset</button>
             </div>
 
-            <div id="tm-filter-sets">
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">TYPE</div>
-                        <button type="button" class="btn btn-danger filter-clear-btn" data-target="type">CLEAR</button>
-                    </div>
+            <div class="col-md-4 col-12">
+                <button type="button" class="btn btn-sm btn-primary not-read-only" id="save-button">Save</button>
+                <button type="button" class="btn btn-sm btn-info not-read-only" id="load-button">Load</button>
+                Last Saved: <span id="last-save">N/A</span>
+            </div>
+        </div>
 
-                    <div class="filter-icons">
-                        <div class="filter type-filter STR-div" data-filter="STR"></div>
-                        <div class="filter type-filter DEX-div" data-filter="DEX"></div>
-                        <div class="filter type-filter QCK-div" data-filter="QCK"></div>
-                        <div class="filter type-filter PSY-div" data-filter="PSY"></div>
-                        <div class="filter type-filter INT-div" data-filter="INT"></div>
-                    </div>
+        <div class="row">
+            <div class="offset-md-6 col-12 col-md-6">
+                <input type="checkbox" class="confirm-save" id="confirm-save-checkbox">
+                <label class="confirm-save" for="confirm-save">Confirm before Saving</label>
+            </div>
+        </div>
 
-                    <div class="filter-title">
-                        <div class="stroke-single">NAME</div>
-                        <button type="button" class="btn btn-danger filter-clear-btn" data-target="name">CLEAR</button>
-                    </div>
-
-                    <div class="filter-icons">
-                        <input type="text" class="form-control form-control-sm filter" id="name-filter"
-                            placeholder="Unit Family Name">
-                    </div>
-                </div>
-
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">CLASS</div>
-                        <button type="button" class="btn btn-danger filter-clear-btn" data-target="class">CLEAR</button>
-                    </div>
-
-                    <div class="filter-icons">
-                        <div class="filter class-filter fighter-div" data-filter="Fighter"></div>
-                        <div class="filter class-filter slasher-div" data-filter="Slasher"></div/>
-                        <div class="filter class-filter striker-div" data-filter="Striker"></div>
-                        <div class="filter class-filter shooter-div" data-filter="Shooter"></div>
-                        <div class="filter class-filter free-spirit-div" data-filter="Free Spirit"></div>
-                        <div class="filter class-filter driven-div" data-filter="Driven"></div>
-                        <div class="filter class-filter cerebral-div" data-filter="Cerebral"></div>
-                        <div class="filter class-filter powerhouse-div" data-filter="Powerhouse"></div>
-
-                        <div id="exclude-other-checkbox" class="class-mode btn btn-warning">
-                            Exclude other Classes
-                        </div>
-
-                        <div>
-                            <label for="preset-filters" id="preset-filter-label">
-                                Presets
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="row mt-2 align-items-center" id="bird-luck-div">
+                    <div class="col-6">
+                        <div class="form-row">
+                            <label for="bird-luck" class="col-6 col-form-label col-form-label-sm text-right">Bird Luck:
                             </label>
-                            <select id="preset-filters">
-                                <option value="-1">(none)</option>
-                                <option value="2113">Katakuri</option>
-                                <option value="2739">Katakuri 6+</option>
-                                <option value="2365">Katakuri v2</option>
-                                <option value="2338">Carrot</option>
-                                <option value="3543">Carrot & Wanda</option>
-                                <option value="2336">TM Law</option>
-                            </select>
+                            <div class="col-6">
+                                <select class="form-control form-control-sm" id="bird-luck-dd">
+                                    <option value="1">100%</option>
+                                    <option value=".75" selected>75% (approx.)</option>
+                                    <option value=".5">50% (approx.)</option>
+                                </select>
+
+                                <input type="hidden" class="form-control form-control-sm" id="bird-luck" value=".75">
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">SPECIAL 1/3</div>
-                        <button type="button" class="btn btn-danger filter-clear-btn" data-target="special">CLEAR</button>
-                    </div>
+                <div class="row mt-2 align-items-center">
+                    <div class="col-6">
+                        <div class="form-row">
+                            <label for="target-pts" class="col-6 col-form-label col-form-label-sm text-right">Target
+                                Pts: </label>
+                            <div class="col-6">
+                                <select class="form-control form-control-sm" id="target-pts-dd">
+                                    <option value="20000000">20M</option>
+                                    <option value="15000000" selected>15M</option>
+                                    <option value="10000000">10M</option>
+                                    <option value="1000000">1M</option>
+                                    <option value="1500000">1.5M</option>
+                                    <option value="3000000">3M</option>
+                                    <option value="5000000">5M</option>
+                                    <option value="7000000">7M</option>
+                                </select>
 
-                    <div class="filter-icons">
-                        <div class="filter sp-filter atk-boost-div" data-filter="atk-boost"></div>
-                        <div class="filter sp-filter orb-boost-div" data-filter="orb-boost"></div>
-                        <div class="filter sp-filter affinity-div" data-filter="affinity"></div>
-                        <div class="filter sp-filter atk-delay-div" data-filter="atk-delay"></div>
-                        <div class="filter sp-filter atk-def-down-div" data-filter="atk-def-down"></div>
-                        <div class="filter sp-filter atk-poison-div" data-filter="atk-poison"></div>
-                        <div class="filter sp-filter chain-boost-div" data-filter="chain-boost"></div>
-                        <div class="filter sp-filter chain-lock-div" data-filter="chain-lock"></div>
-                        <div class="filter sp-filter chain-bound-div" data-filter="chain-bound"></div>
-                        <div class="filter sp-filter slot-change-div" data-filter="slot-change"></div>
-                        <div class="filter sp-filter slot-change-block-div" data-filter="slot-change-block"></div>
-                        <div class="filter sp-filter slot-lock-div" data-filter="slot-lock"></div>
-                        <div class="filter sp-filter slot-pos-div" data-filter="slot-pos"></div>
-                        <div class="filter sp-filter delay-div" data-filter="delay"></div>
-                        <div class="filter sp-filter def-down-div" data-filter="def-down"></div>
-                        <div class="filter sp-filter poison-div" data-filter="poison"></div>
-                        <div class="filter sp-filter dmg-normal-div" data-filter="dmg-normal"></div>
-                        <div class="filter sp-filter dmg-eot-div" data-filter="dmg-eot"></div>
-                    </div>
-                </div>
-
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">SPECIAL 2/3</div>
-                    </div>
-
-                    <div class="filter-icons">
-                        <div class="filter sp-filter dmg-add-div" data-filter="dmg-add"></div>
-                        <div class="filter sp-filter heal-div" data-filter="heal"></div>
-                        <div class="filter sp-filter def-perc-div" data-filter="def-perc"></div>
-                        <div class="filter sp-filter def-thres-div" data-filter="def-thres"></div>
-                        <div class="filter sp-filter def-null-div" data-filter="def-null"></div>
-                        <div class="filter sp-filter resil-div" data-filter="resil"></div>
-                        <div class="filter sp-filter cd-red-div" data-filter="cd-red"></div>
-                        <div class="filter sp-filter bind-red-div" data-filter="bind-red"></div>
-                        <div class="filter sp-filter desp-red-div" data-filter="desp-red"></div>
-                        <div class="filter sp-filter silence-red-div" data-filter="silence-red"></div>
-                        <div class="filter sp-filter para-red-div" data-filter="para-red"></div>
-                        <div class="filter sp-filter poison-red-div" data-filter="poison-red"></div>
-                        <div class="filter sp-filter blind-red-div" data-filter="blind-red"></div>
-                        <div class="filter sp-filter burn-red-div" data-filter="burn-red"></div>
-                        <div class="filter sp-filter atk-down-red-div" data-filter="atk-down-red"></div>
-                        <div class="filter sp-filter chain-lock-red-div" data-filter="chain-lock-red"></div>
-                        <div class="filter sp-filter chain-down-red-div" data-filter="chain-down-red"></div>
-                        <div class="filter sp-filter dmg-up-red-div" data-filter="dmg-up-red"></div>
-                    </div>
-                </div>
-
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">SPECIAL 3/3</div>
-                    </div>
-
-                    <div class="filter-icons">
-                        <div class="filter sp-filter dmg-eot-red-e-div" data-filter="dmg-eot-red-e"></div>
-                        <div class="filter sp-filter atk-red-e-div" data-filter="atk-red-e"></div>
-                        <div class="filter sp-filter def-red-e-div" data-filter="def-red-e"></div>
-                        <div class="filter sp-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
-                        <div class="filter sp-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
-                        <div class="filter sp-filter def-null-red-e-div" data-filter="def-null-red-e"></div>
-                        <div class="filter sp-filter bar-red-e-div" data-filter="bar-red-e"></div>
-                        <div class="filter sp-filter resil-red-e-div" data-filter="resil-red-e"></div>
-                        <div class="filter sp-filter enrage-red-e-div" data-filter="enrage-red-e"></div>
-                    </div>
-
-                    <div class="filter-info">
-                        Special Filter algorithm provided by OPTC-DB
-                    </div>
-                </div>
-
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">SAILOR</div>
-                        <button type="button" class="btn btn-danger filter-clear-btn" data-target="sailor">CLEAR</button>
-                    </div>
-
-                    <div class="filter-icons">
-                        <div class="filter sl-filter slot-pos-div" data-filter="slot-pos"></div>
-                        <div class="filter sl-filter cd-red-div" data-filter="cd-red"></div>
-                        <div class="filter sl-filter silence-red-div" data-filter="silence-red"></div>
-                        <div class="filter sl-filter para-red-div" data-filter="para-red"></div>
-                        <div class="filter sl-filter blind-red-div" data-filter="blind-red"></div>
-                        <div class="filter sl-filter burn-red-div" data-filter="burn-red"></div>
-                    </div>
-
-                    <div class="filter-info" style="margin-top: 65px;">
-                        Sailor Filter algorithm provided by OPTC-DB
-                    </div>
-                </div>
-
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">CAPTAIN</div>
-                        <button type="button" class="btn btn-danger filter-clear-btn" data-target="captain">CLEAR</button>
-                    </div>
-
-                    <div class="filter-icons">
-                        <div class="filter ca-filter slot-pos-div" data-filter="slot-pos"></div>
-                        <div class="filter ca-filter dmg-eot-div" data-filter="dmg-eot"></div>
-                        <div class="filter ca-filter bind-red-div" data-filter="bind-red"></div>
-                        <div class="filter ca-filter desp-red-div" data-filter="desp-red"></div>
-                        <div class="filter ca-filter cd-red-div" data-filter="cd-red"></div>
-                        <div class="filter ca-filter silence-red-div" data-filter="silence-red"></div>
-                        <div class="filter ca-filter para-red-div" data-filter="para-red"></div>
-                        <div class="filter ca-filter burn-red-div" data-filter="burn-red"></div>
-                        <div class="filter ca-filter atk-down-red-div" data-filter="atk-down-red"></div>
-                    </div>
-
-                    <div class="filter-info">
-                        Captain Filter algorithm provided by OPTC-DB
-                    </div>
-                </div>
-
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">SUPER/VS 1/2</div>
-                        <button type="button" class="btn btn-danger filter-clear-btn" data-target="super">CLEAR</button>
-                    </div>
-
-                    <div class="filter-icons">
-                        <div class="filter sv-filter atk-boost-div" data-filter="atk-boost"></div>
-                        <div class="filter sv-filter orb-boost-div" data-filter="orb-boost"></div>
-                        <div class="filter sv-filter affinity-div" data-filter="affinity"></div>
-                        <div class="filter sv-filter atk-delay-div" data-filter="atk-delay"></div>
-                        <div class="filter sv-filter atk-def-down-div" data-filter="atk-def-down"></div>
-                        <div class="filter sv-filter chain-boost-div" data-filter="chain-boost"></div>
-                        <div class="filter sv-filter chain-lock-div" data-filter="chain-lock"></div>
-                        <div class="filter sv-filter slot-change-div" data-filter="slot-change"></div>
-                        <div class="filter sv-filter slot-change-block-div" data-filter="slot-change-block"></div>
-                        <div class="filter sv-filter slot-lock-div" data-filter="slot-lock"></div>
-                        <div class="filter sv-filter slot-pos-div" data-filter="slot-pos"></div>
-                        <div class="filter sv-filter delay-div" data-filter="delay"></div>
-                        <div class="filter sv-filter def-down-div" data-filter="def-down"></div>
-                        <div class="filter sv-filter dmg-normal-div" data-filter="dmg-normal"></div>
-                        <div class="filter sv-filter dmg-eot-div" data-filter="dmg-eot"></div>
-                        <div class="filter sv-filter dmg-add-div" data-filter="dmg-add"></div>
-                        <div class="filter sv-filter heal-div" data-filter="heal"></div>
-                        <div class="filter sv-filter def-perc-div" data-filter="def-perc"></div>
-                    </div>
-                </div>
-
-                <div class="tm-filter">
-                    <div class="filter-title">
-                        <div class="stroke-single">SUPER/VS 2/2</div>
-                    </div>
-
-                    <div class="filter-icons">
-                        <div class="filter sv-filter def-thres-div" data-filter="def-thres"></div>
-                        <div class="filter sv-filter cd-red-div" data-filter="cd-red"></div>
-                        <div class="filter sv-filter bind-red-div" data-filter="bind-red"></div>
-                        <div class="filter sv-filter para-red-div" data-filter="para-red"></div>
-                        <div class="filter sv-filter poison-red-div" data-filter="poison-red"></div>
-                        <div class="filter sv-filter burn-red-div" data-filter="burn-red"></div>
-                        <div class="filter sv-filter atk-down-red-div" data-filter="atk-down-red"></div>
-                        <div class="filter sv-filter def-red-e-div" data-filter="def-red-e"></div>
-                        <div class="filter sv-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
-                        <div class="filter sv-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
-                        <div class="filter sv-filter resil-red-e-div" data-filter="resil-red-e"></div>
-                    </div>
-
-                    <div class="filter-info">
-                        Super / VS Filter algorithm provided by OPTC-DB
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="tm-team-build-note-container" class="team-build-note">
-        <div id="team-build-note-header">Potential Team Errors</div>
-        <div class="team-note-div"  data-team="0">
-            <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
-            <ul class="team-note-list"></ul>
-        </div>
-        <div class="team-note-div"  data-team="1" >
-            <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
-            <ul class="team-note-list"></ul>
-        </div>
-        <div class="team-note-div"  data-team="2">
-            <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
-            <ul class="team-note-list"></ul>
-        </div>
-        <div class="team-note-div"  data-team="3">
-            <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
-            <ul class="team-note-list"></ul>
-        </div>
-        <div class="team-note-div"  data-team="4">
-            <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
-            <ul class="team-note-list"></ul>
-        </div>
-        <div class="team-note-div"  data-team="5">
-            <span class="team-note-boss"><i class="fas fa-skull-crossbones op-icon"></i>&nbsp;</span>
-            <ul class="team-note-list"></ul>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="row">
-        <div class="offset-md-2 col-md-4 col-12" id="export-url-div">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" id="export-url-link">
-
-                <div class="input-group-append">
-                    <button type="button" class="btn btn-sm btn-outline-dark" id="copy-url-button">
-                        <i class="fas fa-copy"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="offset-md-2 col-md-4 col-12">
-            <button type="button" class="btn btn-sm btn-dark" id="export-image-button">Export Image</button>
-            <button type="button" class="btn btn-sm btn-dark" id="export-url-button">Export URL</button>
-            <button type="button" class="btn btn-sm btn-danger not-read-only" id="reset-button">Reset</button>
-        </div>
-
-        <div class="col-md-4 col-12">
-            <button type="button" class="btn btn-sm btn-primary not-read-only" id="save-button">Save</button>
-            <button type="button" class="btn btn-sm btn-info not-read-only" id="load-button">Load</button>
-            Last Saved: <span id="last-save">N/A</span>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="offset-md-6 col-12 col-md-6">
-            <input type="checkbox" class="confirm-save" id="confirm-save-checkbox">
-            <label class="confirm-save" for="confirm-save">Confirm before Saving</label>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6 col-12">
-            <div class="row mt-2 align-items-center" id="bird-luck-div">
-                <div class="col-6">
-                    <div class="form-row">
-                        <label for="bird-luck" class="col-6 col-form-label col-form-label-sm text-right">Bird Luck: </label>
-                        <div class="col-6">
-                            <select class="form-control form-control-sm" id="bird-luck-dd">
-                                <option value="1">100%</option>
-                                <option value=".75" selected>75% (approx.)</option>
-                                <option value=".5">50% (approx.)</option>
-                            </select>
-
-                            <input type="hidden" class="form-control form-control-sm" id="bird-luck" value=".75">
+                                <input type="hidden" class="form-control form-control-sm" id="target-pts"
+                                    value="15000000">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="row mt-2 align-items-center">
-                <div class="col-6">
-                    <div class="form-row">
-                        <label for="target-pts" class="col-6 col-form-label col-form-label-sm text-right">Target Pts: </label>
-                        <div class="col-6">
-                            <select class="form-control form-control-sm" id="target-pts-dd">
-                                <option value="20000000">20M</option>
-                                <option value="15000000" selected>15M</option>
-                                <option value="10000000">10M</option>
-                                <option value="1000000">1M</option>
-                                <option value="1500000">1.5M</option>
-                                <option value="3000000">3M</option>
-                                <option value="5000000">5M</option>
-                                <option value="7000000">7M</option>
-                            </select>
-
-                            <input type="hidden" class="form-control form-control-sm" id="target-pts" value="15000000">
+                    <div class="col-6">
+                        <div class="form-row align-items-center">
+                            <label for="target-pts-lv"
+                                class="col-6 col-form-label col-form-label-sm text-right">Required Nav Lv: </label>
+                            <div class="col-6">
+                                <input type="text" class="form-control-plaintext form-control-lg" id="target-pts-lv">
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6">
-                    <div class="form-row align-items-center">
-                        <label for="target-pts-lv" class="col-6 col-form-label col-form-label-sm text-right">Required Nav Lv: </label>
-                        <div class="col-6">
-                            <input type="text" class="form-control-plaintext form-control-lg" id="target-pts-lv">
+                <div class="row mt-2 align-items-center">
+                    <div class="col-6">
+                        <div class="form-row">
+                            <label for="nav-lv" class="col-6 col-form-label col-form-label-sm text-right">Nav Lv:
+                            </label>
+                            <div class="col-6">
+                                <input type="number" class="form-control form-control-sm" id="nav-lv"
+                                    placeholder="Calculate pts from Nav Lv">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="row mt-2 align-items-center">
-                <div class="col-6">
-                    <div class="form-row">
-                        <label for="nav-lv" class="col-6 col-form-label col-form-label-sm text-right">Nav Lv: </label>
-                        <div class="col-6">
-                            <input type="number" class="form-control form-control-sm" id="nav-lv" placeholder="Calculate pts from Nav Lv">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="form-row align-items-center">
-                        <label for="total-pts" class="col-6 col-form-label col-form-label-sm text-right">Total Pts: </label>
-                        <div class="col-6">
-                            <input type="text" class="form-control-plaintext form-control-lg" id="total-pts">
+                    <div class="col-6">
+                        <div class="form-row align-items-center">
+                            <label for="total-pts" class="col-6 col-form-label col-form-label-sm text-right">Total Pts:
+                            </label>
+                            <div class="col-6">
+                                <input type="text" class="form-control-plaintext form-control-lg" id="total-pts">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12" id="nakama-info">
-            <i class="fas fa-info-circle"></i>&nbsp;
-            Upload your teams to <a href="https://www.nakama.network/" target="_blank">Nakama Network</a> to share with others!
+        <div class="row">
+            <div class="col-12" id="nakama-info">
+                <i class="fas fa-info-circle"></i>&nbsp;
+                Upload your teams to <a href="https://www.nakama.network/" target="_blank">Nakama Network</a> to share
+                with others!
+            </div>
         </div>
     </div>
-</div>
 
-<div id="footer"></div>
+    <div id="footer"></div>
+</body>

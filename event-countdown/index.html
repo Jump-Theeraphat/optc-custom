@@ -1,176 +1,181 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="zl1814">
-<meta name="keywords" content="OPTC, One Piece Treasure Cruise, Event, Countdown">
-<meta name="description" content="One Piece Treasure Cruise special event countdown.">
 
-<title>OPTC Event Countdown | OPTC Voyage Log</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zl1814">
+    <meta name="keywords" content="OPTC, One Piece Treasure Cruise, Event, Countdown">
+    <meta name="description" content="One Piece Treasure Cruise special event countdown.">
 
-<link rel="icon" sizes="192x192" href="/pappagu.png">
+    <title>OPTC Event Countdown | OPTC Voyage Log</title>
 
-<!-- Vendor JS & CSS -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="icon" sizes="192x192" href="/pappagu.png">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Vendor JS & CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
-<!-- Self JS & CSS -->
-<link rel="stylesheet" href="/common/assets/css/main.css">
-<link rel="stylesheet" href="/event-countdown/assets/css/event-countdown.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<script src="/common/assets/js/main.js"></script>
-<script src="/event-countdown/assets/js/event-countdown.js"></script>
+    <!-- Self JS & CSS -->
+    <link rel="stylesheet" href="/common/assets/css/main.css">
+    <link rel="stylesheet" href="/event-countdown/assets/css/event-countdown.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script src="/common/assets/js/main.js"></script>
+    <script src="/event-countdown/assets/js/event-countdown.js"></script>
 
-  gtag('config', 'G-DY87MN0KG9');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<div id="header"></div>
+        gtag('config', 'G-DY87MN0KG9');
+    </script>
+</head>
 
-<div class="container-fluid my-5">
-    <div class="row justify-content-center">
+<body>
+    <div id="header"></div>
+
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center">
+            <!--
+            <div class="col-md-6 col-12">
+                No Active Blitz Battle Event
+            </div>
+            -->
+
+            <div class="col-md-6 col-12">
+                "Blitz Battle: Akainu vs. Aokiji" Event
+                <span id="main-txt">
+                    <span id="main-begin-end" class="begin-end"></span>
+                    in
+                    <br>
+                    <span id="main-cd"></span>
+                    <br>
+                    Local Time:
+                    <br>
+                    <span id="main-local" class="local"></span>
+                </span>
+
+                <!--
+                <br><br>
+                <b>Place Count Links</b>
+                <br>
+                -->
+            </div>
+        </div>
+
         <!--
-        <div class="col-md-6 col-12">
-            No Active Blitz Battle Event
+        <br>
+
+        <div class="row justify-content-center">
+            <div class="col-md-1 col-6">
+                <img src="https://onepiece-treasurecruise.com/wp-content/uploads/f2023.png" width="50" height="50">
+            </div>
+            <div class="col-md-1 col-6">
+                <a href="https://gb.trecru.channel.or.jp/battle-royale/d-family/en/7/ranking?page=20" target="_blank">Pica 1000</a>
+            </div>
+
+            <div class="col-md-1 col-6">
+                <img src="https://onepiece-treasurecruise.com/wp-content/uploads/f2025.png" width="50" height="50">
+            </div>
+            <div class="col-md-1 col-6">
+                <a href="https://gb.trecru.channel.or.jp/battle-royale/d-family/en/8/ranking?page=20" target="_blank">Diamante 1000</a>
+            </div>
         </div>
         -->
 
-        <div class="col-md-6 col-12">
-            "Blitz Battle: Akainu vs. Aokiji" Event
-            <span id="main-txt">
-                <span id="main-begin-end" class="begin-end"></span>
-                in
-                <br>
-                <span id="main-cd"></span>
-                <br>
-                Local Time:
-                <br>
-                <span id="main-local" class="local"></span>
-            </span>
+        <br>
 
-            <!--
-            <br><br>
-            <b>Place Count Links</b>
-            <br>
-            -->
+        <div class="row justify-content-center align-items-center event-row">
+            <div class="col-md-6 col-12" id="half-sta1-col">
+                Half Stamina 1
+                <span id="half-sta1-txt">
+                    <span class="half-sta-active" id="half-sta1-active">IS ACTIVE! </span>
+                    <span class="begin-end" id="half-sta1-begin-end"></span>
+                    in
+                    <br>
+                    <span id="half-sta1-cd"></span>
+                    <br>
+                    Local Time:
+                    <br>
+                    <span id="half-sta1-local" class="local"></span>
+                </span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row justify-content-center align-items-center event-row">
+            <div class="col-md-6 col-12" id="half-sta2-col">
+                Half Stamina 2
+                <span id="half-sta2-txt">
+                    <span class="half-sta-active" id="half-sta2-active">IS ACTIVE! </span>
+                    <span class="begin-end" id="half-sta2-begin-end"></span>
+                    in
+                    <br>
+                    <span id="half-sta2-cd"></span>
+                    <br>
+                    Local Time:
+                    <br>
+                    <span id="half-sta2-local" class="local"></span>
+                </span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row justify-content-center align-items-center event-row">
+            <div class="col-md-6 col-12" id="half-sta3-col">
+                Half Stamina 3
+                <span id="half-sta3-txt">
+                    <span class="half-sta-active" id="half-sta3-active">IS ACTIVE! </span>
+                    <span class="begin-end" id="half-sta3-begin-end"></span>
+                    in
+                    <br>
+                    <span id="half-sta3-cd"></span>
+                    <br>
+                    Local Time:
+                    <br>
+                    <span id="half-sta3-local" class="local"></span>
+                </span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row justify-content-center align-items-center event-row">
+            <div class="col-md-6 col-12" id="half-sta4-col">
+                Half Stamina 4
+                <span id="half-sta4-txt">
+                    <span class="half-sta-active" id="half-sta4-active">IS ACTIVE! </span>
+                    <span class="begin-end" id="half-sta4-begin-end"></span>
+                    in
+                    <br>
+                    <span id="half-sta4-cd"></span>
+                    <br>
+                    Local Time:
+                    <br>
+                    <span id="half-sta4-local" class="local"></span>
+                </span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row justify-content-center align-items-center end-event-row">
+            <div class="col-md-6 col-12">
+                Thanks for using my site, and good luck to everyone with their legend pulls!
+            </div>
         </div>
     </div>
 
-    <!--
-    <br>
-
-    <div class="row justify-content-center">
-        <div class="col-md-1 col-6">
-            <img src="https://onepiece-treasurecruise.com/wp-content/uploads/f2023.png" width="50" height="50">
-        </div>
-        <div class="col-md-1 col-6">
-            <a href="https://gb.trecru.channel.or.jp/battle-royale/d-family/en/7/ranking?page=20" target="_blank">Pica 1000</a>
-        </div>
-
-        <div class="col-md-1 col-6">
-            <img src="https://onepiece-treasurecruise.com/wp-content/uploads/f2025.png" width="50" height="50">
-        </div>
-        <div class="col-md-1 col-6">
-            <a href="https://gb.trecru.channel.or.jp/battle-royale/d-family/en/8/ranking?page=20" target="_blank">Diamante 1000</a>
-        </div>
-    </div>
-    -->
-
-    <br>
-
-    <div class="row justify-content-center align-items-center event-row">
-        <div class="col-md-6 col-12" id="half-sta1-col">
-            Half Stamina 1
-            <span id="half-sta1-txt">
-                <span class="half-sta-active" id="half-sta1-active">IS ACTIVE! </span>
-                <span class="begin-end" id="half-sta1-begin-end"></span>
-                in
-                <br>
-                <span id="half-sta1-cd"></span>
-                <br>
-                Local Time:
-                <br>
-                <span id="half-sta1-local" class="local"></span>
-            </span>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="row justify-content-center align-items-center event-row">
-        <div class="col-md-6 col-12" id="half-sta2-col">
-            Half Stamina 2
-            <span id="half-sta2-txt">
-                <span class="half-sta-active" id="half-sta2-active">IS ACTIVE! </span>
-                <span class="begin-end" id="half-sta2-begin-end"></span>
-                in
-                <br>
-                <span id="half-sta2-cd"></span>
-                <br>
-                Local Time:
-                <br>
-                <span id="half-sta2-local" class="local"></span>
-            </span>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="row justify-content-center align-items-center event-row">
-        <div class="col-md-6 col-12" id="half-sta3-col">
-            Half Stamina 3
-            <span id="half-sta3-txt">
-                <span class="half-sta-active" id="half-sta3-active">IS ACTIVE! </span>
-                <span class="begin-end" id="half-sta3-begin-end"></span>
-                in
-                <br>
-                <span id="half-sta3-cd"></span>
-                <br>
-                Local Time:
-                <br>
-                <span id="half-sta3-local" class="local"></span>
-            </span>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="row justify-content-center align-items-center event-row">
-        <div class="col-md-6 col-12" id="half-sta4-col">
-            Half Stamina 4
-            <span id="half-sta4-txt">
-                <span class="half-sta-active" id="half-sta4-active">IS ACTIVE! </span>
-                <span class="begin-end" id="half-sta4-begin-end"></span>
-                in
-                <br>
-                <span id="half-sta4-cd"></span>
-                <br>
-                Local Time:
-                <br>
-                <span id="half-sta4-local" class="local"></span>
-            </span>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="row justify-content-center align-items-center end-event-row">
-        <div class="col-md-6 col-12">
-            Thanks for using my site, and good luck to everyone with their legend pulls!
-        </div>
-    </div>
-</div>
-
-<div id="footer"></div>
+    <div id="footer"></div>
+</body>
