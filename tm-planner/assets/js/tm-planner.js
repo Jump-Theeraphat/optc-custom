@@ -677,6 +677,7 @@ function getBoosters(tmId, server) {
                 type: "get",
                 url: "data/tm-booster-raw/" + tmId + ".csv",
                 dataType: "text",
+                async: false,
                 success: function (data) {
                     boosters = $.csv.toObjects(data);
                     populateBoosters(boosters);
