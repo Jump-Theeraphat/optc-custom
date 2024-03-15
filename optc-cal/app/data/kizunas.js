@@ -234,4 +234,8 @@ var kizunas = {
         name: 'Rayleigh v3 6+ (~ 6am)',
         thumb: 4098
     },
+    4120: {
+        name: 'X Drake (~ 6am)',
+        thumb: 4120
+    },
 };
