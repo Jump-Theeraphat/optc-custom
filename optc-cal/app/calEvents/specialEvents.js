@@ -2448,4 +2448,9 @@ var specialEvents = [
         start: '2024-03-01',
         end: '2024-03-03'
     },
+    {
+        id: 'ev_4129',
+        start: '2024-04-01',
+        pst_0: true
+    },
 ]

@@ -1015,4 +1015,9 @@ var specials = {
         name: 'Blue Flame to the Rescue',
         thumb: 3874
     },
+    'ev_4129': {
+        type: 'Special Event',
+        name: 'Future Island Exploration',
+        thumb: 4129
+    },
 }
