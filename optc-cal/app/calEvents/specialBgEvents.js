@@ -3700,4 +3700,15 @@ var specialBgEvents = [
         id: 'free_pull',
         start: '2024-03-08'
     },
+    {
+        id: 'free_pull',
+        start: '2024-04-01',
+        pst_19: false
+    },
+    {
+        id: 'laboon_ship',
+        start: '2024-04-03',
+        end: '2024-04-19',
+        pst_19: false
+    },
 ]
