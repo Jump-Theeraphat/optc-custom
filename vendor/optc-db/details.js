@@ -56130,7 +56130,7 @@ window.details = {
             combined: "Boosts ATK of [QCK], [PSY] and [INT] characters by 3.75x and recovers 3x character's RCV in HP at the end of each turn.",
             llbcharacter1: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK] and [PSY] characters by 4.5x, boosts ATK of [INT] characters by 4.25x, and makes [QCK] and [INT] orbs beneficial for all characters.",
             llbcharacter2: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK] and [PSY] characters by 4.5x, boosts ATK of [INT] characters by 4.25x, and reduces damage received by 15%.",
-            llbcombined: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK], [PSY] and [INT] characters by 5.25x, makes [QCK][PSY][INT] orbs have matching orb effects, reduces damage received by 15%, and recovers 10x character's RCV in HP at the end of each turn."
+            llbcombined: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK], [PSY] and [INT] characters by 5.25x, makes [QCK], [PSY] and [INT] orbs beneficial for all characters, reduces damage received by 15%, and recovers 10x character's RCV in HP at the end of each turn."
         },
         special: {
             base: "Boosts chances of getting [QCK] and [PSY] orbs for 2 turns, randomizes all orbs, boosts Orb Effects of [QCK], [PSY] and [INT] characters by 2x for 2 turns and becomes Smoothie & Oven for 2 turns",
@@ -56203,7 +56203,7 @@ window.details = {
                 captain: {
                     character1: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK] and [PSY] characters by 4.5x, boosts ATK of [INT] characters by 4.25x, and makes [QCK] and [INT] orbs beneficial for all characters.",
                     character2: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK] and [PSY] characters by 4.5x, boosts ATK of [INT] characters by 4.25x, and reduces damage received by 15%.",
-                    combined: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK], [PSY] and [INT] characters by 5.25x, makes [QCK][PSY][INT] orbs have matching orb effects, reduces damage received by 15%, and recovers 10x character's RCV in HP at the end of each turn."
+                    combined: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [QCK], [PSY] and [INT] characters by 5.25x, makes [QCK], [PSY] and [INT] orbs beneficial for all characters, reduces damage received by 15%, and recovers 10x character's RCV in HP at the end of each turn."
                 }
             },
             null,
@@ -136331,7 +136331,7 @@ window.details = {
             { description: "Boosts base HP by 30" },
             { description: "Boosts base HP by 30" },
             { description: "Boosts base ATK by 20" },
-            { description: "Acquire Sailor Ability 1: Makes Driven and Powerhouse characters' [RCV][SEMLA] orbs have matching orb effects and boosts their base RCV by 100" },
+            { description: "Acquire Sailor Ability 1: Makes [RCV] and [SEMLA] orbs beneficial for Driven and Powerhouse characters and boosts their base RCV by 100" },
             { description: "Boosts base HP by 30" },
             { description: "Boosts base RCV by 10" },
             { description: "Boosts base RCV by 10" },
@@ -137744,9 +137744,9 @@ window.details = {
             combined: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], [INT], Slasher, and Shooter characters by 5.25x, by 5.5x instead if they have a [PSY], [INT] or [TND] orb, boosts HP of [PSY], [INT], Slasher, and Shooter characters by 1.3x, boosts chances of getting [TND] orbs, makes [PSY], [INT] and [TND] orbs beneficial for [PSY], [INT], Slasher, and Shooter characters and makes crew immune to Blow Away. If your crew has 3 or more Slasher characters, deals 10% of enemies' current HP in damage to all enemies at the end of each turn. If your crew has 3 or more Shooter characters, adds 0.2x to Chain multiplier."
         },
         sailor: {
-            character1: "Makes Slasher and Shooter characters' [TND] orbs have matching orb effects",
-            character2: "Makes Slasher and Shooter characters' [TND] orbs have matching orb effects",
-            combined: "Makes Slasher and Shooter characters' [TND] orbs have matching orb effects"
+            character1: "Makes [TND] orbs beneficial for Slasher and Shooter characters",
+            character2: "Makes [TND] orbs beneficial for Slasher and Shooter characters",
+            combined: "Makes [TND] orbs beneficial for Slasher and Shooter characters"
         },
         special: "Deals 10 hits of 50x character's ATK in Typeless damage to random enemies, boosts Critical Hit Rate of Slasher and Shooter characters by 30% for 1 turn, boosts Critical Hit Damage of Slasher and Shooter characters by up to 75% for 1 turn, deals 10% of enemies' current HP in damage to all enemies at the end of the turn for 3 turns and becomes Kizaru & Fujitora for 3 turns. If your Captain is a Slasher or Shooter character, increases Chain Tap Timing Bonus of Slasher and Shooter characters to +0.0x-0.7x for 1 turn depending on Tap Timing.",
         specialNotes: "GOOD +0; GREAT +0.1; PERFECT +0.7",
@@ -138159,7 +138159,7 @@ window.details = {
             { description: "Boosts base ATK by 15" },
             { description: "Acquire Potential 2: [STR] Damage Reduction" },
             { description: "Boosts base RCV by 15" },
-            { description: "Acquire Sailor Ability 2: Makes character's [STR][DEX][RCV][TND] orbs have matching orb effects" },
+            { description: "Acquire Sailor Ability 2: Makes [STR], [DEX], [RCV] and [TND] orbs beneficial for this character" },
             { description: "Boosts base HP by 75" },
             { description: "Boosts base ATK by 20" },
             { description: "Reduce base Special Cooldown by 1 turn" },
@@ -138867,7 +138867,7 @@ window.details = {
             { description: "Boosts base RCV by 15" },
             { description: "Boosts base HP by 90" },
             { description: "Boosts base HP by 100" },
-            { description: "Acquire Sailor Ability 2: Makes Shooter characters' [RCV][TND] orbs have matching orb effects" },
+            { description: "Acquire Sailor Ability 2: Makes [RCV] and [TND] orbs beneficial for Shooter characters" },
             { description: "Boosts base ATK by 30" },
             { description: "Boosts base ATK by 30" },
             { description: "Boosts base ATK by 50" },
@@ -138940,7 +138940,7 @@ window.details = {
         ]
     },
     4011: {
-        captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Cerebral, Free Spirit, Fighter, and Slasher characters by 5.25x, by 5.5x instead if they have a beneficial orb, boosts HP of Cerebral, Free Spirit, Fighter, and Slasher characters by 1.3x, makes [DEX][RCV][TND] beneficial for Cerebral, Free Spirit, Fighter, and Slasher characters and restores Special Cooldown of all characters by 10 turns when they are rewinded. Up to 8 times per adventure but up to 4 times per turn, when any other Cerebral or Free Spirit character uses a special, reduces special cooldown of this character by 3 turns.",
+        captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Cerebral, Free Spirit, Fighter, and Slasher characters by 5.25x, by 5.5x instead if they have a beneficial orb, boosts HP of Cerebral, Free Spirit, Fighter, and Slasher characters by 1.3x, makes [DEX], [RCV] and [TND] beneficial for Cerebral, Free Spirit, Fighter, and Slasher characters and restores Special Cooldown of all characters by 10 turns when they are rewinded. Up to 8 times per adventure but up to 4 times per turn, when any other Cerebral or Free Spirit character uses a special, reduces special cooldown of this character by 3 turns.",
         limit: [
             { description: "Boosts base ATK by 10" },
             { description: "Boosts base HP by 10" },
@@ -140476,7 +140476,7 @@ window.details = {
             }
         ],
         sailor: {
-            base: "Makes [BOMB][S. BOMB] orbs have matching orb effects",
+            base: "Makes [BOMB] and [SUPERBOMB] orbs beneficial for all characters",
             level1: "Boosts base ATK of Driven and Striker characters by 80"
         },
         special: "Deals 70x character's ATK in [DEX] damage to all enemies, reduces Paralysis duration by 6 turns, changes all orbs, including [BLOCK] orbs, into [SUPERBOMB] orbs, boosts Color Affinity of [DEX], Driven and Striker characters by 2.25x until your crew takes 5,000 damage, and reduces any damage received above 3,000 HP by ?% for 2 turns.",
@@ -141655,7 +141655,7 @@ window.details = {
             { description: "Boosts base RCV by 20" },
             { description: "Boosts base HP by 75" },
             { description: "Boosts base HP by 105" },
-            { description: "Acquire Sailor Ability 2: Makes [PSY][INT] orbs have matching orb effects" },
+            { description: "Acquire Sailor Ability 2: Makes [PSY] and [INT] orbs beneficial for characters" },
             { description: "Boosts base ATK by 30" },
             { description: "Boosts base ATK by 50" },
             { description: "Acquire Potential 3: Pinch Healing" },
@@ -141666,7 +141666,7 @@ window.details = {
             { description: "Boosts base HP by 100" },
             { description: "Boosts base ATK by 100" },
             { description: "Boosts base HP by 150" },
-            { description: "Acquire new Captain Ability: Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK by 4.75x, HP by 1.3x, and makes [INT][PSY] orbs have matching orb effects. If 4 or more characters of the same type are on the crew, boosts that type's ATK by approximately 5x. If crew uses a Special to apply ATK boost/additive chain multiplier boost (except multiplicative boosts), extends the duration of the effect by 1 turn" },
+            { description: "Acquire new Captain Ability: Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK by 4.75x, HP by 1.3x, and makes [INT] and [PSY] orbs beneficial for characters. If 4 or more characters of the same type are on the crew, boosts that type's ATK by approximately 5x. If crew uses a Special to apply ATK boost/additive chain multiplier boost (except multiplicative boosts), extends the duration of the effect by 1 turn" },
             { description: "Reduce base Special Cooldown by 2 turn" },
             { description: "Boosts base ATK by 100" },
         ],
@@ -141704,7 +141704,7 @@ window.details = {
         ],
         sailor: {
             base: "If 4 or more characters of the same type are on the crew, boosts that type's base ATK by 150",
-            level1: "Makes [PSY][INT] orbs have matching orb effects"
+            level1: "Makes [PSY] and [INT] orbs beneficial for characters"
         },
         special: {
             base: "Reduces Paralysis duration by 5 turns and adds 1.2x to Chain multiplier for 2 turns. If your crew has 4 or more characters of the same Type when the special is activated, boosts ATK of Dominant Type characters by 2.5x, preventing buff clears, for 2 turns, and changes all orbs, including [BLOCK] orbs, into Dominant Type orbs.",
@@ -142158,7 +142158,7 @@ window.details = {
             { description: "Boosts base ATK by 10" },
             { description: "Boosts base ATK by 20" },
             { description: "Boosts base ATK by 30" },
-            { description: "Acquire Sailor Ability 2: Makes [DEX] orbs have matching orb effects" },
+            { description: "Acquire Sailor Ability 2: Makes [DEX] orbs beneficial for characters" },
             { description: "Boosts base HP by 100" },
             { description: "Boosts base HP by 100" },
             { description: "Boosts base ATK by 50" },
@@ -142209,7 +142209,7 @@ window.details = {
         ],
         sailor: {
             level1: "Boosts base ATK, HP and RCV by 100",
-            level2: "Makes [DEX] orbs have matching orb effects"
+            level2: "Makes [DEX] orbs beneficial for characters"
         },
         special: "Deals 20% of enemies' current HP in True damage to one enemy, and boosts ATK of [DEX], Cerebral, and Slasher characters by 2.75x for 2 turns. If your Captain's orb is a [DEX] or [WANO] orb when the special is activated, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.5x for 1 turn otherwise. If your Friend Captain's orb is a [TND] or [RCV] orb when the special is activated, boosts Super Type Effects of [DEX] characters to 3x for 1 turn. Changes the orb, including [BLOCK] orbs, of this character into a [DEX] orb.",
         specialName: "Re-ROOM Silence",
@@ -142482,7 +142482,7 @@ window.details = {
             { description: "Boosts base HP by 150" },
             { description: "Boosts base ATK by 50" },
             { description: "Boosts base ATK by 50" },
-            { description: "Acquire Sailor Ability 2: Makes Shooter and Striker characters' [TND] orbs have matching orb effects" },
+            { description: "Acquire Sailor Ability 2: Makes [TND] orbs beneficial for Shooter and Striker characters" },
             { description: "Reduce base Special Cooldown by 2 turn" },
             { description: "Boosts base HP by 150" },
             { description: "Boosts base RCV by 60" },
@@ -142611,7 +142611,7 @@ window.details = {
             { description: "Boosts base HP by 150" },
             { description: "Boosts base ATK by 50" },
             { description: "Boosts base ATK by 50" },
-            { description: "Acquire Sailor Ability 2: Makes Shooter and Striker characters' [TND] orbs have matching orb effects" },
+            { description: "Acquire Sailor Ability 2: Makes [TND] orbs beneficial for Shooter and Striker characters" },
             { description: "Reduce base Special Cooldown by 2 turn" },
             { description: "Boosts base HP by 150" },
             { description: "Boosts base RCV by 60" },
@@ -142662,7 +142662,7 @@ window.details = {
         ],
         sailor: {
             level1: "Boosts Shooter and Striker characters' base ATK by 70",
-            level2: "Makes Shooter and Striker characters' [TND] orbs have matching orb effects"
+            level2: "Makes [TND] orbs beneficial for Shooter and Striker characters"
         },
         special: {
             base: "Reduces crew's current HP by 95%, deals 40x the amount of HP subtracted in Typeless damage to all enemies, boosts ATK against enemies inflicted with Burn by 2x for 3 turns, ignores Burn Debuff Protection and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 1 turn. After 1 turn, ignores Burn Debuff Protection and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 1 turn.",
@@ -144744,12 +144744,12 @@ window.details = {
         ]
     },
     4099: {
-        captain: "Attacks will ignore damage reducing Barriers and Buffs. Boosts ATK of Driven and Powerhouse characters by 5x, by 5.75x instead if you have a Striker, Shooter, Fighter and Slasher character on your crew, boosts HP of Driven and Powerhouse characters by 1.2x, and makes [DEX], [QCK] and [TND] orbs beneficial for Driven and Powerhouse characters. If a crew member uses a special with a Threshold Damage Reduction buff, replaces those buffs with a Status ATK boost that will overwrite Status ATK boosts in the same special: Boosts ATK against enemies inflicted with Increase Damage Taken by 2.25x for 1 turn.",
+        captain: "Attacks will ignore damage reducing Barriers and Buffs. Boosts ATK of Driven and Powerhouse characters by 5x, by 5.75x instead if you have a Striker, Shooter, Fighter and Slasher character on your crew, boosts HP of Driven and Powerhouse characters by 1.2x, and makes [DEX], [QCK] and [TND] orbs beneficial for Driven and Powerhouse characters. If a crew member uses a special with a Threshold Damage Reduction buff and if you have a Striker, Shooter, Fighter and Slasher character on your crew, replaces those buffs with a Status ATK boost that will overwrite Status ATK boosts in the same special: Boosts ATK against enemies inflicted with Increase Damage Taken by 2.25x for 1 turn.",
         special: "If the enemy has Percent Damage Reduction or Threshold Damage Reduction Buff for 6 or more turns when the Special is activated, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 2.25x for 1 turn. If your crew has 5 or more characters with all the same of either [STR], [DEX], [QCK], [RCV] or [TND] orbs, boosts Orb Effects of [STR], Driven, and Powerhouse characters by 3x for 3 turns, preventing buff clears, increases boost effects of ATK UP buffs by +0.25x, and changes the orb, including [BLOCK] orb, of this character into a [TND] orb. If your crew has 5 or more characters with all the same of either [BLOCK], [PSY] or [INT], changes all orbs, including [BLOCK] orbs, into [EMPTY] orbs, increases Orb Effects of [EMPTY] orbs to 2.25x for 3 turns and boosts Orb Effects of [STR], Driven, and Powerhouse characters by 3x for 1 turn. Boosts Orb Effects of [STR], Driven, and Powerhouse characters by 2.75x for 1 turn otherwise, and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn.",
         specialName: "Darkness of Despair"
     },
     4100: {
-        captain: "Attacks will ignore damage reducing Barriers and Buffs. Boosts ATK of Driven and Powerhouse characters by 5x, by 5.75x instead if you have a Striker, Shooter, Fighter and Slasher character on your crew, boosts HP of Driven and Powerhouse characters by 1.2x, and makes [DEX], [QCK] and [TND] orbs beneficial for Driven and Powerhouse characters. If a crew member uses a special with a Threshold Damage Reduction buff, replaces those buffs with a Status ATK boost that will overwrite Status ATK boosts in the same special: Boosts ATK against enemies inflicted with Increase Damage Taken by 2.25x for 1 turn.",
+        captain: "Attacks will ignore damage reducing Barriers and Buffs. Boosts ATK of Driven and Powerhouse characters by 5x, by 5.75x instead if you have a Striker, Shooter, Fighter and Slasher character on your crew, boosts HP of Driven and Powerhouse characters by 1.2x, and makes [DEX], [QCK] and [TND] orbs beneficial for Driven and Powerhouse characters. If a crew member uses a special with a Threshold Damage Reduction buff and if you have a Striker, Shooter, Fighter and Slasher character on your crew, replaces those buffs with a Status ATK boost that will overwrite Status ATK boosts in the same special: Boosts ATK against enemies inflicted with Increase Damage Taken by 2.25x for 1 turn.",
         limit: [
             { description: "Boosts base HP by 20" },
             { description: "Boosts base HP by 20" },
@@ -145725,6 +145725,1078 @@ window.details = {
             }
         ]
     },
+    4114: {
+        captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts HP of [STR], Powerhouse and Driven characters by 1.25x, boosts ATK of [STR], Powerhouse and Driven characters by 5.25x, by 5.5x instead if they have an [TND] or [WANO] orb, boosts ATK against enemies inflicted with Increase Damage Taken by 1.1x, boosts ATK against delayed enemies, enemies with reduced defense, Poisoned enemies and Paralyzed enemies by 1.05x otherwise, changes [QCK] orbs into [WANO] orbs, and makes [TND] orbs beneficial for all characters.",
+        sailor: "Boosts base ATK of top row characters by 150",
+        special: "Reduces enemies' Percent Damage Reduction duration by 10 turns, and deals 300x character's ATK in Typeless damage to one enemy. If your crew has Color Affinity when the special is activated, boosts ATK of [STR], Powerhouse and Driven characters by 2.5x for 2 turns, and adds 1.8x to Chain multiplier for 2 turns. If your Captain's orb is [SEMLA] or [WANO] when Special is launched, increases Orb Effects of beneficial [TND], [SEMLA] and [WANO] orbs to 2.75x for 2 turns. Boosts Color Affinity of [STR], Powerhouse and Driven characters by 2.75x for 2 turns, and changes character's orb, including [BLOCK], [SUPERBLOCK], [WANO], [SEMLA] and [RAINBOW] orbs, into a [TND] orb.",
+        specialName: "Overwhelming Tobi Roppo Powers",
+    },
+    4115: {
+        captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts HP of [STR], Powerhouse and Driven characters by 1.25x, boosts ATK of [STR], Powerhouse and Driven characters by 5.25x, by 5.5x instead if they have an [TND] or [WANO] orb, boosts ATK against enemies inflicted with Increase Damage Taken by 1.1x, boosts ATK against delayed enemies, enemies with reduced defense, Poisoned enemies and Paralyzed enemies by 1.05x otherwise, changes [QCK] orbs into [WANO] orbs, and makes [TND] orbs beneficial for all characters.",
+        limit: [
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Potential 2: Reduce Special Use Limit duration" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Sailor Ability 2: Makes [PSY] and [TND] orbs beneficial for Powerhouse and Driven characters" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 60" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 60" },
+            { description: "Acquire Potential 3: Super Tandem" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 100" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base ATK by 100" },
+        ],
+        potential: [
+            {
+                Name: "Enrage/Reduce Increase Damage Taken duration",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                Name: "Reduce Special Use Limit duration",
+                description: [
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 2 turns",
+                    "Reduces Special Use Limit duration by 2 turns",
+                    "Reduces Special Use Limit duration by 3 turns"
+                ]
+            },
+            {
+                Name: "Super Tandem",
+                description: [
+                    "Obtain Super Tandem Lv.1",
+                    "Obtain Super Tandem Lv.2",
+                    "Obtain Super Tandem Lv.3",
+                    "Obtain Super Tandem Lv.4",
+                    "Obtain Super Tandem Lv.5"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Boosts base ATK of top row characters by 150",
+            level1: "Makes [PSY] and [TND] orbs beneficial for Powerhouse and Driven characters"
+        },
+        special: "Reduces enemies' Percent Damage Reduction duration by 10 turns, and deals 300x character's ATK in Typeless damage to one enemy. If your crew has Color Affinity when the special is activated, boosts ATK of [STR], Powerhouse and Driven characters by 2.5x for 2 turns, and adds 1.8x to Chain multiplier for 2 turns. If your Captain's orb is [SEMLA] or [WANO] when Special is launched, increases Orb Effects of beneficial [TND], [SEMLA] and [WANO] orbs to 2.75x for 2 turns. Boosts Color Affinity of [STR], Powerhouse and Driven characters by 2.75x for 2 turns, and changes character's orb, including [BLOCK], [SUPERBLOCK], [WANO], [SEMLA] and [RAINBOW] orbs, into a [TND] orb.",
+        specialName: "Overwhelming Tobi Roppo Powers",
+        superSpecial: "Increases duration of any Color Affinity buffs by 1 turn, changes all orbs, including [BLOCK] orbs, of right column characters into [WANO] orbs, inflicts all enemies with Increase Damage Taken by 2x for 1 turn, and transforms [STR] characters into Super [STR] characters",
+        superSpecialCriteria: "This character must be captain and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Kaido, King (Alber), Queen, Jack, Orochi, Kanjuro, Basil Hawkins, Scratchmen Apoo, Charlotte Linlin (Big Mom)",
+        superTandem: {
+            characterCondition: [
+                "Any 2 of the following, excluding Supports and counting only 1 per unit: Kaido, King (Alber), Queen, Jack, Orochi, Kanjuro, Basil Hawkins, Scratchmen Apoo, Charlotte Linlin (Big Mom)",
+                "Any 2 of the following, excluding Supports and counting only 1 per unit: Kaido, King (Alber), Queen, Jack, Orochi, Kanjuro, Basil Hawkins, Scratchmen Apoo, Charlotte Linlin (Big Mom)",
+                "Any 2 of the following, excluding Supports and counting only 1 per unit: Kaido, King (Alber), Queen, Jack, Orochi, Kanjuro, Basil Hawkins, Scratchmen Apoo, Charlotte Linlin (Big Mom)",
+                "Any 1 of the following, excluding Supports and counting only 1 per unit: Kaido, King (Alber), Queen, Jack, Orochi, Kanjuro, Basil Hawkins, Scratchmen Apoo, Charlotte Linlin (Big Mom)",
+                "Any 1 of the following, excluding Supports and counting only 1 per unit: Kaido, King (Alber), Queen, Jack, Orochi, Kanjuro, Basil Hawkins, Scratchmen Apoo, Charlotte Linlin (Big Mom)"
+            ],
+            description: [
+                "Boosts Tandem ATK of Powerhouse and Driven characters by 1.2x for 1 turn",
+                "Boosts Tandem ATK of Powerhouse and Driven characters by 1.4x for 1 turn",
+                "Boosts Tandem ATK of Powerhouse and Driven characters by 1.6x for 1 turn, and reduces enemies' Threshold Damage Reduction duration by 1 turn",
+                "Boosts Tandem ATK of Powerhouse and Driven characters by 1.8x for 1 turn, and reduces enemies' Threshold Damage Reduction and Percent Damage Reduction duration by 1 turn",
+                "Boosts Tandem ATK of Powerhouse and Driven characters by 2x for 1 turn, and reduces enemies' Threshold Damage Reduction, Percent Damage Reduction and Increased Defense duration by 1 turn"
+            ]
+        },
+        support: [
+            {
+                Characters: "Basil Hawkins, Scratchmen Apoo, Kanjuro, Charlotte Linlin (Big Mom), Jack, Kaido, King (Alber), Orochi, Queen",
+                description: [
+                    "Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Percent Damage Reduction duration by 1 turn",
+                    "Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Percent Damage Reduction duration by 1 turn",
+                    "Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Percent Damage Reduction duration by 1 turn",
+                    "Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Percent Damage Reduction duration by 1 turn",
+                    "Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Percent Damage Reduction duration by 2 turns"
+                ]
+            }
+        ]
+    },
+    4116: {
+        captain: "Boosts [STR], Cerebral and Driven characters' ATK by 3.75x and HP by 1.25x, boosts their ATK by approximately 4.5x when they have [TND] or [WANO] orbs, and boosts damage dealt to enemies inflicted with increased damage taken, delay, Poison, Venom, progressive Poison, DEF Down, or Paralysis by 1.2x",
+        limit: [
+            { description: "Boosts base HP by 25" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base ATK by 25" },
+            { description: "Acquire Potential 1: Reduce Sailor Despair duration" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base HP by 25" },
+            { description: "Boosts base ATK by 25" },
+            { description: "Acquire Sailor Ability 1: Makes [INT] orbs beneficial for Cerebral and Driven characters" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base HP by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Acquire Potential 2: Reduce Special Use Limit duration" },
+        ],
+        potential: [
+            {
+                Name: "Reduce Sailor Despair duration",
+                description: [
+                    "Reduces Sailor Despair duration by 1 turn on this character",
+                    "Reduces Sailor Despair duration by 2 turns on this character",
+                    "Reduces Sailor Despair duration by 3 turns on this character",
+                    "Reduces Sailor Despair duration by 4 turns on this character",
+                    "Reduces Sailor Despair duration by 5 turns on this character"
+                ]
+            },
+            {
+                Name: "Reduce Special Use Limit duration",
+                description: [
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 2 turns"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Reduces Blindness duration by 5 turns",
+            level1: "Makes [INT] orbs beneficial for Cerebral and Driven characters"
+        },
+        special: "Deals 60x character's ATK in Typeless damage to enemies, reduces the defense of all enemies by 100% for 2 turns, makes Badly Matching and [BLOCK] orbs not reduce damage for 2 turns, boosts Color Affinity of [STR], Cerebral and Driven characters by 1.5x, allowing override, for 1 turn, and boosts ATK against delayed enemies and enemies inflicted with Increase Damage Taken by 2.25x for 1 turn. If Captain's orb is a [WANO] orb when Special is launched, boosts ATK of all characters with Percent Damage Reduction by 1x-1.5x for 2 turns, proportional to the strength of the Percent Damage Reduction buff. If the enemy has Percent Damage Reduction Buff when the special is activated, changes [EMPTY], [BLOCK], [BOMB], [RCV], [G] and Badly Matching orbs into [TND] orbs, and reduces damage received by 70% for 2 turns.",
+        specialName: "Grudgeful Straw Sword",
+        support: [
+            {
+                Characters: "[STR] characters",
+                description: [
+                    "Adds 3% of this character's base RCV to the supported character's base RCV",
+                    "Adds 4% of this character's base RCV to the supported character's base RCV",
+                    "Adds 5% of this character's base RCV to the supported character's base RCV",
+                    "Adds 7% of this character's base RCV to the supported character's base RCV",
+                    "Adds 9% of this character's base RCV to the supported character's base RCV"
+                ]
+            }
+        ]
+    },
+    4117: {
+        captain: "Boosts ATK of Driven characters by 2.25x and boosts HP of Driven characters by 1.2x",
+        special: "Boosts ATK of Driven characters by 2x for 1 turn and reduces Bind duration by 1 turn",
+        specialName: "Castle Surveilling",
+        support: [
+            {
+                Characters: "[STR] Driven and [QCK] Driven characters",
+                description: [
+                    "Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces damage received by 20% for 1 turn",
+                    "Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces damage received by 30% for 1 turn",
+                    "Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces damage received by 40% for 1 turn and reduces Special Use Limit duration by 1 turn",
+                    "Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces damage received by 50% for 1 turn and reduces Bind and Special Use Limit duration by 1 turn",
+                    "Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces damage received by 60% for 1 turn and reduces Bind, Paralysis and Special Use Limit duration by 1 turn"
+                ]
+            }
+        ]
+    },
+    4118: {
+        captain: {
+            character1: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 3 at the start of the fight. Boosts HP of all characters by 1.3x and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 5x and boosts ATK of all other characters by 4.5x.",
+            character2: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 3 at the start of the fight. Boosts HP of all characters by 1.3x, makes [STR] orbs beneficial for all characters and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 4.75x.",
+            combined: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 3 at the start of the fight. Boosts HP of all characters by 1.3x, makes [STR] orbs beneficial for all characters and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 5x.",
+            llbcharacter1: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 6 at the start of the fight. Boosts HP of all characters by 1.3x, makes [RCV] orbs beneficial for all characters  and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 5.5x, boosts ATK of all other characters by 4.75x and restores Special Cooldown of this character completely when it is rewinded.",
+            llbcharacter2: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 6 at the start of the fight. Boosts HP of all characters by 1.3x, makes [STR] orbs beneficial for all characters and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 5x and restores Special Cooldown of this character completely when it is rewinded.",
+            llbcombined: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 6 at the start of the fight. Boosts HP of all characters by 1.3x, makes [STR] and [RCV] orbs beneficial for all characters and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 5.75x, boosts ATK of all other characters by 5.5x and restores Special Cooldown of this character completely when it is rewinded."
+        },
+        lLimit: [
+            null,
+            {
+                rAbility: true
+            },
+            {
+                captain: {
+                    character1: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 6 at the start of the fight. Boosts HP of all characters by 1.3x, makes [RCV] orbs beneficial for all characters  and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 5.5x, boosts ATK of all other characters by 4.75x and restores Special Cooldown of this character completely when it is rewinded.",
+                    character2: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 6 at the start of the fight. Boosts HP of all characters by 1.3x, makes [STR] orbs beneficial for all characters and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all characters by 5x and restores Special Cooldown of this character completely when it is rewinded.",
+                    combined: "Reduces crew's current HP by 25%, reduces Special Cooldown of all characters by 3 turns, and reduces Switch Effect of this character by 6 at the start of the fight. Boosts HP of all characters by 1.3x, makes [STR] and [RCV] orbs beneficial for all characters and reduces crew's current HP by 10% at the end of each turn. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of this character by 5.75x, boosts ATK of all other characters by 5.5x and restores Special Cooldown of this character completely when it is rewinded."
+                }
+            },
+            {
+                rSpecial: true
+            },
+            {
+                rResilience: true,
+                special: "Deals 300x character's ATK in Typeless damage to all enemies, reduces Special Cooldown of all characters by 2 turns and becomes Arlong Pirates for 3 turns. If HP is below 30% when the special is activated, boosts ATK of all characters by 2.75x for 1 turn, by 2.5x otherwise. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew when the special is activated, increases boost effects of ATK UP buffs by +0.5x, including effects activated in the same Ability and increases duration of any ATK boosting and Base ATK boosting buffs by 2 turns, including effects activated in the same Ability."
+            }
+        ],
+        limit: [
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Acquire Potential 1: Reduce Slot Bind duration" },
+            { description: "Boosts base RCV by 5" },
+            { description: "Boosts base RCV by 5" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 40" },
+            { description: "Acquire Potential 2: Critical Hit" },
+            { description: "Boosts base RCV by 15" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base HP by 150" },
+            { description: "Acquire Sailor Ability 2: Restores Special Cooldown of this character completely when it is rewinded" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Acquire Potential 3: Enrage/Reduce Increase Damage Taken duration" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 100" },
+        ],
+        potential: [
+            {
+                Name: "Reduce Slot Bind duration",
+                description: [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character",
+                    "Reduces Slot Bind duration by 7 turns on this character"
+                ]
+            },
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Enrage/Reduce Increase Damage Taken duration",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 4 turns",
+                    "Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 5 turns"
+                ]
+            }
+        ],
+        sailor: {
+            character1: "Makes character's [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character",
+            character2: "Makes character's [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character",
+            combined: "Makes character's [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this character",
+            level1: "Restores Special Cooldown of this character completely when it is rewinded"
+        },
+        special: {
+            base: "Deals 300x character's ATK in Typeless damage to all enemies, reduces Special Cooldown of all characters by 2 turns and becomes Arlong Pirates for 3 turns. If HP is below 30% when the special is activated, boosts ATK of all characters by 2.75x for 1 turn, by 2.5x otherwise. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew when the special is activated, increases boost effects of ATK UP buffs by +0.25x, including effects activated in the same Ability.",
+            llbbase: "Deals 300x character's ATK in Typeless damage to all enemies, reduces Special Cooldown of all characters by 2 turns and becomes Arlong Pirates for 3 turns. If HP is below 30% when the special is activated, boosts ATK of all characters by 2.75x for 1 turn, by 2.5x otherwise. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew when the special is activated, increases boost effects of ATK UP buffs by +0.5x, including effects activated in the same Ability and increases duration of any ATK boosting and Base ATK boosting buffs by 2 turns, including effects activated in the same Ability."
+        },
+        specialName: "Punishing the Inferior Species",
+        swap: {
+            base: "Changes orb, including [BLOCK] orbs, of this character into a Matching orb and boosts base ATK of all characters by 10-1,240 based on your current Percent HP for 1 turn.",
+            super: "Reduces Special Cooldown of this character by 2 turns, changes orb, including [BLOCK] orbs, of this character into a Matching orb, deals 40x character's ATK in Typeless damage to all enemies, and boosts base ATK of all characters by 10-1,240, allowing override, based on your current Percent HP for 1 turn.",
+            superTurns: 6
+        },
+        swapNotes: "Base ATK boost is equal to 10 + 1240*(1 - currentHP/maxHP), the maximum effect at 1 HP will give a 1250 base ATK boost"
+    },
+    4119: {
+        captain: "Boosts HP of Striker and Slasher characters by 1.25x boosts ATK of Striker and Slasher characters by 4x, by 4.5x instead if you use \"Clearing X Calibur\" in this turn, and makes [QCK] orbs beneficial for Striker and Slasher characters.",
+        limit: [
+            { description: "Boosts base HP by 25" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base HP by 25" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Sailor Ability 2: Restores Special Cooldown of this character by 2 turns when it is rewinded" },
+            { description: "Acquire Potential 2: Reduce Slot Bind duration" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base HP by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Acquire Potential 3: Double Special Activation" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 100" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 100" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 3% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Reduce Slot Bind duration",
+                description: [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 4 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character"
+                ]
+            },
+            {
+                Name: "Double Special Activation",
+                description: [
+                    "Once per adventure, reduces character's Special charge time by 1 turn after character uses Special",
+                    "Once per adventure, reduces character's Special charge time by 2 turns after character uses Special",
+                    "Once per adventure, reduces character's Special charge time by 3 turns after character uses Special",
+                    "Once per adventure, reduces character's Special charge time by 5 turns after character uses Special",
+                    "Once per adventure, sets character's Special charge to MAX after character uses Special"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Makes [QCK] orbs beneficial for Striker and Slasher characters",
+            level1: "Restores Special Cooldown of this character by 2 turns when it is rewinded"
+        },
+        special: "Reduces Special Cooldown of Striker and Slasher characters by 1 turn, deals 40x character's ATK in Typeless damage to one enemy, changes all orbs of Striker and Slasher characters into [QCK] orbs, and boosts Final Tap ATK of Striker and Slasher characters by 10%. If your crew has ATK UP when the special is activated, boosts Orb Effects of Striker and Slasher characters by 2x for 1 turn, boosts ATK of Striker and Slasher characters by 2x for 1 turn otherwise.",
+        specialName: "Clearing X Calibur",
+        support: [
+            {
+                Characters: "Striker characters",
+                description: [
+                    "Adds 2% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 3% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
+    4120: {
+        captain: "Reduces Special Cooldown of Striker and Slasher characters by 1 turn at the start of the fight, boosts HP of Striker and Slasher characters by 1.25x boosts ATK of Striker and Slasher characters by 4.25x, by 5x instead if you use \"Clearing X Calibur\" in this turn, and makes [QCK] orbs beneficial for Striker and Slasher characters.",
+        limit: [
+            { description: "Boosts base HP by 25" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base HP by 25" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Sailor Ability 2: Restores Special Cooldown of this character by 2 turns when it is rewinded" },
+            { description: "Acquire Potential 2: Reduce Slot Bind duration" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base HP by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Acquire Potential 3: Double Special Activation" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 100" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 100" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 3% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Reduce Slot Bind duration",
+                description: [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 4 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character"
+                ]
+            },
+            {
+                Name: "Double Special Activation",
+                description: [
+                    "Once per adventure, reduces character's Special charge time by 1 turn after character uses Special",
+                    "Once per adventure, reduces character's Special charge time by 2 turns after character uses Special",
+                    "Once per adventure, reduces character's Special charge time by 3 turns after character uses Special",
+                    "Once per adventure, reduces character's Special charge time by 5 turns after character uses Special",
+                    "Once per adventure, sets character's Special charge to MAX after character uses Special"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Makes [QCK] orbs beneficial for Striker and Slasher characters",
+            level1: "Restores Special Cooldown of this character by 2 turns when it is rewinded"
+        },
+        special: "Reduces Special Cooldown of Striker and Slasher characters by 1 turn, deals 60x character's ATK in Typeless damage to one enemy, changes all orbs, including [BLOCK] orbs, of Striker and Slasher characters into [QCK] orbs, and boosts Final Tap ATK of Striker and Slasher characters by 15%. If your crew has ATK UP when the special is activated, boosts Orb Effects of Striker and Slasher characters by 2.25x, allowing override, for 1 turn. Boosts ATK of Striker and Slasher characters by 2x, allowing override, for 1 turn.",
+        specialName: "Clearing X Calibur",
+        support: [
+            {
+                Characters: "Striker characters",
+                description: [
+                    "Adds 2% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 3% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
+    4121: {
+        captain: {
+            character1: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.2x, boosts ATK of Driven and Cerebral characters by 4.75x, by 5x instead if they have an [EMPTY], [G] or beneficial orb, makes [QCK] orbs beneficial for all characters, reduces damage received by 20%, and reduces Silence duration by 10 turns.",
+            character2: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.2x, boosts ATK of Driven and Cerebral characters by 4.75x, by 5x instead if they have an [EMPTY], [G] or beneficial orb, makes [INT] orbs beneficial for all characters, recovers 0.3x this character's RCV at the end of the turn for each time you hit a PERFECT, and reduces Silence duration by 10 turns.",
+            combined: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.2x, boosts ATK of Driven and Cerebral characters by 5.25x, by 6x instead if they have an [EMPTY], [G] or beneficial orb, makes [QCK] and [INT] orbs beneficial for all characters, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, reduces damage received by 20%, and reduces Silence duration by 10 turns."
+        },
+        sailor: {
+            character1: "Makes [QCK] and [INT] orbs beneficial for Driven and Cerebral characters",
+            character2: "Makes [QCK] and [INT] orbs beneficial for Driven and Cerebral characters",
+            combined: "Makes [QCK] and [INT] orbs beneficial for Driven and Cerebral characters"
+        },
+        special: "Reduces enemies' Barrier duration by 3 turns, deals 1x the damage dealt in Overkill Damage in the previous turn in Typeless damage to all enemies, and becomes Doflamingo & Sugar for 2 turns. Boosts Color Affinity of Driven and Cerebral characters by 2.25x-2.75x for 1 turn based on the number of status effects applied on enemy. If enemies have 8 or more status effects when the special is activated, increases boost effects of Color Affinity buffs by +0.25x, including effects activated in the same Ability. If your Captain is a Driven or Cerebral character, inflicts Weakened, 1.5x increased damage and an additional 1.25x if enemies are inflicted with Increased Damage Taken debuff, to all enemies for 1 turn.",
+        specialNotes: "2.25x for 0-2 effects, 2.5x for 3-5 effects, 2.75x for 6+ effects",
+        specialName: "Assault of Strings and Toys",
+        swap: {
+            base: "Removes Despair duration completely on this character, changes the orb, including [BLOCK] orbs, of this character into a Matching orb, inflicts all enemies with Increase Damage Taken by 1.25x for 1 turn, and reduces the ATK of all enemies by 20% for 1 turn.",
+            super: "Removes Despair duration completely on this character, changes the orb, including [BLOCK] orbs, of this character into a Matching orb, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn and reduces the ATK of all enemies by 50% for 1 turn.",
+            superTurns: 6
+        }
+    },
+    4122: {
+        captain: {
+            character1: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.2x, boosts ATK of Driven and Cerebral characters by 4.75x, by 5x instead if they have an [EMPTY], [G] or beneficial orb, makes [QCK] orbs beneficial for all characters, reduces damage received by 20%, and reduces Silence duration by 10 turns.",
+            character2: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.2x, boosts ATK of Driven and Cerebral characters by 4.75x, by 5x instead if they have an [EMPTY], [G] or beneficial orb, makes [INT] orbs beneficial for all characters, recovers 0.3x this character's RCV at the end of the turn for each time you hit a PERFECT, and reduces Silence duration by 10 turns.",
+            combined: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.2x, boosts ATK of Driven and Cerebral characters by 5.25x, by 6x instead if they have an [EMPTY], [G] or beneficial orb, makes [QCK] and [INT] orbs beneficial for all characters, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT, reduces damage received by 20%, and reduces Silence duration by 10 turns."
+        },
+        limit: [
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Acquire Potential 1: Pinch Healing" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Acquire Potential 2: Critical Hit" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Sailor Ability 1: Boosts base ATK, HP and RCV of Driven and Cerebral characters by 150" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base HP by 60" },
+            { description: "Acquire Potential 3: Reduce Special Use Limit duration" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 70" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1.1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1.2x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.3x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Reduce Special Use Limit duration",
+                description: [
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 2 turns",
+                    "Reduces Special Use Limit duration by 2 turns",
+                    "Reduces Special Use Limit duration by 3 turns"
+                ]
+            }
+        ],
+        sailor: {
+            character1: "Makes [QCK] and [INT] orbs beneficial for Driven and Cerebral characters",
+            character2: "Makes [QCK] and [INT] orbs beneficial for Driven and Cerebral characters",
+            combined: "Makes [QCK] and [INT] orbs beneficial for Driven and Cerebral characters",
+            level1: "Boosts base ATK, HP and RCV of Driven and Cerebral characters by 150"
+        },
+        special: "Reduces enemies' Barrier duration by 3 turns, deals 1x the damage dealt in Overkill Damage in the previous turn in Typeless damage to all enemies, and becomes Doflamingo & Sugar for 2 turns. Boosts Color Affinity of Driven and Cerebral characters by 2.25x-2.75x for 1 turn based on the number of status effects applied on enemy. If enemies have 8 or more status effects when the special is activated, increases boost effects of Color Affinity buffs by +0.25x, including effects activated in the same Ability. If your Captain is a Driven or Cerebral character, inflicts Weakened, 1.5x increased damage and an additional 1.25x if enemies are inflicted with Increased Damage Taken debuff, to all enemies for 1 turn.",
+        specialNotes: "2.25x for 0-2 effects, 2.5x for 3-5 effects, 2.75x for 6+ effects",
+        swap: {
+            base: "Removes Despair duration completely on this character, changes the orb, including [BLOCK] orbs, of this character into a Matching orb, inflicts all enemies with Increase Damage Taken by 1.25x for 1 turn, and reduces the ATK of all enemies by 20% for 1 turn.",
+            super: "Removes Despair duration completely on this character, changes the orb, including [BLOCK] orbs, of this character into a Matching orb, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn and reduces the ATK of all enemies by 50% for 1 turn.",
+            superTurns: 6
+        }
+    },
+    4123: {
+        captain: {
+            character1: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.3x, boosts ATK of Driven and Cerebral characters by 4.5x, boosts damage dealt to enemies inflicted with Increased Damage Taken, Delay, Poison, Strong Poison, Toxic, reduced defense, Paralysis, Burn or Negative by 1.15x, and makes [RCV] orbs beneficial for all characters.",
+            character2: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.3x, boosts ATK of Driven and Cerebral characters by 4.5x, boosts damage dealt to enemies inflicted with Negative status by 1.2x, and makes [TND] orbs beneficial for all characters.",
+            combined: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.3x, boosts ATK of Driven and Cerebral characters by 5x, boosts damage dealt to enemies inflicted with Increased Damage Taken, Delay, Poison, Strong Poison, Toxic, reduced defense, Paralysis, Burn or Negative by 1.04x-1.315x proportional to the number of status effects applied on enemy, and makes [RCV] and [TND] orbs beneficial for all characters."
+        },
+        sailor: {
+            character1: "Makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters",
+            character2: "Makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters",
+            combined: "Makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters"
+        },
+        special: "Deals 10% of enemies' current HP in damage to all enemies. Boosts ATK of Driven and Cerebral characters by 2.5x-3x for 1 turn based on the number of status effects applied on enemy. If enemies have 8 or more status effects when the special is activated, increases boost effects of ATK UP buffs by +0.25x, including effects activated in the same Ability. Reduces Bind and Burn duration by 6 turns, boosts ATK against enemies inflicted with Increase Damage Taken or Negative by 2.5x for 1 turn, paralyzes (75%) all enemies for 2 turns, and becomes Moria & Perona for 2 turns.",
+        specialNotes: "2.5x for for 0-2 effects, 2.75x for 3-5 effects, 3x for 6+ effects",
+        specialName: "Inescapable Nightmare",
+        swap: {
+            base: "Inflicts enemies with Negative for 1 turn, reduces enemies' Driven and Cerebral Resistance by -15% for 1 turn, and recovers 2,000 HP at end of each turn for 1 turn.",
+            super: "Ignores debuff protection and inflicts enemies with Negative for 1 turn, reduces enemies' Driven and Cerebral Resistance by -25% for 1 turn, and recovers 8,000 HP at end of each turn for 1 turn.",
+            superTurns: 6
+        }
+    },
+    4124: {
+        captain: {
+            character1: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.3x, boosts ATK of Driven and Cerebral characters by 4.5x, boosts damage dealt to enemies inflicted with Increased Damage Taken, Delay, Poison, Strong Poison, Toxic, reduced defense, Paralysis, Burn or Negative by 1.15x, and makes [RCV] orbs beneficial for all characters.",
+            character2: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.3x, boosts ATK of Driven and Cerebral characters by 4.5x, boosts damage dealt to enemies inflicted with Negative status by 1.2x, and makes [TND] orbs beneficial for all characters.",
+            combined: "Reduces Special Cooldown of Driven and Cerebral characters by 1 turn at the start of the fight, boosts HP of Driven and Cerebral characters by 1.3x, boosts ATK of Driven and Cerebral characters by 5x, boosts damage dealt to enemies inflicted with Increased Damage Taken, Delay, Poison, Strong Poison, Toxic, reduced defense, Paralysis, Burn or Negative by 1.04x-1.315x proportional to the number of status effects applied on enemy, and makes [RCV] and [TND] orbs beneficial for all characters."
+        },
+        limit: [
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire Potential 1: Reduce No Healing duration" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Reduce Healing Reduction duration" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Sailor Ability 1: Boosts base ATK, HP and RCV of Driven and Cerebral characters by 150" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 70" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 3: Reduce Special Use Limit duration" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 60" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 60" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 80" },
+            { description: "Boosts base HP by 200" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "Reduce No Healing duration",
+                description: [
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 4 turns",
+                    "Reduces No Healing duration by 5 turns",
+                    "Reduces No Healing duration by 7 turns"
+                ]
+            },
+            {
+                Name: "Reduce Healing Reduction duration",
+                description: [
+                    "Reduces Healing Reduction duration by 1 turn",
+                    "Reduces Healing Reduction duration by 2 turns",
+                    "Reduces Healing Reduction duration by 3 turns",
+                    "Reduces Healing Reduction duration by 4 turns",
+                    "Reduces Healing Reduction duration by 5 turns"
+                ]
+            },
+            {
+                Name: "Reduce Special Use Limit duration",
+                description: [
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 2 turns",
+                    "Reduces Special Use Limit duration by 2 turns",
+                    "Reduces Special Use Limit duration by 3 turns"
+                ]
+            }
+        ],
+        sailor: {
+            character1: "Makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters",
+            character2: "Makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters",
+            combined: "Makes [RCV] and [TND] orbs beneficial for Driven and Cerebral characters",
+            level1: "Boosts base ATK, HP and RCV of Driven and Cerebral characters by 150"
+        },
+        special: "Deals 10% of enemies' current HP in damage to all enemies. Boosts ATK of Driven and Cerebral characters by 2.5x-3x for 1 turn based on the number of status effects applied on enemy. If enemies have 8 or more status effects when the special is activated, increases boost effects of ATK UP buffs by +0.25x, including effects activated in the same Ability. Reduces Bind and Burn duration by 6 turns, boosts ATK against enemies inflicted with Increase Damage Taken or Negative by 2.5x for 1 turn, paralyzes (75%) all enemies for 2 turns, and becomes Moria & Perona for 2 turns.",
+        specialNotes: "2.5x for for 0-2 effects, 2.75x for 3-5 effects, 3x for 6+ effects",
+        specialName: "Inescapable Nightmare",
+        swap: {
+            base: "Inflicts enemies with Negative for 1 turn, reduces enemies' Driven and Cerebral Resistance by -15% for 1 turn, and recovers 2,000 HP at end of each turn for 1 turn.",
+            super: "Ignores debuff protection and inflicts enemies with Negative for 1 turn, reduces enemies' Driven and Cerebral Resistance by -25% for 1 turn, and recovers 8,000 HP at end of each turn for 1 turn.",
+            superTurns: 6
+        }
+    },
+    4125: {
+        captain: "Boosts HP of Driven characters by 1.5x, boosts ATK of Driven characters by 3.75x, and boosts damage dealt to enemies inflicted with Increase Damage Taken, Delay, Poison, Strong Poison, Toxic, DEF Reduction, or Paralysis by 1.1x.",
+        limit: [
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire Sailor Ability 2: Boosts base HP of Driven characters by 200" },
+            { description: "Boosts base HP by 70" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 1: Reduce Special Use Limit duration" },
+        ],
+        potential: [
+            {
+                Name: "Enrage/Reduce Increase Damage Taken duration",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                Name: "Reduce Special Use Limit duration",
+                description: [
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 2 turns"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Restores Special Cooldown of this character by 2 turns when it is rewinded",
+            level1: "Boosts base HP of Driven characters by 200"
+        },
+        special: "Reduces Special Cooldown of Driven and Powerhouse characters by 2 turns, reduces Swap Cooldown of Driven and Powerhouse characters by 2 turns, deals 150x character's ATK in [QCK] True damage to all enemies, ignores Debuff Protection and reduces the defense of all enemies by 50% for 3 turns, deals 150x character's ATK in [QCK] damage to enemies at end of each turn for 3 turns, adds 1.0x to Chain multiplier for 3 turns, and changes all orbs, including [BLOCK] orbs, of Driven and Powerhouse characters into Matching orbs.",
+        specialName: "Ferocious Onslaught",
+        support: [
+            {
+                Characters: "Driven characters",
+                description: [
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 1 turn",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 1 turn",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 2 turns",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 2 turns",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 3 turns"
+                ]
+            }
+        ]
+    },
+    4126: {
+        captain: "Boosts HP of Driven characters by 1.25x, boosts ATK of Driven characters by 3.5x, and boosts damage dealt to enemies inflicted with Increase Damage Taken, Delay, Poison, Strong Poison, Toxic, DEF Reduction, or Paralysis by 1.2x.",
+        limit: [
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 40" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Sailor Ability 2: Boosts base ATK, HP and RCV of Driven characters by 70" },
+            { description: "Boosts base HP by 40" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 1: Reduce Special Use Limit duration" },
+        ],
+        potential: [
+            {
+                Name: "Enrage/Reduce Increase Damage Taken duration",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                Name: "Reduce Special Use Limit duration",
+                description: [
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 1 turn",
+                    "Reduces Special Use Limit duration by 2 turns"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Makes [PSY] orbs beneficial for Driven characters",
+            level1: "Boosts base ATK, HP and RCV of Driven characters by 70"
+        },
+        special: [
+            {
+                description: "Reduces Paralysis duration by 2 turns, boosts Orb Effects of [INT], Cerebral and Driven by 1.75x for 1 turn, applies -10% [QCK] Resistance to all enemies for 1 turn, randomizes all non-Matching orbs, and locks all orbs for 1 turn. If your Captain is a Driven character, poisons all enemies for 1 turn.",
+                cooldown: [ 14, 8 ]
+            },
+            {
+                description: "Reduces Paralysis duration by 4 turns, greatly boosts chances of getting Matching orbs for 1 turn, boosts Orb Effects of [INT], Cerebral and Driven characters by 2.25x for 1 turn, reduces enemies' [INT] Resistance by -10% for 1 turn. If your Captain is a Driven character, ignores Debuff Protection and delays all enemies for 1 turn. If HP is above 61% when the special is activated, reduces crew's current HP by 60% crew's MAX HP and advances Special Cooldown of this character by 7 turns.",
+                cooldown: [ 20, 14 ]
+            }
+        ],
+        specialName: "Blizzard and Gas Assault",
+        support: [
+            {
+                Characters: "Donquixote Doflamingo, Vergo, Sugar",
+                description: [
+                    "Once per adventure, when an enemy inflicts you with Paralysis, poisons all enemies for 1 turn",
+                    "Once per adventure, when an enemy inflicts you with Paralysis, poisons all enemies for 1 turn",
+                    "Once per adventure, when an enemy inflicts you with Paralysis, poisons all enemies for 1 turn",
+                    "Once per adventure, when an enemy inflicts you with Paralysis, poisons all enemies for 1 turn",
+                    "Once per adventure, when an enemy inflicts you with Paralysis, poisons all enemies for 1 turn, and reduces Paralysis duration by 1 turn."
+                ]
+            }
+        ]
+    },
+    4127: {
+        captain: "Boosts ATK of Driven characters by 3.5x, boosts HP of Driven characters by 1.25x, and boosts damage dealt to enemies inflicted with Increase Damage Taken, Delay, Poison, Strong Poison, Toxic, DEF Reduction, or Paralysis by 1.2x.",
+        limit: [
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Potential 1: Cooldown Reduction" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Potential 2: Pinch Healing" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 40" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 40" },
+            { description: "Boosts base HP by 200" },
+            { description: "Acquire Potential 3: Reduce Sailor Despair duration" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base RCV by 60" },
+            { description: "Acquire Sailor Ability 1: If this character has a [QCK] or [TND] orb and you attack with this character, increases boost effects of Chain Lock buffs by +0.25x." },
+        ],
+        potential: [
+            {
+                Name: "Cooldown Reduction",
+                description: [
+                    "Reduces character's Special charge time by 1 turn at the start of the fight",
+                    "Reduces character's Special charge time by 1 turn at the start of the fight",
+                    "Reduces character's Special charge time by 2 turns at the start of the fight",
+                    "Reduces character's Special charge time by 2 turns at the start of the fight",
+                    "Reduces character's Special charge time by 3 turns at the start of the fight"
+                ]
+            },
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Reduce Sailor Despair duration",
+                description: [
+                    "Reduces Sailor Despair duration by 1 turn on this character",
+                    "Reduces Sailor Despair duration by 1 turn on this character",
+                    "Reduces Sailor Despair duration by 2 turns on this character",
+                    "Reduces Sailor Despair duration by 2 turns on this character",
+                    "Reduces Sailor Despair duration by 3 turns on this character"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Reduces Silence duration by 6 turns on this character",
+            level1: "If this character has a [QCK] or [TND] orb and you attack with this character, increases boost effects of Chain Lock buffs by +0.25x."
+        },
+        special: "Reduces Silence and Chain Coefficient Reduction duration by 6 turns, reduces enemies' Threshold Damage Reduction effect by 50%, and locks the chain multiplier at 3.5x for 1 turn. If this character is a Crewmate when the special is activated, optionally swaps this unit with your captain for 1 turn.",
+        specialName: "Eliminating Hard Strike",
+        superSpecial: "Reduces enemies' Driven Resistance by -20% for 1 turn, optionally removes Captain Swap duration completely, and transforms [QCK] characters into Super [QCK] characters",
+        superSpecialCriteria: " This character must be captain and your crew must consist of any 6 of the following, excluding Supports and counting only 1 per unit: Driven characters.",
+        support: [
+            {
+                Characters: "Driven characters",
+                description: [
+                    "Adds 2% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 3% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
+    4129: {
+        captain: "Reduces crew's current HP by 10% at the end of each turn, boosts ATK of this character by ?x, boosts ATK of all other characters by 3.5x, and restores Special Cooldown of all characters by 2 turns when they are rewinded.",
+        limit: [
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Acquire Potential 1: Cooldown Reduction" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 20" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Sailor Ability 2: If your Captain is a Free Spirit character, boosts base HP of Free Spirit characters by 1.1x and restores Special Cooldown of this character by 2 turns when it is rewinded." },
+            { description: "Boosts base HP by 70" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+        ],
+        potential: [
+            {
+                Name: "Cooldown Reduction",
+                description: [
+                    "Reduces character's Special charge time by 41 turns at the start of the fight",
+                    "Reduces character's Special charge time by 43 turns at the start of the fight",
+                    "Reduces character's Special charge time by 46 turns at the start of the fight",
+                    "Reduces character's Special charge time by 49 turns at the start of the fight",
+                    "Reduces character's Special charge time by 51 turns at the start of the fight"
+                ]
+            },
+            {
+                Name: "Enrage/Reduce Increase Damage Taken duration",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            }
+        ],
+        sailor: {
+            base: "If your Captain is a [PSY] character, reduces HP of all characters by 30%",
+            level1: "If your Captain is a Free Spirit character, boosts base HP of Free Spirit characters by 1.1x and restores Special Cooldown of this character by 2 turns when it is rewinded."
+        },
+        special: "Reduces Special Cooldown of all characters by 2 turns, reduces ATK of all characters by 70% for 3 turns, removes enemies' ATK Up and Enrage duration completely, and delays all enemies by 2 turns.",
+        specialName: "Visage of a Different Future",
+        support: [
+            {
+                Characters: "Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Jewelry Bonney, Franky, Jinbe, Brook",
+                description: [
+                    "Lowers supported character's base ATK, HP and RCV by 0.6x",
+                    "Lowers supported character's base ATK, HP and RCV by 0.625x",
+                    "Lowers supported character's base ATK, HP and RCV by 0.65x",
+                    "Lowers supported character's base ATK, HP and RCV by 0.675x",
+                    "Lowers supported character's base ATK, HP and RCV by 0.7x"
+                ]
+            }
+        ]
+    },
+    4132: {
+        captain: "Boosts HP of Fighter and Shooter characters by 1.5x, boosts ATK of Fighter and Shooter characters by 5x, by 5.5x if HP is below 30% at the start of the turn, boosts chances of Fighter and Shooter characters getting Matching orbs, reduces damage received by 10%, and makes crew immune to Blow Away.",
+        limit: [
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Acquire Potential 1: Pinch Healing" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 15" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Acquire Sailor Ability 1: Cannot be Blown Away" },
+            { description: "Boosts base ATK by 15" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 70" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 2: Barrier Penetration" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 100" },
+            { description: "Acquire Sailor Ability 2: Removes Stun duration completely on this character" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Potential 3: Reduce Sailor Despair duration" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Barrier Penetration",
+                description: [
+                    "This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 80% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 60% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 50% at the start of the turn"
+                ]
+            },
+            {
+                Name: "Reduce Sailor Despair duration",
+                description: [
+                    "Reduces Sailor Despair duration by 1 turn on this character",
+                    "Reduces Sailor Despair duration by 2 turns on this character",
+                    "Reduces Sailor Despair duration by 3 turns on this character",
+                    "Reduces Sailor Despair duration by 4 turns on this character",
+                    "Reduces Sailor Despair duration by 5 turns on this character"
+                ]
+            }
+        ],
+        sailor: {
+            level1: "Cannot be Blown Away",
+            level2: "Removes Stun duration completely on this character"
+        },
+        special: "Reduces crew's current HP by 20%, deals 150x character's ATK in [DEX] damage to all enemies, reduces enemies' Threshold Damage Reduction and Percent Damage Reduction duration by 6 turns, and boosts base ATK of [DEX], Fighter and Shooter characters by 1,500 for 3 turns. If your crew has Jinbe or Senor Pink who has used a special this turn, reduces enemies' Barrier and Damage Nullification duration by 2 turns, and increases boost effects of Base ATK Boost buffs by +500, including effects activated in the same Ability.",
+        specialName: "Beam of the New Weapon",
+        support: [
+            {
+                Characters: "Fighter characters",
+                description: [
+                    "Adds 3% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
     4986: {//Kung Fu Luffy
         captain: "Boosts ATK of all characters by 3.5x after the 2nd PERFECTs in a row, by 4x after the 5th PERFECTs in a row and boosts HP of all characters by 1.5x",
         special: "Deals 120x character's ATK in Typeless damage to all enemies, changes orbs of adjacent characters into Matching Orbs, boosts ATK of all characters by 1.75x for 2 turns, reduces any damage received above 5,656 HP by 97% for 2 turns and makes PERFECTs easier to hit for 2 turns",
@@ -146093,4 +147165,9 @@ if (UnitUtils){
     UnitUtils.extendDouble(calcGhostStartID, 4060, "dual");
     UnitUtils.extendDouble(calcGhostStartID, 4061, "dual");
     UnitUtils.extendDouble(calcGhostStartID, 4062, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 4118, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 4121, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 4122, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 4123, "dual");
+    UnitUtils.extendDouble(calcGhostStartID, 4124, "dual");
 }

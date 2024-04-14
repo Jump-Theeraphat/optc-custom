@@ -701,6 +701,7 @@ const Hamlet = [ "Hamlet" ];
 const Lilith = [ "Lilith", "Dr. Vegapunk", "PUNK-02" ];
 const Shakuyaku = [ "Shakuyaku", "Shakky" ];
 const SHawk = [ "S-Hawk" ];
+const SShark = [ "S-Shark" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4708,6 +4709,22 @@ window.families = {
     4111: [ ...Buggy, ...DraculeMihawk, ...Crocodile ],
     4112: [ ...Galdino ],
     4113: [ ...Alvida, ...Mohji, ...Richie, ...Cabaji ],
+    4114: [ ...Sasaki, ...WhosWho, ...BlackMaria, ...Ulti, ...PageOne, ...XDrake ],
+    4115: [ ...Sasaki, ...WhosWho, ...BlackMaria, ...Ulti, ...PageOne, ...XDrake ],
+    4116: [ ...BasilHawkins ],
+    4117: [ ...BaoHuang ],
+    4118: [ ...Arlong, ...Choo, ...Kuroobi, ...Hatchan ],
+    4119: [ ...XDrake ],
+    4120: [ ...XDrake ],
+    4121: [ ...DonquixoteDoflamingo, ...Sugar ],
+    4122: [ ...DonquixoteDoflamingo, ...Sugar ],
+    4123: [ ...GeckoMoria, ...Perona ],
+    4124: [ ...GeckoMoria, ...Perona ],
+    4125: [ ...HodyJones, ...VanderDeckenIX ],
+    4126: [ ...CaesarClown, ...Monet ],
+    4127: [ ...RobLucci, ...Kaku, ...Stussy ],
+    4129: [ ...MonkeyDLuffy ],
+    4132: [ ...SShark ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
