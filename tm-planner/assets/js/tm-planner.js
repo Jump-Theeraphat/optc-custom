@@ -643,8 +643,12 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
-    } else if (tmId == 4108) {
+    } else if (
+        tmId == 4108 ||
+        tmId == 4128
+    ) {
         // TM Coby
+        // TM CP0
         $('#div_2_5x').show();
         $('#div_1_6x').show();
         $('#div_1_4x_v2').show();

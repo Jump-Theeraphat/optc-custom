@@ -19072,4 +19072,229 @@ var tm_opponents = {
             ]
         }
     },
+
+    
+    // ========== CP0 ==========
+    4128: {
+        4129: {
+            name: 'Luffy',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'STR'],
+                    hp: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4094: {
+            name: 'Robin',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Robin', 'INT'],
+                    hp: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4090: {
+            name: 'Zoro',
+            type: 'DEX',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Zoro', 'DEX'],
+                    hp: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4082: {
+            name: 'Lilith',
+            type: 'STR',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lilith', 'STR'],
+                    hp: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4132: {
+            name: 'S-Shark',
+            type: 'PSY',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Shark', 'PSY'],
+                    hp: 3500000,
+                    atk: 7200,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4128: {
+            name: 'CP0',
+            type: 'PSY',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['CP0', 'PSY'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
