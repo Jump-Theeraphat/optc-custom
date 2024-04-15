@@ -19087,7 +19087,9 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['cd-red',          '5T, All'],
+                                ['VS Gauge -',      '5T, All'],
+                                ['S Switch -',      '5T, All']
                             ]
                         }
                     ]
@@ -19095,13 +19097,28 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Luffy', 'STR'],
-                    hp: 1200000,
+                    hp_: 1200000,
                     atk_: 6000,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['chain-atk-down',  '5T, <3x Chain, 99%'],
+                                ['chain-atk-down',  '5T, >4.5x Chain, 99%'],
+                                ['def-thres',       '6T, 70%, 100K'],
+                                ['Counter',         '?']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Threshold not Applied (once)',
+                            action: [
+                                ['def-thres',       '3T, 70%, 100K']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Set Chain (once)',
+                            action: [
+                                ['Swap Captain',    '2T, Random Sailor']
                             ]
                         }
                     ]
@@ -19119,7 +19136,9 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['cd-red',          '5T, QCK/PSY/INT'],
+                                ['VS Gauge -',      '5T, QCK/PSY/INT'],
+                                ['S Switch -',      '5T, QCK/PSY/INT']
                             ]
                         }
                     ]
@@ -19127,13 +19146,23 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Robin', 'INT'],
-                    hp: 1200000,
+                    hp_: 1200000,
                     atk_: 6000,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['bind',            '8T, Col L'],
+                                ['nao',             '99+T'],
+                                ['cd-rew',          '2T, Col R'],
+                                ['desp',            '8T'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '1x atk']
                             ]
                         }
                     ]
@@ -19151,7 +19180,9 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['cd-red',          '5T, Slasher/Powerhouse/Striker'],
+                                ['VS Gauge -',      '5T, Slasher/Powerhouse/Striker'],
+                                ['S Switch -',      '5T, Slasher/Powerhouse/Striker']
                             ]
                         }
                     ]
@@ -19159,13 +19190,35 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Zoro', 'DEX'],
-                    hp: 2000000,
+                    hp_: 2000000,
                     atk_: 6000,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['type-change',     'STR(100%)/QCK(82%)/PSY(64%)/INT(46%)/DEX(28%)'],
+                                ['nao',             '99+T'],
+                                ['slot-block',      'All'],
+                                ['cd-rew',          '2T, Row 2 3'],
+                                ['cd-rew',          '3T, Row 1'],
+                                ['bar-slot',        '3T, 1x, QCK'],
+                                ['immu-all',        '99+T']
+                            ]
+                        },
+                        {
+                            type: 'Preemp (if HP>70%)',
+                            action: [
+                                ['cd-rew',          '3T, Row 2 3'],
+                                ['cd-rew',          '5T, Row 1'],
+                                ['bar-slot',        '4T, 2x, QCK']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Charge Special (once)',
+                            action: [
+                                ['hp-cut',          '80%'],
+                                ['cd-rew',          '1T'],
+                                ['CD Lock',         '2x Perfect']
                             ]
                         }
                     ]
@@ -19183,7 +19236,9 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['cd-red',          '5T, Driven/Cerebral/Powerhouse'],
+                                ['VS Gauge -',      '5T, Driven/Cerebral/Powerhouse'],
+                                ['S Switch -',      '5T, Driven/Cerebral/Powerhouse']
                             ]
                         }
                     ]
@@ -19191,13 +19246,21 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Lilith', 'STR'],
-                    hp: 2000000,
+                    hp_: 2000000,
                     atk_: 6000,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['type-change',     'STR(100%)/PSY(50%)'],
+                                ['slot-change',     'Bad'],
+                                ['silence',         '7T'],
+                                ['nao',             '99+T'],
+                                ['resil',           '5T'],
+                                ['bar-gt',          '3T, 5x'],
+                                ['desp',            '8T'],
+                                ['para',            '3T'],
+                                ['immu-all',        '99+T']
                             ]
                         }
                     ]
@@ -19215,21 +19278,28 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['cd-red',          '5T, DEX/QCK/INT'],
+                                ['VS Gauge -',      '5T, DEX/QCK/INT'],
+                                ['S Switch -',      '5T, DEX/QCK/INT']
                             ]
                         }
                     ]
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
-                    hp: 2000000,
+                    boss: ['S-Shark', 'PSY'],
+                    hp_: 2000000,
                     atk_: 6600,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['bind',            '9T, Row 1'],
+                                ['nao',             '99+T'],
+                                ['burn',            '6T, 30000'],
+                                ['def-perc',        '6T, 90%'],
+                                ['bar-p',           '3T, 2x'],
+                                ['immu-all',        '99+T']
                             ]
                         }
                     ]
@@ -19243,7 +19313,20 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['slot-change',     'RCV'],
+                                ['blind',           '5T'],
+                                ['Pain',            '3T, 25000'],
+                                ['rcv-dmg',         '6T'],
+                                ['Slot Atk Down',   '6T, TYPE/RCV/TND/WANO, 90%'],
+                                ['chain-atk-down',  '5T, <3.5x Chain, 99%'],
+                                ['def-perc',        '6T, 90%'],
+                                ['bar-slot',        '4T, 1x, STR']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change (once)',
+                            action: [
+                                ['slot-change',     'RCV']
                             ]
                         }
                     ]
@@ -19261,21 +19344,34 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['cd-red',          '5T, Cerebral/Fighter/Striker'],
+                                ['VS Gauge -',      '5T, Cerebral/Fighter/Striker'],
+                                ['S Switch -',      '5T, Cerebral/Fighter/Striker']
                             ]
                         }
                     ]
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
-                    hp: 2000000,
+                    boss: ['CP0', 'PSY'],
+                    hp_: 2000000,
                     atk_: 6600,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['nao',             '99+T'],
+                                ['hp-cut',          '80%'],
+                                ['rcv-dmg',         '3T'],
+                                ['slot-bind',       '1T, Row 1'],
+                                ['bind',            '8T, Row 1'],
+                                ['desp',            '8T, Row 1']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Damage (once)',
+                            action: [
+                                ['desp',            '10T, Row 1']
                             ]
                         }
                     ]
@@ -19289,7 +19385,24 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-
+                                ['orb-boost',       '2T, 1.1x'],
+                                ['slot-block',      'All'],
+                                ['atk-down',        '6T, 99%'],
+                                ['def',             '6T, 1Mx'],
+                                ['def-thres',       '6T, 99%, 1000'],
+                                ['def-perc',        '6T, 90%']
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                ['slot-change',     'S.BLOCK']
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                ['dmg-normal',      '100K']
                             ]
                         }
                     ]
