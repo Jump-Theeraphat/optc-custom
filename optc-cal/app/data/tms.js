@@ -369,4 +369,9 @@ var tms = {
         thumb: 4108,
         info: ''
     },
+    4128: {
+        name: 'CP0 (1am ~ 6am)',
+        thumb: 4128,
+        info: ''
+    },
 };
