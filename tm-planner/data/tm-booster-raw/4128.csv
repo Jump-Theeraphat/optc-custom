@@ -52,8 +52,8 @@ x_pts,id,ver,type
 1.2,4092,,rr
 1.2,4093,,rr
 1.2,4094,,rr
-1.2,0603,,raid
-1.2,0836,,raid
+1.2,603,,raid
+1.2,836,,raid
 1.2,1830,,raid
 1.2,1879,,raid
 1.2,2015,,raid
@@ -64,7 +64,7 @@ x_pts,id,ver,type
 1.2,2819,,raid
 1.2,3143,,raid
 1.2,3399,,raid
-1.2,0951,,coliseum
+1.2,951,,coliseum
 1.2,1630,,coliseum
 1.2,1733,,coliseum
 1.2,2111,,coliseum
@@ -75,9 +75,9 @@ x_pts,id,ver,type
 1.2,3293,,coliseum
 1.2,3361,,coliseum
 1.2,3580,,coliseum
-1.2,0765,,fortnight
-1.2,0852,,fortnight
-1.2,0887,,fortnight
+1.2,765,,fortnight
+1.2,852,,fortnight
+1.2,887,,fortnight
 1.2,1169,,fortnight
 1.2,2056,,fortnight
 1.2,2088,,fortnight
