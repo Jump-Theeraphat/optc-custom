@@ -19097,7 +19097,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Luffy', 'STR'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19146,7 +19146,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Robin', 'INT'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19246,7 +19246,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Lilith', 'STR'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19288,7 +19288,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['S-Shark', 'PSY'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -19308,7 +19308,7 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['S-Shark', 'PSY'],
                     hp: 3500000,
-                    atk: 7200,
+                    atk: 9600,
                     detail: [
                         {
                             type: 'Preemp',
@@ -19354,7 +19354,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['CP0', 'PSY'],
-                    hp_: 2000000,
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
