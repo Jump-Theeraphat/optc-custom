@@ -11,6 +11,7 @@ var tm_boosters = [
     4139,
 
     // PKAs
+    4146,
 
     // Events
 ]
