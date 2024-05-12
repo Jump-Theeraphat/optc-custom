@@ -155,6 +155,11 @@ var specials = {
         name: 'Commodore VS Empress (1am ~ 6am)',
         thumb: 4096
     },
+    'bb_4130': {
+        type: 'Blitz Battle',
+        name: '10th Anniversary (1am ~ 6am)',
+        thumb: 4130
+    },
 
     'wc_2401': {
         type: 'World Clash',
@@ -1019,5 +1024,10 @@ var specials = {
         type: 'Special Event',
         name: 'Future Island Exploration',
         thumb: 4129
+    },
+    'ev_4130': {
+        type: 'Special Event',
+        name: '10th Anniversary (~6am)',
+        thumb: 4130
     },
 }
