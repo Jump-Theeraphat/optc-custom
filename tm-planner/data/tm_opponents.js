@@ -1,3 +1,50 @@
+const CD_RED = 'cd-red';
+const VS_RED = 'VS Gauge -';
+const SW_RED = 'S Switch -';
+
+const ATK = 'atk';
+const ATK_DOWN = 'atk-down';
+const BAR_GD = 'bar-gd';
+const BAR_GT = 'bar-gt';
+const BAR_HP = 'bar-hp';
+const BAR_P = 'bar-p';
+const BAR_SLOT = 'bar-slot';
+const BIND = 'bind';
+const BLIND = 'blind';
+const BLOW_AWAY = 'blow-away';
+const CD_REW = 'cd-rew';
+const CHAIN_ATK_DOWN = 'chain-atk-down';
+const CHAIN_DOWN = 'chain-down';
+const CLEAR_BUFF = 'clear-buff';
+const DEF = 'def';
+const DEF_NULL = 'def-null';
+const DEF_PERC = 'def-perc';
+const DEF_THRES = 'def-thres';
+const DESP = 'desp';
+const DMG_NORMAL = 'dmg-normal';
+const DMG_UP = 'dmg-up';
+const HP_CUT = 'hp-cut'
+const HUNGER = 'hunger';
+const IMMU_ALL = 'immu-all';
+const IMMU_DEF = 'immu-def';
+const IMMU_DELAY = 'immu-delay';
+const IMMU_POISON = 'immu-poison';
+const INTIM = 'Intimidate';
+const LOCK_TARGET = 'Lock Target';
+const NAO = 'nao';
+const NO_HEAL = 'no-heal';
+const PAIN = 'Pain';
+const PARA = 'para';
+const RESIL = 'resil';
+const SHIP_BIND = 'Ship Bind';
+const SLOT_ATK_DOWN = 'Slot Atk Down';
+const SLOT_BLOCK = 'slot-block';
+const SLOT_CHANGE = 'slot-change';
+const SLOT_EFT_DOWN = 'Slot Effect Down';
+const SLOT_NEG = 'slot-neg';
+const SP_BIND = 'silence';
+const SP_LIMIT = 'sp-limit';
+
 var tm_opponents = {
     // ========== Mihawk ==========
     1808: [
@@ -764,7 +811,7 @@ var tm_opponents = {
         }
     },
 
-    // ========== Blackbeard ==========
+    // ========== Blackbeard (INT) ==========
     2690: {
         418: {
             name: 'Doffy',
@@ -4585,7 +4632,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['para',            '4T'],
-                                ['slot-neg',        'Color'],
+                                ['slot-neg',        'Type'],
                                 ['clear-buff',      'Buff & Values'],
                                 ['immu-def',        '99+T']
                             ]
@@ -6025,7 +6072,7 @@ var tm_opponents = {
                             action: [
                                 ['chain-down',      '4T, 0.1x'],
                                 ['tap-limit',       '4T, 3x'],
-                                ['slot-neg',        '5T, Color & RCV'],
+                                ['slot-neg',        '5T, Type & RCV'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -6098,7 +6145,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['slot-neg',        '3T, Color'],
+                                ['slot-neg',        '3T, Type'],
                                 ['type-change',     'Random']
                             ]
                         },
@@ -6945,7 +6992,7 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['slot-lock',       '2T'],
                                 ['silence',         '4T, Row 2 3'],
-                                ['slot-neg',        '3T, Color'],
+                                ['slot-neg',        '3T, Type'],
                                 ['def-perc',        '4T, 90%'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -7617,7 +7664,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-change',     'Color'],
+                                ['slot-change',     'Type'],
                                 ['cd-rew',          '1T'],
                                 ['chain-lock',      '6T, 1.1x'],
                                 ['para',            '6T'],
@@ -7756,7 +7803,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-neg',        '5T, Color'],
+                                ['slot-neg',        '5T, Type'],
                                 ['def-thres',       '4T, 90%, 1000']
                             ]
                         },
@@ -7957,7 +8004,7 @@ var tm_opponents = {
                                 ['cd-rew',          '1T, Row 2 3'],
                                 ['chain-down',      '99+T, 0.5x'],
                                 ['chain-atk-down',  '99+T, <2x Chain, 90%'],
-                                ['slot-neg',        '99+T, Color'],
+                                ['slot-neg',        '99+T, Type'],
                                 ['immu-def',        '99+T']
                             ]
                         },
@@ -8452,7 +8499,7 @@ var tm_opponents = {
                         {
                             type: 'Interrupt - Slot Change',
                             action: [
-                                ['slot-change',     'Random Color'],
+                                ['slot-change',     'Random Type'],
                                 ['slot-lock',       '2x Good']
                             ]
                         },
@@ -9264,7 +9311,7 @@ var tm_opponents = {
                             action: [
                                 ['desp',            '8T'],
                                 ['silence',         '4T'],
-                                ['slot-neg',        '2T, Color'],
+                                ['slot-neg',        '2T, Type'],
                                 ['def-perc',        '4T, 90%'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -9591,7 +9638,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['slot-neg',        '3T, Color'],
+                                ['slot-neg',        '3T, Type'],
                                 ['nao',             '99+T']
                             ]
                         },
@@ -9712,9 +9759,9 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['clear-buff',      'Buff Only'],
-                                ['slot-change',     'Color'],
+                                ['slot-change',     'Type'],
                                 ['bind',            '8T, Row 3'],
-                                ['slot-neg',        '5T, Color'],
+                                ['slot-neg',        '5T, Type'],
                                 ['tap-limit',       '2T, 5x'],
                                 ['immu-def',        '99+T']
                             ]
@@ -10303,7 +10350,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['def-thres',       '6T, 99%, 1000'],
-                                ['slot-neg',        '3T, Color'],
+                                ['slot-neg',        '3T, Type'],
                                 ['desp',            '10T'],
                                 ['cd-rew',          '1T'],
                                 ['nao',             '99+T'],
@@ -11369,7 +11416,7 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['bar-slot',        '3T, 4x, QCK'],
-                                ['slot-neg',        'Color'],
+                                ['slot-neg',        'Type'],
                                 ['heal',            '10%']
                             ]
                         },
@@ -11916,7 +11963,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-neg',        '5T, Color'],
+                                ['slot-neg',        '5T, Type'],
                                 ['def-thres',       '7T, 99%, 1000'],
                                 ['def',             '6T, 100Kx'],
                                 ['bar-hp',          '3T, 3M'],
@@ -11969,7 +12016,7 @@ var tm_opponents = {
                                 ['slot-change',     'Bad'],
                                 ['hunger',          '2x'],
                                 ['atk-down',        '5T, 90%'],
-                                ['slot-neg',        '3T, Color'],
+                                ['slot-neg',        '3T, Type'],
                                 ['immu-poison',     '99+T']
                             ]
                         },
@@ -12150,7 +12197,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['clear-buff',      'Buff Only'],
-                                ['slot-neg',        '5T, Color']
+                                ['slot-neg',        '5T, Type']
                             ]
                         },
                         {
@@ -12251,7 +12298,7 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['desp',            '15T'],
                                 ['chain-lock',      '5T, 1.1x'],
-                                ['slot-neg',        '3T, Color'],
+                                ['slot-neg',        '3T, Type'],
                                 ['nao',             '99+T'],
                                 ['chain-atk-down',  '5T, <2.2x chain, 90%'],
                                 ['immu-delay',      '99+T']
@@ -12667,7 +12714,7 @@ var tm_opponents = {
                                 ['nao',             '1T'],
                                 ['bind',            '7T, Row 1'],
                                 ['slot-change',     'Bad'],
-                                ['slot-neg',        '5T, Color/TND'],
+                                ['slot-neg',        '5T, Type/TND'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -13021,7 +13068,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'Bad'],
                                 ['cd-rew',          '1T'],
-                                ['slot-neg',        '5T, Color'],
+                                ['slot-neg',        '5T, Type'],
                                 ['hp-cut',          '99%'],
                                 ['bar-p',           '2T, 2x']
                             ]
@@ -13695,7 +13742,7 @@ var tm_opponents = {
                                 ['para',            '3T'],
                                 ['desp',            '6T'],
                                 ['slot-change',     'Bad'],
-                                ['slot-neg',        '5T, Color'],
+                                ['slot-neg',        '5T, Type'],
                                 ['nao',             '99+T'],
                                 ['bar-hp',          '2T, 10M']
                             ]
@@ -14631,7 +14678,7 @@ var tm_opponents = {
                             action: [
                                 ['silence',         '7T'],
                                 ['slot-block',      'All'],
-                                ['slot-neg',        '3T, Color'],
+                                ['slot-neg',        '3T, Type'],
                                 ['cd-rew',          '1T'],
                                 ['bar-hit',         '1T, 10x'],
                                 ['immu-delay',      '99+T']
@@ -15550,8 +15597,8 @@ var tm_opponents = {
                         {
                             type: 'Interrupt - Slot Change',
                             action: [
-                                ['slot-change',     'Color'],
-                                ['slot-neg',        '5T, Color']
+                                ['slot-change',     'Type'],
+                                ['slot-neg',        '5T, Type']
                             ]
                         },
                         {
@@ -17298,7 +17345,7 @@ var tm_opponents = {
                             action: [
                                 ['para',            '6T'],
                                 ['slot-block',      'All'],
-                                ['slot-neg',        '5T, Color'],
+                                ['slot-neg',        '5T, Type'],
                                 ['bar-hit',         '2T, 15x'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -17861,7 +17908,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['desp',            '6T'],
                                 ['atk-down',        '3T, 99%'],
-                                ['slot-neg',        '5T, Color'],
+                                ['slot-neg',        '5T, Type'],
                                 ['slot-block',      'All'],
                                 ['immu-all',        '99+T, Except Def Down']
                             ]
@@ -18553,7 +18600,7 @@ var tm_opponents = {
                                 ['para',            '6T'],
                                 ['hunger',          '3x'],
                                 ['nao',             '99+T'],
-                                ['slot-neg',        '2T, Color'],
+                                ['slot-neg',        '2T, Type'],
                                 ['bind',            '9T, Row 1']
                             ]
                         },
@@ -19031,7 +19078,7 @@ var tm_opponents = {
                                 ['sp-limit',        '3T, 2x'],
                                 ['def-perc',        '6T, 90%'],
                                 ['chain-atk-down',  '5T, <2.75x Chain, 99%'],
-                                ['Intimidate',      '3T, -2T, Set Chain / Color Affinity'],
+                                ['Intimidate',      '3T, -2T, Set Chain / Affinity'],
                                 ['para',            '6T'],
                                 ['immu-all',        '99+T, Except Set Target']
                             ]
@@ -19073,7 +19120,6 @@ var tm_opponents = {
         }
     },
 
-    
     // ========== CP0 ==========
     4128: {
         4129: {
@@ -19403,6 +19449,337 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['dmg-normal',      '100K']
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Blackbeard (DEX) ==========
+    4147: {
+        2232: {
+            name: 'Eneru',
+            type: 'PSY',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Eneru', 'PSY'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 2 },
+                                { type: BLIND, turn: 5 },
+                                { type: NAO, turn: 99 },
+                                { type: CHAIN_ATK_DOWN, turn: 5, detail: '<3' },
+                                { type: CHAIN_ATK_DOWN, turn: 5, detail: '>4.5' },
+                                { type: DEF, turn: 8 },
+                                { type: INTIM, turn: 2, detail: 'Set Chain / Affinity, -1' },
+                                { type: IMMU_ALL, turn: 99, detail: 'Except Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Def not Applied (once)',
+                            action: [
+                                { type: PARA, turn: 3 },
+                                { type: ATK, turn: 5 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3483: {
+            name: 'Crocodile',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Driven/Powerhouse/Slasher' },
+                                { type: VS_RED, turn: 5, detail: 'Driven/Powerhouse/Slasher' },
+                                { type: SW_RED, turn: 5, detail: 'Driven/Powerhouse/Slasher' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Crocodile', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_LIMIT, turn: 1, detail: '2x' },
+                                { type: SLOT_ATK_DOWN, turn: 6, detail: 'Type' },
+                                { type: LOCK_TARGET, turn: 2 },
+                                { type: RESIL, turn: 2 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: BAR_P, turn: 2, detail: '2x' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Damage (once)',
+                            action: [
+                                { type: PARA, turn: 1 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3666: {
+            name: ['Kata', 'kuri'],
+            type: ['INT', 'PSY'],
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Slasher/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Slasher/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Slasher/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Katakuri', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6 },
+                                { type: SLOT_ATK_DOWN, turn: 5, detail: 'Type (Except PSY) / RCV' },
+                                { type: CHAIN_DOWN, turn: 6 },
+                                { type: CHAIN_ATK_DOWN, turn: 5, detail: '<3' },
+                                { type: NAO, turn: 99 },
+                                { type: INTIM, turn: 2, detail: '+Chain/Set Chain, -2' },
+                                { type: BAR_GD, turn: 3, detail: '2x' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: CLEAR_BUFF, detail: 'Buff Only' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3550: {
+            name: 'Doffy',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Doffy', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '50%' },
+                                { type: SHIP_BIND, turn: 9 },
+                                { type: SLOT_BLOCK },
+                                { type: NAO, turn: 99 },
+                                { type: NO_HEAL, turn: 5 },
+                                { type: PAIN, turn: 5, detail: '20000' },
+                                { type: ATK_DOWN, turn: 3 },
+                                { type: BIND, turn: 10, detail: 'Col L' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change (once)',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: DMG_UP, turn: 1 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3346: {
+            name: 'Kaido & Big Mom',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Kaido & Big Mom', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 6, detail: 'Row 2 3' },
+                                { type: CD_REW, turn: 2, detail: 'Row 1' },
+                                { type: NAO, turn: 99 },
+                                { type: HUNGER, detail: '1x' },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: BAR_SLOT, turn: 3, detail: '2x, TND' },
+                                { type: INTIM, turn: 2, detail: 'Affinity, -1' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kaido & Big Mom', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: SLOT_EFT_DOWN, turn: 5, detail: 'Type/RCV/TND/WANO, Fav 0.5x' },
+                                { type: RESIL, turn: 6 },
+                                { type: DEF_NULL, turn: 3 },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: INTIM, turn: 2, detail: 'Atk Boost, -2' },
+                                { type: IMMU_ALL, turn: 99, detail: 'Except Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Base Atk Boost (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4147: {
+            name: 'Blackbeard',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Free Spirit/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Free Spirit/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Free Spirit/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Blackbeard', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 2 },
+                                { type: SLOT_BLOCK },
+                                { type: RESIL, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: HUNGER, detail: '1x' },
+                                { type: INTIM, turn: 5, detail: 'Atk Boost, -1' },
+                                { type: SLOT_NEG, turn: 5, detail: 'Type' },
+                                { type: SP_BIND, turn: 1 },
+                                { type: BLOW_AWAY, turn: 5, detail: 'Bottom Right' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Blackbeard', 'QCK'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'PARA' },
+                                { type: DESP, turn: 13 },
+                                { type: BIND, turn: 9, detail: 'Row 2' },
+                                { type: DEF, turn: 7 },
+                                { type: IMMU_ALL, turn: 99, detail: 'Except Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '150K' },
                             ]
                         }
                     ]

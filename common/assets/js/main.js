@@ -21,16 +21,6 @@ function getThumb(thumbId) {
     // Zero pad IDs to get correct thumb
     var paddedThumbId = ('0000' + thumbId).slice(-4);
 
-/*
-    // Special case for Aokiji 575 with extra 0
-    if (paddedThumbId === '0575')
-        paddedThumbId = "0" + paddedThumbId;
-
-    // Special case for PFRR Stussy 3000 with extra _1
-    if (paddedThumbId === '3000')
-        paddedThumbId = paddedThumbId + "_1";
-*/
-
     // Special case for Kung Fu Luffy
     if (paddedThumbId === '5014' || paddedThumbId === '4987')
         return '/tm-planner/assets/img/new-thumbs/5014.png';
@@ -84,7 +74,21 @@ function getThumb(thumbId) {
 
     // Special cases for new thumbs
     if (
-        paddedThumbId === '3111' ||
+        paddedThumbId === '4129' ||
+        paddedThumbId === '4130' ||
+        paddedThumbId === '4147' ||
+        paddedThumbId === '4150' ||
+        paddedThumbId === '4151' ||
+        paddedThumbId === '4152' ||
+        paddedThumbId === '4153' ||
+        paddedThumbId === '4154' ||
+        paddedThumbId === '4155' ||
+        paddedThumbId === '4156' ||
+        paddedThumbId === '4157' ||
+        paddedThumbId === '4158' ||
+        paddedThumbId === '4159' ||
+        paddedThumbId === '4162' ||
+        paddedThumbId === '4163' ||
         paddedThumbId === '9999'
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';

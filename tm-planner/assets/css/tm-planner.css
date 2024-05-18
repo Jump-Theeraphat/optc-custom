@@ -526,7 +526,7 @@ button.cal-button:hover {
 #guide-stage-clone,
 #guide-stage-type-clone,
 #guide-action-clone,
-#guide-interrupt-clone,
+#guide-action-clone-old,
 #guide-sp-filter-clone,
 #guide-sl-filter-clone,
 #guide-ca-filter-clone,
@@ -579,9 +579,9 @@ button.cal-button:hover {
     opacity: 1;
 }
 
-.guide-action-type {
-    font-size: 13px;
-    white-space: nowrap;
+.guide-action-type,
+.guide-action-detail {
+    font-size: 12px;
 }
 
 .boss-stat-unconfirmed-msg {

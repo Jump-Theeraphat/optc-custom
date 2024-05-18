@@ -231,7 +231,7 @@
                         <div class="container-fluid guide-action-list"></div>
                     </div>
 
-                    <div class="row align-items-center" id="guide-action-clone">
+                    <div class="row align-items-center mb-2" id="guide-action-clone-old">
                         <div class="col-2 guide-action-type"></div>
                         <div class="col-5">
                             (<span class="guide-action-detail"></span>)
@@ -239,8 +239,15 @@
                         <div class="col-5 guide-filter-list"></div>
                     </div>
 
-                    <div class="row align-items-center" id="guide-interrupt-clone">
-                        <div class="col-4 guide-action-type"></div>
+                    <div class="row align-items-center mb-2" id="guide-action-clone">
+                        <div class="col-2 guide-action-type"></div>
+                        <div class="col-1">
+                            <span class="guide-action-turn"></span>
+                        </div>
+                        <div class="col-4">
+                            <span class="guide-action-detail"></span>
+                        </div>
+                        <div class="col-5 guide-filter-list"></div>
                     </div>
 
                     <div id="guide-sp-filter-clone">
@@ -552,7 +559,8 @@
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-8">
                 <select class="form-control form-control-lg not-read-only" id="tm-select">
-                    <option value="4128_glb" class="tm-option glb-tm" id="newest-tm-glb">CP0</option>
+                    <option value="4147_glb" class="tm-option glb-tm" id="newest-tm-glb">Blackbeard (DEX)</option>
+                    <option value="4128_glb" class="tm-option glb-tm">CP0</option>
                     <option value="4108_glb" class="tm-option glb-tm">Coby</option>
                     <option value="4089_glb" class="tm-option glb-tm">Jinbe</option>
                     <option value="4074_glb" class="tm-option glb-tm">Edward Newgate</option>
@@ -602,7 +610,7 @@
                     <option value="2792_glb" class="tm-option glb-tm">O-Robi</option>
                     <option value="2763_glb" class="tm-option glb-tm">Halloween Nami</option>
                     <option value="2729_glb" class="tm-option glb-tm">Hawkins</option>
-                    <option value="2690_glb" class="tm-option glb-tm">Blackbeard</option>
+                    <option value="2690_glb" class="tm-option glb-tm">Blackbeard (INT)</option>
                     <option value="2659_glb" class="tm-option glb-tm">Smoker</option>
                     <option value="2618_glb" class="tm-option glb-tm">Sakazuki & Issho</option>
                     <option value="2583_glb" class="tm-option glb-tm">Lucci</option>
@@ -1540,9 +1548,9 @@
                                 Pts: </label>
                             <div class="col-6">
                                 <select class="form-control form-control-sm" id="target-pts-dd">
-                                    <option value="20000000">20M</option>
+                                    <option value="20000000" selected>20M</option>
                                     <option value="15000000">15M</option>
-                                    <option value="10000000" selected>10M</option>
+                                    <option value="10000000">10M</option>
                                     <option value="1000000">1M</option>
                                     <option value="1500000">1.5M</option>
                                     <option value="3000000">3M</option>
@@ -1551,7 +1559,7 @@
                                 </select>
 
                                 <input type="hidden" class="form-control form-control-sm" id="target-pts"
-                                    value="10000000">
+                                    value="20000000">
                             </div>
                         </div>
                     </div>

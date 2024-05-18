@@ -168,7 +168,7 @@ function getBoosters(tmId, server) {
         // TM Lucci
         // TM Sakazuki & Issho
         // TM Smoker
-        // TM Blackbeard
+        // TM Blackbeard (INT)
         // TM Hawkins
         // TM Halloween Nami
         // TM O-Robi
@@ -645,10 +645,12 @@ function getBoosters(tmId, server) {
         $('#info_1_2x_alt').show();
     } else if (
         tmId == 4108 ||
-        tmId == 4128
+        tmId == 4128 ||
+        tmId == 4147
     ) {
         // TM Coby
         // TM CP0
+        // TM Blackbeard (DEX)
         $('#div_2_5x').show();
         $('#div_1_6x').show();
         $('#div_1_4x_v2').show();
@@ -1050,6 +1052,7 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Intimidate' ||
         iconKey === 'Action Silence' ||
         iconKey === 'Slot Atk Down' ||
+        iconKey === 'Slot Effect Down' ||
         iconKey === 'VS Gauge -' ||
         iconKey === 'S Switch -'
     )
@@ -2709,27 +2712,46 @@ function checkTeamMiniGuideSpecialMet(teamId) {
                     var immuTypes = [];
                     for (var ai in d.action) {
                         var a = d.action[ai];
+
+                        var aType;
+                        if (tmId >= 4147)
+                            aType = a.type;
+                        else
+                            aType = a[0];
+
                         if (
-                            a[0] === 'immu-all' ||
-                            a[0] === 'immu-def' ||
-                            a[0] === 'immu-poison'
+                            aType === 'immu-all' ||
+                            aType === 'immu-def' ||
+                            aType === 'immu-poison'
                         )
-                            immuTypes.push(a[0]);
+                            immuTypes.push(aType);
                     }
 
                     for (var ai in d.action) {
                         var a = d.action[ai];
-                        var aCounter = counters[a[0]];
+
+                        var aType;
+                        var turns;
+                        var aPos;
+                        if (tmId >= 4147) {
+                            aType = a.type;
+                            turns = a.turn;
+                            aPos = a.detail ? a.detail.match(/Row +([1-3])/i) : null;
+                        } else {
+                            aType = a[0];
+                            turns = a[1].match(/([0-9])+T/i);
+                            aPos = a[1].match(/Row +([1-3])/i);
+                        }
+
+                        var aCounter = counters[aType];
 
                         // For specials with turns
-                        var turns = a[1].match(/([0-9])+T/i);
-                        var aPos = a[1].match(/Row +([1-3])/i);
-                        if (turns && turns[1] != "99") {
-                            var numOfTurns = turns[1];
+                        if (a.turn && a.turn != 99 || turns && turns[1] != "99") {
+                            var numOfTurns = tmId >= 4147 ? a.turn : turns[1];
                             var isCaptainRow = (aPos == null || aPos[1] == '1');
 
                             // Assume max Bind and Despair sockets
-                            if (a[0] === 'bind' || a[0] === 'desp') {
+                            if (aType === 'bind' || aType === 'desp') {
                                 numOfTurns -= 3;
 
                                 if (numOfTurns <= 0)
@@ -2755,11 +2777,11 @@ function checkTeamMiniGuideSpecialMet(teamId) {
 
                                 // Special not met
                                 if (numOfTurns > 0)
-                                    specialsNeeded[a[0]] = numOfTurns + (numOfTurns == 1 ? ' turn' : ' turns');
+                                    specialsNeeded[aType] = numOfTurns + (numOfTurns == 1 ? ' turn' : ' turns');
                             }
                         } else if (aCounter && valuableSpecialsWithoutTurns.includes(aCounter)) { // For specials slot-change / slot-block
                             if (checkTeamSpecialMet(teamId, filter_map_sp[aCounter]) != 0)
-                                specialsNeeded["Change Orbs"] = a[1];
+                                specialsNeeded["Change Orbs"] = tmId >= 4147 ? a.detail : a[1];
                         }
                     }
                 }
@@ -3469,41 +3491,62 @@ $(document).ready(function () {
                         for (var ai in d.action) {
                             var a = d.action[ai];
 
-                            if (d.type === 'Interrupt') {
-                                var guideActionClone = $('#guide-interrupt-clone').clone();
-                                var guideActionId = guideStageTypeId + '-i' + i;
-                                guideActionClone.attr('id', guideActionId);
+                            var guideActionClone;
 
-                                guideActionClone.find('.guide-action-type').html(decorateSpIcon(a, true));
-                                createTooltip(guideActionClone.find('.guide-action-type'), getIconTooltip(a));
+                            if (tmId >= 4147)
+                                guideActionClone = $('#guide-action-clone').clone();
+                            else
+                                guideActionClone = $('#guide-action-clone-old').clone();
+
+                            var guideActionId = guideStageTypeId + '-a' + i;
+                            guideActionClone.attr('id', guideActionId);
+
+                            if (tmId >= 4147) {
+                                guideActionClone.find('.guide-action-type').html(decorateSpIcon(a.type, true));
+                                createTooltip(guideActionClone.find('.guide-action-type'), getIconTooltip(a.type));
+
+                                if (a.turn)
+                                    guideActionClone.find('.guide-action-turn').html(`${a.turn}T`);
+
+                                if (a.detail)
+                                    guideActionClone.find('.guide-action-detail').html(`(${decorateStr(a.detail, true)})`);
                             } else {
-                                var guideActionClone = $('#guide-action-clone').clone();
-                                var guideActionId = guideStageTypeId + '-a' + i;
-                                guideActionClone.attr('id', guideActionId);
-
                                 guideActionClone.find('.guide-action-type').html(decorateSpIcon(a[0], true));
                                 createTooltip(guideActionClone.find('.guide-action-type'), getIconTooltip(a[0]));
                                 guideActionClone.find('.guide-action-detail').html(decorateStr(a[1], true));
+                            }
 
-                                var aCounter = counters[a[0]];
-                                if (aCounter) {
-                                    if (Array.isArray(aCounter)) {
-                                        for (var ac in aCounter)
-                                            createActionCounterBtn(guideActionClone, aCounter[ac]);
-                                    } else
-                                        createActionCounterBtn(guideActionClone, aCounter);
-                                } else if (a[0] === 'cd-red') {
-                                    var tcFilterClone = $('#guide-tc-filter-clone').clone();
-                                    tcFilterClone.attr('id', '');
+                            var aType;
 
-                                    var tcFilterBtn = tcFilterClone.find('.guide-tc-filter');
-                                    createTooltip(tcFilterBtn, "Filter these Units");
+                            if (tmId >= 4147)
+                                aType = a.type;
+                            else
+                                aType = a[0];
 
-                                    var tcStr = a[1].substring(a[1].indexOf(', ') + 2);
-                                    tcFilterBtn.data('tc', tcStr);
+                            var aCounter = counters[aType];
+                            if (aCounter) {
+                                if (Array.isArray(aCounter)) {
+                                    for (var ac in aCounter)
+                                        createActionCounterBtn(guideActionClone, aCounter[ac]);
+                                } else
+                                    createActionCounterBtn(guideActionClone, aCounter);
+                            } else if (aType === 'cd-red') {
+                                var tcFilterClone = $('#guide-tc-filter-clone').clone();
+                                tcFilterClone.attr('id', '');
 
-                                    guideActionClone.find('.guide-filter-list').append(tcFilterClone);
-                                }
+                                var tcFilterBtn = tcFilterClone.find('.guide-tc-filter');
+                                createTooltip(tcFilterBtn, "Filter these Units");
+
+                                var tcStr;
+
+                                if (tmId >= 4147)
+                                    tcStr = a.detail;
+                                else
+                                    tcStr = a[1].substring(a[1].indexOf(', ') + 2);
+
+                                tcFilterBtn.data('tc', tcStr);
+
+                                guideActionClone.find('.guide-filter-list').append(tcFilterClone);
                             }
 
                             guideStageTypeClone.find('.guide-action-list').append(guideActionClone);
@@ -4556,7 +4599,10 @@ $(document).ready(function () {
             { "data": "id" },
             { "data": "supportChar" },
             { "data": "supportDescription" },
-            { "data": "name" }
+            {
+                "data": "name",
+                "defaultContent": "<i>undefined</i>"
+            }
         ],
         "columnDefs": [
             {
