@@ -120,7 +120,7 @@ var tms = {
         info: 'i.imgur.com/CMGb9OQ.png'
     },
     2690: {
-        name: 'Blackbeard',
+        name: 'Blackbeard (INT)',
         thumb: 2690,
         info: 'i.imgur.com/KtGlRXi.png'
     },
@@ -372,6 +372,11 @@ var tms = {
     4128: {
         name: 'CP0 (1am ~ 6am)',
         thumb: 4128,
+        info: ''
+    },
+    4147: {
+        name: 'Blackbeard (DEX) (1am ~ 6am)',
+        thumb: 4147,
         info: ''
     },
 };
