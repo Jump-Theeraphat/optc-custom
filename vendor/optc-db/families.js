@@ -698,14 +698,17 @@ const Yorueka = [ "Yorueka" ];
 const Aramaki = [ "Aramaki", "Ryokugyu", "Greenbull" ];
 const Tensei = [ "Tensei", "Kurouma" ];
 const Hamlet = [ "Hamlet" ];
-const Lilith = [ "Lilith", "Dr. Vegapunk", "PUNK-02" ];
+const Lilith = [ "Lilith", "PUNK-02" ];
 const Shakuyaku = [ "Shakuyaku", "Shakky" ];
 const SHawk = [ "S-Hawk" ];
 const SShark = [ "S-Shark" ];
-const Atlas = [ "Atlas", "Dr. Vegapunk", "PUNK-05" ];
-const Edison = [ "Edison", "Dr. Vegapunk", "PUNK-03" ];
-const Pythagoras = [ "Pythagoras", "Dr. Vegapunk", "PUNK-04" ];
-const York = [ "York", "Dr. Vegapunk", "PUNK-06" ];
+const Atlas = [ "Atlas", "PUNK-05" ];
+const Edison = [ "Edison", "PUNK-03" ];
+const Pythagoras = [ "Pythagoras", "PUNK-04" ];
+const York = [ "York", "PUNK-06" ];
+const Vegapunk = [ "Dr. Vegapunk", "Stella" ];
+const Shaka = [ "Shaka", "PUNK-01" ];
+const Hakugan = [ "Hakugan" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4733,6 +4736,17 @@ window.families = {
     4133: [ ...Atlas ],
     4134: [ ...Edison, ...Pythagoras ],
     4135: [ ...York ],
+    4136: [ ...Vegapunk ],
+    4137: [ ...Vegapunk ],
+    4138: [ ...Shaka ],
+    4139: [ ...JewelryBonney ],
+    4140: [ ...TrafalgarDWaterLaw, ...Bepo ],
+    4141: [ ...EustassKid, ...Killer ],
+    4142: [ ...EustassKid, ...Killer ],
+    4143: [ ...Sachi, ...Penguin ],
+    4144: [ ...JeanBart ],
+    4145: [ ...Hakugan ],
+    4146: [ ...MarshallDTeach ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
