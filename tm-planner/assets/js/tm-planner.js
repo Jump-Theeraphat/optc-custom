@@ -4190,7 +4190,7 @@ $(document).ready(function () {
 
                 var unitDetail = details[unitId];
 
-                if (unitDetail.superSpecial || unitDetail.VSSpecial) {
+                if (unitDetail && (unitDetail.superSpecial || unitDetail.VSSpecial)) {
                     var superVs;
                     if (origId > 9000) {
                         // VS Units
