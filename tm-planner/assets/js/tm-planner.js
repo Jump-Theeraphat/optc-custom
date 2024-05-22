@@ -4058,7 +4058,8 @@ $(document).ready(function () {
                         if (!filterRegex.test(special))
                             $(this).addClass(filterClass);
                     }
-                }
+                } else
+                    $(this).addClass(filterClass);
             });
         }
     });
@@ -4103,7 +4104,8 @@ $(document).ready(function () {
                         if (!filterRegex.test(sailor))
                             $(this).addClass(filterClass);
                     }
-                }
+                } else
+                    $(this).addClass(filterClass);
             });
         }
     });
@@ -4163,7 +4165,8 @@ $(document).ready(function () {
                             $(this).addClass(filterClass);
                     } else
                         $(this).addClass(filterClass);
-                }
+                } else
+                    $(this).addClass(filterClass);
             });
         }
     });
