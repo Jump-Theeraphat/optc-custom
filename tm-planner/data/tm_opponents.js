@@ -19480,7 +19480,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Eneru', 'PSY'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19528,7 +19528,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Crocodile', 'QCK'],
-                    hp_: 1200000,
+                    hp: 1500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19574,7 +19574,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Katakuri', 'INT'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19620,7 +19620,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Doffy', 'PSY'],
-                    hp_: 2000000,
+                    hp: 2500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19669,7 +19669,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Kaido & Big Mom', 'QCK'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -19735,7 +19735,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Blackbeard', 'QCK'],
-                    hp_: 2500000,
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
