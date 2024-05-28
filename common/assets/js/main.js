@@ -76,6 +76,7 @@ function getThumb(thumbId) {
     if (
         paddedThumbId === '4129' ||
         paddedThumbId === '4130' ||
+        paddedThumbId === '4131' ||
         paddedThumbId === '4147' ||
         paddedThumbId === '4150' ||
         paddedThumbId === '4151' ||
@@ -89,6 +90,7 @@ function getThumb(thumbId) {
         paddedThumbId === '4159' ||
         paddedThumbId === '4162' ||
         paddedThumbId === '4163' ||
+        paddedThumbId === '4170' ||
         paddedThumbId === '9999'
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';

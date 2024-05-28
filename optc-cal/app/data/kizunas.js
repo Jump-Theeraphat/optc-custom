@@ -242,4 +242,9 @@ var kizunas = {
         name: 'Bonney 6+ (~ 6am)',
         thumb: 4139
     },
+    4131: {
+        name: 'Luffy (Egghead) (~ 6am)',
+        thumb: 4131,
+        xch_id: 4170
+    },
 };
