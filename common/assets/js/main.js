@@ -74,23 +74,6 @@ function getThumb(thumbId) {
 
     // Special cases for new thumbs
     if (
-        paddedThumbId === '4129' ||
-        paddedThumbId === '4130' ||
-        paddedThumbId === '4131' ||
-        paddedThumbId === '4147' ||
-        paddedThumbId === '4150' ||
-        paddedThumbId === '4151' ||
-        paddedThumbId === '4152' ||
-        paddedThumbId === '4153' ||
-        paddedThumbId === '4154' ||
-        paddedThumbId === '4155' ||
-        paddedThumbId === '4156' ||
-        paddedThumbId === '4157' ||
-        paddedThumbId === '4158' ||
-        paddedThumbId === '4159' ||
-        paddedThumbId === '4162' ||
-        paddedThumbId === '4163' ||
-        paddedThumbId === '4170' ||
         paddedThumbId === '9999'
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';
