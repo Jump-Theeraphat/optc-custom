@@ -17,6 +17,7 @@ function showFooter() {
     const tmColor = 'rgba(255, 165, 0, 0.6)';
     const kizunaColor = 'rgba(255, 140, 0, 0.6)';
     const pkaColor = 'rgba(250, 128, 114, 0.6)';
+    const coopColor = 'rgba(133, 193, 249, 0.6)';
     const spColor = 'rgba(147, 112, 219, 0.6)';
 
     function createFortnightEvent(eventArray, isPST) {
@@ -390,6 +391,50 @@ function showFooter() {
         });
     }
 
+    function createCoopEvent(eventArray, isPST) {
+        coopEvents.forEach(function(e) {
+            var res = {};
+
+            var eId = e['id'];
+
+            var coop = coops[eId];
+            res['id'] = eId;
+            res['title'] = '『Co-op』\n' + coop['name'];
+
+            if (coop['thumb'])
+                res['thumb'] = coop['thumb'];
+            else
+                res['thumb'] = eId;
+
+            res['type'] = 'coop';
+
+            // Add one day for 19:00 events for GMT mode
+            var start = e['start'];
+            var end = e['end'];
+
+            if (!isPST) {
+                var startDate = moment(start);
+                startDate.add(1, 'd');
+                start = startDate.format('YYYY-MM-DD');
+
+                if (end) {
+                    var endDate = moment(end);
+                    endDate.add(1, 'd');
+                    end = endDate.format('YYYY-MM-DD');
+                }
+            }
+
+            start += ' 02:30';
+            res['start'] = start;
+            res['end'] = end;
+
+            res['color'] = coopColor;
+            res['textColor'] = 'black';
+
+            eventArray.push(res);
+        });
+    }
+
     function createSpecialEvent(eventArray, isPST) {
         specialEvents.forEach(function(e) {
             var res = {};
@@ -595,6 +640,8 @@ function showFooter() {
                     data = kizunas[id];
                 else if (e['type'] === 'pka')
                     data = pkas[id];
+                else if (e['type'] === 'coop')
+                    data = coops[id];
                 else if (e['type'] === 'special')
                     data = specials[id];
 
@@ -730,6 +777,7 @@ function showFooter() {
         createTmEvent(eventArray, isPST);
         createKizunaEvent(eventArray, isPST);
         createPkaEvent(eventArray, isPST);
+        createCoopEvent(eventArray, isPST);
         createSpecialEvent(eventArray, isPST);
         createSpecialBgEvent(eventArray, isPST);
 
@@ -773,6 +821,7 @@ function showFooter() {
                     || event['type'] === 'tm'
                     || event['type'] === 'kizuna'
                     || event['type'] === 'pka'
+                    || event['type'] === 'coop'
                     || (event['type'] === 'special' && event['id'] !== 'dummy')
                 ) {
                     var thumbArray = [];
