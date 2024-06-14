@@ -53,6 +53,7 @@ var icon_tooltips = {
     'para':                   'Paralysis',
     'blind':                  'Blind',
     'burn':                   'Burn',
+    'burn-p':                 'Burn while Perfect',
     'atk-down':               'Atk Down',
     'chain-down':             'Chain Down',
     'dmg-up':                 'Increase Damage Taken',

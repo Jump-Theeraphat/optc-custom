@@ -3,6 +3,7 @@ const VS_RED = 'VS Gauge -';
 const SW_RED = 'S Switch -';
 
 const ATK = 'atk';
+const ATK_BOOST = 'atk-boost';
 const ATK_DOWN = 'atk-down';
 const BAR_GD = 'bar-gd';
 const BAR_GT = 'bar-gt';
@@ -12,6 +13,8 @@ const BAR_SLOT = 'bar-slot';
 const BIND = 'bind';
 const BLIND = 'blind';
 const BLOW_AWAY = 'blow-away';
+const BURN = 'burn';
+const BURN_P = 'burn-p';
 const CD_REW = 'cd-rew';
 const CHAIN_ATK_DOWN = 'chain-atk-down';
 const CHAIN_DOWN = 'chain-down';
@@ -21,6 +24,7 @@ const DEF_NULL = 'def-null';
 const DEF_PERC = 'def-perc';
 const DEF_THRES = 'def-thres';
 const DESP = 'desp';
+const DMG_LIMIT = 'dmg-limit';
 const DMG_NORMAL = 'dmg-normal';
 const DMG_UP = 'dmg-up';
 const HP_CUT = 'hp-cut'
@@ -38,12 +42,15 @@ const PARA = 'para';
 const RESIL = 'resil';
 const SHIP_BIND = 'Ship Bind';
 const SLOT_ATK_DOWN = 'Slot Atk Down';
+const SLOT_BIND = 'slot-bind';
 const SLOT_BLOCK = 'slot-block';
+const SLOT_BOOST = 'slot-boost';
 const SLOT_CHANGE = 'slot-change';
 const SLOT_EFT_DOWN = 'Slot Effect Down';
 const SLOT_NEG = 'slot-neg';
 const SP_BIND = 'silence';
 const SP_LIMIT = 'sp-limit';
+const STUN = 'stun';
 
 var tm_opponents = {
     // ========== Mihawk ==========
@@ -2594,7 +2601,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-change',     'BOMB+, Row 2'],
+                                ['slot-change',     'S.BOMB, Row 2'],
                                 ['para',            '5T, Col L'],
                                 ['desp',            '5T'],
                                 ['immu-all',        '99+T']
@@ -4347,7 +4354,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-change',     'Bomb'],
+                                ['slot-change',     'BOMB'],
                                 ['desp',            '5T'],
                                 ['bind',            '5T, Row 2'],
                                 ['para',            '5T, Row 3'],
@@ -4836,7 +4843,7 @@ var tm_opponents = {
                             action: [
                                 ['hp-cut',          '50%'],
                                 ['silence',         '2T'],
-                                ['slot-change',     'Bomb'],
+                                ['slot-change',     'BOMB'],
                                 ['bind',            '5T, Row 2']
                             ]
                         }
@@ -4861,7 +4868,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['slot-lock',       'Great 1x'],
-                                ['slot-change',     'Bomb']
+                                ['slot-change',     'BOMB']
                             ]
                         },
                         {
@@ -6401,7 +6408,7 @@ var tm_opponents = {
                             action: [
                                 ['bind',            '4T, Row 2 3'],
                                 ['silence',         '2T, Row 2 3'],
-                                ['slot-block',      'Block/TND'],
+                                ['slot-block',      'BLOCK/TND'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -6799,7 +6806,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-block',      'Block/Bad'],
+                                ['slot-block',      'BLOCK/Bad'],
                                 ['tap-limit',       '10T, 5x'],
                                 ['bar-slot',        '1T, 4x, DEX'],
                                 ['immu-delay',      '99+T']
@@ -6916,7 +6923,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-block',      'Block/EMPTY/BOMB'],
+                                ['slot-block',      'BLOCK/EMPTY/BOMB'],
                                 ['para',            '5T'],
                                 ['chain-down',      '5T, 0.1x'],
                                 ['burn',            '5T, 8000'],
@@ -8545,7 +8552,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-block',      'Block/Bad/EMPTY'],
+                                ['slot-block',      'BLOCK/Bad/EMPTY'],
                                 ['bind',            '8T, Row 1'],
                                 ['silence',         '5T'],
                                 ['immu-delay',      '99+T']
@@ -8554,7 +8561,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1, Every Turn After',
                             action: [
-                                ['slot-block',      'Block/Bad/EMPTY']
+                                ['slot-block',      'BLOCK/Bad/EMPTY']
                             ]
                         },
                         {
@@ -8945,7 +8952,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['type-change',     'STR/INT'],
-                                ['slot-block',      'Block/Bad'],
+                                ['slot-block',      'BLOCK/Bad'],
                                 ['silence',         '5T'],
                                 ['def-perc',        '5T, 90%'],
                                 ['immu-delay',      '99+T']
@@ -19780,6 +19787,321 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 { type: DMG_NORMAL, detail: '150K' },
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Mihawk (DEX) ==========
+    4177: {
+        3267: {
+            name: 'Mr. 4 & Miss Merry X-Mas',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Mr. 4 & Miss Merry X-Mas', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 5, detail: 'Col L' },
+                                { type: STUN, detail: 'Col R' },
+                                { type: NAO, turn: 99 },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: DMG_UP, turn: 2 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        890: {
+            name: ['Per', 'ona'],
+            type: ['PSY', 'QCK'],
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Perona', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: SLOT_BIND, turn: 3, detail: 'Row 1' },
+                                { type: NAO, turn: 99 },
+                                { type: BURN_P, turn: 6, detail: '15000' },
+                                { type: DEF, turn: 7 },
+                                { type: INTIM, turn: 2, detail: 'Slot Boost, -2' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3805: {
+            name: ['Sugar'],
+            type: ['INT'],
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sugar', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '80%' },
+                                { type: BIND, turn: 9, detail: 'Col L' },
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: NAO, turn: 99 },
+                                { type: HUNGER, detail: '1x' },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: BAR_SLOT, turn: 2, detail: '2x RCV' },
+                                { type: INTIM, turn: 2, detail: 'Color Affinity, -2' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '100K' },
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3433: {
+            name: ['Ulti & ', 'Page One'],
+            type: ['DEX', 'QCK'],
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'QCK/DEX/INT' },
+                                { type: VS_RED, turn: 5, detail: 'QCK/DEX/INT' },
+                                { type: SW_RED, turn: 5, detail: 'QCK/DEX/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ulti & Page One', 'QCK'],
+                    hp: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 2, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: INTIM, turn: 2, detail: 'Atk Boost, -2' },
+                                { type: DESP, turn: 9 },
+                                { type: PARA, turn: 11 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Color Affinity (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2866: {
+            name: 'Kuro & Django',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Slasher/Free Spirit/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Slasher/Free Spirit/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Slasher/Free Spirit/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Kuro & Django', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BIND, turn: 3 },
+                                { type: BURN, turn: 6, detail: '15000' },
+                                { type: NAO, turn: 99 },
+                                { type: INTIM, turn: 2, detail: 'Atk Boost/Slot Boost, -1' },
+                                { type: DEF_NULL, turn: 2 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kuro & Django', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK, detail: 'BLOCK/Bad' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 10 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: DMG_LIMIT, turn: 2, detail: '70%' },
+                                { type: SP_BIND, turn: 5, detail: 'Col L' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Base Atk Boost (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' }
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                { type: CD_REW, turn: 3 },
+                                { type: RESIL, turn: 6 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4177: {
+            name: ['Mih', 'awk'],
+            type: ['INT', 'QCK'],
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Mihawk', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: CD_REW, turn: 3, detail: 'Col L' },
+                                { type: BURN, turn: 6, detail: '15000' },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Mihawk', 'QCK'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 6, detail: 'Col R' },
+                                { type: SLOT_CHANGE, detail: 'PARA' },
+                                { type: NAO, turn: 99 },
+                                { type: ATK_BOOST, turn: 5, detail: '1.1x' },
+                                { type: SLOT_BOOST, turn: 5, detail: '1.1x' },
+                                { type: BAR_SLOT, turn: 3, detail: '2x DEX' },
+                                { type: BIND, turn: 9, detail: 'Col L' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Barrier Not Applied (once)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '100k' },
+                                { type: SLOT_ATK_DOWN, turn: 5, detail: 'RCV/TND/WANO/BOMB/S.BOMB' }
                             ]
                         }
                     ]

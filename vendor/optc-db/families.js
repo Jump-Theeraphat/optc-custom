@@ -702,6 +702,7 @@ const Lilith = [ "Lilith", "PUNK-02" ];
 const Shakuyaku = [ "Shakuyaku", "Shakky" ];
 const SHawk = [ "S-Hawk" ];
 const SShark = [ "S-Shark" ];
+const SSnake = [ "S-Snake" ];
 const Atlas = [ "Atlas", "PUNK-05" ];
 const Edison = [ "Edison", "PUNK-03" ];
 const Pythagoras = [ "Pythagoras", "PUNK-04" ];
@@ -4733,6 +4734,7 @@ window.families = {
     4128: [ ...RobLucci, ...Kaku, ...Stussy ],
     4129: [ ...MonkeyDLuffy ],
     4130: [ ...MonkeyDLuffy ],
+    4131: [ ...MonkeyDLuffy ],
     4132: [ ...SShark ],
     4133: [ ...Atlas ],
     4134: [ ...Edison, ...Pythagoras ],
@@ -4762,6 +4764,18 @@ window.families = {
     4159: [ ...Jinbe ],
     4162: [ ...MonkeyDLuffy ],
     4163: [ ...Yamato ],
+    4164: [ ...Yamato ],
+    4167: [ ...SSnake ],
+    4170: [ ...RobLucci ],
+    4171: [ ...RoronoaZoro ],
+    4172: [ ...VinsmokeSanji ],
+    4173: [ ...Kuina ],
+    4174: [ ...Zeff ],
+    4176: [ ...DraculeMihawk ],
+    4177: [ ...DraculeMihawk ],
+    4179: [ ...Usopp ],
+    4180: [ ...Kaya ],
+    4181: [ ...UsoppPirates ],
 
     //break
     4986: [ ...MonkeyDLuffy ],

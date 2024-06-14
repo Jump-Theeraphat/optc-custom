@@ -646,11 +646,13 @@ function getBoosters(tmId, server) {
     } else if (
         tmId == 4108 ||
         tmId == 4128 ||
-        tmId == 4147
+        tmId == 4147 ||
+        tmId == 4177
     ) {
         // TM Coby
         // TM CP0
         // TM Blackbeard (DEX)
+        // TM Mihawk (DEX)
         $('#div_2_5x').show();
         $('#div_1_6x').show();
         $('#div_1_4x_v2').show();
@@ -667,13 +669,20 @@ function getBoosters(tmId, server) {
 
     var boosters = [];
     if (server === 'glb') {
-        if (tmId < 3339) {
+        if (tmId < 3339)
             $('#div_1_2x_tm_rr').show();
-            $('#div_1_2x_tm').show();
-        } else {
+        else
             $('#div_1_2x_tm_rr').hide();
+
+        if (tmId < 3339 || tmId >= 4177)
+            $('#div_1_2x_tm').show();
+        else
             $('#div_1_2x_tm').hide();
-        }
+
+        if (tmId < 4177)
+            $('#div_1_2x_fortnight').show();
+        else
+            $('#div_1_2x_fortnight').hide();
 
         if (tmId < 4108) {
             boosters = tm_boosters[tmId];
