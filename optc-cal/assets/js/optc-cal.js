@@ -279,7 +279,11 @@ function showFooter() {
             var tm = tms[eId];
             res['id'] = eId;
             res['title'] = '『TM』\n' + tm['name'];
-            res['thumb'] = tm['thumb'];
+
+            if (tm['thumb'])
+                res['thumb'] = tm['thumb'];
+            else
+                res['thumb'] = eId;
 
             res['type'] = 'tm';
 
@@ -652,7 +656,13 @@ function showFooter() {
                 //if (e['type'] === 'special' && e['subType'] === 'Blitz Battle')
                 //    ed.find('.countdown').css('display', 'flex');
 
-                ed.find('.event-thumb').html(createImgHtml(getThumb(data['thumb']), 50, false));
+                var thumbId;
+                if (data['thumb'])
+                    thumbId = data['thumb'];
+                else
+                    thumbId = id;
+
+                ed.find('.event-thumb').html(createImgHtml(getThumb(thumbId), 50, false));
                 ed.find('.event-title').text(data['name']);
 
                 if (
@@ -679,7 +689,7 @@ function showFooter() {
                     createListItem(ed, '.reddit-video-wiki', 'https://www.reddit.com/r/OnePieceTC/wiki/video/', videoWiki[id], 'Reddit Video Wiki');
 
                 if (e['type'] === 'tm') {
-                    if (data.info != '')
+                    if (data.info)
                         createListItem(ed, '.tm-info', 'https://', data.info, 'TM Info Graphic');
 
                     createListItem(ed, '.tm-planner', '/tm-planner/?tmId=', id, 'TM Team Planner');

@@ -1,382 +1,269 @@
 var tms = {
     1808: {
         name: 'Mihawk',
-        thumb: 1808,
         info: 'i.redd.it/1wlxtu6r3ql01.png'
     },
     1853: {
         name: 'Whitebeard',
-        thumb: 1853,
         info: 'i.redd.it/604g03thb9r01.png'
     },
     1889: {
         name: 'Cavendish',
-        thumb: 1889,
         info: 'i.imgur.com/hM13hHv.png'
     },
     1916: {
-        name: 'Gear 4',
-        thumb: 1916,
-        info: ''
+        name: 'Gear 4'
     },
     1941: {
         name: 'Ace',
-        thumb: 1941,
         info: 'i.redd.it/pzbzhnv2bk411.png'
     },
     1972: {
         name: 'Valentine Sabo',
-        thumb: 1972,
         info: 'i.imgur.com/Sd6BIUR.png'
     },
     2000: {
         name: 'Sanji & Zoro',
-        thumb: 2000,
         info: 'i.imgur.com/S91geBt.png'
     },
     2064: {
         name: 'Kizaru',
-        thumb: 2064,
         info: 'i.imgur.com/gw4s7Cr.png'
     },
     2109: {
         name: 'Big Mom',
-        thumb: 2109,
         info: 'i.imgur.com/c17jXBm.jpg'
     },
     2137: {
         name: 'Crocodile',
-        thumb: 2137,
         info: 'i.imgur.com/KeJBbsj.png'
     },
     2175: {
         name: 'Jack',
-        thumb: 2175,
         info: 'i.imgur.com/RIR63CN.png'
     },
     2211: {
         name: 'Eneru',
-        thumb: 2211,
         info: 'i.imgur.com/g6OUbLO.jpg'
     },
     2261: {
         name: 'Shanks',
-        thumb: 2261,
         info: 'i.imgur.com/AiMEgJY.jpg'
     },
     2299: {
         name: 'Boa Hancock',
-        thumb: 2299,
         info: 'i.imgur.com/wrLWAbA.png'
     },
     2336: {
         name: 'Law',
-        thumb: 2336,
         info: 'i.imgur.com/GaFJQ8Y.jpg'
     },
     2362: {
         name: 'Christmas Nami',
-        thumb: 2362,
         info: 'i.imgur.com/EwKiR7y.png'
     },
     2387: {
         name: 'Kaido',
-        thumb: 2387,
         info: 'i.imgur.com/iTBw5FQ.jpg'
     },
     2443: {
         name: 'Doflamingo',
-        thumb: 2443,
         info: 'i.imgur.com/shsApVp.png'
     },
     2469: {
         name: 'Smoothie & Oven',
-        thumb: 2469,
         info: 'i.imgur.com/o5PWrbW.png'
     },
     2510: {
         name: 'Weevil',
-        thumb: 2510,
         info: 'i.imgur.com/yd2O3of.png'
     },
     2557: {
-        name: 'Shanks & Beckman',
-        thumb: 2557,
-        info: ''
+        name: 'Shanks & Beckman'
     },
     2583: {
-        name: 'Lucci',
-        thumb: 2583,
-        info: ''
+        name: 'Lucci'
     },
     2618: {
         name: 'Sakazuki & Issho',
-        thumb: 2618,
         info: 'i.imgur.com/Ye3vCLH.png'
     },
     2659: {
         name: 'Smoker',
-        thumb: 2659,
         info: 'i.imgur.com/CMGb9OQ.png'
     },
     2690: {
         name: 'Blackbeard (INT)',
-        thumb: 2690,
         info: 'i.imgur.com/KtGlRXi.png'
     },
     2729: {
         name: 'Hawkins',
-        thumb: 2729,
         info: 'i.imgur.com/XHWoQs9.png'
     },
     2763: {
         name: 'Halloween Nami',
-        thumb: 2763,
         info: 'i.imgur.com/ABVTYHz.png'
     },
     2792: {
         name: 'O-Robi',
-        thumb: 2792,
         info: 'i.imgur.com/q7DHvOq.png'
     },
     2823: {
         name: 'X Drake',
-        thumb: 2823,
         info: 'i.imgur.com/cAxtgQe.png'
     },
     2850: {
         name: 'Rebecca & Viola',
-        thumb: 2850,
         info: 'i.imgur.com/SvwUseW.png'
     },
     2879: {
         name: 'Vivi',
-        thumb: 2879,
         info: 'i.imgur.com/puuo4dU.png'
     },
     2913: {
         name: 'Shirahoshi',
-        thumb: 2913,
         info: 'i.imgur.com/QzeiQPO.png'
     },
     2977: {
         name: 'Anni Luffy',
-        thumb: 2977,
         info: 'i.imgur.com/GpV102s.png'
     },
     2995: {
         name: 'Zorojuro',
-        thumb: 2995,
         info: 'i.imgur.com/uB6GQSX.png'
     },
     3022: {
         name: 'Reiju',
-        thumb: 3022,
         info: 'i.imgur.com/6gWnSzG.png'
     },
     3060: {
         name: 'Nami & Sanji',
-        thumb: 3060,
         info: 'i.imgur.com/fGp35AD.png'
     },
     3094: {
-        name: 'Jinbe',
-        thumb: 3094,
-        info: ''
+        name: 'Jinbe'
     },
     3115: {
         name: 'Pudding',
-        thumb: 3115,
         info: 'i.imgur.com/TkLUvMe.png'
     },
     3150: {
-        name: 'Kid',
-        thumb: 3150,
-        info: ''
+        name: 'Kid'
     },
     3197: {
-        name: 'Garp',
-        thumb: 3197,
-        info: ''
+        name: 'Garp'
     },
     3239: {
-        name: 'Queen',
-        thumb: 3239,
-        info: ''
+        name: 'Queen'
     },
     3273: {
-        name: 'Luffy & Ace',
-        thumb: 3273,
-        info: ''
+        name: 'Luffy & Ace'
     },
     3297: {
-        name: 'Shiryu',
-        thumb: 3297,
-        info: ''
+        name: 'Shiryu'
     },
     3339: {
-        name: 'Koala',
-        thumb: 3339,
-        info: ''
+        name: 'Koala'
     },
     3368: {
-        name: 'MUGIWARA 56 Zoro',
-        thumb: 3368,
-        info: ''
+        name: 'MUGIWARA 56 Zoro'
     },
     3389: {
-        name: 'Dragon Kaido',
-        thumb: 3389,
-        info: ''
+        name: 'Dragon Kaido'
     },
     3416: {
-        name: 'Stussy',
-        thumb: 3416,
-        info: ''
+        name: 'Stussy'
     },
     3527: {
         name: 'Tashigi (1am ~ 6am)',
-        thumb: 3527,
         info: 'cdn.discordapp.com/attachments/798165270584885268/931603085078433812/tm_tashigi_.png'
     },
     3547: {
-        name: 'Perospero (1am ~ 6am)',
-        thumb: 3547,
-        info: ''
+        name: 'Perospero (1am ~ 6am)'
     },
     3567: {
-        name: 'Kanjuro (1am ~ 6am)',
-        thumb: 3567,
-        info: ''
+        name: 'Kanjuro (1am ~ 6am)'
     },
     3588: {
-        name: 'Ulti (1am ~ 6am)',
-        thumb: 3588,
-        info: ''
+        name: 'Ulti (1am ~ 6am)'
     },
     3621: {
-        name: 'Sabo (1am ~ 6am)',
-        thumb: 3621,
-        info: ''
+        name: 'Sabo (1am ~ 6am)'
     },
     3645: {
-        name: 'Moria v2 (1am ~ 6am)',
-        thumb: 3645,
-        info: ''
+        name: 'Moria v2 (1am ~ 6am)'
     },
     3663: {
-        name: 'Franky (1am ~ 6am)',
-        thumb: 3663,
-        info: ''
+        name: 'Franky (1am ~ 6am)'
     },
     3689: {
-        name: 'RED Sanji (1am ~ 6am)',
-        thumb: 3689,
-        info: ''
+        name: 'RED Sanji (1am ~ 6am)'
     },
     3712: {
-        name: 'RED Chopper v2 (1am ~ 6am)',
-        thumb: 3712,
-        info: ''
+        name: 'RED Chopper v2 (1am ~ 6am)'
     },
     3736: {
-        name: 'Law v2 (1am ~ 6am)',
-        thumb: 3736,
-        info: ''
+        name: 'Law v2 (1am ~ 6am)'
     },
     3758: {
-        name: 'O-Lin (1am ~ 6am)',
-        thumb: 3758,
-        info: ''
+        name: 'O-Lin (1am ~ 6am)'
     },
     3778: {
-        name: 'Who\'s-Who (1am ~ 6am)',
-        thumb: 3778,
-        info: ''
+        name: 'Who\'s-Who (1am ~ 6am)'
     },
     3801: {
-        name: 'Wyper (1am ~ 6am)',
-        thumb: 3801,
-        info: ''
+        name: 'Wyper (1am ~ 6am)'
     },
     3822: {
-        name: 'Izo (1am ~ 6am)',
-        thumb: 3822,
-        info: ''
+        name: 'Izo (1am ~ 6am)'
     },
     3842: {
-        name: 'Fujitora (1am ~ 6am)',
-        thumb: 3842,
-        info: ''
+        name: 'Fujitora (1am ~ 6am)'
     },
     3864: {
-        name: 'Bege (1am ~ 6am)',
-        thumb: 3864,
-        info: ''
+        name: 'Bege (1am ~ 6am)'
     },
     3894: {
-        name: 'Momonosuke (1am ~ 6am)',
-        thumb: 3894,
-        info: ''
+        name: 'Momonosuke (1am ~ 6am)'
     },
     3915: {
-        name: 'Akainu (1am ~ 6am)',
-        thumb: 3915,
-        info: ''
+        name: 'Akainu (1am ~ 6am)'
     },
     3936: {
-        name: 'Flampe (1am ~ 6am)',
-        thumb: 3936,
-        info: ''
+        name: 'Flampe (1am ~ 6am)'
     },
     3965: {
-        name: 'Yamato (1am ~ 6am)',
-        thumb: 3965,
-        info: ''
+        name: 'Yamato (1am ~ 6am)'
     },
     3981: {
-        name: 'Lead Performers (1am ~ 6am)',
-        thumb: 3981,
-        info: ''
+        name: 'Lead Performers (1am ~ 6am)'
     },
     4006: {
-        name: 'Baccarat & Dice & Mr. Tanaka (1am ~ 6am)',
-        thumb: 4006,
-        info: ''
+        name: 'Baccarat & Dice & Mr. Tanaka (1am ~ 6am)'
     },
     4033: {
-        name: 'Blueno & Bepo & Sunny-kun (1am ~ 6am)',
-        thumb: 4033,
-        info: ''
+        name: 'Blueno & Bepo & Sunny-kun (1am ~ 6am)'
     },
     4053: {
-        name: 'Luffy (1am ~ 6am)',
-        thumb: 4053,
-        info: ''
+        name: 'Luffy (1am ~ 6am)'
     },
     4074: {
-        name: 'Edward Newgate (1am ~ 6am)',
-        thumb: 4074,
-        info: ''
+        name: 'Edward Newgate (1am ~ 6am)'
     },
     4089: {
-        name: 'Jinbe (1am ~ 6am)',
-        thumb: 4089,
-        info: ''
+        name: 'Jinbe (1am ~ 6am)'
     },
     4108: {
-        name: 'Coby (1am ~ 6am)',
-        thumb: 4108,
-        info: ''
+        name: 'Coby (1am ~ 6am)'
     },
     4128: {
-        name: 'CP0 (1am ~ 6am)',
-        thumb: 4128,
-        info: ''
+        name: 'CP0 (1am ~ 6am)'
     },
     4147: {
-        name: 'Blackbeard (DEX) (1am ~ 6am)',
-        thumb: 4147,
-        info: ''
+        name: 'Blackbeard (DEX) (1am ~ 6am)'
+    },
+    4177: {
+        name: 'Mihawk (DEX) (1am ~ 6am)',
+        info: 'fixupx.com/tingoki/status/1800849219416453435'
     },
 };
