@@ -1,4 +1,7 @@
 var icon_tooltips = {
+    'vs-red':                 'Reduce VS Gauge',
+    'sw-red':                 'Reduce Super Switch Gauge',
+
     'atk-boost':              'Attack Boost',
     'orb-boost':              'Orb Boost',
     'affinity':               'Color Affinity',
@@ -58,6 +61,7 @@ var icon_tooltips = {
     'chain-down':             'Chain Down',
     'dmg-up':                 'Increase Damage Taken',
     'cd-rew':                 'CD Rewind',
+    'cd-lock':                'CD Lock',
     'slot-block':             'Change to Block Orbs',
     'slot-neg':               'Treat Orbs as Badly Matching',
     'immu-all':               'All Immunity',
@@ -77,6 +81,7 @@ var icon_tooltips = {
     'fixed-target':           'Fixed Target',
     'nao':                    'Normal Attack Only',
     'no-heal':                'No Heal',
+    'heal-down':              'Heal Down',
     'sp-limit':               'Limit Special Usage',
     'blow-away':              'Blow Away',
     'clear-buff':             'Clear Buff',
@@ -87,5 +92,16 @@ var icon_tooltips = {
     'rcv-dmg':                'Receive Damage from Consuming RCV',
     'hunger':                 'Hunger',
     'chain-atk-down':         'Chain ATK Down',
-    'dmg-limit':              'Damage Limit'
+    'dmg-limit':              'Damage Limit',
+    'ca-swap':                'Captain Swap',
+    'ship-bind':              'Ship Bind',
+    'fear':                   'Fear',
+    'p-hard':                 'Makes Perfect Harder',
+    'p-easy':                 'Makes Perfect Easier',
+    'counter':                'Counter',
+    'pain':                   'Pain',
+    'bleed':                  'Bleed',
+    'target-lock':            'Target Lock',
+    'intim':                  'Intimidate',
+    'silence-p':              'Action Silence'
 };

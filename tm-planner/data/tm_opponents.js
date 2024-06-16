@@ -1,6 +1,6 @@
 const CD_RED = 'cd-red';
-const VS_RED = 'VS Gauge -';
-const SW_RED = 'S Switch -';
+const VS_RED = 'vs-red';
+const SW_RED = 'sw-red';
 
 const ATK = 'atk';
 const ATK_BOOST = 'atk-boost';
@@ -33,14 +33,13 @@ const IMMU_ALL = 'immu-all';
 const IMMU_DEF = 'immu-def';
 const IMMU_DELAY = 'immu-delay';
 const IMMU_POISON = 'immu-poison';
-const INTIM = 'Intimidate';
-const LOCK_TARGET = 'Lock Target';
+const INTIM = 'intim';
 const NAO = 'nao';
 const NO_HEAL = 'no-heal';
-const PAIN = 'Pain';
+const PAIN = 'pain';
 const PARA = 'para';
 const RESIL = 'resil';
-const SHIP_BIND = 'Ship Bind';
+const SHIP_BIND = 'ship-bind';
 const SLOT_ATK_DOWN = 'Slot Atk Down';
 const SLOT_BIND = 'slot-bind';
 const SLOT_BLOCK = 'slot-block';
@@ -51,6 +50,7 @@ const SLOT_NEG = 'slot-neg';
 const SP_BIND = 'silence';
 const SP_LIMIT = 'sp-limit';
 const STUN = 'stun';
+const TARGET_LOCK = 'target-lock';
 
 var tm_opponents = {
     // ========== Mihawk ==========
@@ -5677,7 +5677,7 @@ var tm_opponents = {
                             action: [
                                 ['silence',         '5T, Row 1'],
                                 ['atk-down',        '5T, 90%'],
-                                ['No Heal',         '5T'],
+                                ['no-heal',         '5T'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -6086,7 +6086,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['No Heal',         '10T'],
+                                ['no-heal',         '10T'],
                                 ['slot-change',     'RCV']
                             ]
                         },
@@ -6181,7 +6181,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['Swap Captain',    '2T, Row 2'],
+                                ['ca-swap',         '2T, Row 2'],
                                 ['def-perc',        '6T, 90%'],
                                 ['def-thres',       '6T, 90%, 1000'],
                                 ['immu-delay',      '99+T']
@@ -6190,7 +6190,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['Swap Captain',    '5T, Row 3'],
+                                ['ca-swap',         '5T, Row 3'],
                                 ['blow-away',       '99+T, Friend Cap']
                             ]
                         },
@@ -7761,7 +7761,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Ship Bind',       '4T'],
+                                ['ship-bind',       '4T'],
                                 ['def',             '5T']
                             ]
                         },
@@ -7991,7 +7991,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['heal',            '100%'],
-                                ['Ship Bind',       '5T'],
+                                ['ship-bind',       '5T'],
                                 ['atk',             '99+T, 2x']
                             ]
                         }
@@ -8373,7 +8373,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'Random'],
                                 ['slot-lock',       '1x Good'],
-                                ['Ship Bind',       '5T']
+                                ['ship-bind',       '5T']
                             ]
                         }
                     ]
@@ -8739,7 +8739,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-bind',       '5T'],
-                                ['Ship Bind',       '5T']
+                                ['ship-bind',       '5T']
                             ]
                         }
                     ]
@@ -9375,7 +9375,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-bind',       '3T'],
-                                ['Ship Bind',       '10T']
+                                ['ship-bind',       '10T']
                             ]
                         },
                         {
@@ -9501,7 +9501,7 @@ var tm_opponents = {
                             action: [
                                 ['clear-buff',      'Buff Only'],
                                 ['bind',            '8T, Row 3'],
-                                ['CD Lock',         '2x Perfect']
+                                ['cd-lock',         '2x Perfect']
                             ]
                         },
                         {
@@ -9751,7 +9751,7 @@ var tm_opponents = {
                             type: 'Turn 3',
                             action: [
                                 ['slot-bind',       '3T'],
-                                ['Ship Bind',       '10T']
+                                ['ship-bind',       '10T']
                             ]
                         }
                     ]
@@ -9974,7 +9974,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Swap Captain',    '5T'],
+                                ['ca-swap',         '5T'],
                                 ['def',             '3T']
                             ]
                         },
@@ -10016,7 +10016,7 @@ var tm_opponents = {
                             action: [
                                 ['clear-buff',      'Buff Only'],
                                 ['silence',         '2T'],
-                                ['Fear',            '1T'],
+                                ['fear',            '1T'],
                                 ['hunger',          '1x'],
                                 ['chain-atk-down',  '3T, <2.3x chain, 90%'],
                                 ['immu-def',        '99+T']
@@ -10128,7 +10128,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Swap Captain',    '5T']
+                                ['ca-swap',         '5T']
                             ]
                         },
                         {
@@ -10152,7 +10152,7 @@ var tm_opponents = {
                                 ['bind',            '8T, Col L'],
                                 ['chain-down',      '12T, 0.1x'],
                                 ['para',            '5T, Col R'],
-                                ['Harder P',        '99+T'],
+                                ['p-hard',          '99+T'],
                                 ['bar-p',           '3T, 2x'],
                                 ['immu-def',        '99+T']
                             ]
@@ -10423,7 +10423,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['enrage',          '99+T'],
-                                ['No Heal',         '6T']
+                                ['no-heal',         '6T']
                             ]
                         },
                         {
@@ -10626,7 +10626,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Ship Bind',       '10T'],
+                                ['ship-bind',       '10T'],
                                 ['slot-bind',       '10T']
                             ]
                         }
@@ -10807,8 +10807,8 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['Ship Bind',       '5T'],
-                                ['Harder P',        '99+T'],
+                                ['ship-bind',       '5T'],
+                                ['p-hard',          '99+T'],
                                 ['slot-block',      'Bad/BLOCK/BOMB'],
                                 ['bind',            '6T, Row 1'],
                                 ['chain-down',      '10T, 0.1x'],
@@ -10859,7 +10859,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-rew',          '2T'],
-                                ['Ship Bind',       '10T'],
+                                ['ship-bind',       '10T'],
                                 ['para',            '5T'],
                                 ['def-null',        '1T'],
                                 ['immu-delay',      '99+T']
@@ -11007,7 +11007,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-bind',       '10T'],
-                                ['Ship Bind',       '10T']
+                                ['ship-bind',       '10T']
                             ]
                         }
                     ]
@@ -11211,7 +11211,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-block',      'All'],
                                 ['bar-hit',         '3T, 15x'],
-                                ['Counter',         '50%'],
+                                ['counter',         '50%'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -11319,7 +11319,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['cd-rew',          '5T'],
-                                ['Ship Bind',       '10T']
+                                ['ship-bind',       '10T']
                             ]
                         }
                     ]
@@ -11396,7 +11396,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Ship Bind',       '10T'],
+                                ['ship-bind',       '10T'],
                                 ['slot-bind',       '10T']
                             ]
                         }
@@ -11492,7 +11492,7 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['heal',            '50%'],
-                                ['Swap Captain',    '3T'],
+                                ['ca-swap',         '3T'],
                                 ['dmg-normal',      '50000']
                             ]
                         }
@@ -11706,7 +11706,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['cd-rew',          '5T'],
-                                ['Ship Bind',       '10T']
+                                ['ship-bind',       '10T']
                             ]
                         }
                     ]
@@ -11787,7 +11787,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Ship Bind',       '10T'],
+                                ['ship-bind',       '10T'],
                                 ['slot-bind',       '10T'],
                                 ['atk',             '99+T']
                             ]
@@ -11803,7 +11803,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['Swap Captain',    '3T, Bottom Right'],
+                                ['ca-swap',         '3T, Bottom Right'],
                                 ['para',            '5T'],
                                 ['nao',             '99+T'],
                                 ['cd-rew',          '1T'],
@@ -12161,7 +12161,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-bind',       '10T'],
-                                ['Ship Bind',       '10T'],
+                                ['ship-bind',       '10T'],
                                 ['atk',             '99+T']
                             ]
                         }
@@ -12240,7 +12240,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/DEX/PSY'],
-                                ['VS Gauge -',      '10T, STR/DEX/PSY']
+                                ['vs-red',          '10T, STR/DEX/PSY']
                             ]
                         }
                     ]
@@ -12288,7 +12288,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, DEX/QCK/PSY'],
-                                ['VS Gauge -',      '10T, DEX/QCK/PSY']
+                                ['vs-red',          '10T, DEX/QCK/PSY']
                             ]
                         }
                     ]
@@ -12339,7 +12339,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Driven/Cerebral'],
-                                ['VS Gauge -',      '10T, Striker/Driven/Cerebral']
+                                ['vs-red',          '10T, Striker/Driven/Cerebral']
                             ]
                         }
                     ]
@@ -12389,7 +12389,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '10T, All']
+                                ['vs-red',          '10T, All']
                             ]
                         }
                     ]
@@ -12440,7 +12440,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Free Spirit/Cerebral'],
-                                ['VS Gauge -',      '10T, Striker/Free Spirit/Cerebral']
+                                ['vs-red',          '10T, Striker/Free Spirit/Cerebral']
                             ]
                         }
                     ]
@@ -12463,7 +12463,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Ship Bind',       '2T'],
+                                ['ship-bind',       '2T'],
                                 ['slot-block',      'All']
                             ]
                         }
@@ -12522,7 +12522,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Cerebral/Free Spirit'],
-                                ['VS Gauge -',      '10T, Striker/Cerebral/Free Spirit']
+                                ['vs-red',          '10T, Striker/Cerebral/Free Spirit']
                             ]
                         }
                     ]
@@ -12553,7 +12553,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['para',            '2T'],
-                                ['Ship Bind',       '5T']
+                                ['ship-bind',       '5T']
                             ]
                         }
                     ]
@@ -12599,7 +12599,7 @@ var tm_opponents = {
                             action: [
                                 ['desp',            '9T'],
                                 ['bind',            '6T, Row 1'],
-                                ['Swap Captain',    '5T, Row 3'],
+                                ['ca-swap',         '5T, Row 3'],
                                 ['nao',             '99+T'],
                                 ['resil',           '7T'],
                                 ['immu-delay',      '99+T']
@@ -12650,8 +12650,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -12703,8 +12703,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, DEX/QCK/PSY'],
-                                ['VS Gauge -',      '5T, DEX/QCK/PSY'],
-                                ['S Switch -',      '5T, DEX/QCK/PSY']
+                                ['vs-red',          '5T, DEX/QCK/PSY'],
+                                ['sw-red',          '5T, DEX/QCK/PSY']
                             ]
                         }
                     ]
@@ -12762,8 +12762,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Cerebral/Slasher'],
-                                ['VS Gauge -',      '5T, Free Spirit/Cerebral/Slasher'],
-                                ['S Switch -',      '5T, Free Spirit/Cerebral/Slasher']
+                                ['vs-red',          '5T, Free Spirit/Cerebral/Slasher'],
+                                ['sw-red',          '5T, Free Spirit/Cerebral/Slasher']
                             ]
                         }
                     ]
@@ -12828,8 +12828,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/DEX/PSY'],
-                                ['VS Gauge -',      '5T, QCK/DEX/PSY'],
-                                ['S Switch -',      '5T, QCK/DEX/PSY']
+                                ['vs-red',          '5T, QCK/DEX/PSY'],
+                                ['sw-red',          '5T, QCK/DEX/PSY']
                             ]
                         }
                     ]
@@ -12886,8 +12886,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, DEX/QCK/PSY'],
-                                ['VS Gauge -',      '5T, DEX/QCK/PSY'],
-                                ['S Switch -',      '5T, DEX/QCK/PSY']
+                                ['vs-red',          '5T, DEX/QCK/PSY'],
+                                ['sw-red',          '5T, DEX/QCK/PSY']
                             ]
                         }
                     ]
@@ -12963,8 +12963,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Powerhouse/Striker'],
-                                ['VS Gauge -',      '5T, Free Spirit/Powerhouse/Striker'],
-                                ['S Switch -',      '5T, Free Spirit/Powerhouse/Striker']
+                                ['vs-red',          '5T, Free Spirit/Powerhouse/Striker'],
+                                ['sw-red',          '5T, Free Spirit/Powerhouse/Striker']
                             ]
                         }
                     ]
@@ -13058,8 +13058,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Fighter/Shooter'],
-                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Shooter'],
-                                ['S Switch -',      '5T, Free Spirit/Fighter/Shooter']
+                                ['vs-red',          '5T, Free Spirit/Fighter/Shooter'],
+                                ['sw-red',          '5T, Free Spirit/Fighter/Shooter']
                             ]
                         }
                     ]
@@ -13121,8 +13121,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/DEX/PSY'],
-                                ['VS Gauge -',      '5T, QCK/DEX/PSY'],
-                                ['S Switch -',      '5T, QCK/DEX/PSY']
+                                ['vs-red',          '5T, QCK/DEX/PSY'],
+                                ['sw-red',          '5T, QCK/DEX/PSY']
                             ]
                         }
                     ]
@@ -13189,8 +13189,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -13236,8 +13236,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Striker/Cerebral/Shooter'],
-                                ['VS Gauge -',      '5T, Striker/Cerebral/Shooter'],
-                                ['S Switch -',      '5T, Striker/Cerebral/Shooter']
+                                ['vs-red',          '5T, Striker/Cerebral/Shooter'],
+                                ['sw-red',          '5T, Striker/Cerebral/Shooter']
                             ]
                         }
                     ]
@@ -13297,8 +13297,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, DEX/QCK/PSY'],
-                                ['VS Gauge -',      '5T, DEX/QCK/PSY'],
-                                ['S Switch -',      '5T, DEX/QCK/PSY']
+                                ['vs-red',          '5T, DEX/QCK/PSY'],
+                                ['sw-red',          '5T, DEX/QCK/PSY']
                             ]
                         }
                     ]
@@ -13394,8 +13394,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Shooter/Free Spirit'],
-                                ['VS Gauge -',      '5T, Cerebral/Shooter/Free Spirit'],
-                                ['S Switch -',      '5T, Cerebral/Shooter/Free Spirit']
+                                ['vs-red',          '5T, Cerebral/Shooter/Free Spirit'],
+                                ['sw-red',          '5T, Cerebral/Shooter/Free Spirit']
                             ]
                         }
                     ]
@@ -13410,7 +13410,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['silence',         '3T, Row 2 3'],
-                                ['Fear',            '3T, Row 2 3'],
+                                ['fear',            '3T, Row 2 3'],
                                 ['nao',             '99+T'],
                                 ['slot-block',      'All'],
                                 ['bar-p',           '1T, 4x'],
@@ -13427,7 +13427,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['Ship Bind',       '10T']
+                                ['ship-bind',       '10T']
                             ]
                         },
                         {
@@ -13501,8 +13501,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -13564,8 +13564,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/PSY/INT'],
-                                ['VS Gauge -',      '5T, QCK/PSY/INT'],
-                                ['S Switch -',      '5T, QCK/PSY/INT']
+                                ['vs-red',          '5T, QCK/PSY/INT'],
+                                ['sw-red',          '5T, QCK/PSY/INT']
                             ]
                         }
                     ]
@@ -13618,8 +13618,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Slasher/Powerhouse'],
-                                ['VS Gauge -',      '5T, Cerebral/Slasher/Powerhouse'],
-                                ['S Switch -',      '5T, Cerebral/Slasher/Powerhouse']
+                                ['vs-red',          '5T, Cerebral/Slasher/Powerhouse'],
+                                ['sw-red',          '5T, Cerebral/Slasher/Powerhouse']
                             ]
                         }
                     ]
@@ -13636,7 +13636,7 @@ var tm_opponents = {
                                 ['chain-lock',      '5T, 1.1x'],
                                 ['slot-block',      'All'],
                                 ['blind',           '5T'],
-                                ['Swap Captain',    '5T, Bottom Right'],
+                                ['ca-swap',         '5T, Bottom Right'],
                                 ['def-perc',        '5T, 90%']
                             ]
                         },
@@ -13651,7 +13651,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-bind',       '5T, Row 3'],
-                                ['Harder P',        '3T'],
+                                ['p-hard',          '3T'],
                                 ['def',             '5T']
                             ]
                         },
@@ -13678,8 +13678,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Driven/Striker/Slasher'],
-                                ['VS Gauge -',      '5T, Driven/Striker/Slasher'],
-                                ['S Switch -',      '5T, Driven/Striker/Slasher']
+                                ['vs-red',          '5T, Driven/Striker/Slasher'],
+                                ['sw-red',          '5T, Driven/Striker/Slasher']
                             ]
                         }
                     ]
@@ -13731,8 +13731,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Fighter/Free Spirit/Powerhouse'],
-                                ['VS Gauge -',      '5T, Fighter/Free Spirit/Powerhouse'],
-                                ['S Switch -',      '5T, Fighter/Free Spirit/Powerhouse']
+                                ['vs-red',          '5T, Fighter/Free Spirit/Powerhouse'],
+                                ['sw-red',          '5T, Fighter/Free Spirit/Powerhouse']
                             ]
                         }
                     ]
@@ -13838,8 +13838,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/PSY/INT'],
-                                ['VS Gauge -',      '5T, QCK/PSY/INT'],
-                                ['S Switch -',      '5T, QCK/PSY/INT'],
+                                ['vs-red',          '5T, QCK/PSY/INT'],
+                                ['sw-red',          '5T, QCK/PSY/INT'],
                                 ['slot-change',     'INT']
                             ]
                         }
@@ -13855,7 +13855,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['dmg-normal',      '30000'],
-                                ['Fear',            '3T, Row 2 3'],
+                                ['fear',            '3T, Row 2 3'],
                                 ['bind',            '9T, Row 1'],
                                 ['nao',             '99+T'],
                                 ['chain-atk-down',  '5T, <2.5x chain, 90%'],
@@ -13935,8 +13935,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Driven/Powerhouse/Cerebral'],
-                                ['VS Gauge -',      '5T, Driven/Powerhouse/Cerebral'],
-                                ['S Switch -',      '5T, Driven/Powerhouse/Cerebral']
+                                ['vs-red',          '5T, Driven/Powerhouse/Cerebral'],
+                                ['sw-red',          '5T, Driven/Powerhouse/Cerebral']
                             ]
                         }
                     ]
@@ -14044,8 +14044,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/DEX/STR'],
-                                ['VS Gauge -',      '5T, QCK/DEX/STR'],
-                                ['S Switch -',      '5T, QCK/DEX/STR']
+                                ['vs-red',          '5T, QCK/DEX/STR'],
+                                ['sw-red',          '5T, QCK/DEX/STR']
                             ]
                         }
                     ]
@@ -14110,8 +14110,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/QCK/DEX'],
-                                ['VS Gauge -',      '5T, PSY/QCK/DEX'],
-                                ['S Switch -',      '5T, PSY/QCK/DEX']
+                                ['vs-red',          '5T, PSY/QCK/DEX'],
+                                ['sw-red',          '5T, PSY/QCK/DEX']
                             ]
                         }
                     ]
@@ -14128,7 +14128,7 @@ var tm_opponents = {
                                 ['dmg-limit',       '2T, 50%'],
                                 ['slot-change',     'Bad'],
                                 ['cd-rew',          '1T, Row 2 3'],
-                                ['Ship Bind',       '2T'],
+                                ['ship-bind',       '2T'],
                                 ['def',             '8T, 10000x'],
                                 ['resil',           '5T'],
                                 ['immu-all',        '99+T']
@@ -14170,8 +14170,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -14222,8 +14222,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Fighter/Free Spirit/Cerebral'],
-                                ['VS Gauge -',      '5T, Fighter/Free Spirit/Cerebral'],
-                                ['S Switch -',      '8T, Fighter/Free Spirit/Cerebral']
+                                ['vs-red',          '5T, Fighter/Free Spirit/Cerebral'],
+                                ['sw-red',          '8T, Fighter/Free Spirit/Cerebral']
                             ]
                         }
                     ]
@@ -14318,7 +14318,7 @@ var tm_opponents = {
                         {
                             type: '<20%',
                             action: [
-                                ['No Heal',         '5T'],
+                                ['no-heal',         '5T'],
                                 ['slot-change',     'Poison']
                             ]
                         }
@@ -14338,8 +14338,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/DEX/INT'],
-                                ['VS Gauge -',      '5T, STR/DEX/INT'],
-                                ['S Switch -',      '8T, STR/DEX/INT']
+                                ['vs-red',          '5T, STR/DEX/INT'],
+                                ['sw-red',          '8T, STR/DEX/INT']
                             ]
                         }
                     ]
@@ -14368,7 +14368,7 @@ var tm_opponents = {
                             action: [
                                 ['def-perc',        '3T'],
                                 ['slot-bind',       '?T'],
-                                ['No Heal',         '?T'],
+                                ['no-heal',         '?T'],
                                 ['bar-hit',         '2T, 2x']
                             ]
                         }
@@ -14431,8 +14431,8 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['No Heal',         '5T'],
-                                ['Ship Bind',       '5T']
+                                ['no-heal',         '5T'],
+                                ['ship-bind',       '5T']
                             ]
                         },
                         {
@@ -14474,8 +14474,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Slasher/Powerhouse/Cerebral'],
-                                ['VS Gauge -',      '5T, Slasher/Powerhouse/Cerebral'],
-                                ['S Switch -',      '5T, Slasher/Powerhouse/Cerebral']
+                                ['vs-red',          '5T, Slasher/Powerhouse/Cerebral'],
+                                ['sw-red',          '5T, Slasher/Powerhouse/Cerebral']
                             ]
                         }
                     ]
@@ -14507,7 +14507,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['silence',         '6T'],
-                                ['No Heal',         '5T']
+                                ['no-heal',         '5T']
                             ]
                         },
                         {
@@ -14546,8 +14546,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -14578,7 +14578,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-change',     'Bad'],
-                                ['No Heal',         '5T']
+                                ['no-heal',         '5T']
                             ]
                         },
                         {
@@ -14610,8 +14610,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Slasher/Free Spirit/Powerhouse'],
-                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Powerhouse'],
-                                ['S Switch -',      '5T, Slasher/Free Spirit/Powerhouse']
+                                ['vs-red',          '5T, Slasher/Free Spirit/Powerhouse'],
+                                ['sw-red',          '5T, Slasher/Free Spirit/Powerhouse']
                             ]
                         }
                     ]
@@ -14668,8 +14668,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, INT/PSY/DEX'],
-                                ['VS Gauge -',      '5T, INT/PSY/DEX'],
-                                ['S Switch -',      '5T, INT/PSY/DEX']
+                                ['vs-red',          '5T, INT/PSY/DEX'],
+                                ['sw-red',          '5T, INT/PSY/DEX']
                             ]
                         }
                     ]
@@ -14735,8 +14735,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '8T, STR/DEX/PSY'],
-                                ['VS Gauge -',      '20T, STR/DEX/PSY'],
-                                ['S Switch -',      '8T, STR/DEX/PSY']
+                                ['vs-red',          '20T, STR/DEX/PSY'],
+                                ['sw-red',          '8T, STR/DEX/PSY']
                             ]
                         }
                     ]
@@ -14759,7 +14759,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['No Heal',         '5T']
+                                ['no-heal',         '5T']
                             ]
                         },
                         {
@@ -14807,7 +14807,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['No Heal',         '5T']
+                                ['no-heal',         '5T']
                             ]
                         },
                         {
@@ -14839,8 +14839,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Powerhouse/Slasher/Driven'],
-                                ['VS Gauge -',      '20T, Powerhouse/Slasher/Driven'],
-                                ['S Switch -',      '8T, Powerhouse/Slasher/Driven']
+                                ['vs-red',          '20T, Powerhouse/Slasher/Driven'],
+                                ['sw-red',          '8T, Powerhouse/Slasher/Driven']
                             ]
                         }
                     ]
@@ -14934,8 +14934,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Fighter/Cerebral'],
-                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Cerebral'],
-                                ['S Switch -',      '5T, Free Spirit/Fighter/Cerebral']
+                                ['vs-red',          '5T, Free Spirit/Fighter/Cerebral'],
+                                ['sw-red',          '5T, Free Spirit/Fighter/Cerebral']
                             ]
                         }
                     ]
@@ -14967,7 +14967,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['No Heal',         '5T'],
+                                ['no-heal',         '5T'],
                                 ['slot-change',     'Bad']
                             ]
                         },
@@ -15006,8 +15006,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Powerhouse/Fighter'],
-                                ['VS Gauge -',      '5T, Cerebral/Powerhouse/Fighter'],
-                                ['S Switch -',      '5T, Cerebral/Powerhouse/Fighter']
+                                ['vs-red',          '5T, Cerebral/Powerhouse/Fighter'],
+                                ['sw-red',          '5T, Cerebral/Powerhouse/Fighter']
                             ]
                         }
                     ]
@@ -15047,7 +15047,7 @@ var tm_opponents = {
                             type: 'Turn 3',
                             action: [
                                 ['atk',             '3T'],
-                                ['Ship Bind',       '3T']
+                                ['ship-bind',       '3T']
                             ]
                         }
                     ]
@@ -15066,8 +15066,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/STR/INT'],
-                                ['VS Gauge -',      '5T, QCK/STR/INT'],
-                                ['S Switch -',      '5T, QCK/STR/INT']
+                                ['vs-red',          '5T, QCK/STR/INT'],
+                                ['sw-red',          '5T, QCK/STR/INT']
                             ]
                         }
                     ]
@@ -15131,8 +15131,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -15187,8 +15187,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/DEX/INT'],
-                                ['VS Gauge -',      '5T, QCK/DEX/INT'],
-                                ['S Switch -',      '8T, QCK/DEX/INT']
+                                ['vs-red',          '5T, QCK/DEX/INT'],
+                                ['sw-red',          '8T, QCK/DEX/INT']
                             ]
                         }
                     ]
@@ -15213,7 +15213,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['blow-away',       '?T, Random 2'],
-                                ['No Heal',         '5T']
+                                ['no-heal',         '5T']
                             ]
                         },
                         {
@@ -15273,8 +15273,8 @@ var tm_opponents = {
                         {
                             type: 'Turn 3',
                             action: [
-                                ['No Heal',         '5T'],
-                                ['Fear',            '3T, Row 2 3'],
+                                ['no-heal',         '5T'],
+                                ['fear',            '3T, Row 2 3'],
                                 ['resil',           '3T']
                             ]
                         }
@@ -15294,8 +15294,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Free Spirit/Fighter'],
-                                ['VS Gauge -',      '5T, Cerebral/Free Spirit/Fighter'],
-                                ['S Switch -',      '8T, Cerebral/Free Spirit/Fighter']
+                                ['vs-red',          '5T, Cerebral/Free Spirit/Fighter'],
+                                ['sw-red',          '8T, Cerebral/Free Spirit/Fighter']
                             ]
                         }
                     ]
@@ -15312,10 +15312,10 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['hunger',          '2x'],
                                 ['para',            '7T'],
-                                ['No Heal',         '5T'],
+                                ['no-heal',         '5T'],
                                 ['cd-rew',          '2T'],
-                                ['Fear',            '1T, Row 2 3'],
-                                ['Pain',            '3T, 5%'],
+                                ['fear',            '1T, Row 2 3'],
+                                ['pain',            '3T, 5%'],
                                 ['def',             '3T, 10000x']
                             ]
                         },
@@ -15328,7 +15328,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['Low Heal',        '3T'],
+                                ['heal-down',       '3T'],
                                 ['atk',             '3T']
                             ]
                         }
@@ -15377,7 +15377,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 3',
                             action: [
-                                ['Bleed',           '3T'],
+                                ['bleed',           '3T'],
                                 ['resil',           '3T']
                             ]
                         }
@@ -15401,8 +15401,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Shooter/Slasher/Fighter'],
-                                ['VS Gauge -',      '5T, Shooter/Slasher/Fighter'],
-                                ['S Switch -',      '5T, Shooter/Slasher/Fighter']
+                                ['vs-red',          '5T, Shooter/Slasher/Fighter'],
+                                ['sw-red',          '5T, Shooter/Slasher/Fighter']
                             ]
                         }
                     ]
@@ -15462,8 +15462,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -15518,8 +15518,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/INT/STR'],
-                                ['VS Gauge -',      '5T, PSY/INT/STR'],
-                                ['S Switch -',      '5T, PSY/INT/STR']
+                                ['vs-red',          '5T, PSY/INT/STR'],
+                                ['sw-red',          '5T, PSY/INT/STR']
                             ]
                         }
                     ]
@@ -15577,8 +15577,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Free Spirit/Powerhouse'],
-                                ['VS Gauge -',      '5T, Cerebral/Free Spirit/Powerhouse'],
-                                ['S Switch -',      '5T, Cerebral/Free Spirit/Powerhouse']
+                                ['vs-red',          '5T, Cerebral/Free Spirit/Powerhouse'],
+                                ['sw-red',          '5T, Cerebral/Free Spirit/Powerhouse']
                             ]
                         }
                     ]
@@ -15644,8 +15644,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/QCK/PSY'],
-                                ['VS Gauge -',      '5T, STR/QCK/PSY'],
-                                ['S Switch -',      '8T, STR/QCK/PSY']
+                                ['vs-red',          '5T, STR/QCK/PSY'],
+                                ['sw-red',          '8T, STR/QCK/PSY']
                             ]
                         }
                     ]
@@ -15661,7 +15661,7 @@ var tm_opponents = {
                             action: [
                                 ['bind',            '5T, Row 2 3'],
                                 ['resil',           '7T'],
-                                ['Lock Target',     '5T']
+                                ['target-lock',     '5T']
                             ]
                         },
                         {
@@ -15752,7 +15752,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['Harder P',        '5T'],
+                                ['p-hard',          '5T'],
                                 ['atk',             '5T']
                             ]
                         },
@@ -15785,8 +15785,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Slasher/Free Spirit/Fighter'],
-                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Fighter'],
-                                ['S Switch -',      '8T, Slasher/Free Spirit/Fighter']
+                                ['vs-red',          '5T, Slasher/Free Spirit/Fighter'],
+                                ['sw-red',          '8T, Slasher/Free Spirit/Fighter']
                             ]
                         }
                     ]
@@ -15804,7 +15804,7 @@ var tm_opponents = {
                                 ['stun',            'Col L'],
                                 ['bind',            '9T, Row 1 3'],
                                 ['bar-slot',        '2T, 2x, WANO'],
-                                ['Counter',         '?%']
+                                ['counter',         '?%']
                             ]
                         },
                         {
@@ -15829,7 +15829,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 3',
                             action: [
-                                ['Low Heal',        '3T'],
+                                ['heal-down',       '3T'],
                                 ['atk',             '3T']
                             ]
                         }
@@ -15909,8 +15909,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -15961,8 +15961,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Powerhouse/Fighter/Free Spirit'],
-                                ['VS Gauge -',      '5T, Powerhouse/Fighter/Free Spirit'],
-                                ['S Switch -',      '5T, Powerhouse/Fighter/Free Spirit']
+                                ['vs-red',          '5T, Powerhouse/Fighter/Free Spirit'],
+                                ['sw-red',          '5T, Powerhouse/Fighter/Free Spirit']
                             ]
                         }
                     ]
@@ -16021,8 +16021,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Driven/Powerhouse/Cerebral'],
-                                ['VS Gauge -',      '5T, Driven/Powerhouse/Cerebral'],
-                                ['S Switch -',      '5T, Driven/Powerhouse/Cerebral']
+                                ['vs-red',          '5T, Driven/Powerhouse/Cerebral'],
+                                ['sw-red',          '5T, Driven/Powerhouse/Cerebral']
                             ]
                         }
                     ]
@@ -16071,8 +16071,8 @@ var tm_opponents = {
                         {
                             type: 'Turn 3',
                             action: [
-                                ['No Heal',         '5T'],
-                                ['Ship Bind',       '5T']
+                                ['no-heal',         '5T'],
+                                ['ship-bind',       '5T']
                             ]
                         }
                     ]
@@ -16091,8 +16091,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/QCK/STR'],
-                                ['VS Gauge -',      '5T, PSY/QCK/STR'],
-                                ['S Switch -',      '5T, PSY/QCK/STR']
+                                ['vs-red',          '5T, PSY/QCK/STR'],
+                                ['sw-red',          '5T, PSY/QCK/STR']
                             ]
                         }
                     ]
@@ -16124,7 +16124,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['Harder P',        '3T'],
+                                ['p-hard',          '3T'],
                                 ['bar-p',           '3T, 2x']
                             ]
                         },
@@ -16150,8 +16150,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/INT/DEX'],
-                                ['VS Gauge -',      '5T, PSY/INT/DEX'],
-                                ['S Switch -',      '5T, PSY/INT/DEX']
+                                ['vs-red',          '5T, PSY/INT/DEX'],
+                                ['sw-red',          '5T, PSY/INT/DEX']
                             ]
                         }
                     ]
@@ -16255,8 +16255,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Slasher/Free Spirit/Powerhouse'],
-                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Powerhouse'],
-                                ['S Switch -',      '5T, Slasher/Free Spirit/Powerhouse']
+                                ['vs-red',          '5T, Slasher/Free Spirit/Powerhouse'],
+                                ['sw-red',          '5T, Slasher/Free Spirit/Powerhouse']
                             ]
                         }
                     ]
@@ -16276,7 +16276,7 @@ var tm_opponents = {
                                 ['def',             '5T, 10000x'],
                                 ['resil',           '3T'],
                                 ['def-thres',       '6T, 99%, 1000'],
-                                ['Lock Target',     '1T'],
+                                ['target-lock',     '1T'],
                                 ['immu-all',        '99+T']
                             ]
                         },
@@ -16291,7 +16291,7 @@ var tm_opponents = {
                             action: [
                                 ['dmg-up',          '5T'],
                                 ['atk',             '5T'],
-                                ['Ship Bind',       '3T'],
+                                ['ship-bind',       '3T'],
                                 ['blow-away',       '3T, Row 3']
                             ]
                         },
@@ -16382,8 +16382,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -16433,8 +16433,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/DEX/STR'],
-                                ['VS Gauge -',      '5T, QCK/DEX/STR'],
-                                ['S Switch -',      '5T, QCK/DEX/STR']
+                                ['vs-red',          '5T, QCK/DEX/STR'],
+                                ['sw-red',          '5T, QCK/DEX/STR']
                             ]
                         }
                     ]
@@ -16454,7 +16454,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['chain-atk-down',  '2T, < 3.5x chain, 90%'],
                                 ['bar-slot',        '1T, 1x, RAINBOW'],
-                                ['Intimidate',      '3T, -2T, Lock Chain']
+                                ['intim',           '3T, -2T, Lock Chain']
                             ]
                         },
                         {
@@ -16474,7 +16474,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 3',
                             action: [
-                                ['Ship Bind',       '3T']
+                                ['ship-bind',       '3T']
                             ]
                         }
                     ]
@@ -16496,8 +16496,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/INT/QCK'],
-                                ['VS Gauge -',      '5T, PSY/INT/QCK'],
-                                ['S Switch -',      '5T, PSY/INT/QCK'],
+                                ['vs-red',          '5T, PSY/INT/QCK'],
+                                ['sw-red',          '5T, PSY/INT/QCK'],
                                 ['cd-rew',          '2T, Friend Cap'],
                                 ['blow-away',       '3T, Row 3'],
                                 ['bar-slot',        '1T, 3x, TND']
@@ -16507,7 +16507,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['desp',            '?T'],
-                                ['Ship Bind',       '3T']
+                                ['ship-bind',       '3T']
                             ]
                         }
                     ]
@@ -16550,7 +16550,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['Swap Captain',    '5T, Random Sailor'],
+                                ['ca-swap',         '5T, Random Sailor'],
                                 ['chain-atk-down',  '3T, < 2.5x chain, 90%'],
                                 ['def-perc',        '5T, 90%'],
                                 ['def-thres',       '5T, 99%, 1000'],
@@ -16593,8 +16593,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/INT/PSY'],
-                                ['VS Gauge -',      '5T, STR/INT/PSY'],
-                                ['S Switch -',      '5T, STR/INT/PSY']
+                                ['vs-red',          '5T, STR/INT/PSY'],
+                                ['sw-red',          '5T, STR/INT/PSY']
                             ]
                         }
                     ]
@@ -16661,8 +16661,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Slasher/Fighter'],
-                                ['VS Gauge -',      '5T, Free Spirit/Slasher/Fighter'],
-                                ['S Switch -',      '5T, Free Spirit/Slasher/Fighter']
+                                ['vs-red',          '5T, Free Spirit/Slasher/Fighter'],
+                                ['sw-red',          '5T, Free Spirit/Slasher/Fighter']
                             ]
                         }
                     ]
@@ -16761,8 +16761,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Slasher/Fighter'],
-                                ['VS Gauge -',      '5T, Free Spirit/Slasher/Fighter'],
-                                ['S Switch -',      '5T, Free Spirit/Slasher/Fighter']
+                                ['vs-red',          '5T, Free Spirit/Slasher/Fighter'],
+                                ['sw-red',          '5T, Free Spirit/Slasher/Fighter']
                             ]
                         }
                     ]
@@ -16884,8 +16884,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/DEX/PSY'],
-                                ['VS Gauge -',      '5T, STR/DEX/PSY'],
-                                ['S Switch -',      '5T, STR/DEX/PSY']
+                                ['vs-red',          '5T, STR/DEX/PSY'],
+                                ['sw-red',          '5T, STR/DEX/PSY']
                             ]
                         }
                     ]
@@ -16951,8 +16951,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/STR/QCK'],
-                                ['VS Gauge -',      '5T, PSY/STR/QCK'],
-                                ['S Switch -',      '5T, PSY/STR/QCK']
+                                ['vs-red',          '5T, PSY/STR/QCK'],
+                                ['sw-red',          '5T, PSY/STR/QCK']
                             ]
                         }
                     ]
@@ -17015,8 +17015,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/STR/DEX'],
-                                ['VS Gauge -',      '5T, PSY/STR/DEX'],
-                                ['S Switch -',      '5T, PSY/STR/DEX']
+                                ['vs-red',          '5T, PSY/STR/DEX'],
+                                ['sw-red',          '5T, PSY/STR/DEX']
                             ]
                         }
                     ]
@@ -17032,7 +17032,7 @@ var tm_opponents = {
                             action: [
                                 ['cd-rew',          '2T'],
                                 ['nao',             '99+T'],
-                                ['Ship Bind',       '5T'],
+                                ['ship-bind',       '5T'],
                                 ['atk-down',        '5T, 90%'],
                                 ['para',            '7T'],
                                 ['immu-delay',      '99+T']
@@ -17075,8 +17075,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -17095,7 +17095,7 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['cd-rew',          '2T, Row 2 3'],
                                 ['hunger',          '2x'],
-                                ['Intimidate',      '2T, -2T, Atk Boost']
+                                ['intim',           '2T, -2T, Atk Boost']
                             ]
                         },
                         {
@@ -17127,8 +17127,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/DEX/PSY'],
-                                ['VS Gauge -',      '5T, STR/DEX/PSY'],
-                                ['S Switch -',      '5T, STR/DEX/PSY']
+                                ['vs-red',          '5T, STR/DEX/PSY'],
+                                ['sw-red',          '5T, STR/DEX/PSY']
                             ]
                         }
                     ]
@@ -17183,7 +17183,7 @@ var tm_opponents = {
                                 ['cd-rew',          '1T'],
                                 ['bind',            '8T, Row 3'],
                                 ['chain-atk-down',  '2T, < 2.75x chain, 90%'],
-                                ['Intimidate',      '2T, -1T, Lock Chain'],
+                                ['intim',           '2T, -1T, Lock Chain'],
                                 ['def',             '3T, 1Mx'],
                                 ['immu-all',        '99+T, Except Delay']
                             ]
@@ -17229,8 +17229,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Slasher/Fighter'],
-                                ['VS Gauge -',      '5T, Cerebral/Slasher/Fighter'],
-                                ['S Switch -',      '5T, Cerebral/Slasher/Fighter']
+                                ['vs-red',          '5T, Cerebral/Slasher/Fighter'],
+                                ['sw-red',          '5T, Cerebral/Slasher/Fighter']
                             ]
                         }
                     ]
@@ -17335,8 +17335,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -17387,8 +17387,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, PSY/DEX/STR'],
-                                ['VS Gauge -',      '5T, PSY/DEX/STR'],
-                                ['S Switch -',      '5T, PSY/DEX/STR']
+                                ['vs-red',          '5T, PSY/DEX/STR'],
+                                ['sw-red',          '5T, PSY/DEX/STR']
                             ]
                         }
                     ]
@@ -17447,8 +17447,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/DEX/QCK'],
-                                ['VS Gauge -',      '5T, STR/DEX/QCK'],
-                                ['S Switch -',      '5T, STR/DEX/QCK']
+                                ['vs-red',          '5T, STR/DEX/QCK'],
+                                ['sw-red',          '5T, STR/DEX/QCK']
                             ]
                         }
                     ]
@@ -17513,8 +17513,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Slasher/Free Spirit/Cerebral'],
-                                ['VS Gauge -',      '5T, Slasher/Free Spirit/Cerebral'],
-                                ['S Switch -',      '5T, Slasher/Free Spirit/Cerebral']
+                                ['vs-red',          '5T, Slasher/Free Spirit/Cerebral'],
+                                ['sw-red',          '5T, Slasher/Free Spirit/Cerebral']
                             ]
                         }
                     ]
@@ -17542,7 +17542,7 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 ['heal',            '10%'],
-                                ['Action Silence',  '1T'],
+                                ['silence-p',       '1T'],
                                 ['chain-atk-down',  '3T, < 3x chain, 90%']
                             ]
                         },
@@ -17576,8 +17576,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Powerhouse/Free Spirit/Fighter'],
-                                ['VS Gauge -',      '5T, Powerhouse/Free Spirit/Fighter'],
-                                ['S Switch -',      '5T, Powerhouse/Free Spirit/Fighter']
+                                ['vs-red',          '5T, Powerhouse/Free Spirit/Fighter'],
+                                ['sw-red',          '5T, Powerhouse/Free Spirit/Fighter']
                             ]
                         }
                     ]
@@ -17637,7 +17637,7 @@ var tm_opponents = {
                                 ['para',            '6T'],
                                 ['slot-block',      'All'],
                                 ['desp',            '8T'],
-                                ['Ship Bind',       '6T'],
+                                ['ship-bind',       '6T'],
                                 ['immu-all',        '99+T, Except Ignite']
                             ]
                         },
@@ -17691,8 +17691,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Powerhouse/Slasher/Free Spirit'],
-                                ['VS Gauge -',      '5T, Powerhouse/Slasher/Free Spirit'],
-                                ['S Switch -',      '5T, Powerhouse/Slasher/Free Spirit']
+                                ['vs-red',          '5T, Powerhouse/Slasher/Free Spirit'],
+                                ['sw-red',          '5T, Powerhouse/Slasher/Free Spirit']
                             ]
                         }
                     ]
@@ -17732,7 +17732,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'S.BLOCK'],
                                 ['slot-bind',       '7T'],
-                                ['Ship Bind',       '5T'],
+                                ['ship-bind',       '5T'],
                                 ['def-thres',       '7T, 99%, 1000'],
                                 ['Slot Atk Down',   '3T, WANO, 90%'],
                                 ['type-change',     'STR/DEX'],
@@ -17743,14 +17743,14 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['No Heal',         '5T'],
+                                ['no-heal',         '5T'],
                                 ['dmg-up',          '5T']
                             ]
                         },
                         {
                             type: 'Turn 2',
                             action: [
-                                ['Pain',            '3T'],
+                                ['pain',            '3T'],
                                 ['clear-buff',      'Buff Only']
                             ]
                         },
@@ -17786,8 +17786,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -17837,8 +17837,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, INT/QCK/STR'],
-                                ['VS Gauge -',      '5T, INT/QCK/STR'],
-                                ['S Switch -',      '5T, INT/QCK/STR']
+                                ['vs-red',          '5T, INT/QCK/STR'],
+                                ['sw-red',          '5T, INT/QCK/STR']
                             ]
                         }
                     ]
@@ -17895,8 +17895,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Slasher/Striker'],
-                                ['VS Gauge -',      '5T, Cerebral/Slasher/Striker'],
-                                ['S Switch -',      '5T, Cerebral/Slasher/Striker']
+                                ['vs-red',          '5T, Cerebral/Slasher/Striker'],
+                                ['sw-red',          '5T, Cerebral/Slasher/Striker']
                             ]
                         }
                     ]
@@ -17962,8 +17962,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/STR/DEX'],
-                                ['VS Gauge -',      '5T, QCK/STR/DEX'],
-                                ['S Switch -',      '5T, QCK/STR/DEX']
+                                ['vs-red',          '5T, QCK/STR/DEX'],
+                                ['sw-red',          '5T, QCK/STR/DEX']
                             ]
                         }
                     ]
@@ -17977,7 +17977,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['Fear',            '5T'],
+                                ['fear',            '5T'],
                                 ['nao',             '99+T'],
                                 ['silence',         '5T, Row 1 3'],
                                 ['def-thres',       '7T, 99%, 1000'],
@@ -18029,8 +18029,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Fighter/Slasher'],
-                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Slasher'],
-                                ['S Switch -',      '7T, Free Spirit/Fighter/Slasher']
+                                ['vs-red',          '5T, Free Spirit/Fighter/Slasher'],
+                                ['sw-red',          '7T, Free Spirit/Fighter/Slasher']
                             ]
                         }
                     ]
@@ -18048,7 +18048,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['silence',         '6T'],
                                 ['slot-change',     'Poison'],
-                                ['Lock Target',     '2T'],
+                                ['target-lock',     '2T'],
                                 ['bar-p',           '2T, 2x'],
                                 ['bar-p',           '2T, 1x'],
                                 ['bar-p',           '2T, 1x']
@@ -18098,7 +18098,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['Pain',            '3T, 15000'],
+                                ['pain',            '3T, 15000'],
                                 ['bar-p',           '3T, 2x']
                             ]
                         },
@@ -18131,8 +18131,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Free Spirit/Fighter/Slasher'],
-                                ['VS Gauge -',      '5T, Free Spirit/Fighter/Slasher'],
-                                ['S Switch -',      '6T, Free Spirit/Fighter/Slasher']
+                                ['vs-red',          '5T, Free Spirit/Fighter/Slasher'],
+                                ['sw-red',          '6T, Free Spirit/Fighter/Slasher']
                             ]
                         }
                     ]
@@ -18149,7 +18149,7 @@ var tm_opponents = {
                                 ['poison',          '5T, 30000'],
                                 ['nao',             '99+T'],
                                 ['rcv-dmg',         '5T'],
-                                ['Pain',            '5T, 10000'],
+                                ['pain',            '5T, 10000'],
                                 ['def',             '3T, 1Mx'],
                                 ['def-thres',       '3T, 99%, 1000']
                             ]
@@ -18237,8 +18237,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -18288,8 +18288,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Shooter/Striker/Cerebral'],
-                                ['VS Gauge -',      '5T, Shooter/Striker/Cerebral'],
-                                ['S Switch -',      '5T, Shooter/Striker/Cerebral']
+                                ['vs-red',          '5T, Shooter/Striker/Cerebral'],
+                                ['sw-red',          '5T, Shooter/Striker/Cerebral']
                             ]
                         }
                     ]
@@ -18347,8 +18347,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Driven/Powerhouse/Striker'],
-                                ['VS Gauge -',      '5T, Driven/Powerhouse/Striker'],
-                                ['S Switch -',      '5T, Driven/Powerhouse/Striker']
+                                ['vs-red',          '5T, Driven/Powerhouse/Striker'],
+                                ['sw-red',          '5T, Driven/Powerhouse/Striker']
                             ]
                         }
                     ]
@@ -18375,7 +18375,7 @@ var tm_opponents = {
                                 ['heal',            '10%'],
                                 ['dmg-normal',      '20000'],
                                 ['bar-slot',        '2T, 1x, WANO'],
-                                ['Action Silence',  '1T']
+                                ['silence-p',       '1T']
                             ]
                         },
                         {
@@ -18413,8 +18413,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, INT/PSY/STR'],
-                                ['VS Gauge -',      '5T, INT/PSY/STR'],
-                                ['S Switch -',      '5T, INT/PSY/STR']
+                                ['vs-red',          '5T, INT/PSY/STR'],
+                                ['sw-red',          '5T, INT/PSY/STR']
                             ]
                         }
                     ]
@@ -18432,7 +18432,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['slot-block',      'All'],
                                 ['bind',            '9T, Row 2 3'],
-                                ['Easier P',        '1T'],
+                                ['p-easy',          '1T'],
                                 ['def-null',        '1T'],
                                 ['bar-gd',          '1T, 2x'],
                                 ['immu-all',        '99+T, Except Increase Dmg Taken / Weakened']
@@ -18480,8 +18480,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, INT/PSY/DEX'],
-                                ['VS Gauge -',      '5T, INT/PSY/DEX'],
-                                ['S Switch -',      '5T, INT/PSY/DEX'],
+                                ['vs-red',          '5T, INT/PSY/DEX'],
+                                ['sw-red',          '5T, INT/PSY/DEX'],
                                 ['slot-pos',        '5T, INT']
                             ]
                         }
@@ -18498,7 +18498,7 @@ var tm_opponents = {
                             action: [
                                 ['atk-down',        '6T, 99%'],
                                 ['cd-rew',          '1T'],
-                                ['Intimidate',      '3T, -1T, Set Chain'],
+                                ['intim',           '3T, -1T, Set Chain'],
                                 ['def',             '5T, 1Mx'],
                                 ['bar-slot',        '2T, 1x, INT'],
                                 ['nao',             '99+T']
@@ -18507,7 +18507,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['Swap Captain',    '5T, Random Sailor'],
+                                ['ca-swap',         '5T, Random Sailor'],
                                 ['silence',         '3T']
                             ]
                         },
@@ -18532,7 +18532,7 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['chain-down',      '6T, 0.6x'],
                                 ['chain-atk-down',  '2T, <2.2x Chain, 90%'],
-                                ['Intimidate',      '3T, -1T, Slot Boost'],
+                                ['intim',           '3T, -1T, Slot Boost'],
                                 ['atk-boost',       '1T, 1.1x'],
                                 ['def',             '6T, 1Mx'],
                                 ['immu-all',        '99+T, Except Def Down']
@@ -18588,8 +18588,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, INT/PSY/STR'],
-                                ['VS Gauge -',      '5T, INT/PSY/STR'],
-                                ['S Switch -',      '5T, INT/PSY/STR']
+                                ['vs-red',          '5T, INT/PSY/STR'],
+                                ['sw-red',          '5T, INT/PSY/STR']
                             ]
                         }
                     ]
@@ -18645,7 +18645,7 @@ var tm_opponents = {
                                 ['slot-bind',       '5T'],
                                 ['resil',           '6T'],
                                 ['atk-down',        '5T, 99%'],
-                                ['Pain',            '5T, 18000'],
+                                ['pain',            '5T, 18000'],
                                 ['immu-all',        '99+T, Except Def Down / Increase Dmg Taken / Weakened']
                             ]
                         },
@@ -18653,7 +18653,7 @@ var tm_opponents = {
                             type: 'Interrupt - Atk Boost (once)',
                             action: [
                                 ['clear-buff',      'Buff Only'],
-                                ['Swap Captain',    '3T, Random Sailor']
+                                ['ca-swap',         '3T, Random Sailor']
                             ]
                         },
                         {
@@ -18696,8 +18696,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -18753,8 +18753,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Slasher/Fighter/Cerebral'],
-                                ['VS Gauge -',      '5T, Slasher/Fighter/Cerebral'],
-                                ['S Switch -',      '5T, Slasher/Fighter/Cerebral']
+                                ['vs-red',          '5T, Slasher/Fighter/Cerebral'],
+                                ['sw-red',          '5T, Slasher/Fighter/Cerebral']
                             ]
                         }
                     ]
@@ -18813,8 +18813,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/QCK/INT'],
-                                ['VS Gauge -',      '5T, STR/QCK/INT'],
-                                ['S Switch -',      '5T, STR/QCK/INT']
+                                ['vs-red',          '5T, STR/QCK/INT'],
+                                ['sw-red',          '5T, STR/QCK/INT']
                             ]
                         }
                     ]
@@ -18831,7 +18831,7 @@ var tm_opponents = {
                                 ['silence',         '5T'],
                                 ['nao',             '99+T'],
                                 ['atk-down',        '8T, 99%'],
-                                ['Ship Bind',       '3T'],
+                                ['ship-bind',       '3T'],
                                 ['def',             '5T, 1Mx'],
                                 ['immu-all',        '99+T']
                             ]
@@ -18872,8 +18872,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Driven/Powerhouse/Striker'],
-                                ['VS Gauge -',      '5T, Driven/Powerhouse/Striker'],
-                                ['S Switch -',      '5T, Driven/Powerhouse/Striker']
+                                ['vs-red',          '5T, Driven/Powerhouse/Striker'],
+                                ['sw-red',          '5T, Driven/Powerhouse/Striker']
                             ]
                         }
                     ]
@@ -18891,7 +18891,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['silence',         '5T'],
                                 ['slot-change',     'Bad'],
-                                ['Intimidate',      '3T, -2T, Slot Boost / Set Chain'],
+                                ['intim',           '3T, -2T, Slot Boost / Set Chain'],
                                 ['def-thres',       '2T, 99%, 1000'],
                                 ['def',             '6T, 1Mx'],
                                 ['bar-hit',         '1T, 20x'],
@@ -18934,8 +18934,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, STR/QCK/DEX'],
-                                ['VS Gauge -',      '5T, STR/QCK/DEX'],
-                                ['S Switch -',      '5T, STR/QCK/DEX']
+                                ['vs-red',          '5T, STR/QCK/DEX'],
+                                ['sw-red',          '5T, STR/QCK/DEX']
                             ]
                         }
                     ]
@@ -18987,7 +18987,7 @@ var tm_opponents = {
                                 ['cd-rew',          '4T, Row 1'],
                                 ['cd-rew',          '3T, Row 2 3'],
                                 ['def-thres',       '6T, 99%, 1000'],
-                                ['Lock Target',     '1T'],
+                                ['target-lock',     '1T'],
                                 ['desp',            '5T'],
                                 ['slot-change',     'Poison'],
                                 ['bar-hit',         '1T, 12x'],
@@ -19031,8 +19031,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Driven/Powerhouse/Slasher'],
-                                ['VS Gauge -',      '5T, Driven/Powerhouse/Slasher'],
-                                ['S Switch -',      '5T, Driven/Powerhouse/Slasher']
+                                ['vs-red',          '5T, Driven/Powerhouse/Slasher'],
+                                ['sw-red',          '5T, Driven/Powerhouse/Slasher']
                             ]
                         }
                     ]
@@ -19085,7 +19085,7 @@ var tm_opponents = {
                                 ['sp-limit',        '3T, 2x'],
                                 ['def-perc',        '6T, 90%'],
                                 ['chain-atk-down',  '5T, <2.75x Chain, 99%'],
-                                ['Intimidate',      '3T, -2T, Set Chain / Affinity'],
+                                ['intim',           '3T, -2T, Set Chain / Affinity'],
                                 ['para',            '6T'],
                                 ['immu-all',        '99+T, Except Set Target']
                             ]
@@ -19141,8 +19141,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, All'],
-                                ['VS Gauge -',      '5T, All'],
-                                ['S Switch -',      '5T, All']
+                                ['vs-red',          '5T, All'],
+                                ['sw-red',          '5T, All']
                             ]
                         }
                     ]
@@ -19159,7 +19159,7 @@ var tm_opponents = {
                                 ['chain-atk-down',  '5T, <3x Chain, 99%'],
                                 ['chain-atk-down',  '5T, >4.5x Chain, 99%'],
                                 ['def-thres',       '6T, 70%, 100K'],
-                                ['Counter',         '?']
+                                ['counter',         '?']
                             ]
                         },
                         {
@@ -19171,7 +19171,7 @@ var tm_opponents = {
                         {
                             type: 'Interrupt - Set Chain (once)',
                             action: [
-                                ['Swap Captain',    '2T, Random Sailor']
+                                ['ca-swap',         '2T, Random Sailor']
                             ]
                         }
                     ]
@@ -19190,8 +19190,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, QCK/PSY/INT'],
-                                ['VS Gauge -',      '5T, QCK/PSY/INT'],
-                                ['S Switch -',      '5T, QCK/PSY/INT']
+                                ['vs-red',          '5T, QCK/PSY/INT'],
+                                ['sw-red',          '5T, QCK/PSY/INT']
                             ]
                         }
                     ]
@@ -19234,8 +19234,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Slasher/Powerhouse/Striker'],
-                                ['VS Gauge -',      '5T, Slasher/Powerhouse/Striker'],
-                                ['S Switch -',      '5T, Slasher/Powerhouse/Striker']
+                                ['vs-red',          '5T, Slasher/Powerhouse/Striker'],
+                                ['sw-red',          '5T, Slasher/Powerhouse/Striker']
                             ]
                         }
                     ]
@@ -19271,7 +19271,7 @@ var tm_opponents = {
                             action: [
                                 ['hp-cut',          '80%'],
                                 ['cd-rew',          '1T'],
-                                ['CD Lock',         '2x Perfect']
+                                ['cd-lock',         '2x Perfect']
                             ]
                         }
                     ]
@@ -19290,8 +19290,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Driven/Cerebral/Powerhouse'],
-                                ['VS Gauge -',      '5T, Driven/Cerebral/Powerhouse'],
-                                ['S Switch -',      '5T, Driven/Cerebral/Powerhouse']
+                                ['vs-red',          '5T, Driven/Cerebral/Powerhouse'],
+                                ['sw-red',          '5T, Driven/Cerebral/Powerhouse']
                             ]
                         }
                     ]
@@ -19332,8 +19332,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, DEX/QCK/INT'],
-                                ['VS Gauge -',      '5T, DEX/QCK/INT'],
-                                ['S Switch -',      '5T, DEX/QCK/INT']
+                                ['vs-red',          '5T, DEX/QCK/INT'],
+                                ['sw-red',          '5T, DEX/QCK/INT']
                             ]
                         }
                     ]
@@ -19368,7 +19368,7 @@ var tm_opponents = {
                             action: [
                                 ['slot-change',     'RCV'],
                                 ['blind',           '5T'],
-                                ['Pain',            '3T, 25000'],
+                                ['pain',            '3T, 25000'],
                                 ['rcv-dmg',         '6T'],
                                 ['Slot Atk Down',   '6T, TYPE/RCV/TND/WANO, 90%'],
                                 ['chain-atk-down',  '5T, <3.5x Chain, 99%'],
@@ -19398,8 +19398,8 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['cd-red',          '5T, Cerebral/Fighter/Striker'],
-                                ['VS Gauge -',      '5T, Cerebral/Fighter/Striker'],
-                                ['S Switch -',      '5T, Cerebral/Fighter/Striker']
+                                ['vs-red',          '5T, Cerebral/Fighter/Striker'],
+                                ['sw-red',          '5T, Cerebral/Fighter/Striker']
                             ]
                         }
                     ]
@@ -19543,7 +19543,7 @@ var tm_opponents = {
                             action: [
                                 { type: SP_LIMIT, turn: 1, detail: '2x' },
                                 { type: SLOT_ATK_DOWN, turn: 6, detail: 'Type' },
-                                { type: LOCK_TARGET, turn: 2 },
+                                { type: TARGET_LOCK, turn: 2 },
                                 { type: RESIL, turn: 2 },
                                 { type: DEF_PERC, turn: 6 },
                                 { type: DEF_THRES, turn: 6 },

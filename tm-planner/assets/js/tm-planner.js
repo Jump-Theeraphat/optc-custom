@@ -1043,27 +1043,11 @@ function decorateStr(str, isGuide) {
 }
 
 function decorateSpIcon(iconKey, isAction) {
-    if (iconKey === 'No Heal' ||
-        iconKey === 'Low Heal' ||
-        iconKey === 'Swap Captain' ||
-        iconKey === 'Ship Bind' ||
-        iconKey === 'CD Lock' ||
-        iconKey === 'Fear' ||
-        iconKey === 'Harder P' ||
-        iconKey === 'Easier P' ||
-        iconKey === 'Heal Team' ||
-        iconKey === 'Counter' ||
+    if (iconKey === 'Heal Team' ||
         iconKey === '- Max HP' ||
         iconKey === 'Bad Slot+' ||
-        iconKey === 'Pain' ||
-        iconKey === 'Bleed' ||
-        iconKey === 'Lock Target' ||
-        iconKey === 'Intimidate' ||
-        iconKey === 'Action Silence' ||
         iconKey === 'Slot Atk Down' ||
-        iconKey === 'Slot Effect Down' ||
-        iconKey === 'VS Gauge -' ||
-        iconKey === 'S Switch -'
+        iconKey === 'Slot Effect Down'
     )
         return iconKey;
 
