@@ -147710,7 +147710,7 @@ window.details = {
         },
         specialNotes: "<br><b>0-7 orbs consumed:</b> 3.25x chain lock<br><b>8-14 orbs consumed:</b> 3.5x chain lock<br><b>15+ orbs consumed:</b> 4x chain lock",
         specialName: "Screaming for Her Father",
-        superSpecial: "Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, locks all orbs for 1 turn, reduces Fear duration by 5 turns, educes Special Cooldown of this character by 2 turns, and transforms [INT] characters into Super [INT] characters",
+        superSpecial: "Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, locks all orbs for 1 turn, reduces Fear duration by 5 turns, reduces Special Cooldown of this character by 2 turns, and transforms [INT] characters into Super [INT] characters",
         superSpecialCriteria: "This character must be captain and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Roronoa Zoro, Trafalgar D. Water Law, Basil Hawkins, Killer, Urouge, Eustass Kid, Scratchmen Apoo, X Drake, Capone Bege, Sabo, Bartholomew Kuma, Dr. Vegapunk (Stella)",
         support: [
             {
@@ -148242,6 +148242,164 @@ window.details = {
             }
         ]
     },
+    4147: {
+        captain: "Boosts ATK of all characters by 4x, boosts HP of all characters by 1.25x, and reduces Special Cooldown of this character by 2 turns after each turn you take damage. If you use \"Tremor Crush\" on this character, attacks will ignore damage reducing Barriers and Buffs and boosts ATK of [DEX] and [INT] characters 4.5x and boosts ATK of all other characters by 4x instead for 1 turn.",
+        festAbility: [
+            "[DEX]-type teammates Increased Defense Lv.1, ATK Up Lv.1; Striker class enemies Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.2, ATK Up Lv.2; Striker class enemies Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.3, ATK Up Lv.3; Striker class enemies Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.4, ATK Up Lv.4; Striker class enemies Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.5, ATK Up Lv.5; Striker class enemies Special CT Speed Down Lv.2"
+        ],
+        festAttackPattern: [
+            "Normal Attack",
+            "Power Attack",
+            "Full Attack"
+        ],
+        festAttackTarget: "Targets closest enemies",
+        festResistance: "80% chance to evade Halve Stats, reduce damage taken from [QCK] by 20%",
+        festSpecial: [
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.05 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.1 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.15 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.2 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.25 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.3 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.35 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.4 damage"
+            },
+            {
+                cooldown: 32,
+                description: "Targets enemies within large range for Damage Over Time Lv.1 (15 s); targets 3 enemies with low HP for ATK x 1.5 damage"
+            }
+        ],
+        festStats: {
+            def: 221,
+            spd: 129,
+            style: "DBF"
+        },
+        lastTap: {
+            condition: "On the turn this character's special is used",
+            description: [
+                "Boosts Chain Multiplier Growth Rate by 1.1x",
+                "Boosts Chain Multiplier Growth Rate by 1.15x",
+                "Boosts Chain Multiplier Growth Rate by 1.2x",
+                "Boosts Chain Multiplier Growth Rate by 1.25x",
+                "Boosts Chain Multiplier Growth Rate by 1.4x"
+            ]
+        },
+        limit: [
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Barrier Penetration" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 100" },
+            { description: "Acquire Potential 3: Last Tap" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base HP by 150" },
+            { description: "Acquire Sailor Ability 1: Boosts base ATK of [DEX] and [INT] characters by 83, and reduces Paralysis duration by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 3% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Barrier Penetration",
+                description: [
+                    "This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 80% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 60% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 50% at the start of the turn"
+                ]
+            },
+            {
+                Name: "Last Tap",
+                description: [
+                    "Obtain Last Tap Lv.1",
+                    "Obtain Last Tap Lv.2",
+                    "Obtain Last Tap Lv.3",
+                    "Obtain Last Tap Lv.4",
+                    "Obtain Last Tap Lv.5"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Boosts base HP of [DEX] and [INT] characters by 83, and reduces Special Cooldown of this character by 1 turn after each turn you take damage",
+            level1: "Boosts base ATK of [DEX] and [INT] characters by 83, and reduces Paralysis duration by 1 turn"
+        },
+        special: "Deals 80x character's ATK in Typeless True Fixed damage to enemies, delays all enemies by 1 turn, changes orbs, including [BLOCK] orbs, of adjacent characters into Matching Orbs, carries over 0.1x-1.5x of Chain Multiplier on this turn to the next turn, reduces enemies' Damage Nullification duration by 1 turn, and reduces enemies' Damage Nullification effect by 30%. If your Captain is a [DEX] or [INT] character, inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn, and if during that turn you score 3 PERFECT hits, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn in the next turn.",
+        specialNotes: "Carried-over chain amount is equal to 0.1 ✕ final chain multiplier this turn and will be added into the next turn's chain multiplier. In order to get +1.5 Chain carried over, you need to reach 15x or higher Chain Multiplier.",
+        specialCooldown: [
+            20,
+            14
+        ],
+        specialName: "Tremor Crush ",
+        superSpecial: "Changes the orb, including [BLOCK] orbs, of this character into a Matching orb, increases Chain Tap Timing Bonus of [DEX] and [INT] characters to +0.3x-0.5x for 2 turns, transforms [DEX] characters into Super [DEX] characters, and transforms [INT] characters into Super [INT] characters.",
+        superSpecialCriteria: "This character must be captain and your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Shanks, Buggy",
+        support: [
+            {
+                Characters: "[DEX] characters",
+                description: [
+                    "Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 9% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
     4148: {
         captain: "Boosts ATK of [INT] characters by 2.5x and boosts HP of [INT] characters by 1.2x.",
         limit: [
@@ -148564,11 +148722,11 @@ window.details = {
                 "Activates a different effect depending on the conditions of activation: [Activated on the 1st tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of [INT], Fighter and Powerhouse characters (up to +0.8 chain multiplier; Rush ATK boost 2.0x); [Activated on the 6th tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of character's (up to +1.0 chain multiplier; Rush ATK boost 2.5x)"
             ],
             stats: [
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [INT], Fighter and Powerhouse Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
             ]
         },
         sailor: {
@@ -148582,7 +148740,7 @@ window.details = {
             16
         ],
         specialName: "Young Strength to Pierce the Strongest",
-        superSpecial: "R ecovers 30% of crew's MAX HP, allowing HP Overfill up to 2x MAX HP. changes Class 1 of all non-Fighter Class 1 Cerebral and Class 1 Shooter characters to Fighter for 1 turn. Boosts Color Affinity of [INT], Fighter and Powerhouse characters by 2.5x for 2 turns, transforms [INT] characters into Super [INT] characters, and transforms Fighter characters into Super Fighter characters.",
+        superSpecial: "Recovers 30% of crew's MAX HP, allowing HP Overfill up to 2x MAX HP and changes Class 1 of all non-Fighter Class 1 Cerebral and Class 1 Shooter characters to Fighter for 1 turn. Boosts Color Affinity of [INT], Fighter and Powerhouse characters by 2.5x for 2 turns, transforms [INT] characters into Super [INT] characters, and transforms Fighter characters into Super Fighter characters.",
         superSpecialCriteria: "Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Yamato, Trafalgar Law,  Eustass Kid, Portgas D. Ace, Sabo, Shanks, Gol D. Roger",
         support: [
             {
@@ -148986,11 +149144,11 @@ window.details = {
                 "Activates a different effect depending on the conditions of activation: [Activated on the 1st tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of [PSY], Cerebral and Slasher characters (up to +0.8 chain multiplier; Rush ATK boost 2.0x); [Activated on the 6th tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of character's (up to +1.0 chain multiplier; Rush ATK boost 2.5x)"
             ],
             stats: [
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
             ]
         },
         sailor: {
@@ -149004,7 +149162,7 @@ window.details = {
             16
         ],
         specialName: "Unleashed Emperor's Swordplay",
-        superSpecial: "Reduces enemies Intimidation duration by 2 turns. If characters' 1st class is Shooter or Fighter, changes their 1st class to Cerebral (unless character is already a Cerebral as a 2nd class) for 1 turn. Boosts [PSY], Cerebral and Slasher characters' orb effects by 2.5x for 2 turns, transforms [PSY] characters to [Super] [PSY], and changes Cerebral characters into Super Cerebral characters",
+        superSpecial: "Reduces enemies Intimidation duration by 2 turns and changes Class 1 of all non-Cerenbral Class 1 Shooter and Class 1 Fighter characters to Cerebral for 1 turn. Boosts [PSY], Cerebral and Slasher characters' orb effects by 2.5x for 2 turns, transforms [PSY] characters to Super [PSY] characters, and transforms Cerebral characters into Super Cerebral characters",
         superSpecialCriteria: "Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Gol D. Roger, Marshall D. Teach (Blackbeard), Buggy, Kaido, Charlotte Linlin (Big Mom), Dracule Mihawk, Ben Beckman, Lucky Roux, Yasopp, Bonk Punch, Monster,Lime Juice, Hongo, Building Snake, Howling Gabu, Rockstar, Uta",
         support: [
             {
@@ -149201,11 +149359,11 @@ window.details = {
                 "Activates a different effect depending on the conditions of activation: [Activated on the 1st tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of [PSY], Cerebral and Slasher characters (up to +0.8 chain multiplier; Rush ATK boost 2.0x); [Activated on the 6th tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of character's (up to +1.0 chain multiplier; Rush ATK boost 2.5x)"
             ],
             stats: [
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [PSY], Cerebral and Slasher Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
             ]
         },
         sailor: {
@@ -149219,7 +149377,7 @@ window.details = {
             16
         ],
         specialName: "Unleashed Emperor's Swordplay",
-        superSpecial: "Reduces enemies Intimidation duration by 2 turns. If characters' 1st class is Shooter or Fighter, changes their 1st class to Cerebral (unless character is already a Cerebral as a 2nd class) for 1 turn. Boosts [PSY], Cerebral and Slasher characters' orb effects by 2.5x for 2 turns, transforms [PSY] characters to [Super] [PSY], and changes Cerebral characters into Super Cerebral characters",
+        superSpecial: "Reduces enemies Intimidation duration by 2 turns and changes Class 1 of all non-Cerenbral Class 1 Shooter and Class 1 Fighter characters to Cerebral for 1 turn. Boosts [PSY], Cerebral and Slasher characters' orb effects by 2.5x for 2 turns, transforms [PSY] characters to Super [PSY] characters, and transforms Cerebral characters into Super Cerebral characters",
         superSpecialCriteria: "Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Gol D. Roger, Marshall D. Teach (Blackbeard), Buggy, Kaido, Charlotte Linlin (Big Mom), Dracule Mihawk, Ben Beckman, Lucky Roux, Yasopp, Bonk Punch, Monster,Lime Juice, Hongo, Building Snake, Howling Gabu, Rockstar, Uta",
         support: [
             {
@@ -149416,11 +149574,11 @@ window.details = {
                 "Activates a different effect depending on the conditions of activation: [Activated on the 1st tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of [DEX], Shooter and Free Spirit characters (up to +0.8 chain multiplier; Rush ATK boost 2.0x); [Activated on the 6th tap of an attack] Reduces HP by a certain amount, but allows to perform a Rush. As the Rush tap connects, cumulatively boosts the chain, and boosts the ATK of the Finish tap of character's (up to +1.0 chain multiplier; Rush ATK boost 2.5x)"
             ],
             stats: [
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
-                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.01<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.1x<br>Each successful chain adds +0.1 (up to 1.3)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 20,000<br>Max Rush: 5 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.7)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.5",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.4)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.5x<br>Each successful chain adds +0.1 (up to 1.9)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.6",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.2x<br>Each successful chain adds +0.1 (up to 1.6)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.6x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.7",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 1.8)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 1.8x<br>Each successful chain adds +0.1 (up to 2.2)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
+                "[Activated on the 1st tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: [DEX], Shooter and Free Spirit Rush ATK boost 1.4x<br>Each successful chain adds +0.1 (up to 2.0)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br>[Activated on the 6th tap of an attack] <br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Self Rush ATK boost 2x<br>Each successful chain adds +0.1 (up to 2.5)<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3"
             ]
         },
         sailor: {
@@ -151732,6 +151890,588 @@ window.details = {
                     "Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
                     "Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
                     "Adds 9% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
+    4177: {
+        captain: "Reduces Special Cooldown of Slasher characters by 2 turns at the start of the fight, boosts their ATK by 4.75x and HP by 1.5x, and further boosts Slasher characters' (for 1st Class only) ATK by 1.1x",
+        festAbility: [
+            "[DEX]-type teammates Increased Defense Lv.1, ATK Up Lv.1; Slasher class teammates Miss % Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.2, ATK Up Lv.2; Slasher class teammates Miss % Down Lv.2",
+            "[DEX]-type teammates Increased Defense Lv.3, ATK Up Lv.3; Slasher class teammates Miss % Down Lv.3",
+            "[DEX]-type teammates Increased Defense Lv.4, ATK Up Lv.4; Slasher class teammates Miss % Down Lv.4",
+            "[DEX]-type teammates Increased Defense Lv.5, ATK Up Lv.5; Slasher class teammates Miss % Down Lv.5"
+        ],
+        festAttackPattern: [
+            "Normal Attack",
+            "Normal Attack",
+            "Power Attack",
+            "Full Attack"
+        ],
+        festAttackTarget: "Targets closest enemies",
+        festResistance: "80% chance to evade Damage Over Time, reduce damage taken from [QCK] by 20%",
+        festSpecial: [
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 1.8 damage; targets 1 enemy with high ATK for 1550 damage; targets 1 Slasher class enemy with high Special CT for 55% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 1.85 damage; targets 1 enemy with high ATK for 1600 damage; targets 1 Slasher class enemy with high Special CT for 60% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 1.9 damage; targets 1 enemy with high ATK for 1650 damage; targets 1 Slasher class enemy with high Special CT for 65% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 1.95 damage; targets 1 enemy with high ATK for 1700 damage; targets 1 Slasher class enemy with high Special CT for 70% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 2 damage; targets 1 enemy with high ATK for 1750 damage; targets 1 Slasher class enemy with high Special CT for 75% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 2.05 damage; targets 1 enemy with high ATK for 1800 damage; targets 1 Slasher class enemy with high Special CT for 80% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 2.1 damage; targets 1 enemy with high ATK for 1850 damage; targets 1 Slasher class enemy with high Special CT for 85% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 2.15 damage; targets 1 enemy with high ATK for 1900 damage; targets 1 Slasher class enemy with high Special CT for 90% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 2.2 damage; targets 1 enemy with high ATK for 1950 damage; targets 1 Slasher class enemy with high Special CT for 95% chance of Silence (5 s)"
+            },
+            {
+                cooldown: 29,
+                description: "Targets enemies within large range (horizontal) for ATK x 2.25 damage; targets 1 enemy with high ATK for 2000 damage; targets 1 Slasher class enemy with high Special CT for 100% chance of Silence (5 s)"
+            }
+        ],
+        festStats: {
+            def: 190,
+            spd: 181,
+            style: "ATK"
+        },
+        limit: [
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base HP by 70" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 80" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 100" },
+            { description: "Boosts base HP by 120" },
+            { description: "Acquire Potential 3: Reduce Sailor Despair duration" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base HP by 130" },
+            { description: "Acquire Sailor Ability 2: Restores Special Cooldown of this character by 2 turns when it is rewinded, and when a Slasher Captain uses a Special, reduces character's Special charge time by 5 turns (only once per quest)" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 3% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Enrage/Reduce Increase Damage Taken duration",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                Name: "Reduce Sailor Despair duration",
+                description: [
+                    "Reduces Sailor Despair duration by 1 turn on this character",
+                    "Reduces Sailor Despair duration by 2 turns on this character",
+                    "Reduces Sailor Despair duration by 3 turns on this character",
+                    "Reduces Sailor Despair duration by 4 turns on this character",
+                    "Reduces Sailor Despair duration by 5 turns on this character"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Boosts Slasher characters' base ATK, HP and RCV by +75",
+            level1: "Restores Special Cooldown of this character by 2 turns when it is rewinded, and when a Slasher Captain uses a Special, reduces character's Special charge time by 5 turns (only once per quest)"
+        },
+        special: "Deals 20% of enemies' current HP in damage to all enemies, reduces enemies' Percent Damage Reduction duration by 6 turns, boosts Slasher and Free Spirit characters' orb effects by 2.5x for 2 turns, and reduces enemies' Slasher Resistance by -30% for 2 turns. If Captain is a Slasher or Free Spirit class, reduces Special charge time by 2 turns",
+        specialCooldown: [
+            21,
+            15
+        ],
+        specialName: "Black Blade Flash",
+        support: [
+            {
+                Characters: "[DEX] characters",
+                description: [
+                    "Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV",
+                    "Adds 9% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV"
+                ]
+            }
+        ]
+    },
+    4178: {
+        captain: "Boosts [PSY] characters' ATK by 3x and HP by 1.1x",
+        festAbility: [
+            "[PSY]-type teammates HP Up Lv.1, Increased Defense Lv.1, SPD Up Lv.1; Striker class teammates Special CT Speed Up Lv.1; if \"Sanji\", \"Zeff\", \"Don Krieg\", \"Pearl\", \"Patty\" or \"Carne\" is on the team, [INT]-type enemies Special CT Speed Down Lv.1",
+            "[PSY]-type teammates HP Up Lv.2, Increased Defense Lv.2, SPD Up Lv.2; Striker class teammates Special CT Speed Up Lv.1; if \"Sanji\", \"Zeff\", \"Don Krieg\", \"Pearl\", \"Patty\" or \"Carne\" is on the team, [INT]-type enemies Special CT Speed Down Lv.1",
+            "[PSY]-type teammates HP Up Lv.3, Increased Defense Lv.3, SPD Up Lv.3; Striker class teammates Special CT Speed Up Lv.2; if \"Sanji\", \"Zeff\", \"Don Krieg\", \"Pearl\", \"Patty\" or \"Carne\" is on the team, [INT]-type enemies Special CT Speed Down Lv.2",
+            "[PSY]-type teammates HP Up Lv.4, Increased Defense Lv.4, SPD Up Lv.4; Striker class teammates Special CT Speed Up Lv.2; if \"Sanji\", \"Zeff\", \"Don Krieg\", \"Pearl\", \"Patty\" or \"Carne\" is on the team, [INT]-type enemies Special CT Speed Down Lv.2",
+            "[PSY]-type teammates HP Up Lv.5, Increased Defense Lv.5, SPD Up Lv.5; Striker class teammates Special CT Speed Up Lv.3; if \"Sanji\", \"Zeff\", \"Don Krieg\", \"Pearl\", \"Patty\" or \"Carne\" is on the team, [INT]-type enemies Special CT Speed Down Lv.3"
+        ],
+        festAttackPattern: [
+            "Normal Attack",
+            "Normal Attack",
+            "Power Attack",
+            "Full Attack"
+        ],
+        festAttackTarget: "Targets closest enemies",
+        festResistance: "Completely evades Silence, reduce damage taken from [INT] by 30%",
+        festSpecial: [
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.1 (11 s); targets [INT]-type enemies for HP 13% reduction; targets Slasher class enemies for ATK x 0.5 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.1 (12 s); targets [INT]-type enemies for HP 16% reduction; targets Slasher class enemies for ATK x 0.75 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.1 (13 s); targets [INT]-type enemies for HP 19% reduction; targets Slasher class enemies for ATK x 1 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.2 (14 s); targets [INT]-type enemies for HP 22% reduction; targets Slasher class enemies for ATK x 1.25 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.2 (15 s); targets [INT]-type enemies for HP 25% reduction; targets Slasher class enemies for ATK x 1.5 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.3 (16 s); targets [INT]-type enemies for HP 28% reduction; targets Slasher class enemies for ATK x 1.75 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.3 (17 s); targets [INT]-type enemies for HP 31% reduction; targets Slasher class enemies for ATK x 2 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.3 (18 s); targets [INT]-type enemies for HP 34% reduction; targets Slasher class enemies for ATK x 2.25 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.4 (19 s); targets [INT]-type enemies for HP 37% reduction; targets Slasher class enemies for ATK x 2.5 damage"
+            },
+            {
+                cooldown: 26,
+                description: "Targets enemies within large range for DEF Down Lv.5 (20 s); targets [INT]-type enemies for HP 40% reduction; targets Slasher class enemies for ATK x 2.75 damage"
+            }
+        ],
+        festStats: {
+            def: 128,
+            spd: 198,
+            style: "ATK"
+        },
+        limit: [
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Acquire Potential 1: [INT] Damage Reduction" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Acquire Potential 2: [PSY] Damage Reduction" },
+        ],
+        potential: [
+            {
+                Name: "[INT] Damage Reduction",
+                description: [
+                    "Reduces damage taken from [INT] characters by 1%",
+                    "Reduces damage taken from [INT] characters by 2%",
+                    "Reduces damage taken from [INT] characters by 3%",
+                    "Reduces damage taken from [INT] characters by 4%",
+                    "Reduces damage taken from [INT] characters by 5%"
+                ]
+            },
+            {
+                Name: "[PSY] Damage Reduction",
+                description: [
+                    "Reduces damage taken from [PSY] characters by 1%",
+                    "Reduces damage taken from [PSY] characters by 2%",
+                    "Reduces damage taken from [PSY] characters by 3%",
+                    "Reduces damage taken from [PSY] characters by 4%",
+                    "Reduces damage taken from [PSY] characters by 5%"
+                ]
+            }
+        ],
+        sailor: "Boosts [PSY] characters' base ATK by 100",
+        special: "Reduces Special Cooldown of Striker characters by 1 turn, reduces enemies' Increased Defense duration by 4 turns, and deals 50x character's ATK in [PSY]-type damage to one enemy",
+        specialCooldown: [
+            13,
+            13
+        ],
+        specialName: "Shedding Tears of Gratitude",
+        support: []
+    },
+    4179: {
+        captain: "Boosts [DEX], Shooter, and Free Spirit characters' ATK by approximately 5.5x instead if they have a beneficial orb (5.25x otherwise), HP by 1.3x, makes their [TND] orbs have matching orb effects, boosts chances of getting [TND] orbs, and if crew uses a Special to boost ATK or orb effects, adds +0.2 to the boost (stackable with other further raising effects)",
+        festAbility: [
+            "[DEX]-type teammates Increased Defense Lv.2, SPD Up Lv.2; when there are 5 or more [DEX]-type teammates, enemies DEF Down Lv.2, Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.3, SPD Up Lv.3; when there are 5 or more [DEX]-type teammates, enemies DEF Down Lv.3, Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.4, SPD Up Lv.4; when there are 5 or more [DEX]-type teammates, enemies DEF Down Lv.4, Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.5, SPD Up Lv.5; when there are 5 or more [DEX]-type teammates, enemies DEF Down Lv.5, Special CT Speed Down Lv.1",
+            "[DEX]-type teammates Increased Defense Lv.6, SPD Up Lv.6; when there are 5 or more [DEX]-type teammates, enemies DEF Down Lv.6, Special CT Speed Down Lv.2"
+        ],
+        festAbilityGP: [
+            {
+                festGPAbility: "Team ATK Up Lv.1, HP, SPD Up Lv.1",
+                festGPSpecial: "Targets enemies for 500 damage",
+                uses: 2
+            },
+            {
+                festGPAbility: "Team ATK Up Lv.1, HP, SPD Up Lv.2",
+                festGPSpecial: "Targets enemies for 625 damage",
+                uses: 2
+            },
+            {
+                festGPAbility: "Team ATK Up Lv.2, HP, SPD Up Lv.2",
+                festGPSpecial: "Targets enemies for 750 damage",
+                uses: 2
+            },
+            {
+                festGPAbility: "Team ATK Up Lv.2, HP, SPD Up Lv.3",
+                festGPSpecial: "Targets enemies for 875 damage",
+                uses: 2
+            },
+            {
+                festGPAbility: "Team ATK Up Lv.3, HP, SPD Up Lv.3",
+                festGPSpecial: "Targets enemies for 1000 damage",
+                uses: 2
+            }
+        ],
+        festAbilityGPCondition: "When 2 teammates are defeated",
+        festAttackPattern: [
+            "Normal Attack",
+            "Heal Self Lv.2",
+            "Power Attack",
+            "Full Attack"
+        ],
+        festAttackTarget: "Targets closest enemies",
+        festResistance: "Completely evades Paralysis, reduce damage taken from [QCK] by 30%",
+        festSpecial: [
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.2 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.1 (15 s), Special CT 11% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.2 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.1 (15 s), Special CT 12% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.3 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.1 (15 s), Special CT 13% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.3 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.1 (15 s), Special CT 14% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.4 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.1 (15 s), Special CT 15% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.4 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.2 (15 s), Special CT 16% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.5 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.2 (15 s), Special CT 17% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.5 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.2 (15 s), Special CT 18% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.6 (15 s), Damage Over Time Lv.1 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.2 (15 s), Special CT 19% delay"
+            },
+            {
+                cooldown: 22,
+                description: "Targets enemies within large range for SPD Down Lv.7 (15 s), Damage Over Time Lv.2 (15 s); targets 1 enemy with high Special CT for Special CT Speed Down Lv.3 (15 s), Special CT 20% delay"
+            }
+        ],
+        festStats: {
+            def: 150,
+            spd: 144,
+            style: "DBF"
+        },
+        lastTap: {
+            condition: "On the turn Special is launched during final Battle",
+            description: [
+                "Boosts character's damage dealt to delayed enemies by 1.5x for 1 turn",
+                "Boosts character's damage dealt to delayed enemies by 2x for 1 turn",
+                "Boosts character's damage dealt to delayed enemies by 2.25x for 1 turn and boosts character's base ATK by +500 (stacks with effects from Special) for 1 turn",
+                "Boosts character's damage dealt to delayed enemies by 2.25x for 1 turn and boosts character's base ATK by +1000 (stacks with effects from Special) for 1 turn",
+                "Boosts character's damage dealt to delayed enemies by 2.25x for 1 turn and boosts character's base ATK by +1500 (stacks with effects from Special) for 1 turn"
+            ]
+        },
+        limit: [
+            { description: "Boosts base HP by 10" },
+            { description: "Boosts base HP by 10" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Sailor Ability 1: Boosts [DEX], Shooter, and Free Spirit characters' base ATK by 75 and makes their [TND] orbs have matching orb effects" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Barrier Penetration" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 80" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Acquire Sailor Ability 2: When a [DEX], Shooter, or Free Spirit Captain uses a Special, reduces character's Special charge time by 10 turns (only once per quest)" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 80" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Acquire Potential 3: Last Tap" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 200" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Barrier Penetration",
+                description: [
+                    "This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 90% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 60% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 50% at the start of the turn"
+                ]
+            },
+            {
+                Name: "Last Tap",
+                description: [
+                    "Obtain Last Tap Lv.1",
+                    "Obtain Last Tap Lv.2",
+                    "Obtain Last Tap Lv.3",
+                    "Obtain Last Tap Lv.4",
+                    "Obtain Last Tap Lv.5"
+                ]
+            }
+        ],
+        sailor: {
+            level1: "Boosts [DEX], Shooter, and Free Spirit characters' base ATK by 75 and makes their [TND] orbs have matching orb effects",
+            level2: "When a [DEX], Shooter, or Free Spirit Captain uses a Special, reduces character's Special charge time by 10 turns (only once per quest)"
+        },
+        special: "Delays enemies for 1 turn ignoring immunity to Delay, immunity to all status effects, or immunity (excluding certain status effect), and reduces enemies' Threshold Damage Reduction duration by 7 turns. If Captain is a [DEX] or Shooter character, applies Set Target status to enemies for 2 turns (Set Target status cannot be affected by immunity to status effects,  [DEX], Shooter, and Free Spirit characters will deal 2x damage, and their Special charge time will be reduced by 2 turns for every enemy with Set Target status defeated by normal attacks and Specials excluding Specials or Switch Effects that cause status effects or deal damage at end of turn), and allows orb effect boost to be further increased up to 2 times. If \"Becoming a Brave Warrior of the Sea\" is used in this turn, further increases ATK and orb effect boosts by +0.5",
+        specialCooldown: [
+            20,
+            15
+        ],
+        specialName: "Becoming a Brave Warrior of the Sea",
+        superSpecial: "Reduces character's Special charge time by 10 turns, delays enemies for 1 turn ignoring immunity to Delay, immunity to all status effects, or immunity (excluding certain status effect), boosts [DEX], Shooter, and Free Spirit characters' orb effects by 2.5x for 2 turns, and transforms Shooter characters into Super Shooter characters",
+        superSpecialCriteria: "If any 2 of the following characters are on the crew (except as Support Characters; Double Characters counts as 1): Onion, Pepper, Carrot, Kaya, Heracles-un (Heracles), Yasopp,  Broggy, Monkey D. Luffy, Roronoa Zoro, Sanji, Nami, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe",
+        support: [
+            {
+                Characters: "Broggy, Kaya, Heracles-un (Heracles), Yasopp, Onion, Pepper, Carrot",
+                description: [
+                    "Once per adventure, if supported character uses a Special, reduces enemies' Threshold Damage Reduction duration by 1 turn",
+                    "Once per adventure, if supported character uses a Special, reduces enemies' Threshold Damage Reduction duration by 1 turn",
+                    "Once per adventure, if supported character uses a Special, reduces enemies' Threshold Damage Reduction duration by 1 turn",
+                    "Once per adventure, if supported character uses a Special, reduces enemies' Threshold Damage Reduction duration by 1 turn",
+                    "Once per adventure, if supported character uses a Special, reduces enemies' Threshold Damage Reduction duration by 1 turn, and delays enemies by 1 turn"
+                ]
+            }
+        ]
+    },
+    4180: {
+        captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts [DEX] characters' ATK by 3.5x, RCV by 1.3x, and recovers 3,000 HP at end of turn",
+        limit: [
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Acquire Potential 1: Reduce No Healing duration" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Sailor Ability 2: Boosts [DEX] characters' base RCV by 100" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Ship Bind Resistance" },
+        ],
+        potential: [
+            {
+                Name: "Reduce No Healing duration",
+                description: [
+                    "Reduces No Healing duration by 1 turn",
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 4 turns",
+                    "Reduces No Healing duration by 5 turns"
+                ]
+            },
+            {
+                Name: "Ship Bind Resistance",
+                description: [
+                    "Reduces Ship Bind duration by 1 turn",
+                    "Reduces Ship Bind duration by 1 turn",
+                    "Reduces Ship Bind duration by 2 turns",
+                    "Reduces Ship Bind duration by 2 turns",
+                    "Reduces Ship Bind duration by 3 turns"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Heals crew by 500 HP at end of turn",
+            level1: "Boosts [DEX] characters' base RCV by 100"
+        },
+        special: "Reduces Burn duration by 6 turns, changes orbs, including [BLOCK] orbs, to character's own type, recovers 15,000 HP, and boosts Color Affinity for [DEX] and Free Spirit characters by 2.25x for 3 turns. If there are delayed enemies when Special is launched, extends the duration of ATK and orb effect boosts by 1 turn. If \"Usopp\" is in the crew or is set as Support for character, reduces enemies' [DEX] Resistance by -20% for 2 turns and reduces ship's Special charge time by 1 turn",
+        specialCooldown: [
+            19,
+            14
+        ],
+        specialName: "Working Hard for the Day of the Reunion",
+        support: [
+            {
+                Characters: "Usopp",
+                description: [
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.1",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.1, and changes supported character's orb to [DEX]",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.1, and changes supported character's orb to character's own type",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.2, and changes supported character's orb to character's own type",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.2, changes supported character's orb to character's own type, and reduces ship's Special charge time by 1 turn"
+                ]
+            }
+        ]
+    },
+    4181: {
+        captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts [DEX] characters' ATK by 3.5x, HP by 1.3x, and makes their [STR][QCK] orbs have matching orb effects",
+        limit: [
+            { description: "Boosts base HP by 10" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Acquire Potential 1: Pinch Healing" },
+            { description: "Boosts base RCV by 15" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 60" },
+            { description: "Acquire Sailor Ability 2: Restores Special Cooldown of this character by 3 turns when it is rewinded" },
+            { description: "Boosts base HP by 40" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Reduce Slot Bind duration" },
+        ],
+        potential: [
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Reduce Slot Bind duration",
+                description: [
+                    "Reduces Slot Bind duration by 1 turn on this character",
+                    "Reduces Slot Bind duration by 2 turns on this character",
+                    "Reduces Slot Bind duration by 3 turns on this character",
+                    "Reduces Slot Bind duration by 4 turns on this character",
+                    "Reduces Slot Bind duration by 5 turns on this character"
+                ]
+            }
+        ],
+        sailor: {
+            base: "Reduces character's Special charge time by 5 turns at the start of the fight",
+            level1: "Restores Special Cooldown of this character by 3 turns when it is rewinded"
+        },
+        special: "Reduces Special Cooldown of enemies' Percent Damage Reduction duration by 6 turns, changes character's orb, including [BLOCK] orb, to [DEX], reduces [DEX] characters by 1 turn, and boosts [DEX] and Free Spirit characters' ATK by 2.25x for 3 turns. If there are delayed enemies when Special is launched, reduces Free Spirit characters' Special charge time by 1 turn. If \"Usopp\" is in the crew or is set as Support for character, further increases orb effect boost by +0.25 and reduces Special charge time by 1 turn",
+        specialCooldown: [
+            23,
+            18
+        ],
+        specialName: "Fondly-Remembered Pirate Days",
+        support: [
+            {
+                Characters: "Usopp",
+                description: [
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.1",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.1",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.2",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.2",
+                    "Once per adventure, if supported character uses a Special, further increases orb effect boosts by +0.2, and reduces supported character's Special charge time by 1 turn"
                 ]
             }
         ]
