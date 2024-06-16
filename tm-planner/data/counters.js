@@ -27,5 +27,7 @@ var counters = {
     'resil':                ['resil-red-e', 'sv_resil-red-e', 'dmg-eot', 'c_dmg-eot', 'sv_dmg-eot',, 'poison'],
     'sp-bind':              ['sp-bind-red', 's_sp-bind-red', 'c_sp-bind-red'],
     'slot-change':          ['slot-change', 'sv_slot-change'],
-    'slot-block':           ['slot-change-block', 'sv_slot-change-block']
+    'slot-block':           ['slot-change-block', 'sv_slot-change-block'],
+    'slot-para':            ['para-red'],
+    'slot-poison':          ['poison-red']
 }

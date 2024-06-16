@@ -33,6 +33,7 @@ const HUNGER = 'hunger';
 const IMMU_ALL = 'immu-all';
 const IMMU_DEF = 'immu-def';
 const IMMU_DELAY = 'immu-delay';
+const IMMU_EXCEPT = 'immu-except';
 const IMMU_POISON = 'immu-poison';
 const INTIM = 'intim';
 const NAO = 'nao';
@@ -48,6 +49,8 @@ const SLOT_BOOST = 'slot-boost';
 const SLOT_CHANGE = 'slot-change';
 const SLOT_EFT_DOWN = 'Slot Effect Down';
 const SLOT_NEG = 'slot-neg';
+const SLOT_PARA = 'slot-para';
+const SLOT_POISON = 'slot-poison';
 const SP_BIND = 'sp-bind';
 const SP_LIMIT = 'sp-limit';
 const STUN = 'stun';
@@ -4691,7 +4694,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Great, Row 2'],
+                                ['slot-lock-tap',   '1x Great, Row 2'],
                                 ['chain-lock',      '4T, 1.1x'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -4868,7 +4871,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 2',
                             action: [
-                                ['slot-lock',       'Great 1x'],
+                                ['slot-lock-tap',   'Great 1x'],
                                 ['slot-change',     'BOMB']
                             ]
                         },
@@ -4986,7 +4989,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['slot-lock',       'Good 1x'],
+                                ['slot-lock-tap',   'Good 1x'],
                                 ['slot-change',     'EMPTY']
                             ]
                         },
@@ -5377,7 +5380,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       'Good 1x']
+                                ['slot-lock-tap',   'Good 1x']
                             ]
                         }
                     ]
@@ -5570,7 +5573,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['slot-lock',       'Great 1x']
+                                ['slot-lock-tap',   'Great 1x']
                             ]
                         },
                         {
@@ -5946,7 +5949,7 @@ var tm_opponents = {
                             type: '<50%',
                             action: [
                                 ['slot-change',     'EMPTY'],
-                                ['slot-lock',       '1x Perfect, Row 1 3']
+                                ['slot-lock-tap',   '1x Perfect, Row 1 3']
                             ]
                         }
                     ]
@@ -6039,7 +6042,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Good'],
+                                ['slot-lock-tap',   '1x Good'],
                                 ['enrage',          '99+T']
                             ]
                         },
@@ -6160,7 +6163,7 @@ var tm_opponents = {
                         {
                             type: '<50%',
                             action: [
-                                ['slot-lock',       '1x Good, Row 1'],
+                                ['slot-lock-tap',   '1x Good, Row 1'],
                                 ['type-change',     'Random']
                             ]
                         }
@@ -7487,7 +7490,7 @@ var tm_opponents = {
                                 ['bind',            '8T, Row 3'],
                                 ['slot-change',     'STR'],
                                 ['slot-neg',        '5T, STR'],
-                                ['slot-lock',       '1x Good'],
+                                ['slot-lock-tap',   '1x Good'],
                                 ['nao',             '99+T'],
                                 ['immu-delay',      '99+T']
                             ]
@@ -7778,7 +7781,7 @@ var tm_opponents = {
                             action: [
                                 ['heal',            '30%'],
                                 ['slot-change',     'EMPTY'],
-                                ['slot-lock',       '1x Good']
+                                ['slot-lock-tap',   '1x Good']
                             ]
                         }
                     ]
@@ -8373,7 +8376,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-change',     'Random'],
-                                ['slot-lock',       '1x Good'],
+                                ['slot-lock-tap',   '1x Good'],
                                 ['ship-bind',       '5T']
                             ]
                         }
@@ -8508,7 +8511,7 @@ var tm_opponents = {
                             type: 'Interrupt - Slot Change',
                             action: [
                                 ['slot-change',     'Random Type'],
-                                ['slot-lock',       '2x Good']
+                                ['slot-lock-tap',   '2x Good']
                             ]
                         },
                         {
@@ -8821,7 +8824,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['slot-lock',       '1x Great']
+                                ['slot-lock-tap',   '1x Great']
                             ]
                         },
                         {
@@ -9637,7 +9640,7 @@ var tm_opponents = {
                                 ['slot-change',     'STR, Row 1'],
                                 ['slot-change',     'QCK, Row 2'],
                                 ['slot-change',     'DEX, Row 3'],
-                                ['slot-lock',       '1x Good'],
+                                ['slot-lock-tap',   '1x Good'],
                                 ['sp-bind',         '3T'],
                                 ['bar-p',           '2T, 3x'],
                                 ['def',             '3T, 3000x']
@@ -9964,7 +9967,8 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                ['slot-block',      'POISON/BLOCK'],
+                                ['slot-block',      'Random'],
+                                ['slot-poison',     'Random'],
                                 ['sp-bind',         '5T, Row 2 3'],
                                 ['def',             '5T, 3000x'],
                                 ['resil',           '5T'],
@@ -11592,7 +11596,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['desp',            '10T'],
                                 ['sp-bind',         '5T, Row 2 3'],
-                                ['slot-lock',       '1x Good'],
+                                ['slot-lock-tap',   '1x Good'],
                                 ['immu-delay',      '99+T']
                             ]
                         },
@@ -14306,7 +14310,7 @@ var tm_opponents = {
                             action: [
                                 ['hunger',          '3x'],
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Great']
+                                ['slot-lock-tap',   '1x Great']
                             ]
                         },
                         {
@@ -16057,7 +16061,7 @@ var tm_opponents = {
                         {
                             type: 'Turn 1',
                             action: [
-                                ['slot-change',     'PARA, Col R'],
+                                ['slot-para',       'Col R'],
                                 ['slot-change',     'QCK, Col L'],
                                 ['bind',            '5T, Col L']
                             ]
@@ -16316,7 +16320,8 @@ var tm_opponents = {
                             action: [
                                 ['cd-rew',          '2T'],
                                 ['bind',            '9T, Row 1 2'],
-                                ['slot-block',      'BLOCK/PARA'],
+                                ['slot-block',      'Random'],
+                                ['slot-para',       'Random'],
                                 ['nao',             '99+T'],
                                 ['def',             '6T, 10000x'],
                                 ['bar-slot',        '2T, 1x, TND'],
@@ -16716,7 +16721,7 @@ var tm_opponents = {
                                 ['para',            '6T'],
                                 ['resil',           '6T'],
                                 ['bar-slot',        '1T, 1x, BLOCK'],
-                                ['immu-all',        '99+T, Except Delay']
+                                ['immu-except',     '99+T, Delay']
                             ]
                         },
                         {
@@ -17043,7 +17048,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Great']
+                                ['slot-lock-tap',   '1x Great']
                             ]
                         },
                         {
@@ -17147,7 +17152,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['para',            '6T'],
                                 ['def-perc',        '2T, 90%'],
-                                ['immu-all',        '99+T, Except Delay']
+                                ['immu-except',     '99+T, Delay']
                             ]
                         },
                         {
@@ -17186,7 +17191,7 @@ var tm_opponents = {
                                 ['chain-atk-down-min','2T, < 2.75x chain, 90%'],
                                 ['intim',           '2T, -1T, Lock Chain'],
                                 ['def',             '3T, 1Mx'],
-                                ['immu-all',        '99+T, Except Delay']
+                                ['immu-except',     '99+T, Delay']
                             ]
                         },
                         {
@@ -17422,7 +17427,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Great']
+                                ['slot-lock-tap',   '1x Great']
                             ]
                         },
                         {
@@ -17536,7 +17541,7 @@ var tm_opponents = {
                                 ['bar-hit',         '1T, 25x'],
                                 ['def-thres',       '6T, 99%, 1000'],
                                 ['def',             '6T, 1Mx'],
-                                ['immu-all',        '99+T, Except Delay']
+                                ['immu-except',     '99+T, Delay']
                             ]
                         },
                         {
@@ -17598,7 +17603,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['bar-slot',        '2T, 1x, DEX'],
                                 ['bar-p',           '3T, 1x'],
-                                ['immu-all',        '99+T, Except Ignite']
+                                ['immu-except',     '99+T, Burn']
                             ]
                         },
                         {
@@ -17639,7 +17644,7 @@ var tm_opponents = {
                                 ['slot-block',      'All'],
                                 ['desp',            '8T'],
                                 ['ship-bind',       '6T'],
-                                ['immu-all',        '99+T, Except Ignite']
+                                ['immu-except',     '99+T, Burn']
                             ]
                         },
                         {
@@ -17711,7 +17716,7 @@ var tm_opponents = {
                                 ['nao',             '99+T'],
                                 ['bar-slot',        '2T, 2x, STR'],
                                 ['atk-down',        '6T, 99%'],
-                                ['immu-all',        '99+T, Except Ignite']
+                                ['immu-except',     '99+T, Burn']
                             ]
                         },
                         {
@@ -17871,7 +17876,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Good']
+                                ['slot-lock-tap',   '1x Good']
                             ]
                         },
                         {
@@ -17918,7 +17923,7 @@ var tm_opponents = {
                                 ['atk-down',        '3T, 99%'],
                                 ['slot-neg',        '5T, Type'],
                                 ['slot-block',      'All'],
-                                ['immu-all',        '99+T, Except Def Down']
+                                ['immu-except',     '99+T, Def Down']
                             ]
                         },
                         {
@@ -18257,7 +18262,7 @@ var tm_opponents = {
                                 ['hunger',          '2x'],
                                 ['def-perc',        '6T, 90%'],
                                 ['def-thres',       '6T, 99%, 1000'],
-                                ['immu-all',        '99+T, Except Def Down']
+                                ['immu-except',     '99+T, Def Down']
                             ]
                         },
                         {
@@ -18323,7 +18328,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Good']
+                                ['slot-lock-tap',   '1x Good']
                             ]
                         },
                         {
@@ -18367,7 +18372,7 @@ var tm_opponents = {
                                 ['slot-change',     'Bad'],
                                 ['def-perc',        '6T, 90%'],
                                 ['def-thres',       '6T, 99%, 1000'],
-                                ['immu-all',        '99+T, Except Increase Dmg Taken']
+                                ['immu-except',     '99+T, Increase Dmg Taken']
                             ]
                         },
                         {
@@ -18436,7 +18441,7 @@ var tm_opponents = {
                                 ['p-easy',          '1T'],
                                 ['def-null',        '1T'],
                                 ['bar-gd',          '1T, 2x'],
-                                ['immu-all',        '99+T, Except Increase Dmg Taken / Weakened']
+                                ['immu-except',     '99+T, Increase Dmg Taken / Weakened']
                             ]
                         },
                         {
@@ -18536,7 +18541,7 @@ var tm_opponents = {
                                 ['intim',           '3T, -1T, Slot Boost'],
                                 ['atk-boost',       '1T, 1.1x'],
                                 ['def',             '6T, 1Mx'],
-                                ['immu-all',        '99+T, Except Def Down']
+                                ['immu-except',     '99+T, Def Down']
                             ]
                         },
                         {
@@ -18616,7 +18621,7 @@ var tm_opponents = {
                             type: 'Turn 1',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Perfect']
+                                ['slot-lock-tap',   '1x Perfect']
                             ]
                         },
                         {
@@ -18647,7 +18652,7 @@ var tm_opponents = {
                                 ['resil',           '6T'],
                                 ['atk-down',        '5T, 99%'],
                                 ['pain',            '5T, 18000'],
-                                ['immu-all',        '99+T, Except Def Down / Increase Dmg Taken / Weakened']
+                                ['immu-except',     '99+T, Def Down / Increase Dmg Taken / Weakened']
                             ]
                         },
                         {
@@ -18789,7 +18794,7 @@ var tm_opponents = {
                             type: 'Turn 2',
                             action: [
                                 ['slot-block',      'All'],
-                                ['slot-lock',       '1x Good']
+                                ['slot-lock-tap',   '1x Good']
                             ]
                         },
                         {
@@ -18955,7 +18960,7 @@ var tm_opponents = {
                                 ['desp',            '8T'],
                                 ['dmg-eot-e',       '6T, 20000'],
                                 ['def',             '6T, 1Mx'],
-                                ['immu-all',        '99+T, Except Set Target']
+                                ['immu-except',     '99+T, Set Target']
                             ]
                         },
                         {
@@ -18992,7 +18997,7 @@ var tm_opponents = {
                                 ['desp',            '5T'],
                                 ['slot-change',     'Poison'],
                                 ['bar-hit',         '1T, 12x'],
-                                ['immu-all',        '99+T, Except Set Target']
+                                ['immu-except',     '99+T, Set Target']
                             ]
                         },
                         {
@@ -19088,7 +19093,7 @@ var tm_opponents = {
                                 ['chain-atk-down-min','5T, <2.75x Chain, 99%'],
                                 ['intim',           '3T, -2T, Set Chain / Affinity'],
                                 ['para',            '6T'],
-                                ['immu-all',        '99+T, Except Set Target']
+                                ['immu-except',     '99+T, Set Target']
                             ]
                         },
                         {
@@ -19501,7 +19506,7 @@ var tm_opponents = {
                                 { type: CHAIN_ATK_DOWN_MAX, turn: 5, detail: '>4.5' },
                                 { type: DEF, turn: 8 },
                                 { type: INTIM, turn: 2, detail: 'Set Chain / Affinity, -1' },
-                                { type: IMMU_ALL, turn: 99, detail: 'Except Def Down' }
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
                             ]
                         },
                         {
@@ -19709,7 +19714,7 @@ var tm_opponents = {
                                 { type: DEF_NULL, turn: 3 },
                                 { type: ATK_DOWN, turn: 6 },
                                 { type: INTIM, turn: 2, detail: 'Atk Boost, -2' },
-                                { type: IMMU_ALL, turn: 99, detail: 'Except Def Down' }
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
                             ]
                         },
                         {
@@ -19771,11 +19776,11 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                { type: SLOT_CHANGE, detail: 'PARA' },
+                                { type: SLOT_PARA },
                                 { type: DESP, turn: 13 },
                                 { type: BIND, turn: 9, detail: 'Row 2' },
                                 { type: DEF, turn: 7 },
-                                { type: IMMU_ALL, turn: 99, detail: 'Except Def Down' }
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
                             ]
                         },
                         {
@@ -20089,7 +20094,7 @@ var tm_opponents = {
                             type: 'Preemp',
                             action: [
                                 { type: CD_REW, turn: 6, detail: 'Col R' },
-                                { type: SLOT_CHANGE, detail: 'PARA' },
+                                { type: SLOT_PARA },
                                 { type: NAO, turn: 99 },
                                 { type: ATK_BOOST, turn: 5, detail: '1.1x' },
                                 { type: SLOT_BOOST, turn: 5, detail: '1.1x' },
