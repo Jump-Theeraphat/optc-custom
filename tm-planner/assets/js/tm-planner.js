@@ -2684,8 +2684,8 @@ function checkTeamMiniGuideSpecialMet(teamId) {
 
     var valuableSpecials = ['atk-down-red', 'bind-red', 'blind-red', 'burn-red',
         'cd-red', 'chain-down-red', 'chain-lock-red', 'def-red-e', 'def-perc-red-e',
-        'def-thres-red-e', 'def-null-red-e', 'desp-red', 'dmg-up-red', 'para-red',
-        'resil-red-e', 'silence-red',];
+        'def-thres-red-e', 'def-null-red-e', 'desp-red', 'inc-dmg-red', 'para-red',
+        'resil-red-e', 'sp-bind-red',];
 
     var valuableSpecialsWithoutTurns = ['chain-lock', 'chain-bound', 'def-down',
         'dmg-eot', 'poison', 'slot-change', 'slot-change-block'];
@@ -2846,10 +2846,10 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
 
             if (specialRegex.test(special)) {
                 if (turnsNeeded) {
-                    // Special Case for Silence and CD Rewind
+                    // Special Case for Special Bind and CD Rewind
                     var teamSlot = $(this).closest('.team-slot').data('slot');
                     if (teamSlot == '0' || teamSlot == '1') {
-                        if (specialRegex === filter_map_sp['silence-red'] ||
+                        if (specialRegex === filter_map_sp['sp-bind-red'] ||
                             specialRegex === filter_map_sp['cd-red']) {
                             // Unit is unable to negate the action as Captain
                             if (isCaptainRow)
@@ -2873,7 +2873,7 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                         specialRegex === filter_map_sp['def-null-red-e'] ||
                         specialRegex === filter_map_sp['def-perc-red-e'] ||
                         specialRegex === filter_map_sp['def-thres-red-e'] ||
-                        specialRegex === filter_map_sp['dmg-up-red'] ||
+                        specialRegex === filter_map_sp['inc-dmg-red'] ||
                         specialRegex === filter_map_sp['resil-red-e']
                     )
                         resultGroup = [1, 2, 3, 4, 5];
@@ -2883,7 +2883,7 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                         specialRegex === filter_map_sp['bind-red'] ||
                         specialRegex === filter_map_sp['desp-red'] ||
                         specialRegex === filter_map_sp['para-red'] ||
-                        specialRegex === filter_map_sp['silence-red']
+                        specialRegex === filter_map_sp['sp-bind-red']
                     )
                         resultGroup = [1, 2, 3, 5, 6];
 
