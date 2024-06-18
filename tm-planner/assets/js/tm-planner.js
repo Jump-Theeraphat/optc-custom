@@ -2752,20 +2752,16 @@ function checkTeamMiniGuideSpecialMet(teamId) {
                             }
 
                             if (aCounter) {
-                                if (Array.isArray(aCounter)) {
-                                    for (var ac in aCounter) {
-                                        if (valuableSpecials.includes(aCounter[ac])) {
-                                            var newNumOfTurns = checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, numOfTurns, isCaptainRow);
+                                for (var ac in aCounter) {
+                                    if (valuableSpecials.includes(aCounter[ac])) {
+                                        var newNumOfTurns = checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, numOfTurns, isCaptainRow);
 
-                                            if (newNumOfTurns < numOfTurns)
-                                                numOfTurns = newNumOfTurns;
-                                        } else if (valuableSpecialsWithoutTurns.includes(aCounter[ac])) {
-                                            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, null, false, immuTypes) == 0)
-                                                numOfTurns = 0;
-                                        }
+                                        if (newNumOfTurns < numOfTurns)
+                                            numOfTurns = newNumOfTurns;
+                                    } else if (valuableSpecialsWithoutTurns.includes(aCounter[ac])) {
+                                        if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, null, false, immuTypes) == 0)
+                                            numOfTurns = 0;
                                     }
-                                } else {
-                                    numOfTurns = checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter).regex, numOfTurns, isCaptainRow);
                                 }
 
                                 // Special not met
