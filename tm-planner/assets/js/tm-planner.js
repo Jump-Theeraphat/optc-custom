@@ -2664,12 +2664,12 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
 
         // Case 3: specific specials
         if (superCriteria.indexOf('ATK UP') != -1) {
-            if (checkTeamSpecialMet(teamId, filter_map_sp["atk-boost"]) > 0)
+            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', 'atk-boost').regex) > 0)
                 putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
         }
 
         if (superCriteria.indexOf('Orb amplification') != -1) {
-            if (checkTeamSpecialMet(teamId, filter_map_sp["orb-boost"]) > 0)
+            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', 'orb-boost').regex) > 0)
                 putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
         }
     }
@@ -2755,17 +2755,17 @@ function checkTeamMiniGuideSpecialMet(teamId) {
                                 if (Array.isArray(aCounter)) {
                                     for (var ac in aCounter) {
                                         if (valuableSpecials.includes(aCounter[ac])) {
-                                            var newNumOfTurns = checkTeamSpecialMet(teamId, filter_map_sp[aCounter[ac]], numOfTurns, isCaptainRow);
+                                            var newNumOfTurns = checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, numOfTurns, isCaptainRow);
 
                                             if (newNumOfTurns < numOfTurns)
                                                 numOfTurns = newNumOfTurns;
                                         } else if (valuableSpecialsWithoutTurns.includes(aCounter[ac])) {
-                                            if (checkTeamSpecialMet(teamId, filter_map_sp[aCounter[ac]], null, false, immuTypes) == 0)
+                                            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, null, false, immuTypes) == 0)
                                                 numOfTurns = 0;
                                         }
                                     }
                                 } else {
-                                    numOfTurns = checkTeamSpecialMet(teamId, filter_map_sp[aCounter], numOfTurns, isCaptainRow);
+                                    numOfTurns = checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter).regex, numOfTurns, isCaptainRow);
                                 }
 
                                 // Special not met
@@ -2773,7 +2773,7 @@ function checkTeamMiniGuideSpecialMet(teamId) {
                                     specialsNeeded[aType] = numOfTurns + (numOfTurns == 1 ? ' turn' : ' turns');
                             }
                         } else if (aCounter && valuableSpecialsWithoutTurns.includes(aCounter)) { // For specials slot-change / slot-block
-                            if (checkTeamSpecialMet(teamId, filter_map_sp[aCounter]) != 0)
+                            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter).regex) != 0)
                                 specialsNeeded["Change Orbs"] = tmId >= 4147 ? a.detail : a[1];
                         }
                     }
@@ -2849,8 +2849,8 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                     // Special Case for Special Bind and CD Rewind
                     var teamSlot = $(this).closest('.team-slot').data('slot');
                     if (teamSlot == '0' || teamSlot == '1') {
-                        if (specialRegex === filter_map_sp['sp-bind-red'] ||
-                            specialRegex === filter_map_sp['cd-red']) {
+                        if (specialRegex === getFilterMatcher('sp', 'sp-bind-red').regex ||
+                            specialRegex === getFilterMatcher('sp', 'cd-red').regex) {
                             // Unit is unable to negate the action as Captain
                             if (isCaptainRow)
                                 return;
@@ -2863,27 +2863,27 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                     var resultGroup = [];
 
                     if (
-                        specialRegex === filter_map_sp['atk-down-red'] ||
-                        specialRegex === filter_map_sp['bar-red-e'] ||
-                        specialRegex === filter_map_sp['blind-red'] ||
-                        specialRegex === filter_map_sp['burn-red'] ||
-                        specialRegex === filter_map_sp['chain-down-red'] ||
-                        specialRegex === filter_map_sp['chain-lock-red'] ||
-                        specialRegex === filter_map_sp['def-red-e'] ||
-                        specialRegex === filter_map_sp['def-null-red-e'] ||
-                        specialRegex === filter_map_sp['def-perc-red-e'] ||
-                        specialRegex === filter_map_sp['def-thres-red-e'] ||
-                        specialRegex === filter_map_sp['inc-dmg-red'] ||
-                        specialRegex === filter_map_sp['resil-red-e']
+                        specialRegex === getFilterMatcher('sp', 'atk-down-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'bar-red-e').regex ||
+                        specialRegex === getFilterMatcher('sp', 'blind-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'burn-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'chain-down-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'chain-lock-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'def-red-e').regex ||
+                        specialRegex === getFilterMatcher('sp', 'def-null-red-e').regex ||
+                        specialRegex === getFilterMatcher('sp', 'def-perc-red-e').regex ||
+                        specialRegex === getFilterMatcher('sp', 'def-thres-red-e').regex ||
+                        specialRegex === getFilterMatcher('sp', 'inc-dmg-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'resil-red-e').regex
                     )
                         resultGroup = [1, 2, 3, 4, 5];
-                    else if (specialRegex === filter_map_sp['cd-red'])
+                    else if (specialRegex === getFilterMatcher('sp', 'cd-red').regex)
                         resultGroup = [2, 3, 4, 5, 6, 7];
                     else if (
-                        specialRegex === filter_map_sp['bind-red'] ||
-                        specialRegex === filter_map_sp['desp-red'] ||
-                        specialRegex === filter_map_sp['para-red'] ||
-                        specialRegex === filter_map_sp['sp-bind-red']
+                        specialRegex === getFilterMatcher('sp', 'bind-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'desp-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'para-red').regex ||
+                        specialRegex === getFilterMatcher('sp', 'sp-bind-red').regex
                     )
                         resultGroup = [1, 2, 3, 5, 6];
 
@@ -2926,9 +2926,9 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                 } else {
                     // Special Case for counters blocked by immunity
                     if (typeof immuTypes !== 'undefined' && immuTypes.length > 0) {
-                        if (specialRegex === filter_map_sp['def-down'] && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
+                        if (specialRegex === getFilterMatcher('sp', 'def-down').regex && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
                             turnsNeeded = 1;
-                        else if (specialRegex === filter_map_sp['poison'] && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
+                        else if (specialRegex === getFilterMatcher('sp', 'poison').regex && (immuTypes.includes('immu-all') || immuTypes.includes('immu-poison')))
                             turnsNeeded = 1;
                         else
                             turnsNeeded = 0;
@@ -2983,6 +2983,46 @@ function clearTeamNotes() {
     $(".op-guide-btn").removeClass("error");
     $(".op-guide-btn").removeClass("warning");
     $("img.highlight").removeClass("highlight");
+}
+
+function getFilterMatcher(type, key) {
+    var filterLookUp = filter_map[key];
+
+    if (type === 'sp')
+        return matchers.special[filterLookUp[0]][filterLookUp[1]];
+
+    if (type === 'sl')
+        return matchers.sailor[filterLookUp[0]][filterLookUp[1]];
+
+    if (type === 'ca')
+        return matchers.captain[filterLookUp[0]][filterLookUp[1]];
+
+    if (type === 'sv')
+        return matchers.superSpecial[filterLookUp[0]][filterLookUp[1]];
+
+    if (type === 'spt')
+        return matchers.support[filterLookUp[0]][filterLookUp[1]];
+}
+
+function regexTestHelper(text, regex, subType) {
+    if (typeof subType === 'undefined')
+        return regex.test(text);
+
+    var result = false;
+    if (regex.test(text)) {
+        var match = regex.exec(text);
+
+        for (var i in subType.groups) {
+            var subText = match[i];
+
+            if (subType.regex.test(subText)) {
+                result = true;
+                break;
+            }
+        }
+    }
+
+    return result;
 }
 
 $(document).ready(function () {
@@ -3987,7 +4027,14 @@ $(document).ready(function () {
     $('.sp-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'sp-filtered-' + filter;
-        var filterRegex = filter_map_sp[filter];
+
+        var filterLookUp = filter_map[filter];
+        var filterMatcher = getFilterMatcher('sp', filter);
+        var filterRegex = filterMatcher.regex;
+
+        var filterSubType;
+        if (filterMatcher.submatchers)
+            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
 
         if ($(this).hasClass('selected')) {
             // Clear filters of units filtered by this special
@@ -4012,17 +4059,17 @@ $(document).ready(function () {
                         // Dual Units with different Specials
                         var filtered = true;
                         if (spDesc.character1) {
-                            if (filterRegex.test(spDesc.character1))
+                            if (regexTestHelper(spDesc.character1, filterRegex, filterSubType))
                                 filtered = false;
                         }
 
                         if (spDesc.character2) {
-                            if (filterRegex.test(spDesc.character2))
+                            if (regexTestHelper(spDesc.character2, filterRegex, filterSubType))
                                 filtered = false;
                         }
 
                         if (spDesc.combined) {
-                            if (filterRegex.test(spDesc.combined))
+                            if (regexTestHelper(spDesc.combined, filterRegex, filterSubType))
                                 filtered = false;
                         }
 
@@ -4048,7 +4095,7 @@ $(document).ready(function () {
                             special = spDesc;
                         }
 
-                        if (!filterRegex.test(special))
+                        if (!regexTestHelper(special, filterRegex, filterSubType))
                             $(this).addClass(filterClass);
                     }
                 } else
@@ -4061,7 +4108,14 @@ $(document).ready(function () {
     $('.sl-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'sl-filtered-' + filter;
-        var filterRegex = filter_map_sl[filter];
+
+        var filterLookUp = filter_map[filter];
+        var filterMatcher = getFilterMatcher('sl', filter);
+        var filterRegex = filterMatcher.regex;
+
+        var filterSubType;
+        if (filterMatcher.submatchers)
+            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
 
         if ($(this).hasClass('selected')) {
             // Clear filters of units filtered by this special
@@ -4078,13 +4132,13 @@ $(document).ready(function () {
 
                 var unitDetail = details[unitId];
 
-                if (unitDetail) {
+                if (unitDetail && unitDetail.sailor) {
                     var sailor = unitDetail.sailor;
 
                     if (typeof sailor === 'object') {
                         var filtered = false;
                         for (var sl in sailor) {
-                            if (filterRegex.test(sailor[sl])) {
+                            if (regexTestHelper(sailor[sl], filterRegex, filterSubType)) {
                                 filtered = false;
                                 break;
                             } else
@@ -4094,7 +4148,7 @@ $(document).ready(function () {
                         if (filtered)
                             $(this).addClass(filterClass);
                     } else {
-                        if (!filterRegex.test(sailor))
+                        if (!regexTestHelper(sailor[sl], filterRegex, filterSubType))
                             $(this).addClass(filterClass);
                     }
                 } else
@@ -4107,7 +4161,14 @@ $(document).ready(function () {
     $('.ca-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'ca-filtered-' + filter;
-        var filterRegex = filter_map_ca[filter];
+
+        var filterLookUp = filter_map[filter];
+        var filterMatcher = getFilterMatcher('ca', filter);
+        var filterRegex = filterMatcher.regex;
+
+        var filterSubType;
+        if (filterMatcher.submatchers)
+            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
 
         if ($(this).hasClass('selected')) {
             // Clear filters of units filtered by this special
@@ -4154,7 +4215,7 @@ $(document).ready(function () {
                         } else
                             ca = caDesc;
 
-                        if (!filterRegex.test(ca))
+                        if (!regexTestHelper(ca, filterRegex, filterSubType))
                             $(this).addClass(filterClass);
                     } else
                         $(this).addClass(filterClass);
@@ -4168,7 +4229,14 @@ $(document).ready(function () {
     $('.sv-filter').click(function () {
         var filter = $(this).data('filter');
         var filterClass = 'sv-filtered-' + filter;
-        var filterRegex = filter_map_sp[filter];
+
+        var filterLookUp = filter_map[filter];
+        var filterMatcher = getFilterMatcher('sv', filter);
+        var filterRegex = filterMatcher.regex;
+
+        var filterSubType;
+        if (filterMatcher.submatchers)
+            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
 
         if ($(this).hasClass('selected')) {
             // Clear filters of units filtered by this special
@@ -4197,7 +4265,7 @@ $(document).ready(function () {
                     } else
                         superVs = unitDetail.superSpecial;
 
-                    if (!filterRegex.test(superVs))
+                    if (!regexTestHelper(superVs, filterRegex, filterSubType))
                         $(this).addClass(filterClass);
                 } else {
                     // Units w/ no Super/VS Special
@@ -4227,13 +4295,9 @@ $(document).ready(function () {
             var filtersStr = "";
 
             for (f of supportFilters) {
-                var filterRegex = filter_map_sp[f];
-                if (
-                    'bind-red' === f
-                    || 'slot-change' === f
-                    || 'slot-change-block' === f
-                )
-                    filterRegex = filter_map_sup[f];
+                var filterLookUp = filter_map[f];
+                var filterMatcher = getFilterMatcher('spt', f);
+                var filterRegex = filterMatcher.regex;
 
                 filterRegexStr = String(filterRegex);
                 filterRegexStr = filterRegexStr.substring(1, filterRegexStr.length - 2);
@@ -4626,11 +4690,14 @@ $(document).ready(function () {
                 var names = getWholeTeamFamilyName(teamId);
 
                 var isInvalidSupport = names.some(function (name) {
-                    for (var supportName of data.name) {
-                        if (supportName.toLocaleUpperCase() == name.toLocaleUpperCase()) {
-                            return true;
+                    if (data.name) {
+                        for (var supportName of data.name) {
+                            if (supportName.toLocaleUpperCase() == name.toLocaleUpperCase()) {
+                                return true;
+                            }
                         }
                     }
+
                     return false;
                 });
                 imageDiv.find('img').toggleClass('highlight', isInvalidSupport);

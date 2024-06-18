@@ -48,6 +48,7 @@
     <script src="/vendor/optc-db/details.js"></script>
     <script src="/vendor/optc-db/cooldowns.js"></script>
     <script src="/vendor/optc-db/families.js"></script>
+    <script src="/vendor/optc-db/matchers.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
@@ -491,13 +492,20 @@
                             <div class="filter sup-filter atk-delay-div" data-filter="atk-delay"></div>
                             <div class="filter sup-filter atk-def-down-div" data-filter="atk-def-down"></div>
                             <div class="filter sup-filter atk-poison-div" data-filter="atk-poison"></div>
+                            <div class="filter sup-filter atk-burn-div" data-filter="atk-burn"></div>
+                            <div class="filter sup-filter atk-inc-dmg-div" data-filter="atk-inc-dmg"></div>
                             <div class="filter sup-filter chain-add-div" data-filter="chain-add"></div>
+                            <div class="filter sup-filter chain-mult-div" data-filter="chain-mult"></div>
                             <div class="filter sup-filter chain-lock-div" data-filter="chain-lock"></div>
                             <div class="filter sup-filter chain-bound-div" data-filter="chain-bound"></div>
+                            <div class="filter sup-filter base-atk-boost-div" data-filter="base-atk-boost"></div>
                         </div>
                         <div class="filter-icons">
+                            <div class="filter sup-filter delay-div" data-filter="delay"></div>
                             <div class="filter sup-filter def-down-div" data-filter="def-down"></div>
                             <div class="filter sup-filter poison-div" data-filter="poison"></div>
+                            <div class="filter sup-filter burn-div" data-filter="burn"></div>
+                            <div class="filter sup-filter inc-dmg-div" data-filter="inc-dmg"></div>
                             <div class="filter sup-filter dmg-eot-div" data-filter="dmg-eot"></div>
                             <div class="filter sup-filter dmg-add-div" data-filter="dmg-add"></div>
                             <div class="filter sup-filter heal-div" data-filter="heal"></div>
@@ -530,7 +538,7 @@
                         </div>
                         <div class="filter-icons">
                             <div class="filter sup-filter slot-change-div" data-filter="slot-change"></div>
-                            <div class="filter sup-filter slot-change-block-div" data-filter="slot-change-block"></div>
+                            <!--div class="filter sup-filter slot-change-block-div" data-filter="slot-change-block"></div-->
                             <div class="filter sup-filter slot-lock-div" data-filter="slot-lock"></div>
                             <div class="filter sup-filter slot-pos-div" data-filter="slot-pos"></div>
                         </div>
@@ -1249,7 +1257,7 @@
 
                         <div class="filter-icons">
                             <div class="filter class-filter fighter-div" data-filter="Fighter"></div>
-                            <div class="filter class-filter slasher-div" data-filter="Slasher"></div />
+                            <div class="filter class-filter slasher-div" data-filter="Slasher"></div>
                             <div class="filter class-filter striker-div" data-filter="Striker"></div>
                             <div class="filter class-filter shooter-div" data-filter="Shooter"></div>
                             <div class="filter class-filter free-spirit-div" data-filter="Free Spirit"></div>
@@ -1292,18 +1300,22 @@
                             <div class="filter sp-filter atk-delay-div" data-filter="atk-delay"></div>
                             <div class="filter sp-filter atk-def-down-div" data-filter="atk-def-down"></div>
                             <div class="filter sp-filter atk-poison-div" data-filter="atk-poison"></div>
+                            <div class="filter sp-filter atk-burn-div" data-filter="atk-burn"></div>
+                            <div class="filter sp-filter atk-inc-dmg-div" data-filter="atk-inc-dmg"></div>
                             <div class="filter sp-filter chain-add-div" data-filter="chain-add"></div>
+                            <div class="filter sp-filter chain-mult-div" data-filter="chain-mult"></div>
                             <div class="filter sp-filter chain-lock-div" data-filter="chain-lock"></div>
                             <div class="filter sp-filter chain-bound-div" data-filter="chain-bound"></div>
+                            <div class="filter sp-filter base-atk-boost-div" data-filter="base-atk-boost"></div>
                             <div class="filter sp-filter slot-change-div" data-filter="slot-change"></div>
                             <div class="filter sp-filter slot-change-block-div" data-filter="slot-change-block"></div>
                             <div class="filter sp-filter slot-lock-div" data-filter="slot-lock"></div>
+                            <div class="filter sp-filter slot-lock-tap-div" data-filter="slot-lock-tap"></div>
                             <div class="filter sp-filter slot-pos-div" data-filter="slot-pos"></div>
-                            <div class="filter sp-filter delay-div" data-filter="delay"></div>
-                            <div class="filter sp-filter def-down-div" data-filter="def-down"></div>
-                            <div class="filter sp-filter poison-div" data-filter="poison"></div>
-                            <div class="filter sp-filter dmg-normal-div" data-filter="dmg-normal"></div>
-                            <div class="filter sp-filter dmg-eot-div" data-filter="dmg-eot"></div>
+                        </div>
+
+                        <div class="filter-info">
+                            Filter algorithms provided by OPTC-DB
                         </div>
                     </div>
 
@@ -1313,12 +1325,20 @@
                         </div>
 
                         <div class="filter-icons">
+                            <div class="filter sp-filter delay-div" data-filter="delay"></div>
+                            <div class="filter sp-filter def-down-div" data-filter="def-down"></div>
+                            <div class="filter sp-filter poison-div" data-filter="poison"></div>
+                            <div class="filter sp-filter burn-div" data-filter="burn"></div>
+                            <div class="filter sp-filter inc-dmg-div" data-filter="inc-dmg"></div>
+                            <div class="filter sp-filter dmg-normal-div" data-filter="dmg-normal"></div>
+                            <div class="filter sp-filter dmg-eot-div" data-filter="dmg-eot"></div>
                             <div class="filter sp-filter dmg-add-div" data-filter="dmg-add"></div>
                             <div class="filter sp-filter heal-div" data-filter="heal"></div>
                             <div class="filter sp-filter def-perc-div" data-filter="def-perc"></div>
                             <div class="filter sp-filter def-thres-div" data-filter="def-thres"></div>
                             <div class="filter sp-filter def-null-div" data-filter="def-null"></div>
                             <div class="filter sp-filter resil-div" data-filter="resil"></div>
+                            <div class="filter sp-filter p-easy-div" data-filter="p-easy"></div>
                             <div class="filter sp-filter cd-red-div" data-filter="cd-red"></div>
                             <div class="filter sp-filter bind-red-div" data-filter="bind-red"></div>
                             <div class="filter sp-filter desp-red-div" data-filter="desp-red"></div>
@@ -1329,8 +1349,6 @@
                             <div class="filter sp-filter burn-red-div" data-filter="burn-red"></div>
                             <div class="filter sp-filter atk-down-red-div" data-filter="atk-down-red"></div>
                             <div class="filter sp-filter chain-lock-red-div" data-filter="chain-lock-red"></div>
-                            <div class="filter sp-filter chain-down-red-div" data-filter="chain-down-red"></div>
-                            <div class="filter sp-filter inc-dmg-red-div" data-filter="inc-dmg-red"></div>
                         </div>
                     </div>
 
@@ -1340,8 +1358,11 @@
                         </div>
 
                         <div class="filter-icons">
+                            <div class="filter sp-filter chain-down-red-div" data-filter="chain-down-red"></div>
+                            <div class="filter sp-filter inc-dmg-red-div" data-filter="inc-dmg-red"></div>
+                            <div class="filter sl-filter stun-red-div" data-filter="stun-red"></div>
+                            <div class="filter sp-filter clear-buff-div" data-filter="clear-buff"></div>
                             <div class="filter sp-filter dmg-eot-red-e-div" data-filter="dmg-eot-red-e"></div>
-                            <div class="filter sp-filter atk-red-e-div" data-filter="atk-red-e"></div>
                             <div class="filter sp-filter def-red-e-div" data-filter="def-red-e"></div>
                             <div class="filter sp-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
                             <div class="filter sp-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
@@ -1349,10 +1370,8 @@
                             <div class="filter sp-filter bar-red-e-div" data-filter="bar-red-e"></div>
                             <div class="filter sp-filter resil-red-e-div" data-filter="resil-red-e"></div>
                             <div class="filter sp-filter enrage-red-e-div" data-filter="enrage-red-e"></div>
-                        </div>
-
-                        <div class="filter-info">
-                            Special Filter algorithm provided by OPTC-DB
+                            <div class="filter sp-filter bypass-def-div" data-filter="bypass-def"></div>
+                            <div class="filter sp-filter ca-swap-div" data-filter="ca-swap"></div>
                         </div>
                     </div>
 
@@ -1364,16 +1383,17 @@
                         </div>
 
                         <div class="filter-icons">
-                            <div class="filter sl-filter slot-pos-div" data-filter="slot-pos"></div>
+                            <div class="filter sl-filter slot-pos-div" data-filter="slot-pos-pass"></div>
                             <div class="filter sl-filter cd-red-div" data-filter="cd-red"></div>
+                            <div class="filter sl-filter cd-rew-red-div" data-filter="cd-rew-red"></div>
+                            <div class="filter sl-filter desp-red-div" data-filter="desp-red"></div>
                             <div class="filter sl-filter sp-bind-red-div" data-filter="sp-bind-red"></div>
                             <div class="filter sl-filter para-red-div" data-filter="para-red"></div>
                             <div class="filter sl-filter blind-red-div" data-filter="blind-red"></div>
                             <div class="filter sl-filter burn-red-div" data-filter="burn-red"></div>
-                        </div>
-
-                        <div class="filter-info" style="margin-top: 65px;">
-                            Sailor Filter algorithm provided by OPTC-DB
+                            <div class="filter sl-filter atk-down-red-div" data-filter="atk-down-red"></div>
+                            <div class="filter sl-filter stun-red-div" data-filter="stun-red"></div>
+                            <div class="filter sl-filter immu-blow-away-div" data-filter="immu-blow-away"></div>
                         </div>
                     </div>
 
@@ -1385,19 +1405,17 @@
                         </div>
 
                         <div class="filter-icons">
-                            <div class="filter ca-filter slot-pos-div" data-filter="slot-pos"></div>
+                            <div class="filter ca-filter slot-pos-div" data-filter="slot-pos-pass"></div>
                             <div class="filter ca-filter dmg-eot-div" data-filter="dmg-eot"></div>
                             <div class="filter ca-filter bind-red-div" data-filter="bind-red"></div>
                             <div class="filter ca-filter desp-red-div" data-filter="desp-red"></div>
-                            <div class="filter ca-filter cd-red-div" data-filter="cd-red"></div>
+                            <div class="filter ca-filter cd-rew-red-div" data-filter="cd-rew-red"></div>
                             <div class="filter ca-filter sp-bind-red-div" data-filter="sp-bind-red"></div>
                             <div class="filter ca-filter para-red-div" data-filter="para-red"></div>
                             <div class="filter ca-filter burn-red-div" data-filter="burn-red"></div>
                             <div class="filter ca-filter atk-down-red-div" data-filter="atk-down-red"></div>
-                        </div>
-
-                        <div class="filter-info">
-                            Captain Filter algorithm provided by OPTC-DB
+                            <div class="filter ca-filter immu-blow-away-div" data-filter="immu-blow-away"></div>
+                            <div class="filter ca-filter bypass-def-div" data-filter="bypass-def"></div>
                         </div>
                     </div>
 
@@ -1414,14 +1432,20 @@
                             <div class="filter sv-filter affinity-div" data-filter="affinity"></div>
                             <div class="filter sv-filter atk-delay-div" data-filter="atk-delay"></div>
                             <div class="filter sv-filter atk-def-down-div" data-filter="atk-def-down"></div>
+                            <div class="filter sv-filter atk-burn-div" data-filter="atk-burn"></div>
                             <div class="filter sv-filter chain-add-div" data-filter="chain-add"></div>
+                            <div class="filter sv-filter chain-mult-div" data-filter="chain-mult"></div>
                             <div class="filter sv-filter chain-lock-div" data-filter="chain-lock"></div>
+                            <div class="filter sv-filter chain-bound-div" data-filter="chain-bound"></div>
+                            <div class="filter sv-filter base-atk-boost-div" data-filter="base-atk-boost"></div>
                             <div class="filter sv-filter slot-change-div" data-filter="slot-change"></div>
                             <div class="filter sv-filter slot-change-block-div" data-filter="slot-change-block"></div>
                             <div class="filter sv-filter slot-lock-div" data-filter="slot-lock"></div>
                             <div class="filter sv-filter slot-pos-div" data-filter="slot-pos"></div>
                             <div class="filter sv-filter delay-div" data-filter="delay"></div>
                             <div class="filter sv-filter def-down-div" data-filter="def-down"></div>
+                            <div class="filter sv-filter burn-div" data-filter="burn"></div>
+                            <div class="filter sv-filter inc-dmg-div" data-filter="inc-dmg"></div>
                             <div class="filter sv-filter dmg-normal-div" data-filter="dmg-normal"></div>
                             <div class="filter sv-filter dmg-eot-div" data-filter="dmg-eot"></div>
                             <div class="filter sv-filter dmg-add-div" data-filter="dmg-add"></div>
@@ -1437,8 +1461,11 @@
 
                         <div class="filter-icons">
                             <div class="filter sv-filter def-thres-div" data-filter="def-thres"></div>
+                            <div class="filter sv-filter def-null-div" data-filter="def-null"></div>
                             <div class="filter sv-filter cd-red-div" data-filter="cd-red"></div>
                             <div class="filter sv-filter bind-red-div" data-filter="bind-red"></div>
+                            <div class="filter sv-filter desp-red-div" data-filter="desp-red"></div>
+                            <div class="filter sv-filter sp-bind-red-div" data-filter="sp-bind-red"></div>
                             <div class="filter sv-filter para-red-div" data-filter="para-red"></div>
                             <div class="filter sv-filter poison-red-div" data-filter="poison-red"></div>
                             <div class="filter sv-filter burn-red-div" data-filter="burn-red"></div>
@@ -1447,10 +1474,8 @@
                             <div class="filter sv-filter def-perc-red-e-div" data-filter="def-perc-red-e"></div>
                             <div class="filter sv-filter def-thres-red-e-div" data-filter="def-thres-red-e"></div>
                             <div class="filter sv-filter resil-red-e-div" data-filter="resil-red-e"></div>
-                        </div>
-
-                        <div class="filter-info">
-                            Super / VS Filter algorithm provided by OPTC-DB
+                            <div class="filter sv-filter bypass-def-div" data-filter="bypass-def"></div>
+                            <div class="filter sv-filter ca-swap-red-div" data-filter="ca-swap-red"></div>
                         </div>
                     </div>
                 </div>
