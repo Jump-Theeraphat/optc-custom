@@ -559,6 +559,12 @@ button.cal-button:hover {
     width: 25px;
 }
 
+.team-note-icon {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+
 .guide-tc-filter {
     font-size: 10px;
 }
@@ -661,6 +667,11 @@ li.team-build-msg:before {
     font-weight: 700;
 }
 
+li.ok:before {
+    content: "\f058";
+    color: springgreen;
+}
+
 li.warning:before,
 .fixed-note-button.warning:after {
     content: "\f071";
@@ -671,6 +682,17 @@ li.error:before,
 .fixed-note-button.error:after {
     content: "\f057";
     color: red;
+}
+
+li.ok:before,
+li.warning:before,
+li.error:before {
+    padding-right: 5px;
+}
+
+li.ok mark {
+    background: springgreen;
+    color: var(--font-color-main-reverse);
 }
 
 li.error mark {
@@ -705,6 +727,15 @@ span.team-note-boss {
     margin: 5px;
     display: flex;
     align-items: center;
+}
+
+.sp-used-div,
+.sp-used-sub-div {
+    display: inline-block;
+}
+
+.sp-used-sub-div {
+    padding-left: 5px;
 }
 
 .vs-red-div                 { background-image: url('/tm-planner/assets/img/special_icons/vs_red.png');             background-size: 24px 24px; }

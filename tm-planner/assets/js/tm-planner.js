@@ -2664,12 +2664,12 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
 
         // Case 3: specific specials
         if (superCriteria.indexOf('ATK UP') != -1) {
-            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', 'atk-boost').regex) > 0)
+            if (checkTeamSpecialMet(teamId, null, 'atk-boost') > 0)
                 putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
         }
 
         if (superCriteria.indexOf('Orb amplification') != -1) {
-            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', 'orb-boost').regex) > 0)
+            if (checkTeamSpecialMet(teamId, null, 'orb-boost') > 0)
                 putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
         }
     }
@@ -2691,6 +2691,7 @@ function checkTeamMiniGuideSpecialMet(teamId) {
         'dmg-eot', 'poison', 'slot-change', 'slot-change-block'];
 
     var specialsNeeded = {};
+    var specialsUsedMap = {};
 
     if (op && op.guide) {
         for (var gi in op.guide) {
@@ -2741,6 +2742,7 @@ function checkTeamMiniGuideSpecialMet(teamId) {
                         // For specials with turns
                         if (a.turn && a.turn != 99 || turns && turns[1] != "99") {
                             var numOfTurns = tmId >= 4147 ? a.turn : turns[1];
+                            var origNumOfTurns = numOfTurns;
                             var isCaptainRow = (aPos == null || aPos[1] == '1');
 
                             // Assume max Bind and Despair sockets
@@ -2752,24 +2754,25 @@ function checkTeamMiniGuideSpecialMet(teamId) {
                             }
 
                             if (aCounter) {
+                                var specialsUsed = [];
+
                                 for (var ac in aCounter) {
                                     if (valuableSpecials.includes(aCounter[ac])) {
-                                        var newNumOfTurns = checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, numOfTurns, isCaptainRow);
+                                        var newNumOfTurns = checkTeamSpecialMet(teamId, specialsUsed, aCounter[ac], numOfTurns, isCaptainRow);
 
                                         if (newNumOfTurns < numOfTurns)
                                             numOfTurns = newNumOfTurns;
                                     } else if (valuableSpecialsWithoutTurns.includes(aCounter[ac])) {
-                                        if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter[ac]).regex, null, false, immuTypes) == 0)
+                                        if (checkTeamSpecialMet(teamId, specialsUsed, aCounter[ac], null, false, immuTypes) == 0)
                                             numOfTurns = 0;
                                     }
                                 }
 
-                                // Special not met
-                                if (numOfTurns > 0)
-                                    specialsNeeded[aType] = numOfTurns + (numOfTurns == 1 ? ' turn' : ' turns');
+                                specialsNeeded[aType] = { origNumOfTurns: origNumOfTurns, turnsLeft: numOfTurns };
+                                specialsUsedMap[aType] = specialsUsed;
                             }
                         } else if (aCounter && valuableSpecialsWithoutTurns.includes(aCounter)) { // For specials slot-change / slot-block
-                            if (checkTeamSpecialMet(teamId, getFilterMatcher('sp', aCounter).regex) != 0)
+                            if (checkTeamSpecialMet(teamId, null, aCounter) != 0)
                                 specialsNeeded["Change Orbs"] = tmId >= 4147 ? a.detail : a[1];
                         }
                     }
@@ -2779,27 +2782,53 @@ function checkTeamMiniGuideSpecialMet(teamId) {
     }
 
     if (Object.keys(specialsNeeded).length !== 0 && specialsNeeded.constructor === Object)
-        putGuideSpecialNotMetMsg(teamId, specialsNeeded);
+        putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap);
 }
 
-function putGuideSpecialNotMetMsg(teamId, specialsNeeded) {
-    var team = $(".team[data-team=" + teamId + "]");
-    var msgStr = "&nbspCounter to Boss actions from Preemp may not be met (assuming max Bind and Despair sockets, and max Double Special; currently not including CA, Super SP, Swap Effect, Sailor, and Support):<br>";
-    var specialStr = "";
+function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
+    var msgStr = "Counter to Boss actions from Preemp may not be met (assuming max Bind and Despair sockets, and max Double Special; currently not including CA, Super SP, Swap Effect, Sailor, and Support):";
+    // temp
+    msgStr += "<br> (Testing debugging feature below to prep for CA, Super, etc check, may seem errorous but logic has not changed)";
+
+    var msgDiv = (`<li class="team-build-msg warning">${msgStr}</li>`);
+    $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
 
     for (var special in specialsNeeded) {
-        var detail = specialsNeeded[special];
+        var turns = specialsNeeded[special];
+        var turnsMsg = `${turns.origNumOfTurns !== turns.turnsLeft ? '' + turns.origNumOfTurns + ' -> ' : ''}${turns.turnsLeft} turn${turns.turnsLeft == 1 ? '' : 's'}`;
 
-        if (special != 'Change Orbs')
-            special = icon_tooltips[special];
-        specialStr += "[<mark>" + special + ": " + detail + "</mark>]&nbsp&nbsp&nbsp";
+        var specialStr = `<mark><div class='team-note-icon ${special}-div'></div>: ${turnsMsg}</mark>`;
+
+        var specialsUsed = specialsUsedMap[special];
+        var specialsUsedDiv = $('<div class="sp-used-div"></div>');
+        for (var sui in specialsUsed) {
+            var su = specialsUsed[sui];
+            var unitHtml = createImgHtml(getThumb(su.unitId), 25, false);
+            var specialsUsedSubDiv = $('<div class="sp-used-sub-div"></div>');
+
+            specialsUsedSubDiv.append(unitHtml);
+            specialsUsedSubDiv.append(`<div class='team-note-icon ${su.counter}-div'></div>`);
+
+            if (su.turns)
+                specialsUsedSubDiv.append(`: ${su.turns === 'Completely' ? '' : '-'}${su.turns}`);
+
+            specialsUsedDiv.append(specialsUsedSubDiv);
+        }
+
+        msgDiv = $('<li class="team-build-msg"></li>');
+
+        if (turns.turnsLeft > 0)
+            msgDiv.addClass('warning');
+        else
+            msgDiv.addClass('ok');
+
+        msgDiv.append(specialStr);
+        msgDiv.append(specialsUsedDiv);
+        $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
     }
-
-    var msgDiv = ('<li class="team-build-msg warning">' + msgStr + specialStr + '</li>');
-    $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
 }
 
-function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, immuTypes) {
+function checkTeamSpecialMet(teamId, specialsUsed, counter, requiredTurns, isCaptainRow, immuTypes) {
     var team = $(".team[data-team=" + teamId + "]");
     var turnsNeeded = requiredTurns;
 
@@ -2840,13 +2869,15 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                 special = spDesc;
             }
 
+            var specialRegex = getFilterMatcher('sp', counter).regex
+
             if (specialRegex.test(special)) {
                 if (turnsNeeded) {
                     // Special Case for Special Bind and CD Rewind
                     var teamSlot = $(this).closest('.team-slot').data('slot');
                     if (teamSlot == '0' || teamSlot == '1') {
-                        if (specialRegex === getFilterMatcher('sp', 'sp-bind-red').regex ||
-                            specialRegex === getFilterMatcher('sp', 'cd-red').regex) {
+                        if (counter === 'sp-bind-red' ||
+                            counter === 'cd-red') {
                             // Unit is unable to negate the action as Captain
                             if (isCaptainRow)
                                 return;
@@ -2859,27 +2890,27 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                     var resultGroup = [];
 
                     if (
-                        specialRegex === getFilterMatcher('sp', 'atk-down-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'bar-red-e').regex ||
-                        specialRegex === getFilterMatcher('sp', 'blind-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'burn-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'chain-down-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'chain-lock-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'def-red-e').regex ||
-                        specialRegex === getFilterMatcher('sp', 'def-null-red-e').regex ||
-                        specialRegex === getFilterMatcher('sp', 'def-perc-red-e').regex ||
-                        specialRegex === getFilterMatcher('sp', 'def-thres-red-e').regex ||
-                        specialRegex === getFilterMatcher('sp', 'inc-dmg-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'resil-red-e').regex
+                        counter === 'atk-down-red' ||
+                        counter === 'bar-red-e' ||
+                        counter === 'blind-red' ||
+                        counter === 'burn-red' ||
+                        counter === 'chain-down-red' ||
+                        counter === 'chain-lock-red' ||
+                        counter === 'def-red-e' ||
+                        counter === 'def-null-red-e' ||
+                        counter === 'def-perc-red-e' ||
+                        counter === 'def-thres-red-e' ||
+                        counter === 'inc-dmg-red' ||
+                        counter === 'resil-red-e'
                     )
                         resultGroup = [1, 2, 3, 4, 5];
-                    else if (specialRegex === getFilterMatcher('sp', 'cd-red').regex)
+                    else if (counter === 'cd-red')
                         resultGroup = [2, 3, 4, 5, 6, 7];
                     else if (
-                        specialRegex === getFilterMatcher('sp', 'bind-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'desp-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'para-red').regex ||
-                        specialRegex === getFilterMatcher('sp', 'sp-bind-red').regex
+                        counter === 'bind-red' ||
+                        counter === 'desp-red' ||
+                        counter === 'para-red' ||
+                        counter === 'sp-bind-red'
                     )
                         resultGroup = [1, 2, 3, 5, 6];
 
@@ -2890,6 +2921,8 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                         if (typeof numOfTurns !== 'undefined' && numOfTurns != null) {
                             if (numOfTurns == 'completely') {
                                 turnsNeeded = 0;
+                                specialsUsed.push({ unitId: unitId, counter: counter, turns: 'Completely' })
+
                                 return;
                             } else {
                                 // Check for Double Special
@@ -2908,6 +2941,8 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                                 if (hasDoubleSpecial)
                                     numOfTurns = numOfTurns * 2;
 
+                                specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns })
+
                                 if (numOfTurns >= turnsNeeded) {
                                     turnsNeeded = 0;
                                     return;
@@ -2922,14 +2957,18 @@ function checkTeamSpecialMet(teamId, specialRegex, requiredTurns, isCaptainRow, 
                 } else {
                     // Special Case for counters blocked by immunity
                     if (typeof immuTypes !== 'undefined' && immuTypes.length > 0) {
-                        if (specialRegex === getFilterMatcher('sp', 'def-down').regex && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
+                        if (counter === 'def-down' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
                             turnsNeeded = 1;
-                        else if (specialRegex === getFilterMatcher('sp', 'poison').regex && (immuTypes.includes('immu-all') || immuTypes.includes('immu-poison')))
+                        else if (counter === 'poison' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-poison')))
                             turnsNeeded = 1;
-                        else
+                        else {
                             turnsNeeded = 0;
-                    } else
+                            specialsUsed.push({ unitId: unitId, counter: counter });
+                        }
+                    } else {
                         turnsNeeded = 0;
+                        specialsUsed.push({ unitId: unitId, counter: counter });
+                    }
 
                     return;
                 }
