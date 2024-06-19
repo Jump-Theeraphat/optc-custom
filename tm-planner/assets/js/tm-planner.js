@@ -2637,27 +2637,32 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
                 // Case 2: specific crew
                 var names = superCriteria.substring(superCriteria.indexOf('must consist of ') + 16);
 
-                for (slotId of slotIds) {
+                var reqNumChars = 1;
+                var regexResult = superCriteria.match(/must consist of any (\d+) of the following/);
+                if (regexResult !== null && regexResult[0] !== null)
+                    reqNumChars = regexResult[1];
+
+                var numChars = 0;
+                for (var slotId of slotIds) {
                     var unit = $('#team-slot-' + teamId + slotId).find('div');
 
                     if (unit.length > 0) {
                         unitId = unit.data('id');
                         var family = getFamiliesForUnit(unitId);
-                        var found = false;
 
-                        $.each(family, function (i, e) {
-                            if (names.indexOf(e) >= 0) {
-                                found = true;
-                                return true;
+                        if (family.length > 0) {
+                            if (names.indexOf(family[0]) >= 0) {
+                                numChars++;
+
+                                if (numChars >= reqNumChars)
+                                    break;
                             }
-                        });
-
-                        if (found)
-                            return true;
+                        }
                     }
                 }
 
-                putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('must consist of')), isFriend, capId);
+                if (numChars < reqNumChars)
+                    putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('must consist of')), isFriend, capId);
             }
         }
 
