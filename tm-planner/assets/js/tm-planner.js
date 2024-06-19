@@ -2586,7 +2586,6 @@ function checkNoteStatus() {
         } else {
             $("#op-" + ($(this).data("team") + 1)).closest(".op-guide-btn").removeClass("error");
             $("#op-" + ($(this).data("team") + 1)).closest(".op-guide-btn").removeClass("warning");
-            $(this).hide();
         }
     });
 }
@@ -2664,12 +2663,12 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
 
         // Case 3: specific specials
         if (superCriteria.indexOf('ATK UP') != -1) {
-            if (checkTeamSpecialMet(teamId, null, 'atk-boost') > 0)
+            if (checkTeamSpecialMet(teamId, null, null, null, 'atk-boost') > 0)
                 putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
         }
 
         if (superCriteria.indexOf('Orb amplification') != -1) {
-            if (checkTeamSpecialMet(teamId, null, 'orb-boost') > 0)
+            if (checkTeamSpecialMet(teamId, null, null, null, 'orb-boost') > 0)
                 putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
         }
     }
@@ -2682,107 +2681,126 @@ function checkTeamMiniGuideSpecialMet(teamId) {
     var opId = team.data('op_id');
     var op = tm_opponents[tmId][opId];
 
-    var valuableSpecials = ['atk-down-red', 'bind-red', 'blind-red', 'burn-red',
-        'cd-red', 'chain-down-red', 'chain-lock-red', 'def-red-e', 'def-perc-red-e',
-        'def-thres-red-e', 'def-null-red-e', 'desp-red', 'inc-dmg-red', 'para-red',
-        'resil-red-e', 'sp-bind-red',];
+    var valuableSpecials = ['atk-down-red', 'bar-red-e', 'bind-red', 'blind-red',
+        'burn-red', 'cd-red', 'chain-down-red', 'chain-lock-red', 'def-red-e',
+        'def-perc-red-e', 'def-thres-red-e', 'def-null-red-e', 'desp-red', 'para-red',
+        'resil-red-e', 'sp-bind-red'];
 
-    var valuableSpecialsWithoutTurns = ['chain-lock', 'chain-bound', 'def-down',
-        'dmg-eot', 'poison', 'slot-change', 'slot-change-block'];
-
-    var specialsNeeded = {};
-    var specialsUsedMap = {};
+    var valuableSpecialsWithoutTurns = ['bypass-def', 'chain-lock', 'chain-bound',
+        'clear-buff', 'def-down', 'dmg-eot', 'poison', 'slot-change', 'slot-change-block',
+        'stun-red'];
 
     if (op && op.guide) {
-        for (var gi in op.guide) {
+        var i = 0;
+        var unitsUsed = [];
+
+        for (var gi = 0; gi < op.guide.length; gi++) {
             var g = op.guide[gi];
 
-            for (var di in g.detail) {
-                var d = g.detail[di];
-                var i = 0;
+            var specialsNeeded = {};
+            var specialsUsedMap = {};
+            var currentUnitsUsed = [];
 
-                if (d.type === 'Preemp') {
-                    // Gather Immnuity types
-                    var immuTypes = [];
-                    for (var ai in d.action) {
-                        var a = d.action[ai];
+            if (g.boss) {
+                for (var di = 0; di < g.detail.length; di++) {
+                    var d = g.detail[di];
 
-                        var aType;
-                        if (tmId >= 4147)
-                            aType = a.type;
-                        else
-                            aType = a[0];
+                    if (d.type === 'Preemp') {
+                        // Gather Immnuity types
+                        var immuTypes = [];
+                        for (var ai = 0; ai < d.action.length; ai++) {
+                            var a = d.action[ai];
 
-                        if (
-                            aType === 'immu-all' ||
-                            aType === 'immu-def' ||
-                            aType === 'immu-poison'
-                        )
-                            immuTypes.push(aType);
-                    }
+                            var aType;
+                            if (tmId >= 4147)
+                                aType = a.type;
+                            else
+                                aType = a[0];
 
-                    for (var ai in d.action) {
-                        var a = d.action[ai];
-
-                        var aType;
-                        var turns;
-                        var aPos;
-                        if (tmId >= 4147) {
-                            aType = a.type;
-                            turns = a.turn;
-                            aPos = a.detail ? a.detail.match(/Row +([1-3])/i) : null;
-                        } else {
-                            aType = a[0];
-                            turns = a[1].match(/([0-9])+T/i);
-                            aPos = a[1].match(/Row +([1-3])/i);
+                            if (
+                                aType === 'immu-all' ||
+                                aType === 'immu-def' ||
+                                aType === 'immu-poison'
+                            )
+                                immuTypes.push(aType);
                         }
 
-                        var aCounter = counters[aType];
+                        for (var ai = 0; ai < d.action.length; ai++) {
+                            var a = d.action[ai];
 
-                        // For specials with turns
-                        if (a.turn && a.turn != 99 || turns && turns[1] != "99") {
-                            var numOfTurns = tmId >= 4147 ? a.turn : turns[1];
-                            var origNumOfTurns = numOfTurns;
-                            var isCaptainRow = (aPos == null || aPos[1] == '1');
-
-                            // Assume max Bind and Despair sockets
-                            if (aType === 'bind' || aType === 'desp') {
-                                numOfTurns -= 3;
-
-                                if (numOfTurns <= 0)
-                                    continue;
+                            var aType;
+                            var turns;
+                            var aPos;
+                            if (tmId >= 4147) {
+                                aType = a.type;
+                                turns = a.turn;
+                                aPos = a.detail ? a.detail.match(/Row +([1-3])/i) : null;
+                            } else {
+                                aType = a[0];
+                                turns = a[1].match(/([0-9])+T/i);
+                                aPos = a[1].match(/Row +([1-3])/i);
                             }
 
-                            if (aCounter) {
-                                var specialsUsed = [];
+                            var aCounter = counters[aType];
 
-                                for (var ac in aCounter) {
-                                    if (valuableSpecials.includes(aCounter[ac])) {
-                                        var newNumOfTurns = checkTeamSpecialMet(teamId, specialsUsed, aCounter[ac], numOfTurns, isCaptainRow);
+                            // For specials with turns
+                            if (a.turn && a.turn != 99 || turns && turns[1] != "99") {
+                                var numOfTurns = tmId >= 4147 ? a.turn : turns[1];
+                                var origNumOfTurns = numOfTurns;
+                                var isCaptainRow = (aPos == null || aPos[1] == '1');
 
-                                        if (newNumOfTurns < numOfTurns)
-                                            numOfTurns = newNumOfTurns;
-                                    } else if (valuableSpecialsWithoutTurns.includes(aCounter[ac])) {
-                                        if (checkTeamSpecialMet(teamId, specialsUsed, aCounter[ac], null, false, immuTypes) == 0)
-                                            numOfTurns = 0;
+                                // Assume max Bind and Despair sockets
+                                if (aType === 'bind' || aType === 'desp') {
+                                    numOfTurns -= 3;
+
+                                    if (numOfTurns <= 0) {
+                                        specialsNeeded[aType + '_' + i] = { origNumOfTurns: origNumOfTurns, turnsLeft: numOfTurns };
+                                        continue;
                                     }
                                 }
 
-                                specialsNeeded[aType] = { origNumOfTurns: origNumOfTurns, turnsLeft: numOfTurns };
-                                specialsUsedMap[aType] = specialsUsed;
+                                if (aCounter) {
+                                    var specialsUsed = [];
+
+                                    for (var aci = 0; aci < aCounter.length; aci++) {
+                                        if (valuableSpecials.includes(aCounter[aci])) {
+                                            var newNumOfTurns = checkTeamSpecialMet(teamId, specialsUsed, unitsUsed, currentUnitsUsed, aCounter[aci], numOfTurns, isCaptainRow);
+
+                                            if (newNumOfTurns < numOfTurns)
+                                                numOfTurns = newNumOfTurns;
+                                        } else if (valuableSpecialsWithoutTurns.includes(aCounter[aci])) {
+                                            if (checkTeamSpecialMet(teamId, specialsUsed, unitsUsed, currentUnitsUsed, aCounter[aci], null, false, immuTypes) == 0)
+                                                numOfTurns = 0;
+                                        }
+                                    }
+
+                                    specialsNeeded[aType + '_' + i] = { origNumOfTurns: origNumOfTurns, turnsLeft: numOfTurns };
+                                    specialsUsedMap[aType + '_' + i] = specialsUsed;
+                                }
+                            } else if (aCounter && valuableSpecialsWithoutTurns.includes(aCounter)) { // For specials slot-change / slot-block
+                                if (checkTeamSpecialMet(teamId, null, null, null, aCounter) != 0)
+                                    specialsNeeded["Change Orbs"] = tmId >= 4147 ? a.detail : a[1];
                             }
-                        } else if (aCounter && valuableSpecialsWithoutTurns.includes(aCounter)) { // For specials slot-change / slot-block
-                            if (checkTeamSpecialMet(teamId, null, aCounter) != 0)
-                                specialsNeeded["Change Orbs"] = tmId >= 4147 ? a.detail : a[1];
+
+                            i++;
                         }
                     }
                 }
             }
+
+            // Add to Team Status
+            if (Object.keys(specialsNeeded).length > 0 && specialsNeeded.constructor === Object) {
+                putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap);
+
+                if (g.boss && gi != op.guide.length - 1)
+                    $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append($('<hr class="team-build-msg">'));
+            }
+
+            // Update Units used
+            for (var i = 0; i < currentUnitsUsed.length; i++)
+                unitsUsed.push(currentUnitsUsed[i]);
         }
     }
-
-    if (Object.keys(specialsNeeded).length !== 0 && specialsNeeded.constructor === Object)
-        putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap);
 }
 
 function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
@@ -2790,19 +2808,20 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
     // temp
     msgStr += "<br> (Testing debugging feature below to prep for CA, Super, etc check, may seem errorous but logic has not changed)";
 
-    var msgDiv = (`<li class="team-build-msg warning">${msgStr}</li>`);
+    var msgDiv = (`<li class="team-build-msg info">${msgStr}</li>`);
     $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
 
     for (var special in specialsNeeded) {
+        var spName = special.substring(0, special.indexOf('_'));
         var turns = specialsNeeded[special];
         var turnsMsg = `${turns.origNumOfTurns !== turns.turnsLeft ? '' + turns.origNumOfTurns + ' -> ' : ''}${turns.turnsLeft} turn${turns.turnsLeft == 1 ? '' : 's'}`;
 
-        var specialStr = `<mark><div class='team-note-icon ${special}-div'></div>: ${turnsMsg}</mark>`;
+        var specialStr = `<mark><div class='team-note-icon ${spName}-div'></div>: ${turnsMsg}</mark>`;
 
         var specialsUsed = specialsUsedMap[special];
         var specialsUsedDiv = $('<div class="sp-used-div"></div>');
-        for (var sui in specialsUsed) {
-            var su = specialsUsed[sui];
+        for (var i = 0; i < specialsUsed.length; i++) {
+            var su = specialsUsed[i];
             var unitHtml = createImgHtml(getThumb(su.unitId), 25, false);
             var specialsUsedSubDiv = $('<div class="sp-used-sub-div"></div>');
 
@@ -2812,7 +2831,13 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
             if (su.turns)
                 specialsUsedSubDiv.append(`: ${su.turns === 'Completely' ? '' : '-'}${su.turns}`);
 
+            if (su.used)
+                specialsUsedSubDiv.addClass('used');
+
             specialsUsedDiv.append(specialsUsedSubDiv);
+
+            if (i != specialsUsed.length - 1)
+                specialsUsedDiv.append(' / ');
         }
 
         msgDiv = $('<li class="team-build-msg"></li>');
@@ -2828,7 +2853,7 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
     }
 }
 
-function checkTeamSpecialMet(teamId, specialsUsed, counter, requiredTurns, isCaptainRow, immuTypes) {
+function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUsed, counter, requiredTurns, isCaptainRow, immuTypes) {
     var team = $(".team[data-team=" + teamId + "]");
     var turnsNeeded = requiredTurns;
 
@@ -2869,10 +2894,10 @@ function checkTeamSpecialMet(teamId, specialsUsed, counter, requiredTurns, isCap
                 special = spDesc;
             }
 
-            var specialRegex = getFilterMatcher('sp', counter).regex
+            var specialRegex = getFilterMatcher('sp', counter).regex;
 
             if (specialRegex.test(special)) {
-                if (turnsNeeded) {
+                if (turnsNeeded !== null) {
                     // Special Case for Special Bind and CD Rewind
                     var teamSlot = $(this).closest('.team-slot').data('slot');
                     if (teamSlot == '0' || teamSlot == '1') {
@@ -2923,7 +2948,7 @@ function checkTeamSpecialMet(teamId, specialsUsed, counter, requiredTurns, isCap
                                 turnsNeeded = 0;
                                 specialsUsed.push({ unitId: unitId, counter: counter, turns: 'Completely' })
 
-                                return;
+                                return false;
                             } else {
                                 // Check for Double Special
                                 var hasDoubleSpecial = false;
@@ -2941,13 +2966,19 @@ function checkTeamSpecialMet(teamId, specialsUsed, counter, requiredTurns, isCap
                                 if (hasDoubleSpecial)
                                     numOfTurns = numOfTurns * 2;
 
-                                specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns })
+                                if (prevUnitsUsed !== null && !prevUnitsUsed.includes(unitId)) {
+                                    specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns })
 
-                                if (numOfTurns >= turnsNeeded) {
-                                    turnsNeeded = 0;
-                                    return;
+                                    if (numOfTurns >= turnsNeeded) {
+                                        turnsNeeded = 0;
+                                        currentUnitsUsed.push(unitId);
+                                        return false;
+                                    } else {
+                                        turnsNeeded -= numOfTurns;
+                                        currentUnitsUsed.push(unitId);
+                                    }
                                 } else
-                                    turnsNeeded -= numOfTurns;
+                                    specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns, used: true })
                             }
 
                             // Exit loop after finding match
@@ -2955,22 +2986,26 @@ function checkTeamSpecialMet(teamId, specialsUsed, counter, requiredTurns, isCap
                         }
                     }
                 } else {
-                    // Special Case for counters blocked by immunity
-                    if (typeof immuTypes !== 'undefined' && immuTypes.length > 0) {
-                        if (counter === 'def-down' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
-                            turnsNeeded = 1;
-                        else if (counter === 'poison' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-poison')))
-                            turnsNeeded = 1;
-                        else {
+                    if (prevUnitsUsed !== null && !prevUnitsUsed.includes(unitId)) {
+                        // Special Case for counters blocked by immunity
+                        if (typeof immuTypes !== 'undefined' && immuTypes.length > 0) {
+                            if (counter === 'def-down' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
+                                turnsNeeded = 1;
+                            else if (counter === 'poison' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-poison')))
+                                turnsNeeded = 1;
+                            else {
+                                turnsNeeded = 0;
+                                specialsUsed.push({ unitId: unitId, counter: counter });
+                            }
+                        } else {
                             turnsNeeded = 0;
                             specialsUsed.push({ unitId: unitId, counter: counter });
                         }
-                    } else {
-                        turnsNeeded = 0;
-                        specialsUsed.push({ unitId: unitId, counter: counter });
-                    }
 
-                    return;
+                        currentUnitsUsed.push(unitId);
+                        return false;
+                    } else
+                        specialsUsed.push({ unitId: unitId, counter: counter, used: true })
                 }
             }
         }

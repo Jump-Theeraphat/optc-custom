@@ -667,6 +667,11 @@ li.team-build-msg:before {
     font-weight: 700;
 }
 
+li.info:before {
+    content: "\f05a";
+    color: deepskyblue;
+}
+
 li.ok:before {
     content: "\f058";
     color: springgreen;
@@ -684,6 +689,7 @@ li.error:before,
     color: red;
 }
 
+li.info:before,
 li.ok:before,
 li.warning:before,
 li.error:before {
@@ -736,6 +742,10 @@ span.team-note-boss {
 
 .sp-used-sub-div {
     padding-left: 5px;
+}
+
+.sp-used-sub-div.used > img{
+    filter: grayscale(100%);
 }
 
 .vs-red-div                 { background-image: url('/tm-planner/assets/img/special_icons/vs_red.png');             background-size: 24px 24px; }
