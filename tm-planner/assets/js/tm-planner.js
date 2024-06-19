@@ -2456,10 +2456,94 @@ function getFamiliesForUnit(unitId) {
     return family;
 }
 
+function getUnitSpecial(unitId) {
+    var origId = unitId;
+    var special = [];
+
+    if (unitId > 9000)
+        unitId = parseVsUnitId(unitId);
+
+    var unitDetail = details[unitId];
+
+    if (unitDetail) {
+        var spDesc = unitDetail.special;
+
+        if (origId > 9000) {
+            // VS Units
+            if (origId % 2 === 1)
+                special.push(spDesc.character1);
+            else
+                special.push(spDesc.character2);
+        } else if (Array.isArray(spDesc)) {
+            special.push(spDesc[spDesc.length - 1].description);
+        } else if (spDesc.character1 && spDesc.combined) {
+            // Dual Units with different Specials and a Combined Special
+            special.push(spDesc.combined);
+        } else if (spDesc.character1 && spDesc.character2) {
+            // Dual Units with different Specials
+            special.push(spDesc.character1);
+            special.push(spDesc.character2);
+        } else if (spDesc.base && spDesc.combined) {
+            // Dual Units with same Base Special and a Combined Special
+            special.push(spDesc.combined);
+        } else if (spDesc.base && spDesc.llbbase) {
+            // Units with LLB
+            special.push(spDesc.llbbase);
+        } else {
+            special.push(spDesc);
+        }
+    }
+
+    return special;
+}
+
+function getUnitCaptain(unitId) {
+    var origId = unitId;
+    var captain = null;
+
+    if (unitId > 9000)
+        unitId = parseVsUnitId(unitId);
+
+    var unitDetail = details[unitId];
+
+    if (unitDetail) {
+        var caDesc = unitDetail.captain;
+
+        if (caDesc) {
+            if (origId > 9000) {
+                // VS Units
+                if (origId % 2 === 1)
+                    captain = caDesc.character1;
+                else
+                    captain = caDesc.character2;
+            } else if (caDesc.combined) {
+                captain = caDesc.combined;
+            } else if (caDesc.base) {
+                if (caDesc.llblevel1)
+                    captain = caDesc.llblevel1;
+                else if (caDesc.llbbase)
+                    captain = caDesc.llbbase;
+                else if (caDesc.level1) {
+                    var lblv = 2;
+                    captain = caDesc.level1;
+                    while (caDesc['level' + lblv]) {
+                        captain = caDesc['level' + lblv];
+                        lblv++;
+                    }
+                }
+            } else {
+                captain = caDesc;
+            }
+        }
+    }
+
+    return captain;
+}
+
 function getSupportList() {
     var supportList = {};
     var count = 0;
-    for (i in details) {
+    for (var i in details) {
         if (details[i].support && details[i].support.length > 0) {
             supportList[count] = {};
             supportList[count].id = i;
@@ -2526,7 +2610,7 @@ function getWholeTeamFamilyName(teamId, isCheckDupe) {
     });
 
     if (isCheckDupe) {
-        for (name of dupeNames)
+        for (var name of dupeNames)
             putDupeCharacterMsg(teamId, name);
     }
 
@@ -2613,12 +2697,12 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
                 var class1 = superCriteria.substring(superCriteria.indexOf(numStr) + 2, superCriteria.indexOf(' or'));
                 var class2 = superCriteria.substring(superCriteria.indexOf('or ') + 3, superCriteria.indexOf(' characters'));
 
-                for (slotId of slotIds) {
+                for (var slotId of slotIds) {
                     var unit = $('#team-slot-' + teamId + slotId).find('div');
 
                     if (unit.length > 0) {
                         var uniqueClasses = getClassesForUnit(unit.data('id'));
-                        for (c of uniqueClasses) {
+                        for (var c of uniqueClasses) {
                             if (c == singleClass || c == class1 || c == class2) {
                                 numMatched++;
                                 break;
@@ -2686,14 +2770,15 @@ function checkTeamMiniGuideSpecialMet(teamId) {
     var opId = team.data('op_id');
     var op = tm_opponents[tmId][opId];
 
-    var valuableSpecials = ['atk-down-red', 'bar-red-e', 'bind-red', 'blind-red',
-        'burn-red', 'cd-red', 'chain-down-red', 'chain-lock-red', 'def-red-e',
-        'def-perc-red-e', 'def-thres-red-e', 'def-null-red-e', 'desp-red', 'para-red',
-        'resil-red-e', 'sp-bind-red'];
+    var countersWithTurns = ['atk-down-red', 'c_atk-down-red', 'bar-red-e', 'bind-red',
+        'c_bind-red', 'blind-red', 'burn-red', 'c_burn-red', 'cd-red', 'c_cd-rew-red',
+        'chain-down-red', 'chain-lock-red', 'def-red-e', 'def-perc-red-e', 'def-thres-red-e',
+        'def-null-red-e', 'desp-red', 'c_desp-red', 'para-red', 'c_para-red', 'resil-red-e',
+        'sp-bind-red', 'c_sp-bind-red'];
 
-    var valuableSpecialsWithoutTurns = ['bypass-def', 'chain-lock', 'chain-bound',
-        'clear-buff', 'def-down', 'dmg-eot', 'poison', 'slot-change', 'slot-change-block',
-        'stun-red'];
+    var countersWithoutTurns = ['bypass-def', 'c_bypass-def', 'chain-lock', 'chain-bound',
+        'clear-buff', 'def-down', 'dmg-eot', 'c_dmg-eot', 'poison', 'slot-change',
+        'slot-change-block', 'stun-red'];
 
     if (op && op.guide) {
         var i = 0;
@@ -2766,23 +2851,34 @@ function checkTeamMiniGuideSpecialMet(teamId) {
 
                                 if (aCounter) {
                                     var specialsUsed = [];
+                                    var counterOrder = ['c_', 's_', '', 'sv'];
 
-                                    for (var aci = 0; aci < aCounter.length; aci++) {
-                                        if (valuableSpecials.includes(aCounter[aci])) {
-                                            var newNumOfTurns = checkTeamSpecialMet(teamId, specialsUsed, unitsUsed, currentUnitsUsed, aCounter[aci], numOfTurns, isCaptainRow);
+                                    for (var co of counterOrder) {
+                                        for (var ac of aCounter) {
+                                            if (ac.indexOf(co) !== -1) {
+                                                if (countersWithTurns.includes(ac)) {
+                                                    var newNumOfTurns = checkTeamSpecialMet(teamId, specialsUsed, unitsUsed, currentUnitsUsed, ac, numOfTurns, isCaptainRow);
 
-                                            if (newNumOfTurns < numOfTurns)
-                                                numOfTurns = newNumOfTurns;
-                                        } else if (valuableSpecialsWithoutTurns.includes(aCounter[aci])) {
-                                            if (checkTeamSpecialMet(teamId, specialsUsed, unitsUsed, currentUnitsUsed, aCounter[aci], null, false, immuTypes) == 0)
-                                                numOfTurns = 0;
+                                                    if (newNumOfTurns < numOfTurns)
+                                                        numOfTurns = newNumOfTurns;
+                                                } else if (countersWithoutTurns.includes(ac)) {
+                                                    if (checkTeamSpecialMet(teamId, specialsUsed, unitsUsed, currentUnitsUsed, ac, null, false, immuTypes) == 0)
+                                                        numOfTurns = 0;
+                                                }
+                                            }
+
+                                            if (numOfTurns === 0)
+                                                break;
                                         }
+
+                                        if (numOfTurns === 0)
+                                            break;
                                     }
 
                                     specialsNeeded[aType + '_' + i] = { origNumOfTurns: origNumOfTurns, turnsLeft: numOfTurns };
                                     specialsUsedMap[aType + '_' + i] = specialsUsed;
                                 }
-                            } else if (aCounter && valuableSpecialsWithoutTurns.includes(aCounter)) { // For specials slot-change / slot-block
+                            } else if (aCounter && countersWithoutTurns.includes(aCounter)) { // For specials slot-change / slot-block
                                 if (checkTeamSpecialMet(teamId, null, null, null, aCounter) != 0)
                                     specialsNeeded["Change Orbs"] = tmId >= 4147 ? a.detail : a[1];
                             }
@@ -2809,9 +2905,9 @@ function checkTeamMiniGuideSpecialMet(teamId) {
 }
 
 function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
-    var msgStr = "Counter to Boss actions from Preemp may not be met (assuming max Bind and Despair sockets, and max Double Special; currently not including CA, Super SP, Swap Effect, Sailor, and Support):";
+    var msgStr = "Counter to Boss actions from Preemp may not be met (assuming max Bind and Despair sockets, and max Double Special; currently not including Super SP, Swap Effect, Sailor, and Support):";
     // temp
-    msgStr += "<br> (Testing debugging feature below to prep for CA, Super, etc check, may seem errorous but logic has not changed)";
+    msgStr += "<br> (Testing debugging feature below to prep for other checks, may add Special order selection later)";
 
     var msgDiv = (`<li class="team-build-msg info">${msgStr}</li>`);
     $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
@@ -2831,6 +2927,10 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
             var specialsUsedSubDiv = $('<div class="sp-used-sub-div"></div>');
 
             specialsUsedSubDiv.append(unitHtml);
+
+            if (su.type === 'ca')
+                specialsUsedSubDiv.append('(CA)');
+
             specialsUsedSubDiv.append(`<div class='team-note-icon ${su.counter}-div'></div>`);
 
             if (su.turns)
@@ -2858,159 +2958,192 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
     }
 }
 
+function getCounterRegexResultGroup(counter) {
+    var resultGroup = [];
+
+    if (
+        counter === 'atk-down-red' ||
+        counter === 'bar-red-e' ||
+        counter === 'blind-red' ||
+        counter === 'burn-red' ||
+        counter === 'chain-down-red' ||
+        counter === 'chain-lock-red' ||
+        counter === 'def-red-e' ||
+        counter === 'def-null-red-e' ||
+        counter === 'def-perc-red-e' ||
+        counter === 'def-thres-red-e' ||
+        counter === 'inc-dmg-red' ||
+        counter === 'resil-red-e'
+    )
+        resultGroup = [1, 2, 3, 4, 5];
+    else if (counter === 'cd-red')
+        resultGroup = [2, 3, 4, 5, 6, 7];
+    else if (counter === 'cd-rew-red')
+        resultGroup = [2, 3, 4, 5, 6, 7];
+    else if (
+        counter === 'bind-red' ||
+        counter === 'desp-red' ||
+        counter === 'para-red' ||
+        counter === 'sp-bind-red'
+    )
+        resultGroup = [1, 2, 3, 5, 6];
+
+    return resultGroup;
+}
+
 function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUsed, counter, requiredTurns, isCaptainRow, immuTypes) {
     var team = $(".team[data-team=" + teamId + "]");
     var turnsNeeded = requiredTurns;
 
     team.find(".booster, .booster-clone").each(function () {
         var unitId = $(this).data('id');
-        var origId = unitId;
-
-        if (unitId > 9000)
-            unitId = parseVsUnitId(unitId);
-
         var unitDetail = details[unitId];
-        if (unitDetail) {
-            var spDesc = unitDetail.special;
-            var special;
 
-            if (origId > 9000) {
-                // VS Units
-                if (origId % 2 === 1)
-                    special = spDesc.character1;
-                else
-                    special = spDesc.character2;
-            } else if (Array.isArray(spDesc)) {
-                special = spDesc[spDesc.length - 1].description;
-            } else if (spDesc.character1 && spDesc.combined) {
-                // Dual Units with different Specials and a Combined Special
-                special = spDesc.combined;
-            } else if (spDesc.character1) {
-                // TODO: Check character 2 separately
-                // Dual Units with different Specials
-                special = spDesc.character1;
-            } else if (spDesc.base && spDesc.combined) {
-                // Dual Units with same Base Special and a Combined Special
-                special = spDesc.combined;
-            } else if (spDesc.base && spDesc.llbbase) {
-                // Units with LLB
-                special = spDesc.llbbase;
-            } else {
-                special = spDesc;
-            }
+        var teamSlot;
+        if (teamId === 5)
+            teamSlot = $(this).closest('.ambush-team-slot').data('slot');
+        else
+            teamSlot = $(this).closest('.team-slot').data('slot');
 
-            var specialRegex = getFilterMatcher('sp', counter).regex;
+        if (counter.indexOf('c_') !== -1) {
+            // Check Captain Ability
+            if (teamSlot == '0' || teamSlot == '1') {
+                var caCounter = counter.substring(counter.indexOf('c_') + 2);
+                var captain = getUnitCaptain(unitId);
 
-            if (specialRegex.test(special)) {
-                if (turnsNeeded !== null) {
-                    // Special Case for Special Bind and CD Rewind
-                    var teamSlot = $(this).closest('.team-slot').data('slot');
-                    if (teamSlot == '0' || teamSlot == '1') {
-                        if (counter === 'sp-bind-red' ||
-                            counter === 'cd-red') {
-                            // Unit is unable to negate the action as Captain
-                            if (isCaptainRow)
-                                return;
-                        }
-                    } else {
-                        // TODO: Check if sailor is sufficient
-                    }
+                if (captain !== null) {
+                    var captainRegex = getFilterMatcher('ca', caCounter).regex;
 
-                    var result = special.match(specialRegex);
-                    var resultGroup = [];
+                    if (captainRegex.test(captain)) {
+                        if (turnsNeeded !== null) {
+                            var result = captain.match(captainRegex);
+                            var resultGroup = getCounterRegexResultGroup(caCounter);
 
-                    if (
-                        counter === 'atk-down-red' ||
-                        counter === 'bar-red-e' ||
-                        counter === 'blind-red' ||
-                        counter === 'burn-red' ||
-                        counter === 'chain-down-red' ||
-                        counter === 'chain-lock-red' ||
-                        counter === 'def-red-e' ||
-                        counter === 'def-null-red-e' ||
-                        counter === 'def-perc-red-e' ||
-                        counter === 'def-thres-red-e' ||
-                        counter === 'inc-dmg-red' ||
-                        counter === 'resil-red-e'
-                    )
-                        resultGroup = [1, 2, 3, 4, 5];
-                    else if (counter === 'cd-red')
-                        resultGroup = [2, 3, 4, 5, 6, 7];
-                    else if (
-                        counter === 'bind-red' ||
-                        counter === 'desp-red' ||
-                        counter === 'para-red' ||
-                        counter === 'sp-bind-red'
-                    )
-                        resultGroup = [1, 2, 3, 5, 6];
+                            // Loop through regex groups to find the matched # of turns
+                            for (var i = 0; i < resultGroup.length; i++) {
+                                var numOfTurns = result[resultGroup[i]];
 
-                    // Loop through regex groups to find the matched # of turns
-                    for (var i = 0; i < resultGroup.length; i++) {
-                        var numOfTurns = result[resultGroup[i]];
-
-                        if (typeof numOfTurns !== 'undefined' && numOfTurns != null) {
-                            if (numOfTurns == 'completely') {
-                                turnsNeeded = 0;
-                                specialsUsed.push({ unitId: unitId, counter: counter, turns: 'Completely' })
-
-                                return false;
-                            } else {
-                                // Check for Double Special
-                                var hasDoubleSpecial = false;
-                                if (unitDetail.potential) {
-                                    var unitLbAbility = unitDetail.potential;
-
-                                    for (var lba in unitLbAbility) {
-                                        if (unitLbAbility[lba].Name === 'Double Special Activation') {
-                                            hasDoubleSpecial = true;
-                                            break;
-                                        }
-                                    }
-                                }
-
-                                if (hasDoubleSpecial)
-                                    numOfTurns = numOfTurns * 2;
-
-                                if (prevUnitsUsed !== null && !prevUnitsUsed.includes(unitId)) {
-                                    specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns })
-
-                                    if (numOfTurns >= turnsNeeded) {
+                                if (typeof numOfTurns !== 'undefined' && numOfTurns != null) {
+                                    if (numOfTurns == 'completely') {
                                         turnsNeeded = 0;
-                                        currentUnitsUsed.push(unitId);
+                                        specialsUsed.push({ unitId: unitId, counter: caCounter, turns: 'Completely', type: 'ca' })
+
                                         return false;
                                     } else {
-                                        turnsNeeded -= numOfTurns;
-                                        currentUnitsUsed.push(unitId);
-                                    }
-                                } else
-                                    specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns, used: true })
-                            }
+                                        specialsUsed.push({ unitId: unitId, counter: caCounter, turns: numOfTurns, type: 'ca' })
 
-                            // Exit loop after finding match
-                            break;
-                        }
-                    }
-                } else {
-                    if (prevUnitsUsed !== null && !prevUnitsUsed.includes(unitId)) {
-                        // Special Case for counters blocked by immunity
-                        if (typeof immuTypes !== 'undefined' && immuTypes.length > 0) {
-                            if (counter === 'def-down' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
-                                turnsNeeded = 1;
-                            else if (counter === 'poison' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-poison')))
-                                turnsNeeded = 1;
-                            else {
-                                turnsNeeded = 0;
-                                specialsUsed.push({ unitId: unitId, counter: counter });
+                                        if (numOfTurns >= turnsNeeded) {
+                                            turnsNeeded = 0;
+                                            return false;
+                                        } else {
+                                            turnsNeeded -= numOfTurns;
+                                        }
+                                    }
+
+                                    // Exit loop after finding match
+                                    break;
+                                }
                             }
                         } else {
                             turnsNeeded = 0;
-                            specialsUsed.push({ unitId: unitId, counter: counter });
+                            specialsUsed.push({ unitId: unitId, counter: caCounter, type: 'ca' });
+
+                            return false;
+                        }
+                    }
+                }
+            }
+        } else {
+            // Check Special
+            var special = getUnitSpecial(unitId);
+            for (var sp of special) {
+                var specialRegex = getFilterMatcher('sp', counter).regex;
+
+                if (specialRegex.test(sp)) {
+                    if (turnsNeeded !== null) {
+                        // Special Case for Special Bind and CD Rewind
+                        if (teamSlot == '0' || teamSlot == '1') {
+                            if (counter === 'sp-bind-red' ||
+                                counter === 'cd-red') {
+                                // Unit is unable to negate the action as Captain
+                                if (isCaptainRow)
+                                    return true;
+                            }
+                        } else {
+                            // TODO: Check if sailor is sufficient
                         }
 
-                        currentUnitsUsed.push(unitId);
-                        return false;
-                    } else
-                        specialsUsed.push({ unitId: unitId, counter: counter, used: true })
+                        var result = sp.match(specialRegex);
+                        var resultGroup = getCounterRegexResultGroup(counter);
+
+                        // Loop through regex groups to find the matched # of turns
+                        for (var i = 0; i < resultGroup.length; i++) {
+                            var numOfTurns = result[resultGroup[i]];
+
+                            if (typeof numOfTurns !== 'undefined' && numOfTurns != null) {
+                                if (numOfTurns == 'completely') {
+                                    turnsNeeded = 0;
+                                    specialsUsed.push({ unitId: unitId, counter: counter, turns: 'Completely', type: 'sp' })
+
+                                    return false;
+                                } else {
+                                    // Check for Double Special
+                                    var hasDoubleSpecial = false;
+                                    if (unitDetail.potential) {
+                                        var unitLbAbility = unitDetail.potential;
+
+                                        for (var lba in unitLbAbility) {
+                                            if (unitLbAbility[lba].Name === 'Double Special Activation') {
+                                                hasDoubleSpecial = true;
+                                                break;
+                                            }
+                                        }
+                                    }
+
+                                    if (hasDoubleSpecial)
+                                        numOfTurns = numOfTurns * 2;
+
+                                    if (prevUnitsUsed !== null && !prevUnitsUsed.includes(unitId)) {
+                                        specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns, type: 'sp' })
+
+                                        if (numOfTurns >= turnsNeeded) {
+                                            turnsNeeded = 0;
+                                            currentUnitsUsed.push(unitId);
+                                            return false;
+                                        } else {
+                                            turnsNeeded -= numOfTurns;
+                                            currentUnitsUsed.push(unitId);
+                                        }
+                                    } else
+                                        specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns, type: 'sp', used: true })
+                                }
+
+                                // Exit loop after finding match
+                                break;
+                            }
+                        }
+                    } else {
+                        if (prevUnitsUsed !== null && !prevUnitsUsed.includes(unitId)) {
+                            // Special Case for counters blocked by immunity
+                            if (typeof immuTypes !== 'undefined' && immuTypes.length > 0) {
+                                if (counter === 'def-down' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-def')))
+                                    turnsNeeded = 1;
+                                else if (counter === 'poison' && (immuTypes.includes('immu-all') || immuTypes.includes('immu-poison')))
+                                    turnsNeeded = 1;
+                                else {
+                                    turnsNeeded = 0;
+                                    specialsUsed.push({ unitId: unitId, counter: counter, type: 'sp' });
+                                }
+                            } else {
+                                turnsNeeded = 0;
+                                specialsUsed.push({ unitId: unitId, counter: counter, type: 'sp' });
+                            }
+
+                            currentUnitsUsed.push(unitId);
+                            return false;
+                        } else
+                            specialsUsed.push({ unitId: unitId, counter: counter, type: 'sp', used: true })
+                    }
                 }
             }
         }
@@ -4119,61 +4252,15 @@ $(document).ready(function () {
             $(this).addClass('selected');
 
             $('.booster, .booster-clone').each(function () {
-                var unitId = $(this).data('id');
-                var origId = unitId;
+                var special = getUnitSpecial($(this).data('id'));
 
-                if (unitId > 9000)
-                    unitId = parseVsUnitId(unitId);
+                var filtered = true;
+                for (var sp of special) {
+                    if (regexTestHelper(sp, filterRegex, filterSubType))
+                        filtered = false;
+                }
 
-                var unitDetail = details[unitId];
-
-                if (unitDetail) {
-                    var spDesc = unitDetail.special;
-
-                    if (spDesc.character1 && spDesc.character2) {
-                        // Dual Units with different Specials
-                        var filtered = true;
-                        if (spDesc.character1) {
-                            if (regexTestHelper(spDesc.character1, filterRegex, filterSubType))
-                                filtered = false;
-                        }
-
-                        if (spDesc.character2) {
-                            if (regexTestHelper(spDesc.character2, filterRegex, filterSubType))
-                                filtered = false;
-                        }
-
-                        if (spDesc.combined) {
-                            if (regexTestHelper(spDesc.combined, filterRegex, filterSubType))
-                                filtered = false;
-                        }
-
-                        if (filtered)
-                            $(this).addClass(filterClass);
-                    } else {
-                        var special;
-                        if (origId > 9000) {
-                            // VS Units
-                            if (origId % 2 === 1)
-                                special = spDesc.character1;
-                            else
-                                special = spDesc.character2;
-                        } else if (Array.isArray(spDesc)) {
-                            special = spDesc[spDesc.length - 1].description;
-                        } else if (spDesc.base && spDesc.combined) {
-                            // Dual Units with same Base Special and a Combined Special
-                            special = spDesc.combined;
-                        } else if (spDesc.base && spDesc.llbbase) {
-                            // Units with LLB
-                            special = spDesc.llbbase;
-                        } else {
-                            special = spDesc;
-                        }
-
-                        if (!regexTestHelper(special, filterRegex, filterSubType))
-                            $(this).addClass(filterClass);
-                    }
-                } else
+                if (filtered)
                     $(this).addClass(filterClass);
             });
         }
@@ -4253,48 +4340,9 @@ $(document).ready(function () {
             $(this).addClass('selected');
 
             $('.booster, .booster-clone').each(function () {
-                var unitId = $(this).data('id');
-                var origId = unitId;
+                var captain = getUnitCaptain($(this).data('id'));
 
-                if (unitId > 9000)
-                    unitId = parseVsUnitId(unitId);
-
-                var unitDetail = details[unitId];
-
-                if (unitDetail) {
-                    var caDesc = unitDetail.captain;
-
-                    if (caDesc) {
-                        var ca;
-                        if (origId > 9000) {
-                            // VS Units
-                            if (origId % 2 === 1)
-                                ca = caDesc.character1;
-                            else
-                                ca = caDesc.character2;
-                        } else if (caDesc.combined) {
-                            ca = caDesc.combined;
-                        } else if (caDesc.base) {
-                            if (caDesc.llblevel1)
-                                ca = caDesc.llblevel1;
-                            else if (caDesc.llbbase)
-                                ca = caDesc.llbbase;
-                            else if (caDesc.level1) {
-                                var lblv = 2;
-                                ca = caDesc.level1;
-                                while (caDesc['level' + lblv]) {
-                                    ca = caDesc['level' + lblv];
-                                    lblv++;
-                                }
-                            }
-                        } else
-                            ca = caDesc;
-
-                        if (!regexTestHelper(ca, filterRegex, filterSubType))
-                            $(this).addClass(filterClass);
-                    } else
-                        $(this).addClass(filterClass);
-                } else
+                if (captain === null || !regexTestHelper(captain, filterRegex, filterSubType))
                     $(this).addClass(filterClass);
             });
         }
@@ -4369,7 +4417,7 @@ $(document).ready(function () {
         } else {
             var filtersStr = "";
 
-            for (f of supportFilters) {
+            for (var f of supportFilters) {
                 var filterLookUp = filter_map[f];
                 var filterMatcher = getFilterMatcher('spt', f);
                 var filterRegex = filterMatcher.regex;
@@ -4799,7 +4847,7 @@ $(document).ready(function () {
             // Search for type
             types = getTypesForUnit(origId, unit.data('type'));
             if (Array.isArray(types)) {
-                for (type of types) {
+                for (var type of types) {
                     searchStr = searchStr + "|\\[" + type + " characters\\]";
 
                     uniqueClasses.forEach(function (value) {
