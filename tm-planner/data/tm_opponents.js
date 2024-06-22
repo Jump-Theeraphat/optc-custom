@@ -19824,7 +19824,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Mr. 4 & Miss Merry X-Mas', 'QCK'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19863,7 +19863,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Perona', 'QCK'],
-                    hp_: 1500000,
+                    hp: 1500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19903,7 +19903,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Sugar', 'INT'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -19960,7 +19960,6 @@ var tm_opponents = {
                                 { type: CD_REW, turn: 2, detail: 'Row 2 3' },
                                 { type: NAO, turn: 99 },
                                 { type: DEF_PERC, turn: 6 },
-                                { type: INTIM, turn: 2, detail: 'Atk Boost, -2' },
                                 { type: DESP, turn: 9 },
                                 { type: PARA, turn: 11 },
                                 { type: IMMU_ALL, turn: 99 }
@@ -19997,7 +19996,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Kuro & Django', 'QCK'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -20068,7 +20067,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Mihawk', 'QCK'],
-                    hp_: 2500000,
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
