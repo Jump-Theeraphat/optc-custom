@@ -323,7 +323,12 @@ function showFooter() {
             var kizuna = kizunas[eId];
             res['id'] = eId;
             res['title'] = '『Kizuna』\n' + kizuna['name'];
-            res['thumb'] = kizuna['thumb'];
+
+            if (kizuna['thumb'])
+                res['thumb'] = kizuna['thumb'];
+            else
+                res['thumb'] = eId;
+
             res['xch_id'] = kizuna['xch_id'];
 
             res['type'] = 'kizuna';

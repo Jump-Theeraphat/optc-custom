@@ -74,10 +74,7 @@ function getThumb(thumbId) {
 
     // Special cases for new thumbs
     if (
-        paddedThumbId === '4177' ||
-        paddedThumbId === '4179' ||
-        paddedThumbId === '4180' ||
-        paddedThumbId === '4181' ||
+        paddedThumbId === '4185' ||
         paddedThumbId === '9999'
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';
