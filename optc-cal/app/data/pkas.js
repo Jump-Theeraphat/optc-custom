@@ -1,54 +1,44 @@
 var pkas = {
     3885: {
-        name: 'Roger',
-        thumb: 3885
+        name: 'Roger'
     },
     3927: {
-        name: 'Sanji',
-        thumb: 3927
+        name: 'Sanji'
     },
     3952: {
-        name: 'Maha',
-        thumb: 3952
+        name: 'Maha'
     },
     3976: {
-        name: 'O-Tama',
-        thumb: 3976
+        name: 'O-Tama'
     },
     3999: {
-        name: 'Gordon',
-        thumb: 3999
+        name: 'Gordon'
     },
     4025: {
-        name: 'Blueno & Bepo & Sunny-kun',
-        thumb: 4025
+        name: 'Blueno & Bepo & Sunny-kun'
     },
     4047: {
-        name: 'Luffy',
-        thumb: 4047
+        name: 'Luffy'
     },
     4066: {
-        name: 'Edward Newgate',
-        thumb: 4066
+        name: 'Edward Newgate'
     },
     4088: {
-        name: 'Jinbe',
-        thumb: 4088
+        name: 'Jinbe'
     },
     4107: {
-        name: 'Coby',
-        thumb: 4107
+        name: 'Coby'
     },
     4127: {
-        name: 'CP-0',
-        thumb: 4127
+        name: 'CP-0'
     },
     4146: {
-        name: 'Blackbeard',
-        thumb: 4146
+        name: 'Blackbeard'
     },
     4176: {
-        name: 'Mihawk',
-        thumb: 4176
+        name: 'Mihawk'
+    },
+    4190: {
+        name: 'Arlong'
     },
 };

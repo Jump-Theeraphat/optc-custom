@@ -369,7 +369,11 @@ function showFooter() {
             var pka = pkas[eId];
             res['id'] = eId;
             res['title'] = '『PKA』\n' + pka['name'];
-            res['thumb'] = pka['thumb'];
+
+            if (pka['thumb'])
+                res['thumb'] = pka['thumb'];
+            else
+                res['thumb'] = eId;
 
             res['type'] = 'pka';
 
