@@ -266,4 +266,8 @@ var tms = {
         name: 'Mihawk (DEX) (1am ~ 6am)',
         info: 'fixupx.com/tingoki/status/1800849219416453435'
     },
+    4191: {
+        name: 'Arlong (1am ~ 6am)',
+        info: 'fixupx.com/tingoki/status/1811061036537008366'
+    },
 };
