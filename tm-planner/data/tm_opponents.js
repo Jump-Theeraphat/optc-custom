@@ -27,6 +27,7 @@ const DEF_THRES = 'def-thres';
 const DESP = 'desp';
 const DMG_LIMIT = 'dmg-limit';
 const DMG_NORMAL = 'dmg-normal';
+const FEAR = 'fear';
 const INC_DMG = 'inc-dmg';
 const HP_CUT = 'hp-cut'
 const HUNGER = 'hunger';
@@ -19883,8 +19884,8 @@ var tm_opponents = {
             ]
         },
         3805: {
-            name: ['Sugar'],
-            type: ['INT'],
+            name: 'Sugar',
+            type: 'INT',
             pos: 2,
             guide: [
                 {
@@ -20107,6 +20108,310 @@ var tm_opponents = {
                             action: [
                                 { type: DMG_NORMAL, detail: '100k' },
                                 { type: SLOT_ATK_DOWN, turn: 5, detail: 'RCV/TND/WANO/BOMB/S.BOMB' }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Arlong ==========
+    4191: {
+        758: {
+            name: 'Fukuro',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Fukuro', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'INT' },
+                                { type: PARA, turn: 5 },
+                                { type: SP_BIND, turn: 5 },
+                                { type: NAO, turn: 99 },
+                                { type: SLOT_NEG, turn: 6, detail: 'STR/DEX/QCK/INT' },
+                                { type: RESIL, turn: 6 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1438: {
+            name: 'Ikaros',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Slasher/Driven' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Slasher/Driven' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Slasher/Driven' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ikaros', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: FEAR, turn: 5 },
+                                { type: CD_REW, turn: 2 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 7 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3654: {
+            name: ['Sas', 'aki'],
+            type: ['PSY', 'QCK'],
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Striker/Shooter/Free Spirit' },
+                                { type: VS_RED, turn: 5, detail: 'Striker/Shooter/Free Spirit' },
+                                { type: SW_RED, turn: 5, detail: 'Striker/Shooter/Free Spirit' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sasaki', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK, detail: 'BLOCK/Bad' },
+                                { type: SP_BIND, turn: 10, detail: 'Row 2 3' },
+                                { type: PARA, turn: 5 },
+                                { type: NAO, turn: 99 },
+                                { type: HUNGER, detail: '2x' },
+                                { type: BAR_SLOT, turn: 3, detail: '2x TND' },
+                                { type: BIND, turn: 5, detail: 'Row 3' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Paralysis' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1943: {
+            name: 'Senor Pink',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Senor Pink', 'INT'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<2.5' },
+                                { type: BURN_P, turn: 5, detail: '20000' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_NULL, turn: 3 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Set Chain (once)',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'S.BOMB' },
+                                { type: SLOT_ATK_DOWN, turn: 10, detail: 'RCV/TND/WANO/BOMB/S.BOMB' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '200K' },
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2885: {
+            name: 'Spandam',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: STUN, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Spandam', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_PARA },
+                                { type: CD_REW, turn: 6, detail: 'Row 1' },
+                                { type: CD_REW, turn: 2, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 8 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<3' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Chain Boost (Add) (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' },
+                                { type: SP_BIND, turn: 10 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4191: {
+            name: ['Arl', 'ong'],
+            type: ['DEX', 'QCK'],
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Shooter/Cerebral/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Shooter/Cerebral/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Shooter/Cerebral/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: NAO, turn: 99 },
+                                { type: BURN_P, turn: 6, detail: '20000' },
+                                { type: DEF, turn: 4 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Paralysis' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Arlong', 'DEX'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: PARA, turn: 6, detail: 'Col R' },
+                                { type: SP_BIND, turn: 6, detail: 'Col L' },
+                                { type: BLOW_AWAY, turn: 2, detail: 'Row 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Paralysis' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Dmg Reduction Not Applied (once)',
+                            action: [
+                                { type: DEF_PERC, turn: 6 }
                             ]
                         }
                     ]

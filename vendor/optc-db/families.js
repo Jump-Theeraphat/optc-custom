@@ -4776,6 +4776,17 @@ window.families = {
     4179: [ ...Usopp ],
     4180: [ ...Kaya ],
     4181: [ ...UsoppPirates ],
+    4182: [ ...TonyTonyChopper ],
+    4185: [ ...TrafalgarDWaterLaw ],
+    4186: [ ...Nami ],
+    4187: [ ...NicoRobin ],
+    4188: [ ...Bellmere ],
+    4189: [ ...NicoOlvia ],
+    4190: [ ...Arlong ],
+    4191: [ ...Arlong ],
+    4193: [ ...Franky ],
+    4194: [ ...Tom ],
+    4195: [ ...Iceburg ],
 
     //break
     4986: [ ...MonkeyDLuffy ],

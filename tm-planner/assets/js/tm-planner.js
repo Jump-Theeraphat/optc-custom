@@ -647,12 +647,14 @@ function getBoosters(tmId, server) {
         tmId == 4108 ||
         tmId == 4128 ||
         tmId == 4147 ||
-        tmId == 4177
+        tmId == 4177 ||
+        tmId == 4191
     ) {
         // TM Coby
         // TM CP0
         // TM Blackbeard (DEX)
         // TM Mihawk (DEX)
+        // TM Arlong
         $('#div_2_5x').show();
         $('#div_1_6x').show();
         $('#div_1_4x_v2').show();
@@ -678,11 +680,6 @@ function getBoosters(tmId, server) {
             $('#div_1_2x_tm').show();
         else
             $('#div_1_2x_tm').hide();
-
-        if (tmId < 4177)
-            $('#div_1_2x_fortnight').show();
-        else
-            $('#div_1_2x_fortnight').hide();
 
         if (tmId < 4108) {
             boosters = tm_boosters[tmId];
