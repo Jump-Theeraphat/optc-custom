@@ -190,6 +190,7 @@ nav.navbar.navbar-expand-md.navbar-dark.navbar-bg a {
 .sl-filter,
 .ca-filter,
 .sv-filter,
+.sw-filter,
 .sup-filter {
     cursor: pointer;
     float: left;

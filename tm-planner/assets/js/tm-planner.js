@@ -1125,6 +1125,10 @@ function createActionCounterBtn(guideActionClone, counter) {
         guideFilterClone = $('#guide-sv-filter-clone').clone();
         guideFilterClass = 'guide-sv-filter';
         counter = counter.substring(3);
+    } else if (counter.indexOf('sw_') !== -1) {
+        guideFilterClone = $('#guide-sw-filter-clone').clone();
+        guideFilterClass = 'guide-sw-filter';
+        counter = counter.substring(3);
     } else {
         guideFilterClone = $('#guide-sp-filter-clone').clone();
         guideFilterClass = 'guide-sp-filter';
@@ -1142,6 +1146,8 @@ function createActionCounterBtn(guideActionClone, counter) {
         tooltip = "Captain: " + tooltip;
     else if (guideFilterClass === 'guide-sv-filter')
         tooltip = "Super/VS: " + tooltip;
+    else if (guideFilterClass === 'guide-sw-filter')
+        tooltip = "Swap: " + tooltip;
     createTooltip(guideFilterClone.find('.' + guideFilterClass), tooltip);
 
     guideActionClone.find('.guide-filter-list').append(guideFilterClone);
@@ -2359,6 +2365,13 @@ function clearSuperFilters() {
     });
 }
 
+function clearSwapFilters() {
+    $('.sw-filter').removeClass('selected');
+    $('.booster, .booster-clone').removeClass(function (i, cName) {
+        return (cName.match(/(^|\s)sw-filtered-\S+/g) || []).join(' ');
+    });
+}
+
 function modifyCharStyle(chars) {
     chars = chars.replace(/\[/g, "");
     chars = chars.replace(/\]/g, "");
@@ -2535,6 +2548,24 @@ function getUnitCaptain(unitId) {
     }
 
     return captain;
+}
+
+function getUnitSwap(unitId) {
+    var swap = null;
+    var unitDetail = details[unitId];
+
+    if (unitDetail) {
+        var swDesc = unitDetail.swap;
+
+        if (swDesc) {
+            if (swDesc.super)
+                swap = swDesc.super;
+            else
+                swap = swDesc;
+        }
+    }
+
+    return swap;
 }
 
 function getSupportList() {
@@ -2848,7 +2879,7 @@ function checkTeamMiniGuideSpecialMet(teamId) {
 
                                 if (aCounter) {
                                     var specialsUsed = [];
-                                    var counterOrder = ['c_', 's_', '', 'sv'];
+                                    var counterOrder = ['c_', 's_', 'sv_', 'sw_', ''];
 
                                     for (var co of counterOrder) {
                                         for (var ac of aCounter) {
@@ -3205,6 +3236,9 @@ function getFilterMatcher(type, key) {
     if (type === 'sv')
         return matchers.superSpecial[filterLookUp[0]][filterLookUp[1]];
 
+    if (type === 'sw')
+        return matchers.swap[filterLookUp[0]][filterLookUp[1]];
+
     if (type === 'spt')
         return matchers.support[filterLookUp[0]][filterLookUp[1]];
 }
@@ -3269,6 +3303,11 @@ $(document).ready(function () {
     });
 
     $('.sv-filter').each(function () {
+        var filter = $(this).data('filter');
+        createTooltip($(this), getIconTooltip(filter));
+    });
+
+    $('.sw-filter').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
@@ -3646,6 +3685,7 @@ $(document).ready(function () {
         clearSailorFilters();
         clearCaptainFilters();
         clearSuperFilters();
+        clearSwapFilters();
 
         var opId = $(this).closest('.team').data('op_id');
         var op = tm_opponents[tmId][opId];
@@ -3872,6 +3912,15 @@ $(document).ready(function () {
         // Activate actual Filter
         var filter = $(this).data('filter');
         $('.sv-filter[data-filter=' + filter + ']').click();
+    });
+
+    // Activate Counter Swap Filter after clicking from Mini Guide
+    $(document).on('click', '.guide-sw-filter', function () {
+        $(this).toggleClass('selected');
+
+        // Activate actual Filter
+        var filter = $(this).data('filter');
+        $('.sw-filter[data-filter=' + filter + ']').click();
     });
 
     // Change Boss HP and ATK based on Nav Lv
@@ -4395,6 +4444,35 @@ $(document).ready(function () {
         }
     });
 
+    // Swap Filter
+    $('.sw-filter').click(function () {
+        var filter = $(this).data('filter');
+        var filterClass = 'sw-filtered-' + filter;
+
+        var filterLookUp = filter_map[filter];
+        var filterMatcher = getFilterMatcher('sw', filter);
+        var filterRegex = filterMatcher.regex;
+
+        var filterSubType;
+        if (filterMatcher.submatchers)
+            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
+
+        if ($(this).hasClass('selected')) {
+            // Clear filters of units filtered by this special
+            $(this).removeClass('selected');
+            $('.' + filterClass).removeClass(filterClass);
+        } else {
+            $(this).addClass('selected');
+
+            $('.booster, .booster-clone').each(function () {
+                var swap = getUnitSwap($(this).data('id'));
+
+                if (swap === null || !regexTestHelper(swap, filterRegex, filterSubType))
+                    $(this).addClass(filterClass);
+            });
+        }
+    });
+
     // Support filter
     var supportFilters = [];
     $('.sup-filter').click(function () {
@@ -4449,6 +4527,8 @@ $(document).ready(function () {
             clearCaptainFilters();
         } else if ('super' === target) {
             clearSuperFilters();
+        } else if ('swap' === target) {
+            clearSwapFilters();
         }
     });
 
@@ -4468,6 +4548,8 @@ $(document).ready(function () {
         clearCaptainFilters();
 
         clearSuperFilters();
+
+        clearSwapFilters();
     });
 
     $('.sup-filter-clear-all-btn').click(function () {
