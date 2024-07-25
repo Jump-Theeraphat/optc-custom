@@ -20139,7 +20139,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Fukuro', 'INT'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20179,7 +20179,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Ikaros', 'QCK'],
-                    hp_: 1500000,
+                    hp: 1500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20310,7 +20310,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'QCK'],
+                    boss: ['Fukuro', 'INT'],
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -20375,7 +20375,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'QCK'],
+                    boss: ['Arlong Pirates', 'QCK'],
                     hp_: 2500000,
                     atk_: 6600,
                     detail: [
