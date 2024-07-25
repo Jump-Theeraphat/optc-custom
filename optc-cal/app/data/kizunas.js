@@ -196,4 +196,8 @@ var kizunas = {
     4185: {
         name: 'Law v3 6+ (~ 6am)'
     },
+    4201: {
+        name: 'Moria (~ 6am)',
+        xch_id: 4199
+    },
 };

@@ -8,6 +8,8 @@ var tm_boosters = [
     // Coliseums
 
     // Kizunas
+    4199,
+    4201,
 
     // PKAs
 
