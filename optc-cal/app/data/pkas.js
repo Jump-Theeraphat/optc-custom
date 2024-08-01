@@ -41,4 +41,7 @@ var pkas = {
     4190: {
         name: 'Arlong'
     },
+    4205: {
+        name: 'Ace'
+    },
 };
