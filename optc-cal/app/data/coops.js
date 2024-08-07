@@ -8,4 +8,7 @@ var coops = {
     4186: {
         name: 'Summer 2'
     },
+    4202: {
+        name: 'Summer 3'
+    },
 }

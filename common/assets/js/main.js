@@ -74,6 +74,7 @@ function getThumb(thumbId) {
 
     // Special cases for new thumbs
     if (
+        paddedThumbId === '4202' ||
         paddedThumbId === '4205' ||
         paddedThumbId === '9999'
     )
