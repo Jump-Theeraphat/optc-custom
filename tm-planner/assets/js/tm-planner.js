@@ -2713,87 +2713,92 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
     if (capId > 9000)
         capId = parseVsUnitId(capId);
 
-    var superCriteria = details[capId].superSpecialCriteria;
-    if (superCriteria) {
-        var slotIds = [];
-        if (isFriend)
-            slotIds = [1, 2, 3, 4, 5];
-        else
-            slotIds = [0, 2, 3, 4, 5];
+    var unitDetail = details[capId];
 
-        if (superCriteria.indexOf('must consist of') != -1) {
-            var numStr = superCriteria.substring(superCriteria.indexOf('must consist of ') + 16, superCriteria.indexOf('must consist of ') + 18);
-            var numClasses = parseInt(numStr, 10);
+    if (unitDetail) {
+        var superCriteria = details[capId].superSpecialCriteria;
 
-            if (!isNaN(numClasses)) {
-                // Case 1: specific classes crew
-                var numMatched = 1;
-                var singleClass = superCriteria.substring(superCriteria.indexOf(numStr) + 2, superCriteria.indexOf(' characters'));
-                var class1 = superCriteria.substring(superCriteria.indexOf(numStr) + 2, superCriteria.indexOf(' or'));
-                var class2 = superCriteria.substring(superCriteria.indexOf('or ') + 3, superCriteria.indexOf(' characters'));
+        if (superCriteria) {
+            var slotIds = [];
+            if (isFriend)
+                slotIds = [1, 2, 3, 4, 5];
+            else
+                slotIds = [0, 2, 3, 4, 5];
 
-                for (var slotId of slotIds) {
-                    var unit = $('#team-slot-' + teamId + slotId).find('div');
+            if (superCriteria.indexOf('must consist of') != -1) {
+                var numStr = superCriteria.substring(superCriteria.indexOf('must consist of ') + 16, superCriteria.indexOf('must consist of ') + 18);
+                var numClasses = parseInt(numStr, 10);
 
-                    if (unit.length > 0) {
-                        var uniqueClasses = getClassesForUnit(unit.data('id'));
-                        for (var c of uniqueClasses) {
-                            if (c == singleClass || c == class1 || c == class2) {
-                                numMatched++;
-                                break;
-                            }
-                        }
-                    }
-                }
+                if (!isNaN(numClasses)) {
+                    // Case 1: specific classes crew
+                    var numMatched = 1;
+                    var singleClass = superCriteria.substring(superCriteria.indexOf(numStr) + 2, superCriteria.indexOf(' characters'));
+                    var class1 = superCriteria.substring(superCriteria.indexOf(numStr) + 2, superCriteria.indexOf(' or'));
+                    var class2 = superCriteria.substring(superCriteria.indexOf('or ') + 3, superCriteria.indexOf(' characters'));
 
-                if (numClasses > numMatched) {
-                    putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('must consist of')), isFriend, capId);
-                    return false;
-                }
+                    for (var slotId of slotIds) {
+                        var unit = $('#team-slot-' + teamId + slotId).find('div');
 
-                return true;
-            } else {
-                // Case 2: specific crew
-                var names = superCriteria.substring(superCriteria.indexOf('must consist of ') + 16);
-
-                var reqNumChars = 1;
-                var regexResult = superCriteria.match(/must consist of any (\d+) of the following/);
-                if (regexResult !== null && regexResult[0] !== null)
-                    reqNumChars = regexResult[1];
-
-                var numChars = 0;
-                for (var slotId of slotIds) {
-                    var unit = $('#team-slot-' + teamId + slotId).find('div');
-
-                    if (unit.length > 0) {
-                        unitId = unit.data('id');
-                        var family = getFamiliesForUnit(unitId);
-
-                        if (family.length > 0) {
-                            if (names.indexOf(family[0]) >= 0) {
-                                numChars++;
-
-                                if (numChars >= reqNumChars)
+                        if (unit.length > 0) {
+                            var uniqueClasses = getClassesForUnit(unit.data('id'));
+                            for (var c of uniqueClasses) {
+                                if (c == singleClass || c == class1 || c == class2) {
+                                    numMatched++;
                                     break;
+                                }
                             }
                         }
                     }
+
+                    if (numClasses > numMatched) {
+                        putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('must consist of')), isFriend, capId);
+                        return false;
+                    }
+
+                    return true;
+                } else {
+                    // Case 2: specific crew
+                    var names = superCriteria.substring(superCriteria.indexOf('must consist of ') + 16);
+
+                    var reqNumChars = 1;
+                    var regexResult = superCriteria.match(/must consist of any (\d+) of the following/);
+                    if (regexResult !== null && regexResult[0] !== null)
+                        reqNumChars = regexResult[1];
+
+                    var numChars = 0;
+                    for (var slotId of slotIds) {
+                        var unit = $('#team-slot-' + teamId + slotId).find('div');
+
+                        if (unit.length > 0) {
+                            unitId = unit.data('id');
+                            var family = getFamiliesForUnit(unitId);
+
+                            if (family.length > 0) {
+                                if (names.indexOf(family[0]) >= 0) {
+                                    numChars++;
+
+                                    if (numChars >= reqNumChars)
+                                        break;
+                                }
+                            }
+                        }
+                    }
+
+                    if (numChars < reqNumChars)
+                        putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('must consist of')), isFriend, capId);
                 }
-
-                if (numChars < reqNumChars)
-                    putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('must consist of')), isFriend, capId);
             }
-        }
 
-        // Case 3: specific specials
-        if (superCriteria.indexOf('ATK UP') != -1) {
-            if (checkTeamSpecialMet(teamId, null, null, null, 'atk-boost') > 0)
-                putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
-        }
+            // Case 3: specific specials
+            if (superCriteria.indexOf('ATK UP') != -1) {
+                if (checkTeamSpecialMet(teamId, null, null, null, 'atk-boost') > 0)
+                    putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
+            }
 
-        if (superCriteria.indexOf('Orb amplification') != -1) {
-            if (checkTeamSpecialMet(teamId, null, null, null, 'orb-boost') > 0)
-                putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
+            if (superCriteria.indexOf('Orb amplification') != -1) {
+                if (checkTeamSpecialMet(teamId, null, null, null, 'orb-boost') > 0)
+                    putSuperNotMetMsg(teamId, superCriteria.substring(superCriteria.indexOf('your crew')), isFriend, capId);
+            }
         }
     }
 
