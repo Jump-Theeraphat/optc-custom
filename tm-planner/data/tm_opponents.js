@@ -2,6 +2,7 @@ const CD_RED = 'cd-red';
 const VS_RED = 'vs-red';
 const SW_RED = 'sw-red';
 
+const AFFINITY_NULL = 'No Type Effect';
 const ATK = 'atk';
 const ATK_BOOST = 'atk-boost';
 const ATK_DOWN = 'atk-down';
@@ -19,6 +20,7 @@ const CD_REW = 'cd-rew';
 const CHAIN_ATK_DOWN_MIN = 'chain-atk-down-min';
 const CHAIN_ATK_DOWN_MAX = 'chain-atk-down-max';
 const CHAIN_DOWN = 'chain-down';
+const CHAIN_LOCK = 'chain-lock';
 const CLEAR_BUFF = 'clear-buff';
 const DEF = 'def';
 const DEF_NULL = 'def-null';
@@ -56,6 +58,7 @@ const SP_BIND = 'sp-bind';
 const SP_LIMIT = 'sp-limit';
 const STUN = 'stun';
 const TARGET_LOCK = 'target-lock';
+const TERRITORY = 'Territory';
 
 var tm_opponents = {
     // ========== Mihawk ==========
@@ -20412,6 +20415,303 @@ var tm_opponents = {
                             type: 'Interrupt - Dmg Reduction Not Applied (once)',
                             action: [
                                 { type: DEF_PERC, turn: 6 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Ace (QCK) ==========
+    4206: {
+        4115: {
+            name: 'Tobi Roppo',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Tobi Roppo', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: CD_REW, turn: 2, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: BURN_P, turn: 6, detail: '15000' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<2.5' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change (once)',
+                            action: [
+                                { type: CD_REW, turn: 2, detail: 'Row 2 3' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3870: {
+            name: 'Jack',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Slasher/Powerhouse/Driven' },
+                                { type: VS_RED, turn: 5, detail: 'Slasher/Powerhouse/Driven' },
+                                { type: SW_RED, turn: 5, detail: 'Slasher/Powerhouse/Driven' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Jack', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6, detail: 'Row 1' },
+                                { type: STUN, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 7 },
+                                { type: RESIL, turn: 7 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Resilience Not Applied (once)',
+                            action: [
+                                { type: DEF_NULL, turn: 2 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Def Not Applied (once)',
+                            action: [
+                                { type: DEF_PERC, turn: 7 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3891: {
+            name: 'Queen',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'QCK/INT/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'QCK/INT/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'QCK/INT/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Queen', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 5, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 8 },
+                                { type: DEF, turn: 4 },
+                                { type: DEF_THRES, turn: 4 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3897: {
+            name: 'King',
+            type: 'DEX',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['King', 'DEX'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: BURN_P, turn: 7, detail: '20000' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<3.5' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_NULL, turn: 2 },
+                                { type: SLOT_ATK_DOWN, turn: 5, detail: 'Type' },
+                                { type: SP_BIND, turn: 6 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3984: {
+            name: 'Kaido',
+            type: 'STR',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Free Spirit/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Free Spirit/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Free Spirit/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Kaido', '?'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_PARA },
+                                { type: CHAIN_LOCK, turn: 7, detail: '1.1x' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 4, detail: '<3.25' },
+                                { type: NAO, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kaido', 'STR'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: ATK_DOWN, turn: 7 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 7 },
+                                { type: DEF_THRES, turn: 7 },
+                                { type: DEF, turn: 7 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4206: {
+            name: 'Ace',
+            type: 'PSY',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Ace', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: PAIN, turn: 7, detail: '20000' },
+                                { type: NAO, turn: 99 },
+                                { type: BAR_SLOT, turn: 2, detail: '1x WANO' },
+                                { type: TERRITORY, turn: 3 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ace', 'PSY'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: BIND, turn: 8, detail: 'Row 2 3' },
+                                { type: CD_REW, turn: 3 },
+                                { type: SP_BIND, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: SLOT_NEG, turn: 7, detail: 'RCV/SEMLA/EMPTY/TND/WANO' },
+                                { type: AFFINITY_NULL, turn: 9 },
+                                { type: DESP, turn: 8 },
+                                { type: IMMU_ALL, turn: 99 }
                             ]
                         }
                     ]

@@ -648,13 +648,15 @@ function getBoosters(tmId, server) {
         tmId == 4128 ||
         tmId == 4147 ||
         tmId == 4177 ||
-        tmId == 4191
+        tmId == 4191 ||
+        tmId == 4206
     ) {
         // TM Coby
         // TM CP0
         // TM Blackbeard (DEX)
         // TM Mihawk (DEX)
         // TM Arlong
+        // TM Ace (QCK)
         $('#div_2_5x').show();
         $('#div_1_6x').show();
         $('#div_1_4x_v2').show();
@@ -1044,7 +1046,9 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === '- Max HP' ||
         iconKey === 'Bad Slot+' ||
         iconKey === 'Slot Atk Down' ||
-        iconKey === 'Slot Effect Down'
+        iconKey === 'Slot Effect Down' ||
+        iconKey === 'Territory' ||
+        iconKey === 'No Type Effect'
     )
         return iconKey;
 
@@ -1058,20 +1062,23 @@ function decorateSpIcon(iconKey, isAction) {
 
 function parseVsUnitId(vsId) {
     // Kaido VS Big Mom
-    if (vsId === 9001 || vsId === 9002)
+    if (vsId == 9001 || vsId == 9002)
         return 3135;
     // Ace VS Akainu
-    if (vsId === 9003 || vsId === 9004)
+    if (vsId == 9003 || vsId == 9004)
         return 3253;
     // Whitebeard VS Shanks
-    if (vsId === 9005 || vsId === 9006)
+    if (vsId == 9005 || vsId == 9006)
         return 3355;
     // Kaido VS Yamato
-    if (vsId === 9007 || vsId === 9008)
+    if (vsId == 9007 || vsId == 9008)
         return 3788;
     // Whitebeard VS Blackbeard
-    if (vsId === 9009 || vsId === 9010)
+    if (vsId == 9009 || vsId == 9010)
         return 3908;
+    // Luffy VS Kaido
+    if (vsId == 9011 || vsId == 9012)
+        return 4211;
 
     return vsId;
 }

@@ -71,11 +71,24 @@ function getThumb(thumbId) {
         return 'https://optc-db.github.io/api/images/thumbnail/jap/3/900/3908-1.png';
     if (paddedThumbId === '9010')
         return 'https://optc-db.github.io/api/images/thumbnail/jap/3/900/3908-2.png';
+    // Luffy VS Kaido
+    if (paddedThumbId === '9011')
+        return '/tm-planner/assets/img/new-thumbs/4211-1.png';
+    if (paddedThumbId === '9012')
+        return '/tm-planner/assets/img/new-thumbs/4211-2.png';
 
     // Special cases for new thumbs
     if (
         paddedThumbId === '4202' ||
+        paddedThumbId === '4203' ||
+        paddedThumbId === '4204' ||
         paddedThumbId === '4205' ||
+        paddedThumbId === '4206' ||
+        paddedThumbId === '4208' ||
+        paddedThumbId === '4212' ||
+        paddedThumbId === '4213' ||
+        paddedThumbId === '4214' ||
+        paddedThumbId === '4215' ||
         paddedThumbId === '9999'
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';
@@ -101,13 +114,13 @@ function createImgHtml(imgSrc, size, floatLeft) {
     return imgHtml;
 }
 
-$(document).ready(function() {
-    $('#header').load('/common/header.html', function() {
+$(document).ready(function () {
+    $('#header').load('/common/header.html', function () {
         if (typeof highlightNavbar !== 'undefined')
             highlightNavbar();
     });
 
-    $('#footer').load('/common/footer.html', function() {
+    $('#footer').load('/common/footer.html', function () {
         if (typeof showFooter !== 'undefined')
             showFooter();
     });
