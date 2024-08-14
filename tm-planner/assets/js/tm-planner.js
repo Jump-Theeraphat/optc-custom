@@ -1193,7 +1193,7 @@ function populateUnitDetail(unitId) {
 
         // Check for Dual Unit / VS Unit
         var isDual = unitDetail.swap != null;
-        var isVS = unitDetail.VSSpecial != null;
+        var isVS = unitDetail.VSSpecial != null || unitDetail.vsSpecial != null;
 
         var unitClass = units[unitId - 1][2];
         if (Array.isArray(unitClass)) {
@@ -1447,6 +1447,8 @@ function populateUnitDetail(unitId) {
         // VS Ability
         if (isVS) {
             var vs = unitDetail.VSSpecial;
+            if (!vs)
+                vs = unitDetail.vsSpecial;
             $('#unit-detail-vs').empty();
 
             var vsSp;
@@ -1459,6 +1461,8 @@ function populateUnitDetail(unitId) {
             $('#unit-detail-vs').append('<br />');
 
             var vsCondition = unitDetail.VSCondition;
+            if (!vsCondition)
+                vsCondition = unitDetail.vsCondition;
             vsCondition = decorateStr(vsCondition);
             $('#unit-detail-vs').append('<b>Condition:</b><br />' + vsCondition);
             $('#unit-detail-vs').append('<br />');
