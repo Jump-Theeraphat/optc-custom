@@ -4928,15 +4928,19 @@ $(document).ready(function () {
 
         if (unit.length > 0) {
             var searchStr = "\\[All characters\\]";
-            var origId = unit.data("id");
-            var uniqueClasses = getClassesForUnit(origId);
+            var unitId = unit.data("id");
+
+            if (unitId > 9000)
+                unitId = parseVsUnitId(unitId);
+
+            var uniqueClasses = getClassesForUnit(unitId);
 
             uniqueClasses.forEach(function (value) {
                 searchStr = searchStr + "|\\[" + value + " characters\\]";
             });
 
             // Search for type
-            types = getTypesForUnit(origId, unit.data('type'));
+            types = getTypesForUnit(unitId, unit.data('type'));
             if (Array.isArray(types)) {
                 for (var type of types) {
                     searchStr = searchStr + "|\\[" + type + " characters\\]";
@@ -4954,13 +4958,13 @@ $(document).ready(function () {
             }
 
             // Search for name
-            var family = getFamiliesForUnit(origId);
+            var family = getFamiliesForUnit(unitId);
             $.each(family, function (i, e) {
                 searchStr = searchStr + "|(^.*(^|, |and )" + e + "($|,| and| \\().*$)";
             });
 
             // Search for cost
-            var cost = units[parseVsUnitId(origId) - 1][4];
+            var cost = units[parseVsUnitId(unitId) - 1][4];
             if (cost <= 29)
                 searchStr = searchStr + "|cost 29 or less|cost 40 or less";
             else if (cost <= 40)
@@ -4972,7 +4976,6 @@ $(document).ready(function () {
             // Exclude supports that have the same family name of supported unit
             // Family names of other team members will be evaluated in rowCallback
             var nameStr = "^";
-
             for (var name of family)
                 nameStr = nameStr + "(?!.*(^|,)" + name + "($|,))";
 
