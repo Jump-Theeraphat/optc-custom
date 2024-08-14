@@ -2775,6 +2775,9 @@ function checkSuperSpecialCriteriaIsMet(teamId, capId, isFriend) {
 
                         if (unit.length > 0) {
                             unitId = unit.data('id');
+                            if (unitId > 9000)
+                                unitId = parseVsUnitId(unitId);
+
                             var family = getFamiliesForUnit(unitId);
 
                             if (family.length > 0) {
@@ -3041,6 +3044,9 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
 
     team.find(".booster, .booster-clone").each(function () {
         var unitId = $(this).data('id');
+        if (unitId > 9000)
+            unitId = parseVsUnitId(unitId);
+
         var unitDetail = details[unitId];
 
         var teamSlot;
@@ -3683,7 +3689,6 @@ $(document).ready(function () {
     // OPTC-DB page
     $('#db-button').click(function () {
         var unitId = $(this).data('id');
-
         if (unitId > 9000)
             unitId = parseVsUnitId(unitId);
 
@@ -4196,7 +4201,6 @@ $(document).ready(function () {
             $('.booster, .booster-clone').each(function () {
                 var unit = $(this);
                 var unitId = unit.data('id');
-
                 if (unitId > 9000)
                     unitId = parseVsUnitId(unitId);
 
@@ -4350,7 +4354,6 @@ $(document).ready(function () {
 
             $('.booster, .booster-clone').each(function () {
                 var unitId = $(this).data('id');
-
                 if (unitId > 9000)
                     unitId = parseVsUnitId(unitId);
 
