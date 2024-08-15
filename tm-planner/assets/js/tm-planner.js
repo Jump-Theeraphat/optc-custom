@@ -3043,7 +3043,8 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
     var turnsNeeded = requiredTurns;
 
     team.find(".booster, .booster-clone").each(function () {
-        var unitId = $(this).data('id');
+        var origId = $(this).data('id');
+        var unitId = origId;
         if (unitId > 9000)
             unitId = parseVsUnitId(unitId);
 
@@ -3076,11 +3077,11 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
                                 if (typeof numOfTurns !== 'undefined' && numOfTurns != null) {
                                     if (numOfTurns == 'completely') {
                                         turnsNeeded = 0;
-                                        specialsUsed.push({ unitId: unitId, counter: caCounter, turns: 'Completely', type: 'ca' })
+                                        specialsUsed.push({ unitId: origId, counter: caCounter, turns: 'Completely', type: 'ca' })
 
                                         return false;
                                     } else {
-                                        specialsUsed.push({ unitId: unitId, counter: caCounter, turns: numOfTurns, type: 'ca' })
+                                        specialsUsed.push({ unitId: origId, counter: caCounter, turns: numOfTurns, type: 'ca' })
 
                                         if (numOfTurns >= turnsNeeded) {
                                             turnsNeeded = 0;
@@ -3096,7 +3097,7 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
                             }
                         } else {
                             turnsNeeded = 0;
-                            specialsUsed.push({ unitId: unitId, counter: caCounter, type: 'ca' });
+                            specialsUsed.push({ unitId: origId, counter: caCounter, type: 'ca' });
 
                             return false;
                         }
@@ -3133,7 +3134,7 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
                             if (typeof numOfTurns !== 'undefined' && numOfTurns != null) {
                                 if (numOfTurns == 'completely') {
                                     turnsNeeded = 0;
-                                    specialsUsed.push({ unitId: unitId, counter: counter, turns: 'Completely', type: 'sp' })
+                                    specialsUsed.push({ unitId: origId, counter: counter, turns: 'Completely', type: 'sp' })
 
                                     return false;
                                 } else {
@@ -3154,7 +3155,7 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
                                         numOfTurns = numOfTurns * 2;
 
                                     if (prevUnitsUsed !== null && !prevUnitsUsed.includes(unitId)) {
-                                        specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns, type: 'sp' })
+                                        specialsUsed.push({ unitId: origId, counter: counter, turns: numOfTurns, type: 'sp' })
 
                                         if (numOfTurns >= turnsNeeded) {
                                             turnsNeeded = 0;
@@ -3165,7 +3166,7 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
                                             currentUnitsUsed.push(unitId);
                                         }
                                     } else
-                                        specialsUsed.push({ unitId: unitId, counter: counter, turns: numOfTurns, type: 'sp', used: true })
+                                        specialsUsed.push({ unitId: origId, counter: counter, turns: numOfTurns, type: 'sp', used: true })
                                 }
 
                                 // Exit loop after finding match
@@ -3182,17 +3183,17 @@ function checkTeamSpecialMet(teamId, specialsUsed, prevUnitsUsed, currentUnitsUs
                                     turnsNeeded = 1;
                                 else {
                                     turnsNeeded = 0;
-                                    specialsUsed.push({ unitId: unitId, counter: counter, type: 'sp' });
+                                    specialsUsed.push({ unitId: origId, counter: counter, type: 'sp' });
                                 }
                             } else {
                                 turnsNeeded = 0;
-                                specialsUsed.push({ unitId: unitId, counter: counter, type: 'sp' });
+                                specialsUsed.push({ unitId: origId, counter: counter, type: 'sp' });
                             }
 
                             currentUnitsUsed.push(unitId);
                             return false;
                         } else
-                            specialsUsed.push({ unitId: unitId, counter: counter, type: 'sp', used: true })
+                            specialsUsed.push({ unitId: origId, counter: counter, type: 'sp', used: true })
                     }
                 }
             }
