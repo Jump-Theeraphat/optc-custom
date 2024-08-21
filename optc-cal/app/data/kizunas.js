@@ -200,4 +200,8 @@ var kizunas = {
         name: 'Moria (~ 6am)',
         xch_id: 4199
     },
+    4217: {
+        name: 'Sakazuki v3 6+ (~ 6am)',
+        xch_id: 4209
+    },
 };

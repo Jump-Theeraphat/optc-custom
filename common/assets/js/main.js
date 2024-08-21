@@ -85,10 +85,12 @@ function getThumb(thumbId) {
         paddedThumbId === '4205' ||
         paddedThumbId === '4206' ||
         paddedThumbId === '4208' ||
+        paddedThumbId === '4209' ||
         paddedThumbId === '4212' ||
         paddedThumbId === '4213' ||
         paddedThumbId === '4214' ||
         paddedThumbId === '4215' ||
+        paddedThumbId === '4217' ||
         paddedThumbId === '9999'
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';
