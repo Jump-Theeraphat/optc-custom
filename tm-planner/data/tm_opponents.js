@@ -20446,7 +20446,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Tobi Roppo', 'INT'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20490,7 +20490,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Jack', 'QCK'],
-                    hp_: 1500000,
+                    hp: 1500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20541,7 +20541,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Queen', 'STR'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20580,7 +20580,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['King', 'DEX'],
-                    hp_: 2500000,
+                    hp: 2500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20620,8 +20620,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Kaido', '?'],
-                    hp_: 2000000,
+                    boss: ['Kaido', 'STR'],
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -20677,8 +20677,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Ace', '?'],
-                    hp_: 2500000,
+                    boss: ['Ace', 'PSY'],
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
