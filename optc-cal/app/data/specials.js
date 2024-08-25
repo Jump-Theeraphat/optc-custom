@@ -160,6 +160,11 @@ var specials = {
         name: '10th Anniversary (1am ~ 6am)',
         thumb: 4130
     },
+    'bb_4221': {
+        type: 'Blitz Battle',
+        name: 'Kuzan VS Garp (1am ~ 6am)',
+        thumb: 4221
+    },
 
     'wc_2401': {
         type: 'World Clash',
