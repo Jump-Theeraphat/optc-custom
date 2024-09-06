@@ -273,4 +273,7 @@ var tms = {
     4206. : {
         name: 'Ace (QCK) (1am ~ 6am)'
     },
+    4225. : {
+        name: 'Bepo (1am ~ 6am)'
+    },
 };
