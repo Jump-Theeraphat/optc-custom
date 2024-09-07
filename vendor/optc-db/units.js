@@ -4214,6 +4214,20 @@ window.units = [
     [ "Momonosuke & Kin'emon & Denjiro - Regaining Their Lost Glory to Shine as Before", "STR", ["Slasher", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 2057, 890, 136, 4113, 1780, 272, 1 ],
     [ "Roronoa Zoro - Paying Respects to the Dead", "STR", ["Slasher", "Free Spirit"], 5, 30, 4, 4, 99, 4000000, 1963, 747, 75, 3925, 1493, 149, 1 ],
     [ "Sangoro - An Act Before Parting", "QCK", ["Free Spirit", "Fighter"], 5, 30, 4, 4, 99, 4000000, 1716, 751, 114, 3432, 1501, 228, 1 ],
+    [ "", "DEX", [ "Powerhouse", "Striker" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "STR", [ "Fighter", "Shooter" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", ["INT", "PSY"], [["Powerhouse", "Driven"],["Striker", "Cerebral"]], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "QCK", [ "Striker", "Powerhouse" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "INT", [ "Powerhouse", "Fighter" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "INT", [ "Powerhouse", "Shooter" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "PSY", [ "Powerhouse", "Striker" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "PSY", [ "Powerhouse", "Striker" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "PSY", [ "Shooter", "Powerhouse" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", ["QCK", "DEX"], [ "Driven", "Fighter" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "QCK", [ "Driven", "Cerebral" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "", "DEX", [ "Driven", "Powerhouse" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
 ];
 
 var calcGhostStartID = { "start": 5000 };

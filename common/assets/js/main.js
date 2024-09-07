@@ -1,6 +1,6 @@
 function imgError(img) {
     img.onerror = '';
-    img.src = 'https://onepiece-treasurecruise.com/wp-content/themes/onepiece-treasurecruise/images/noimage.png';
+    img.src = '/tm-planner/assets/img/new-thumbs/0000.png';
 
     return true;
 }
@@ -16,7 +16,7 @@ function getThumb(thumbId) {
 
     // Special case for Generic thumb
     if (thumbId === 'generic')
-        return 'https://onepiece-treasurecruise.com/wp-content/themes/onepiece-treasurecruise/images/noimage.png';
+        return '/tm-planner/assets/img/new-thumbs/0000.png';
 
     // Zero pad IDs to get correct thumb
     var paddedThumbId = ('0000' + thumbId).slice(-4);
@@ -76,6 +76,11 @@ function getThumb(thumbId) {
         return '/tm-planner/assets/img/new-thumbs/4211-1.png';
     if (paddedThumbId === '9012')
         return '/tm-planner/assets/img/new-thumbs/4211-2.png';
+    // Blackbeard VS Law
+    if (paddedThumbId === '9013')
+        return '/tm-planner/assets/img/new-thumbs/4219-1.png';
+    if (paddedThumbId === '9014')
+        return '/tm-planner/assets/img/new-thumbs/4219-2.png';
 
     // Special cases for new thumbs
     if (
@@ -90,9 +95,18 @@ function getThumb(thumbId) {
         paddedThumbId === '4213' ||
         paddedThumbId === '4214' ||
         paddedThumbId === '4215' ||
+        paddedThumbId === '4216' ||
         paddedThumbId === '4217' ||
         paddedThumbId === '4219' ||
         paddedThumbId === '4221' ||
+        paddedThumbId === '4222' ||
+        paddedThumbId === '4223' ||
+        paddedThumbId === '4224' ||
+        paddedThumbId === '4225' ||
+        paddedThumbId === '4226' ||
+        paddedThumbId === '4227' ||
+        paddedThumbId === '4228' ||
+        paddedThumbId === '4229' ||
         paddedThumbId === '9999'
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';

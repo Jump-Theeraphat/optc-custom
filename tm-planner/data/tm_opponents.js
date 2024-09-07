@@ -8,6 +8,7 @@ const ATK_BOOST = 'atk-boost';
 const ATK_DOWN = 'atk-down';
 const BAR_GD = 'bar-gd';
 const BAR_GT = 'bar-gt';
+const BAR_HIT = 'bar-hit';
 const BAR_HP = 'bar-hp';
 const BAR_P = 'bar-p';
 const BAR_SLOT = 'bar-slot';
@@ -16,6 +17,7 @@ const BLIND = 'blind';
 const BLOW_AWAY = 'blow-away';
 const BURN = 'burn';
 const BURN_P = 'burn-p';
+const CA_SWAP = 'ca-swap';
 const CD_REW = 'cd-rew';
 const CHAIN_ATK_DOWN_MIN = 'chain-atk-down-min';
 const CHAIN_ATK_DOWN_MAX = 'chain-atk-down-max';
@@ -45,6 +47,7 @@ const PAIN = 'pain';
 const PARA = 'para';
 const RESIL = 'resil';
 const SHIP_BIND = 'ship-bind';
+const SILENCE = 'silence';
 const SLOT_ATK_DOWN = 'Slot Atk Down';
 const SLOT_BIND = 'slot-bind';
 const SLOT_BLOCK = 'slot-block';
@@ -20712,6 +20715,315 @@ var tm_opponents = {
                                 { type: AFFINITY_NULL, turn: 9 },
                                 { type: DESP, turn: 8 },
                                 { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Bepo ==========
+    4225: {
+        4157: {
+            name: 'Nami',
+            type: 'DEX',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Nami', 'DEX'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 8 },
+                                { type: NAO, turn: 99 },
+                                { type: RESIL, turn: 6 },
+                                { type: DEF, turn: 6 },
+                                { type: BAR_HIT, turn: 3, detail: '25x' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4168: {
+            name: 'Franky',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Free Spirit/Powerhouse/Slasher' },
+                                { type: VS_RED, turn: 5, detail: 'Free Spirit/Powerhouse/Slasher' },
+                                { type: SW_RED, turn: 5, detail: 'Free Spirit/Powerhouse/Slasher' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Franky', 'STR'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 7 },
+                                { type: CD_REW, turn: 2, detail: 'Row 2 3' },
+                                { type: SLOT_PARA, detail: 'Row 1' },
+                                { type: NAO, turn: 99 },
+                                { type: BAR_SLOT, turn: 2, detail: '1x WANO' },
+                                { type: SLOT_CHANGE, detail: 'Bad, Row 2 3' },
+                                { type: TERRITORY, turn: 1 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4156: {
+            name: 'Sanji',
+            type: 'PSY',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/INT/QCK' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/INT/QCK' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/INT/QCK' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sanji', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: BIND, turn: 5, detail: 'Row 2' },
+                                { type: STUN, detail: 'Row 3' },
+                                { type: NAO, turn: 99 },
+                                { type: INC_DMG, turn: 4 },
+                                { type: BAR_SLOT, turn: 2, detail: '2x RCV' },
+                                { type: SLOT_ATK_DOWN, turn: 5, detail: 'Type' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '100K' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4155: {
+            name: 'Zoro',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Striker/Cerebral/Shooter' },
+                                { type: VS_RED, turn: 5, detail: 'Striker/Cerebral/Shooter' },
+                                { type: SW_RED, turn: 5, detail: 'Striker/Cerebral/Shooter' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Zoro', 'INT'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CA_SWAP, turn: 2, detail: 'Row 3' },
+                                { type: SILENCE, turn: 2, detail: 'Row 1' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 8 },
+                                { type: DEF_PERC, turn: 5 },
+                                { type: PARA, turn: 8 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4131: {
+            name: 'Luffy',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Driven/Striker' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Driven/Striker' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Driven/Striker' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Luffy', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 7, detail: 'Col L' },
+                                { type: ATK_DOWN, turn: 7 },
+                                { type: DEF, turn: 6 },
+                                { type: TARGET_LOCK, turn: 3 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Def Not Applied (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' },
+                                { type: CD_REW, turn: 3 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BIND, turn: 9, detail: 'Row 3' },
+                                { type: BLOW_AWAY, turn: 1, detail: 'Mid Left' },
+                                { type: ATK_BOOST, turn: 3, detail: '1.1x' },
+                                { type: DMG_LIMIT, turn: 2, detail: '3M' },
+                                { type: DEF_THRES, turn: 10 },
+                                { type: DEF_PERC, turn: 10 },
+                                { type: TARGET_LOCK, turn: 3 },
+                                { type: TERRITORY, turn: 3 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Dmg Reduction Not Applied (once)',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: AFFINITY_NULL, turn: 10 },
+                                { type: BAR_SLOT, turn: 3, detail: '3x WANO' },
+                                { type: IMMU_ALL, turn: 10 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4225: {
+            name: 'Bepo',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Bepo', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 1 },
+                                { type: NAO, turn: 99 },
+                                { type: BAR_SLOT, turn: 2, detail: '2x TND' },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Bepo', 'QCK'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 1 },
+                                { type: CHAIN_LOCK, turn: 7, detail: '1.1x' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 7, detail: '<3.75' },
+                                { type: ATK_DOWN, turn: 9 },
+                                { type: NAO, turn: 99 },
+                                { type: DESP, turn: 9 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Charge CD (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' },
+                                { type: AFFINITY_NULL, turn: 10 }
                             ]
                         }
                     ]

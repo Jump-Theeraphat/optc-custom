@@ -703,6 +703,7 @@ const Shakuyaku = [ "Shakuyaku", "Shakky" ];
 const SHawk = [ "S-Hawk" ];
 const SShark = [ "S-Shark" ];
 const SSnake = [ "S-Snake" ];
+const SBear = [ "S-Bear" ];
 const Atlas = [ "Atlas", "PUNK-05" ];
 const Edison = [ "Edison", "PUNK-03" ];
 const Pythagoras = [ "Pythagoras", "PUNK-04" ];
@@ -4802,6 +4803,18 @@ window.families = {
     4213: [ ...KozukiMomonosuke, ...Kinemon, ...Denjiro ],
     4214: [ ...RoronoaZoro ],
     4215: [ ...VinsmokeSanji ],
+    4216: [ ...EdwardNewgate ],
+    4217: [ ...Sakazuki ],
+    4219: [ ...MarshallDTeach, ...TrafalgarDWaterLaw ],
+    4221: [ ...Kuzan ],
+    4222: [ ...JesusBurgess ],
+    4223: [ ...VanAugur ],
+    4224: [ ...Bepo ],
+    4225: [ ...Bepo ],
+    4226: [ ...SBear ],
+    4227: [ ...RobLucci, ...Kaku ],
+    4228: [ ...Stussy ],
+    4229: [ ...SSnake, ...SHawk, ...SShark ],
 
     //break
     4986: [ ...MonkeyDLuffy ],

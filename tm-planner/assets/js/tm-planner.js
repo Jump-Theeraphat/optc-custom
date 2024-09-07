@@ -665,6 +665,17 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (
+        tmId == 4225
+    ) {
+        // TM Bepo
+        $('#div_2x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -1079,6 +1090,9 @@ function parseVsUnitId(vsId) {
     // Luffy VS Kaido
     if (vsId == 9011 || vsId == 9012)
         return 4211;
+    // Blackbeard VS Law
+    if (vsId == 9013 || vsId == 9014)
+        return 4219;
 
     return vsId;
 }
