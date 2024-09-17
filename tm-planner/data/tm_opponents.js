@@ -20746,7 +20746,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Nami', 'DEX'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20784,7 +20784,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Franky', 'STR'],
-                    hp_: 1500000,
+                    hp: 1500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20824,7 +20824,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Sanji', 'PSY'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20871,7 +20871,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Zoro', 'INT'],
-                    hp_: 2500000,
+                    hp: 2500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -20911,7 +20911,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Luffy', 'QCK'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -20983,8 +20983,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Bepo', 'QCK'],
-                    hp_: 2500000,
+                    boss: ['Bepo', 'STR'],
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
