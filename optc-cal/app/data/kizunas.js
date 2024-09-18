@@ -204,4 +204,7 @@ var kizunas = {
         name: 'Sakazuki v3 6+ (~ 6am)',
         xch_id: 4209
     },
+    4237: {
+        name: 'Hawkins 6+ (~ 6am)'
+    },
 };
