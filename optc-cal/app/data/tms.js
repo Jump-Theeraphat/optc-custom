@@ -270,10 +270,13 @@ var tms = {
         name: 'Arlong (1am ~ 6am)',
         info: 'fixupx.com/tingoki/status/1811061036537008366'
     },
-    4206. : {
+    4206: {
         name: 'Ace (QCK) (1am ~ 6am)'
     },
-    4225. : {
+    4225: {
         name: 'Bepo (1am ~ 6am)'
+    },
+    4246: {
+        name: 'Kuzan (1am ~ 6am)'
     },
 };
