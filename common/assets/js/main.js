@@ -81,34 +81,16 @@ function getThumb(thumbId) {
         return '/tm-planner/assets/img/new-thumbs/4219-1.png';
     if (paddedThumbId === '9014')
         return '/tm-planner/assets/img/new-thumbs/4219-2.png';
+    // Shanks VS Kid
+    if (paddedThumbId === '9015')
+        return '/tm-planner/assets/img/new-thumbs/4231-1.png';
+    if (paddedThumbId === '9016')
+        return '/tm-planner/assets/img/new-thumbs/4231-2.png';
 
     // Special cases for new thumbs
     if (
-        paddedThumbId === '4202' ||
-        paddedThumbId === '4203' ||
-        paddedThumbId === '4204' ||
-        paddedThumbId === '4205' ||
-        paddedThumbId === '4206' ||
-        paddedThumbId === '4208' ||
-        paddedThumbId === '4209' ||
-        paddedThumbId === '4212' ||
-        paddedThumbId === '4213' ||
-        paddedThumbId === '4214' ||
-        paddedThumbId === '4215' ||
-        paddedThumbId === '4216' ||
-        paddedThumbId === '4217' ||
-        paddedThumbId === '4219' ||
-        paddedThumbId === '4221' ||
-        paddedThumbId === '4222' ||
-        paddedThumbId === '4223' ||
-        paddedThumbId === '4224' ||
-        paddedThumbId === '4225' ||
-        paddedThumbId === '4226' ||
-        paddedThumbId === '4227' ||
-        paddedThumbId === '4228' ||
-        paddedThumbId === '4229' ||
-        paddedThumbId === '4237' ||
-        paddedThumbId === '9999'
+        paddedThumbId === '9999' ||
+        paddedThumbId >= 4202
     )
         return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';
 

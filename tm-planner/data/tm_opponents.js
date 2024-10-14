@@ -3,6 +3,8 @@ const VS_RED = 'vs-red';
 const SW_RED = 'sw-red';
 
 const AFFINITY_NULL = 'No Type Effect';
+const ANTI_HEAL = 'anti-heal';
+const ANTI_RCV = 'anti-rcv';
 const ATK = 'atk';
 const ATK_BOOST = 'atk-boost';
 const ATK_DOWN = 'atk-down';
@@ -31,8 +33,11 @@ const DEF_THRES = 'def-thres';
 const DESP = 'desp';
 const DMG_LIMIT = 'dmg-limit';
 const DMG_NORMAL = 'dmg-normal';
+const ENRAGE = 'enrage';
 const FEAR = 'fear';
 const INC_DMG = 'inc-dmg';
+const HEAL = 'heal';
+const HEAL_BIND = 'heal-bind';
 const HP_CUT = 'hp-cut'
 const HUNGER = 'hunger';
 const IMMU_ALL = 'immu-all';
@@ -42,7 +47,6 @@ const IMMU_EXCEPT = 'immu-except';
 const IMMU_POISON = 'immu-poison';
 const INTIM = 'intim';
 const NAO = 'nao';
-const HEAL_BIND = 'heal-bind';
 const PAIN = 'pain';
 const PARA = 'para';
 const RESIL = 'resil';
@@ -21024,6 +21028,320 @@ var tm_opponents = {
                             action: [
                                 { type: CLEAR_BUFF, detail: 'Buff Only' },
                                 { type: AFFINITY_NULL, turn: 10 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Kuzan ==========
+    4246: {
+        3283: {
+            name: 'Pizarro',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Pizarro', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '20%' },
+                                { type: SLOT_BLOCK, detail: 'Row 1' },
+                                { type: SLOT_CHANGE, detail: 'Bad, Row 2 3' },
+                                { type: DMG_LIMIT, turn: 1, detail: '90%' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Delay' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Delay (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' },
+                                { type: ENRAGE, turn: 99 },
+                                { type: SLOT_ATK_DOWN, turn: 2, detail: 'All, 50%' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '80000' }
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                { type: HEAL, detail: '100%' },
+                                { type: PAIN, turn: 3, detail: '10000' },
+                                { type: DEF_NULL, turn: 1 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4248: {
+            name: 'San Juan Wolf',
+            type: 'DEX',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Shooter/Driven/Slasher' },
+                                { type: VS_RED, turn: 5, detail: 'Shooter/Driven/Slasher' },
+                                { type: SW_RED, turn: 5, detail: 'Shooter/Driven/Slasher' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['San Juan Wolf', 'DEX'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BIND, turn: 8, detail: 'Row 1' },
+                                { type: SLOT_CHANGE, detail: 'DEX' },
+                                { type: CD_REW, turn: 1, detail: 'Row 2 3' },
+                                { type: DEF, turn: 5 },
+                                { type: DEF_PERC, turn: 5 },
+                                { type: TARGET_LOCK, turn: 1 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4104: {
+            name: 'Vasco Shot',
+            type: 'PSY',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Vasco Shot', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 9 },
+                                { type: BURN_P, turn: 7, detail: '20000' },
+                                { type: SP_BIND, turn: 7 },
+                                { type: TERRITORY, turn: 1 },
+                                { type: NAO, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3643: {
+            name: 'Shiryu',
+            type: 'INT',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Free Spirit/Shooter/Striker' },
+                                { type: VS_RED, turn: 5, detail: 'Free Spirit/Shooter/Striker' },
+                                { type: SW_RED, turn: 5, detail: 'Free Spirit/Shooter/Striker' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shiryu', 'INT'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: STUN, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: SLOT_ATK_DOWN, turn: 3, detail: 'Type' },
+                                { type: DEF, turn: 10 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: PARA, turn: 6 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4247: {
+            name: 'Pizarro',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Shooter/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Shooter/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Shooter/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Pizarro', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: BIND, turn: 9, detail: 'Row 2' },
+                                { type: NAO, turn: 99 },
+                                { type: INTIM, turn: 3, detail: 'Atk Boost/Slot Boost, -1' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: HP_CUT, detail: '99%' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Pizarro', 'INT'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: ATK_DOWN, turn: 9 },
+                                { type: DESP, turn: 10 },
+                                { type: NAO, turn: 99 },
+                                { type: ANTI_HEAL, turn: 3 },
+                                { type: ANTI_RCV, turn: 3 },
+                                { type: DEF_NULL, turn: 2 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Increase Dmg Taken' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4246: {
+            name: 'Kuzan',
+            type: 'INT',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Free Spirit/Striker' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Free Spirit/Striker' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Free Spirit/Striker' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Kuzan', 'INT'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 7 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: DEF, turn: 4 },
+                                { type: RESIL, turn: 6 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Increase Dmg Taken' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kuzan', 'INT'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: BIND, turn: 13, detail: 'Random 3 Sailor' },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 6 },
+                                { type: DEF_THRES, turn: 7 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Bind Reduction (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' },
+                                { type: DESP, turn: 9 }
                             ]
                         }
                     ]

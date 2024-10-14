@@ -102,6 +102,7 @@ var icon_tooltips = {
     'type-change':            'Type Change',
     'stun':                   'Stun',
     'tap-limit':              'Tap Limit',
+    'anti-heal':              'Receive Damage from Healing',
     'anti-rcv':               'Receive Damage from Consuming RCV',
     'hunger':                 'Hunger',
     'chain-atk-down-min':     'Chain ATK Down (Min)',

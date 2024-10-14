@@ -858,6 +858,7 @@ span.team-note-boss {
 .type-change-div            { background-image: url('/tm-planner/assets/img/special_icons/type_change.png');        background-size: 24px 24px; }
 .stun-div                   { background-image: url('/tm-planner/assets/img/special_icons/stun.png');               background-size: 24px 24px; }
 .tap-limit-div              { background-image: url('/tm-planner/assets/img/special_icons/tap_limit.png');          background-size: 24px 24px; }
+.anti-heal-div              { background-image: url('/tm-planner/assets/img/special_icons/anti_heal.png');          background-size: 24px 24px; }
 .anti-rcv-div               { background-image: url('/tm-planner/assets/img/special_icons/anti_rcv.png');           background-size: 24px 24px; }
 .hunger-div                 { background-image: url('/tm-planner/assets/img/special_icons/hunger.png');             background-size: 24px 24px; }
 .chain-atk-down-min-div     { background-image: url('/tm-planner/assets/img/special_icons/chain_atk_down_min.png'); background-size: 24px 24px; }

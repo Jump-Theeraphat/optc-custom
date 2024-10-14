@@ -666,9 +666,11 @@ function getBoosters(tmId, server) {
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
     } else if (
-        tmId == 4225
+        tmId == 4225 ||
+        tmId == 4246
     ) {
         // TM Bepo
+        // TM Kuzan
         $('#div_2x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
@@ -1093,6 +1095,9 @@ function parseVsUnitId(vsId) {
     // Blackbeard VS Law
     if (vsId == 9013 || vsId == 9014)
         return 4219;
+    // Shanks VS Kid
+    if (vsId == 9015 || vsId == 9016)
+        return 4231;
 
     return vsId;
 }
