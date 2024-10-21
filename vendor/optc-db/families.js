@@ -4825,6 +4825,7 @@ window.families = {
     4233: [ ...Dorry, ...Broggy ],
     4234: [ ...Fugar ],
     4235: [ ...Ribbitini ],
+    4237: [ ...BasilHawkins ],
     4238: [ ...NefertariVivi ],
     4240: [ ...MonkeyDGarp ],
     4242: [ ...PrinceGrus, ...Kujaku, ...Hibari ],
