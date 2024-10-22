@@ -207,4 +207,7 @@ var kizunas = {
     4237: {
         name: 'Hawkins 6+ (~ 6am)'
     },
+    4256: {
+        name: 'Magellan v2 6+ (~ 6am)'
+    },
 };
