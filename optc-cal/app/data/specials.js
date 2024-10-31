@@ -165,6 +165,11 @@ var specials = {
         name: 'Kuzan VS Garp (1am ~ 6am)',
         thumb: 4221
     },
+    'bb_4262': {
+        type: 'Blitz Battle',
+        name: 'Halloween 2024 (1am ~ 6am)',
+        thumb: 4262
+    },
 
     'wc_2401': {
         type: 'World Clash',
