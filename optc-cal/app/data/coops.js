@@ -14,4 +14,7 @@ var coops = {
     4219: {
         name: 'Autumn 24-1'
     },
+    4257: {
+        name: 'Autumn 24-2'
+    },
 }
