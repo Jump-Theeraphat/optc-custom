@@ -667,10 +667,12 @@ function getBoosters(tmId, server) {
         $('#info_1_2x_alt').show();
     } else if (
         tmId == 4225 ||
-        tmId == 4246
+        tmId == 4246 ||
+        tmId == 4261
     ) {
         // TM Bepo
         // TM Kuzan
+        // TM Vegapunk
         $('#div_2x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
@@ -1061,6 +1063,7 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Slot Atk Down' ||
         iconKey === 'Slot Effect Down' ||
         iconKey === 'Territory' ||
+        iconKey === 'Immu Instant Defeat' ||
         iconKey === 'No Type Effect'
     )
         return iconKey;

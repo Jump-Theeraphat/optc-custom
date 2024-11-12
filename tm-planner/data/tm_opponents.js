@@ -42,6 +42,7 @@ const HP_CUT = 'hp-cut'
 const HUNGER = 'hunger';
 const IMMU_ALL = 'immu-all';
 const IMMU_DEF = 'immu-def';
+const IMMU_INST_DEFEAT = 'Immu Instant Defeat';
 const IMMU_DELAY = 'immu-delay';
 const IMMU_EXCEPT = 'immu-except';
 const IMMU_POISON = 'immu-poison';
@@ -49,6 +50,7 @@ const INTIM = 'intim';
 const NAO = 'nao';
 const PAIN = 'pain';
 const PARA = 'para';
+const POISON = 'poison';
 const RESIL = 'resil';
 const SHIP_BIND = 'ship-bind';
 const SILENCE = 'silence';
@@ -64,6 +66,7 @@ const SLOT_POISON = 'slot-poison';
 const SP_BIND = 'sp-bind';
 const SP_LIMIT = 'sp-limit';
 const STUN = 'stun';
+const TAP_LIMIT = 'tap-limit';
 const TARGET_LOCK = 'target-lock';
 const TERRITORY = 'Territory';
 
@@ -19513,8 +19516,8 @@ var tm_opponents = {
                                 { type: CD_REW, turn: 2 },
                                 { type: BLIND, turn: 5 },
                                 { type: NAO, turn: 99 },
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<3' },
-                                { type: CHAIN_ATK_DOWN_MAX, turn: 5, detail: '>4.5' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3' },
+                                { type: CHAIN_ATK_DOWN_MAX, turn: 5, detail: '>=4.5' },
                                 { type: DEF, turn: 8 },
                                 { type: INTIM, turn: 2, detail: 'Set Chain / Affinity, -1' },
                                 { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
@@ -19607,7 +19610,7 @@ var tm_opponents = {
                                 { type: SP_BIND, turn: 6 },
                                 { type: SLOT_ATK_DOWN, turn: 5, detail: 'Type (Except PSY) / RCV' },
                                 { type: CHAIN_DOWN, turn: 6 },
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<3' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3' },
                                 { type: NAO, turn: 99 },
                                 { type: INTIM, turn: 2, detail: '+Chain/Set Chain, -2' },
                                 { type: BAR_GD, turn: 3, detail: '2x' },
@@ -20275,7 +20278,7 @@ var tm_opponents = {
                         {
                             type: 'Preemp',
                             action: [
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<2.5' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=2.5' },
                                 { type: BURN_P, turn: 5, detail: '20000' },
                                 { type: NAO, turn: 99 },
                                 { type: DEF_NULL, turn: 3 },
@@ -20350,7 +20353,7 @@ var tm_opponents = {
                                 { type: CD_REW, turn: 2, detail: 'Row 2 3' },
                                 { type: NAO, turn: 99 },
                                 { type: DEF_THRES, turn: 8 },
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<3' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3' },
                                 { type: IMMU_ALL, turn: 99 }
                             ]
                         },
@@ -20463,7 +20466,7 @@ var tm_opponents = {
                                 { type: CD_REW, turn: 2, detail: 'Row 2 3' },
                                 { type: NAO, turn: 99 },
                                 { type: BURN_P, turn: 6, detail: '15000' },
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<2.5' }
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=2.5' }
                             ]
                         },
                         {
@@ -20595,7 +20598,7 @@ var tm_opponents = {
                             action: [
                                 { type: SLOT_CHANGE, detail: 'Bad' },
                                 { type: BURN_P, turn: 7, detail: '20000' },
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<3.5' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3.5' },
                                 { type: NAO, turn: 99 },
                                 { type: DEF_NULL, turn: 2 },
                                 { type: SLOT_ATK_DOWN, turn: 5, detail: 'Type' },
@@ -20636,7 +20639,7 @@ var tm_opponents = {
                             action: [
                                 { type: SLOT_PARA },
                                 { type: CHAIN_LOCK, turn: 7, detail: '1.1x' },
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 4, detail: '<3.25' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 4, detail: '<=3.25' },
                                 { type: NAO, turn: 99 }
                             ]
                         }
@@ -21016,7 +21019,7 @@ var tm_opponents = {
                             action: [
                                 { type: CD_REW, turn: 1 },
                                 { type: CHAIN_LOCK, turn: 7, detail: '1.1x' },
-                                { type: CHAIN_ATK_DOWN_MIN, turn: 7, detail: '<3.75' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 7, detail: '<=3.75' },
                                 { type: ATK_DOWN, turn: 9 },
                                 { type: NAO, turn: 99 },
                                 { type: DESP, turn: 9 },
@@ -21342,6 +21345,314 @@ var tm_opponents = {
                             action: [
                                 { type: CLEAR_BUFF, detail: 'Buff Only' },
                                 { type: DESP, turn: 9 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Vegapunk ==========
+    4261: {
+        3611: {
+            name: 'Yamato & Ace',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Yamato & Ace', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '60%' },
+                                { type: SLOT_CHANGE, detail: 'STR' },
+                                { type: BLIND, turn: 5 },
+                                { type: ATK_DOWN, turn: 5 },
+                                { type: DEF, turn: 5 },
+                                { type: BAR_GD, turn: 3, detail: '2x' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4142: {
+            name: 'Kid & Killer',
+            type: 'PSY',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Shooter/Free Spirit/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Shooter/Free Spirit/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Shooter/Free Spirit/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kid & Killer', 'PSY'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '70%' },
+                                { type: NAO, turn: 99 },
+                                { type: CD_REW, turn: 1 },
+                                { type: SLOT_BLOCK },
+                                { type: FEAR, turn: 1 },
+                                { type: DEF_NULL, turn: 1 }
+                            ]
+                        },
+                        {
+                            type: 'Turn 1 (Interrupt)',
+                            action: [
+                                { type: PARA, turn: 5 },
+                                { type: BAR_HIT, turn: 2, detail: '30x' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3989: {
+            name: 'Whitebeard & Marco',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Whitebeard & Marco', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: PARA, turn: 8 },
+                                { type: SLOT_POISON },
+                                { type: NAO, turn: 99 },
+                                { type: RESIL, turn: 8 },
+                                { type: BIND, turn: 9, detail: 'Row 2' },
+                                { type: BURN_P, turn: 3, detail: '30000' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2919: {
+            name: 'Sanji & Pudding',
+            type: 'DEX',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/PSY/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/PSY/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/PSY/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sanji & Pudding', 'DEX'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6, detail: 'Row 2 3' },
+                                { type: TAP_LIMIT, turn: 1, detail: '4x' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 2 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: BAR_P, turn: 2, detail: '4x' },
+                                { type: TARGET_LOCK, turn: 2 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2802: {
+            name: 'Luffy & Zoro',
+            type: 'DEX',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/QCK' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 5, detail: 'Row 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DESP, turn: 10 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3' },
+                                { type: CHAIN_ATK_DOWN_MAX, turn: 5, detail: '>=3.6' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy & Zoro', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: PARA, turn: 7 },
+                                { type: NAO, turn: 99 },
+                                { type: BURN_P, turn: 6, detail: '20000' },
+                                { type: SLOT_ATK_DOWN, turn: 5, detail: 'Type' },
+                                { type: IMMU_INST_DEFEAT, turn: 99 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Increase Dmg Taken' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: HEAL, detail: '15%' },
+                                { type: PARA, turn: 7, detail: 'Row 1' },
+                                { type: SLOT_CHANGE, detail: 'DEX' },
+                                { type: SP_BIND, turn: 7, detail: 'Row 1' },
+                                { type: BLOW_AWAY, turn: 4, detail: 'Row 2 3' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4261: {
+            name: 'Vegapunk',
+            type: 'STR',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Slasher/Powerhouse/Driven' },
+                                { type: VS_RED, turn: 5, detail: 'Slasher/Powerhouse/Driven' },
+                                { type: SW_RED, turn: 5, detail: 'Slasher/Powerhouse/Driven' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Vegapunk', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: POISON, turn: 99 },
+                                { type: NAO, turn: 99 },
+                                { type: PAIN, turn: 3, detail: '8000' },
+                                { type: RESIL, turn: 8 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Increase Dmg Taken' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Atk Boost/Color Affinity/Chain Boost (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff Only' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: BLOW_AWAY, turn: 5, detail: 'Random Sailor' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Vegapunk', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 5, detail: 'Row 2' },
+                                { type: SP_BIND, turn: 5, detail: 'Row 2 3' },
+                                { type: TAP_LIMIT, turn: 1, detail: '3x' },
+                                { type: NAO, turn: 99 },
+                                { type: BIND, turn: 10, detail: 'Row 1 3' },
+                                { type: SLOT_BIND, turn: 5, detail: 'Row 2' },
+                                { type: BAR_HIT, turn: 2, detail: '30x' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Increase Dmg Taken' }
                             ]
                         }
                     ]
