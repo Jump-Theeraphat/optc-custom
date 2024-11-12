@@ -157093,6 +157093,5041 @@ window.details = {
             }
         ]
     },
+	4216: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Powerhouse and Striker characters by 5.5x-6x depending on the crew's current HP, boosts HP of Powerhouse and Striker characters by 1.3x, makes [TND] orbs beneficial for Powerhouse and Striker character, and increases duration of any  Chain Multiplier Growth Rate buffs applied by Specials by 2 turns. If HP is above 51% at the start of the turn, reduces damage received by 25%.",
+		special: [
+			{
+				description: "Reduces Silence and Chain Coefficient Reduction duration by 6 turns. If your Captain is a Powerhouse or Striker character when the special is activated, boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3 turns or more of Chain Lock when the special is activated, decreases duration of any Chain Lock buffs by 2 turns and increases boost effects of Chain Lock buffs by +0.8x. If your Captain is a Powerhouse or Striker character and HP is below 51% when the special is activated, changes Class 1 of all non-Powerhouse characters to Powerhouse for 1 turn and sets Chain Boundaries to 3.0x and 30.0x for 2 turns.",
+				cooldown: [ 21, 16 ]
+			},
+			{
+				description: "Reduces Silence and Chain Coefficient Reduction duration by 7 turns, changes all orbs, including [BLOCK] orbs, into [TND] orbs, and sets Chain Boundaries to 3.25x and 30.0x for 3 turns. If your Captain is a Powerhouse or Striker character when the special is activated, boosts Chain Multiplier Growth Rate by 1.75x for 1 turn, reduces crew's current HP by 50%, and reduces Special Cooldown of this character by 15 turns.",
+				cooldown: [ 36, 31 ]
+			}
+		],
+		specialCooldown: [
+			36,
+			31
+		],
+		specialName: "Deadly Battle for His Sons",
+		sailor: {
+			base: "Reduces Silence duration by 20 turns on this character, and makes [TND] orbs beneficial for Powerhouse and Striker characters",
+			level1: "If your crew has 6 Powerhouse characters, boosts base ATK of Powerhouse characters by 300; boosts base ATK of Powerhouse character by 100 otherwise"
+		},
+		superSpecial: "Deals 10% of enemies' current HP in damage to all enemies, reduces Silence duration by 20 turns on this character, changes the orb of this character into a [TND] orb, allows Chain Lock buffs to be Enhanced up to 2 times, boosts Orb Effects of Powerhouse and Striker characters by 2.25x for 3 turns, and transforms Powerhouse characters into Super Powerhouse characters.",
+		superSpecialCriteria: "This character must be captain and your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Portgas D. Ace, Marco, Jozu, Vista, Whitey Bay, Fossa, Rakuyo, Kingdew, Atmos, Izo, Monkey D. Luffy, Jinbe, Gol D. Roger",
+		support: [
+			{
+				Characters: "Portgas D. Ace, Marco, Jozu, Vista, Izo, Rakuyo, Fossa, Whitey Bay, Kingdew, Atmos",
+				description: [
+					"Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 1 turn on the supported character.",
+					"Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 2 turn on the supported character.",
+					"Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 3 turn on the supported character.",
+					"Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 4 turn on the supported character.",
+					"Once per adventure, when an enemy inflicts you with Silence, reduces Silence duration by 5 turn on the supported character."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce Slot Bind duration",
+				description: [
+					"Reduces Slot Bind duration by 1 turn on this character",
+					"Reduces Slot Bind duration by 3 turns on this character",
+					"Reduces Slot Bind duration by 5 turns on this character",
+					"Reduces Slot Bind duration by 7 turns on this character",
+					"Reduces Slot Bind duration by 10 turns on this character"
+				]
+			},
+			{
+				Name: "Cooldown Reduction",
+				description: [
+					"Reduces character's Special charge time by 4 turns at the start of the fight",
+					"Reduces character's Special charge time by 5 turns at the start of the fight",
+					"Reduces character's Special charge time by 6 turns at the start of the fight",
+					"Reduces character's Special charge time by 7 turns at the start of the fight",
+					"Reduces character's Special charge time by 8 turns at the start of the fight"
+				]
+			},
+			{
+				Name: "Super Tandem",
+				description: [
+					"Obtain Super Tandem Lv.1",
+					"Obtain Super Tandem Lv.2",
+					"Obtain Super Tandem Lv.3",
+					"Obtain Super Tandem Lv.4",
+					"Obtain Super Tandem Lv.5"
+				]
+			}
+		],
+		superTandem: {
+			characterCondition: [
+				"Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Portgas D. Ace, Marco, Jozu, Vista, Izo, Rakuyo, Fossa, Whitey Bay, Kingdew, Atmos, Monkey D. Luffy, Jinbe, Gol D. Roger",
+				"Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Portgas D. Ace, Marco, Jozu, Vista, Izo, Rakuyo, Fossa, Whitey Bay, Kingdew, Atmos, Monkey D. Luffy, Jinbe, Gol D. Roger",
+				"Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Portgas D. Ace, Marco, Jozu, Vista, Izo, Rakuyo, Fossa, Whitey Bay, Kingdew, Atmos, Monkey D. Luffy, Jinbe, Gol D. Roger",
+				"Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Portgas D. Ace, Marco, Jozu, Vista, Izo, Rakuyo, Fossa, Whitey Bay, Kingdew, Atmos, Monkey D. Luffy, Jinbe, Gol D. Roger",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Portgas D. Ace, Marco, Jozu, Vista, Izo, Rakuyo, Fossa, Whitey Bay, Kingdew, Atmos, Monkey D. Luffy, Jinbe, Gol D. Roger"
+			],
+			description: [
+				"Boosts Tandem ATK of Powerhouse and Striker characters by 1.25x for 1 turn, and reduces enemies' Percent Damage Reduction duration by 1 turn",
+				"Boosts Tandem ATK of Powerhouse and Striker characters by 1.5x for 1 turn, and reduces enemies' Percent Damage Reduction duration by 1 turn",
+				"Boosts Tandem ATK of Powerhouse and Striker characters by 1.75x for 1 turn, and reduces enemies' Percent Damage Reduction and Increased Defense duration by 1 turn",
+				"Boosts Tandem ATK of Powerhouse and Striker characters by 2x for 1 turn, and reduces enemies' Percent Damage Reduction and Increased Defense duration by 1 turn",
+				"Boosts Tandem ATK of Powerhouse and Striker characters by 2.25x for 1 turn, and reduces enemies' Percent Damage Reduction, Increased Defense and Threshold Damage Reduction duraation by 1 turn"
+			]
+		},
+		limit: [
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire Potential 1: Reduce Slot Bind duration" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 2: Cooldown Reduction" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 60" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 60" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Acquire Potential 3: Super Tandem" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base RCV by 100" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 150" }
+		],
+		festAbility: [
+			"[DEX]-type/Striker class teammates HP Up Lv.1, DEF Up Lv.1; ATK Style teammates ATK Up Lv.3",
+			"[DEX]-type/Striker class teammates HP Up Lv.2, DEF Up Lv.2; ATK Style teammates ATK Up Lv.4",
+			"[DEX]-type/Striker class teammates HP Up Lv.3, DEF Up Lv.3; ATK Style teammates ATK Up Lv.5",
+			"[DEX]-type/Striker class teammates HP Up Lv.4, DEF Up Lv.4; ATK Style teammates ATK Up Lv.6",
+			"[DEX]-type/Striker class teammates HP Up Lv.5, DEF Up Lv.5; ATK Style teammates ATK Up Lv.7"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Halve Stats, reduce damage taken from [QCK] by 30%",
+		festSpecial: [
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 41% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.2 (6 s); targets all enemies for ATK x 1.6 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 42% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.2 (7 s); targets all enemies for ATK x 1.8 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 43% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.3 (8 s); targets all enemies for ATK x 2 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 44% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.3 (9 s); targets all enemies for ATK x 2.2 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 45% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.4 (10 s); targets all enemies for ATK x 2.4 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 46% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.4 (11 s); targets all enemies for ATK x 2.6 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 47% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.5 (12 s); targets all enemies for ATK x 2.8 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 48% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.5 (13 s); targets all enemies for ATK x 3 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 49% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.6 (14 s); targets all enemies for ATK x 3.2 damage"
+			},
+			{
+				cooldown: 35,
+				description: "Targets SPT Style enemies for HP 50% reduction; targets [DEX]-type/Striker class teammates for ATK Up Lv.7 (15 s); targets all enemies for ATK x 3.6 damage"
+			}
+		],
+		festStats: {
+			def: 171,
+			atk: 162,
+			style: "ATK"
+		}
+	},
+    4217: {
+		captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, reduces Special Cooldown of ship by 2 turns at the start of the fight, boosts ATK of all characters by 5x, boosts HP of all characters by 1.5x, makes [PSY], [INT], [RCV], and [TND] orbs beneficial for all characters, and ignores Burn Debuff Protection and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 3 turns after each turn you take damage.",
+		special: "Reduces enemies' Barrier duration by 3 turns, reduces Despair duration by 6 turns, deals 1.5x the damage dealt by this character with normal attacks in Typeless damage to all enemies at the end of each turn for 1 turn, reduces the defense of all enemies by 100% for 1 turn, boosts ATK of all characters by 2.75x for 1 turn and boosts ATK against enemies with reduced defense and enemies inflicted with Burn by 1.75x for 1 turn.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Scorching Meteor Volcano",
+		sailor: {
+			level1: "If this character has a [STR] orb and you hit a PERFECT with him, keep his [STR] orb for the next turn",
+			level2: "Adds 9x character's ATK as Additional Damage"
+		},
+		superSpecial: "Inflicts all enemies with Increase Damage Taken by 2x for 1 turn, changes the orb, including [BLOCK] orbs, of this character into a [STR] orb, optionally removes Captain Swap duration completely and transforms STR characters into Super STR characters.",
+		superSpecialCriteria: "This character must be captain and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Sengoku, Kuzan (Aokiji), Borsalino (Kizaru), Issho (Fujitora) , Monkey D. Garp, Aramaki (Ryokugyu)",
+		support: [
+			{
+				Characters: "Sengoku, Borsalino (Kizaru)",
+				description: [
+					"Adds 1% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 2% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce No Healing duration",
+				description: [
+					" Reduces No Healing duration by 1 turn",
+					" Reduces No Healing duration by 2 turns",
+					" Reduces No Healing duration by 3 turns",
+					" Reduces No Healing duration by 4 turns",
+					" Reduces No Healing duration by 5 turns"
+				]
+			},
+			{
+				Name: "Reduce Slot Bind duration",
+				description: [
+					"Reduces Slot Bind duration by 1 turn on this character",
+					"Reduces Slot Bind duration by 3 turns on this character",
+					"Reduces Slot Bind duration by 5 turns on this character",
+					"Reduces Slot Bind duration by 7 turns on this character",
+					"Reduces Slot Bind duration by 10 turns on this character"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 50% at the start of the turn",
+					"This character's normal attack will ignore barriers"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 15" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 1: Reduce No Healing duration" },
+			{ description: "Boosts base RCV by 5" },
+			{ description: "Boosts base RCV by 5" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Sailor Ability 1: Character's [STR] slot is carried over to the next turn if character lands a PERFECT strike" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 25" },
+			{ description: "Acquire Potential 2: Reduce Slot Bind duration" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 15" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Acquire Sailor Ability 2: Adds 9x character's ATK on top of tap-timing bonuses" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 130" },
+			{ description: "Boosts base ATK by 70" },
+			{ description: "Acquire Potential 3: Barrier Penetration" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base RCV by 25" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base RCV by 25" },
+			{ description: "Boosts base ATK by 100" }
+		],
+		festAbility: [
+			"[STR]/[DEX]/[QCK]-type teammates ATK Up Lv.2, SPD Up Lv.2; first 50 s of battle, self ATK Up Lv.2; when remaining time is less than 40 s, targets all enemies for DEF Down Lv.2",
+			"[STR]/[DEX]/[QCK]-type teammates ATK Up Lv.3, SPD Up Lv.3; first 50 s of battle, self ATK Up Lv.3; when remaining time is less than 40 s, targets all enemies for DEF Down Lv.3",
+			"[STR]/[DEX]/[QCK]-type teammates ATK Up Lv.4, SPD Up Lv.4; first 50 s of battle, self ATK Up Lv.4; when remaining time is less than 40 s, targets all enemies for DEF Down Lv.4",
+			"[STR]/[DEX]/[QCK]-type teammates ATK Up Lv.5, SPD Up Lv.5; first 50 s of battle, self ATK Up Lv.5; when remaining time is less than 40 s, targets all enemies for DEF Down Lv.5",
+			"[STR]/[DEX]/[QCK]-type teammates ATK Up Lv.6, SPD Up Lv.6; first 50 s of battle, self ATK Up Lv.6; when remaining time is less than 40 s, targets all enemies for DEF Down Lv.6"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Action Bind, reduce damage taken from [DEX] by 30%, increase damage dealt to [DEX] by 30%",
+		festSpecial: [
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.3 (11 s), ATK x 2.4 damage; targets enemies within large range for Damge Over Time Lv.1 (26 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.3 (12 s), ATK x 2.7 damage; targets enemies within large range for Damge Over Time Lv.1 (27 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.3 (13 s), ATK x 3 damage; targets enemies within large range for Damge Over Time Lv.1 (28 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.4 (14 s), ATK x 3.3 damage; targets enemies within large range for Damge Over Time Lv.1 (29 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.4 (15 s), ATK x 3.6 damage; targets enemies within large range for Damge Over Time Lv.1 (30 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.5 (16 s), ATK x 3.9 damage; targets enemies within large range for Damge Over Time Lv.1 (31 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.5 (17 s), ATK x 4.2 damage; targets enemies within large range for Damge Over Time Lv.1 (32 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.5 (18 s), ATK x 4.5 damage; targets enemies within large range for Damge Over Time Lv.1 (33 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.6 (19 s), ATK x 4.8 damage; targets enemies within large range for Damge Over Time Lv.1 (34 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets 1 enemy with high RCV for DEF Down Lv.7 (20 s), ATK x 5.4 damage; targets enemies within large range for Damge Over Time Lv.2 (35 s)"
+			}
+		],
+		festStats: {
+			def: 149,
+			atk: 193,
+			style: "ATK"
+		}
+	},
+	4225: {
+		captain: "Reduces Special Cooldown of this character by 5 turns at the start of the fight, boosts ATK of Powerhouse and Striker characters by 4.25x, boosts HP of Powerhouse and Striker characters  by 1.3x, and makes [RCV] orbs beneficial for Powerhouse and Striker characters. If this character becomes your captain in the middle of an island, boosts ATK of Powerhouse and Striker characters by 5.7375x, and attacks will ignore damage reducing Barriers and Buffs.",
+		captainNotes: "Attacks are still affected by DEF value. DEF boost buffs (Blue shield) still reduce your damage and you can not kill through Resilience, but Damage Negating (Yellow shield), % Damage Reduction (Rainbow shield), Barriers and Threshold Damage Reduction are ignored. Enemy attacks will go through YOUR defensive buffs.",
+        special: "Reduces all enemies' Percent Damage Reduction duration by 2 turns, boosts Final Tap ATK of [PSY], Powerhouse, and Striker by 20%, boosts Color Affinity of [PSY], Powerhouse, and Striker characters by 1.75x for 2 turns and can be Enhanced up to 2 times. If this character used \"True Form of the Polar Bear\" 1 or more times this adventure and HP is below 70%, increases boost effects of Color Affinity buffs by +0.2x, including effects activated in the same Ability, and increases the duration of any Color Affinity buffs by 1 turn. If this character used \"True Form of the Polar Bear\" 1 or more times this adventure and HP is above 70%, reduces crew's current HP by 50%, reduces ATK Down duration by 2 turns, and increases boost effects of Color Affinity buffs by +0.4x, including effects activated in the same Ability. If this character used \"True Form of the Polar Bear\" 3 or more times this adventure, sets Chain Boundaries to 3.25x and 20.0x for 3 turns.",
+		specialCooldown: [
+			22,
+			16
+		],
+		specialName: "True Form of the Polar Bear",
+		sailor: {
+			base: "Changes all orbs into [RCV] orbs at the start of the fight, and makes [RCV] orbs beneficial for all characters.",
+			level1: "Boosts base ATK, HP and RCV of [PSY] characters by 100, and reduces ATK Down duration by 1 turn."
+		},
+		support: [
+			{
+				Characters: "Powerhouse characters",
+				description: [
+					"Adds 7% of this character's base ATK to the supported character's base ATK.",
+					"Adds 8% of this character's base ATK to the supported character's base ATK.",
+					"Adds 9% of this character's base ATK to the supported character's base ATK.",
+					"Adds 10% of this character's base ATK to the supported character's base ATK.",
+					"Adds 11% of this character's base ATK to the supported character's base ATK."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Reduce Slot Bind duration",
+				description: [
+					"Reduces Slot Bind duration by 1 turn on this character",
+					"Reduces Slot Bind duration by 2 turns on this character",
+					"Reduces Slot Bind duration by 3 turns on this character",
+					"Reduces Slot Bind duration by 4 turns on this character",
+					"Reduces Slot Bind duration by 5 turns on this character"
+				]
+			},
+			{
+				Name: "Triple Special Activation",
+				description: [
+					"2 times per adventure, reduces Special Cooldown of this character by 2 turns after the first times this special is used",
+					"2 times per adventure, reduces Special Cooldown of this character by 4 turns after the first times this special is used",
+					"2 times per adventure, reduces Special Cooldown of this character by 6 turns after the first times this special is used",
+					"2 times per adventure, reduces Special Cooldown of this character by 8 turns after the first times this special is used",
+					"2 times per adventure, reduces Special Cooldown of this character completely after the first times this special is used"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 2: Reduce Slot Bind duration" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Acquire Potential 3: Triple Special Activation" },
+			{ description: "Boosts base RCV by 100" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Acquire Sailor Ability 2: " }
+		],
+		festAbility: [
+			"[PSY]-type teammates DEF Up Lv.1, HP Up Lv.1; [INT]-type enemies ATK Down Lv.1",
+			"[PSY]-type teammates DEF Up Lv.2, HP Up Lv.2; [INT]-type enemies ATK Down Lv.2",
+			"[PSY]-type teammates DEF Up Lv.3, HP Up Lv.3; [INT]-type enemies ATK Down Lv.3",
+			"[PSY]-type teammates DEF Up Lv.4, HP Up Lv.4; [INT]-type enemies ATK Down Lv.4",
+			"[PSY]-type teammates DEF Up Lv.5, HP Up Lv.5; [INT]-type enemies ATK Down Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Power Attack",
+			"Heal Teammate in Range Lv.1 (Small Range)",
+			"Power Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "80% chance to evade Halve Stats, reduce damage taken from [INT] by 20%",
+		festSpecial: [
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.1 (21 s); targets [PSY]-type teammates for DEF Up Lv.1 (21 s); targets [INT]-type enemies for ATK x 1 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.1 (22 s); targets [PSY]-type teammates for DEF Up Lv.1 (22 s); targets [INT]-type enemies for ATK x 1.1 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.1 (23 s); targets [PSY]-type teammates for DEF Up Lv.1 (23 s); targets [INT]-type enemies for ATK x 1.2 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.2 (24 s); targets [PSY]-type teammates for DEF Up Lv.2 (24 s); targets [INT]-type enemies for ATK x 1.3 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.2 (25 s); targets [PSY]-type teammates for DEF Up Lv.2 (25 s); targets [INT]-type enemies for ATK x 1.4 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.3 (26 s); targets [PSY]-type teammates for DEF Up Lv.3 (26 s); targets [INT]-type enemies for ATK x 1.5 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.3 (27 s); targets [PSY]-type teammates for DEF Up Lv.3 (27 s); targets [INT]-type enemies for ATK x 1.6 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.3 (28 s); targets [PSY]-type teammates for DEF Up Lv.3 (28 s); targets [INT]-type enemies for ATK x 1.7 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.4 (29 s); targets [PSY]-type teammates for DEF Up Lv.4 (29 s); targets [INT]-type enemies for ATK x 1.8 damage"
+			},
+			{
+				cooldown: 29,
+				description: "Targets teammates in large range for ATK Up Lv.5 (30 s); targets [PSY]-type teammates for DEF Up Lv.5 (30 s); targets [INT]-type enemies for ATK x 2 damage"
+			}
+		],
+		festStats: {
+			def: 189,
+			atk: 162,
+			style: "SPT"
+		}
+	},
+	4226: {
+		captain: "Changes all orbs into [SUPERBOMB] orbs and locks all orbs for 1 turn at the start of the fight, boosts ATK of Shooter and Powerhouse characters by 5x-5.5x based on the timing of the attack of the previous unit in the chain, boosts HP of Shooter and Powerhouse characters by 1.5x, deals 80x the damage taken from enemies in the previous turn in Typeless damage to all enemies at the end of each turn, restores Special Cooldown of this character completely when it is rewinded, removes Burn duration completely, makes [BOMB] and [SUPERBOMB] orbs beneficial for all characters, and [BOMB] and [SUPERBOMB] orbs will deal 80% less damage to the crew.",
+		special: "Removes enemies' Increased Defense duration completely, deals 60x the damage taken from enemies before the special is activated in Typeless damage to all enemies, removes Poison duration completely, changes [RCV], [EMPTY], [BLOCK], [G], [BOMB], and Matching orbs into [SUPERBOMB] orbs, increases Orb Effects of beneficial [SUPERBOMB] orbs to 2.5x for 3 turns, and boosts Orb Effects of Shooter and Powerhouse characters by 2.5x for 3 turns and can be Enhanced up to 2 times. After 1 turn, reduces enemies' Shooter and Powerhouse Resistance by -30% for 1 turn, and increases boost effects of Orb Amplification buffs by +0.25x, including effects activated in the same Ability. If your crew has Bartholomew Kuma or Sentomaru as a member or supporting this character, barriers Shooter and Powerhouse character's orbs for 1 GREAT hit.",
+        specialNotes: "The amount of damage possible caps at 100,000 damage taken, so 6,000,000 AOE Typeless damage.",
+		specialCooldown: [
+			22,
+			17
+		],
+		specialName: "Clearing Strike of the New Weapon",
+		sailor: {
+			level1: "Cannot be Blown Away, and makes [BOMB] and [SUPERBOMB] orbs beneficial for all characters.",
+			level2: "If this character has a [BOMB] or [SUPERBOMB] orb and you attack with this character, reduces enemies' Shooter and Powerhouse Resistance by -10% for 1 turn, and increases boost effects of Orb Amplification buffs by +0.1x."
+		},
+		support: [
+			{
+				Characters: "Shooter characters",
+				description: [
+					"Adds 5% of this character's base HP to the supported character's base HP.",
+					"Adds 6% of this character's base HP to the supported character's base HP.",
+					"Adds 8% of this character's base HP to the supported character's base HP.",
+					"Adds 10% of this character's base HP to the supported character's base HP.",
+					"Adds 13% of this character's base HP to the supported character's base HP."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce Slot Bind duration",
+				description: [
+					"Reduces Slot Bind duration by 1 turn on this character",
+					"Reduces Slot Bind duration by 2 turns on this character",
+					"Reduces Slot Bind duration by 3 turns on this character",
+					"Reduces Slot Bind duration by 4 turns on this character",
+					"Reduces Slot Bind duration by 5 turns on this character"
+				]
+			},
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99,% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 95% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% or below 10% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 85% or below 15% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 80% or below 20% at the start of the turn"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire Potential 1: Reduce Slot Bind duration" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 15" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Acquire Sailor Ability 1: Character cannot be blown away by attack, and makes crew's [BOMB][S. BOMB] slots have matching slot effects" },
+			{ description: "Boosts base ATK by 15" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Acquire Sailor Ability 2: Tapping on this character with a [BOMB][S. BOMB] slot will apply -10% Shooter and Powerhouse Resistance to all enemies for 1 turn, and further increases crew's slot effect boost by +0.1" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Acquire Potential 3: Barrier Penetration" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base HP by 250" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"[PSY]-type/Shooter class teammates ATK Up Lv.2, DEF Up Lv.2, RCV Up Lv.2; when teammate is defeated, up to 4 times, self ATK Up Lv.1, Special CT Speed Up Lv.1 ",
+			"[PSY]-type/Shooter class teammates ATK Up Lv.3, DEF Up Lv.3, RCV Up Lv.3; when teammate is defeated, up to 4 times, self ATK Up Lv.1, Special CT Speed Up Lv.1",
+			"[PSY]-type/Shooter class teammates ATK Up Lv.4, DEF Up Lv.4, RCV Up Lv.4; when teammate is defeated, up to 4 times, self ATK Up Lv.1, Special CT Speed Up Lv.1",
+			"[PSY]-type/Shooter class teammates ATK Up Lv.5, DEF Up Lv.5, RCV Up Lv.5; when teammate is defeated, up to 4 times, self ATK Up Lv.1, Special CT Speed Up Lv.1",
+			"[PSY]-type/Shooter class teammates ATK Up Lv.6, DEF Up Lv.6, RCV Up Lv.6; when teammate is defeated, up to 4 times, self ATK Up Lv.2, Special CT Speed Up Lv.2"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Forced Out, reduce damage taken from [INT] by 30%, increase damage dealt to [INT] by 30%",
+		festSpecial: [
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 0.75 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 50% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 1.05 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 55% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 1.35 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 60% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 1.65 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 65% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 1.95 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 70% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 2.25 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 75% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 2.55 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 80% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 2.85 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 85% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 3.15 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 90% chance of Forced Out (15 s)"
+			},
+			{
+				cooldown: 20,
+				description: "Targets enemies within large range (frontal) for ATK x 3.75 damage; when team has no [INT]-type teammates, targets 1 enemy with high Special CT for 100% chance of Forced Out (15 s)"
+			}
+		],
+		festStats: {
+			def: 199,
+			atk: 127,
+			style: "DBF"
+		}
+	},
+	4227: {
+		captain: {
+			character1: "Reduces Special Cooldown of Driven and Fighter characters by 1 turn at the start of the fight, reduces Swap Cooldown of this character by 3 at the start of the fight, boosts ATK of Driven and Fighter characters by 4.75x, by 5.25x instead if they have a beneficial orb, boosts HP of Driven and Fighter characters by 1.3x, and makes [DEX] and [QCK] orbs beneficial for all characters. If the enemy has Percent Damage Reduction status, reduces enemies' Percent Damage Reduction effect by 70%, and boosts ATK of Driven and Fighter characters by 2.25x for 3 turns.",
+			character2: "Reduces Swap Cooldown of this character by 5 at the start of the fight, boosts ATK of Driven and Fighter characters by 4.75x, by 5.25x instead if they have a beneficial orb, boosts HP of Driven and Fighter characters by 1.3x, and makes [DEX] and [QCK] orbs beneficial for all characters. If the enemy has Threshold Damage Reduction status, reduces enemies' Threshold Damage Reduction effect by 70%, and boosts Orb Effects of Driven and Fighter characters by 2.25x for 3 turns.",
+			combined: "Boosts ATK of this character by 6x if they have a beneficial orb, boosts ATK of other Driven and Fighter characters by 5.25x, by 5.5x instead if they have a beneficial orb, boosts HP of Driven and Fighter characters by 1.3x if the enemy has Increased Defense, Percent Damage Reduction or Threshold Damage Reduction status, and makes [DEX] and [QCK] orbs beneficial for all characters. If the enemy has Percent Damage Reduction or Threshold Damage Reduction status, reduces enemies' Percent Damage Reduction and Threshold Damage Reduction effect by 70%, boosts ATK of Driven and Fighter characters by 2.25x for 3 turns, and boosts Orb Effects of Driven and Fighter characters by 2.25x for 3 turns."
+		},
+		special: "Deals 100x character's ATK in Typeless Fixed True damage to all enemies, reduces Chain Multiplier Limit and ATK Down duration by 7 turns, sets Chain Boundaries to 3.25x and 30.0x for 2 turns, and becomes Lucci & Kaku for 3 turns. If your crew has Color Affinity above 3x when the special is activated, increases boost effects of Color Affinity buffs by 1.2x (up to 4.5x). If the enemy has Percent Damage Reduction or Threshold Damage Reduction status when the Special is activated, increases boost effects of Color Affinity buffs to 3x, and increases duration of any Color Affinity buffs by 2 turns.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Crushing Dual Strikes",
+		sailor: {
+			character1: "Boosts base ATK of Driven and Fighter characters by 75, and makes [DEX] and [QCK] orbs beneficial for Driven and Fighter characters.",
+			character2: "Boosts base ATK of Driven and Fighter characters by 75, and makes [DEX] and [QCK] orbs beneficial for Driven and Fighter characters.",
+			combined: "Boosts base ATK of Driven and Fighter characters by 125, and makes [DEX] and [QCK] orbs beneficial for Driven and Fighter characters.",
+			level1: "Reduces Special Cooldown of this character by 1 turn after each turn you take damage."
+		},
+		swap: {
+			base: "Deals 20x character's ATK in Typeless damage to all enemies, reduces the defense of all enemies by 50% for 1 turn, and boosts Color Affinity of Driven and Fighter characters by 1.5x for 1 turn.",
+			super: "Reduces Special Cooldown of Driven and Fighter characters by 1 turn, reduces the defense of all enemies by 100% for 1 turn, deals 60x character's ATK in Typeless Fixed True damage to all enemies, and boosts Color Affinity of Driven and Fighter characters by 2.25x for 1 turn.",
+			superTurns: "5"
+		},
+		potential: [
+			{
+				Name: "Ship Bind Resistance",
+				description: [
+					"Reduces Ship Bind duration by 1 turn",
+					"Reduces Ship Bind duration by 2 turns",
+					"Reduces Ship Bind duration by 3 turns",
+					"Reduces Ship Bind duration by 4 turns",
+					"Reduces Ship Bind duration by 5 turns"
+				]
+			},
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Cooldown Reduction",
+				description: [
+					"Reduces character's Special charge time by 1 turn at the start of the fight",
+					"Reduces character's Special charge time by 2 turns at the start of the fight",
+					"Reduces character's Special charge time by 3 turns at the start of the fight",
+					"Reduces character's Special charge time by 4 turns at the start of the fight",
+					"Reduces character's Special charge time by 5 turns at the start of the fight"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Acquire Potential 1: Ship Bind Resistance" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base HP by 80" },
+			{ description: "Acquire Potential 3: Cooldown Reduction" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 200" }
+		],
+		festAbility: [
+			"Driven/Fighter class teammates ATK Up Lv.1, HP Up Lv.1, Blow Away % Up Lv.1; when dealing damage, up to 2 times self ATK Up Lv.1, SPD Up Lv.1",
+			"Driven/Fighter class teammates ATK Up Lv.2, HP Up Lv.2, Blow Away % Up Lv.2; when dealing damage, up to 2 times self ATK Up Lv.1, SPD Up Lv.1",
+			"Driven/Fighter class teammates ATK Up Lv.3, HP Up Lv.3, Blow Away % Up Lv.3; when dealing damage, up to 2 times self ATK Up Lv.1, SPD Up Lv.1",
+			"Driven/Fighter class teammates ATK Up Lv.4, HP Up Lv.4, Blow Away % Up Lv.4; when dealing damage, up to 2 times self ATK Up Lv.1, SPD Up Lv.1",
+			"Driven/Fighter class teammates ATK Up Lv.5, HP Up Lv.5, Blow Away % Up Lv.5; when dealing damage, up to 2 times self ATK Up Lv.2, SPD Up Lv.2"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Paralysis, reduce damage taken from Powerhouse and Shooter by 30%",
+		festSpecial: [
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.5 (5 s), targets 2 enemies with low current HP for ATK x 1.5 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.6 (5 s), targets 2 enemies with low current HP for ATK x 1.6 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1.2 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1.3 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.7 (5 s), targets 2 enemies with low current HP for ATK x 1.7 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1.4 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1.6 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.8 (5 s), targets 2 enemies with low current HP for ATK x 1.8 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1.6 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1.9 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.9 (5 s), targets 2 enemies with low current HP for ATK x 1.9 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 1.8 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 2.2 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.10 (5 s), targets 2 enemies with low current HP for ATK x 2 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 2 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 2.5 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.11 (5 s), targets 2 enemies with low current HP for ATK x 2.1 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 2.2 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 2.8 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.12 (5 s), targets 2 enemies with low current HP for ATK x 2.2 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 2.4 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 3.1 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.13 (5 s), targets 2 enemies with low current HP for ATK x 2.3 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 2.6 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 3.4 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets self for ATK Up Lv.15 (5 s), targets 2 enemies with low current HP for ATK x 2.5 damage; when 5 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 3 damage; when 8 or more Driven/Fighter characters are on the team, targets 2 enemies with low current HP for ATK x 4 damage"
+			}
+		],
+		festStats: {
+			def: 171,
+			atk: 195,
+			style: "ATK"
+		}
+	},
+	4228: {
+		captain: "Boosts ATK of Driven and Cerebral characters by 3.75x, and boosts HP of Driven and Cerebral characters by 1.25x. If the enemy has Percent Damage Reduction or Threshold Damage Reduction status, adds 1.1x to Chain Multiplier for 3 turns.",
+		special: "Reduces Bind duration by 6 turns, recovers 15,000 HP, reduces Special Cooldown of all characters by 1 turn, increases duration of any Chain Lock buffs by 1 turn, and changes orbs, including [BLOCK] orbs, of adjacent characters into Matching orbs. If your crew has ATK Up and Orb Amplification when the special is activated, adds 1.4x to Chain Multiplier for 3 turns. If your crew has ATK Up when the special is activated, boosts Orb Effects of [QCK], Driven, and Cerebral characters by 2.25x for 3 turns. Boosts ATK of [QCK], Driven, and Cerebral characters by 2.25x for 3 turns.",
+		specialCooldown: [
+			18,
+			13
+		],
+		specialName: "Searching for the Stella",
+		sailor: {
+			base: "Restores Special Cooldown of this character by 2 turns when it is rewinded.",
+			level1: "Recovers 600 HP at the end of each turn."
+		},
+		support: [
+			{
+				Characters: "Rob Lucci, Kaku",
+				description: [
+					"Once per adventure, when the supported character uses their special, adds 0.2x to Chain Multiplier for 1 turn.",
+					"Once per adventure, when the supported character uses their special, adds 0.4x to Chain Multiplier for 1 turn.",
+					"Once per adventure, when the supported character uses their special, adds 0.6x to Chain Multiplier for 1 turn.",
+					"Once per adventure, when the supported character uses their special, recovers 5,000 HP, and adds 0.6x to Chain Multiplier for 1 turn.",
+					"Once per adventure, when the supported character uses their special, recovers 5,000 HP, reduces Bind duration by 1 turn, and adds 0.6x to Chain Multiplier for 1 turn."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns"
+				]
+			},
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 1: Reduce Special Use Limit duration" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Reduce Sailor Despair duration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
+	4229: {
+		captain: "Boosts ATK of Driven and Powerhouse characters by 3.5x, and boosts HP of Driven and Powerhouse characters by 1.25x, reduces Bind, Despair, Silence and Paralysis duration completely on this character and restores Special Cooldown of this character completely when it is rewinded.",
+		special: "Reduces Despair and Silence duration by 6 turns, reduces damage received by 80% for 1 turn, changes orbs, including [BLOCK] orbs, of adjacent characters into Matching orbs, and boosts ATK against delayed enemies and enemies with reduced defense by 2.25x for 3 turns. If a [DEX] character is supporting this character, reduces enemies' damage received by 70% for 6 turns, and ignores Debuff Protection and delays all enemies by 1 turn.",
+		specialCooldown: [
+			20,
+			15
+		],
+		specialName: "Incoming Threat of the New Weapons",
+		sailor: {
+			base: "Reduces Silence duration by 6 turns on this character, and restores Special Cooldown of this character by 6 turns when it is rewinded.",
+			level1: "Cannot be Blown Away and reduces Paralysis duration by 6 turns on this character."
+		},
+		support: [
+			{
+				Characters: "[DEX]-type Driven characters",
+				description: [
+					"Once per adventure, when the supported character uses a Chain Lock special, reduces damage received by 10% for 1 turn.",
+					"Once per adventure, when the supported character uses a Chain Lock special, reduces damage received by 20% for 1 turn.",
+					"Once per adventure, when the supported character uses a Chain Lock special, reduces damage received by 20% for 1 turn.",
+					"Once per adventure, when the supported character uses a Chain Lock special, reduces Despair duration by 1 turn, and reduces damage received by 30% for 1 turn.",
+					"Once per adventure, when the supported character uses a Chain Lock special, reduces Despair duration by 1 turn, and reduces damage received by 40% for 1 turn."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns"
+				]
+			},
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 1: Reduce Special Use Limit duration" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Reduce Sailor Despair duration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
+	4239: {
+		captain: "Boosts ATK of Fighter and Free Spirit characters by 5.25x, by 5.75x instead if HP is above 99% or below 10%, boosts ATK of all other characters by 4.5x, boosts HP of Fighter and Free Spirit characters by 1.5x, and makes [PSY], [RCV], and [TND] orbs beneficial for all characters. If this character has a [RCV] orb and you attack with this character, increases duration of any End of Turn Healing buffs by 3 turns. If you have 6 Fighter characters or there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, allows HP Overfill up to 2x MAX HP, and when a crew member uses a special with an Additional Damage buff, replaces that buff with increases duration of any End of Turn Healing buffs by 2 turns .At the start of the fight, applies the following buff: recovers 2x character's RCV in HP at the end of each turn, preventing buff clears, for 8 turns.",
+		special: "Reduces enemies' Increased Defense duration by 10 turns, changes all orbs, including [BLOCK] orbs, of left column characters into [RCV] orbs, and changes all orbs, including [BLOCK] orbs, of right column characters into [TND] orbs. If a [PSY] character is supporting this character, boosts Orb Effects of Fighter and Free Spirit characters by 2.5x for 2 turns; boosts ATK against delayed enemies by 2.5x for 2 turns otherwise. If your crew has End of Turn Healing when the special is activated, boosts Final Tap ATK of Fighter and Free Spirit characters by 30%-100% and reduces enemies' Fighter and Free Spirit Resistance by 10%-40% based on the duration of the End of Turn Healing buff. If your crew has 15 turns or more of End of Turn Healing when the special is activated, changes Class 1 of all non-Fighter characters to Fighter for 1 turn. Reduces crew's current HP by 95%, deals 50x the amount of HP subtracted in Typeless damage to all enemies, and reduces End of Turn Healing duration by 10 turns.",
+		specialNotes: "If HP is not full when the special is activated, reduces the effect of the Final Tap ATK and Resistance by 50%.<br>30% and 10% for 0-6 turns, 50% and 20% for 7-14 turns, 100% and 40% for 15+ turns",
+        specialCooldown: [
+			22,
+			17
+		],
+		specialName: "Galaxy Impact",
+		festAbility: [
+			"[PSY]-type teammates HP Up Lv.2, DEF Up Lv.2, Blow Away % Up Lv.2; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.3, DEF Up Lv.3, Blow Away % Up Lv.3; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.4, DEF Up Lv.4, Blow Away % Up Lv.4; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.5, DEF Up Lv.5, Blow Away % Up Lv.5; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.6, DEF Up Lv.6, Blow Away % Up Lv.6; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Special Bind, reduce damage taken from [INT] by 30％",
+		festSpecial: [
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1 damage; targets Fighter class teammates for ATK Up Lv.1 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.2 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.05 damage; targets Fighter class teammates for ATK Up Lv.1 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.4 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.1 damage; targets Fighter class teammates for ATK Up Lv.1 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.6 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.15 damage; targets Fighter class teammates for ATK Up Lv.2 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.8 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.2 damage; targets Fighter class teammates for ATK Up Lv.2 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.25 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2.2 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.3 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2.4 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.35 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2.6 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.4 damage; targets Fighter class teammates for ATK Up Lv.4 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 3 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.5 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s)"
+			}
+		],
+		festStats: {
+			def: 161,
+			atk: 172,
+			style: "ATK"
+		}
+	},
+	4240: {
+		captain: "Boosts ATK of Fighter and Free Spirit characters by 5.25x, by 5.75x instead if HP is above 99% or below 10%, boosts ATK of all other characters by 4.5x, boosts HP of Fighter and Free Spirit characters by 1.5x, and makes [PSY], [RCV], and [TND] orbs beneficial for all characters. If this character has a [RCV] orb and you attack with this character, increases duration of any End of Turn Healing buffs by 3 turns. If you have 6 Fighter characters or there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, allows HP Overfill up to 2x MAX HP, and when a crew member uses a special with an Additional Damage buff, replaces that buff with increases duration of any End of Turn Healing buffs by 2 turns .At the start of the fight, applies the following buff: recovers 2x character's RCV in HP at the end of each turn, preventing buff clears, for 8 turns.",
+		special: "Reduces enemies' Increased Defense duration by 10 turns, changes all orbs, including [BLOCK] orbs, of left column characters into [RCV] orbs, and changes all orbs, including [BLOCK] orbs, of right column characters into [TND] orbs. If a [PSY] character is supporting this character, boosts Orb Effects of Fighter and Free Spirit characters by 2.5x for 2 turns; boosts ATK against delayed enemies by 2.5x for 2 turns otherwise. If your crew has End of Turn Healing when the special is activated, boosts Final Tap ATK of Fighter and Free Spirit characters by 30%-100% and reduces enemies' Fighter and Free Spirit Resistance by 10%-40% based on the duration of the End of Turn Healing buff. If your crew has 15 turns or more of End of Turn Healing when the special is activated, changes Class 1 of all non-Fighter characters to Fighter for 1 turn. Reduces crew's current HP by 95%, deals 50x the amount of HP subtracted in Typeless damage to all enemies, and reduces End of Turn Healing duration by 10 turns.",
+		specialNotes: "If HP is not full when the special is activated, reduces the effect of the Final Tap ATK and Resistance by 50%.<br>30% and 10% for 0-6 turns, 50% and 20% for 7-14 turns, 100% and 40% for 15+ turns",
+        specialCooldown: [
+			22,
+			17
+		],
+		specialName: "Galaxy Impact",
+		sailor: {
+			level1: "Boosts base RCV of Fighter and Free Spirit characters by 1.1x.",
+			level2: "Changes all orbs into [RCV] orbs at the start of the fight, and makes [RCV] and [TND] orbs beneficial for Fighter and Free Spirit characters."
+		},
+		superSpecial: "Delays all enemies by 1 turn, activates HP Guard of 90% effect for 1 turn, increases duration of any Status ATK boosting buffs and End of Turn Healing buffs by 2 turns, and transforms Fighter characters into Super Fighter characters.",
+		superSpecialCriteria: "This character must be captain and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Gol D. Roger, Coby, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, Kuzan (Aokiji)",
+		support: [
+			{
+				Characters: "Monkey D. Luffy, Coby, Helmeppo, Tashigi, Portgas D. Ace, Kuzan (Aokiji), Gol D. Roger, Prince Grus, Kujaku, Hibari",
+				description: [
+					"Once per adventure, when you reach the final stage, recovers 1.2x supported character's RCV in HP at the end of each turn for 5 turns.",
+					"Once per adventure, when you reach the final stage, recovers 1.5x supported character's RCV in HP at the end of each turn for 5 turns.",
+					"Once per adventure, when you reach the final stage, recovers 1.5x supported character's RCV in HP at the end of each turn for 5 turns.",
+					"Once per adventure, when you reach the final stage, recovers 1.75x supported character's RCV in HP at the end of each turn for 5 turns.",
+					"Once per adventure, when you reach the final stage, recovers 2x supported character's RCV in HP at the end of each turn for 5 turns."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce No Healing duration",
+				description: [
+					" Reduces No Healing duration by 1 turn",
+					" Reduces No Healing duration by 2 turns",
+					" Reduces No Healing duration by 3 turns",
+					" Reduces No Healing duration by 4 turns",
+					" Reduces No Healing duration by 5 turns"
+				]
+			},
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 99% at the start of the turn, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Super Tandem",
+				description: [
+					"Obtain Super Tandem Lv.1",
+					"Obtain Super Tandem Lv.2",
+					"Obtain Super Tandem Lv.3",
+					"Obtain Super Tandem Lv.4",
+					"Obtain Super Tandem Lv.5"
+				]
+			}
+		],
+		superTandem: {
+			characterCondition: [
+				"HP is below 10% and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Gol D. Roger, Coby, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, Kuzan (Aokiji)",
+				"HP is below 10% and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Gol D. Roger, Coby, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, Kuzan (Aokiji)",
+				"HP is below 10% and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Gol D. Roger, Coby, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, Kuzan (Aokiji)",
+				"HP is below 10% and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Gol D. Roger, Coby, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, Kuzan (Aokiji)",
+				"HP is below 10% and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Gol D. Roger, Coby, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, Kuzan (Aokiji)"
+			],
+			description: [
+				"Boosts Tandem ATK of middle row characters by 1.25x and boosts ATK of all other character by 1.2x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 1.5x and boosts ATK of all other character by 1.4x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 1.75x and boosts ATK of all other character by 1.6x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 2x and boosts ATK of all other character by 1.8x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 2.5x and boosts ATK of all other character by 2x for 1 turn."
+			]
+		},
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Acquire Potential 1: Reduce No Healing duration" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Acquire Sailor Ability 1: Boosts Fighter and Free Spirit characters' base RCV by 1.1x" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Acquire Potential 2: Pinch Healing" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire Sailor Ability 2: Makes Fighter and Free Spirit characters' [RCV][TND] slots have matching slot effects, and sets all slots to [RCV] slots at start of quest (no stacking identical abilities)" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Acquire Potential 3: Super Tandem" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"[PSY]-type teammates HP Up Lv.2, DEF Up Lv.2, Blow Away % Up Lv.2; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.3, DEF Up Lv.3, Blow Away % Up Lv.3; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.4, DEF Up Lv.4, Blow Away % Up Lv.4; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.5, DEF Up Lv.5, Blow Away % Up Lv.5; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time",
+			"[PSY]-type teammates HP Up Lv.6, DEF Up Lv.6, Blow Away % Up Lv.6; if 6 or more [PSY] characters are on the team, when self is KO'd, launches Rumble Special 1 time"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Special Bind, reduce damage taken from [INT] by 30％",
+		festSpecial: [
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1 damage; targets Fighter class teammates for ATK Up Lv.1 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.2 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.05 damage; targets Fighter class teammates for ATK Up Lv.1 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.4 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.1 damage; targets Fighter class teammates for ATK Up Lv.1 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.6 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.15 damage; targets Fighter class teammates for ATK Up Lv.2 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 1.8 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.2 damage; targets Fighter class teammates for ATK Up Lv.2 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.25 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2.2 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.3 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2.4 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.35 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 2.6 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.4 damage; targets Fighter class teammates for ATK Up Lv.4 (20 s)"
+			},
+			{
+				cooldown: 35,
+				description: "Targets all enemies for ATK x 3 damage; if \"X Drake\", \"Coby\", \"Helmeppo\", \"Prince Grus\", \"Hibari\", \"Kujaku\", \"Monkey D. Luffy\", or \"Portgas D. Ace\" is on the team, targets all enemies ignoring DEF for ATK x 1.5 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s)"
+			}
+		],
+		festStats: {
+			def: 161,
+			atk: 172,
+			style: "ATK"
+		},
+		festAbilityGP: [
+			{
+				festGPAbility: "[PSY]-type teammates ATK, RCV Up Lv.1, DEF Up Lv.1; Fighter class teammates ATK, HP Up Lv.1, Critical % Up Lv.1; [INT]-type enemies Special CT Speed Down Lv.1, HP Down Lv.1",
+				festGPSpecial: "Targets all enemies for 6000 damage; targets Driven/Shooter class enemies for 4000 damage",
+				uses: 2
+			},
+			{
+				festGPAbility: "[PSY]-type teammates ATK, RCV Up Lv.2, DEF Up Lv.1; Fighter class teammates ATK, HP Up Lv.2, Critical % Up Lv.2; [INT]-type enemies Special CT Speed Down Lv.2, HP Down Lv.2",
+				festGPSpecial: "Targets all enemies for 6500 damage; targets Driven/Shooter class enemies for 4500 damage",
+				uses: 2
+			},
+			{
+				festGPAbility: "[PSY]-type teammates ATK, RCV Up Lv.3, DEF Up Lv.2; Fighter class teammates ATK, HP Up Lv.3, Critical % Up Lv.2; [INT]-type enemies Special CT Speed Down Lv.2, HP Down Lv.3",
+				festGPSpecial: "Targets all enemies for 7000 damage; targets Driven/Shooter class enemies for 5000 damage",
+				uses: 2
+			},
+			{
+				festGPAbility: "[PSY]-type teammates ATK, RCV Up Lv.3, DEF Up Lv.2; Fighter class teammates ATK, HP Up Lv.3, Critical % Up Lv.3; [INT]-type enemies Special CT Speed Down Lv.3, HP Down Lv.3",
+				festGPSpecial: "Targets all enemies for 7500 damage; targets Driven/Shooter class enemies for 5500 damage",
+				uses: 2
+			},
+			{
+				festGPAbility: "[PSY]-type teammates ATK, RCV Up Lv.4, DEF Up Lv.2; Fighter class teammates ATK, HP Up Lv.4, Critical % Up Lv.3; [INT]-type enemies Special CT Speed Down Lv.3, HP Down Lv.4",
+				festGPSpecial: "Targets all enemies for 8000 damage; targets Driven/Shooter class enemies for 6000 damage",
+				uses: 2
+			}
+		],
+		festAbilityGPCondition: "When 6 teammates are defeated"
+	},
+	4241: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of all characters by 4.5x, by 5.75x instead if you have a Fighter, Slasher, Striker and Shooter character on your crew, boosts HP of all characters by 1.25x, and makes [INT] and [RCV] orbs beneficial for all characters. If you have a Fighter, Slasher, Striker and Shooter character on your crew, up to 8 times per adventure and 4 times per turn, reduces Special Cooldown of this character by 3 turns.",
+		special: "Reduces enemies' Threshold Damage Reduction effect by 90%, deals 200x character's ATK in [INT] damage to all enemies at the end of each turn for 3 turns, reduces Counter-Healing and Counter-RCV duration by 4 turns, boosts ATK of Fighter, Slasher, Striker, and Shooter characters by 2.75x for 1 turn, changes [BLOCK], [STR], [DEX], [QCK], [PSY] and [INT] orbs into [RCV] orbs, and reduces enemies' Fighter, Slasher, Striker, and Shooter Resistance by -10% for 1 turn. Up to 1 time per adventure, if your crew has 5 turns or more of End of Turn Healing when the special is activated and a [STR], [DEX], or [QCK] character is supporting this character, reduces Special Cooldown of bottom row characters by 4 turns; reduces Special Cooldown of this character by 12 turns otherwise. Recovers 9,292 HP at the end of the turn for 7 turns.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Navy HQ Top Secret Special Force \"SWORD\"",
+		festAbility: [
+			"Striker/Shooter class teammates HP Up Lv.2, ATK Up Lv.2; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.1; self HP Up Lv.6, SPD Up Lv.6",
+			"Striker/Shooter class teammates HP Up Lv.3, ATK Up Lv.3; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.2; self HP Up Lv.7, SPD Up Lv.7",
+			"Striker/Shooter class teammates HP Up Lv.4, ATK Up Lv.4; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.3; self HP Up Lv.8, SPD Up Lv.8",
+			"Striker/Shooter class teammates HP Up Lv.5, ATK Up Lv.5; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.4; self HP Up Lv.9, SPD Up Lv.9",
+			"Striker/Shooter class teammates HP Up Lv.6, ATK Up Lv.6; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.5; self HP Up Lv.10, SPD Up Lv.10"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Special Bind, reduce damage taken from [PSY] by 30％",
+		festSpecial: [
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.1 (20 s); targets 3 high ATK enemies for 50% chance of Halve ATK (15 s); targets 3 high SPD enemies for 40% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.1 (20 s); targets 3 high ATK enemies for 55% chance of Halve ATK (15 s); targets 3 high SPD enemies for 44% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.1 (20 s); targets 3 high ATK enemies for 60% chance of Halve ATK (15 s); targets 3 high SPD enemies for 48% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.2 (20 s); targets 3 high ATK enemies for 65% chance of Halve ATK (15 s); targets 3 high SPD enemies for 52% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.2 (20 s); targets 3 high ATK enemies for 70% chance of Halve ATK (15 s); targets 3 high SPD enemies for 56% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.3 (20 s); targets 3 high ATK enemies for 75% chance of Halve ATK (15 s); targets 3 high SPD enemies for 60% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.3 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.3 (20 s); targets 3 high ATK enemies for 80% chance of Halve ATK (15 s); targets 3 high SPD enemies for 64% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.3 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.3 (20 s); targets 3 high ATK enemies for 85% chance of Halve ATK (15 s); targets 3 high SPD enemies for 68% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.3 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.4 (20 s); targets 3 high ATK enemies for 90% chance of Halve ATK (15 s); targets 3 high SPD enemies for 72% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.4 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.5 (20 s); targets 3 high ATK enemies for 100% chance of Halve ATK (15 s); targets 3 high SPD enemies for 80% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.5 (20 s)"
+			}
+		],
+		festStats: {
+			def: 195,
+			atk: 144,
+			style: "DBF"
+		}
+	},
+	4242: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of all characters by 4.5x, by 5.75x instead if you have a Fighter, Slasher, Striker and Shooter character on your crew, boosts HP of all characters by 1.25x, and makes [INT] and [RCV] orbs beneficial for all characters. If you have a Fighter, Slasher, Striker and Shooter character on your crew, up to 8 times per adventure and 4 times per turn, reduces Special Cooldown of this character by 3 turns.",
+		special: "Reduces enemies' Threshold Damage Reduction effect by 90%, deals 200x character's ATK in [INT] damage to all enemies at the end of each turn for 3 turns, reduces Counter-Healing and Counter-RCV duration by 4 turns, boosts ATK of Fighter, Slasher, Striker, and Shooter characters by 2.75x for 1 turn, changes [BLOCK], [STR], [DEX], [QCK], [PSY] and [INT] orbs into [RCV] orbs, and reduces enemies' Fighter, Slasher, Striker, and Shooter Resistance by -10% for 1 turn. Up to 1 time per adventure, if your crew has 5 turns or more of End of Turn Healing when the special is activated and a [STR], [DEX], or [QCK] character is supporting this character, reduces Special Cooldown of bottom row characters by 4 turns; reduces Special Cooldown of this character by 12 turns otherwise. Recovers 9,292 HP at the end of the turn for 7 turns.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Navy HQ Top Secret Special Force \"SWORD\"",
+		sailor: {
+			level1: "Boosts amount healed from [RCV] orbs by 300, and makes [INT] and [RCV] orbs beneficial for Fighter, Slasher, Striker and Shooter characters.",
+			level2: "If this character has a [RCV] orb and you attack with this character, boosts chances of getting [RCV] orbs for 1 turn. If this character has an [RCV] orb and you hit a PERFECT with them, keep their [RCV] orb for the next turn."
+		},
+		superSpecial: "Reduces Special Cooldown of top row characters by 2 turns, inflicts all enemies with Set Target, increasing damage taken from Fighter, Slasher, Striker and Shooter characters by 1.75x and reducing Special Cooldown of Fighter, Slasher, Striker and Shooter characters by 2 turns when they defeat an enemy, for 1 turn, and transforms [INT] characters into Super [INT] characters.",
+		superSpecialCriteria: "This character must be captain and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Garp, Coby, Helmeppo, X Drake",
+		support: [
+			{
+				Characters: "Coby, Helmeppo, Monkey D. Garp, X Drake",
+				description: [
+					"Once per adventure, when the supported character uses their special, changes orb of the supported character into a [RCV] orb.",
+					"Once per adventure, when the supported character uses their special, changes orb of the supported character into a [RCV] orb.",
+					"Once per adventure, when the supported character uses their special, changes orb of right column characters into [RCV] orbs.",
+					"Once per adventure, when the supported character uses their special, changes orb of right column characters into [RCV] orbs.",
+					"Once per adventure, when the supported character uses their special, increases duration of any End of Turn Healing buffs by 1 turn, and changes orb of right column characters into [RCV] orbs."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce No Healing duration",
+				description: [
+					" Reduces No Healing duration by 1 turn",
+					" Reduces No Healing duration by 2 turns",
+					" Reduces No Healing duration by 3 turns",
+					" Reduces No Healing duration by 4 turns",
+					" Reduces No Healing duration by 5 turns"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 60% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 50% at the start of the turn"
+				]
+			},
+			{
+				Name: "Cooldown Reduction",
+				description: [
+					"Reduces character's Special charge time by 1 turn at the start of the fight",
+					"Reduces character's Special charge time by 2 turns at the start of the fight",
+					"Reduces character's Special charge time by 3 turns at the start of the fight",
+					"Reduces character's Special charge time by 5 turns at the start of the fight",
+					"Reduces character's Special charge time by 7 turns at the start of the fight"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Acquire Potential 1: Reduce No Healing duration" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire Sailor Ability 1: Adds an additional 300 HP when obtaining a [RCV] slot, and makes Fighter, Slasher, Striker, and Shooter characters' [INT][RCV] slots have matching slot effects" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 2: Barrier Penetration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire Sailor Ability 2: Tapping on this character with a [RCV] slot will boost crew's chance of landing on [RCV] slots for 1 turn, and character's [RCV] slot is carried over to the next turn if character lands a PERFECT strike" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Acquire Potential 3: Cooldown Reduction" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"Striker/Shooter class teammates HP Up Lv.2, ATK Up Lv.2; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.1; self HP Up Lv.6, SPD Up Lv.6",
+			"Striker/Shooter class teammates HP Up Lv.3, ATK Up Lv.3; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.2; self HP Up Lv.7, SPD Up Lv.7",
+			"Striker/Shooter class teammates HP Up Lv.4, ATK Up Lv.4; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.3; self HP Up Lv.8, SPD Up Lv.8",
+			"Striker/Shooter class teammates HP Up Lv.5, ATK Up Lv.5; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.4; self HP Up Lv.9, SPD Up Lv.9",
+			"Striker/Shooter class teammates HP Up Lv.6, ATK Up Lv.6; if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team, team DEF Up Lv.5; self HP Up Lv.10, SPD Up Lv.10"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Special Bind, reduce damage taken from [PSY] by 30％",
+		festSpecial: [
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.1 (20 s); targets 3 high ATK enemies for 50% chance of Halve ATK (15 s); targets 3 high SPD enemies for 40% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.1 (20 s); targets 3 high ATK enemies for 55% chance of Halve ATK (15 s); targets 3 high SPD enemies for 44% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.1 (20 s); targets 3 high ATK enemies for 60% chance of Halve ATK (15 s); targets 3 high SPD enemies for 48% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.2 (20 s); targets 3 high ATK enemies for 65% chance of Halve ATK (15 s); targets 3 high SPD enemies for 52% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.2 (20 s); targets 3 high ATK enemies for 70% chance of Halve ATK (15 s); targets 3 high SPD enemies for 56% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.3 (20 s); targets 3 high ATK enemies for 75% chance of Halve ATK (15 s); targets 3 high SPD enemies for 60% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.3 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.3 (20 s); targets 3 high ATK enemies for 80% chance of Halve ATK (15 s); targets 3 high SPD enemies for 64% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.3 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.3 (20 s); targets 3 high ATK enemies for 85% chance of Halve ATK (15 s); targets 3 high SPD enemies for 68% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.3 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.4 (20 s); targets 3 high ATK enemies for 90% chance of Halve ATK (15 s); targets 3 high SPD enemies for 72% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.4 (20 s)"
+			},
+			{
+				cooldown: 27,
+				description: "Targets Striker/Shooter class teammates for Shield Lv.5 (20 s); targets 3 high ATK enemies for 100% chance of Halve ATK (15 s); targets 3 high SPD enemies for 80% chance of Confusion (10 s); if \"Monkey D. Garp\", \"Coby\", \"Helmeppo\", or \"X Drake\" is on the team; targets 3 teammates with low current HP for Shield Lv.5 (20 s)"
+			}
+		],
+		festStats: {
+			def: 195,
+			atk: 144,
+			style: "DBF"
+		},
+		festAbilityGP: [
+			{
+				festGPAbility: "[INT]-type teammates HP, SPD Up Lv.1, DEF Up Lv.1; Striker/Shooter class teammates Special CT Speed Up Lv.1, ATK, HP Up Lv.1",
+				festGPSpecial: "Targets 1 high SPD enemy for 60% chance of Action Bind (10 s), SPD Down Lv.8 (20 s); targets 1 high ATK enemy for 60% chance of Special Bind (10 s), ATK Down Lv.8 (20 s); activates Provoke on 1 high DEF enemy (12 s), DEF Down Lv.8 (20 s); targets 1 teammate with low current Special CT for Special CT 60% reduction",
+				uses: 3
+			},
+			{
+				festGPAbility: "[INT]-type teammates HP, SPD Up Lv.2, DEF Up Lv.1; Striker/Shooter class teammates Special CT Speed Up Lv.1, ATK, HP Up Lv.2",
+				festGPSpecial: "Targets 1 high SPD enemy for 70% chance of Action Bind (10 s), SPD Down Lv.8 (20 s); targets 1 high ATK enemy for 70% chance of Special Bind (10 s), ATK Down Lv.8 (20 s); activates Provoke on 1 high DEF enemy (14 s), DEF Down Lv.8 (20 s); targets 1 teammate with low current Special CT for Special CT 70% reduction",
+				uses: 3
+			},
+			{
+				festGPAbility: "[INT]-type teammates HP, SPD Up Lv.3, DEF Up Lv.2; Striker/Shooter class teammates Special CT Speed Up Lv.1, ATK, HP Up Lv.3",
+				festGPSpecial: "Targets 1 high SPD enemy for 80% chance of Action Bind (10 s), SPD Down Lv.9 (20 s); targets 1 high ATK enemy for 80% chance of Special Bind (10 s), ATK Down Lv.9 (20 s); activates Provoke on 1 high DEF enemy (16 s), DEF Down Lv.9 (20 s); targets 1 teammate with low current Special CT for Special CT 80% reduction",
+				uses: 3
+			},
+			{
+				festGPAbility: "[INT]-type teammates HP, SPD Up Lv.3, DEF Up Lv.2; Striker/Shooter class teammates Special CT Speed Up Lv.2, ATK, HP Up Lv.3",
+				festGPSpecial: "Targets 1 high SPD enemy for 90% chance of Action Bind (10 s), SPD Down Lv.9 (20 s); targets 1 high ATK enemy for 90% chance of Special Bind (10 s), ATK Down Lv.9 (20 s); activates Provoke on 1 high DEF enemy (18 s), DEF Down Lv.9 (20 s); targets 1 teammate with low current Special CT for Special CT 90% reduction",
+				uses: 3
+			},
+			{
+				festGPAbility: "[INT]-type teammates HP, SPD Up Lv.4, DEF Up Lv.2; Striker/Shooter class teammates Special CT Speed Up Lv.2, ATK, HP Up Lv.4",
+				festGPSpecial: "Targets 1 high SPD enemy for 100% chance of Action Bind (10 s), SPD Down Lv.10 (20 s); targets 1 high ATK enemy for 100% chance of Special Bind (10 s), ATK Down Lv.10 (20 s); activates Provoke on 1 high DEF enemy (20 s), DEF Down Lv.10 (20 s); targets 1 teammate with low current Special CT for Special CT 100% reduction",
+				uses: 3
+			}
+		],
+		festAbilityGPCondition: "After receiving damage 10 times"
+	},
+	4243: {
+		captain: "Boosts ATK of all characters by 4x, by 4.5x instead if HP is above 99% or below 10%, boosts HP of all characters by 1.2x, and makes [STR] orbs beneficial for all characters. If this character becomes your captain in the middle of an island, further boosts ATK of all characters by 1.2x, makes this character's normal attacks count as Type Effective against all Types, and reduces damage received by 15%.",
+		special: "Reduces Paralysis duration by 6 turns, adds 1.4x to Chain multiplier for 2 turns, and adds 80x character's ATK as Additional Typeless Damage for 2 turns. If your crew has 5 turns or more of End of Turn Healing when the special is activated, increases boost effects of Color Affinity and Orb Amplification buffs by +0.3x. If your crew has 7 turns or more of End of Turn Healing when the special is activated, ignores Debuff Protection and delays all enemies by 1 turn.",
+		specialCooldown: [
+			20,
+			14
+		],
+		specialName: "Cry of Relief",
+		sailor: {
+			base: "Makes [STR] orbs beneficial for all characters.",
+			level1: "Changes orbs of top row characters into [RCV] orbs and bottom row characters into [STR] orbs at the start of the fight."
+		},
+		support: [
+			{
+				Characters: "Coby, Tashigi, Monkey D. Garp, X Drake, Prince Grus, Kujaku, Hibari",
+				description: [
+					"Once per adventure, when an enemy inflicts you with Paralysis, reduces Paralysis duration by 1 turn, and adds 0.3x to Chain multiplier for 1 turn.",
+					"Once per adventure, when an enemy inflicts you with Paralysis, reduces Paralysis duration by 1 turn, and adds 0.4x to Chain multiplier for 1 turn.",
+					"Once per adventure, when an enemy inflicts you with Paralysis, reduces Paralysis duration by 1 turn, and adds 0.5x to Chain multiplier for 1 turn.",
+					"Once per adventure, when an enemy inflicts you with Paralysis, reduces Paralysis duration by 1 turn, and adds 0.6x to Chain multiplier for 1 turn.",
+					"Once per adventure, when an enemy inflicts you with Paralysis, reduces Paralysis duration by 1 turn, and adds 0.7x to Chain multiplier for 1 turn."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99,% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 95% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% or below 10% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% or below 15% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% or below 20% at the start of the turn"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Barrier Penetration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
+	4244: {
+		captain: "Boosts ATK of all characters 4x, boosts HP of all characters by 1.2x, and makes [QCK] orbs beneficial for all characters. Boosts ATK of all characters by an additive 0.1x after each PERFECT in a row, up to 4.5x.",
+		special: "Reduces enemies' Percent Damage Reduction duration by 6 turns, boosts Color Affinity of all characters by 2.25x for 2 turns, and adds 80x character's ATK as Additional Typeless Damage for 2 turns. If your crew has 5 turns or more of End of Turn Healing when the special is activated, increases boost effects of ATK Up buffs by +0.5x. If your crew has 7 turns or more of End of Turn Healing when the special is activated, up to 1 time per adventure, recovers 100% of crew's MAX HP.",
+		specialCooldown: [
+			21,
+			15
+		],
+		specialName: "Smile of Relief",
+		sailor: {
+			base: "Makes [QCK] orbs beneficial for all characters.",
+			level1: "Changes orbs of middle row characters into [RCV] orbs at the start of the fight."
+		},
+		support: [
+			{
+				Characters: "Coby, Helmeppo, Smoker, Monkey D. Garp, Prince Grus, Kujaku, Hibari",
+				description: [
+					"Once per adventure, when the supported character uses their special, boosts Color Affinity of all characters by 1.2x for 1 turn.",
+					"Once per adventure, when the supported character uses their special, boosts Color Affinity of all characters by 1.25x for 1 turn.",
+					"Once per adventure, when the supported character uses their special, reduces enemies' Percent Damage Reduction duration by 1 turn, and boosts Color Affinity of all characters by 1.25x for 1 turn.",
+					"Once per adventure, when the supported character uses their special, reduces enemies' Percent Damage Reduction duration by 1 turn, and boosts Color Affinity of all characters by 1.5x for 1 turn.",
+					"Once per adventure, when the supported character uses their special, reduces enemies' Percent Damage Reduction duration by 1 turn, and boosts Color Affinity of all characters by 1.75x for 1 turn."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 30% chance to deal 3% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Critical Hit" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
+	4245: {
+		captain: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, reduces Special Cooldown of all other characters by 1 turn at the start of the fight, boosts ATK of all character by 3x, and boosts HP of all characters by 1.25x. If you defeat an enemy, increases ATK boost slightly. Stacks up to 5 times to a maximum of 5x.",
+		special: [
+			{
+				description: "Deals 50x character's ATK in Typeless Fixed True damage to one enemy, reduces Bind duration by 1 turn, adds 50x character's ATK as Additional Typeless Damage for 2 turns, and increases duration of any End of Turn Healing buffs by 1 turn.",
+				cooldown: [ 11, 5 ]
+			},
+			{
+				description: "Reduces Special Cooldown of all characters by 1 turn, deals 80x character's ATK in Typeless Fixed True damage to one enemy, reduces Bind duration by 5 turns, adds 80x character's ATK as Additional Typeless Damage for 3 turns, recovers 3x character's RCV in HP at the end of each turn for 9 turns, and locks the chain multiplier at 3.25x for 3 turn. If HP is above 80% when the special is activated, reduces crew's current HP by 20%, and reduces Special Cooldown of this character by 4 turns.",
+				cooldown: [ 21, 15 ]
+			}
+		],
+		specialCooldown: [
+			21,
+			15
+		],
+		specialName: "Ice Ball Against His Mentor",
+		sailor: {
+			base: "Makes [DEX] orbs beneficial for all characters, and restores Special Cooldown of this character by 5 turns when it is rewinded.",
+			level1: "Boosts base ATK, HP and RCV of all characters by 60, and removes Stun duration completely on this character."
+		},
+		support: [
+			{
+				Characters: "Marshall D. Teach (Blackbeard), Lafitte, Van Ogre, Jesus Burgess (Mr. Store), Shiryu, Doc Q, Avalo Pizarro, Catarina Devon, Vasco Shot, San Juan Wolf",
+				description: [
+					"Adds 5% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.1x against Monkey D. Garp.",
+					"Adds 6% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.2x against Monkey D. Garp.",
+					"Adds 7% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.3x against Monkey D. Garp.",
+					"Adds 8% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.4x against Monkey D. Garp.",
+					"Adds 9% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.5x against Monkey D. Garp."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99,% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 95% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% or below 10% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 85% or below 15% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 80% or below 20% at the start of the turn"
+				]
+			},
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character",
+					"Reduces Sailor Despair duration by 4 turns on this character",
+					"Reduces Sailor Despair duration by 5 turns on this character"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 2: Barrier Penetration" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 75" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base ATK by 125" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Acquire Potential 3: Reduce Sailor Despair duration" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Acquire Sailor Ability 2: " }
+		],
+		festAbility: [
+			"Free Spirit/Shooter class teammates ATK Up Lv.1, HP Up Lv.1",
+			"Free Spirit/Shooter class teammates ATK Up Lv.2, HP Up Lv.1",
+			"Free Spirit/Shooter class teammates ATK Up Lv.3, HP Up Lv.2",
+			"Free Spirit/Shooter class teammates ATK Up Lv.4, HP Up Lv.2",
+			"Free Spirit/Shooter class teammates ATK Up Lv.5, HP Up Lv.3"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Heal Teammate in Range Lv.2 (Medium Range)",
+			"Power Attack",
+			"Heal Teammate in Range Lv.2 (Small Range)"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "60% chance to evade Special Bind",
+		festSpecial: [
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.1 (21 s), DEF Down Lv.1 (21 s), ATK x 1.1 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.1 (22 s), DEF Down Lv.1 (22 s), ATK x 1.2 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.1 (23 s), DEF Down Lv.1 (23 s), ATK x 1.3 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.2 (24 s), DEF Down Lv.2 (24 s), ATK x 1.4 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.2 (25 s), DEF Down Lv.2 (25 s), ATK x 1.5 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.3 (26 s), DEF Down Lv.3 (26 s), ATK x 1.6 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.3 (27 s), DEF Down Lv.3 (27 s), ATK x 1.7 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.3 (28 s), DEF Down Lv.3 (28 s), ATK x 1.8 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.4 (29 s), DEF Down Lv.4 (29 s), ATK x 1.9 damage"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.5 (30 s), DEF Down Lv.5 (30 s), ATK x 2 damage"
+			}
+		],
+		festStats: {
+			def: 147,
+			atk: 155,
+			style: "DBF"
+		}
+	},
+	4246: {
+		captain: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, reduces Special Cooldown of all other characters by 1 turn at the start of the fight, boosts ATK of all character by 4x, and boosts HP of all characters by 1.25x. If you defeat an enemy, increases ATK boost slightly. Stacks up to 4 times to a maximum of 5x.",
+		special: [
+			{
+				description: "Deals 50x character's ATK in Typeless Fixed True damage to one enemy, reduces Bind duration by 2 turns, adds 50x character's ATK as Additional Typeless Damage for 2 turns, locks all orbs for 1 turn, and increases duration of any End of Turn Healing buffs by 1 turn.",
+				cooldown: [ 11, 5 ]
+			},
+			{
+				description: "Reduces Special Cooldown of all characters by 2 turns, deals 80x character's ATK in Typeless Fixed True damage to one enemy, reduces Bind duration by 5 turns, and adds 80x character's ATK as Additional Typeless Damage for 3 turns. If your crew has 5 turns or more of End of Turn Healing when the special is activated, increases duration of any End of Turn Healing buffs by 3 turns and sets Chain Boundaries to 3.25x and 20.0x for 3 turns. If your crew does not have End of Turn Healing or has 4 turns or less of End of Turn Healing when the special is activated, recovers 3x character's RCV in HP at the end of each turn for 9 turns, and locks the chain multiplier at 3.25x for 3 turn. If HP is above 80% when the special is activated, reduces crew's current HP by 20%, and reduces Special Cooldown of this character by 4 turns.",
+				cooldown: [ 21, 15 ]
+			}
+		],
+		specialCooldown: [
+			21,
+			15
+		],
+		specialName: "Ice Glove Against His Mentor",
+		sailor: {
+			base: "Makes [DEX] orbs beneficial for all characters, and restores Special Cooldown of this character by 5 turns when it is rewinded",
+			level1: "Boosts base ATK, HP and RCV of all characters by 60, and removes Stun duration completely on this character"
+		},
+		support: [
+			{
+				Characters: "Marshall D. Teach (Blackbeard), Lafitte, Van Ogre, Jesus Burgess (Mr. Store), Shiryu, Doc Q, Avalo Pizarro, Catarina Devon, Vasco Shot, San Juan Wolf",
+				description: [
+					"Adds 5% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.1x against Monkey D. Garp.",
+					"Adds 6% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.2x against Monkey D. Garp.",
+					"Adds 7% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.3x against Monkey D. Garp.",
+					"Adds 8% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.4x against Monkey D. Garp.",
+					"Adds 9% of this character's base ATK to the supported character's base ATK. Boosts the supported character's ATK by 1.5x against Monkey D. Garp."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99,% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 95% or below 5% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% or below 10% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 85% or below 15% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 80% or below 20% at the start of the turn"
+				]
+			},
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character",
+					"Reduces Sailor Despair duration by 4 turns on this character",
+					"Reduces Sailor Despair duration by 5 turns on this character"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 2: Barrier Penetration" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 75" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base ATK by 125" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Acquire Potential 3: Reduce Sailor Despair duration" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Acquire Sailor Ability 2: " }
+		],
+		festAbility: [
+			"Free Spirit/Shooter class teammates ATK Up Lv.1, HP Up Lv.1; if 5 or more Free Spirit/Shooter characters are on the team, self ATK Up Lv.1, SPD Up Lv.1",
+			"Free Spirit/Shooter class teammates ATK Up Lv.2, HP Up Lv.2; if 5 or more Free Spirit/Shooter characters are on the team, self ATK Up Lv.2, SPD Up Lv.2",
+			"Free Spirit/Shooter class teammates ATK Up Lv.3, HP Up Lv.3; if 5 or more Free Spirit/Shooter characters are on the team, self ATK Up Lv.3, SPD Up Lv.3",
+			"Free Spirit/Shooter class teammates ATK Up Lv.4, HP Up Lv.4; if 5 or more Free Spirit/Shooter characters are on the team, self ATK Up Lv.4, SPD Up Lv.4",
+			"Free Spirit/Shooter class teammates ATK Up Lv.5, HP Up Lv.5; if 5 or more Free Spirit/Shooter characters are on the team, self ATK Up Lv.5, SPD Up Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Heal Teammate in Range Lv.2 (Medium Range)",
+			"Power Attack",
+			"Heal Teammate in Range Lv.2 (Small Range)"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "80% chance to evade Special Bind, reduce damage taken from [QCK] by 20％",
+		festSpecial: [
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.2 (21 s), DEF Down Lv.2 (21 s), ATK x 1.3 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.3 (21 s), SPD Down Lv.3 (21 s), DEF Down Lv.1 (21 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.2 (22 s), DEF Down Lv.2 (22 s), ATK x 1.4 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.3 (22 s), SPD Down Lv.3 (22 s), DEF Down Lv.1 (22 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.2 (23 s), DEF Down Lv.2 (23 s), ATK x 1.5 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.3 (23 s), SPD Down Lv.3 (23 s), DEF Down Lv.1 (23 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.3 (24 s), DEF Down Lv.3 (24 s), ATK x 1.6 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.4 (24 s), SPD Down Lv.4 (24 s), DEF Down Lv.2 (24 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.3 (25 s), DEF Down Lv.3 (25 s), ATK x 1.7 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.4 (25 s), SPD Down Lv.4 (25 s), DEF Down Lv.2 (25 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.4 (26 s), DEF Down Lv.4 (26 s), ATK x 1.8 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.5 (26 s), SPD Down Lv.5 (26 s), DEF Down Lv.3 (26 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.4 (27 s), DEF Down Lv.4 (27 s), ATK x 1.9 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.5 (27 s), SPD Down Lv.5 (27 s), DEF Down Lv.3 (27 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.4 (28 s), DEF Down Lv.4 (28 s), ATK x 2 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.5 (28 s), SPD Down Lv.5 (28 s), DEF Down Lv.3 (28 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.5 (29 s), DEF Down Lv.5 (29 s), ATK x 2.1 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.6 (29 s), SPD Down Lv.6 (29 s), DEF Down Lv.4 (29 s)"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range for ATK Down Lv.6 (30 s), DEF Down Lv.6 (30 s), ATK x 2.2 damage; if 5 or more Free Spirit/Shooter characters are on the team, targets 3 enemies with high Special CT for ATK Down Lv.7 (30 s), SPD Down Lv.7 (30 s), DEF Down Lv.5 (30 s)"
+			}
+		],
+		festStats: {
+			def: 172,
+			atk: 160,
+			style: "DBF"
+		}
+	},
+	4247: {
+		captain: "Reduces Special Cooldown of Powerhouse characters by 1 turn at the start of the fight, boosts ATK of Powerhouse characters by 5.25x, boosts HP of Powerhouse characters by 1.3x, reduces damage received by 15%, and deals 0x-500x character's ATK in Typeless damage to one enemy at the end of each turn depending on how many PERFECTs scored that turn. If this character has a [DEX], [TND], or [EMPTY] orb and you attack with this character, reduces enemies' Threshold Damage Reduction duration by 3 turns.",
+		special: "Reduces enemies' Damage Nullification duration by 1 turn, deals 500x character's ATK in [DEX] damage to one enemy, reduces any damage received above 2,000 HP by 96% for 2 turns, and boosts Color Affinity of Powerhouse characters by 2.75x, preventing buff clears, for 2 turns. If your crew has 6 Powerhouse characters and HP is below 50% when the special is activated, reduces Despair duration by 7 turns, reduces VS Gauge Cooldown and Swap Cooldown of Powerhouse characters by 2, and increases boost effects of Color Affinity buffs by +0.3x, including effects activated in the same Ability.",
+		specialCooldown: [
+			22,
+			17
+		],
+		specialName: "Pulverizing Hands of Doom",
+		sailor: {
+			level1: "Makes [DEX] orbs beneficial for Powerhouse characters.",
+			level2: "If your crew has 6 Powerhouse characters, boosts base ATK and HP of Powerhouse characters by 125."
+		},
+		support: [
+			{
+				Characters: "Powerhouse characters",
+				description: [
+					"Adds 5% of this character's base HP to the supported character's base HP.",
+					"Adds 6% of this character's base HP to the supported character's base HP.",
+					"Adds 8% of this character's base HP to the supported character's base HP.",
+					"Adds 10% of this character's base HP to the supported character's base HP.",
+					"Adds 13% of this character's base HP to the supported character's base HP."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Nutrition/Reduce Hunger stacks",
+				description: [
+					" Boosts base ATK by 3,000, the turn after recovering 50 HP and reduces Hunger stack by 1 stack",
+					" Boosts base ATK by 3,000, the turn after recovering 100 HP and reduces Hunger stack by 1 stack",
+					" Boosts base ATK by 3,000, the turn after recovering 150 HP and reduces Hunger stack by 2 stack",
+					" Boosts base ATK by 3,000, the turn after recovering 200 HP and reduces Hunger stack by 2 stack",
+					" Boosts base ATK by 3,000, the turn after recovering 300 HP and reduces Hunger stack by 3 stack"
+				]
+			},
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+				]
+			},
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Acquire Potential 1: Nutrition/Reduce Hunger stacks" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire Sailor Ability 1: Makes Powerhouse characters' [DEX] slots have matching slot effects" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Acquire Potential 2: Critical Hit" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Acquire Sailor Ability 2: If 6 Powerhouse characters are on the crew, boosts Powerhouse characters' base ATK and HP by 125" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Acquire Potential 3: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"Powerhouse/Free Spirit class teammates ATK Up Lv.2, HP Up Lv.2, SPD Up Lv.2; if 6 or more Powerhouse/Free Spirit characters are on the team, all enemies ATK Down Lv.2, SPD Down Lv.2",
+			"Powerhouse/Free Spirit class teammates ATK Up Lv.3, HP Up Lv.3, SPD Up Lv.3; if 6 or more Powerhouse/Free Spirit characters are on the team, all enemies ATK Down Lv.3, SPD Down Lv.3",
+			"Powerhouse/Free Spirit class teammates ATK Up Lv.4, HP Up Lv.4, SPD Up Lv.4; if 6 or more Powerhouse/Free Spirit characters are on the team, all enemies ATK Down Lv.4, SPD Down Lv.4",
+			"Powerhouse/Free Spirit class teammates ATK Up Lv.5, HP Up Lv.5, SPD Up Lv.5; if 6 or more Powerhouse/Free Spirit characters are on the team, all enemies ATK Down Lv.5, SPD Down Lv.5",
+			"Powerhouse/Free Spirit class teammates ATK Up Lv.6, HP Up Lv.6, SPD Up Lv.6; if 6 or more Powerhouse/Free Spirit characters are on the team, all enemies ATK Down Lv.6, SPD Down Lv.6"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Heal Teammate in Range Lv.2 (Medium Range)",
+			"Power Attack",
+			"Heal Teammate in Range Lv.2 (Small Range)"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Halve Stats, heal 300 HP at an interval, reduce damage taken from [QCK] by 30%",
+		festSpecial: [
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.3 (11 s); targets 3 enemies with high Special CT for 53% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 73% chance of Halve ATK/Halve DEF (11 s); targets self for ATK Up Lv.1 (21 s), DEF Up Lv.1 (21 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.3 (12 s); targets 3 enemies with high Special CT for 56% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 76% chance of Halve ATK/Halve DEF (12 s); targets self for ATK Up Lv.2 (22 s), DEF Up Lv.1 (22 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.3 (13 s); targets 3 enemies with high Special CT for 59% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 79% chance of Halve ATK/Halve DEF (13 s); targets self for ATK Up Lv.3 (23 s), DEF Up Lv.1 (23 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.4 (14 s); targets 3 enemies with high Special CT for 62% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 82% chance of Halve ATK/Halve DEF (14 s); targets self for ATK Up Lv.4 (24 s), DEF Up Lv.2 (24 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.4 (15 s); targets 3 enemies with high Special CT for 65% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 85% chance of Halve ATK/Halve DEF (15 s); targets self for ATK Up Lv.5 (25 s), DEF Up Lv.2 (25 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.5 (16 s); targets 3 enemies with high Special CT for 68% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 88% chance of Halve ATK/Halve DEF (16 s); targets self for ATK Up Lv.6 (26 s), DEF Up Lv.3 (26 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.5 (17 s); targets 3 enemies with high Special CT for 71% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 91% chance of Halve ATK/Halve DEF (17 s); targets self for ATK Up Lv.7 (27 s), DEF Up Lv.3 (27 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.5 (18 s); targets 3 enemies with high Special CT for 74% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 94% chance of Halve ATK/Halve DEF (18 s); targets self for ATK Up Lv.8 (28 s), DEF Up Lv.4 (28 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.6 (19 s); targets 3 enemies with high Special CT for 77% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 97% chance of Halve ATK/Halve DEF (19 s); targets self for ATK Up Lv.9 (29 s), DEF Up Lv.4 (29 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets enemies within large range for Miss % Up Lv.8 (20 s); targets 3 enemies with high Special CT for 80% chance of Special Bind (10 s); if 6 or more Powerhouse/Free Spirit characters are on the team, targets enemies within large range for 100% chance of Halve ATK/Halve DEF (20 s); targets self for ATK Up Lv.10 (30 s), DEF Up Lv.5 (30 s)"
+			}
+		],
+		festStats: {
+			def: 205,
+			atk: 137,
+			style: "DBF"
+		}
+	},
+	4248: {
+		captain: "Boosts ATK of [DEX] characters by 2.5x, and boosts HP of [DEX] characters by 1.2x.",
+		special: "Reduces Special Cooldown of Powerhouse characters by 1 turn, reduces enemies' Increased Defense duration by 4 turns, and reduces damage received by 50% for 4 turns.",
+		specialCooldown: [
+			13,
+			13
+		],
+		specialName: "Pulverizing Giant Body",
+		sailor: "Boosts base ATK of Powerhouse characters by 100.",
+		potential: [
+			{
+				Name: "[QCK] Damage Reduction",
+				description: [
+					"Reduces damage taken from [QCK] characters by 1%",
+					"Reduces damage taken from [QCK] characters by 2%",
+					"Reduces damage taken from [QCK] characters by 3%",
+					"Reduces damage taken from [QCK] characters by 4%",
+					"Reduces damage taken from [QCK] characters by 5%"
+				]
+			},
+			{
+				Name: "[STR] Damage Reduction",
+				description: [
+					"Reduces damage taken from [STR] characters by 1%",
+					"Reduces damage taken from [STR] characters by 2%",
+					"Reduces damage taken from [STR] characters by 3%",
+					"Reduces damage taken from [STR] characters by 4%",
+					"Reduces damage taken from [STR] characters by 5%"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Acquire Potential 1: [QCK] Damage Reduction" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base ATK by 150" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Acquire Potential 2: [STR] Damage Reduction" }
+		],
+		festAbility: [
+			"Powerhouse/Driven class teammates DEF Up Lv.1, HP Up Lv.1; if 6 or more Powerhouse/Driven characters are on the team, Powerhouse/Driven class teammates ATK Up Lv.1, DEF Up Lv.1, self Shield Lv.6",
+			"Powerhouse/Driven class teammates DEF Up Lv.2, HP Up Lv.2; if 6 or more Powerhouse/Driven characters are on the team, Powerhouse/Driven class teammates ATK Up Lv.2, DEF Up Lv.2, self Shield Lv.7",
+			"Powerhouse/Driven class teammates DEF Up Lv.3, HP Up Lv.3; if 6 or more Powerhouse/Driven characters are on the team, Powerhouse/Driven class teammates ATK Up Lv.3, DEF Up Lv.3, self Shield Lv.8",
+			"Powerhouse/Driven class teammates DEF Up Lv.4, HP Up Lv.4; if 6 or more Powerhouse/Driven characters are on the team, Powerhouse/Driven class teammates ATK Up Lv.4, DEF Up Lv.4, self Shield Lv.9",
+			"Powerhouse/Driven class teammates DEF Up Lv.5, HP Up Lv.5; if 6 or more Powerhouse/Driven characters are on the team, Powerhouse/Driven class teammates ATK Up Lv.5, DEF Up Lv.5, self Shield Lv.10"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Power Attack",
+			"Heal Teammate in Range Lv.1 (Small Range)",
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Damage Over Time, reduce damage taken from [QCK] by 30％",
+		festSpecial: [
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 1.3 damage; targets self for DEF Up Lv.2 (21 s); activates Provoke on self (21 s); targets Powerhouse/Driven class teammates for ATK x 1.3 Counter stance (21 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 1.4 damage; targets self for DEF Up Lv.2 (22 s); activates Provoke on self (22 s); targets Powerhouse/Driven class teammates for ATK x 1.4 Counter stance (22 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 1.5 damage; targets self for DEF Up Lv.2 (23 s); activates Provoke on self (23 s); targets Powerhouse/Driven class teammates for ATK x 1.5 Counter stance (23 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 1.6 damage; targets self for DEF Up Lv.3 (24 s); activates Provoke on self (24 s); targets Powerhouse/Driven class teammates for ATK x 1.6 Counter stance (24 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 1.7 damage; targets self for DEF Up Lv.3 (25 s); activates Provoke on self (25 s); targets Powerhouse/Driven class teammates for ATK x 1.7 Counter stance (25 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 1.8 damage; targets self for DEF Up Lv.4 (26 s); activates Provoke on self (26 s); targets Powerhouse/Driven class teammates for ATK x 1.8 Counter stance (26 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 1.9 damage; targets self for DEF Up Lv.4 (27 s); activates Provoke on self (27 s); targets Powerhouse/Driven class teammates for ATK x 1.9 Counter stance (27 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 2 damage; targets self for DEF Up Lv.4 (28 s); activates Provoke on self (28 s); targets Powerhouse/Driven class teammates for ATK x 2 Counter stance (28 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 2.1 damage; targets self for DEF Up Lv.5 (29 s); activates Provoke on self (29 s); targets Powerhouse/Driven class teammates for ATK x 2.1 Counter stance (29 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within large range for ATK x 2.2 damage; targets self for DEF Up Lv.6 (30 s); activates Provoke on self (30 s); targets Powerhouse/Driven class teammates for ATK x 2.2 Counter stance (30 s)"
+			}
+		],
+		festStats: {
+			def: 346,
+			atk: 86,
+			style: "DEF"
+		}
+	},
+	4249: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Fighter, Striker, and Cerebral characters by 5.25x, boosts HP of Fighter, Striker, and Cerebral characters by 1.25x, makes [PSY] and [TND] orbs beneficial for Fighter, Striker, and Cerebral characters, and reduces damage received by 15%. If Territory: Fighter class is on the field, boosts ATK of Fight characters by 6x. Up to 2 times per adventure, if a crew member uses a special to apply Territory, recovers 6,000 HP at the end of each turn for 7 turns, and reduces Silence and Bind duration by 6 turns.",
+		special: "Deals 150x character's ATK in Typeless Fixed True damage to all enemies, boosts Orb Effects of Fighter, Striker, and Cerebral characters by 2.75x for 2 turns, and reduces enemies' Damage Nullification duration by 2 turns. If this character is your Captain or Friend/Guest Captain when the special is activated, applies Territory: Fighter class to the field (boosts crew's ATK up to 1.5x and reduces damage taken up to 25% based on number of characters matching the territory) for 2 turns, reduces Special Cooldown of all characters by 1 turn, and increases boost effects of Orb Amplification buffs by +0.25x, including effects activated in the same Ability. If this character is a Crewmate when the special is activated, reduces Silence and Bind duration by 6 turns, and increases the duration of any Orb Amplification buffs by 1 turn, including effects activated in the same Ability.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Honesty Impact",
+		festAbility: [
+			"Fighter class teammates Special CT Speed Up Lv.1, ATK Up Lv.1; [PSY]-type teammates HP Up Lv.1, Critical % Up Lv.1",
+			"Fighter class teammates Special CT Speed Up Lv.2, ATK Up Lv.2; [PSY]-type teammates HP Up Lv.2, Critical % Up Lv.2",
+			"Fighter class teammates Special CT Speed Up Lv.3, ATK Up Lv.3; [PSY]-type teammates HP Up Lv.3, Critical % Up Lv.3",
+			"Fighter class teammates Special CT Speed Up Lv.4, ATK Up Lv.4; [PSY]-type teammates HP Up Lv.4, Critical % Up Lv.4",
+			"Fighter class teammates Special CT Speed Up Lv.4, ATK Up Lv.5; [PSY]-type teammates HP Up Lv.5, Critical % Up Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Damage Over Time, reduce damage taken from [INT] by 30％",
+		festSpecial: [
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 2500 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s); targets team for Special CT 1% reduction; targets 1 teammate with Special CT 100% or more for 50% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 2750 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s); targets team for Special CT 2% reduction; targets 1 teammate with Special CT 100% or more for 55% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3000 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s); targets team for Special CT 3% reduction; targets 1 teammate with Special CT 100% or more for 60% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3250 damage; targets Fighter class teammates for ATK Up Lv.4 (20 s); targets team for Special CT 4% reduction; targets 1 teammate with Special CT 100% or more for 65% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3500 damage; targets Fighter class teammates for ATK Up Lv.4 (20 s); targets team for Special CT 5% reduction; targets 1 teammate with Special CT 100% or more for 70% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3750 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s); targets team for Special CT 6% reduction; targets 1 teammate with Special CT 100% or more for 75% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 4000 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s); targets team for Special CT 7% reduction; targets 1 teammate with Special CT 100% or more for 80% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 4250 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s); targets team for Special CT 8% reduction; targets 1 teammate with Special CT 100% or more for 85% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 4500 damage; targets Fighter class teammates for ATK Up Lv.6 (20 s); targets team for Special CT 9% reduction; targets 1 teammate with Special CT 100% or more for 90% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 5000 damage; targets Fighter class teammates for ATK Up Lv.8 (20 s); targets team for Special CT 10% reduction; targets 1 teammate with Special CT 100% or more for 100% chance of Haste"
+			}
+		],
+		festStats: {
+			def: 158,
+			atk: 174,
+			style: "ATK"
+		}
+	},
+	4250: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Fighter, Striker, and Cerebral characters by 5.25x, boosts HP of Fighter, Striker, and Cerebral characters by 1.25x, makes [PSY] and [TND] orbs beneficial for Fighter, Striker, and Cerebral characters, and reduces damage received by 15%. If Territory: Fighter class is on the field, boosts ATK of Fight characters by 6x. Up to 2 times per adventure, if a crew member uses a special to apply Territory, recovers 6,000 HP at the end of each turn for 7 turns, and reduces Silence and Bind duration by 6 turns.",
+		special: "Deals 150x character's ATK in Typeless Fixed True damage to all enemies, boosts Orb Effects of Fighter, Striker, and Cerebral characters by 2.75x for 2 turns, and reduces enemies' Damage Nullification duration by 2 turns. If this character is your Captain or Friend/Guest Captain when the special is activated, applies Territory: Fighter class to the field (boosts crew's ATK up to 1.5x and reduces damage taken up to 25% based on number of characters matching the territory) for 2 turns, reduces Special Cooldown of all characters by 1 turn, and increases boost effects of Orb Amplification buffs by +0.25x, including effects activated in the same Ability. If this character is a Crewmate when the special is activated, reduces Silence and Bind duration by 6 turns, and increases the duration of any Orb Amplification buffs by 1 turn, including effects activated in the same Ability.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Honesty Impact",
+		sailor: {
+			level1: "Boosts base ATK, HP and RCV of all characters by 60, and reduces Silence duration by 6 turns on this character",
+			level2: "If your Captain is a Fighter character, reduces Despair duration by 1 turn"
+		},
+		superSpecial: "Deals 150x character's ATK in Typeless Fixed True damage to all enemies, reduces Silence duration by 10 turns on this character, changes all orbs, including [BLOCK] orbs, into [TND] orbs, increases duration of any End of Turn Healing buffs by 1 turn, changes Class 2 of Class 2 Shooter characters to Fighter for 2 turns, and transforms Fighter characters into Super Fighter characters.",
+		superSpecialCriteria: "This character must be captain and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Monkey D. Garp, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, X Drake",
+		support: [
+			{
+				Characters: "Monkey D. Luffy, Helmeppo, Tashigi, Monkey D. Garp, X Drake, Prince Grus, Kujaku, Hibari",
+				description: [
+					"Once per adventure, when an enemy inflicts you with Bind, increases boost effects of Orb Amplification buffs by +0.1x",
+					"Once per adventure, when an enemy inflicts you with Bind, increases boost effects of Orb Amplification buffs by +0.1x",
+					"Once per adventure, when an enemy inflicts you with Bind, reduces Bind duration by 1 turn, and increases boost effects of Orb Amplification buffs by +0.1x",
+					"Once per adventure, when an enemy inflicts you with Bind, reduces Bind duration by 1 turn, and increases boost effects of Orb Amplification buffs by +0.1x",
+					"Once per adventure, when an enemy inflicts you with Bind, reduces Bind duration by 2 turns, and increases boost effects of Orb Amplification buffs by +0.2x"
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character",
+					"Reduces Sailor Despair duration by 4 turns on this character",
+					"Reduces Sailor Despair duration by 5 turns on this character"
+				]
+			},
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 99% at the start of the turn, recovers 2x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Last Tap",
+				description: [
+					"Obtain Last Tap Lv.1",
+					"Obtain Last Tap Lv.2",
+					"Obtain Last Tap Lv.3",
+					"Obtain Last Tap Lv.4",
+					"Obtain Last Tap Lv.5"
+				]
+			}
+		],
+		lastTap: {
+			condition: "On the last Stage and your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Monkey D. Garp, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, X Drake",
+			description: [
+				"Boosts Chain Multiplier Growth Rate by 1.4x.",
+				"Boosts Chain Multiplier Growth Rate by 1.6x.",
+				"Boosts Chain Multiplier Growth Rate by 1.8x.",
+				"Reduces enemies' Percent Damage Reduction effect by 25% and boosts Chain Multiplier Growth Rate by 2x.",
+				"Reduces enemies' Percent Damage Reduction effect by 50% and boosts Chain Multiplier Growth Rate by 2x."
+			],
+		},
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Acquire Potential 1: Reduce Sailor Despair duration" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Sailor Ability 1: Boosts crew's base stats by 60, and reduces character's Special Bind duration by 6 turns" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Acquire Potential 2: Pinch Healing" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Acquire Sailor Ability 2: Reduces crew's Despair duration by 1 turn when Captain is a Fighter class" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 80" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire Potential 3: Last Tap" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base RCV by 30" }
+		],
+		festAbility: [
+			"Fighter class teammates Special CT Speed Up Lv.1, ATK Up Lv.1; [PSY]-type teammates HP Up Lv.1, Critical % Up Lv.1",
+			"Fighter class teammates Special CT Speed Up Lv.2, ATK Up Lv.2; [PSY]-type teammates HP Up Lv.2, Critical % Up Lv.2",
+			"Fighter class teammates Special CT Speed Up Lv.3, ATK Up Lv.3; [PSY]-type teammates HP Up Lv.3, Critical % Up Lv.3",
+			"Fighter class teammates Special CT Speed Up Lv.4, ATK Up Lv.4; [PSY]-type teammates HP Up Lv.4, Critical % Up Lv.4",
+			"Fighter class teammates Special CT Speed Up Lv.4, ATK Up Lv.5; [PSY]-type teammates HP Up Lv.5, Critical % Up Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Damage Over Time, reduce damage taken from [INT] by 30％",
+		festSpecial: [
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 2500 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s); targets team for Special CT 1% reduction; targets 1 teammate with Special CT 100% or more for 50% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 2750 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s); targets team for Special CT 2% reduction; targets 1 teammate with Special CT 100% or more for 55% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3000 damage; targets Fighter class teammates for ATK Up Lv.3 (20 s); targets team for Special CT 3% reduction; targets 1 teammate with Special CT 100% or more for 60% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3250 damage; targets Fighter class teammates for ATK Up Lv.4 (20 s); targets team for Special CT 4% reduction; targets 1 teammate with Special CT 100% or more for 65% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3500 damage; targets Fighter class teammates for ATK Up Lv.4 (20 s); targets team for Special CT 5% reduction; targets 1 teammate with Special CT 100% or more for 70% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 3750 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s); targets team for Special CT 6% reduction; targets 1 teammate with Special CT 100% or more for 75% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 4000 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s); targets team for Special CT 7% reduction; targets 1 teammate with Special CT 100% or more for 80% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 4250 damage; targets Fighter class teammates for ATK Up Lv.5 (20 s); targets team for Special CT 8% reduction; targets 1 teammate with Special CT 100% or more for 85% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 4500 damage; targets Fighter class teammates for ATK Up Lv.6 (20 s); targets team for Special CT 9% reduction; targets 1 teammate with Special CT 100% or more for 90% chance of Haste"
+			},
+			{
+				cooldown: 30,
+				description: "Targets enemies within large range (horizontal) for 5000 damage; targets Fighter class teammates for ATK Up Lv.8 (20 s); targets team for Special CT 10% reduction; targets 1 teammate with Special CT 100% or more for 100% chance of Haste"
+			}
+		],
+		festStats: {
+			def: 158,
+			atk: 174,
+			style: "ATK"
+		}
+	},
+	4251: {
+		captain: "Boosts ATK of Fighter characters by 3.5x, boosts HP of Fighter characters by 1.25x, boosts ATK of Fighter characters by 4.25x following a chain of GOOD > GREAT > PERFECT hits, and makes [STR] and [RCV] orbs beneficial for Fighter characters.",
+		special: "Reduces Special Cooldown of all characters by 1 turn, and deals 80x character's ATK in [STR] damage to one enemy. If this character used \"Protege-Training Battleship Bag\" 0 times this adventure, reduces enemies' Percent Damage Reduction duration by 4 turns, reduces ATK DOWN duration by 4 turns, and sets Chain Boundaries to 2.5x and 20.0x for 1 turn. If this character used \"Protege-Training Battleship Bag\" 1 or more times this adventure, reduces enemies' Percent Damage Reduction duration by 6 turns, reduces ATK DOWN duration by 6 turns, and boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3 turns or more of End of Turn Healing when the special is activated, up to 1 time per adventure, reduces Special Cooldown of this character by 8 turns.",
+		specialCooldown: [
+			18,
+			13
+		],
+		specialName: "Protege-Training Battleship Bag",
+		sailor: {
+			base: "Makes [STR] and [RCV] orbs beneficial for Fighter characters",
+			level1: "Boosts base ATK of Fighter characters by 60"
+		},
+		support: [
+			{
+				Characters: "Kuzan (Aokiji)",
+				description: [
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces ATK Down duration by 1 turn, and reduces Special Cooldown of supported character by 1 turn"
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Acquire Potential 1: Pinch Healing" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
+	4252: {
+		captain: "Boosts ATK of Fighter characters by 3.5x, boosts HP of Fighter characters by 1.25x, boosts ATK of Fighter characters by 4.375x following a chain of [QCK] > [STR] > [PSY] attacks no lower than Good, and makes [QCK] and [TND] orbs beneficial for Fighter characters.",
+		special: "Reduces Special Cooldown of all characters by 1 turn, and deals 70x character's ATK in [QCK] damage to one enemy. If this character used \"Apprenticing to Become Stronger\" 0 times this adventure, reduces enemies' Increased Defense duration by 4 turns, reduces Despair duration by 4 turns, and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn. If this character used \"Apprenticing to Become Stronger\" 1 or more times this adventure, reduces enemies' Increased Defense duration by 6 turns, reduces Despair duration by 6 turns, and increases Orb Effects of beneficial [TND] and [RCV] orbs to 2.5x for 1 turn. If your crew has 3 turns or more of End of Turn Healing when the special is activated, up to 1 time per adventure, reduces Special Cooldown of this character by 8 turns.",
+		specialCooldown: [
+			18,
+			13
+		],
+		specialName: "Apprenticing to Become Stronger",
+		sailor: {
+			base: "Makes [QCK] and [TND] orbs beneficial for Fighter characters",
+			level1: "Boosts base HP of Fighter characters by 100"
+		},
+		support: [
+			{
+				Characters: "Monkey D. Garp",
+				description: [
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces Special Cooldown of supported character by 1 turn",
+					"Once per adventure, when the supported character uses their special, reduces Despair duration by 1 turn, and reduces Special Cooldown of supported character by 1 turn"
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 80% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 50% at the start of the turn"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 1: Pinch Healing" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Barrier Penetration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
+	4253: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [STR], Slasher, and Powerhouse characters by 4.5x, by 5.25x instead if they have a beneficial orb, boosts HP of [STR], Slasher, and Powerhouse characters by 1.2x, and makes [RCV] and [TND] orbs beneficial for [STR], Slasher, and Powerhouse characters. Once per adventure, if HP is below 20%, activates \"Stealthy Sword Thrust\" in the following turn.<br><b>Action:</b> For 5 turns, this character becomes Transparent and prevents all debuffs to themselves (including, but not limited to, Bind, Despair, Silence, Slot Bind, Special Rewind, and Paralysis), makes own normal attacks ignore defense, damage reducing Barriers and Buffs, and adds 300x character's ATK as Additional Typeless Damage to own's attacks.",
+		special: "Deals 20% of enemies' current HP in damage to all enemies, reduces Beneficial Orb Buff and Non-beneficial Orb Debuff duration by 7 turns, adds 1.8x to Chain Multiplier for 1 turn, and changes the orb, including [BLOCK] orbs, of this character into a [TND] orb. If enemies are inflicted with Set Target when the special is activated, reduces the defense of all enemies by 100% for 2 turns, and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 2x for 1 turn. If HP is below 20% when the special is activated, inflicts all enemies with Set Target, increasing damage taken from Slasher and Powerhouse characters by 2x and reducing Special Cooldown of Slasher and Powerhouse characters by 2 turns when they defeat an enemy, for 1 turn. If HP is above 20% when the special is activated, inflicts all enemies with Set Target, increasing damage taken from Slasher and Powerhouse characters by 1.75x and reducing Special Cooldown of Slasher and Powerhouse characters by 1 turn when they defeat an enemy, for 1 turn.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Stealthy Sword Thrust",
+		sailor: {
+			base: "Boosts base ATK of Slasher and Powerhouse characters by 100.",
+			level1: "Makes [STR] and [TND] orbs beneficial for Slasher and Powerhouse characters."
+		},
+		support: [
+			{
+				Characters: "Marshall D. Teach (Blackbeard), Kuzan (Aokiji), Lafitte, Van Ogre, Jesus Burgess (Mr. Store), Doc Q, Avalo Pizarro, Catarina Devon, Vasco Shot, San Juan Wolf",
+				description: [
+					"Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, changes the orb of the supported character into a [TND] orb.",
+					"Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, changes the orb, including [BLOCK] orbs, of the supported character into a [TND] orb.",
+					"Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces Beneficial Orb Buff and Non-beneficial Orb Debuff duration by 1 turn, and changes the orb, including [BLOCK] orbs, of the supported character into a [TND] orb.",
+					"Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces Beneficial Orb Buff and Non-beneficial Orb Debuff duration by 2 turns, and changes the orb, including [BLOCK] orbs, of the supported character into a [TND] orb.",
+					"Once per adventure, when an enemy inflicts you with an Orb Randomization or Orb Manipulation, reduces Beneficial Orb Buff and Non-beneficial Orb Debuff duration by 3 turns, and changes the orb, including [BLOCK] orbs, of the supported character into a [TND] orb."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+				]
+			},
+			{
+				Name: "Super Tandem",
+				description: [
+					"Obtain Super Tandem Lv.1",
+					"Obtain Super Tandem Lv.2",
+					"Obtain Super Tandem Lv.3",
+					"Obtain Super Tandem Lv.4",
+					"Obtain Super Tandem Lv.5"
+				]
+			}
+		],
+		superTandem: {
+			characterCondition: [
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Marshall D. Teach (Blackbeard), Jesus Burgess (Mr. Store), Van Ogre, Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot, Doc Q, Kuzan (Aokiji)",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Marshall D. Teach (Blackbeard), Jesus Burgess (Mr. Store), Van Ogre, Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot, Doc Q, Kuzan (Aokiji)",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Marshall D. Teach (Blackbeard), Jesus Burgess (Mr. Store), Van Ogre, Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot, Doc Q, Kuzan (Aokiji)",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Marshall D. Teach (Blackbeard), Jesus Burgess (Mr. Store), Van Ogre, Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot, Doc Q, Kuzan (Aokiji)",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Marshall D. Teach (Blackbeard), Jesus Burgess (Mr. Store), Van Ogre, Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot, Doc Q, Kuzan (Aokiji)"
+			],
+			description: [
+				"Boosts Tandem ATK of Slasher and Powerhouse characters by 1.25x for 1 turn, and boosts Chain Multiplier Growth Rate by 1.1x on activation.",
+				"Boosts Tandem ATK of Slasher and Powerhouse characters by 1.5x for 1 turn, and boosts Chain Multiplier Growth Rate by 1.15x on activation.",
+				"Boosts Tandem ATK of Slasher and Powerhouse characters by 1.75x for 1 turn, and boosts Chain Multiplier Growth Rate by 1.2x on activation.",
+				"Boosts Tandem ATK of Slasher and Powerhouse characters by 2x for 1 turn, and boosts Chain Multiplier Growth Rate by 1.25x on activation.",
+				"Boosts Tandem ATK of Slasher and Powerhouse characters by 2.25x for 1 turn, boosts Chain Multiplier Growth Rate by 1.3x on activation, and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters."
+			]
+		},
+		limit: [
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 2: Critical Hit" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 40" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 60" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 60" },
+			{ description: "Acquire Potential 3: Super Tandem" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"Powerhouse class teammates HP Up Lv.2, DEF, Critical % Up Lv.1; when striking a Critical, up to 2 times team ATK, SPD Up Lv.1",
+			"Powerhouse class teammates HP Up Lv.3, DEF, Critical % Up Lv.2; when striking a Critical, up to 2 times team ATK, SPD Up Lv.2",
+			"Powerhouse class teammates HP Up Lv.4, DEF, Critical % Up Lv.3; when striking a Critical, up to 2 times team ATK, SPD Up Lv.3",
+			"Powerhouse class teammates HP Up Lv.5, DEF, Critical % Up Lv.4; when striking a Critical, up to 2 times team ATK, SPD Up Lv.4",
+			"Powerhouse class teammates HP Up Lv.6, DEF, Critical % Up Lv.5; when striking a Critical, up to 2 times team ATK, SPD Up Lv.4"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Damage Over Time, reduce damage taken from [DEX] by 30％",
+		festSpecial: [
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.1 (6 s), Critical % Up Lv.1 (6 s); targets 1 enemy with low current HP ignoring DEF for ATK x 1.5 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.2 (6 s), Critical % Up Lv.2 (6 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.1 (7 s), Critical % Up Lv.1 (7 s); targets 1 enemy with low current HP ignoring DEF for ATK x 1.6 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.2 (7 s), Critical % Up Lv.2 (7 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.1 (8 s), Critical % Up Lv.1 (8 s); targets 1 enemy with low current HP ignoring DEF for ATK x 1.7 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.2 (8 s), Critical % Up Lv.2 (8 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.1 (9 s), Critical % Up Lv.1 (9 s); targets 1 enemy with low current HP ignoring DEF for ATK x 1.8 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.3 (9 s), Critical % Up Lv.3 (9 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.2 (10 s), Critical % Up Lv.2 (10 s); targets 1 enemy with low current HP ignoring DEF for ATK x 1.9 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.3 (10 s), Critical % Up Lv.3 (10 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.2 (11 s), Critical % Up Lv.2 (11 s); targets 1 enemy with low current HP ignoring DEF for ATK x 2 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.4 (11 s), Critical % Up Lv.4 (11 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.2 (12 s), Critical % Up Lv.2 (12 s); targets 1 enemy with low current HP ignoring DEF for ATK x 2.1 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.4 (12 s), Critical % Up Lv.4 (12 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.3 (13 s), Critical % Up Lv.3 (13 s); targets 1 enemy with low current HP ignoring DEF for ATK x 2.2 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.4 (13 s), Critical % Up Lv.4 (13 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.3 (14 s), Critical % Up Lv.3 (14 s); targets 1 enemy with low current HP ignoring DEF for ATK x 2.3 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.5 (14 s), Critical % Up Lv.5 (14 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets self for ATK Up Lv.4 (15 s), Critical % Up Lv.4 (15 s); targets 1 enemy with low current HP ignoring DEF for ATK x 2.5 damage; if \"Marshall D. Teach (Blackbeard)\", \"Jesus Burgess (Mr. Store)\", \"Van Ogre\", \"Avalo Pizarro\", \"Lafitte\", \"Catarina Devon\", \"San Juan Wolf\", \"Vasco Shot\", \"Doc Q\", or \"Kuzan (Aokiji)\" is on the team, targets Powerhouse class teammates for ATK Up Lv.6 (15 s), Critical % Up Lv.6 (15 s)"
+			}
+		],
+		festStats: {
+			def: 129,
+			atk: 181,
+			style: "ATK"
+		}
+	},
+	4254: {
+		captain: "Boosts ATK of Shooter and Powerhouse characters by 4x, by 4.25x instead if HP is below 20% at the start of the turn, and boosts HP of Shooter and Powerhouse characters by 1.5x.",
+		special: "Reduces Special Cooldown of Powerhouse characters by 2 turns, inflicts all enemies with Burn that will deal 50x enemies' ATK in damage for 3 turns, reduces enemies' Threshold Damage Reduction duration by 6 turns, changes [BLOCK] and Badly Matching orbs into Matching orbs, increases boost effects of Chain Addition buffs applied by Powerhouse characters by +0.8x for 3 turns, and reduces crew's current HP by 90%. If your Captain is a Powerhouse character, boosts ATK against enemies inflicted with Burn and enemies with reduced defense by 2.25x for 3 turns.",
+		specialCooldown: [
+			19,
+			14
+		],
+		specialName: "Drunken Spitfire",
+		sailor: {
+			base: "Restores Special Cooldown of this character by 2 turns when it is rewinded.",
+			level1: "Removes Stun duration completely on this character."
+		},
+		support: [
+			{
+				Characters: "Marshall D. Teach (Blackbeard), Kuzan (Aokiji), Lafitte, Van Ogre, Jesus Burgess (Mr. Store), Shiryu, Doc Q, Avalo Pizarro, Catarina Devon, San Juan Wolf",
+				description: [
+					"Once per adventure, when the supported character uses their special, increases boost effects of Chain Lock buffs by +0.1x.",
+					"Once per adventure, when the supported character uses their special, increases boost effects of Chain Lock buffs by +0.12x.",
+					"Once per adventure, when the supported character uses their special, increases boost effects of Chain Lock buffs by +0.15x.",
+					"Once per adventure, when the supported character uses their special, increases boost effects of Chain Lock buffs by +0.2x.",
+					"Once per adventure, when the supported character uses their special, increases boost effects of Chain Lock buffs by +0.25x."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 15% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 20% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 25% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 30% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 99,% or below 30% at the start of the turn"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Barrier Penetration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "ATK"
+		}
+	},
+	4255: {
+		captain: "Boosts ATK of Fighter and Powerhouse characters by 3.5x, and boosts HP of Fighter and Powerhouse characters by 1.2x.",
+		special: "Reduces enemies' Resilience duration by 6 turns. If HP is below 91% when the special is activated, reduces bind duration by 5 turns; reduces crew's current HP by 90% and boosts ATK of Fighter and Powerhouse characters by 2.25x for 3 turns otherwise.",
+		specialCooldown: [
+			13,
+			13
+		],
+		specialName: "Summoning the Junior Officer",
+		sailor: "Boosts base ATK of Fighter and Powerhouse characters by 60.",
+		support: [
+			{
+				Characters: "Coby, Helmeppo, Tashigi, Monkey D. Garp, Sengoku, Borsalino (Kizaru), Sakazuki (Akainu)",
+				description: [
+					"Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Fighter Resistance by -8% for 1 turn.",
+					"Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Fighter Resistance by -9% for 1 turn.",
+					"Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Fighter Resistance by -10% for 1 turn.",
+					"Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Fighter Resistance by -10% for 1 turn, and increases duration of any Orb Amplification buffs by 1 turn.",
+					"Once per adventure, when the supported character uses an Orb Amplification special, reduces enemies' Fighter Resistance by -10% for 1 turn, and increases duration of any Orb Amplification and End of Turn Healing buffs by 1 turn."
+				]
+			}
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "SPT"
+		}
+	},
+	4256: {
+		captain: {
+            base: "Reduces Special Cooldown of [QCK] characters by 1 turn at the start of the fight, boosts ATK of [QCK] characters by 4.75x, by 5x instead if HP is above 70% at the start of the turn, boosts ATK of [QCK] characters against enemies inflicted with Toxic or Poison by 1.1x, boosts ATK of all other characters by 4.25x, boosts HP of all characters by 1.3x, makes [QCK] and [TND] orbs beneficial for all characters, and reduces Paralysis duration by 10 turns, and recovers 25% of damage taken from enemies in the previous stage when entering a new stage.",
+            llbbase: "Reduces Special Cooldown of [QCK] characters by 1 turn at the start of the fight, boosts ATK of [QCK] characters by 5x, by 5.25x instead if HP is above 70% at the start of the turn, boosts ATK of [QCK] characters against enemies inflicted with Toxic or Poison by 1.1x, boosts ATK of all other characters by 4.5x, boosts HP of all characters by 1.3x, makes [QCK] and [TND] orbs beneficial for all characters, reduces Paralysis duration by 10 turns, and recovers 25% of damage taken from enemies in the previous stage when entering a new stage. If a crew member uses a special to inflict Poison or Toxic to all enemies, ignores Debuff Protection and inflicts all enemies with that status effect."
+        },
+        special: {
+            base: "Deals 20% of enemies' current HP in True damage to all enemies, reduces Bind and Burn duration by 3 turns, boosts the Color Affinity of all characters by 2.5x for 1 turn, and inflicts Toxic to all enemies. If enemies are inflicted with Toxic or Poison when the special is activated, boosts ATK of all characters by 2.75x for 1 turn, and reduces enemies' [QCK] Resistance by -10% for 1 turn.",
+            llbbase: "Deals 20% of enemies' current HP in True damage to all enemies, reduces Bind and Burn duration by 4 turns, boosts the Color Affinity of all characters by 2.75x for 1 turn, and inflicts Toxic to all enemies. If enemies are inflicted with Toxic or Poison or have 10 or more status effects when the special is activated, boosts ATK of all characters by 2.75x for 1 turn, and reduces enemies' [QCK], Shooter, and Powerhouse Resistance by -10% for 1 turn."
+        },
+        specialNotes: "Toxic starts at 60x character's attack and increases by 2x at the end of every turn until 3,000,000 damage per turn.",
+        specialCooldown: [
+			20,
+			15
+		],
+		specialName: "Forbidden Technique \"Venom Demon: Judgment of Hell\"",
+		sailor: {
+			level1: "Reduces Paralysis duration completely on this character.",
+			level2: "When any other [QCK] character uses a special, reduces special cooldown of this character by 3 turns."
+		},
+		superSpecial: "Removes Poison duration completely, inflicts Toxic to all enemies (Starting Damage: 50x character's ATK, Damage Limit: 3,000,000), recovers 50% of damage taken from enemies on the stage when entering a new stage for 1 stage, and transforms [QCK] characters into Super [QCK] characters.",
+		superSpecialCriteria: "This character must be captain and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Hannyabal, Shiryu, Domino, Sadie, Saldeath, Boa Hancock, Sengoku, Sakazuki (Akainu), Kuzan (Aokiji), Borsalino (Kizaru)",
+		support: [
+			{
+				Characters: "Domino, Sadie, Hannyabal, Saldeath, Shiryu",
+				description: [
+					"Once per adventure, when the supported character uses their special, inflicts Toxic to all enemies (Starting Damage: 10x character's ATK, Damage Limit: 500,000).",
+					"Once per adventure, when the supported character uses their special, inflicts Toxic to all enemies (Starting Damage: 20x character's ATK, Damage Limit: 700,000).",
+					"Once per adventure, when the supported character uses their special, inflicts Toxic to all enemies (Starting Damage: 30x character's ATK, Damage Limit: 800,000).",
+					"Once per adventure, when the supported character uses their special, inflicts Toxic to all enemies (Starting Damage: 40x character's ATK, Damage Limit: 900,000).",
+					"Once per adventure, when the supported character uses their special, inflicts Toxic to all enemies (Starting Damage: 50x character's ATK, Damage Limit: 1,000,000)."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 50% at the start of the turn",
+					"This character's normal attack will ignore barriers"
+				]
+			},
+			{
+				Name: "Double Special Activation",
+				description: [
+					"Once per adventure, reduces character's Special charge time by 1 turn after character uses Special",
+					"Once per adventure, reduces character's Special charge time by 2 turns after character uses Special",
+					"Once per adventure, reduces character's Special charge time by 3 turns after character uses Special",
+					"Once per adventure, reduces character's Special charge time by 5 turns after character uses Special",
+					"Once per adventure, sets character's Special charge to MAX after character uses Special"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Acquire Potential 1: Pinch Healing" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Acquire Sailor Ability 1: Lets character completely evade Paralysis" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 2: Barrier Penetration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire Sailor Ability 2: Reduces character's Special charge time by 3 turns every time another [QCK] character uses a Special" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Acquire Potential 3: Double Special Activation" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base RCV by 25" },
+			{ description: "Boosts base RCV by 25" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 200" }
+		],
+		festAbility: {
+            base: [
+                "[QCK]-type teammates HP Up Lv.2, ATK Up Lv.2; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.3, ATK Up Lv.3; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.4, ATK Up Lv.4; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.5, ATK Up Lv.5; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.6, ATK Up Lv.6; first 30 s of battle, self Special CT Speed Up Lv.2"
+		    ],
+            llbbase: [
+                "[QCK]-type teammates HP Up Lv.2, ATK Up Lv.2, SPD Up Lv.2; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.3, ATK Up Lv.3, SPD Up Lv.3; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.4, ATK Up Lv.4, SPD Up Lv.4; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.5, ATK Up Lv.5, SPD Up Lv.5; first 30 s of battle, self Special CT Speed Up Lv.2",
+                "[QCK]-type teammates HP Up Lv.6, ATK Up Lv.6, SPD Up Lv.6; first 30 s of battle, self Special CT Speed Up Lv.2"
+            ]
+        },
+		lLimit: {
+			captain: true,
+			special: true,
+			rAbility: true,
+			rSpecial: true,
+			rResilience: true
+		},
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: {
+            base: "Completely evades Special Bind, reduce damage taken from [STR] by 30％",
+            llbbase: "Completely evades Special Bind, reduce damage taken from [STR] by 40％"
+        },
+		festSpecial: {
+            base: [
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.1 (20 s), ATK x 1.5 damage; targets self for 50% chance of Haste; targets 1 [QCK]-type teammate for 30% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.1 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.1 (20 s), ATK x 1.6 damage; targets self for 55% chance of Haste; targets 1 [QCK]-type teammate for 32% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.1 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.1 (20 s), ATK x 1.7 damage; targets self for 60% chance of Haste; targets 1 [QCK]-type teammate for 34% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.1 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.1 (20 s), ATK x 1.8 damage; targets self for 65% chance of Haste; targets 1 [QCK]-type teammate for 36% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.1 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.2 (20 s), ATK x 1.9 damage; targets self for 70% chance of Haste; targets 1 [QCK]-type teammate for 38% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.2 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.2 (20 s), ATK x 2 damage; targets self for 75% chance of Haste; targets 1 [QCK]-type teammate for 40% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.2 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.2 (20 s), ATK x 2.1 damage; targets self for 80% chance of Haste; targets 1 [QCK]-type teammate for 42% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.2 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.3 (20 s), ATK x 2.2 damage; targets self for 85% chance of Haste; targets 1 [QCK]-type teammate for 44% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.3 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.3 (20 s), ATK x 2.3 damage; targets self for 90% chance of Haste; targets 1 [QCK]-type teammate for 46% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.3 (20 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.4 (20 s), ATK x 2.5 damage; targets self for 100% chance of Haste; targets 1 [QCK]-type teammate for 50% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.4 (20 s)"
+                }
+            ],
+            llbbase: [
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.1 (25 s), ATK x 2 damage; targets self for 50% chance of Haste; targets 1 [QCK]-type teammate for 30% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.1 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.1 (25 s), ATK x 2.1 damage; targets self for 55% chance of Haste; targets 1 [QCK]-type teammate for 32% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.1 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.1 (25 s), ATK x 2.2 damage; targets self for 60% chance of Haste; targets 1 [QCK]-type teammate for 34% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.1 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.2 (25 s), ATK x 2.3 damage; targets self for 65% chance of Haste; targets 1 [QCK]-type teammate for 36% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.2 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.2 (25 s), ATK x 2.4 damage; targets self for 70% chance of Haste; targets 1 [QCK]-type teammate for 38% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.2 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.3 (25 s), ATK x 2.5 damage; targets self for 75% chance of Haste; targets 1 [QCK]-type teammate for 40% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.3 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.3 (25 s), ATK x 2.6 damage; targets self for 80% chance of Haste; targets 1 [QCK]-type teammate for 42% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.3 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.3 (25 s), ATK x 2.7 damage; targets self for 85% chance of Haste; targets 1 [QCK]-type teammate for 44% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.3 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.4 (25 s), ATK x 2.8 damage; targets self for 90% chance of Haste; targets 1 [QCK]-type teammate for 46% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.4 (25 s)"
+                },
+                {
+                    cooldown: 27,
+                    description: "Targets enemies within large range for DEF Down Lv.5 (25 s), ATK x 3 damage; targets self for 100% chance of Haste; targets 1 [QCK]-type teammate for 50% chance of Haste; first 40 s of battle, targets all enemies for DEF Down Lv.5 (25 s)"
+                }
+            ]
+        },
+		festStats: {
+			def: 165,
+			atk: 200,
+			style: "DBF"
+		}
+	},
+	4257: {
+		captain: {
+			character1: "Reduces Special Cooldown of ship by 5 turns at the start of the fight, boosts ATK of Slasher characters by 5.5x, boosts ATK of all other characters by 5x, boosts HP of Slasher characters by 1.25x, makes [STR] and [INT] orbs beneficial for Slasher characters, and reduces Bind duration completely. When a [STR] or [INT] character performs a Critical Hit, reduces enemies' Percent Damage Reduction duration by 2 turns.",
+			character2: "Boosts ATK of all characters by 5.25x, boosts HP and RCV of all characters by 1.25x, makes [STR] and [INT] orbs beneficial for all characters, reduces damage received by 20%, and reduces Bind duration completely. When a [STR] or [INT] character performs a Critical Hit, reduces enemies' Increased Defense duration by 2 turns.",
+			combined: "Reduces Special Cooldown of ship by 5 turns at the start of the fight, boosts ATK of Slasher characters by 5.75x, boosts ATK of all other characters by 5.5x, boosts HP and RCV of all characters by 1.25x, makes [STR] and [INT] orbs beneficial for all characters, reduces damage received by 20%, and reduces Bind duration completely. When a [STR] or [INT] character performs a Critical Hit, reduces enemies' Percent Damage Reduction and Increased Defense duration by 2 turns."
+		},
+		special: "Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to all enemies, reduces enemies' Barrier duration by 2 turns, reduces Pain duration by 6 turns, boosts ATK of [STR], [INT], and Slasher characters by 3x, preventing buff clears, for 3 turns, changes all orbs, including [BLOCK] orbs, into Matching orbs, and becomes Roger & Rayleigh & Gaban for 3 turns. If this character is your Captain or Friend/Guest Captain when the special is activated, increases Orb Effects of beneficial [STR] and [INT] orbs to 2.75x for 3 turns. If this character is a Crewmate when the special is activated, recovers 40% of crew's MAX HP, locks all orbs for 1 turn, and reduces Bind duration by 7 turns.",
+		specialCooldown: [
+			22,
+			17
+		],
+		specialName: "Furious Onslaught",
+		sailor: {
+			character1: "Boosts base ATK, HP and RCV of Slasher characters by 100.",
+			character2: "Boosts base ATK, HP and RCV of Slasher characters by 100.",
+			combined: "Boosts base ATK, HP and RCV of Slasher characters by 100.",
+			level1: "Reduces Special Cooldown of Slasher characters by 1 turn at the start of the fight."
+		},
+		swap: "Reduces Silence duration by 1 turn, changes orbs of adjacent characters into Matching orbs, and reduces enemies' Slasher Resistance by -10% for 1 turn.<br><b>Captain Shift:</b> If Gol D. Roger is Captain and switches to Rayleigh & Gaban, optionally swaps this unit with your middle-right unit for 10 turns. If Rayleigh & Gaban is your middle-right unit and switches to Gol D. Roger, optionally swaps this unit with your captain for 10 turns. Reduces Special Cooldown of this character by 5 turns, and boosts Critical Hit Rate of [STR] and [INT] characters by 30% for 2 turns. This effect is limited to 2 uses per adventure.",
+		superSpecial: "Optionally removes Captain Swap duration completely, boosts Critical Hit Damage of [STR] and [INT] characters by 50% for 2 turns, and transforms Slasher characters into Super Slasher characters.",
+		superSpecialCriteria: "When character becomes Roger & Rayleigh & Gaban during Captain Shift and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Kozuki Oden, Edward Newgate (Whitebeard), Crocus, Shanks, Buggy, Dogstorm, Cat Viper, Portgas D. Ace",
+		potential: [
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+				]
+			},
+			{
+				Name: "Last Tap",
+				description: [
+					"Obtain Last Tap Lv.1",
+					"Obtain Last Tap Lv.2",
+					"Obtain Last Tap Lv.3",
+					"Obtain Last Tap Lv.4",
+					"Obtain Last Tap Lv.5"
+				]
+			}
+		],
+		lastTap: {
+			condition: "On the last Stage",
+			description: [
+				"Boosts base ATK of this character by +1,000 for 1 turn.",
+				"Changes orb, including [BLOCK] orb, of this character into a Matching orb, and boosts base ATK of this character by +1,000 for 1 turn.",
+				"Changes orb, including [BLOCK] orb, of this character into a Matching orb, and boosts base ATK of this character by +1,500 for 1 turn.",
+				"Changes orb, including [BLOCK] orb, of this character into a Matching orb, reduces enemies' Slasher Resistance by -10% for 1 turn, and boosts base ATK of this character by +2,000 for 1 turn.",
+				"Changes orb, including [BLOCK] and [SUPERBLOCK] orb, of this character into a Matching orb, reduces enemies' Slasher Resistance by -10% for 1 turn, and boosts base ATK of this character by +2,500 for 1 turn."
+			],
+		},
+		limit: [
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Acquire Potential 1: Pinch Healing" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 2: Critical Hit" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Acquire Potential 3: Last Tap" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"Slasher/Free Spirit class teammates ATK Up Lv.2, HP Up Lv.2, Special CT Speed Up Lv.1; first 60 s of battle, self DEF Up Lv.6",
+			"Slasher/Free Spirit class teammates ATK Up Lv.3, HP Up Lv.3, Special CT Speed Up Lv.1; first 60 s of battle, self DEF Up Lv.7",
+			"Slasher/Free Spirit class teammates ATK Up Lv.4, HP Up Lv.4, Special CT Speed Up Lv.1; first 60 s of battle, self DEF Up Lv.8",
+			"Slasher/Free Spirit class teammates ATK Up Lv.5, HP Up Lv.5, Special CT Speed Up Lv.1; first 60 s of battle, self DEF Up Lv.9",
+			"Slasher/Free Spirit class teammates ATK Up Lv.6, HP Up Lv.6, Special CT Speed Up Lv.3; first 60 s of battle, self DEF Up Lv.10"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Heal 250 HP at an interval, reduce damage taken from Fighter and Driven by 30%",
+		festSpecial: [
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 10% reduction; targets all enemies for 50% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 1 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 14% reduction; targets all enemies for 55% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 1.3 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 18% reduction; targets all enemies for 60% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 1.6 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 22% reduction; targets all enemies for 65% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 1.9 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 26% reduction; targets all enemies for 70% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 2.2 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 30% reduction; targets all enemies for 75% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 2.5 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 34% reduction; targets all enemies for 80% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 2.8 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 38% reduction; targets all enemies for 85% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 3.1 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 42% reduction; targets all enemies for 90% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 3.4 damage"
+			},
+			{
+				cooldown: 31,
+				description: "Targets 1 enemy with high current HP for HP 50% reduction; targets all enemies for 100% chance of Halve DEF (20 s); targets 3 enemies with low current HP for ATK x 4 damage"
+			}
+		],
+		festStats: {
+			def: 182,
+			atk: 183,
+			style: "ATK"
+		}
+	},
+	4258: {
+		captain: "Locks all orbs for 4 turns at the start of the fight, reduces Special Cooldown of all characters by 1 turn and advances Special Cooldown of this character to MAX at the start of the fight, boosts ATK of [STR] and [INT] characters by 3x, and boosts HP of [STR] and [INT] characters by 1.5x.",
+		special: "Deals 80x character's ATK in Typeless Fixed True damage to one enemy, reduces Silence duration by 6 turns, changes all orbs into Matching orbs, and locks the chain multiplier at 3.5x for 3 turns. If this character was Captain at start of adventure and is crewmate when the Special is activated, increases boost effects of ATK UP and Chain Lock buffs applied by [STR] and [INT] characters by +0.25x for 3 turns.",
+		specialCooldown: [
+			21,
+			15
+		],
+		specialName: "Invader-Crushing Twin Fists",
+		sailor: {
+			base: "Reduces Silence duration by 6 turns on this character.",
+			level1: "Makes [STR] and [RCV] orbs benefinical for [STR] and [INT] characters."
+		},
+		support: [
+			{
+				Characters: "[STR] characters",
+				description: [
+					"Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 30% chance to deal 3% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 1: Pinch Healing" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Critical Hit" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "DEF"
+		}
+	},
+	4259: {
+		captain: "Reduces Special Cooldown of [STR] and [INT] characters by 3 turns at the start of the fight, boosts ATK of [STR] and [INT] characters by 3.5x, and boosts HP of [STR] and [INT] characters by 1.5x.",
+		special: "Recovers 15,000 HP, reduces enemies' Threshold Damage Reduction duration by 6 turns, and boosts Orb Effects of [STR] and [INT] characters by 2.25x for 1 turn. If during that turn you score 2 PERFECT hits, boosts Orb Effects of [STR] and [INT] characters by 2.5x for 1 turn in the following turn. If this character was Captain at start of adventure and is crewmate when the Special is activated, increases boost effects of ATK UP and Orb Amplification buffs applied by [STR] and [INT] characters by +0.25x for 3 turns.",
+		specialCooldown: [
+			21,
+			15
+		],
+		specialName: "Drinks and a Pot of Oden",
+		sailor: {
+			base: "Boosts base ATK of [STR] and [INT] characters by 75.",
+			level1: "Makes [INT] and [TND] orbs benefinical for [STR] and [INT] characters."
+		},
+		support: [
+			{
+				Characters: "[INT] characters",
+				description: [
+					"Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 10% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 30% chance to deal 3% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Critical Hit" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "DEF"
+		}
+	},
+	4260: {
+		captain: "Reduces Special Cooldown of this character by 4 turns at the start of the fight, reduces Special Cooldown of all other characters by 1 turn at the start of the fight, boosts ATK of all character by 3.5x, boosts HP of all character by 1.25x, and restores Special Cooldown of all characters by 2 turns when they are rewinded.",
+		special: "Reduces Special Cooldown of all characters by 1 turn, recovers 5x character's RCV in HP at the end of each turn for 3 turns, and reduces Paralysis duration by 5 turns. If your crew has Color Affinity when the special is activated, increases boost effects of Color Affinity buffs by 1.3x (up to 5x). Allows you to select up to 1 of the following effects to launch, launched effects will bypass Special Interupts and can be Enhanced up to 2 times: <ul><li>Boosts ATK of Cerebral and Free Spirit characters by 2.25x for 2 turns</li><li>Boosts Orb Effects of Cerebral and Free Spirit characters by 2.25x for 2 turns</li><li>Boosts base ATK of Cerebral and Free Spirit characters by 1,250 for 2 turns</li><li>Adds 1.3x to Chain multiplier for 2 turns</li></ul>",
+		specialCooldown: [
+			18,
+			12
+		],
+		specialName: "Graveside Talk",
+		sailor: {
+			base: "Makes [BOMB] and [S. BOMB] orbs beneficial for all characters, and restores Special Cooldown of this character by 2 turns when it is rewinded.",
+			level1: "Boosts base ATK, HP and RCV of Cerebral characters by 60, and reduces Paralysis duration by 1 turn on this character."
+		},
+		support: [
+			{
+				Characters: "Jewelry Bonney, Bartholomew Kuma, Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\"",
+				description: [
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb, and reduces Special Cooldown of supported character by 1 turn.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb, and reduces Special Cooldown of supported character by 1 turn.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb, and reduces Special Cooldown of supported character by 2 turns."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character",
+					"Reduces Sailor Despair duration by 4 turns on this character",
+					"Reduces Sailor Despair duration by 5 turns on this character"
+				]
+			},
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns",
+					"Reduces Special Use Limit duration by 3 turns",
+					"Reduces Special Use Limit duration by 4 turns",
+					"Reduces Special Use Limit duration by 5 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 1: Pinch Healing" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 2: Reduce Sailor Despair duration" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 120" },
+			{ description: "Boosts base HP by 130" },
+			{ description: "Acquire Potential 3: Reduce Special Use Limit duration" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base RCV by 100" },
+			{ description: "Acquire Sailor Ability 2: " }
+		],
+		festAbility: [
+			"[STR]-type/Cerebral class teammates HP Up Lv.1, SPD Up Lv.1, ATK Up Lv.1",
+			"[STR]-type/Cerebral class teammates HP Up Lv.2, SPD Up Lv.2, ATK Up Lv.2",
+			"[STR]-type/Cerebral class teammates HP Up Lv.3, SPD Up Lv.3, ATK Up Lv.3",
+			"[STR]-type/Cerebral class teammates HP Up Lv.4, SPD Up Lv.4, ATK Up Lv.4",
+			"[STR]-type/Cerebral class teammates HP Up Lv.5, SPD Up Lv.5, ATK Up Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Power Attack",
+			"Heal Teammate in Range Lv.1 (Small Range)",
+			"Power Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "80% chance to evade Damage Over Time, reduce damage taken from [DEX] by 20%",
+		festSpecial: [
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.1 (6 s), Critical % Up Lv.1 (6 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.1 (7 s), Critical % Up Lv.1 (7 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.1 (8 s), Critical % Up Lv.1 (8 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.2 (9 s), Critical % Up Lv.2 (9 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.2 (10 s), Critical % Up Lv.2 (10 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.3 (11 s), Critical % Up Lv.3 (11 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.3 (12 s), Critical % Up Lv.3 (12 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.3 (13 s), Critical % Up Lv.3 (13 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.4 (14 s), Critical % Up Lv.4 (14 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.5 (15 s), Critical % Up Lv.5 (15 s)"
+			}
+		],
+		festStats: {
+			def: 153,
+			atk: 167,
+			style: "SPT"
+		}
+	},
+	4261: {
+		captain: "Changes all orbs into [BOMB] orbs at the start of the fight, reduces Special Cooldown of all other characters by 1 turn at the start of the fight, boosts ATK of all character by 4x, boosts HP of all character by 1.25x, makes [BOMB] and [S. BOMB] orbs beneficial for all characters, and restores Special Cooldown of all characters by 2 turns when they are rewinded.",
+		special: "Reduces Special Cooldown of all characters by 1 turn, recovers 5x character's RCV in HP at the end of each turn for 3 turns, and reduces Paralysis duration by 6 turns. If your crew has Color Affinity when the special is activated, increases boost effects of Color Affinity buffs by 1.3x (up to 5x). Allows you to select up to 1 of the following effects to launch, launched effects will bypass Special Interupts and can be Enhanced up to 2 times: <ul><li>Boosts ATK of Cerebral and Free Spirit characters by 2.5x for 2 turns</li><li>Boosts Orb Effects of Cerebral and Free Spirit characters by 2.5x for 2 turns</li><li>Boosts base ATK of Cerebral and Free Spirit characters by 1,500 for 2 turns</li><li>Adds 1.5x to Chain multiplier for 2 turns</li></ul>",
+		specialCooldown: [
+			18,
+			12
+		],
+		specialName: "Graveside Talk",
+		sailor: {
+			base: "Makes [BOMB] and [S. BOMB] orbs beneficial for all characters, and restores Special Cooldown of this character by 2 turns when it is rewinded.",
+			level1: "Boosts base ATK, HP and RCV of Cerebral characters by 60, and reduces Paralysis duration by 1 turn on this character."
+		},
+		support: [
+			{
+				Characters: "Jewelry Bonney, Bartholomew Kuma, Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\"",
+				description: [
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb, and reduces Special Cooldown of supported character by 1 turn.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb, and reduces Special Cooldown of supported character by 1 turn.",
+					"Once per adventure, when the supported character uses an Effect Boosting special, changes the orb, including [BLOCK] orbs, of the supported character into a Matching orb, and reduces Special Cooldown of supported character by 2 turns."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Pinch Healing",
+				description: [
+					"If HP is below 10% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 20% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 30% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 40% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+					"If HP is below 50% at the start of the turn, recovers 1.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+				]
+			},
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character",
+					"Reduces Sailor Despair duration by 4 turns on this character",
+					"Reduces Sailor Despair duration by 5 turns on this character"
+				]
+			},
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns",
+					"Reduces Special Use Limit duration by 3 turns",
+					"Reduces Special Use Limit duration by 4 turns",
+					"Reduces Special Use Limit duration by 5 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 1: Pinch Healing" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Acquire Potential 2: Reduce Sailor Despair duration" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 120" },
+			{ description: "Boosts base HP by 130" },
+			{ description: "Acquire Potential 3: Reduce Special Use Limit duration" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base RCV by 100" },
+			{ description: "Acquire Sailor Ability 2: " }
+		],
+		festAbility: [
+			"[STR]-type/Cerebral class teammates HP Up Lv.1, SPD Up Lv.1, ATK Up Lv.1",
+			"[STR]-type/Cerebral class teammates HP Up Lv.2, SPD Up Lv.2, ATK Up Lv.2",
+			"[STR]-type/Cerebral class teammates HP Up Lv.3, SPD Up Lv.3, ATK Up Lv.3",
+			"[STR]-type/Cerebral class teammates HP Up Lv.4, SPD Up Lv.4, ATK Up Lv.4",
+			"[STR]-type/Cerebral class teammates HP Up Lv.5, SPD Up Lv.5, ATK Up Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Power Attack",
+			"Heal Teammate in Range Lv.1 (Small Range)",
+			"Power Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "80% chance to evade Damage Over Time, reduce damage taken from [DEX] by 20%",
+		festSpecial: [
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.2 (11 s), Critical % Up Lv.2 (11 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.1 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.2 (12 s), Critical % Up Lv.2 (12 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.1 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.2 (13 s), Critical % Up Lv.2 (13 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.1 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.3 (14 s), Critical % Up Lv.3 (14 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.1 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.3 (15 s), Critical % Up Lv.3 (15 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.1 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.4 (16 s), Critical % Up Lv.4 (16 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.2 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.4 (17 s), Critical % Up Lv.4 (17 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.2 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.4 (18 s), Critical % Up Lv.4 (18 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.2 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.5 (19 s), Critical % Up Lv.5 (19 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.2 (15 s)"
+			},
+			{
+				cooldown: 25,
+				description: "Targets [STR]-type/Cerebral class teammates for ATK Up Lv.6 (20 s), Critical % Up Lv.6 (20 s); first 50 s of battle, targets [STR]-type/Cerebral class teammates for Special CT Speed Up Lv.3 (15 s)"
+			}
+		],
+		festStats: {
+			def: 178,
+			atk: 172,
+			style: "SPT"
+		}
+	},
+	4262: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts the ATK of [DEX], [INT], Cerebral, and Driven characters by 5x, boosts the HP and RCV of [DEX], [INT], Cerebral, and Driven characters by 1.2x, boosts ATK of [DEX], [INT], Cerebral, and Driven characters by 5.75x following a chain of GOOD > GOOD hits, makes [STR] orbs beneficial for [DEX], [INT], Cerebral, and Driven characters, and removes Blindness duration completely. If HP is below 50% after a special is launched, reduces enemies' Increased Defense duration by 5 turns and reduces ATK Down duration by 5 turns (effect can be activated again if HP goes above 50%, up to 2 times per adventure).",
+		special: "Reduces Active Ability Silence by 5 turns, reduces enemies' Percent Damage Reduction duration by 7 turns, increases Chain Tap Timing Bonus of Cerebral and Driven characters to +0.2x-0.7x for 1 turn depending on Tap Timing, and when characters attack in the order of GOOD > GOOD without breaking the chain, boosts the ATK of Cerebral and Driven characters when landing a successful strike by 2.25x for 1 turn.",
+		specialCooldown: [
+			21,
+			16
+		],
+		specialName: "Halloween Night Diva",
+		sailor: {
+			base: "Boosts base ATK of [DEX], [INT], Cerebral, and Driven characters by 75, and reduces Blindness duration completely",
+			level1: "Once per adventure, when any other [DEX] or [INT] captain character uses a special, reduces special cooldown of this character by 5 turns"
+		},
+		superSpecial: "Reduces crew's current HP by 50%, ignores Delay Debuff Protection and delays all enemies by 1 turn, reduces Special Cooldown of Cerebral and Driven characters by 2 turns, boosts the ATK of Cerebral and Driven characters by 2.5x for 3 turns, and transforms Cerebral characters into Super Cerebral characters.",
+		superSpecialCriteria: "This character must be captain and a special ability must be used 2 times.",
+		support: [
+			{
+				Characters: "Monkey D. Luffy, Shanks, Ben Beckman, Perona, Lucky Roux, Yasopp, Gordon, Bonk Punch, Hongo, Howling Gabu, Building Snake, Monster, Lime Juice",
+				description: [
+					"Once per adventure, when the supported character uses any Chain Lock special, when characters attack in the order of GOOD > GREAT > PERFECT without breaking the chain, boosts the ATK of Cerebral and Driven characters when landing a successful strike by 1.1x for 1 turn.",
+					"Once per adventure, when the supported character uses any Chain Lock special, when characters attack in the order of GOOD > GREAT > PERFECT without breaking the chain, boosts the ATK of Cerebral and Driven characters when landing a successful strike by 1.1x for 1 turn.",
+					"Once per adventure, when the supported character uses any Chain Lock special, when characters attack in the order of GOOD > GREAT > PERFECT without breaking the chain, boosts the ATK of Cerebral and Driven characters when landing a successful strike by 1.2x for 1 turn.",
+					"Once per adventure, when the supported character uses any Chain Lock special, when characters attack in the order of GOOD > GREAT > PERFECT without breaking the chain, boosts the ATK of Cerebral and Driven characters when landing a successful strike by 1.2x for 1 turn.",
+					"Once per adventure, when the supported character uses any Chain Lock special, when characters attack in the order of GOOD > GREAT > PERFECT without breaking the chain, boosts the ATK of Cerebral and Driven characters when landing a successful strike by 1.3x for 1 turn."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce No Healing duration",
+				description: [
+					" Reduces No Healing duration by 1 turn",
+					" Reduces No Healing duration by 2 turns",
+					" Reduces No Healing duration by 3 turns",
+					" Reduces No Healing duration by 4 turns",
+					" Reduces No Healing duration by 5 turns"
+				]
+			},
+			{
+				Name: "Reduce Sailor Despair duration",
+				description: [
+					"Reduces Sailor Despair duration by 1 turn on this character",
+					"Reduces Sailor Despair duration by 2 turns on this character",
+					"Reduces Sailor Despair duration by 3 turns on this character",
+					"Reduces Sailor Despair duration by 4 turns on this character",
+					"Reduces Sailor Despair duration by 5 turns on this character"
+				]
+			},
+			{
+				Name: "Reduce Slot Bind duration",
+				description: [
+					"Reduces Slot Bind duration by 1 turn on this character",
+					"Reduces Slot Bind duration by 3 turns on this character",
+					"Reduces Slot Bind duration by 5 turns on this character",
+					"Reduces Slot Bind duration by 7 turns on this character",
+					"Reduces Slot Bind duration by 10 turns on this character"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Acquire Potential 1: Reduce No Healing duration" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire Potential 2: Reduce Sailor Despair duration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Acquire Potential 3: Reduce Slot Bind duration" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"[DEX]-type teammates ATK Up Lv.2, SPD Up Lv.2, DEF Up Lv.2; when 5 or more [DEX]-type characters are on the team, team Special CT Speed Up Lv.1",
+			"[DEX]-type teammates ATK Up Lv.3, SPD Up Lv.3, DEF Up Lv.3; when 5 or more [DEX]-type characters are on the team, team Special CT Speed Up Lv.1",
+			"[DEX]-type teammates ATK Up Lv.4, SPD Up Lv.4, DEF Up Lv.4; when 5 or more [DEX]-type characters are on the team, team Special CT Speed Up Lv.1",
+			"[DEX]-type teammates ATK Up Lv.5, SPD Up Lv.5, DEF Up Lv.5; when 5 or more [DEX]-type characters are on the team, team Special CT Speed Up Lv.1",
+			"[DEX]-type teammates ATK Up Lv.6, SPD Up Lv.6, DEF Up Lv.6; when 5 or more [DEX]-type characters are on the team, team Special CT Speed Up Lv.3"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Heal Teammate in Range Lv.2 (Medium Range)",
+			"Power Attack",
+			"Heal Teammate in Range Lv.2 (Small Range)"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Special Bind, reduce damage taken from [QCK] by 30％",
+		festSpecial: [
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.3 (20 s), SPD Up Lv.3 (20 s), DEF Up Lv.1 (20 s); targets 3 other teammates with low Special CT for Special CT 10% reduction, Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.3 (20 s), SPD Up Lv.3 (20 s), DEF Up Lv.1 (20 s); targets 3 other teammates with low Special CT for Special CT 12% reduction, Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.3 (20 s), SPD Up Lv.3 (20 s), DEF Up Lv.1 (20 s); targets 3 other teammates with low Special CT for Special CT 14% reduction, Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.4 (20 s), SPD Up Lv.4 (20 s), DEF Up Lv.1 (20 s); targets 3 other teammates with low Special CT for Special CT 16% reduction, Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.4 (20 s), SPD Up Lv.4 (20 s), DEF Up Lv.2 (20 s); targets 3 other teammates with low Special CT for Special CT 18% reduction, Shield Lv.1 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.5 (20 s), SPD Up Lv.5 (20 s), DEF Up Lv.2 (20 s); targets 3 other teammates with low Special CT for Special CT 20% reduction, Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.5 (20 s), SPD Up Lv.5 (20 s), DEF Up Lv.2 (20 s); targets 3 other teammates with low Special CT for Special CT 22% reduction, Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.5 (20 s), SPD Up Lv.5 (20 s), DEF Up Lv.3 (20 s); targets 3 other teammates with low Special CT for Special CT 24% reduction, Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.6 (20 s), SPD Up Lv.6 (20 s), DEF Up Lv.3 (20 s); targets 3 other teammates with low Special CT for Special CT 26% reduction, Shield Lv.2 (20 s)"
+			},
+			{
+				cooldown: 29,
+				description: "Targets [DEX]-type teammates for ATK Up Lv.7 (20 s), SPD Up Lv.7 (20 s), DEF Up Lv.4 (20 s); targets 3 other teammates with low Special CT for Special CT 30% reduction, Shield Lv.3 (20 s)"
+			}
+		],
+		festStats: {
+			def: 207,
+			atk: 153,
+			style: "SPT"
+		}
+	},
+	4263: {
+		captain: {
+            base: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [INT], Driven and Shooter characters by 4.25x, and boosts HP of [INT], Driven and Shooter characters by 1.3x. If enemies are inflicted with Negative or Increase Damage Taken, boosts ATK against enemies inflicted with Negative or Increase Damage Taken by 1.3x, boosts ATK against delayed enemies, enemies with reduced defense and Poisoned enemies by 1.25x otherwise.",
+            llbbase: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [INT], Driven and Shooter characters by 4.25x, and boosts HP of [INT], Driven and Shooter characters by 1.3x. If enemies are inflicted with Negative or Increase Damage Taken, boosts ATK against enemies inflicted with Negative or Increase Damage Taken by 1.3x, boosts ATK against delayed enemies, enemies with reduced defense and Poisoned enemies by 1.25x otherwise. If HP is below 50% after a special is launched, ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn (effect can be activated again if HP goes above 50%, up to 2 times per adventure)."
+        },
+        special: {
+            base: "Reduces enemies' Damage Nullification duration by 1 turn, makes Badly Matching and [BLOCK] orbs not reduce damage for 3 turns, changes Badly Matching, [EMPTY], [BLOCK], [BOMB], [RCV], [TND] and [G] orbs into Matching orbs, boosts ATK against delayed enemies, enemies with reduced defense, enemies inflicted with Negative and Poisoned enemies by 2.5x for 2 turns, and sets Chain Boundaries to 2.5x and 30.0x for 2 turns. If HP is below 50% when the special is activated, ignores debuff protection and inflicts enemies with Negative for 1 turn, and increases the duration of any Status ATK boosting buffs and Chain Lock buffs by 1 turn, including effects activated in the same Ability.",
+            llbbase: "Poisons all enemies, reduces enemies' Damage Nullification duration by 2 turns, makes Badly Matching and [BLOCK] orbs not reduce damage for 3 turns, changes Badly Matching, [EMPTY], [BLOCK], [BOMB], [RCV], [TND] and [G] orbs into Matching orbs, boosts ATK against delayed enemies, enemies with reduced defense, enemies inflicted with Increase Damage Taken, enemies inflicted with Negative and Poisoned enemies by 2.5x for 2 turns, and sets Chain Boundaries to 2.75x and 30.0x for 2 turns. If HP is below 50% when the special is activated, ignores debuff protection and inflicts enemies with Negative for 1 turn, and increases the duration of any Status ATK boosting buffs and Chain Lock buffs by 1 turn, including effects activated in the same Ability."
+        },
+        specialCooldown: [
+			19,
+			14
+		],
+		specialName: "Princess's Halloween Party",
+		sailor: {
+			level1: "If your Captain is a Driven character, boosts base HP of Driven characters by 1.1x",
+			level2: "Makes [INT] orbs beneficial for all characters"
+		},
+		superSpecial: "Ignores debuff protection and inflicts enemies with Negative for 10 turns, allows Chain Lock buffs to be Enhanced up to 2 times, increases boost effects of Chain Lock buffs by +0.25x, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching orbs and transforms [INT] characters into Super [INT] characters.",
+		superSpecialCriteria: "This character must be captain and a special ability must be used 2 times.",
+		support: [
+			{
+				Characters: "Driven characters",
+				description: [
+					"Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 10% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.s",
+					"Adds 12% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Reduce No Healing duration",
+				description: [
+					" Reduces No Healing duration by 1 turn",
+					" Reduces No Healing duration by 2 turns",
+					" Reduces No Healing duration by 3 turns",
+					" Reduces No Healing duration by 4 turns",
+					" Reduces No Healing duration by 5 turns"
+				]
+			},
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Barrier Penetration",
+				description: [
+					"This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 90% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+					"This character's normal attack will ignore barriers if HP is above 50% at the start of the turn",
+					"This character's normal attack will ignore barriers"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Acquire Potential 1: Reduce No Healing duration" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Acquire Sailor Ability 1: Boosts Driven characters' base HP by 1.1x when Captain is a Driven class" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire Sailor Ability 2: Makes crew's [INT] slots have matching slot effects" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Acquire Potential 3: Barrier Penetration" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 200" }
+		],
+		lLimit: {
+			captain: true,
+			special: true,
+			rAbility: true,
+			rSpecial: true,
+			rResilience: true
+		},
+		festAbility: {
+            base: [
+                "Shooter class teammates ATK Up Lv.2, HP Up Lv.1, DEF Up Lv.1",
+                "Shooter class teammates ATK Up Lv.3, HP Up Lv.2, DEF Up Lv.2",
+                "Shooter class teammates ATK Up Lv.4, HP Up Lv.3, DEF Up Lv.3",
+                "Shooter class teammates ATK Up Lv.5, HP Up Lv.4, DEF Up Lv.4",
+                "Shooter class teammates ATK Up Lv.6, HP Up Lv.5, DEF Up Lv.4"
+            ],
+            llbbase: [
+                "Shooter class teammates ATK Up Lv.2, HP Up Lv.2, DEF Up Lv.2",
+                "Shooter class teammates ATK Up Lv.3, HP Up Lv.3, DEF Up Lv.3",
+                "Shooter class teammates ATK Up Lv.4, HP Up Lv.4, DEF Up Lv.4",
+                "Shooter class teammates ATK Up Lv.5, HP Up Lv.5, DEF Up Lv.5",
+                "Shooter class teammates ATK Up Lv.6, HP Up Lv.6, DEF Up Lv.6"
+            ]
+        },
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Heal Self Lv.2"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: { 
+            base: "Completely evades Special Bind, reduce damage taken from [PSY] by 30％",
+            llbbase: "Completely evades Special Bind, reduce damage taken from [PSY] by 40％"
+        },
+		festSpecial: {
+            base: [
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.8 (20 s); targets 1 high DEF enemy for DEF Down Lv.8 (20 s); targets 1 high SPD enemy for SPD Down Lv.8 (20 s); targets Shooter class teammates for RCV x 1.75 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.9 (20 s); targets 1 high DEF enemy for DEF Down Lv.9 (20 s); targets 1 high SPD enemy for SPD Down Lv.9 (20 s); targets Shooter class teammates for RCV x 1.85 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.10 (20 s); targets 1 high DEF enemy for DEF Down Lv.10 (20 s); targets 1 high SPD enemy for SPD Down Lv.10 (20 s); targets Shooter class teammates for RCV x 1.95 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.11 (20 s); targets 1 high DEF enemy for DEF Down Lv.11 (20 s); targets 1 high SPD enemy for SPD Down Lv.11 (20 s); targets Shooter class teammates for RCV x 2.05 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.12 (20 s); targets 1 high DEF enemy for DEF Down Lv.12 (20 s); targets 1 high SPD enemy for SPD Down Lv.12 (20 s); targets Shooter class teammates for RCV x 2.15 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.13 (20 s); targets 1 high DEF enemy for DEF Down Lv.13 (20 s); targets 1 high SPD enemy for SPD Down Lv.13 (20 s); targets Shooter class teammates for RCV x 2.25 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.14 (20 s); targets 1 high DEF enemy for DEF Down Lv.14 (20 s); targets 1 high SPD enemy for SPD Down Lv.14 (20 s); targets Shooter class teammates for RCV x 2.35 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.15 (20 s); targets 1 high DEF enemy for DEF Down Lv.15 (20 s); targets 1 high SPD enemy for SPD Down Lv.15 (20 s); targets Shooter class teammates for RCV x 2.45 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.16 (20 s); targets 1 high DEF enemy for DEF Down Lv.16 (20 s); targets 1 high SPD enemy for SPD Down Lv.16 (20 s); targets Shooter class teammates for RCV x 2.55 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.17 (20 s); targets 1 high DEF enemy for DEF Down Lv.17 (20 s); targets 1 high SPD enemy for SPD Down Lv.17 (20 s); targets Shooter class teammates for RCV x 2.75 healing"
+                }
+            ],
+            llbbase: [
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.10 (20 s); targets 1 high DEF enemy for DEF Down Lv.10 (20 s); targets 1 high SPD enemy for SPD Down Lv.10 (20 s); targets Shooter class teammates for RCV x 2 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.11 (20 s); targets 1 high DEF enemy for DEF Down Lv.11 (20 s); targets 1 high SPD enemy for SPD Down Lv.11 (20 s); targets Shooter class teammates for RCV x 2.1 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.12 (20 s); targets 1 high DEF enemy for DEF Down Lv.12 (20 s); targets 1 high SPD enemy for SPD Down Lv.12 (20 s); targets Shooter class teammates for RCV x 2.2 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.13 (20 s); targets 1 high DEF enemy for DEF Down Lv.13 (20 s); targets 1 high SPD enemy for SPD Down Lv.13 (20 s); targets Shooter class teammates for RCV x 2.3 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.14 (20 s); targets 1 high DEF enemy for DEF Down Lv.14 (20 s); targets 1 high SPD enemy for SPD Down Lv.14 (20 s); targets Shooter class teammates for RCV x 2.4 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.15 (20 s); targets 1 high DEF enemy for DEF Down Lv.15 (20 s); targets 1 high SPD enemy for SPD Down Lv.15 (20 s); targets Shooter class teammates for RCV x 2.5 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.16 (20 s); targets 1 high DEF enemy for DEF Down Lv.16 (20 s); targets 1 high SPD enemy for SPD Down Lv.16 (20 s); targets Shooter class teammates for RCV x 2.6 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.17 (20 s); targets 1 high DEF enemy for DEF Down Lv.17 (20 s); targets 1 high SPD enemy for SPD Down Lv.17 (20 s); targets Shooter class teammates for RCV x 2.7 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.18 (20 s); targets 1 high DEF enemy for DEF Down Lv.18 (20 s); targets 1 high SPD enemy for SPD Down Lv.18 (20 s); targets Shooter class teammates for RCV x 2.8 healing"
+                },
+                {
+                    cooldown: 30,
+                    description: "Targets 1 high ATK enemy for ATK Down Lv.20 (20 s); targets 1 high DEF enemy for DEF Down Lv.20 (20 s); targets 1 high SPD enemy for SPD Down Lv.20 (20 s); targets Shooter class teammates for RCV x 3 healing"
+                }
+            ]
+        },
+		festStats: {
+			def: 192,
+			atk: 186,
+			style: "DBF"
+		}
+	},
+	4264: {
+		captain: "Boosts ATK of [STR] characters by 3.0x, and boosts HP of [STR] characters by 1.3x.",
+		special: "Deals 50x character's ATK in [STR] damage to one enemy, reduces damage received by 60% for 1 turn, and boosts Orb Effects of Shooter and Cerebral characters by 1.5x for 1 turn.",
+		specialCooldown: [
+			13,
+			13
+		],
+		specialName: "Pirate-Capturing Ambush",
+		sailor: "Boosts base ATK of Shooter characters by 100",
+		potential: [
+			{
+				Name: "[DEX] Damage Reduction",
+				description: [
+					"Reduces damage taken from [DEX] characters by 1%",
+					"Reduces damage taken from [DEX] characters by 2%",
+					"Reduces damage taken from [DEX] characters by 3%",
+					"Reduces damage taken from [DEX] characters by 4%",
+					"Reduces damage taken from [DEX] characters by 5%"
+				]
+			},
+			{
+				Name: "[QCK] Damage Reduction",
+				description: [
+					"Reduces damage taken from [QCK] characters by 1%",
+					"Reduces damage taken from [QCK] characters by 2%",
+					"Reduces damage taken from [QCK] characters by 3%",
+					"Reduces damage taken from [QCK] characters by 4%",
+					"Reduces damage taken from [QCK] characters by 5%"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Acquire Potential 1: [DEX] Damage Reduction" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 150" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Acquire Potential 2: [QCK] Damage Reduction" }
+		],
+		festAbility: [
+			"Shooter class teammates HP Up Lv.3; first 30 s of battle, Shooter class teammates DEF Up Lv.1, Special CT Speed Up Lv.2",
+			"Shooter class teammates HP Up Lv.4; first 30 s of battle, Shooter class teammates DEF Up Lv.2, Special CT Speed Up Lv.3",
+			"Shooter class teammates HP Up Lv.5; first 30 s of battle, Shooter class teammates DEF Up Lv.3, Special CT Speed Up Lv.4",
+			"Shooter class teammates HP Up Lv.6; first 30 s of battle, Shooter class teammates DEF Up Lv.4, Special CT Speed Up Lv.5",
+			"Shooter class teammates HP Up Lv.7; first 30 s of battle, Shooter class teammates DEF Up Lv.5, Special CT Speed Up Lv.6"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Power Attack",
+			"Heal Teammate in Range Lv.1 (Small Range)",
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Action Bind, reduce damage taken from [DEX] by 30％",
+		festSpecial: [
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.2 (20 s), SPD Up Lv.2 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 10% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.2 (20 s), SPD Up Lv.2 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 12% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.1 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.2 (20 s), SPD Up Lv.2 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 14% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.2 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.3 (20 s), SPD Up Lv.3 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 16% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.3 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.3 (20 s), SPD Up Lv.3 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 18% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.4 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.4 (20 s), SPD Up Lv.4 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 20% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.5 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.4 (20 s), SPD Up Lv.4 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 22% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.6 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.4 (20 s), SPD Up Lv.4 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 24% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.7 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.5 (20 s), SPD Up Lv.5 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 26% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 1.8 damage"
+			},
+			{
+				cooldown: 22,
+				description: "Targets Shooter class teammates for DEF Up Lv.6 (20 s), SPD Up Lv.6 (20 s); when remaining time is more than 70 s, targets 3 enemies for HP 30% reduction; when remaining time is less than 70 s, targets 3 enemies for ATK x 2 damage"
+			}
+		],
+		festStats: {
+			def: 208,
+			atk: 166,
+			style: "SPT"
+		}
+	},
+	4265: {
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [INT], Slasher, and Driven characters by 4x, boosts HP of [INT], Slasher, and Driven characters by 1.3x, and deals 50x character's ATK in [INT] damage to all enemies at the end of each turn. At the start of the fight, this character activates their own special.",
+		special: "Reduces enemies' Percent Damage Reduction duration by 2 turns, changes the orb of this character into a [WANO] orb, and deals 100x character's ATK in [INT] damage to all enemies at the end of each turn for 99+ turns. Applies a Continuous Effect that applies the same Special effect at the start of every stage for 10 turns.",
+		specialCooldown: [
+			18,
+			12
+		],
+		specialName: "True Potential of the Katana",
+		sailor: {
+			base: "Boosts base ATK, HP and RCV of all characters by 60.",
+			level1: "Changes orbs of right column characters into [WANO] orbs at the start of the fight."
+		},
+		support: [
+			{
+				Characters: "Slasher characters",
+				description: [
+					"Adds 2% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 3% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 30% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 7% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 70% chance to deal 8% of this character's attack in extra damage"
+				]
+			},
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 1: Critical Hit" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 70" },
+			{ description: "Boosts base ATK by 80" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 40" },
+			{ description: "Boosts base RCV by 60" },
+			{ description: "Acquire Potential 3: Reduce Special Use Limit duration" }
+		],
+		festAbility: [
+			"[INT]-type teammates ATK Up Lv.1, DEF Up Lv.1",
+			"[INT]-type teammates ATK Up Lv.2, DEF Up Lv.1",
+			"[INT]-type teammates ATK Up Lv.3, DEF Up Lv.1",
+			"[INT]-type teammates ATK Up Lv.4, DEF Up Lv.1",
+			"[INT]-type teammates ATK Up Lv.5, DEF Up Lv.3"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "60% chance to evade Paralysis",
+		festSpecial: [
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 0.75 damage; targets [PSY]-type enemies for DEF Down Lv.1 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 0.85 damage; targets [PSY]-type enemies for DEF Down Lv.1 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 0.95 damage; targets [PSY]-type enemies for DEF Down Lv.1 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.05 damage; targets [PSY]-type enemies for DEF Down Lv.1 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.15 damage; targets [PSY]-type enemies for DEF Down Lv.1 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.25 damage; targets [PSY]-type enemies for DEF Down Lv.2 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.35 damage; targets [PSY]-type enemies for DEF Down Lv.2 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.45 damage; targets [PSY]-type enemies for DEF Down Lv.2 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.55 damage; targets [PSY]-type enemies for DEF Down Lv.2 (15 s)"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.75 damage; targets [PSY]-type enemies for DEF Down Lv.3 (15 s)"
+			}
+		],
+		festStats: {
+			def: 125,
+			atk: 178,
+			style: "ATK"
+		}
+	},
+	4266: {
+		captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [INT], Slasher, and Driven characters by 4.5x, boosts HP of [INT], Slasher, and Driven characters by 1.3x, and deals 80x character's ATK in [INT] damage to all enemies at the end of each turn. At the start of the fight, this character activates their own special.",
+		special: "Reduces enemies' Percent Damage Reduction duration by 3 turns, reduces Despair duration by 1 turn, changes the orb of this character into a [WANO] orb, and deals 100x character's ATK in [INT] damage to all enemies at the end of each turn for 99+ turns. Applies a Continuous Effect that applies the same Special effect at the start of every stage for 10 turns.",
+		specialCooldown: [
+			18,
+			12
+		],
+		specialName: "True Potential of the Katana",
+		sailor: {
+			base: "Boosts base ATK, HP and RCV of all characters by 60.",
+			level1: "Changes orbs of right column characters into [WANO] orbs at the start of the fight."
+		},
+		superSpecial: "Boosts Final Tap ATK of [INT], Slasher, and Driven characters by 20%, applies Territory: Slasher class to the field (boosts crew's ATK up to 1.5x and reduces damage taken up to 25% based on number of characters matching the territory) for 1 turn, and transforms Slasher characters into Super Slasher characters.",
+		superSpecialCriteria: "This character must be captain and your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Kozuki Hiyori (Komurasaki), Yamato",
+		support: [
+			{
+				Characters: "Slasher characters",
+				description: [
+					"Adds 2% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 3% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+					"Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Critical Hit",
+				description: [
+					"If you hit a PERFECT with this character, there is a 30% chance to deal 4% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 40% chance to deal 5% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 50% chance to deal 6% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 60% chance to deal 7% of this character's attack in extra damage",
+					"If you hit a PERFECT with this character, there is a 70% chance to deal 8% of this character's attack in extra damage"
+				]
+			},
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+				]
+			},
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 1: Critical Hit" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire Potential 2: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 70" },
+			{ description: "Boosts base ATK by 80" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base RCV by 40" },
+			{ description: "Boosts base RCV by 60" },
+			{ description: "Acquire Potential 3: Reduce Special Use Limit duration" }
+		],
+		festAbility: [
+			"[INT]-type teammates ATK Up Lv.1, DEF Up Lv.1; [PSY]-type enemies DEF Down Lv.1",
+			"[INT]-type teammates ATK Up Lv.2, DEF Up Lv.2; [PSY]-type enemies DEF Down Lv.2",
+			"[INT]-type teammates ATK Up Lv.3, DEF Up Lv.3; [PSY]-type enemies DEF Down Lv.3",
+			"[INT]-type teammates ATK Up Lv.4, DEF Up Lv.4; [PSY]-type enemies DEF Down Lv.4",
+			"[INT]-type teammates ATK Up Lv.5, DEF Up Lv.5; [PSY]-type enemies DEF Down Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "80% chance to evade Paralysis, reduce damage taken from [PSY] by 20%",
+		festSpecial: [
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.5 damage; targets [PSY]-type enemies for DEF Down Lv.1 (20 s); targets 2 enemies with high current HP for ATK x 1 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.6 damage; targets [PSY]-type enemies for DEF Down Lv.1 (20 s); targets 2 enemies with high current HP for ATK x 1.1 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.7 damage; targets [PSY]-type enemies for DEF Down Lv.1 (20 s); targets 2 enemies with high current HP for ATK x 1.2 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.8 damage; targets [PSY]-type enemies for DEF Down Lv.2 (20 s); targets 2 enemies with high current HP for ATK x 1.3 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 1.9 damage; targets [PSY]-type enemies for DEF Down Lv.2 (20 s); targets 2 enemies with high current HP for ATK x 1.4 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 2 damage; targets [PSY]-type enemies for DEF Down Lv.3 (20 s); targets 2 enemies with high current HP for ATK x 1.5 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 2.1 damage; targets [PSY]-type enemies for DEF Down Lv.3 (20 s); targets 2 enemies with high current HP for ATK x 1.6 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 2.2 damage; targets [PSY]-type enemies for DEF Down Lv.3 (20 s); targets 2 enemies with high current HP for ATK x 1.7 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 2.3 damage; targets [PSY]-type enemies for DEF Down Lv.4 (20 s); targets 2 enemies with high current HP for ATK x 1.8 damage"
+			},
+			{
+				cooldown: 33,
+				description: "Targets enemies within medium range (horizontal) for ATK x 2.5 damage; targets [PSY]-type enemies for DEF Down Lv.5 (20 s); targets 2 enemies with high current HP for ATK x 2 damage"
+			}
+		],
+		festStats: {
+			def: 154,
+			atk: 179,
+			style: "ATK"
+		}
+	},
+	4267: {
+		captain: {
+			character1: "Reduces Special Cooldown of Driven and Powerhouse characters by 1 turn at the start of the fight, boosts ATK of Driven and Powerhouse characters by 5.25x, by 5.5x instead if they do not have a [STR], [DEX], [QCK], [PSY], or [INT] orb, boosts HP of Driven and Powerhouse characters by 1.5x, boosts chances of getting [DEX] orbs, changes [DEX] orbs into [WANO] orbs, and makes [RCV] and [TND] orbs beneficial for all characters. Ignores Burn Debuff Protection and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 2 turns after each turn you take damage or when this character has a [WANO] orb and you attack with this character. Up to 2 times per adventure, if King, Queen, or Jack launches a special as a crewmate, allows Chain Lock and Color Affinity buffs to be Enhanced up to 2 times, and increases boost effects of Chain Lock buffs by +0.25x.",
+			character2: "Reduces Special Cooldown of Driven and Powerhouse characters by 1 turn at the start of the fight, boosts ATK of Driven and Powerhouse characters by 5.25x, boosts HP of Driven and Powerhouse characters by 1.5x, boosts chances of getting [DEX] orbs, changes [DEX] orbs into [WANO] orbs, makes [RCV] and [TND] orbs beneficial for all characters, reduces Bind, Despair, Silence and Paralysis duration completely on this character and restores Special Cooldown of this character completely when it is rewinded.",
+			combined: "Reduces Special Cooldown of Driven and Powerhouse characters by 1 turn at the start of the fight, boosts ATK of Driven and Powerhouse characters by 5.5x, by 5.75x instead if they do not have a [STR], [DEX], [QCK], [PSY], or [INT] orb, boosts HP of Driven and Powerhouse characters by 1.5x, boosts chances of getting [DEX] orbs, changes [DEX] orbs into [WANO] orbs, makes [RCV] and [TND] orbs beneficial for all characters, reduces Bind, Despair, Silence and Paralysis duration completely on this character and restores Special Cooldown of this character completely when it is rewinded. Ignores Burn Debuff Protection and inflicts all enemies with Burn that will deal 100x enemies' ATK in damage for 2 turns after each turn you take damage or when this character has a [WANO] orb and you attack with this character. Up to 2 times per adventure, if King, Queen, or Jack launches a special as a crewmate, allows Chain Lock and Color Affinity buffs to be Enhanced up to 2 times, and increases boost effects of Chain Lock buffs by +0.25x."
+		},
+		special: "Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to all enemies, deals 300x character's ATK in Typeless damage to all enemies at the end of the turn for 2 turns, reduces Tap Limit duration by 3 turns, reduces Bind duration by 7 turns, and becomes Kaido & King for 3 turns. If your Captain is a Driven or Powerhouse character, boosts Chain Multiplier Growth Rate by 1.3x-1.75x for 2 turns based on the crew's current HP when the special is activated. If HP is below 30% when the special is activated, allows Chain Multiplier Growth Rate buffs to be Enhanced up to 2 times, increases boost effects of Chain Multiplier Growth Rate buffs by +0.3x, including effects activated in the same Ability, and increases boost effects of Base ATK Boost buffs by +500.",
+		specialNotes: "1.3x when HP is above 80%, 1.5x when HP is above 30%, 1.75x when HP is below 30%",
+        specialCooldown: [
+			22,
+			17
+		],
+		specialName: "Flaming Ultimate Strike",
+		sailor: {
+			character1: "Reduces Special Cooldown of Driven and Powerhouse characters by 1 turn at the start of the fight.",
+			character2: "Reduces Special Cooldown of Driven and Powerhouse characters by 1 turn at the start of the fight.",
+			combined: "Reduces Special Cooldown of Driven and Powerhouse characters by 1 turn at the start of the fight.",
+			level1: "Reduces Silence duration completely on this character and restores Special Cooldown of this character completely when it is rewinded."
+		},
+		swap: "Changes orb of this character into a [WANO] orb and reduces enemies' [STR], [DEX], and [QCK] Resistance by -15% for 1 turn.<br><b>Captain Shift:</b> If Kaido is Captain and switches to King, optionally swaps this unit with your middle-left unit for 10 turns. If King is your middle-left unit and switches to Kaido, optionally swaps this unit with your captain for 10 turns. Reduces Special Cooldown of this character by 3 turns, changes orbs of adjacent characters into [WANO] orbs, and boosts ATK against enemies inflicted with Burn and Paralyzed enemies by 2x for 2 turns. This effect is limited to 2 uses per adventure.",
+		superSpecial: "Optionally removes Captain Swap duration completely, reduces Silence duration by 7 turns on Driven and Powerhouse characters, reduces Special Cooldown of Driven and Powerhouse characters by 2 turns, and transforms Driven characters into Super Driven characters.",
+		superSpecialCriteria: "When character becomes Kaido & King during Captain Shift and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Queen, Jack, Ulti, Page One, Black Maria, Who's-Who, Sasaki, Orochi, Kanjuro, Charlotte Linlin (Big Mom)",
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns",
+					"Reduces Special Use Limit duration by 2 turns",
+					"Reduces Special Use Limit duration by 3 turns"
+				]
+			},
+			{
+				Name: "Super Tandem",
+				description: [
+					"Obtain Super Tandem Lv.1",
+					"Obtain Super Tandem Lv.2",
+					"Obtain Super Tandem Lv.3",
+					"Obtain Super Tandem Lv.4",
+					"Obtain Super Tandem Lv.5"
+				]
+			}
+		],
+		superTandem: {
+			characterCondition: [
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Queen, Jack, Ulti, Page One, Black Maria, Who's-Who, Sasaki, Orochi, Kanjuro, Charlotte Linlin (Big Mom), Marshall D. Teach (Blackbeard), Shanks",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Queen, Jack, Ulti, Page One, Black Maria, Who's-Who, Sasaki, Orochi, Kanjuro, Charlotte Linlin (Big Mom), Marshall D. Teach (Blackbeard), Shanks",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Queen, Jack, Ulti, Page One, Black Maria, Who's-Who, Sasaki, Orochi, Kanjuro, Charlotte Linlin (Big Mom), Marshall D. Teach (Blackbeard), Shanks",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Queen, Jack, Ulti, Page One, Black Maria, Who's-Who, Sasaki, Orochi, Kanjuro, Charlotte Linlin (Big Mom), Marshall D. Teach (Blackbeard), Shanks",
+				"Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Queen, Jack, Ulti, Page One, Black Maria, Who's-Who, Sasaki, Orochi, Kanjuro, Charlotte Linlin (Big Mom), Marshall D. Teach (Blackbeard), Shanks"
+			],
+			description: [
+				"Boosts Tandem ATK of Powerhouse and Driven characters by 1.25x for 1 turn.",
+				"Boosts Tandem ATK of Powerhouse and Driven characters by 1.5x for 1 turn.",
+				"Boosts Tandem ATK of Powerhouse and Driven characters by 1.75x for 1 turn.",
+				"Boosts Tandem ATK of Powerhouse and Driven characters by 2x for 1 turn.",
+				"Boosts base ATK of Last Tap character by +1,000 for 1 turn, and boosts Tandem ATK of Powerhouse and Driven characters by 2.25x for 1 turn."
+			]
+		},
+		limit: [
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 2: Reduce Special Use Limit duration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Acquire Potential 3: Super Tandem" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"Driven/Powerhouse class teammates ATK Up Lv.3, HP Up Lv.3, SPD Up Lv.3, Blow Away % Up Lv.1",
+			"Driven/Powerhouse class teammates ATK Up Lv.4, HP Up Lv.4, SPD Up Lv.4, Blow Away % Up Lv.2",
+			"Driven/Powerhouse class teammates ATK Up Lv.5, HP Up Lv.5, SPD Up Lv.5, Blow Away % Up Lv.3",
+			"Driven/Powerhouse class teammates ATK Up Lv.6, HP Up Lv.6, SPD Up Lv.6, Blow Away % Up Lv.4",
+			"Driven/Powerhouse class teammates ATK Up Lv.7, HP Up Lv.7, SPD Up Lv.7, Blow Away % Up Lv.5"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Normal Attack",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Action Bind, reduce damage taken from Powerhouse/Cerebral by 30%",
+		festSpecial: [
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.2 (20 s), ATK Up Lv.2 (20 s), SPD Up Lv.2 (20 s); targets enemies within large range for ATK x 2.1 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 2.2 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.2 (20 s), ATK Up Lv.2 (20 s), SPD Up Lv.2 (20 s); targets enemies within large range for ATK x 2.2 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 2.4 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.2 (20 s), ATK Up Lv.2 (20 s), SPD Up Lv.2 (20 s); targets enemies within large range for ATK x 2.3 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 2.6 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.3 (20 s), ATK Up Lv.3 (20 s), SPD Up Lv.3 (20 s); targets enemies within large range for ATK x 2.4 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 2.8 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.3 (20 s), ATK Up Lv.3 (20 s), SPD Up Lv.3 (20 s); targets enemies within large range for ATK x 2.5 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 3 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.4 (20 s), ATK Up Lv.4 (20 s), SPD Up Lv.4 (20 s); targets enemies within large range for ATK x 2.6 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 3.2 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.4 (20 s), ATK Up Lv.4 (20 s), SPD Up Lv.4 (20 s); targets enemies within large range for ATK x 2.7 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 3.4 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.4 (20 s), ATK Up Lv.4 (20 s), SPD Up Lv.4 (20 s); targets enemies within large range for ATK x 2.8 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 3.6 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.5 (20 s), ATK Up Lv.5 (20 s), SPD Up Lv.5 (20 s); targets enemies within large range for ATK x 2.9 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 3.8 damage"
+			},
+			{
+				cooldown: 36,
+				description: "Targets Driven/Powerhouse class teammates for DEF Up Lv.6 (20 s), ATK Up Lv.6 (20 s), SPD Up Lv.6 (20 s); targets enemies within large range for ATK x 3 damage; if 6 or more Driven/Powerhouse characters are on the team, targets all enemies for ATK x 4 damage"
+			}
+		],
+		festStats: {
+			def: 181,
+			atk: 184,
+			style: "ATK"
+		}
+	},
+	4268: {
+		captain: {
+			character1: "Boost ATK of Driven and Powerhouse characters by 5.25x, by 5.5x instead if they have a beneficial orb, boost HP of Driven and Powerhouse characters by 1.5x, slightly boosts chances of getting [TND] orbs, changes [TND] orbs into [SEMLA] orbs, makes [QCK], [RCV], and [SEMLA] orbs beneficial for Driven and Powerhouse characters, makes PERFECTs consume [RCV] and [SEMLA] orbs, recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn, and makes crew immune to Blow Away. Up to 2 times per adventure, if Charlotte Katakuri, Charlotte Cracker, or Charlotte Smoothie launches a special as a crewmate, allows Chain Lock and Color Affinity buffs to be Enhanced up to 2 times, and increases boost effects of Chain Lock buffs by +0.25x.",
+			character2: "Boost ATK of Driven and Powerhouse characters by 5.25x, boost HP of Driven and Powerhouse characters by 1.5x, slightly boosts chances of getting [TND] orbs, changes [TND] orbs into [SEMLA] orbs, makes [DEX], [RCV], and [SEMLA] orbs beneficial for Driven and Powerhouse characters, reduces damage received by 20%, recovers 5,000 HP at the end of each turn, and makes crew immune to Blow Away. Ignores Defense Reduction Debuff Protection and and reduces the defense of all enemies by 70% for 2 turns after each turn you take damage.",
+			combined: "Boost ATK of Driven and Powerhouse characters by 5.5x, by 5.75x instead if they have a beneficial orb, boost HP of Driven and Powerhouse characters by 1.5x, slightly boosts chances of getting [TND] orbs, changes [TND] orbs into [SEMLA] orbs, makes [DEX], [QCK], [RCV], and [SEMLA] orbs beneficial for Driven and Powerhouse characters, makes PERFECTs consume [RCV] and [SEMLA] orbs, reduces damage received by 20%, recovers 5,000 HP at the end of each turn, recovers HP proportional to the number of enemies you defeated in that turn ✕ crew's RCV at the end of the enemy turn, and makes crew immune to Blow Away. Ignores Defense Reduction Debuff Protection and and reduces the defense of all enemies by 70% for 2 turns after each turn you take damage. Up to 2 times per adventure, if Charlotte Katakuri, Charlotte Cracker, or Charlotte Smoothie launches a special as a crewmate, allows Chain Lock and Color Affinity buffs to be Enhanced up to 2 times, and increases boost effects of Chain Lock buffs by +0.25x."
+		},
+		special: "Deals 20% of enemies' current HP in damage to all enemies, reduces Slot Bind and Despair duration by 7 turns, allows crew to perform Super Tandem with [SEMLA] orbs for 3 turns, changes all orbs, including [BLOCK] orbs, into [SEMLA] orbs, boosts Orb Effects of Driven and Powerhouse characters by 2.75x-3.25x for 2 turns based on the number of status effects applied on enemy, and becomes Big Mom & Katakuri for 3 turns. If enemies have 8 or more status effects when the special is activated, increases boost effects of Orb Amplification and Chain Lock buffs by +0.25x, including effects activated in the same Ability, and allows Orb Amplification buffs to be Enhanced up to 2 times.",
+		specialNotes: "2.75x for 0-4 effects, 3x for 5-7 effects, 3.25x for 8+ effects",
+        specialCooldown: [
+			22,
+			17
+		],
+		specialName: "Seamless Pincer Attack",
+		sailor: {
+			character1: "Makes [RCV] and [SEMLA] orbs beneficial for Driven and Powerhouse characters.",
+			character2: "Makes [RCV] and [SEMLA] orbs beneficial for Driven and Powerhouse characters.",
+			combined: "Makes [RCV] and [SEMLA] orbs beneficial for Driven and Powerhouse characters.",
+			level1: "Boosts base HP Driven and Powerhouse characters by 1.1x."
+		},
+		swap: "Reduces enemies' Driven and Powerhouse Resistance by -10% for 1 turn, changes orb of this character into a [TND] orb, and removes Despair duration completely on this character.<br><b>Captain Shift:</b> If Big Mom is Captain and switches to Katakuri, optionally swaps this unit with your lower-right unit for 10 turns. If Katakuri is your lower-right unit and switches to Big Mom, optionally swaps this unit with your captain for 10 turns. Reduces Special Cooldown of this character by 3 turns, changes orbs of middle row characters into [TND] orbs, reduces Counter-RCV duration by 5 turns, and boosts base ATK of Driven and Powerhouse characters by 1,250 for 2 turns. This effect is limited to 2 uses per adventure.",
+		superSpecial: "Optionally removes Captain Swap duration completely, reduces damage received by 70% for 1 turn, increases Orb Effects of beneficial [RCV], [SEMLA], and [WANO] orbs to 2.75x for 2 turns, and transforms [QCK] or [DEX] characters into Super [QCK] or [DEX] characters depending on the type of this character.",
+		superSpecialCriteria: "When character becomes Big Mom & Katakuri during Captain Shift and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Charlotte Cracker, Charlotte Smoothie, Charlotte Perospero, Charlotte Daifuku, Charlotte Oven, Charlotte Amande, Charlotte Opera, Charlotte Brulee, Charlotte Montd'Or, Charlotte Galette, Charlotte Bavarois, Charlotte Pudding, Charlotte Flampe, Kaido",
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns",
+					"Reduces Special Use Limit duration by 2 turns",
+					"Reduces Special Use Limit duration by 3 turns"
+				]
+			},
+			{
+				Name: "Last Tap",
+				description: [
+					"Obtain Last Tap Lv.1",
+					"Obtain Last Tap Lv.2",
+					"Obtain Last Tap Lv.3",
+					"Obtain Last Tap Lv.4",
+					"Obtain Last Tap Lv.5"
+				]
+			}
+		],
+		lastTap: {
+			condition: "On the last Stage when character has a [RCV], [SEMLA] or [WANO]",
+			description: [
+				"Boosts base ATK of this character by 200 for 1 turn.",
+				"Boosts base ATK of this character by 400 for 1 turn.",
+				"Boosts base ATK of this character by 400 for 1 turn, and and boosts ATK of all characters with Percent Damage Reduction by 1x-1.5x for 1 turn, proportional to the strength of the Percent Damage Reduction buff.",
+				"Boosts base ATK of this character by 600 for 1 turn, and and boosts ATK of all characters with Percent Damage Reduction by 1x-2x for 1 turn, proportional to the strength of the Percent Damage Reduction buff.",
+				"Boosts base ATK of this character by 1000 for 1 turn, and and boosts ATK of all characters with Percent Damage Reduction by 1x-2.5x for 1 turn, proportional to the strength of the Percent Damage Reduction buff."
+			],
+		},
+		limit: [
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base HP by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base HP by 20" },
+			{ description: "Boosts base RCV by 10" },
+			{ description: "Boosts base ATK by 10" },
+			{ description: "Boosts base ATK by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 2: Reduce Special Use Limit duration" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 40" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 60" },
+			{ description: "Boosts base HP by 70" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Acquire Potential 3: Last Tap" },
+			{ description: "LOCKED WITH KEY" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base ATK by 50" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base HP by 100" },
+			{ description: "Boosts base HP by 150" },
+			{ description: "Boosts base ATK by 100" },
+			{ description: "Boosts base RCV by 50" },
+			{ description: "Boosts base HP by 200" },
+			{ description: "Reduce base Special Cooldown by 1 turn" }
+		],
+		festAbility: [
+			"Driven/Powerhouse class teammates HP Up Lv.2, DEF Up Lv.2; when remaining HP is 50% or below, self Special CT Speed Up Lv.1; revives self up to 1 time at 10% HP",
+			"Driven/Powerhouse class teammates HP Up Lv.3, DEF Up Lv.3; when remaining HP is 50% or below, self Special CT Speed Up Lv.2; revives self up to 1 time at 20% HP",
+			"Driven/Powerhouse class teammates HP Up Lv.4, DEF Up Lv.4; when remaining HP is 50% or below, self Special CT Speed Up Lv.3; revives self up to 1 time at 30% HP",
+			"Driven/Powerhouse class teammates HP Up Lv.5, DEF Up Lv.5; when remaining HP is 50% or below, self Special CT Speed Up Lv.4; revives self up to 1 time at 40% HP",
+			"Driven/Powerhouse class teammates HP Up Lv.6, DEF Up Lv.6; when remaining HP is 50% or below, self Special CT Speed Up Lv.5; revives self up to 1 time at 50% HP"
+		],
+		festAttackPattern: [
+			"Normal Attack",
+			"Heal Self Lv.2",
+			"Power Attack",
+			"Full Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festResistance: "Completely evades Halve Stats, reduce damage taken from Powerhouse and Cerebral by 30％",
+		festSpecial: [
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 10% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 2.3 damage; when remaining HP is 50% or below, targets all enemies for 50% chance of Halve ATK (30 s); targets self for ATK Up Lv.1 (30 s), DEF Up Lv.1 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 14% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 2.4 damage; when remaining HP is 50% or below, targets all enemies for 55% chance of Halve ATK (30 s); targets self for ATK Up Lv.2 (30 s), DEF Up Lv.2 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 18% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 2.5 damage; when remaining HP is 50% or below, targets all enemies for 60% chance of Halve ATK (30 s); targets self for ATK Up Lv.3 (30 s), DEF Up Lv.3 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 22% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 2.6 damage; when remaining HP is 50% or below, targets all enemies for 65% chance of Halve ATK (30 s); targets self for ATK Up Lv.4 (30 s), DEF Up Lv.4 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 26% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 2.7 damage; when remaining HP is 50% or below, targets all enemies for 70% chance of Halve ATK (30 s); targets self for ATK Up Lv.5 (30 s), DEF Up Lv.5 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 30% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 2.8 damage; when remaining HP is 50% or below, targets all enemies for 75% chance of Halve ATK (30 s); targets self for ATK Up Lv.6 (30 s), DEF Up Lv.6 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 34% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 2.9 damage; when remaining HP is 50% or below, targets all enemies for 80% chance of Halve ATK (30 s); targets self for ATK Up Lv.7 (30 s), DEF Up Lv.7 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 38% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 3 damage; when remaining HP is 50% or below, targets all enemies for 85% chance of Halve ATK (30 s); targets self for ATK Up Lv.8 (30 s), DEF Up Lv.8 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 42% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 3.1 damage; when remaining HP is 50% or below, targets all enemies for 90% chance of Halve ATK (30 s); targets self for ATK Up Lv.9 (30 s), DEF Up Lv.9 (30 s)"
+			},
+			{
+				cooldown: 23,
+				description: "Targets all enemies for 50% chance of Halve DEF (20 s); targets 2 enemies with high current HP for ATK x 3.3 damage; when remaining HP is 50% or below, targets all enemies for 100% chance of Halve ATK (30 s); targets self for ATK Up Lv.10 (30 s), DEF Up Lv.10 (30 s)"
+			}
+		],
+		festStats: {
+			def: 166,
+			atk: 174,
+			style: "DBF"
+		}
+	},
+	4269: {
+		captain: "Reduces Special Cooldown of Driven and Powerhouse characters by 3 turns at the start of Stage 2, boosts ATK of Driven and Powerhouse characters by 4x, by 5x instead if HP is below 30% at the start of the turn, and boosts HP of Driven and Powerhouse characters by 1.5x. One time per an adventure, if Swap Captains is in effect or another status effect is applied to the crew, all enemies, or an individual enemy on the same turn after the required effect was applied, activates \"Dreadful Onslaught\" in the following turn.",
+		special: "Removes Poison duration completely and reduces Burn duration by 6 turns. If your crew has Color Affinity when the special is activated, increases boost effects of Color Affinity buffs by +0.25x. If HP is below 25% when the special is activated and crew has Color Affinity when the special is activated, sets Chain Boundaries to 2.5x and 15.0x for 3 turns. Reduces crew's current HP by 80%, deals 30x the amount of HP subtracted in Typeless damage to all enemies, and boosts Color Affinity of Driven and Powerhouse characters by 2.25x, preventing buff clears, for 3 turns.",
+		specialCooldown: [
+			19,
+			13
+		],
+		specialName: "Dreadful Onslaught",
+		sailor: {
+			base: "Boosts base ATK of Driven and Powerhouse characters by 60.",
+			level1: "Reduces Special Cooldown of this character by 2 turns after each turn you take damage."
+		},
+		support: [
+			{
+				Characters: "Kuzan (Aokiji), Lafitte, Van Ogre, Jesus Burgess (Mr. Store), Doc Q, Avalo Pizarro, Catarina Devon, Vasco Shot, San Juan Wolf",
+				description: [
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, reduces Burn duration by 1 turn, and changes the orb of the supported character into a Matching orb."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Reduce Special Use Limit duration",
+				description: [
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 1 turn",
+					"Reduces Special Use Limit duration by 2 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Reduce Special Use Limit duration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
+	4270: {
+		captain: "Changes all orbs into [TND] orbs and locks all orbs for 2 turns at the start of Stage 2, boosts ATK of Cerebral and Powerhouse characters by 4x, by 4.75x instead if they have a beneficial orb, boosts HP of Cerebral and Powerhouse characters by 1.5x, and makes [TND] and [DEX] orbs beneficial for Cerebral and Powerhouse characters.",
+		special: [
+			{
+				description: "Reduces Paralysis duration by 2 turns, recovers 10,000 HP, and if the enemy is inflicted with Increase Damage Taken, increases boost effects of enemies' Increase Damage Taken debuffs by +0.3x.",
+				cooldown: [ 13, 7 ]
+			},
+			{
+				description: "Reduces enemies' Barrier duration by 2 turns, reduces Paralysis duration by 5 turns, changes orbs of adjacent characters into [TND] orbs, and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn. If HP is above 51% when the special is activated, reduces crew's current HP by 50%, and reduces Special Cooldown of this character by 6 turns.",
+				cooldown: [ 19, 13 ]
+			}
+		],
+		specialCooldown: [
+			19,
+			13
+		],
+		specialName: "Time to Claim the One Piece",
+		sailor: {
+			base: "Changes all orbs into [TND] orbs at the start of the fight.",
+			level1: "Boosts base ATK of Cerebral and Powerhouse characters by 60."
+		},
+		support: [
+			{
+				Characters: "Lucky Roux, Yasopp, Rockstar, Uta, Bonk Punch, Hongo, Howling Gabu, Building Snake, Monster, Lime Juice",
+				description: [
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, changes the orb of the supported character into a Matching orb.",
+					"Once per adventure, when the supported character uses their special, reduces Paralysis duration by 1 turn, and changes the orb of the supported character into a Matching orb."
+				]
+			}
+		],
+		potential: [
+			{
+				Name: "Enrage/Reduce Increase Damage Taken duration",
+				description: [
+					"Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+					"Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+				]
+			},
+			{
+				Name: "Reduce No Healing duration",
+				description: [
+					" Reduces No Healing duration by 1 turn",
+					" Reduces No Healing duration by 2 turns",
+					" Reduces No Healing duration by 3 turns",
+					" Reduces No Healing duration by 4 turns",
+					" Reduces No Healing duration by 5 turns"
+				]
+			}
+		],
+		limit: [
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base HP by 30" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Acquire Potential 1: Enrage/Reduce Increase Damage Taken duration" },
+			{ description: "Boosts base HP by 40" },
+			{ description: "Boosts base RCV by 20" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Acquire 1 additional Socket slot" },
+			{ description: "Boosts base HP by 50" },
+			{ description: "Boosts base ATK by 30" },
+			{ description: "Boosts base RCV by 30" },
+			{ description: "Acquire Sailor Ability 2: " },
+			{ description: "Boosts base ATK by 40" },
+			{ description: "Reduce base Special Cooldown by 1 turn" },
+			{ description: "Acquire Potential 2: Reduce No Healing duration" }
+		],
+		festAttackPattern: [
+			"Normal Attack"
+		],
+		festAttackTarget: "Targets closest enemies",
+		festStats: {
+			def: 50,
+			atk: 100,
+			style: "BAL"
+		}
+	},
     4986: {//Kung Fu Luffy
         captain: "Boosts ATK of all characters by 3.5x after the 2nd PERFECTs in a row, by 4x after the 5th PERFECTs in a row and boosts HP of all characters by 1.5x",
         special: "Deals 120x character's ATK in Typeless damage to all enemies, changes orbs of adjacent characters into Matching Orbs, boosts ATK of all characters by 1.75x for 2 turns, reduces any damage received above 5,656 HP by 97% for 2 turns and makes PERFECTs easier to hit for 2 turns",

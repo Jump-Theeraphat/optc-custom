@@ -702,8 +702,6 @@ const Lilith = [ "Lilith", "PUNK-02" ];
 const Shakuyaku = [ "Shakuyaku", "Shakky" ];
 const SHawk = [ "S-Hawk" ];
 const SShark = [ "S-Shark" ];
-const SSnake = [ "S-Snake" ];
-const SBear = [ "S-Bear" ];
 const Atlas = [ "Atlas", "PUNK-05" ];
 const Edison = [ "Edison", "PUNK-03" ];
 const Pythagoras = [ "Pythagoras", "PUNK-04" ];
@@ -713,9 +711,12 @@ const Shaka = [ "Shaka", "PUNK-01" ];
 const Hakugan = [ "Hakugan" ];
 const Fugar = [ "Fugar" ];
 const Ribbitini = [ "Ribbitini" ];
-const PrinceGrus = [ "Prince Grus "];
+const SSnake = [ "S-Snake" ];
+const SBear = [ "S-Bear" ];
+const PrinceGrus = [ "Prince Grus" ];
 const Kujaku = [ "Kujaku" ];
-const Hibari = [ "Hibari" ]
+const Hibari = [ "Hibari" ];
+const Doll = [ "Doll" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4818,27 +4819,48 @@ window.families = {
     4224: [ ...Bepo ],
     4225: [ ...Bepo ],
     4226: [ ...SBear ],
-    4227: [ ...RobLucci, ...Kaku ],
-    4228: [ ...Stussy ],
-    4229: [ ...SSnake, ...SHawk, ...SShark ],
+    4227 : [ ...RobLucci, ...Kaku ],
+    4228 : [ ...Stussy ],
+    4229 : [ ...SSnake, ...SHawk, ...SShark ],
     4231: [ ...Shanks, ...EustassKid ],
     4233: [ ...Dorry, ...Broggy ],
     4234: [ ...Fugar ],
     4235: [ ...Ribbitini ],
     4237: [ ...BasilHawkins ],
     4238: [ ...NefertariVivi ],
+    4239: [ ...MonkeyDGarp ],
     4240: [ ...MonkeyDGarp ],
+    4241: [ ...PrinceGrus, ...Kujaku, ...Hibari ],
     4242: [ ...PrinceGrus, ...Kujaku, ...Hibari ],
     4243: [ ...Helmeppo ],
     4244: [ ...Tashigi ],
     4245: [ ...Kuzan ],
     4246: [ ...Kuzan ],
     4247: [ ...AvaloPizarro ],
+    4248: [ ...SanjuanWolf ],
+    4249: [ ...Coby ],
     4250: [ ...Coby ],
     4251: [ ...MonkeyDGarp ],
     4252: [ ...Kuzan ],
-
-    //break
+    4253: [ ...Shiryu ],
+    4254: [ ...VascoShot ],
+    4255: [ ...Doll ],
+    4256: [ ...Magellan ],
+    4257: [ ...GolDRoger, ...SilversRayleigh, ...Gaban ],
+    4258: [ ...Sengoku, ...MonkeyDGarp ],
+    4259: [ ...EdwardNewgate, ...KozukiOden ],
+    4260: [ ...Vegapunk ],
+    4261: [ ...Vegapunk ],
+    4262: [ ...Uta ],
+    4263: [ ...Perona ],
+    4264: [ ...Tsuru ],
+    4265: [ ...RoronoaZoro ],
+    4266: [ ...RoronoaZoro ],
+    4267: [ ...Kaido, ...King ],
+    4268: [ ...CharlotteLinlin, ...CharlotteKatakuri ],
+    4269: [ ...MarshallDTeach, ...Shiryu ],
+    4270: [ ...Shanks, ...BenBeckman ],
+    // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
     4988: [ ...NefertariVivi ],

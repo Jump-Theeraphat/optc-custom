@@ -87,19 +87,30 @@ function getThumb(thumbId) {
     if (paddedThumbId === '9016')
         return '/tm-planner/assets/img/new-thumbs/4231-2.png';
 
-    // Special cases for new thumbs
     if (
-        paddedThumbId === '9999' ||
-        paddedThumbId >= 4202
+        paddedThumbId == 4203 ||
+        paddedThumbId == 4204 ||
+        paddedThumbId == 4219 ||
+        paddedThumbId == 4221 ||
+        paddedThumbId == 4222 ||
+        paddedThumbId == 4223 ||
+        paddedThumbId == 4224 ||
+        paddedThumbId == 4233 ||
+        paddedThumbId == 4234 ||
+        paddedThumbId == 4235 ||
+        paddedThumbId == 4237 ||
+        paddedThumbId == 4238
     )
-        return '/tm-planner/assets/img/new-thumbs/' + thumbId + '.png';
+        return `/tm-planner/assets/img/new-thumbs/${paddedThumbId}.png`;
 
     // Official Site down temp
     var digit4 = Math.floor(thumbId / 1000);
     var digit3 = Math.floor((thumbId - digit4 * 1000) / 100) + '00';
 
-    //return 'https://onepiece-treasurecruise.com/wp-content/uploads/f' + paddedThumbId + '.png';
-    return 'https://optc-db.github.io/api/images/thumbnail/jap/' + digit4 + '/' + digit3 + '/' + paddedThumbId + '.png';
+    if (paddedThumbId >= 4202)
+        return `https://2shankz.github.io/optc-db.github.io/api/images/thumbnail/jap/${digit4}/${digit3}/${paddedThumbId}.png`;
+
+    return `https://optc-db.github.io/api/images/thumbnail/jap/${digit4}/${digit3}/${paddedThumbId}.png`;
 }
 
 function createImgHtml(imgSrc, size, floatLeft) {
