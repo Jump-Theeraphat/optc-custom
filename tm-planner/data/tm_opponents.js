@@ -21462,7 +21462,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Whitebeard & Marco', 'STR'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6000,
                     detail: [
                         {
@@ -21541,7 +21541,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
+                    boss: ['Law', 'STR'],
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -21608,8 +21608,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Vegapunk', '?'],
-                    hp_: 2500000,
+                    boss: ['Vegapunk', 'DEX'],
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
