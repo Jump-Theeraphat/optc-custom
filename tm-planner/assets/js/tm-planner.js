@@ -3716,7 +3716,7 @@ $(document).ready(function () {
             unitId = parseVsUnitId(unitId);
 
         if (unitId) {
-            var dbUrl = 'https://optc-db.github.io/characters/#/view/';
+            var dbUrl = 'https://2shankz.github.io/optc-db.github.io/characters/#/view/';
             dbUrl += unitId;
 
             window.open(dbUrl);
@@ -4009,7 +4009,7 @@ $(document).ready(function () {
         var teamDiv = $(this).closest('.team');
         var team = getTeamUnits(teamDiv);
 
-        var calUrl = 'https://optc-db.github.io/damage/#/transfer/D';
+        var calUrl = 'https://2shankz.github.io/optc-db.github.io/damage/#/transfer/D';
 
         for (var i = 0; i < team.length; i++) {
             if (team[i] == 0)

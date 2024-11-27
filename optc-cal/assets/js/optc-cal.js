@@ -680,7 +680,7 @@ function showFooter() {
                     e['type'] === 'tm' ||
                     e['type'] === 'pka'
                 )
-                    createListItem(ed, '.db', 'https://optc-db.github.io/characters/#/view/', id, 'OPTC-DB Character Page');
+                    createListItem(ed, '.db', 'https://2shankz.github.io/optc-db.github.io/characters/#/view/', id, 'OPTC-DB Character Page');
 
                 if (drops[id])
                     createListItem(ed, '.drop-list', 'https://optc-db.github.io/drops/?', drops[id], 'Drop List');
