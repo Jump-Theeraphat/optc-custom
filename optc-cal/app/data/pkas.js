@@ -53,4 +53,7 @@ var pkas = {
     4260: {
         name: 'Dr. Vegapunk'
     },
+    4279: {
+        name: 'Orochi & Kanjuro'
+    },
 };
