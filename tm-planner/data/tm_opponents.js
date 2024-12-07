@@ -15,6 +15,7 @@ const BAR_HP = 'bar-hp';
 const BAR_P = 'bar-p';
 const BAR_SLOT = 'bar-slot';
 const BIND = 'bind';
+const BLEED = 'bleed';
 const BLIND = 'blind';
 const BLOW_AWAY = 'blow-away';
 const BURN = 'burn';
@@ -47,6 +48,7 @@ const IMMU_DELAY = 'immu-delay';
 const IMMU_EXCEPT = 'immu-except';
 const IMMU_POISON = 'immu-poison';
 const INTIM = 'intim';
+const MOB = 'Mob';
 const NAO = 'nao';
 const PAIN = 'pain';
 const PARA = 'para';
@@ -60,6 +62,7 @@ const SLOT_BLOCK = 'slot-block';
 const SLOT_BOOST = 'orb-boost';
 const SLOT_CHANGE = 'slot-change';
 const SLOT_EFT_DOWN = 'Slot Effect Down';
+const SLOT_LOCK = 'slot-lock';
 const SLOT_NEG = 'slot-neg';
 const SLOT_PARA = 'slot-para';
 const SLOT_POISON = 'slot-poison';
@@ -21653,6 +21656,317 @@ var tm_opponents = {
                                 { type: SLOT_BIND, turn: 5, detail: 'Row 2' },
                                 { type: BAR_HIT, turn: 2, detail: '30x' },
                                 { type: IMMU_EXCEPT, turn: 99, detail: 'Increase Dmg Taken' }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Orochi & Kanjuro ==========
+    4280: {
+        4226: {
+            name: 'S-Bear',
+            type: 'PSY',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Bear', 'PSY'],
+                    hp: 500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 10 },
+                                { type: BAR_SLOT, turn: 10, detail: '1x WANO' },
+                                { type: SLOT_ATK_DOWN, turn: 1, detail: 'All, 99%' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4132: {
+            name: 'S-Shark',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Shark', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '75%' },
+                                { type: PARA, turn: 6 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3' },
+                                { type: CHAIN_DOWN, turn: 5 },
+                                { type: SLOT_BLOCK, detail: 'BLOCK/EMPTY' },
+                                { type: BURN_P, turn: 8, detail: '8000' },
+                                { type: NAO, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4167: {
+            name: 'S-Snake',
+            type: 'DEX',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Slasher/Free Spirit' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Slasher/Free Spirit' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Slasher/Free Spirit' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Snake', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BIND, turn: 9, detail: 'Row 1' },
+                                { type: ATK_DOWN, turn: 7 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: DEF_NULL, turn: 2 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4109: {
+            name: 'S-Hawk',
+            type: 'QCK',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Hawk', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6, detail: 'Col L' },
+                                { type: CD_REW, turn: 4, detail: 'Col R' },
+                                { type: SLOT_CHANGE, detail: 'DEX/QCK' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 6 },
+                                { type: SLOT_ATK_DOWN, turn: 3, detail: 'Type' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4227: {
+            name: 'Lucci & Kaku',
+            type: 'PSY',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Lucci & Kaku', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 1 },
+                                { type: SLOT_BLOCK },
+                                { type: BLOW_AWAY, turn: 3, detail: 'Row 3 Random 1' },
+                                { type: NAO, turn: 99 },
+                                { type: BAR_GD, turn: 2, detail: '3x' },
+                                { type: PARA, turn: 6 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lucci & Kaku', 'PSY'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: MOB, detail: '3x, HP 1000' },
+                                { type: DESP, turn: 9 },
+                                { type: SLOT_BLOCK },
+                                { type: BAR_HIT, turn: 4, detail: '20x' },
+                                { type: NAO, turn: 99 },
+                                { type: TARGET_LOCK, turn: 3 },
+                                { type: CD_REW, turn: 1, detail: 'Row 1' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Poison' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4280: {
+            name: 'Orochi & Kanjuro',
+            type: 'PSY',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Cerebral/Driven/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Cerebral/Driven/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Cerebral/Driven/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'PSY'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: ANTI_HEAL, turn: 3 },
+                                { type: BLEED, turn: 3, detail: '10000' },
+                                { type: SP_LIMIT, turn: 1, detail: '1x' },
+                                { type: BIND, turn: 9, detail: 'Row 1' },
+                                { type: SLOT_CHANGE, detail: 'BOMB' },
+                                { type: SLOT_LOCK, turn: 1 },
+                                { type: DMG_LIMIT, turn: 1, detail: '85%' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Poison' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '50000' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Bleed not applied',
+                            action: [
+                                { type: BLEED, turn: 2, detail: '15000' }
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                { type: PAIN, turn: 5, detail: '10000' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Orochi & Kanjuro', 'PSY'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 1, detail: 'Row 1 3' },
+                                { type: SLOT_BLOCK, detail: 'BLOCK/BOMB' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: BLOW_AWAY, turn: 1, detail: 'Row 2 Random 1' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Poison' }
+                            ]
+                        },
+                        {
+                            type: 'Preemp (If HP<80%)',
+                            action: [
+                                { type: BURN_P, turn: 6, detail: '20000'},
+                                { type: HUNGER, detail: '3x' },
+                                { type: SLOT_ATK_DOWN, turn: 3, detail: 'All, 50%' }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '150000' }
                             ]
                         }
                     ]

@@ -668,11 +668,13 @@ function getBoosters(tmId, server) {
     } else if (
         tmId == 4225 ||
         tmId == 4246 ||
-        tmId == 4261
+        tmId == 4261 ||
+        tmId == 4280
     ) {
         // TM Bepo
         // TM Kuzan
         // TM Vegapunk
+        // TM Orochi & Kanjuro
         $('#div_2x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
@@ -1064,7 +1066,8 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Slot Effect Down' ||
         iconKey === 'Territory' ||
         iconKey === 'Immu Instant Defeat' ||
-        iconKey === 'No Type Effect'
+        iconKey === 'No Type Effect' ||
+        iconKey === 'Mob'
     )
         return iconKey;
 
