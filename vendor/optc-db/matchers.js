@@ -2110,8 +2110,24 @@ let matchers = {
         {
             name: 'Chain Boost: Tap Timing',
             targets: [ 'special', 'superSpecial', 'swap', 'support' ],
-            regex: /increases Chain Tap Timing Bonus of ([^."]+?)characters? to \+([?.\d]+)x(?:-([?.\d]+)x)? for (\d) turns? depending on Tap Timing/i,
+            regex: /increases Chain Tap Timing Bonus of ([^."]+?)characters? to \+([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? for (\d) turns? depending on Tap Timing/i,
             submatchers: [
+                {
+                    type: 'option',
+                    description: 'Allowing Override',
+                    regex: /allowing override/,
+                    radioGroup: 'targets',
+                    groups: [4],
+                    cssClasses: ['min-width-6'],
+                },
+                {
+                    type: 'option',
+                    description: 'Buff Clear Immune',
+                    regex: /preventing buff clears/,
+                    radioGroup: 'targets',
+                    groups: [4],
+                    cssClasses: ['min-width-6'],
+                },
                 {
                     type: 'number',
                     description: 'Multiplier:',
@@ -2120,7 +2136,7 @@ let matchers = {
                 {
                     type: 'number',
                     description: 'Turns:',
-                    groups: [4],
+                    groups: [5],
                 },
                 {
                     type: 'separator',
