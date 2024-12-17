@@ -21686,8 +21686,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 3,
-                    boss: ['S-Bear', 'PSY'],
-                    hp: 500000,
+                    boss: ['S-Bear (500K HP)', 'PSY'],
+                    hp: 500000, // Fixed
                     atk_: 6000,
                     detail: [
                         {
@@ -21841,8 +21841,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Lucci & Kaku', 'PSY'],
-                    hp_: 2000000,
+                    boss: ['Lucci', 'PSY'],
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -21901,8 +21901,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'PSY'],
-                    hp_: 2500000,
+                    boss: ['Oniwabanshu', 'PSY'],
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
