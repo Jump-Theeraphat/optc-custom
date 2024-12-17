@@ -213,4 +213,7 @@ var kizunas = {
     4274: {
         name: 'Croc v2 6+ (~ 6am)'
     },
+    4287: {
+        name: 'Sanji & Pudding 6+ (~ 6am)'
+    },
 };
