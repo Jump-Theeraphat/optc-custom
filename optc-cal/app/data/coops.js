@@ -20,4 +20,7 @@ var coops = {
     4275: {
         name: 'Winter 24-1'
     },
+    2799: {
+        name: 'Wapol\'s Assault'
+    },
 }
