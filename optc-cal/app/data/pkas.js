@@ -56,4 +56,7 @@ var pkas = {
     4279: {
         name: 'Orochi & Kanjuro'
     },
+    4297: {
+        name: 'Akainu'
+    },
 };
