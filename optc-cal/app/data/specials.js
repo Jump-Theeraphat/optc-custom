@@ -170,6 +170,11 @@ var specials = {
         name: 'Halloween 2024 (1am ~ 6am)',
         thumb: 4262
     },
+    'bb_4290': {
+        type: 'Blitz Battle',
+        name: 'VS Navy (1am ~ 6am)',
+        thumb: 4290
+    },
 
     'wc_2401': {
         type: 'World Clash',
