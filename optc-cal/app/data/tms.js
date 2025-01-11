@@ -285,4 +285,7 @@ var tms = {
     4280: {
         name: 'Orochi & Kanjuro (1am ~ 6am)'
     },
+    4298: {
+        name: 'Sakazuki (QCK) (1am ~ 6am)'
+    },
 };
