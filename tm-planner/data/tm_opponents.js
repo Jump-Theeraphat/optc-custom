@@ -21,6 +21,7 @@ const BLOW_AWAY = 'blow-away';
 const BURN = 'burn';
 const BURN_P = 'burn-p';
 const CA_SWAP = 'ca-swap';
+const CD_LOCK = 'cd-lock';
 const CD_REW = 'cd-rew';
 const CHAIN_ATK_DOWN_MIN = 'chain-atk-down-min';
 const CHAIN_ATK_DOWN_MAX = 'chain-atk-down-max';
@@ -21967,6 +21968,318 @@ var tm_opponents = {
                             type: 'ON DEATH (0%)',
                             action: [
                                 { type: DMG_NORMAL, detail: '150000' }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Sakazuki (QCK) ==========
+    4298: {
+        1234: {
+            name: 'Tashigi',
+            type: 'DEX',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Tashigi', 'DEX'],
+                    hp_: 500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CHAIN_ATK_DOWN_MAX, turn: 6, detail: '>=2' },
+                                { type: BURN_P, turn: 10, detail: '10000' },
+                                { type: SLOT_NEG, turn: 1, detail: 'Type' },
+                                { type: NAO, turn: 99 },
+                                { type: BAR_P, turn: 1, detail: '4x' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4052: {
+            name: 'Kurouma',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kurouma', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: PARA, turn: 8, detail: 'Row 1' },
+                                { type: SP_BIND, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 10 },
+                                { type: DEF_PERC, turn: 10 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '150K' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3735: {
+            name: 'Hina',
+            type: 'STR',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Powerhouse/Free Spirit' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Powerhouse/Free Spirit' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Powerhouse/Free Spirit' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Hina', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: STUN, detail: 'Row 1 3' },
+                                { type: ATK_DOWN, turn: 7 },
+                                { type: SP_LIMIT, turn: 2, detail: '2x' },
+                                { type: NAO, turn: 99 },
+                                { type: RESIL, turn: 3 },
+                                { type: DEF_THRES, turn: 7 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3411: {
+            name: 'Kizaru',
+            type: 'DEX',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kizaru', 'DEX'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Type' },
+                                { type: CD_REW, turn: 1 },
+                                { type: HUNGER, detail: '3x' },
+                                { type: DEF, turn: 12 },
+                                { type: DEF_PERC, turn: 3 },
+                                { type: NAO, turn: 99 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: BAR_SLOT, turn: 4, detail: '3x RCV' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4299: {
+            name: 'Fujitora & Ryokugyu',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Fujitora & Ryokugyu', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_POISON },
+                                { type: PARA, turn: 8, detail: 'Row 2 3' },
+                                { type: ATK_DOWN, turn: 8 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 3, detail: '<=2.4' },
+                                { type: POISON, turn: 99 },
+                                { type: NAO, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Fujitora & Ryokugyu', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 10, detail: 'Col L' },
+                                { type: SLOT_PARA },
+                                { type: SP_LIMIT, turn: 2, detail: '2x' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: SP_BIND, turn: 10, detail: 'Col R' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4298: {
+            name: 'Sakazuki',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Cerebral/Free Spirit/Fighter' },
+                                { type: VS_RED, turn: 5, detail: 'Cerebral/Free Spirit/Fighter' },
+                                { type: SW_RED, turn: 5, detail: 'Cerebral/Free Spirit/Fighter' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Sakazuki', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CA_SWAP, turn: 2, detail: 'Row 2' },
+                                { type: SLOT_BLOCK },
+                                { type: SLOT_PARA },
+                                { type: CD_REW, turn: 4, detail: 'Row 3' },
+                                { type: CD_LOCK, detail: 'Row 3, 2x Perfect' },
+                                { type: SLOT_ATK_DOWN, turn: 5, detail: 'Type/RCV' },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                { type: SLOT_BLOCK }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sakazuki', 'QCK'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: BURN_P, turn: 6, detail: '20000' },
+                                { type: TERRITORY, turn: 5 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Preemp (If Captain is STR/DEX/QCK)',
+                            action: [
+                                { type: PARA, turn: 13 }
+                            ]
+                        },
+                        {
+                            type: 'Preemp (If Captain is PSY/INT)',
+                            action: [
+                                { type: DESP, turn: 13 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Slot Change',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: BLOW_AWAY, turn: 99, detail: 'Random Sailor' }
                             ]
                         }
                     ]
