@@ -21999,7 +21999,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Tashigi', 'DEX'],
-                    hp_: 500000,
+                    hp_: 1200000,
                     atk_: 6000,
                     detail: [
                         {
@@ -22162,8 +22162,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Fujitora & Ryokugyu', 'QCK'],
-                    hp_: 2000000,
+                    boss: ['Ryokugyu', 'QCK'],
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -22222,7 +22222,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Sakazuki', 'QCK'],
-                    hp_: 2500000,
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
