@@ -9,7 +9,7 @@ const MonkeyDLuffy = [ "Monkey D. Luffy" ];
 const RoronoaZoro = [ "Roronoa Zoro" ];
 const Nami = [ "Nami" ];
 const Usopp = [ "Usopp" ];
-const VinsmokeSanji = [ "Vinsmoke Sanji" ];
+const VinsmokeSanji = [ "Vinsmoke Sanji", "Sanji" ];
 const TonyTonyChopper = [ "Tony Tony Chopper" ];
 const Higuma = [ "Higuma" ];
 const MasterOfTheNearSea = [ "Master of the Near Sea" ];
@@ -101,7 +101,7 @@ const Tsuru = [ "Tsuru" ];
 const Momonga = [ "Momonga" ];
 const Onigumo = [ "Onigumo" ];
 const MonkeyDGarp = [ "Monkey D. Garp" ];
-const TrafalgarDWaterLaw = [ "Trafalgar D. Water Law" ];
+const TrafalgarDWaterLaw = [ "Trafalgar D. Water Law", "Trafalgar Law" ];
 const BasilHawkins = [ "Basil Hawkins" ];
 const Killer = [ "Killer" ];
 const Urouge = [ "Urouge" ];
@@ -158,7 +158,7 @@ const GeckoMoria = [ "Gecko Moria" ];
 const BoaHancock = [ "Boa Hancock" ];
 const DonquixoteDoflamingo = [ "Donquixote Doflamingo", "Doffy" ];
 const Brook = [ "Brook" ];
-const ShimotsukiRyuma = [ "Shimotsuki Ryuma" ];
+const ShimotsukiRyuma = [ "Shimotsuki Ryuma", "Ryuma" ];
 const Masira = [ "Masira" ];
 const Shoujou = [ "Shoujou" ];
 const MontblancCricket = [ "Montblanc Cricket" ];
@@ -252,7 +252,7 @@ const Squard = [ "Squard" ];
 const WhiteyBay = [ "Whitey Bay" ];
 const LittleOarsJr = [ "Little Oars Jr." ];
 const Duval = [ "Duval" ];
-const NefertariCobra = [ "Nefertari Cobra" ];
+const NefertariCobra = [ "Nefertari Cobra", "Nefeltari Cobra" ];
 const Koala = [ "Koala" ];
 const Hack = [ "Hack" ];
 const Inazuma = [ "Inazuma" ];
@@ -443,7 +443,7 @@ const Wicca = [ "Wicca" ];
 const Gancho = [ "Gancho" ];
 const Cub = [ "Cub", "Kabu" ];
 const Bian = [ "Bian" ];
-const KurozumiKanjuro = [ "Kurozumi Kanjuro" ];
+const KurozumiKanjuro = [ "Kurozumi Kanjuro", "Kanjuro" ];
 const Dadan = [ "Dadan" ];
 const Porchemy = [ "Porchemy" ];
 const Bluejam = [ "Bluejam" ];
@@ -618,7 +618,7 @@ const Toko = [ "Toko" ];
 const King = [ "King", "Alber" ];
 const Onimaru = [ "Onimaru" ];
 const Gyukimaru = [ "Gyukimaru", "Onimaru" ];
-const KurozumiOrochi = [ "Kurozumi Orochi" ];
+const KurozumiOrochi = [ "Kurozumi Orochi", "Orochi" ];
 const Queen = [ "Queen" ];
 const Shinobu = [ "Shinobu" ];
 const Hyogoro = [ "Hyogoro" ];
@@ -635,7 +635,7 @@ const CatarinaDevon = [ "Catarina Devon" ];
 const VascoShot = [ "Vasco Shot" ];
 const SanjuanWolf = [ "Sanjuan Wolf", "San Juan Wolf" ];
 const Condoriano = [ "Condoriano" ];
-const KozukiToki = [ "Kozuki Toki" ];
+const KozukiToki = [ "Kozuki Toki", "Toki" ];
 const Gaban = [ "Scopper Gaban", "Gaban" ];
 const Morgans = [ "Morgans" ];
 const Yamato = [ "Yamato" ];
@@ -4909,6 +4909,22 @@ window.families = {
     4300: [ ...Morley, ...Karasu ],
     4301: [ ...Lindbergh ],
     4302: [ ...BeloBetty ],
+    4303: [ ...Sai, ...Leo ],
+    4304: [ ...Fukaboshi ],
+    4305: [ ...Shirahoshi ],
+    4306: [ ...BartholomewKuma ],
+    4307: [ ...Usopp, ...Lilith ],
+    4308: [ ...Nami, ...VinsmokeSanji ],
+    4309: [ ...Franky ],
+    4310: [ ...Brook ],
+    4311: [ ...SShark ],
+    4312: [ ...SShark ],
+    4313: [ ...Sentomaru ],
+    4314: [ ...Buggy ],
+    4315: [ ...Crocodile ],
+    4316: [ ...DraculeMihawk ],
+    4317: [ ...Vegapunk ],
+    4318: [ ...Vegapunk ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
@@ -5575,6 +5591,14 @@ const ghostFamilies = {
     646: [ ...EdwardNewgate, ...PortgasDAce ],
     647: [ ...EdwardNewgate, ...PortgasDAce ],
     648: [ ...EdwardNewgate, ...PortgasDAce ],
+    649: [ ...Usopp, ...Lilith ],
+    650: [ ...Usopp, ...Lilith ],
+    651: [ ...Usopp, ...Lilith ],
+    652: [ ...Usopp, ...Lilith ],
+    653: [ ...Nami, ...VinsmokeSanji ],
+    654: [ ...Nami, ...VinsmokeSanji ],
+    655: [ ...Nami, ...VinsmokeSanji ],
+    656: [ ...Nami, ...VinsmokeSanji ],
 }
 
 Object.keys(ghostFamilies).forEach(function (key) {
