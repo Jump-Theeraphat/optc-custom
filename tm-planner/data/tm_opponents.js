@@ -22287,4 +22287,291 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== S-Shark ==========
+    4312: {
+        3360: {
+            name: 'Rockstar',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Rockstar', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: PARA, turn: 8 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 5 },
+                                { type: DESP, turn: 6 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2554: {
+            name: 'Yasopp',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Powerhouse/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Powerhouse/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Powerhouse/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Yasopp', 'STR'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'EMPTY' },
+                                { type: SLOT_CHANGE, detail: 'TND (Powerhouse)' },
+                                { type: CD_REW, turn: 2, detail: 'Row 2' },
+                                { type: STUN, detail: 'Row 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 7 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        2555: {
+            name: 'Lucky Roux',
+            type: 'DEX',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lucky Roux', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BLOW_AWAY, turn: 2, detail: 'Random 2' },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: HP_CUT, detail: '90%' },
+                                { type: HEAL, detail: '10%' },
+                                { type: SLOT_ATK_DOWN, turn: 1, detail: 'All' },
+                                { type: TAP_LIMIT, turn: 1, detail: '1x' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1770: {
+            name: 'Beckman',
+            type: 'QCK',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Beckman', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6 },
+                                { type: DESP, turn: 9 },
+                                { type: SLOT_CHANGE, detail: 'BOMB' },
+                                { type: NAO, turn: 99 },
+                                { type: BIND, turn: 6, detail: 'Row 1' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1707: {
+            name: 'Shanks',
+            type: 'DEX',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/QCK' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Shanks', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: PARA, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: PAIN, turn: 3, detail: '10000' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shanks', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 10, detail: '1R/2L/3R' },
+                                { type: CD_REW, turn: 1, detail: 'Row 2 3' },
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: NAO, turn: 99 },
+                                { type: BAR_SLOT, turn: 1, detail: '3x STR' },
+                                { type: BIND, turn: 10, detail: '1L/2R/3L' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Barrier Not Applied (once)',
+                            action: [
+                                { type: BAR_SLOT, turn: 1, detail: '3x STR' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4312: {
+            name: 'S-Shark',
+            type: 'DEX',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Shooter/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Shooter/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Shooter/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'DEX'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 9 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 6 },
+                                { type: RESIL, turn: 6 },
+                                { type: SLOT_BLOCK, detail: 'BLOCK/Bad' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Shark', 'DEX'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK, detail: 'BLOCK/Bad' },
+                                { type: BIND, turn: 8, detail: 'Row 2 3' },
+                                { type: BURN_P, turn: 5, detail: '20000' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 3, detail: '<=2.5' },
+                                { type: NAO, turn: 99 },
+                                { type: TERRITORY, turn: 5 },
+                                { type: BAR_SLOT, turn: 3, detail: '2x S.BOMB' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

@@ -670,13 +670,15 @@ function getBoosters(tmId, server) {
         tmId == 4246 ||
         tmId == 4261 ||
         tmId == 4280 ||
-        tmId == 4298
+        tmId == 4298 ||
+        tmId == 4312
     ) {
         // TM Bepo
         // TM Kuzan
         // TM Vegapunk
         // TM Orochi & Kanjuro
         // TM Sakazuki (QCK)
+        // TM S-Shark
         $('#div_2x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
