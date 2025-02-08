@@ -41,7 +41,7 @@ var filter_map = {
     'bypass-def':               ['Beneficial Team Effects', 'Normal Attack Bypassing Enemy Buffs'],
     'bind-red':                 ['Reduce Status Effects', 'Bind'],
     'desp-red':                 ['Reduce Status Effects', 'Despair'],
-    'sp-bind-red':              ['Reduce Status Effects', 'Silence (IGN: Special Bind)'],
+    'sp-bind-red':              ['Reduce Status Effects', 'Special Bind'],
     'para-red':                 ['Reduce Status Effects', 'Paralysis'],
     'poison-red':               ['Reduce Status Effects', 'Poison'],
     'blind-red':                ['Reduce Status Effects', 'Blindness (IGN: Remove SFX)'],
