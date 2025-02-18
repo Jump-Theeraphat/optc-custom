@@ -88,18 +88,7 @@ function getThumb(thumbId) {
         return '/tm-planner/assets/img/new-thumbs/4231-2.png';
 
     if (
-        paddedThumbId == 4203 ||
-        paddedThumbId == 4204 ||
-        paddedThumbId == 4219 ||
-        paddedThumbId == 4221 ||
-        paddedThumbId == 4222 ||
-        paddedThumbId == 4223 ||
-        paddedThumbId == 4224 ||
-        paddedThumbId == 4233 ||
-        paddedThumbId == 4234 ||
-        paddedThumbId == 4235 ||
-        paddedThumbId == 4237 ||
-        paddedThumbId == 4238
+        paddedThumbId == 4321
     )
         return `/tm-planner/assets/img/new-thumbs/${paddedThumbId}.png`;
 
