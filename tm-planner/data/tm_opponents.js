@@ -22387,7 +22387,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Lucky Roux', 'DEX'],
-                    hp_: 2000000,
+                    hp: 1600000,
                     atk_: 6000,
                     detail: [
                         {
@@ -22471,7 +22471,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Shanks', 'DEX'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -22534,8 +22534,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'DEX'],
-                    hp_: 2500000,
+                    boss: ['S-Bear', 'DEX'],
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
