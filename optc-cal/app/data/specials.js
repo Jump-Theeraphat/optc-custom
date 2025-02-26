@@ -175,6 +175,11 @@ var specials = {
         name: 'VS Navy (1am ~ 6am)',
         thumb: 4290
     },
+    'bb_4322': {
+        type: 'Blitz Battle',
+        name: 'VS The Strongest Form of Humanity (1am ~ 6am)',
+        thumb: 4322
+    },
 
     'wc_2401': {
         type: 'World Clash',
