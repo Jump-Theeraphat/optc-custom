@@ -3777,4 +3777,8 @@ var specialBgEvents = [
         id: 'free_pull',
         start: '2025-02-25'
     },
+    {
+        id: 'free_pull',
+        start: '2025-03-07'
+    },
 ]
