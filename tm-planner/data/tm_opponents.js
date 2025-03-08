@@ -22574,4 +22574,305 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== S-Bear ==========
+    4327: {
+        4134: {
+            name: 'Edison & Pythagoras',
+            type: 'QCK',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Edison & Pythagoras', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 8, detail: 'Row 2 3' },
+                                { type: SLOT_CHANGE, detail: 'BOMB' },
+                                { type: NAO, turn: 99 },
+                                { type: SLOT_LOCK, detail: '1x Perfect' },
+                                { type: SLOT_NEG, turn: 5, detail: 'BOMB' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4320: {
+            name: 'Atlas',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/QCK' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Atlas', 'STR'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: NAO, turn: 99 },
+                                { type: CHAIN_DOWN, turn: 6 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 6, detail: '<=4.5' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4082: {
+            name: 'Lilith',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Powerhouse/Cerebral/Striker' },
+                                { type: VS_RED, turn: 5, detail: 'Powerhouse/Cerebral/Striker' },
+                                { type: SW_RED, turn: 5, detail: 'Powerhouse/Cerebral/Striker' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lilith', 'QCK'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: BIND, turn: 12, detail: 'Row 1 3' },
+                                { type: INTIM, turn: 1, detail: 'Slot Boost, -3' },
+                                { type: DESP, turn: 9 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '150K' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4138: {
+            name: 'Shaka',
+            type: 'STR',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Free Spirit/Shooter' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Free Spirit/Shooter' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Free Spirit/Shooter' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shaka', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6, detail: 'Col R' },
+                                { type: CD_REW, turn: 3, detail: 'Col L' },
+                                { type: NAO, turn: 99 },
+                                { type: PARA, turn: 6 },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4137: {
+            name: 'Vegapunk',
+            type: 'DEX',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/QCK' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Vegapunk', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 4 },
+                                { type: DEF_PERC, turn: 2 },
+                                { type: DEF_THRES, turn: 2 },
+                                { type: BAR_SLOT, turn: 2, detail: '1x S.BOMB' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Vegapunk', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: CD_REW, turn: 1, detail: 'Row 2 3' },
+                                { type: DESP, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: RESIL, turn: 1 },
+                                { type: TARGET_LOCK, turn: 3 },
+                                { type: TAP_LIMIT, turn: 1, detail: '2x' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: BIND, turn: 10, detail: 'Row 1' }
+                            ]
+                        },
+                        {
+                            type: 'Turn 1 (Interrupt)',
+                            action: [
+                                { type: DEF_NULL, turn: 1 },
+                                { type: BLOW_AWAY, turn: 3, detail: 'Random 3' }
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                { type: HEAL, detail: '100%' },
+                                { type: SLOT_ATK_DOWN, turn: 3, detail: 'All' },
+                                { type: INC_DMG, turn: 10 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4327: {
+            name: ['S-B', 'ear'],
+            type: ['DEX', 'STR'],
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Slasher/Driven' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Slasher/Driven' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Slasher/Driven' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['S-Bear', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'DEX/QCK' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 5 },
+                                { type: DEF_PERC, turn: 4 },
+                                { type: SLOT_ATK_DOWN, turn: 3, detail: 'Type' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['S-Bear', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 2, detail: 'Row 1' },
+                                { type: NAO, turn: 99 },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: DEF, turn: 7 },
+                                { type: DEF_NULL, turn: 1 },
+                                { type: BAR_HIT, turn: 2, detail: '20x' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

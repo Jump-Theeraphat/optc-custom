@@ -671,7 +671,8 @@ function getBoosters(tmId, server) {
         tmId == 4261 ||
         tmId == 4280 ||
         tmId == 4298 ||
-        tmId == 4312
+        tmId == 4312 ||
+        tmId == 4327
     ) {
         // TM Bepo
         // TM Kuzan
@@ -679,6 +680,7 @@ function getBoosters(tmId, server) {
         // TM Orochi & Kanjuro
         // TM Sakazuki (QCK)
         // TM S-Shark
+        // TM S-Bear
         $('#div_2x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
