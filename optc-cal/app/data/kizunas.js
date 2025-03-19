@@ -224,4 +224,7 @@ var kizunas = {
         name: 'Kuzan v3 6+ (~ 6am)',
         xch_id: 4318
     },
+    4335: {
+        name: 'Soba Mask 6+ (~ 6am)'
+    },
 };
