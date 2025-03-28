@@ -65,4 +65,7 @@ var pkas = {
     4326: {
         name: 'S-Bear'
     },
+    4341: {
+        name: 'Monet'
+    },
 };
