@@ -4993,7 +4993,7 @@
 
 			{
 				name: "Orb barrierers",
-				targets: ["special", "swap", "support"],
+				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
 					/Barriers (?=((?:[^o."]+|o(?!rb))*))\1orbs? for ([?\d]+\+?) ((?:GOOD|GREAT|PERFECT|, | and | or )+) hit/i,
 				submatchers: [
@@ -5598,6 +5598,7 @@
 				targets: [
 					"captain",
 					"special",
+					"superSpecial",
 					"sailor",
 					"support",
 					"swap"
@@ -5637,7 +5638,8 @@
 				targets: [
 					"captain",
 					"special",
-					"support",
+					"superSpecial",
+					"support"
 				],
 				// Reduces VS Gauge of all characters by 3 turns
 				// Reduces VS Gauge of all characters completely
@@ -7013,12 +7015,12 @@
 				name: "Bleed",
 				targets: ["captain", "special", "sailor"],
 				regex:
-					/(?:Reduces|Removes) Bleed duration (?:by ([?\d]+) turns?|(completely))/i,
+					/(?:reduces|removes)[^."]+?(?:Bleed|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [1, 2],
+						groups: [1, 2, 3, 4, 5],
 					},
 				],
 			},
@@ -7026,12 +7028,12 @@
 				name: "Pain",
 				targets: ["captain", "special", "sailor"],
 				regex:
-					/(?:Reduces|Removes) Pain duration (?:by ([?\d]+) turns?|(completely))/i,
+				/(?:reduces|removes)[^."]+?(?:Pain|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [1, 2],
+						groups: [1, 2, 3, 4, 5],
 					},
 				],
 			},
