@@ -294,4 +294,7 @@ var tms = {
     4327: {
         name: 'S-Bear (1am ~ 6am)'
     },
+    4342: {
+        name: 'Monet (1am ~ 6am)'
+    },
 };
