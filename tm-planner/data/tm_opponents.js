@@ -51,6 +51,7 @@ const IMMU_POISON = 'immu-poison';
 const INTIM = 'intim';
 const MOB = 'Mob';
 const NAO = 'nao';
+const P_HARD = 'p-hard';
 const PAIN = 'pain';
 const PARA = 'para';
 const POISON = 'poison';
@@ -22868,6 +22869,283 @@ var tm_opponents = {
                                 { type: DEF_NULL, turn: 1 },
                                 { type: BAR_HIT, turn: 2, detail: '20x' },
                                 { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Monet ==========
+    4342: {
+        1634: {
+            name: 'Rock & Scotch',
+            type: 'STR',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Rock & Scotch', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'BOMB' },
+                                { type: ATK_DOWN, turn: 2 },
+                                { type: NAO, turn: 99 },
+                                { type: P_HARD, turn: 3 },
+                                { type: BAR_SLOT, turn: 2, detail: '1x S.BOMB' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1018: {
+            name: 'Brownbeard',
+            type: 'STR',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Brownbeard', 'STR'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BIND, turn: 5, detail: 'Top Right' },
+                                { type: SLOT_BIND, turn: 5, detail: 'Top Right' },
+                                { type: NAO, turn: 99 },
+                                { type: BURN_P, turn: 4, detail: '10000' },
+                                { type: PAIN, turn: 2, detail: '10000' },
+                                { type: DESP, turn: 5, detail: 'Top Right' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        1581: {
+            name: 'Law',
+            type: 'DEX',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Slasher/Shooter/Driven' },
+                                { type: VS_RED, turn: 5, detail: 'Slasher/Shooter/Driven' },
+                                { type: SW_RED, turn: 5, detail: 'Slasher/Shooter/Driven' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Law', 'DEX'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6, detail: 'Row 2 3' },
+                                { type: SLOT_BLOCK },
+                                { type: NAO, turn: 99 },
+                                { type: DESP, turn: 9 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3408: {
+            name: 'Caesar',
+            type: 'STR',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'QCK/PSY/INT' },
+                                { type: VS_RED, turn: 5, detail: 'QCK/PSY/INT' },
+                                { type: SW_RED, turn: 5, detail: 'QCK/PSY/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Caesar', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK, detail: 'Row 1' },
+                                { type: STUN, detail: 'Row 1' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: BAR_SLOT, turn: 2, detail: '2x TND' },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        840: {
+            name: 'Vergo',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Slasher/Free Spirit/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Slasher/Free Spirit/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Slasher/Free Spirit/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Vergo', 'INT'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 9 },
+                                { type: CD_REW, turn: 5, detail: 'Row 1' },
+                                { type: CD_REW, turn: 2, detail: 'Row 2 3' },
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: ATK_BOOST, turn: 3, detail: '1.1x' },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Vergo', 'INT'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: MOB, detail: '3x, HP 500K' },
+                                { type: SILENCE, turn: 1, detail: 'Row 1' },
+                                { type: PARA, turn: 5 },
+                                { type: SP_BIND, turn: 7 },
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: TARGET_LOCK, turn: 3 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4342: {
+            name: ['Mon', 'et'],
+            type: ['INT', 'QCK'],
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Monet', 'INT'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BIND, turn: 9, detail: 'Col L' },
+                                { type: SP_BIND, turn: 6, detail: 'Col R' },
+                                { type: SLOT_CHANGE, detail: 'QCK' },
+                                { type: SLOT_NEG, turn: 5, detail: 'Type' },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Monet', 'INT'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'QCK' },
+                                { type: SP_BIND, turn: 6 },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: CLEAR_BUFF },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: DEF, turn: 7 },
+                                { type: IMMU_DELAY, turn: 99 }
                             ]
                         }
                     ]

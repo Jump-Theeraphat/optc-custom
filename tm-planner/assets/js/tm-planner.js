@@ -672,7 +672,8 @@ function getBoosters(tmId, server) {
         tmId == 4280 ||
         tmId == 4298 ||
         tmId == 4312 ||
-        tmId == 4327
+        tmId == 4327 ||
+        tmId == 4342
     ) {
         // TM Bepo
         // TM Kuzan
@@ -681,6 +682,7 @@ function getBoosters(tmId, server) {
         // TM Sakazuki (QCK)
         // TM S-Shark
         // TM S-Bear
+        // TM Monet
         $('#div_2x').show();
         $('#div_1_4x_v2').show();
         $('#div_1_35x_v4').show();
