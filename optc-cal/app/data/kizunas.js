@@ -225,6 +225,10 @@ var kizunas = {
         xch_id: 4318
     },
     4335: {
-        name: 'Soba Mask 6+ (~ 6am)'
+        name: 'Soba Mask 6+ (~ 6am)',
+        xch_id: 4289
+    },
+    4350: {
+        name: 'Vivi & Rebecca 6+ (~ 6am)'
     },
 };
