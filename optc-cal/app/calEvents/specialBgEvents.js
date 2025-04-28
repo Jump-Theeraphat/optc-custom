@@ -3792,4 +3792,21 @@ var specialBgEvents = [
         end: '2025-04-21',
         pst_19: false
     },
+    {
+        id: '3rd_anni_ship',
+        start: '2025-04-28',
+        end: '2025-05-12',
+        pst_19: true
+    },
+    {
+        id: '3rd_anni_ship_sp',
+        start: '2025-05-12',
+        pst_19: true
+    },
+    {
+        id: '3rd_anni_ship',
+        start: '2025-05-13',
+        end: '2025-06-27',
+        pst_19: true
+    },
 ]
