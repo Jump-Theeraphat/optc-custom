@@ -3799,6 +3799,11 @@ var specialBgEvents = [
         pst_19: true
     },
     {
+        id: 'free_pull',
+        start: '2025-05-09',
+        end: '2025-05-19'
+    },
+    {
         id: '3rd_anni_ship_sp',
         start: '2025-05-12',
         pst_19: true
