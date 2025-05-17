@@ -23153,4 +23153,279 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== York ==========
+    4358: {
+        2300: {
+            name: 'Franky',
+            type: 'DEX',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Franky', 'DEX'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 9 },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3510: {
+            name: 'Brook',
+            type: 'INT',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Brook', 'INT'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: SP_BIND, turn: 3, detail: 'Col R' },
+                                { type: CD_REW, turn: 1, detail: 'Col L' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        3493: {
+            name: 'Nami & Usopp',
+            type: 'INT',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Nami & Usopp', 'INT'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: ATK_DOWN, turn: 5 },
+                                { type: BLOW_AWAY, turn: 4, detail: 'Row 2' },
+                                { type: NAO, turn: 99 },
+                                { type: BIND, turn: 8, detail: 'Row 1' },
+                                { type: FEAR, turn: 1 },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4319: {
+            name: 'Chopper & Robin',
+            type: 'QCK',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Chopper & Robin', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 8 },
+                                { type: DEF, turn: 6 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4365: {
+            name: 'Luffy & Zoro & Sanji',
+            type: 'INT',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 5, detail: 'Row 2' },
+                                { type: CD_LOCK, detail: 'Row 2, 2x Good' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: DESP, turn: 10 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy & Zoro & Sanji', 'INT'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 7 },
+                                { type: BURN_P, turn: 7, detail: '25000' },
+                                { type: NAO, turn: 99 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: PARA, turn: 6 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4358: {
+            name: 'York',
+            type: 'STR',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['York', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: MOB, detail: '2x, HP 500K' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 2, detail: '<=3.75' },
+                                { type: STUN, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: DEF, turn: 6 },
+                                { type: TERRITORY, turn: 5 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['York', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: MOB, detail: '2x, HP 1.5M' },
+                                { type: SLOT_BLOCK, detail: 'Col L' },
+                                { type: SLOT_CHANGE, detail: 'BOMB, Col R' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 10 },
+                                { type: BAR_SLOT, turn: 3, detail: '2x RAINBOW' },
+                                { type: RESIL, turn: 6 },
+                                { type: TARGET_LOCK, turn: 3 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
