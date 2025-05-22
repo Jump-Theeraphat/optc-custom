@@ -1933,6 +1933,40 @@ function calculateTargetPts() {
                     else
                         totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
                 }
+            } else if (tmId == 4358) { // 11th Anniversary
+                if ((navLv + 1) % 10 === 6) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 2
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 2
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 2
+                } else if ((navLv + 1) % 10 === 1) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
+                } else {
+                    var birdLuck = Number($('#bird-luck').val());
+
+                    if (birdLuck === 1 ||
+                        birdLuck === .75 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 4 || (navLv + 1) % 5 === 0) ||
+                        birdLuck === .5 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 0)) {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * navLv) * 1.2
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * navLv) * 1.2
+                        else
+                            totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.2
+                    } else {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * navLv)
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * navLv)
+                    }
+                }
             } else if (tmId >= 4033) {
                 if ((navLv + 1) % 25 === 21) {
                     if (Number($(this).data('team')) < 4)
@@ -2037,6 +2071,40 @@ function calculateNavLv() {
                         totalPts += multiplier * (baseMain + growthMain * i) * 1.5
                     else
                         totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.5
+                }
+            } else if (tmId == 4358) { // 11th Anniversary
+                if ((i + 1) % 10 === 6) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * i) * 2
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i) * 2
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * i) * 2
+                } else if ((i + 1) % 10 === 1) {
+                    if (Number($(this).data('team')) < 4)
+                        totalPts += multiplier * (baseMini + growthMini * i) * 1.5
+                    else if (Number($(this).data('team')) == 4)
+                        totalPts += multiplier * (baseMain + growthMain * i) * 1.5
+                    else
+                        totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.5
+                } else {
+                    var birdLuck = Number($('#bird-luck').val());
+
+                    if (birdLuck === 1 ||
+                        birdLuck === .75 && ((i + 1) % 5 === 3 || (i + 1) % 5 === 4 || (i + 1) % 5 === 0) ||
+                        birdLuck === .5 && ((i + 1) % 5 === 3 || (i + 1) % 5 === 0)) {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * i) * 1.2
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * i) * 1.2
+                        else
+                            totalPts += multiplier * (baseAmbush + growthAmbush * i) * 1.2
+                    } else {
+                        if (Number($(this).data('team')) < 4)
+                            totalPts += multiplier * (baseMini + growthMini * i)
+                        else if (Number($(this).data('team')) == 4)
+                            totalPts += multiplier * (baseMain + growthMain * i)
+                    }
                 }
             } else if (tmId >= 4033) {
                 if ((i + 1) % 25 === 21) {
