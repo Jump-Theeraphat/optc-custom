@@ -23326,7 +23326,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
+                    boss: ['Vegapunk', 'INT'],
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -23347,7 +23347,7 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Luffy & Zoro & Sanji', 'INT'],
                     hp: 3500000,
-                    atk: 9600,
+                    atk: 5000,
                     detail: [
                         {
                             type: 'Preemp',
@@ -23384,14 +23384,14 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['York', '?'],
-                    hp_: 2500000,
+                    boss: ['York', 'STR'],
+                    hp: 2250000,
                     atk_: 6600,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-                                { type: MOB, detail: '2x, HP 500K' },
+                                { type: MOB, detail: '2x, QCK, HP 500K' },
                                 { type: CHAIN_ATK_DOWN_MIN, turn: 2, detail: '<=3.75' },
                                 { type: STUN, detail: 'Row 2 3' },
                                 { type: NAO, turn: 99 },
@@ -23406,13 +23406,13 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['York', 'STR'],
-                    hp_: 3500000,
+                    hp: 3000000,
                     atk_: 9600,
                     detail: [
                         {
                             type: 'Preemp',
                             action: [
-                                { type: MOB, detail: '2x, HP 1.5M' },
+                                { type: MOB, detail: '2x, DEX, HP 1.5M' },
                                 { type: SLOT_BLOCK, detail: 'Col L' },
                                 { type: SLOT_CHANGE, detail: 'BOMB, Col R' },
                                 { type: NAO, turn: 99 },
