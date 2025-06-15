@@ -465,7 +465,10 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
-    } else if (tmId == 3368) {
+    } else if (
+        tmId == 3368 ||
+        tmId == 4385
+    ) {
         // TM MUGIWARA 56 Zoro
         $('#div_2x').show();
         $('#div_1_6x').show();
@@ -1085,7 +1088,8 @@ function decorateSpIcon(iconKey, isAction) {
         iconKey === 'Territory' ||
         iconKey === 'Immu Instant Defeat' ||
         iconKey === 'No Type Effect' ||
-        iconKey === 'Mob'
+        iconKey === 'Mob' ||
+        iconKey === 'Nullify Potential Ability'
     )
         return iconKey;
 

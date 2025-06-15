@@ -52,6 +52,7 @@ const INTIM = 'intim';
 const MOB = 'Mob';
 const NAO = 'nao';
 const P_HARD = 'p-hard';
+const PA_NULL = 'Nullify Potential Ability'
 const PAIN = 'pain';
 const PARA = 'para';
 const POISON = 'poison';
@@ -19188,7 +19189,7 @@ var tm_opponents = {
                             ]
                         },
                         {
-                            type: 'Interrupt - Threshold not Applied (once)',
+                            type: 'Interrupt - Threshold Dmg Reduction not Applied (once)',
                             action: [
                                 ['def-thres',       '3T, 70%, 100K']
                             ]
@@ -20427,7 +20428,7 @@ var tm_opponents = {
                             ]
                         },
                         {
-                            type: 'Interrupt - Dmg Reduction Not Applied (once)',
+                            type: 'Interrupt - % Dmg Reduction Not Applied (once)',
                             action: [
                                 { type: DEF_PERC, turn: 6 }
                             ]
@@ -20965,7 +20966,7 @@ var tm_opponents = {
                             ]
                         },
                         {
-                            type: 'Interrupt - Dmg Reduction Not Applied (once)',
+                            type: 'Interrupt - % Dmg Reduction Not Applied (once)',
                             action: [
                                 { type: SLOT_BLOCK },
                                 { type: AFFINITY_NULL, turn: 10 },
@@ -23420,6 +23421,293 @@ var tm_opponents = {
                                 { type: BAR_SLOT, turn: 3, detail: '2x RAINBOW' },
                                 { type: RESIL, turn: 6 },
                                 { type: TARGET_LOCK, turn: 3 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Sanji & Franky ==========
+    4385: {
+        2954: {
+            name: 'Fujitora',
+            type: 'PSY',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Fujitora', 'PSY'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BIND, turn: 10, detail: 'Row 1' },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4050: {
+            name: 'Ryokugyu',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ryokugyu', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK, detail: 'Col L' },
+                                { type: SLOT_CHANGE, detail: 'Col R, S.BOMB' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 6 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4240: {
+            name: 'Garp',
+            type: 'QCK',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Garp', 'QCK'],
+                    hp_: 1600000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: PA_NULL, turn: 1 },
+                                { type: PARA, turn: 3 },
+                                { type: HUNGER, detail: '2x' },
+                                { type: NAO, turn: 99 },
+                                { type: BAR_HIT, turn: 1, detail: '25x' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4217: {
+            name: 'Akainu',
+            type: 'QCK',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Akainu', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 6, detail: 'Row 1' },
+                                { type: CD_REW, turn: 2, detail: 'Row 2 3' },
+                                { type: SLOT_ATK_DOWN, turn: 2, detail: 'Type/WANO/RCV/TND' },
+                                { type: HP_CUT, detail: '60%' },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4366: {
+            name: 'Kizaru',
+            type: 'DEX',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 2, detail: '<=2.5' },
+                                { type: CHAIN_ATK_DOWN_MAX, turn: 2, detail: '>=3.5' },
+                                { type: NAO, turn: 99 },
+                                { type: SLOT_ATK_DOWN, turn: 3, detail: 'Type/RCV' },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: DEF_NULL, turn: 2 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kizaru', 'DEX'],
+                    hp: 3500000,
+                    atk: 5000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: HUNGER, detail: '1x' },
+                                { type: STUN, detail: 'Row 3' },
+                                { type: TERRITORY, turn: 3 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - % Dmg Reduction Not Applied (once)',
+                            action: [
+                                { type: DEF_PERC, turn: 5 },
+                                { type: STUN, detail: 'Row 2' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4385: {
+            name: 'Sanji & Franky',
+            type: 'PSY',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp_: 2250000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: PARA, turn: 6 },
+                                { type: POISON, turn: 99 },
+                                { type: BLEED, turn: 3 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 5 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Threshold Dmg Reduction Not Applied (once)',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'EMPTY' },
+                                { type: CHAIN_LOCK, turn: 5, detail: '1.5x' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sanji & Franky', 'PSY'],
+                    hp_: 3000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 10, detail: 'Row 2 3' },
+                                { type: CHAIN_DOWN, turn: 5 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3.5' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 10, detail: '56%' },
+                                { type: SLOT_POISON },
                                 { type: IMMU_ALL, turn: 99 }
                             ]
                         }
