@@ -718,6 +718,9 @@ const PrinceGrus = [ "Prince Grus" ];
 const Kujaku = [ "Kujaku" ];
 const Hibari = [ "Hibari" ];
 const Doll = [ "Doll" ];
+const Saturn = [ "Saturn" ];
+const Bluegrass = [ "Bluegrass" ];
+const BuckinghamStussy = [ "Miss Buckingham Stussy" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4981,6 +4984,22 @@ window.families = {
     4372: [ ...Brook ],
     4373: [ ...DraculeMihawk ],
     4374: [ ...DraculeMihawk ],
+    4375: [ ...NicoRobin ],
+    4376: [ ...Jinbe ],
+    4377: [ ...SSnake ],
+    4378: [ ...RoronoaZoro ],
+    4379: [ ...Saturn ],
+    4380: [ ...Saturn ],
+    4381: [ ...JewelryBonney ],
+    4382: [ ...Bluegrass ],
+    4383: [ ...Doll ],
+    4384: [ ...VinsmokeSanji, ...Franky ],
+    4385: [ ...VinsmokeSanji, ...Franky ],
+    4386: [ ...Lilith ],
+    4387: [ ...GolDRoger, ...SilversRayleigh, ...Gaban ],
+    4388: [ ...EdwardNewgate, ...Shiki, ...CharlotteLinlin ],
+    4389: [ ...BuckinghamStussy ],
+    4390: [ ...Kaido ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],

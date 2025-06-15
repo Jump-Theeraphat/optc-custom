@@ -2928,7 +2928,7 @@
 
 			{
 				name: "Advantageous Class Effect",
-				targets: ["special", "superSpecial"],
+				targets: ["special", "superSpecial", "support"],
 				regex:
 					/Boosts Advantageous Class Effect of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
@@ -3147,7 +3147,7 @@
 					{
 						type: "option",
 						description: "Chain Multiplication",
-						regex: /Chain Multiplication/i,
+						regex: /(?:Chain Multiplication|Chain Multiplier Growth Rate)/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -3270,7 +3270,7 @@
 					{
 						type: "option",
 						description: "Chain Multiplication",
-						regex: /Chain Multiplication/i,
+						regex: /(?:Chain Multiplication|Chain Multiplier Growth Rate)/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -3400,7 +3400,7 @@
 					{
 						type: "option",
 						description: "Chain Multiplication",
-						regex: /Chain Multiplication/i,
+						regex: /(?:Chain Multiplication|Chain Multiplier Growth Rate)/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -3494,7 +3494,7 @@
 					{
 						type: "option",
 						description: "Chain Multiplication",
-						regex: /Chain Multiplication/i,
+						regex: /(?:Chain Multiplication|Chain Multiplier Growth Rate)/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -5046,7 +5046,7 @@
 			},
 			{
 				name: "STND Expansion",
-				targets: ["special", "support"],
+				targets: ["special", "superSpecial", "support"],
 				regex:
 					/allows crew to perform Super Tandem with ([^".]+?)orbs for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
@@ -7659,6 +7659,7 @@
 					},
 				],
 			},
+
 			{
 				name: "Positive Buff",
 				targets: ["special", "superSpecial", "swap", "support"],
@@ -7672,6 +7673,21 @@
 					},
 				],
 			},
+
+			{
+				name: "Intimidation",
+				targets: ["special", "superSpecial", "swap", "support"],
+				regex:
+					/(?:reduces|removes) enemies'[^."]+?Intimidation[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2, 3, 4, 5],
+					},
+				],
+			},
+
 		],
 		Other: [
 			{
@@ -7874,7 +7890,7 @@
 			{
 				name: "Super Tandem",
 				targets: ["potential"],
-				regex: /Super Tandem/i,
+				regex: /Super Tandem(?! Boost)/i,
 			},
 
 			{
