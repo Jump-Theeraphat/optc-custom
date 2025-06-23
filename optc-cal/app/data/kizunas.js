@@ -235,4 +235,7 @@ var kizunas = {
         name: 'Zorojuro 6+ (~ 6am)',
         xch_id: [4294, 4374]
     },
+    4393: {
+        name: 'Sabo & Koala 6+ (~ 6am)'
+    },
 };
