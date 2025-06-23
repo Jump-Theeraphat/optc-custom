@@ -23526,7 +23526,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Garp', 'QCK'],
-                    hp_: 1600000,
+                    hp: 1500000,
                     atk_: 6000,
                     detail: [
                         {
@@ -23602,7 +23602,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
+                    boss: ['Mk. III', 'PSY'],
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -23624,7 +23624,7 @@ var tm_opponents = {
                     stageNum: 3,
                     boss: ['Kizaru', 'DEX'],
                     hp: 3500000,
-                    atk: 5000,
+                    atk: 9600,
                     detail: [
                         {
                             type: 'Preemp',
@@ -23669,7 +23669,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
+                    boss: ['Bonney', 'PSY'],
                     hp_: 2250000,
                     atk_: 6600,
                     detail: [
