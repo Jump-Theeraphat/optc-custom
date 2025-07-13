@@ -40,6 +40,7 @@ const FEAR = 'fear';
 const INC_DMG = 'inc-dmg';
 const HEAL = 'heal';
 const HEAL_BIND = 'heal-bind';
+const HEAL_TEAM = 'Heal Team';
 const HP_CUT = 'hp-cut'
 const HUNGER = 'hunger';
 const IMMU_ALL = 'immu-all';
@@ -23708,6 +23709,300 @@ var tm_opponents = {
                                 { type: NAO, turn: 99 },
                                 { type: DEF_PERC, turn: 10, detail: '56%' },
                                 { type: SLOT_POISON },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Summer Hancock ==========
+    4399: {
+        4400: {
+            name: 'Carrot',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Carrot', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DEF_PERC, turn: 6 },
+                                { type: DEF, turn: 3 },
+                                { type: DEF_THRES, turn: 3 },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4397: {
+            name: 'Ulti',
+            type: 'PSY',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Slasher/Shooter' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Slasher/Shooter' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Slasher/Shooter' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ulti', 'PSY'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BLOW_AWAY, turn: 2, detail: 'Col R Random 1' },
+                                { type: BIND, turn: 10, detail: 'Col L' },
+                                { type: NAO, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4396: {
+            name: 'Perona',
+            type: 'DEX',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/QCK' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Perona', 'DEX'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DEF_THRES, turn: 6 },
+                                { type: DEF, turn: 8 },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Def Down' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4395: {
+            name: 'Yamato',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Free Spirit/Driven/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Free Spirit/Driven/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Free Spirit/Driven/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Yamato', 'PSY'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 8 },
+                                { type: SP_BIND, turn: 5, detail: 'Row 2 3' },
+                                { type: SP_BIND, turn: 8, detail: 'Row 1' },
+                                { type: SLOT_BLOCK, detail: 'BLOCK/Bad' },
+                                { type: SLOT_NEG, turn: 4, detail: 'Type' },
+                                { type: NAO, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4394: {
+            name: 'Nami',
+            type: 'DEX',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/PSY/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/PSY/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/PSY/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: SLOT_LOCK, turn: 1 },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: BURN, turn: 1, detail: '30000' },
+                                { type: NAO, turn: 99 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: SLOT_ATK_DOWN, turn: 3, detail: 'Type/WANO/TND' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Nami', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: SP_BIND, turn: 6 },
+                                { type: STUN, detail: 'Row 2' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Preemp (if HP>50%)',
+                            action: [
+                                { type: HEAL_BIND, turn: 10 },
+                                { type: BAR_HIT, turn: 4, detail: '20x' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4399: {
+            name: 'Hancock',
+            type: 'DEX',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Striker/Cerebral/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Striker/Cerebral/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Striker/Cerebral/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'DEX'],
+                    hp_: 2250000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: MOB, detail: '3x, QCK, HP 2.5M' },
+                                { type: CD_REW, turn: 3 },
+                                { type: SLOT_PARA },
+                                { type: BIND, turn: 6, detail: 'Row 2' },
+                                { type: BURN, turn: 4, detail: '20000' },
+                                { type: RESIL, turn: 7 },
+                                { type: BAR_HP, turn: 2, detail: '7M' },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Damage (once)',
+                            action: [
+                                { type: HEAL_TEAM, detail: '100%' },
+                                { type: CD_REW, turn: 1 },
+                                { type: CD_LOCK, detail: '2x Good' }
+                            ]
+                        },
+                        {
+                            type: 'Turn 1',
+                            action: [
+                                { type: CHAIN_DOWN, turn: 10 },
+                                { type: BLOW_AWAY, turn: 3, detail: '(from Mob) Random 1' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Hancock', 'DEX'],
+                    hp_: 3000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: PARA, turn: 9, detail: 'Row 2 3' },
+                                { type: NAO, turn: 99 },
+                                { type: DESP, turn: 9 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 8, detail: '<=3' },
                                 { type: IMMU_ALL, turn: 99 }
                             ]
                         }
