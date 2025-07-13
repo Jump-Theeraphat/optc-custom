@@ -605,7 +605,7 @@ const Speed = [ "Speed" ];
 const CharlottePoire = [ "Charlotte Poire" ];
 const KozukiHiyori = [ "Kozuki Hiyori", "Komurasaki" ];
 const Kikunojo = [ "Kikunojo", "Okiku" ];
-const Tama = [ "Tama" ];
+const Tama = [ "Tama", "Otama" ];
 const MissTsuru = [ "Miss Tsuru", "Otsuru", "Tsurunojo" ];
 const Denjiro = [ "Denjiro", "Kyoshiro" ];
 const AshuraDoji = [ "Ashura Doji", "Shutenmaru" ];
@@ -721,6 +721,8 @@ const Doll = [ "Doll" ];
 const Saturn = [ "Saturn" ];
 const Bluegrass = [ "Bluegrass" ];
 const BuckinghamStussy = [ "Miss Buckingham Stussy" ];
+const MonkeyDDragon = [ "Monkey D. Dragon" ];
+const Ginny = [ "Ginny" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -5000,6 +5002,19 @@ window.families = {
     4388: [ ...EdwardNewgate, ...Shiki, ...CharlotteLinlin ],
     4389: [ ...BuckinghamStussy ],
     4390: [ ...Kaido ],
+    4391: [ ...MonkeyDDragon, ...EmporioIvankov, ...BartholomewKuma ],
+    4392: [ ...Ginny ],
+    4393: [ ...Sabo, ...Koala ],
+    4394: [ ...Nami ],
+    4395: [ ...Yamato, ...Tama ],
+    4396: [ ...Perona ],
+    4397: [ ...Ulti ],
+    4398: [ ...BoaHancock ],
+    4399: [ ...BoaHancock ],
+    4400: [ ...Carrot ],
+    4401: [ ...PortgasDAce ],
+    4402: [ ...MarshallDTeach ],
+    4404: [ ...Marco ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
@@ -5694,6 +5709,10 @@ const ghostFamilies = {
     674: [ ...NefertariVivi, ...Karoo, ...Rebecca ],
     675: [ ...NefertariVivi, ...Karoo, ...Rebecca ],
     676: [ ...NefertariVivi, ...Karoo, ...Rebecca ],
+    677: [ ...Sabo, ...Koala ],
+    678: [ ...Sabo, ...Koala ],
+    679: [ ...Sabo, ...Koala ],
+    680: [ ...Sabo, ...Koala ],
 }
 
 Object.keys(ghostFamilies).forEach(function (key) {
