@@ -23890,7 +23890,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'DEX'],
+                    boss: ['Vivi', 'DEX'],
                     hp_: 2000000,
                     atk_: 6600,
                     detail: [
@@ -23956,8 +23956,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'DEX'],
-                    hp_: 2250000,
+                    boss: ['Reiju', 'DEX'],
+                    hp: 1500000,
                     atk_: 6600,
                     detail: [
                         {
