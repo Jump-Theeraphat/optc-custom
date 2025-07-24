@@ -238,4 +238,8 @@ var kizunas = {
     4393: {
         name: 'Sabo & Koala 6+ (~ 6am)'
     },
+    4408: {
+        name: 'Mihawk & Perona 6+ (~ 6am)',
+        xch_id: 4344
+    },
 };
