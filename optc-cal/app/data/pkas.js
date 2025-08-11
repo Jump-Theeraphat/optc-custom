@@ -77,4 +77,7 @@ var pkas = {
     4398: {
         name: 'Summer Hancock'
     },
+    4413: {
+        name: 'Charlotte Linlin'
+    },
 };
