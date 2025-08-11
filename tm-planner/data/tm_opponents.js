@@ -19619,7 +19619,7 @@ var tm_opponents = {
                                 { type: CHAIN_DOWN, turn: 6 },
                                 { type: CHAIN_ATK_DOWN_MIN, turn: 5, detail: '<=3' },
                                 { type: NAO, turn: 99 },
-                                { type: INTIM, turn: 2, detail: '+Chain/Set Chain, -2' },
+                                { type: INTIM, turn: 2, detail: 'Chain +/Set Chain, -2' },
                                 { type: BAR_GD, turn: 3, detail: '2x' },
                                 { type: IMMU_ALL, turn: 99 }
                             ]
@@ -20365,7 +20365,7 @@ var tm_opponents = {
                             ]
                         },
                         {
-                            type: 'Interrupt - Chain Boost (Add) (once)',
+                            type: 'Interrupt - Chain + (once)',
                             action: [
                                 { type: CLEAR_BUFF, detail: 'Buff Only' },
                                 { type: SP_BIND, turn: 10 }
@@ -21630,7 +21630,7 @@ var tm_opponents = {
                             ]
                         },
                         {
-                            type: 'Interrupt - Atk Boost/Color Affinity/Chain Boost (once)',
+                            type: 'Interrupt - Atk Boost/Color Affinity/Chain + (once)',
                             action: [
                                 { type: CLEAR_BUFF, detail: 'Buff Only' }
                             ]
@@ -24004,6 +24004,283 @@ var tm_opponents = {
                                 { type: DESP, turn: 9 },
                                 { type: CHAIN_ATK_DOWN_MIN, turn: 8, detail: '<=3' },
                                 { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Charlotte Linlin ==========
+    4414: {
+        4402: {
+            name: 'Teach',
+            type: 'INT',
+            pos: 0,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Teach', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_NULL, turn: 1 },
+                                { type: BAR_SLOT, turn: 1, detail: '2x RAINBOW' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4407: {
+            name: 'Alvida & Coby',
+            type: 'QCK',
+            pos: 1,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Striker/Free Spirit' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Striker/Free Spirit' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Striker/Free Spirit' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Alvida & Coby', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: DESP, turn: 9 },
+                                { type: NAO, turn: 99 },
+                                { type: BURN_P, turn: 6, detail: '20000' },
+                                { type: BAR_SLOT, turn: 2, detail: '2x G' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Delay/Def Down' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4406: {
+            name: 'Doffy',
+            type: 'DEX',
+            pos: 2,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Doffy', 'DEX'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 12 },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4405: {
+            name: 'Mr. 0 & Miss All Sunday',
+            type: 'PSY',
+            pos: 3,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Slasher/Driven/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Slasher/Driven/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Slasher/Driven/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Mr. 0 & Miss All Sunday', 'PSY'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 10 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Delay/Def Down' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4401: {
+            name: 'Ace',
+            type: 'QCK',
+            pos: 4,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Marco', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: FEAR, turn: 1 },
+                                { type: SP_BIND, turn: 6 },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: HUNGER, detail: '1x' },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Ace', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: BIND, turn: 9, detail: 'Row 1' },
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: DEF, turn: 3 },
+                                { type: DEF_PERC, turn: 3 },
+                                { type: DEF_THRES, turn: 6 },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4414: {
+            name: 'Linlin',
+            type: 'QCK',
+            pos: 5,
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 1, detail: '<=2.75' },
+                                { type: SLOT_BLOCK },
+                                { type: SLOT_LOCK, turn: 1 },
+                                { type: NAO, turn: 99 },
+                                { type: INTIM, turn: 3, detail: 'Chain +/Chain x/Set Chain, -2' },
+                                { type: DEF, turn: 6 },
+                                { type: BAR_SLOT, turn: 3, detail: '2x DEX' },
+                                { type: SLOT_ATK_DOWN, turn: 2, detail: 'Type/WANO/RAINBOW/RCV' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Linlin', 'QCK'],
+                    hp_: 3000000,
+                    atk_: 9600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 12, detail: '<=3' },
+                                { type: NAO, turn: 99 },
+                                { type: CHAIN_DOWN, turn: 6 },
+                                { type: CHAIN_LOCK, turn: 12, detail: '1.1x' },
+                                { type: INTIM, turn: 3, detail: 'Atk Boost/Slot Boost, -2' },
+                                { type: RESIL, turn: 6 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: IMMU_DELAY, turn: 99 }
                             ]
                         }
                     ]
