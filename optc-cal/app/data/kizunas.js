@@ -242,4 +242,8 @@ var kizunas = {
         name: 'Mihawk & Perona 6+ (~ 6am)',
         xch_id: 4344
     },
+    4424: {
+        name: 'Kizaru v2 6+ (~ 6am)',
+        xch_id: 4417
+    },
 };
