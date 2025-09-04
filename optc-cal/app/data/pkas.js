@@ -80,4 +80,7 @@ var pkas = {
     4413: {
         name: 'Charlotte Linlin'
     },
+    4429: {
+        name: 'Kizaru'
+    },
 };
