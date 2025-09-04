@@ -24244,7 +24244,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'QCK'],
+                    boss: ['Kaido', 'QCK'],
                     hp_: 1500000,
                     atk_: 6600,
                     detail: [
@@ -24267,7 +24267,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Linlin', 'QCK'],
-                    hp_: 3000000,
+                    hp: 3500000,
                     atk_: 9600,
                     detail: [
                         {
