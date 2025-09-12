@@ -8,6 +8,16 @@ function showFooter() {
     $('#tm-footer').show();
 }
 
+function createRecUnitCheckHtml(size) {
+    var imgHtml = $('<img></img>');
+    imgHtml.attr('src', '/tm-planner/assets/img/rec_unit_check.png');
+    imgHtml.attr('height', size);
+    imgHtml.attr('width', size);
+    imgHtml.addClass('rec-unit-overlay');
+
+    return imgHtml;
+}
+
 function createTooltip(imgDiv, text) {
     imgDiv.data('toggle', 'tooltip');
     imgDiv.data('placement', 'top');
@@ -1017,6 +1027,9 @@ function resetPosition(unit) {
 
         // Remove corresponding Clone
         $('#booster-clone_' + unitId + '_clone').remove();
+
+        // Remove Recommended Unit check
+        unit.find('img').closest('div').find('.rec-unit-overlay').remove();
     }
 }
 
@@ -3844,6 +3857,7 @@ $(document).ready(function () {
             $('#guide-nav-lv').val(1);
             $('#mini-guide-content').empty();
             $('#mini-guide-boss').empty();
+            $('#rec-units').empty();
 
             // Populate main boss
             var opName = op.name;
@@ -3862,6 +3876,20 @@ $(document).ready(function () {
                 opHtml.addClass(opType);
 
                 $('#mini-guide-boss').html(opHtml);
+            }
+
+            if (op.rec) {
+                for (var ri in op.rec) {
+                    var ru = op.rec[ri];
+
+                    var imgDiv = $('<div></div>');
+                    imgDiv.addClass('rec-unit-display');
+                    imgDiv.append(createImgHtml(getThumb(ru), 30, false));
+                    imgDiv.append(createRecUnitCheckHtml(10));
+                    imgDiv.css('display', 'inline-block');
+
+                    $('#rec-units').append(imgDiv);
+                }
             }
 
             if (op.guide) {
@@ -4891,6 +4919,17 @@ $(document).ready(function () {
 
                     item.data('team', assignedTeam);
                     item.addClass('assigned');
+
+                    // Add Recommended Unit check if so
+                    var opId = to_list.closest('.team').data('op_id');
+                    var opGuide = tm_opponents[tmId][opId];
+                    if (opGuide) {
+                        var recUnitList = opGuide.rec;
+                        if (recUnitList && recUnitList.includes(Number(item.data('id'))))
+                            item.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                        else
+                            item.find('img').closest('div').find('.rec-unit-overlay').remove();
+                    }
 
                     // Mirror to Friend Cap slot if it is empty
                     if (to_list.data('slot') == 1 && !item.hasClass("booster-clone"))

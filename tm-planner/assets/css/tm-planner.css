@@ -75,6 +75,19 @@
     cursor: pointer;
 }
 
+.booster,
+.booster-clone,
+.rec-unit-display {
+    position: relative;
+    display: inline;
+}
+
+.rec-unit-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .booster-div {
     margin-bottom: 20px;
     min-height: 40px;
@@ -171,7 +184,7 @@ img.highlight {
     -webkit-filter: grayscale(100%);
 }
 
-.booster-clone > img {
+.booster-clone > img:not(.rec-unit-overlay) {
     border: 3px ridge darkorange;
 }
 
