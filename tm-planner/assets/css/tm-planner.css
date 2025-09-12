@@ -536,7 +536,8 @@ button.cal-button:hover {
 #guide-ca-filter-clone,
 #guide-sv-filter-clone,
 #guide-sw-filter-clone,
-#guide-tc-filter-clone {
+#guide-tc-filter-clone,
+.guide-boss-weakness-div {
     display: none;
 }
 

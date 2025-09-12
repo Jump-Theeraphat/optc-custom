@@ -3874,6 +3874,11 @@ $(document).ready(function () {
 
                     guideStageClone.find('.guide-stage-num').text(g.stageNum);
 
+                    if (g.weakness) {
+                        guideStageClone.find('.guide-boss-weakness').html(decorateStr(g.weakness, true));
+                        guideStageClone.find('.guide-boss-weakness-div').css('display', 'flex');
+                    }
+
                     if (g.boss) {
                         guideStageClone.find('.guide-boss').text(g.boss[0]);
                         guideStageClone.find('.guide-boss').addClass(g.boss[1]);
