@@ -35081,7 +35081,7 @@ window.details = {
                     level2: "Makes [QCK] orbs beneficial for Slasher characters"
                 },
                 special: {
-                    base: "Deals 150x character's ATK in Typeless damage to all enemies and reduces enemies' Barrier duration by 2 turns. If 2+ [Seven Warlords of the Sea] characters are on the crew, sets Chain Boundaries to 3.25x and 15.0x for 3 turns. If 2+ [Marineford Paramount War] characters are on the crew, boosts Orb Effects of Slasher characters by 2.75x for 3 turns. If your Captain is a Slasher character, locks the chain multiplier at 3.25x for 2 turns, and boosts Orb Effects of Slasher characters by 2.25x for 2 turns."
+                    base: "Deals 150x character's ATK in Typeless damage to all enemies and reduces enemies' Barrier duration by 2 turns. If 2+ [Seven Warlords of the Sea] characters are on the crew, sets Chain Boundaries to 3.25x and 15.0x for 3 turns. If 2+ [Marineford Paramount War Arc] characters are on the crew, boosts Orb Effects of Slasher characters by 2.75x for 3 turns. If your Captain is a Slasher character, locks the chain multiplier at 3.25x for 2 turns, and boosts Orb Effects of Slasher characters by 2.25x for 2 turns."
                 }
             }
         ],
@@ -52484,7 +52484,7 @@ window.details = {
     },
     2349: {//Pedro
         captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight. Boosts ATK of Slasher characters by 2.75x. If you have 5 or more Slashers characters in your crew, boosts Chain Multiplier Growth Rate by 1.3x",
-        special: "Deals 10% of enemies' current HP in damage to one enemy and reduces the defense of all enemies by 100% for 1 turn,. If your crew has 5 or more Slasher characters when the special is activated, boosts ATK against enemies with reduced defense by 2x for 1 turn and changes orbs of adjacent characters into Matching Orbs.",
+        special: "Deals 10% of enemies' current HP in damage to one enemy and reduces the defense of all enemies by 100% for 1 turn. If your crew has 5 or more Slasher characters when the special is activated, boosts ATK against enemies with reduced defense by 2x for 1 turn and changes orbs of adjacent characters into Matching Orbs.",
         specialName: "Dawn-break Sword",
         sailor: {
             base: "If this character has a [DEX] orb and you hit a PERFECT with him, keep his [DEX] orb for the next turn",
@@ -96111,7 +96111,7 @@ window.details = {
             },
             {
                 captain: {
-                    base: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of [STR], Striker and Driven characters by 5x, boosts HP of [STR], Striker and Driven characters by 1.3x, and makes [STR] and [INT] orbs beneficial for all characters. If HP is below 50% at the start of the turn, boosts ATK of [STR], Striker and Driven characters by 6x instead, and reduces damage received by 25%. If 4+ [Kid Pirates], [Worst Generation] or [Land of Wano] characters are on the crew, reduces Despair duration by 10 turns, and boosts base ATK of [Paramythia-type] characters by 500."
+                    base: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, reduces Special Cooldown of this character by 4 turns at the start of the fight, boosts ATK of [STR], Striker and Driven characters by 5x, boosts HP of [STR], Striker and Driven characters by 1.3x, and makes [STR] and [INT] orbs beneficial for all characters. If HP is below 50% at the start of the turn, boosts ATK of [STR], Striker and Driven characters by 6x instead, and reduces damage received by 25%. If 4+ [Kid Pirates], [Worst Generation] or [Land of Wano Arc] characters are on the crew, reduces Despair duration by 10 turns, and boosts base ATK of [Paramythia-type] characters by 500."
                 }
             },
             {
@@ -114061,11 +114061,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Roronoa Zoro, Vinsmoke Sanji, Usopp, Nami, Tony Tony Chopper, Nico Robin, Franky, Brook or Jinbe. 1 of the following is required: Roronoa Zoro or Vinsmoke Sanji."
             ],
             description: [
-                "Boosts Tandem ATK of Free Spirit characters by 1.5x and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
-                "Boosts Tandem ATK of Free Spirit characters by 1.75x and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
-                "Boosts Tandem ATK of Free Spirit characters by 2x and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
-                "Boosts Tandem ATK of Free Spirit characters by 2.25x and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
-                "Boosts Tandem ATK of Free Spirit characters by 2.5x and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn."
+                "Boosts Tandem ATK of Free Spirit characters by 1.5x for 1 turn, and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit characters by 1.75x for 1 turn, and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit characters by 2x for 1 turn, and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit characters by 2.25x for 1 turn, and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit characters by 2.5x for 1 turn, and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1 turn."
             ]
         },
         support: [
@@ -114181,11 +114181,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: King, Queen, Jack, Sasaki, X Drake, Black Maria, Who's-Who, Page One, Ulti or Striker characters. 1 of the following is required: King, Queen, Jack, Sasaki, X Drake, Black Maria, Who's-Who, Page One or Ulti."
             ],
             description: [
-                "Boosts Tandem ATK of Striker characters by 1.25x and increases boost effects of Increase Damage Taken debuffs by +0.25x.",
-                "Boosts Tandem ATK of Striker characters by 1.5x and increases boost effects of Increase Damage Taken debuffs by +0.25x.",
-                "Boosts Tandem ATK of Striker characters by 1.5x and increases boost effects of Increase Damage Taken debuffs by +0.5x.",
-                "Boosts Tandem ATK of Striker characters by 1.75x and increases boost effects of Increase Damage Taken debuffs by +0.5x.",
-                "Boosts Tandem ATK of Striker characters by 2x and increases boost effects of Increase Damage Taken debuffs by +0.75x."
+                "Boosts Tandem ATK of Striker characters by 1.25x for 1 turn, and increases boost effects of Increase Damage Taken debuffs by +0.25x.",
+                "Boosts Tandem ATK of Striker characters by 1.5x for 1 turn, and increases boost effects of Increase Damage Taken debuffs by +0.25x.",
+                "Boosts Tandem ATK of Striker characters by 1.5x for 1 turn, and increases boost effects of Increase Damage Taken debuffs by +0.5x.",
+                "Boosts Tandem ATK of Striker characters by 1.75x for 1 turn, and increases boost effects of Increase Damage Taken debuffs by +0.5x.",
+                "Boosts Tandem ATK of Striker characters by 2x for 1 turn, and increases boost effects of Increase Damage Taken debuffs by +0.75x."
             ]
         },
         support: [
@@ -115023,11 +115023,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Koala, Morley, Lindbergh, Belo Betty or Karasu."
             ],
             description: [
-                "Boosts Tandem ATK of all characters by 1.1x.",
-                "Boosts Tandem ATK of all characters by 1.2x.",
-                "Boosts Tandem ATK of all characters by 1.3x.",
-                "Boosts Tandem ATK of all characters by 1.4x.",
-                "Boosts Tandem ATK of all characters by 1.5x."
+                "Boosts Tandem ATK of all characters by 1.1x for 1 turn.",
+                "Boosts Tandem ATK of all characters by 1.2x for 1 turn.",
+                "Boosts Tandem ATK of all characters by 1.3x for 1 turn.",
+                "Boosts Tandem ATK of all characters by 1.4x for 1 turn.",
+                "Boosts Tandem ATK of all characters by 1.5x for 1 turn."
             ]
         },
         support: [
@@ -118782,6 +118782,19 @@ window.details = {
             { description: "Boosts base ATK by 50" },
             { description: "Acquire Potential 3: Barrier Penetration" },
         ],
+        lLimit: [
+            null,
+            {
+                rAbility: true
+            },
+            null,
+            {
+                rSpecial: true
+            },
+            {
+                rResilience: true
+            }
+        ],
         potential: [
             {
                 Name: "[PSY] Damage Reduction",
@@ -122049,11 +122062,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino (Kizaru), Issho (Fujitora), Monkey D. Garp, Tsuru, Smoker, Tashigi, Hina or Coby."
             ],
             description: [
-                "Boosts Tandem ATK of top row characters by 2x and boosts ATK of all other character by 1.1x for 1 turn.",
-                "Boosts Tandem ATK of top row characters by 2.1x and boosts ATK of all other character by 1.2x for 1 turn.",
-                "Boosts Tandem ATK of top row characters by 2.2x and boosts ATK of all other character by 1.3x for 1 turn.",
-                "Boosts Tandem ATK of top row characters by 2.3x and boosts ATK of all other character by 1.4x for 1 turn.",
-                "Boosts Tandem ATK of top row characters by 2.5x and boosts ATK of all other character by 1.5x for 1 turn."
+                "Boosts Tandem ATK of top row characters by 2x for 1 turn, and boosts ATK of all other character by 1.1x for 1 turn.",
+                "Boosts Tandem ATK of top row characters by 2.1x for 1 turn, and boosts ATK of all other character by 1.2x for 1 turn.",
+                "Boosts Tandem ATK of top row characters by 2.2x for 1 turn, and boosts ATK of all other character by 1.3x for 1 turn.",
+                "Boosts Tandem ATK of top row characters by 2.3x for 1 turn, and boosts ATK of all other character by 1.4x for 1 turn.",
+                "Boosts Tandem ATK of top row characters by 2.5x for 1 turn, and boosts ATK of all other character by 1.5x for 1 turn."
             ]
         },
         support: [
@@ -126440,11 +126453,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Portgas D. Ace and Momonosuke."
             ],
             description: [
-                "Boosts Tandem ATK of Striker and Free Spirit characters by 1.25x and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.1x for 1 turn.",
-                "Boosts Tandem ATK of Striker and Free Spirit characters by 1.5x and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.1x for 1 turn.",
-                "Boosts Tandem ATK of Striker and Free Spirit characters by 1.75x and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.2x for 1 turn.",
-                "Boosts Tandem ATK of Striker and Free Spirit characters by 2x and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.2x for 1 turn.",
-                "Boosts Tandem ATK of Striker and Free Spirit characters by 2.25x and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.3x for 1 turn."
+                "Boosts Tandem ATK of Striker and Free Spirit characters by 1.25x for 1 turn, and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.1x for 1 turn.",
+                "Boosts Tandem ATK of Striker and Free Spirit characters by 1.5x for 1 turn, and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.1x for 1 turn.",
+                "Boosts Tandem ATK of Striker and Free Spirit characters by 1.75x for 1 turn, and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.2x for 1 turn.",
+                "Boosts Tandem ATK of Striker and Free Spirit characters by 2x for 1 turn, and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.2x for 1 turn.",
+                "Boosts Tandem ATK of Striker and Free Spirit characters by 2.25x for 1 turn, and ignores Debuff Protection and inflicts all enemies with Increase Damage Taken by 1.3x for 1 turn."
             ]
         },
     },
@@ -131904,11 +131917,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Kaido, King, Queen, Ulti, Page One, Black Maria, Who's-Who and Sasaki."
             ],
             description: [
-                "Reduces the defense of all enemies by 50% for 1 turn, Boosts Tandem ATK of Driven characters by 1.25x.",
-                "Reduces the defense of all enemies by 70% for 1 turn, Boosts Tandem ATK of Driven characters by 1.5x.",
-                "Reduces the defense of all enemies by 80% for 1 turn, Boosts Tandem ATK of Driven characters by 1.75x.",
-                "Ignores Defense Reduction Debuff Protection and Reduces the defense of all enemies by 80% for 1 turn, Boosts Tandem ATK of Driven characters by 1.75x.",
-                "Ignores Defense Reduction Debuff Protection and Reduces the defense of all enemies by 90% for 1 turn, Boosts Tandem ATK of Driven characters by 2x."
+                "Reduces the defense of all enemies by 50% for 1 turn, Boosts Tandem ATK of Driven characters by 1.25x for 1 turn.",
+                "Reduces the defense of all enemies by 70% for 1 turn, Boosts Tandem ATK of Driven characters by 1.5x for 1 turn.",
+                "Reduces the defense of all enemies by 80% for 1 turn, Boosts Tandem ATK of Driven characters by 1.75x for 1 turn.",
+                "Ignores Defense Reduction Debuff Protection and Reduces the defense of all enemies by 80% for 1 turn, Boosts Tandem ATK of Driven characters by 1.75x for 1 turn.",
+                "Ignores Defense Reduction Debuff Protection and Reduces the defense of all enemies by 90% for 1 turn, Boosts Tandem ATK of Driven characters by 2x for 1 turn."
             ]
         },
         support: [
@@ -132601,11 +132614,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Kin'emon, Kanjuro, Raizo, Kikunojo, Ashura Doji, Dogstorm, Cat Viper, Kawamatsu, Denjiro, Kozuki Momonosuke, Kozuki Hiyori, Gol D. Roger or Edward Newgate (Whitebeard)."
             ],
             description: [
-                "Boosts Tandem ATK of Slasher characters by 1.5x.",
-                "Boosts Tandem ATK of Slasher characters by 1.75x.",
-                "Boosts Tandem ATK of Slasher characters by 2x.",
-                "Boosts Tandem ATK of Slasher characters by 2.25x and increases boost effects of Color Affinity buffs by +0.25x.",
-                "Boosts Tandem ATK of Slasher characters by 2.5x and increases boost effects of Color Affinity buffs by +0.25x."
+                "Boosts Tandem ATK of Slasher characters by 1.5x for 1 turn.",
+                "Boosts Tandem ATK of Slasher characters by 1.75x for 1 turn.",
+                "Boosts Tandem ATK of Slasher characters by 2x for 1 turn.",
+                "Boosts Tandem ATK of Slasher characters by 2.25x for 1 turn, and increases boost effects of Color Affinity buffs by +0.25x.",
+                "Boosts Tandem ATK of Slasher characters by 2.5x for 1 turn, and increases boost effects of Color Affinity buffs by +0.25x."
             ]
         },
     },
@@ -133398,11 +133411,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Kaido, King, Jack, Ulti, Page One, Black Maria, Who's-Who or Sasaki."
             ],
             description: [
-                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.25x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.5x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.75x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 2 turns and boosts Tandem ATK of Driven characters by 2x.",
-                "Reduces enemies' Threshold Damage Reduction duration by 3 turns and boosts Tandem ATK of Driven characters by 2.25x."
+                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.25x for 1 turn.",
+                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.5x for 1 turn.",
+                "Reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.75x for 1 turn.",
+                "Reduces enemies' Threshold Damage Reduction duration by 2 turns and boosts Tandem ATK of Driven characters by 2x for 1 turn.",
+                "Reduces enemies' Threshold Damage Reduction duration by 3 turns and boosts Tandem ATK of Driven characters by 2.25x for 1 turn."
             ]
         },
         support: [
@@ -133759,11 +133772,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Yamato, Kozuki Oden, Kozuki Hiyori and Dracule Mihawk."
             ],
             description: [
-                "Boosts Tandem ATK of Slasher and Free Spirit characters by 1.5x.",
-                "Boosts Tandem ATK of Slasher and Free Spirit characters by 1.75x.",
-                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2x.",
-                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2x and increases boost effects of Status ATK buffs by +0.25x for 1 turn.",
-                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2.5x and increases boost effects of Status ATK buffs by +0.25x for 1 turn."
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 1.5x for 1 turn.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 1.75x for 1 turn.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2x for 1 turn.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2x for 1 turn, and increases boost effects of Status ATK buffs by +0.25x for 1 turn.",
+                "Boosts Tandem ATK of Slasher and Free Spirit characters by 2.5x for 1 turn, and increases boost effects of Status ATK buffs by +0.25x for 1 turn."
             ]
         },
         support: [
@@ -133877,11 +133890,11 @@ window.details = {
                 "Any 2 of the following, excluding Supports and counting only 1 per unit: Kaido, Queen, Jack, Ulti, Page One, Black Maria, Who's-Who and Sasaki."
             ],
             description: [
-                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.25x.",
-                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.5x.",
-                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.75x.",
-                "Reduces enemies' Percent Damage Reduction duration by 2 turns and boosts Tandem ATK of Driven characters by 2x.",
-                "Reduces enemies' Percent Damage Reduction duration by 3 turns and boosts Tandem ATK of Driven characters by 2.25x."
+                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.25x for 1 turn.",
+                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.5x for 1 turn.",
+                "Reduces enemies' Percent Damage Reduction duration by 1 turn and boosts Tandem ATK of Driven characters by 1.75x for 1 turn.",
+                "Reduces enemies' Percent Damage Reduction duration by 2 turns and boosts Tandem ATK of Driven characters by 2x for 1 turn.",
+                "Reduces enemies' Percent Damage Reduction duration by 3 turns and boosts Tandem ATK of Driven characters by 2.25x for 1 turn."
             ]
         },
         support: [
@@ -134533,11 +134546,11 @@ window.details = {
                 "Any 1 of the following, excluding Supports and counting only 1 per unit: Powerhouse or Striker characters. Any 1 of the following, excluding Supports and counting only 1 per unit: Portgas D. Ace, Marco, Jozu, Vista, Izo, Fossa, Rakuyo, Kingdew, Atmos, Namule, Blenheim, Haruta, Blamenco, Speed Jil or Curiel."
             ],
             description: [
-                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 1.5x.",
-                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 1.75x.",
-                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2x.",
-                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2x and reduces enemies' Powerhouse Resistance by -10% for 1 turn.",
-                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2.25x and reduces enemies' Powerhouse Resistance by -20% for 1 turn."
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 1.5x for 1 turn.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 1.75x for 1 turn.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2x for 1 turn.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2x for 1 turn, and reduces enemies' Powerhouse Resistance by -10% for 1 turn.",
+                "Boosts Tandem ATK of [PSY] and Powerhouse characters by 2.25x for 1 turn, and reduces enemies' Powerhouse Resistance by -20% for 1 turn."
             ]
         },
     },
@@ -138043,11 +138056,11 @@ window.details = {
             {
                 Characters: "Yamato",
                 description: [
-                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier to 1.2x for 1 turn and changes the orb of the supported character into a [RCV] orb.",
-                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier to 1.5x for 1 turn and changes the orb of the supported character into a [RCV] orb.",
-                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier to 2x for 1 turn and changes the orb of the supported character into a [RCV] orb.",
-                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier to 2.5x for 1 turn and changes the orb of the supported character into a [RCV] orb.",
-                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier to 3x for 1 turn and changes the orb of the supported character into a [RCV] orb."
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier at 1.2x for 1 turn, and changes the orb of the supported character into a [RCV] orb.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier at 1.5x for 1 turn, and changes the orb of the supported character into a [RCV] orb.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier at 2x for 1 turn, and changes the orb of the supported character into a [RCV] orb.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier at 2.5x for 1 turn, and changes the orb of the supported character into a [RCV] orb.",
+                    "Once per adventure, when you reach the final stage, reduces crew's current HP by 20%, locks the chain multiplier at 3x for 1 turn, and changes the orb of the supported character into a [RCV] orb."
                 ]
             }
         ]
@@ -138325,11 +138338,11 @@ window.details = {
                 "Any 1 of the following, excluding Supports and counting only 1 per unit: Fighter characters. Any 1 of the following, excluding Supports and counting only 1 per unit: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Yonji, Vinsmoke Sanji"
             ],
             description: [
-                "Boosts Tandem ATK of bottom row characters by 1.5x and boosts Tandem ATK of all other characters by 1.1x for 1 turn",
-                "Boosts Tandem ATK of bottom row characters by 1.7x and boosts Tandem ATK of all other characters by 1.2x for 1 turn",
-                "Boosts Tandem ATK of bottom row characters by 1.9x and boosts Tandem ATK of all other characters by 1.3x for 1 turn",
-                "Boosts Tandem ATK of bottom row characters by 2.2x and boosts Tandem ATK of all other characters by 1.4x for 1 turn",
-                "Boosts Tandem ATK of bottom row characters by 2.5x and boosts Tandem ATK of all other characters by 1.5x for 1 turn"
+                "Boosts Tandem ATK of bottom row characters by 1.5x for 1 turn, and boosts Tandem ATK of all other characters by 1.1x for 1 turn",
+                "Boosts Tandem ATK of bottom row characters by 1.7x for 1 turn, and boosts Tandem ATK of all other characters by 1.2x for 1 turn",
+                "Boosts Tandem ATK of bottom row characters by 1.9x for 1 turn, and boosts Tandem ATK of all other characters by 1.3x for 1 turn",
+                "Boosts Tandem ATK of bottom row characters by 2.2x for 1 turn, and boosts Tandem ATK of all other characters by 1.4x for 1 turn",
+                "Boosts Tandem ATK of bottom row characters by 2.5x for 1 turn, and boosts Tandem ATK of all other characters by 1.5x for 1 turn"
             ]
         },
         support: [
@@ -141632,11 +141645,11 @@ window.details = {
             {
                 Characters: "Charlotte Linlin (Big Mom), Charlotte Cracker, Charlotte Smoothie, Charlotte Perospero",
                 description: [
-                    "Once per adventure, if supported character uses a Special, deals 10x character's ATK in non-type damage to enemies at end of turn for 1 turn and boosts the chain multiplier by +0.2 for 1 turn",
-                    "Once per adventure, if supported character uses a Special, deals 20x character's ATK in non-type damage to enemies at end of turn for 1 turn and boosts the chain multiplier by +0.3 for 1 turn",
-                    "Once per adventure, if supported character uses a Special, deals 30x character's ATK in non-type damage to enemies at end of turn for 1 turn and boosts the chain multiplier by +0.4 for 1 turn",
-                    "Once per adventure, if supported character uses a Special, deals 40x character's ATK in non-type damage to enemies at end of turn for 1 turn and boosts the chain multiplier by +0.5 for 1 turn",
-                    "Once per adventure, if supported character uses a Special, deals 50x character's ATK in non-type damage to enemies at end of turn for 1 turn and boosts the chain multiplier by +0.6 for 1 turn"
+                    "Once per adventure, when the supported character uses their special, deals 10x character's ATK in Typeless damage to all enemies at the end of the turn for 1 turn, and adds 0.2x to chain multiplier for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, deals 20x character's ATK in Typeless damage to all enemies at the end of the turn for 1 turn, and adds 0.3x to chain multiplier for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, deals 30x character's ATK in Typeless damage to all enemies at the end of the turn for 1 turn, and adds 0.4x to chain multiplier for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, deals 40x character's ATK in Typeless damage to all enemies at the end of the turn for 1 turn, and adds 0.5x to chain multiplier for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, deals 50x character's ATK in Typeless damage to all enemies at the end of the turn for 1 turn, and adds 0.6x to chain multiplier for 1 turn."
                 ]
             }
         ]
@@ -142156,11 +142169,11 @@ window.details = {
                 "Your crew must consist of any 2 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Helmeppo, Monkey D. Garp, X Drake, Trafalgar Law, Bartolomeo, Charlotte Brulee, Charlotte Oven, Blueno"
             ],
             description: [
-                "Boosts base ATK of Last Tap character by 750 for 1 turn.",
-                "Boosts base ATK of Last Tap character by 1,000 for 1 turn.",
-                "Boosts base ATK of Last Tap character by 1,500 for 1 turn.",
-                "Boosts base ATK of Last Tap character by 1,500 for 1 turn and boosts Chain Multiplier Growth Rate by 1.25x on activation.",
-                "Boosts base ATK of Last Tap character by 1,500 for 1 turn and boosts Chain Multiplier Growth Rate by 1.5x on activation."
+                "Boosts base ATK of Last Tap character by +750 for 1 turn.",
+                "Boosts base ATK of Last Tap character by +1,000 for 1 turn.",
+                "Boosts base ATK of Last Tap character by +1,500 for 1 turn.",
+                "Boosts base ATK of Last Tap character by +1,500 for 1 turn and boosts Chain Multiplier Growth Rate by 1.25x on activation.",
+                "Boosts base ATK of Last Tap character by +1,500 for 1 turn and boosts Chain Multiplier Growth Rate by 1.5x on activation."
             ]
         },
         support: [
@@ -157401,11 +157414,11 @@ window.details = {
 				"HP is below 10% and your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Gol D. Roger, Coby, Tashigi, Helmeppo, Prince Grus, Kujaku, Hibari, Kuzan (Aokiji)"
 			],
 			description: [
-				"Boosts Tandem ATK of middle row characters by 1.25x and boosts ATK of all other character by 1.2x for 1 turn.",
-				"Boosts Tandem ATK of middle row characters by 1.5x and boosts ATK of all other character by 1.4x for 1 turn.",
-				"Boosts Tandem ATK of middle row characters by 1.75x and boosts ATK of all other character by 1.6x for 1 turn.",
-				"Boosts Tandem ATK of middle row characters by 2x and boosts ATK of all other character by 1.8x for 1 turn.",
-				"Boosts Tandem ATK of middle row characters by 2.5x and boosts ATK of all other character by 2x for 1 turn."
+				"Boosts Tandem ATK of middle row characters by 1.25x for 1 turn, and boosts ATK of all other character by 1.2x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 1.5x for 1 turn, and boosts ATK of all other character by 1.4x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 1.75x for 1 turn, and boosts ATK of all other character by 1.6x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 2x for 1 turn, and boosts ATK of all other character by 1.8x for 1 turn.",
+				"Boosts Tandem ATK of middle row characters by 2.5x for 1 turn, and boosts ATK of all other character by 2x for 1 turn."
 			]
 		},
 		limit: [
@@ -157453,12 +157466,12 @@ window.details = {
 	},
 	4241: {//Prince Grus & Kujaku & Hibari
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of all characters by 4.5x, by 5.75x instead if you have a Fighter, Slasher, Striker and Shooter character on your crew, boosts HP of all characters by 1.25x, and makes [INT] and [RCV] orbs beneficial for all characters. If you have a Fighter, Slasher, Striker and Shooter character on your crew, up to 8 times per adventure and 4 times per turn, reduces Special Cooldown of this character by 3 turns.",
-		special: "Reduces enemies' Threshold Damage Reduction effect by 90%, deals 200x character's ATK in [INT] damage to all enemies at the end of each turn for 3 turns, reduces Counter-Healing and Counter-RCV duration by 4 turns, boosts ATK of Fighter, Slasher, Striker, and Shooter characters by 2.75x for 1 turn, changes [BLOCK], [STR], [DEX], [QCK], [PSY] and [INT] orbs into [RCV] orbs, and reduces enemies' Fighter, Slasher, Striker, and Shooter Resistance by -10% for 1 turn. Up to 1 time per adventure, if your crew has 5 turns or more of End of Turn Healing when the special is activated and a [STR], [DEX], or [QCK] character is supporting this character, reduces Special Cooldown of bottom row characters by 4 turns; reduces Special Cooldown of this character by 12 turns otherwise. Recovers 9,292 HP at the end of the turn for 7 turns.",
+		special: "Reduces enemies' Threshold Damage Reduction effect by 90%, deals 200x character's ATK in [INT] damage to all enemies at the end of each turn for 3 turns, reduces Counter-Healing and Counter-RCV duration by 4 turns, boosts ATK of Fighter, Slasher, Striker and Shooter characters by 2.75x for 1 turn, changes [BLOCK], [STR], [DEX], [QCK], [PSY] and [INT] orbs into [RCV] orbs, reduces enemies' Fighter, Slasher, Striker and Shooter Resistance by -10% for 1 turn, and recovers 9,292 HP at the end of the turn for 7 turns. Up to 1 time per adventure, if your crew has 5 turns or more of End of Turn Healing when the special is activated: if a [STR], [DEX] or [QCK] character is supporting this character, reduces Special Cooldown of bottom row characters by 4 turns; reduces Special Cooldown of this character by 12 turns otherwise.",
 		specialName: "Navy HQ Top Secret Special Force \"SWORD\""
 	},
 	4242: {//Prince Grus & Kujaku & Hibari
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of all characters by 4.5x, by 5.75x instead if you have a Fighter, Slasher, Striker and Shooter character on your crew, boosts HP of all characters by 1.25x, and makes [INT] and [RCV] orbs beneficial for all characters. If you have a Fighter, Slasher, Striker and Shooter character on your crew, up to 8 times per adventure and 4 times per turn, reduces Special Cooldown of this character by 3 turns.",
-		special: "Reduces enemies' Threshold Damage Reduction effect by 90%, deals 200x character's ATK in [INT] damage to all enemies at the end of each turn for 3 turns, reduces Counter-Healing and Counter-RCV duration by 4 turns, boosts ATK of Fighter, Slasher, Striker, and Shooter characters by 2.75x for 1 turn, changes [BLOCK], [STR], [DEX], [QCK], [PSY] and [INT] orbs into [RCV] orbs, and reduces enemies' Fighter, Slasher, Striker, and Shooter Resistance by -10% for 1 turn. Up to 1 time per adventure, if your crew has 5 turns or more of End of Turn Healing when the special is activated and a [STR], [DEX], or [QCK] character is supporting this character, reduces Special Cooldown of bottom row characters by 4 turns; reduces Special Cooldown of this character by 12 turns otherwise. Recovers 9,292 HP at the end of the turn for 7 turns.",
+		special: "Reduces enemies' Threshold Damage Reduction effect by 90%, deals 200x character's ATK in [INT] damage to all enemies at the end of each turn for 3 turns, reduces Counter-Healing and Counter-RCV duration by 4 turns, boosts ATK of Fighter, Slasher, Striker and Shooter characters by 2.75x for 1 turn, changes [BLOCK], [STR], [DEX], [QCK], [PSY] and [INT] orbs into [RCV] orbs, reduces enemies' Fighter, Slasher, Striker and Shooter Resistance by -10% for 1 turn, and recovers 9,292 HP at the end of the turn for 7 turns. Up to 1 time per adventure, if your crew has 5 turns or more of End of Turn Healing when the special is activated: if a [STR], [DEX] or [QCK] character is supporting this character, reduces Special Cooldown of bottom row characters by 4 turns; reduces Special Cooldown of this character by 12 turns otherwise.",
 		specialName: "Navy HQ Top Secret Special Force \"SWORD\"",
 		sailor: {
 			level1: "Boosts amount healed from [RCV] orbs by 300, and makes [INT] and [RCV] orbs beneficial for Fighter, Slasher, Striker and Shooter characters.",
@@ -158582,8 +158595,8 @@ window.details = {
 				"Boosts base ATK of this character by +1,000 for 1 turn.",
 				"Changes orb, including [BLOCK] orb, of this character into a Matching orb, and boosts base ATK of this character by +1,000 for 1 turn.",
 				"Changes orb, including [BLOCK] orb, of this character into a Matching orb, and boosts base ATK of this character by +1,500 for 1 turn.",
-				"Changes orb, including [BLOCK] orb, of this character into a Matching orb, reduces enemies' Slasher Resistance by -10% for 1 turn, and boosts base ATK of this character by +2,000 for 1 turn.",
-				"Changes orb, including [BLOCK] and [SUPERBLOCK] orb, of this character into a Matching orb, reduces enemies' Slasher Resistance by -10% for 1 turn, and boosts base ATK of this character by +2,500 for 1 turn."
+				"Changes orb, including [BLOCK] orb, of this character into a Matching orb, reduces enemies' Slasher Resistance by -10% for 1 turn, and boosts base ATK of this character by 2,000 for 1 turn.",
+				"Changes orb, including [BLOCK] and [SUPERBLOCK] orb, of this character into a Matching orb, reduces enemies' Slasher Resistance by -10% for 1 turn, and boosts base ATK of this character by 2,500 for 1 turn."
 			],
 		},
 		limit: [
@@ -161185,7 +161198,7 @@ window.details = {
 				"Reduces enemies' Increased Defense duration by 1 turn, and boosts Tandem ATK of [STR], [QCK], Cerebral and Shooter characters by 1.4x for 1 turn.",
 				"Reduces enemies' Increased Defense duration by 1 turn, and boosts Tandem ATK of [STR], [QCK], Cerebral and Shooter characters by 1.6x for 1 turn.",
 				"Reduces enemies' Increased Defense duration by 2 turns, and boosts Tandem ATK of [STR], [QCK], Cerebral and Shooter characters by 1.8x for 1 turn.",
-				"Reduces enemies' Increased Defense duration by 3 turns, and boosts Tandem ATK of [STR], [QCK], Cerebral and Shooter characters by 2 for 1 turn."
+				"Reduces enemies' Increased Defense duration by 3 turns, and boosts Tandem ATK of [STR], [QCK], Cerebral and Shooter characters by 2x for 1 turn."
 			]
 		},
 		limit: [
@@ -163129,7 +163142,7 @@ window.details = {
 	},
 	4309: {//Franky
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [STR], [DEX] and [QCK] characters by 4x, boosts HP of [STR], [DEX] and [QCK] characters by 1.5x, and reduces damage received by 15%.",
-		special: "Reduces Switch Effect and VS Gauge of all characters by 2, reduces Despair duration by 6 turns, and increases Chain Tap Timing Bonus of [STR], [DEX] and [QCK] characters to +0.3x-0.5x for 2 turns depending on Tap Timing. If your crew has ATK Up for 2+ turns when the special is activated, decreases duration of any ATK Up buffs by 1 turn, and increases boost effects of ATK Up buffs by +0.5x.",
+		special: "Reduces Switch Effect and VS Gauge of all characters by 2, reduces Despair duration by 6 turns, and increases Chain Tap Timing Bonus of [STR], [DEX] and [QCK] characters to +0.3x-0.5x for 2 turns depending on Tap Timing. If your crew has 2+ turns of ATK Up when the special is activated, decreases duration of any ATK Up buffs by 1 turn, and increases boost effects of ATK Up buffs by +0.5x.",
 		specialNotes: "GOOD: +0.3, GREAT: +0.4, PERFECT: +0.5",
         specialName: "Countering Strong Right",
 		sailor: {
@@ -163190,7 +163203,7 @@ window.details = {
 	},
 	4310: {//Brook
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [STR], [DEX] and [QCK] characters by 4x, by 4.25x instead if HP is above 99% at the start of the turn, and reduces damage received by 15%.",
-		special: "Reduces Paralysis and Special Bind duration by 6 turns, and boosts Base ATK of [STR], [DEX] and [QCK] characters by 1,000 for 2 turns. If your crew has Orb Amplification for 2+ turns when the special is activated, decreases duration of any Orb Amplification buffs by 1 turn, and increases boost effects of Orb Amplification buffs by +0.5x.",
+		special: "Reduces Paralysis and Special Bind duration by 6 turns, and boosts Base ATK of [STR], [DEX] and [QCK] characters by 1,000 for 2 turns. If your crew has 2+ turns of Orb Amplification when the special is activated, decreases duration of any Orb Amplification buffs by 1 turn, and increases boost effects of Orb Amplification buffs by +0.5x.",
 		specialName: "Intercepting Thrust",
 		sailor: {
 			base: "Reduces Special Bind duration by 6 turns on this character.",
@@ -166895,8 +166908,8 @@ window.details = {
 		}
 	},
 	4353: {//Kuma
-		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Cerebral and Powerhouse characters by 5.25x, boosts HP of Cerebral and Powerhouse characters by 1.4x, boosts base HP of [Paramythia-type] and [Revolutionary Army] characters by 1,500, makes [PSY], [RCV] and [TND] orbs beneficial for Cerebral and Powerhouse characters, and reduces Paralysis duration by 10 turns. If your crew has 4+ [Egghead] characters, boosts ATK of Cerebral and Powerhouse characters by 5.775x instead. If your crew has 5+ [Egghead] characters, reduces Despair duration by 2 turns.",
-		special: "Reduces Special Cooldown of Cerebral and Powerhouse characters by 1 turn, reduces Switch Effect of Cerebral and Powerhouse characters by 3, reduces Blow Away duration by 4 turns, and boosts Crew Damage Reduction to ATK of all characters by 1x-2x, proportional to the strength of crew's Percent Damage Reduction buff, for 3 turns. If your crew has 4+ [Paramythia-type], [Egghead] or [Revolutionary Army] characters, increases boost effects of Chain Addition buffs by +1.0x, and adds 1.6x, can be enhanced up to 2 times, to Chain Multiplier for 3 turns; adds 1.4x, can be enhanced up to 2 times, to Chain Multiplier for 1 turn otherwise.",
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Cerebral and Powerhouse characters by 5.25x, boosts HP of Cerebral and Powerhouse characters by 1.4x, boosts base HP of [Paramythia-type] and [Revolutionary Army] characters by 1,500, makes [PSY], [RCV] and [TND] orbs beneficial for Cerebral and Powerhouse characters, and reduces Paralysis duration by 10 turns. If your crew has 4+ [Egghead Arc] characters, boosts ATK of Cerebral and Powerhouse characters by 5.775x instead. If your crew has 5+ [Egghead Arc] characters, reduces Despair duration by 2 turns.",
+		special: "Reduces Special Cooldown of Cerebral and Powerhouse characters by 1 turn, reduces Switch Effect of Cerebral and Powerhouse characters by 3, reduces Blow Away duration by 4 turns, and boosts Crew Damage Reduction to ATK of Cerebral and Powerhouse characters by 1x-2x, proportional to the strength of crew's Percent Damage Reduction buff, for 3 turns. If your crew has 4+ [Paramythia-type], [Egghead Arc] or [Revolutionary Army] characters, increases boost effects of Chain Addition buffs by +1.0x, and adds 1.6x, can be enhanced up to 2 times, to Chain Multiplier for 3 turns; adds 1.4x, can be enhanced up to 2 times, to Chain Multiplier for 1 turn otherwise.",
 		specialName: "Charging Through Fiercely",
 		sailor: {
 			base: "Restores Special Cooldown of this character by 3 turns when it is rewinded.",
@@ -167001,8 +167014,8 @@ window.details = {
 		]
 	},
 	4354: {//Dr Vegapunk
-		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Cerebral, Free Spirit and Powerhouse characters by 5.5x, boosts HP of Cerebral, Free Spirit and Powerhouse characters by 1.2x, boosts base ATK of [Vegapunk] and [Seraphim] characters by 500, and makes [DEX], [INT] and [TND] orbs beneficial for Cerebral, Free Spirit and Powerhouse characters. If crew uses a Special to reduce enemies' Percent Damage Reduction or Threshold Damage Reduction, reduces the duration by 1 additional turn. If your crew has 4+ [Scientist] characters, boosts ATK of Cerebral characters by 6.6x instead. If your crew has 5+ [Egghead] characters, reduces Bind duration by 2 turns.",
-		special: "Reduces ATK Down duration by 7 turns, and boosts ATK against enemies inflicted with Increase Damage Taken and enemies inflicted with Weaken by 2.5x for 3 turns. If your crew has 4+ [Scientist], [Egghead] or [Vegapunk] characters, boosts ATK of Cerebral, Free Spirit and Powerhouse characters by 3.5x, can be enhanced up to 2 times, for 3 turns; boosts ATK of Cerebral, Free Spirit and Powerhouse characters by 3x, can be enhanced up to 2 times, for 1 turn otherwise. If your crew has 1+ [Seraphim] or 2+ [Vegapunk] characters, boosts Final Tap ATK of [Scientist], [Seraphim] and [Vegapunk] characters by 40%.",
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Cerebral, Free Spirit and Powerhouse characters by 5.5x, boosts HP of Cerebral, Free Spirit and Powerhouse characters by 1.2x, boosts base ATK of [Vegapunk] and [Seraphim] characters by 500, and makes [DEX], [INT] and [TND] orbs beneficial for Cerebral, Free Spirit and Powerhouse characters. If crew uses a Special to reduce enemies' Percent Damage Reduction or Threshold Damage Reduction, reduces the duration by 1 additional turn. If your crew has 4+ [Scientist] characters, boosts ATK of Cerebral characters by 6.6x instead. If your crew has 5+ [Egghead Arc] characters, reduces Bind duration by 2 turns.",
+		special: "Reduces ATK Down duration by 7 turns, and boosts ATK against enemies inflicted with Increase Damage Taken and enemies inflicted with Weaken by 2.5x for 3 turns. If your crew has 4+ [Scientist], [Egghead Arc] or [Vegapunk] characters, boosts ATK of Cerebral, Free Spirit and Powerhouse characters by 3.5x, can be enhanced up to 2 times, for 3 turns; boosts ATK of Cerebral, Free Spirit and Powerhouse characters by 3x, can be enhanced up to 2 times, for 1 turn otherwise. If your crew has 1+ [Seraphim] or 2+ [Vegapunk] characters, boosts Final Tap ATK of [Scientist], [Seraphim] and [Vegapunk] characters by 40%.",
 		specialName: "Advocating the Possibilities of Science",
 		sailor: {
 			base: "Makes [DEX], [INT] and [TND] orbs beneficial for Cerebral, Free Spirit and Powerhouse characters; if Territory: Cerebral class is on the field, boosts base ATK of Cerebral characters by 200.",
@@ -167238,7 +167251,7 @@ window.details = {
 	},
 	4357: {//Dr. Vegapunk - York
 		captain: "Boosts ATK of Cerebral characters by 3.5x, boosts HP of Cerebral characters by 1.35x, makes [RCV] orbs beneficial for Cerebral characters, and makes PERFECTs consume [RCV] orbs.",
-		special: "Reduces enemies' Percent Damage Reduction and Threshold Damage Reduction duration by 2 turns, increases boost effects of ATK Up and Chain Multiplication buffs by +0.25x, and changes orbs, including [BLOCK] orbs, of bottom row characters into [RCV] orbs. If your crew has 5+ [Egghead] characters, reduces Special Bind duration by 3 turns.",
+		special: "Reduces enemies' Percent Damage Reduction and Threshold Damage Reduction duration by 2 turns, increases boost effects of ATK Up and Chain Multiplication buffs by +0.25x, and changes orbs, including [BLOCK] orbs, of bottom row characters into [RCV] orbs. If your crew has 5+ [Egghead Arc] characters, reduces Special Bind duration by 3 turns.",
 		specialName: "Starting the Hunt",
 		sailor: {
 			base: "Reduces Special Bind duration by 6 turns on this character.",
@@ -167334,7 +167347,7 @@ window.details = {
 	},
 	4358: {//5+ Dr. Vegapunk - York
 		captain: "Boosts ATK of Cerebral characters by 3.75x, boosts HP of Cerebral characters by 1.4x, makes [RCV] and [SEMLA] orbs beneficial for Cerebral characters, and makes PERFECTs consume [RCV] and [SEMLA] orbs.",
-		special: "Reduces enemies' Percent Damage Reduction and Threshold Damage Reduction duration by 3 turns, increases boost effects of ATK Up, Color Affinity and Chain Multiplication buffs by +0.25x, and changes orbs, including [BLOCK] orbs, of bottom row characters into [RCV] orbs. If your crew has 5+ [Egghead] characters, boosts Color Affinity of [DEX] and [PSY] characters by 2.25x, can be enhanced up to 2 times, for 1 turn, and reduces Special Bind duration by 3 turns.",
+		special: "Reduces enemies' Percent Damage Reduction and Threshold Damage Reduction duration by 3 turns, increases boost effects of ATK Up, Color Affinity and Chain Multiplication buffs by +0.25x, and changes orbs, including [BLOCK] orbs, of bottom row characters into [RCV] orbs. If your crew has 5+ [Egghead Arc] characters, boosts Color Affinity of [DEX] and [PSY] characters by 2.25x, can be enhanced up to 2 times, for 1 turn, and reduces Special Bind duration by 3 turns.",
 		specialName: "Starting the Hunt",
 		sailor: {
 			base: "Reduces Special Bind duration by 6 turns on this character.",
@@ -167768,9 +167781,9 @@ window.details = {
 		}
 	},	
     4366: {//Kizaru
-		captain: "Reduces Special Cooldown of all characters by 4 turns at the start of the fight, boosts ATK of [Egghead], [Logia-type] and [Navy] characters by 1.1x, boosts ATK of [DEX], Shooter and Slasher characters by 6x, by 6.6x instead if they have the applicable tag, boosts ATK of all other characters by 4.5x, by 4.95x instead if they have the applicable tag, boosts HP of all characters by 1.35x, and makes [DEX] and [TND] orbs beneficial for all characters. If this character is your Captain and performs EXCELLENT with their Action Special, for 3 turns boosts ATK of [Egghead], [Logia-type] and [Navy] characters by 1.3x instead, boosts ATK of [PSY], Free Spirit and Slasher characters by 7.8x instead if they have the applicable tag, and boosts ATK of all other characters by 5.85x instead if they have the applicable tag. If your crew has 3+ [Egghead], [Logia-type] or [Navy] characters, reduces Burn and Special Bind duration by 10 turns. If your crew has 4+ [Navy] characters, makes all Specials that apply Class or Type restricted buffs apply to all characters instead.",
+		captain: "Reduces Special Cooldown of all characters by 4 turns at the start of the fight, boosts ATK of [Egghead Arc], [Logia-type] and [Navy] characters by 1.1x, boosts ATK of [DEX], Shooter and Slasher characters by 6x, by 6.6x instead if they have the applicable tag, boosts ATK of all other characters by 4.5x, by 4.95x instead if they have the applicable tag, boosts HP of all characters by 1.35x, and makes [DEX] and [TND] orbs beneficial for all characters. If this character is your Captain and performs EXCELLENT with their Action Special, for 3 turns boosts ATK of [Egghead Arc], [Logia-type] and [Navy] characters by 1.3x instead, boosts ATK of [PSY], Free Spirit and Slasher characters by 7.8x instead if they have the applicable tag, and boosts ATK of all other characters by 5.85x instead if they have the applicable tag. If your crew has 3+ [Egghead Arc], [Logia-type] or [Navy] characters, reduces Burn and Special Bind duration by 10 turns. If your crew has 4+ [Navy] characters, makes all Specials that apply Class or Type restricted buffs apply to all characters instead.",
 		captainNotes: "Buff restriction override does not apply to \"Partial\" buffs. The buff restriction override applies to any effect that would normally affect only certain classes or types, including, but not restricted to: ATK buffs, Orb buffs, Base ATK buffs, Cooldown Reduction, Normal Attack Defensive Effect Bypass, Orb Lock buffs and Slot Barrier debuffs, but does not affect defensive buffs. This effect doesn't not affect Swap abilities, Support abilities, Super Special abilities, VS Special abilities or effects obtained from Following Turn or Tap-Timing Following Turn buffs.",
-        special: "Up to 2 times per adventure, reduces Special Cooldown of middle row characters by 6 turns. Sets Chain Boundaries to 3.25x-4x and 35.0x for 2 turns depending on the outcome of Action Special. If a [PSY] character is supporting this character, applies Territory: Slasher class to the field, boosts ATK by 1x-1.5x and reduces damage received by 0%-25% based on number of characters matching the territory, for 3 turns; applies Territory: Shooter class to the field, boosts ATK by 1x-1.5x and reduces damage received by 0%-25% based on number of characters matching the territory, for 3 turns otherwise. If your crew has 5+ [Egghead], [Navy] or [Logia-type] characters, increases Chain Tap Timing Bonus of [DEX], Shooter and Slasher characters to +0.3x-0.7x, can be enhanced up to 2 times, for 2 turns depending on Tap Timing; increases Chain Tap Timing Bonus of [DEX], Shooter and Slasher characters to +0.3x-0.5x for 1 turn depending on Tap Timing otherwise.",
+        special: "Up to 2 times per adventure, reduces Special Cooldown of middle row characters by 6 turns. Sets Chain Boundaries to 3.25x-4x and 35.0x for 2 turns depending on the outcome of Action Special. If a [PSY] character is supporting this character, applies Territory: Slasher class to the field, boosts ATK by 1x-1.5x and reduces damage received by 0%-25% based on number of characters matching the territory, for 3 turns; applies Territory: Shooter class to the field, boosts ATK by 1x-1.5x and reduces damage received by 0%-25% based on number of characters matching the territory, for 3 turns otherwise. If your crew has 5+ [Egghead Arc], [Navy] or [Logia-type] characters, increases Chain Tap Timing Bonus of [DEX], Shooter and Slasher characters to +0.3x-0.7x, can be enhanced up to 2 times, for 2 turns depending on Tap Timing; increases Chain Tap Timing Bonus of [DEX], Shooter and Slasher characters to +0.3x-0.5x for 1 turn depending on Tap Timing otherwise.",
 		specialNotes: "<br><b>Chain Boundary:</b> MISS: 3.25x, GOOD: 3.5x, GREAT: 3.7x, PERFECT: 3.9x, EXCELLENT 4x.<br><b>Tap Timing:</b> GOOD: +0.3, GREAT: +0.5, PERFECT: +0.7; GOOD: +0.3, GREAT: +0.4, PERFECT: +0.5 otherwise.",
         specialName: "Obstacle-Eliminating Ama no Murakumo Sword",
 		sailor: {
@@ -167868,18 +167881,18 @@ window.details = {
 		],
 		superTandemBoost: {
 			characterCondition: [
-				"When a [Egghead], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
-				"When a [Egghead], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
-				"When a [Egghead], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
-				"When a [Egghead], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
-				"When a [Egghead], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem"
+				"When a [Egghead Arc], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
+				"When a [Egghead Arc], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
+				"When a [Egghead Arc], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
+				"When a [Egghead Arc], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem",
+				"When a [Egghead Arc], [Logia-type], [Navy] or [Navy Admiral] character performs Super Tandem"
 			],
 			description: [
-				"Raises Boost Level of [Egghead], [Logia-type] and [Navy] characters by 1 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Egghead], [Logia-type] and [Navy] characters by 2 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 2 for 1 turn.",
-				"Raises Boost Level of [Egghead], [Logia-type] and [Navy] characters by 3 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 3 for 1 turn.",
-				"Raises Boost Level of [Egghead], [Logia-type] and [Navy] characters by 4 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 5 for 1 turn.",
-				"Raises Boost Level of [Egghead], [Logia-type] and [Navy] characters by 5 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 7 for 1 turn."
+				"Raises Boost Level of [Egghead Arc], [Logia-type] and [Navy] characters by 1 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc], [Logia-type] and [Navy] characters by 2 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 2 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc], [Logia-type] and [Navy] characters by 3 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 3 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc], [Logia-type] and [Navy] characters by 4 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 5 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc], [Logia-type] and [Navy] characters by 5 for 1 turn, and raises Boost Level of [Navy Admiral] characters by 7 for 1 turn."
 			]
 		}
 	},
@@ -168016,7 +168029,7 @@ window.details = {
 	},
 	4368: {//Usopp
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Shooter characters by 4x, and makes [STR], [DEX] and [QCK] orbs beneficial for Shooter characters.",
-		special: "Reduces Special Cooldown of all characters by 2 turns, reduces enemies' Threshold Damage Reduction duration by 6 turns, and boosts ATK of all characters by 2.75x for 1 turn. If your crew has ATK Up when the special is activated, boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3+ [Straw Hat Pirates] or [Egghead] characters, boosts ATK against delayed enemies and enemies inflicted with Increase Damage Taken by 2.25x for 1 turn.",
+		special: "Reduces Special Cooldown of all characters by 2 turns, reduces enemies' Threshold Damage Reduction duration by 6 turns, and boosts ATK of all characters by 2.75x for 1 turn. If your crew has ATK Up when the special is activated, boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3+ [Straw Hat Pirates] or [Egghead Arc] characters, boosts ATK against delayed enemies and enemies inflicted with Increase Damage Taken by 2.25x for 1 turn.",
 		specialName: "Raising the Transponder Snail",
 		sailor: {
 			base: "Restores Special Cooldown of this character by 3 turns when it is rewinded; makes [DEX] orbs beneficial for all characters.",
@@ -168086,7 +168099,7 @@ window.details = {
 	},
 	4369: {//Chopper
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY] characters by 4x, and makes [INT] and [TND] orbs beneficial for [PSY] characters.",
-		special: "Delays all enemies by 2 turns, reduces ATK Down duration by 6 turns, removes Poison duration completely, recovers 30% of crew's MAX HP, and boosts Orb Effects of all characters by 2.75x for 1 turn. If your crew has Orb Amplification when the special is activated, boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3+ [Straw Hat Pirates] or [Egghead] characters, adds 1.2x to Chain Multiplier for 1 turn.",
+		special: "Delays all enemies by 2 turns, reduces ATK Down duration by 6 turns, removes Poison duration completely, recovers 30% of crew's MAX HP, and boosts Orb Effects of all characters by 2.75x for 1 turn. If your crew has Orb Amplification when the special is activated, boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3+ [Straw Hat Pirates] or [Egghead Arc] characters, adds 1.2x to Chain Multiplier for 1 turn.",
 		specialName: "Blushing Reindeer Ship Doctor",
 		sailor: {
 			base: "Boosts base ATK and RCV of all characters by 100; makes [PSY] orbs beneficial for all characters.",
@@ -168158,73 +168171,11 @@ window.details = {
 				"Boosts Tandem ATK of [PSY] characters by 1.65x for 1 turn.",
 				"Boosts Tandem ATK of [PSY] characters by 1.75x for 1 turn."
 			]
-		},
-		festStats: {
-			def: 137,
-			spd: 151,
-			style: "RCV"
-		},
-		festAttackPattern: [
-			"Normal Attack",
-			"Power Attack",
-			"Heal Teammate in Range Lv.1 (Small Range)",
-			"Power Attack"
-		],
-		festAttackTarget: "Targets closest enemies",
-		festResistance: "Completely evades Special Bind, reduce damage taken from [INT] by 20%",
-		festAbility: [
-			"Team RCV Up Lv.1; if 4 or more [Straw Hat Pirates] characters are on the team, team Special CT Speed Up Lv.1, SPD Up Lv.2, Critical % Up Lv.1",
-			"Team RCV Up Lv.2; if 4 or more [Straw Hat Pirates] characters are on the team, team Special CT Speed Up Lv.1, SPD Up Lv.3, Critical % Up Lv.2",
-			"Team RCV Up Lv.3; if 4 or more [Straw Hat Pirates] characters are on the team, team Special CT Speed Up Lv.1, SPD Up Lv.4, Critical % Up Lv.3",
-			"Team RCV Up Lv.4; if 4 or more [Straw Hat Pirates] characters are on the team, team Special CT Speed Up Lv.2, SPD Up Lv.5, Critical % Up Lv.4",
-			"Team RCV Up Lv.5; if 4 or more [Straw Hat Pirates] characters are on the team, team Special CT Speed Up Lv.2, SPD Up Lv.6, Critical % Up Lv.5"
-		],
-		festSpecial: [
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 1.8 healing, Paralysis reduction (11 s), Special Bind reduction (11 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (11 s), 70% chance to evade Special Bind (11 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 1.9 healing, Paralysis reduction (12 s), Special Bind reduction (12 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (12 s), 70% chance to evade Special Bind (12 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2 healing, Paralysis reduction (13 s), Special Bind reduction (13 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (13 s), 70% chance to evade Special Bind (13 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2.1 healing, Paralysis reduction (14 s), Special Bind reduction (14 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (14 s), 70% chance to evade Special Bind (14 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2.2 healing, Paralysis reduction (15 s), Special Bind reduction (15 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (15 s), 70% chance to evade Special Bind (15 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2.3 healing, Paralysis reduction (16 s), Special Bind reduction (16 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (16 s), 70% chance to evade Special Bind (16 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2.4 healing, Paralysis reduction (17 s), Special Bind reduction (17 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (17 s), 70% chance to evade Special Bind (17 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2.5 healing, Paralysis reduction (18 s), Special Bind reduction (18 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (18 s), 70% chance to evade Special Bind (18 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2.6 healing, Paralysis reduction (19 s), Special Bind reduction (19 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (19 s), 70% chance to evade Special Bind (19 s)"
-			},
-			{
-				cooldown: 25,
-				description: "Targets teammates within medium range for RCV x 2.8 healing, Paralysis reduction (20 s), Special Bind reduction (20 s); if 4 or more [Straw Hat Pirates] characters are on the team, 70% chance to evade Paralysis (20 s), 70% chance to evade Special Bind (20 s)"
-			}
-		]
+		}
 	},
 	4370: {//Franky
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Shooter characters by 4x, and makes [PSY], [INT] and [TND] orbs beneficial for Shooter characters.",
-		special: "Reduces Special Bind duration by 6 turns, changes all orbs, including [BLOCK] orbs, into [TND] orbs, and boosts Color Affinity of all characters by 2.5x-3x for 1 turn. If your crew has Color Affinity when the special is activated, boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3+ [Straw Hat Pirates] or [Egghead] characters, reduces damage received by 80% for 2 turns.",
+		special: "Reduces Special Bind duration by 6 turns, changes all orbs, including [BLOCK] orbs, into [TND] orbs, and boosts Color Affinity of all characters by 2.5x-3x for 1 turn. If your crew has Color Affinity when the special is activated, boosts Chain Multiplier Growth Rate by 1.5x for 1 turn. If your crew has 3+ [Straw Hat Pirates] or [Egghead Arc] characters, reduces damage received by 80% for 2 turns.",
 		specialNotes: "For every 3 <b>Special Cooldown charges</b> after this special is charged to MAX, the Color Affinity increases by +0.1x until its maximum value.",
         specialName: "Escaping the Explosion",
 		sailor: {
@@ -168284,82 +168235,20 @@ window.details = {
 		],
 		superTandemBoost: {
 			characterCondition: [
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem"
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem"
 			],
 			description: [
-				"Raises Boost Level of [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Egghead] characters by 2 for 1 turn.",
-				"Raises Boost Level of [Egghead] characters by 2 for 1 turn, and raises Boost Level of [Straw Hat Pirates] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Egghead] and [Straw Hat Pirates] characters by 2 for 1 turn."
+				"Raises Boost Level of [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc] characters by 2 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc] characters by 2 for 1 turn, and raises Boost Level of [Straw Hat Pirates] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Egghead Arc] and [Straw Hat Pirates] characters by 2 for 1 turn."
 			]
-		},
-		festStats: {
-			def: 290,
-			spd: 114,
-			style: "DEF"
-		},
-		festAttackPattern: [
-			"Normal Attack",
-			"Power Attack",
-			"Heal Teammate in Range Lv.1 (Small Range)",
-			"Normal Attack"
-		],
-		festAttackTarget: "Targets closest enemies",
-		festResistance: "Completely evades Forced Out, reduce damage taken from [INT] by 20%",
-		festAbility: [
-			"Team DEF Up Lv.1; if 4 or more [Straw Hat Pirates] characters are on the team, [Straw Hat Pirates] teammates HP Up Lv.2, ATK Up Lv.2, Blow Away % Up Lv.1",
-			"Team DEF Up Lv.2; if 4 or more [Straw Hat Pirates] characters are on the team, [Straw Hat Pirates] teammates HP Up Lv.3, ATK Up Lv.3, Blow Away % Up Lv.2",
-			"Team DEF Up Lv.3; if 4 or more [Straw Hat Pirates] characters are on the team, [Straw Hat Pirates] teammates HP Up Lv.4, ATK Up Lv.4, Blow Away % Up Lv.3",
-			"Team DEF Up Lv.4; if 4 or more [Straw Hat Pirates] characters are on the team, [Straw Hat Pirates] teammates HP Up Lv.5, ATK Up Lv.5, Blow Away % Up Lv.4",
-			"Team DEF Up Lv.5; if 4 or more [Straw Hat Pirates] characters are on the team, [Straw Hat Pirates] teammates HP Up Lv.6, ATK Up Lv.6, Blow Away % Up Lv.5"
-		],
-		festSpecial: [
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.1 (21 s), ATK x 1.1 Counter stance (21 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.2 (21 s), 50% chance to evade fixed damage (11 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.1 (22 s), ATK x 1.2 Counter stance (22 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.2 (22 s), 50% chance to evade fixed damage (12 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.1 (23 s), ATK x 1.3 Counter stance (23 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.2 (23 s), 50% chance to evade fixed damage (13 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.2 (24 s), ATK x 1.4 Counter stance (24 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.3 (24 s), 50% chance to evade fixed damage (14 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.2 (25 s), ATK x 1.5 Counter stance (25 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.3 (25 s), 50% chance to evade fixed damage (15 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.3 (26 s), ATK x 1.6 Counter stance (26 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.4 (26 s), 50% chance to evade fixed damage (16 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.3 (27 s), ATK x 1.7 Counter stance (27 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.4 (27 s), 50% chance to evade fixed damage (17 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.3 (28 s), ATK x 1.8 Counter stance (28 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.5 (28 s), 50% chance to evade fixed damage (18 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.4 (29 s), ATK x 1.9 Counter stance (29 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.5 (29 s), 50% chance to evade fixed damage (19 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets self for Shield Lv.5 (30 s), ATK x 2 Counter stance (30 s); if 4 or more [Straw Hat Pirates] characters are on the team, targets team for DEF Up Lv.6 (30 s), 50% chance to evade fixed damage (20 s)"
-			}
-		]
+		}
 	},
 	4371: {//6+ Zoro
 		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Slasher and Driven characters by 5.25x, by 5.75x instead if they have a beneficial orb, boosts HP of Slasher and Driven characters by 1.2x, and reduces damage received by 10%. If this character has a [TND], [WANO] or [RAINBOW] orb and you attack with this character, increases boost effects of Chain Addition buffs by +0.25x.",
@@ -168559,18 +168448,18 @@ window.details = {
 		],
 		superTandemBoost: {
 			characterCondition: [
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem",
-				"When a [Straw Hat Pirates] or [Egghead] character performs Super Tandem"
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem",
+				"When a [Straw Hat Pirates] or [Egghead Arc] character performs Super Tandem"
 			],
 			description: [
 				"Raises Boost Level of [Paramythia-type] characters by 1 for 1 turn.",
 				"Raises Boost Level of [Paramythia-type] and [Straw Hat Pirates] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Paramythia-type], [Straw Hat Pirates] and [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Paramythia-type] characters by 2 for 1 turn, and raises Boost Level of [Straw Hat Pirates] and [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Paramythia-type] characters by 3 for 1 turn, and raises Boost Level of [Straw Hat Pirates] and [Egghead] characters by 1 for 1 turn."
+				"Raises Boost Level of [Paramythia-type], [Straw Hat Pirates] and [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Paramythia-type] characters by 2 for 1 turn, and raises Boost Level of [Straw Hat Pirates] and [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Paramythia-type] characters by 3 for 1 turn, and raises Boost Level of [Straw Hat Pirates] and [Egghead Arc] characters by 1 for 1 turn."
 			]
 		}
 	},
@@ -168655,18 +168544,18 @@ window.details = {
 		],
 		superTandemBoost: {
 			characterCondition: [
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem"
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem"
 			],
 			description: [
 				"Raises Boost Level of [Seven Warlords of the Sea] characters by 1 for 1 turn.",
 				"Raises Boost Level of [Seven Warlords of the Sea] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Seven Warlords of the Sea] and [Marineford Paramount War] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Seven Warlords of the Sea] and [Marineford Paramount War] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Seven Warlords of the Sea], [Marineford Paramount War] and [Navy] characters by 1 for 1 turn."
+				"Raises Boost Level of [Seven Warlords of the Sea] and [Marineford Paramount War Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Seven Warlords of the Sea] and [Marineford Paramount War Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Seven Warlords of the Sea], [Marineford Paramount War Arc] and [Navy] characters by 1 for 1 turn."
 			]
 		}
 	},
@@ -168753,18 +168642,18 @@ window.details = {
 		],
 		superTandemBoost: {
 			characterCondition: [
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem",
-				"When a [Seven Warlords of the Sea], [Marineford Paramount War] or [Navy] character performs Super Tandem"
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem",
+				"When a [Seven Warlords of the Sea], [Marineford Paramount War Arc] or [Navy] character performs Super Tandem"
 			],
 			description: [
 				"Raises Boost Level of [Seven Warlords of the Sea] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Seven Warlords of the Sea], [Marineford Paramount War] and [Navy] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Seven Warlords of the Sea] characters by 2 for 1 turn, and raises Boost Level of [Marineford Paramount War] and [Navy] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Seven Warlords of the Sea] and [Marineford Paramount War] characters by 2 for 1 turn, and raises Boost Level of [Navy] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Seven Warlords of the Sea], [Marineford Paramount War] and [Navy] characters by 2 for 1 turn."
+				"Raises Boost Level of [Seven Warlords of the Sea], [Marineford Paramount War Arc] and [Navy] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Seven Warlords of the Sea] characters by 2 for 1 turn, and raises Boost Level of [Marineford Paramount War Arc] and [Navy] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Seven Warlords of the Sea] and [Marineford Paramount War Arc] characters by 2 for 1 turn, and raises Boost Level of [Navy] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Seven Warlords of the Sea], [Marineford Paramount War Arc] and [Navy] characters by 2 for 1 turn."
 			]
 		}
 	},
@@ -168985,7 +168874,7 @@ window.details = {
             },
             {
                 special: {
-                    base: "Reduces Special Cooldown of all characters by 2 turns, makes own attacks ignore damage reducing barriers and buffs for 1 turn, deals 150x character's ATK in Typeless Fixed True damage to all enemies, and boosts Orb Effects of [DEX], Slasher and Driven characters by 3.25x for 1 turn. If your crew has 2+ [Land of Wano] characters and your crew has Orb Amplification when the special is activated, reduces enemies' Slasher and Driven Resistance by -30% for 1 turn. If total damage taken is 50,000 or more, ignores debuff protection and inflicts all enemies with Increase Damage Taken by 2x for 1 turn."
+                    base: "Reduces Special Cooldown of all characters by 2 turns, makes own attacks ignore damage reducing barriers and buffs for 1 turn, deals 150x character's ATK in Typeless Fixed True damage to all enemies, and boosts Orb Effects of [DEX], Slasher and Driven characters by 3.25x for 1 turn. If your crew has 2+ [Land of Wano Arc] characters and your crew has Orb Amplification when the special is activated, reduces enemies' Slasher and Driven Resistance by -30% for 1 turn. If total damage taken is 50,000 or more, ignores debuff protection and inflicts all enemies with Increase Damage Taken by 2x for 1 turn."
                 }
             }
         ],
@@ -169027,69 +168916,7 @@ window.details = {
 		special: "Deals 20% of enemies' current HP in True damage to all enemies, removes enemies' Percent Damage Reduction duration completely, removes Poison duration completely, and applies Territory: Driven class to the field, boosts ATK by 1x-1.5x and reduces damage received by 0%-25% based on number of characters matching the territory, for 3 turns. Boosts ATK of Driven and Striker characters by 4x-5x for 1 turn depending on the total Cost of crew, including Friend Captain and Supports, at the start of the fight. Increases boost effects of Orb Amplification buffs by 1.1x-1.5x (up to 10x) depending on the outcome of Action Special. If your crew has 4+ [Five Elders], [Celestial Dragon] or [Navy] characters, allows HP Overfill up to 2x MAX HP for 1 turn.",
 		specialNotes: "<br><b>ATK Up:</b> 499-: 4x, 500-599: 4.25x, 600-699: 4.5x, 700-749: 4.75x, 750+: 5x<br><b>Orb Amplification:</b> MISS: 1.1x, GOOD: 1.2x, GREAT: 1.3x, PERFECT: 1.4x, EXCELLENT 1.5x",
         specialName: "Perforating Thrust of the War God",
-		sailor: "Boosts base ATK, HP and RCV of Driven characters by 150; makes [INT] orbs beneficial for Driven characters.",
-		festStats: {
-			def: 279,
-			spd: 121,
-			style: "DEF"
-		},
-		festAttackPattern: [
-			"Normal Attack",
-			"Power Attack",
-			"Heal Teammate in Range Lv.1 (Small Range)",
-			"Normal Attack"
-		],
-		festAttackTarget: "Targets enemies with low remaining HP",
-		festResistance: "Completely evades Forced Out/Special Bind, reduce damage taken from [PSY] by 30%",
-		festAbility: [
-			"[INT]/Striker class teammates HP Up Lv.3, ATK Up Lv.3, DEF Up Lv.3; if 6 or more Striker characters are on the team, team ATK Up Lv.1; self Shield Lv.1; first 10 s of battle, self Special CT Speed Up Lv.6; [Navy][World Government] teammates ATK Up Lv.1",
-			"[INT]/Striker class teammates HP Up Lv.4, ATK Up Lv.4, DEF Up Lv.4; if 6 or more Striker characters are on the team, team ATK Up Lv.1; self Shield Lv.2; first 10 s of battle, self Special CT Speed Up Lv.7; [Navy][World Government] teammates ATK Up Lv.1",
-			"[INT]/Striker class teammates HP Up Lv.5, ATK Up Lv.5, DEF Up Lv.5; if 6 or more Striker characters are on the team, team ATK Up Lv.2; self Shield Lv.3; first 10 s of battle, self Special CT Speed Up Lv.8; [Navy][World Government] teammates ATK Up Lv.2",
-			"[INT]/Striker class teammates HP Up Lv.6, ATK Up Lv.6, DEF Up Lv.6; if 6 or more Striker characters are on the team, team ATK Up Lv.2; self Shield Lv.4; first 10 s of battle, self Special CT Speed Up Lv.9; [Navy][World Government] teammates ATK Up Lv.2",
-			"[INT]/Striker class teammates HP Up Lv.7, ATK Up Lv.7, DEF Up Lv.7; if 6 or more Striker characters are on the team, team ATK Up Lv.3; self Shield Lv.5; first 10 s of battle, self Special CT Speed Up Lv.10; [Navy][World Government] teammates ATK Up Lv.3"
-		],
-		festSpecial: [
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.2 (21 s); targets 3 enemies for 73% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.1 damage; targets [Navy][World Government] teammates for 150 HP per interval auto-healing (21 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.2 (22 s); targets 3 enemies for 76% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.2 damage; targets [Navy][World Government] teammates for 200 HP per interval auto-healing (22 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.3 (23 s); targets 3 enemies for 79% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.3 damage; targets [Navy][World Government] teammates for 250 HP per interval auto-healing (23 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.3 (24 s); targets 3 enemies for 82% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.4 damage; targets [Navy][World Government] teammates for 300 HP per interval auto-healing (24 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.4 (25 s); targets 3 enemies for 85% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.5 damage; targets [Navy][World Government] teammates for 350 HP per interval auto-healing (25 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.4 (26 s); targets 3 enemies for 88% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.6 damage; targets [Navy][World Government] teammates for 400 HP per interval auto-healing (26 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.5 (27 s); targets 3 enemies for 91% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.7 damage; targets [Navy][World Government] teammates for 450 HP per interval auto-healing (27 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.5 (28 s); targets 3 enemies for 94% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.8 damage; targets [Navy][World Government] teammates for 500 HP per interval auto-healing (28 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.6 (29 s); targets 3 enemies for 97% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.9 damage; targets [Navy][World Government] teammates for 550 HP per interval auto-healing (29 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.7 (30 s); targets 3 enemies for 100% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 4 damage; targets [Navy][World Government] teammates for 600 HP per interval auto-healing (30 s)"
-			}
-		]
+		sailor: "Boosts base ATK, HP and RCV of Driven characters by 150; makes [INT] orbs beneficial for Driven characters."
 	},
 	4380: {//6* Saturn
 		captain: "Reduces Special Cooldown of [Five Elders] and [Celestial Dragon] characters by 15 turns at the start of the fight, boosts ATK of [Five Elders], [Celestial Dragon] and [Navy] characters by 1.1x, boosts ATK of [INT], Driven and Striker characters by 6x, by 6.6x instead if they have the applicable tag, boosts HP of [Five Elders], [Celestial Dragon] and [Navy] characters by 1.6x, and makes [INT] and [RCV] orbs beneficial for all characters. If your crew has ATK Up and uses a special with an ATK Up buff, increases boost effects of ATK Up buffs by +?x, equal to the value of the special. If this character is your Captain and performs EXCELLENT with their Action Special, for 3 turns boosts ATK of [Five Elders], [Celestial Dragon] and [Navy] characters by 1.3x instead, and boosts ATK of [INT], Driven and Striker characters by 7.8x instead if they have the applicable tag. If your crew has 4+ [Five Elders], [Celestial Dragon] or [Navy] characters and your crew has ATK Up with an effect of 10x or more, makes this character's normal attacks count as Type Effective against all Types.",
@@ -169210,101 +169037,11 @@ window.details = {
 				"<b>Activated on the 1st tap of an attack:</b><br>HP Cost: 15,000<br>Max Rush: 8 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: Boosts Rush ATK of [INT], Driven and Striker characters by 1.4x-1.8x<br>Each successful chain adds +0.1<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br><b>Activated on the 6th tap of an attack:</b><br>HP Cost: 15,000<br>Max Rush: 6 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Boosts Rush ATK of this character by 1.8x-2.2x<br>Each successful chain adds +0.1<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 2.8",
 				"<b>Activated on the 1st tap of an attack:</b><br>HP Cost: 12,500<br>Max Rush: 10 times<br>Chain Multiplier Growth: +0.1<br>Finish Tap Effect: Boosts Rush ATK of [INT], Driven and Striker characters by 1.4x-2.0x<br>Each successful chain adds +0.1<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.1<br>Finish Tap Multiplier: 0.8<br><b>Activated on the 6th tap of an attack:</b><br>HP Cost: 12,500<br>Max Rush: 7 times<br>Chain Multiplier Growth: +0.2<br>Finish Tap Effect: Boosts Rush ATK of this character by 2.0x-2.5x<br>Each successful chain adds +0.1<br>First Tap Multiplier: 0.5<br>Rush Multiplier: 0.05<br>Finish Tap Multiplier: 3.0"
 			]
-		},
-		festStats: {
-			def: 279,
-			spd: 121,
-			style: "DEF"
-		},
-		festAttackPattern: [
-			"Normal Attack",
-			"Power Attack",
-			"Heal Teammate in Range Lv.1 (Small Range)",
-			"Normal Attack"
-		],
-		festAttackTarget: "Targets enemies with low remaining HP",
-		festResistance: "Completely evades Forced Out/Special Bind, reduce damage taken from [PSY] by 30%",
-		festAbility: [
-			"[INT]/Striker class teammates HP Up Lv.3, ATK Up Lv.3, DEF Up Lv.3; if 6 or more Striker characters are on the team, team ATK Up Lv.1; self Shield Lv.1; first 10 s of battle, self Special CT Speed Up Lv.6; [Navy][World Government] teammates ATK Up Lv.1",
-			"[INT]/Striker class teammates HP Up Lv.4, ATK Up Lv.4, DEF Up Lv.4; if 6 or more Striker characters are on the team, team ATK Up Lv.1; self Shield Lv.2; first 10 s of battle, self Special CT Speed Up Lv.7; [Navy][World Government] teammates ATK Up Lv.1",
-			"[INT]/Striker class teammates HP Up Lv.5, ATK Up Lv.5, DEF Up Lv.5; if 6 or more Striker characters are on the team, team ATK Up Lv.2; self Shield Lv.3; first 10 s of battle, self Special CT Speed Up Lv.8; [Navy][World Government] teammates ATK Up Lv.2",
-			"[INT]/Striker class teammates HP Up Lv.6, ATK Up Lv.6, DEF Up Lv.6; if 6 or more Striker characters are on the team, team ATK Up Lv.2; self Shield Lv.4; first 10 s of battle, self Special CT Speed Up Lv.9; [Navy][World Government] teammates ATK Up Lv.2",
-			"[INT]/Striker class teammates HP Up Lv.7, ATK Up Lv.7, DEF Up Lv.7; if 6 or more Striker characters are on the team, team ATK Up Lv.3; self Shield Lv.5; first 10 s of battle, self Special CT Speed Up Lv.10; [Navy][World Government] teammates ATK Up Lv.3"
-		],
-		festSpecial: [
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.2 (21 s); targets 3 enemies for 73% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.1 damage; targets [Navy][World Government] teammates for 150 HP per interval auto-healing (21 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.2 (22 s); targets 3 enemies for 76% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.2 damage; targets [Navy][World Government] teammates for 200 HP per interval auto-healing (22 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.3 (23 s); targets 3 enemies for 79% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.3 damage; targets [Navy][World Government] teammates for 250 HP per interval auto-healing (23 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.3 (24 s); targets 3 enemies for 82% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.4 damage; targets [Navy][World Government] teammates for 300 HP per interval auto-healing (24 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.4 (25 s); targets 3 enemies for 85% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.5 damage; targets [Navy][World Government] teammates for 350 HP per interval auto-healing (25 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.4 (26 s); targets 3 enemies for 88% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.6 damage; targets [Navy][World Government] teammates for 400 HP per interval auto-healing (26 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.5 (27 s); targets 3 enemies for 91% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.7 damage; targets [Navy][World Government] teammates for 450 HP per interval auto-healing (27 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.5 (28 s); targets 3 enemies for 94% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.8 damage; targets [Navy][World Government] teammates for 500 HP per interval auto-healing (28 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.6 (29 s); targets 3 enemies for 97% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 3.9 damage; targets [Navy][World Government] teammates for 550 HP per interval auto-healing (29 s)"
-			},
-			{
-				cooldown: 35,
-				description: "Targets teammates within large range for DEF Up Lv.7 (30 s); targets 3 enemies for 100% chance of Special Bind (10 s); if 6 or more Striker characters are on the team, targets 3 enemies with low current HP for ATK x 4 damage; targets [Navy][World Government] teammates for 600 HP per interval auto-healing (30 s)"
-			}
-		],
-		festAbilityGP: [
-			{
-				festGPAbility: "[INT] teammates RCV, SPD Up Lv.2, Special CT Speed Up Lv.1; Striker/Driven class teammates HP, ATK Up Lv.2, DEF Up Lv.1; [Navy][World Government] teammates HP, RCV Up Lv.1, Special CT Speed Up Lv.1",
-				festGPSpecial: "Targets [PSY] / [INT] / Striker/ Driven class teammates for 100% chance to evade damage ignoring DEF (16 s); targets all enemies for 2000 damage",
-				uses: 2
-			},
-			{
-				festGPAbility: "[INT] teammates RCV, SPD Up Lv.3, Special CT Speed Up Lv.2; Striker/Driven class teammates HP, ATK Up Lv.3, DEF Up Lv.2; [Navy][World Government] teammates HP, RCV Up Lv.2, Special CT Speed Up Lv.1",
-				festGPSpecial: "Targets [PSY] / [INT] / Striker/ Driven class teammates for 100% chance to evade damage ignoring DEF (17 s); targets all enemies for 3000 damage",
-				uses: 2
-			},
-			{
-				festGPAbility: "[INT] teammates RCV, SPD Up Lv.4, Special CT Speed Up Lv.2; Striker/Driven class teammates HP, ATK Up Lv.4, DEF Up Lv.3; [Navy][World Government] teammates HP, RCV Up Lv.3, Special CT Speed Up Lv.1",
-				festGPSpecial: "Targets [PSY] / [INT] / Striker/ Driven class teammates for 100% chance to evade damage ignoring DEF (18 s); targets all enemies for 4000 damage",
-				uses: 2
-			},
-			{
-				festGPAbility: "[INT] teammates RCV, SPD Up Lv.5, Special CT Speed Up Lv.3; Striker/Driven class teammates HP, ATK Up Lv.5, DEF Up Lv.3; [Navy][World Government] teammates HP, RCV Up Lv.4, Special CT Speed Up Lv.2",
-				festGPSpecial: "Targets [PSY] / [INT] / Striker/ Driven class teammates for 100% chance to evade damage ignoring DEF (19 s); targets all enemies for 5000 damage",
-				uses: 2
-			},
-			{
-				festGPAbility: "[INT] teammates RCV, SPD Up Lv.6, Special CT Speed Up Lv.3; Striker/Driven class teammates HP, ATK Up Lv.6, DEF Up Lv.4; [Navy][World Government] teammates HP, RCV Up Lv.5, Special CT Speed Up Lv.2",
-				festGPSpecial: "Targets [PSY] / [INT] / Striker/ Driven class teammates for 100% chance to evade damage ignoring DEF (20 s); targets all enemies for 6000 damage",
-				uses: 2
-			}
-		],
-		festAbilityGPCondition: "After 50s of battle"
+		}
 	},
 	4381: {//Bonney
-		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Slasher and Striker characters by 5.25x, by 5.775x instead if your crew has 4+ [Egghead] characters, boosts RCV of Slasher and Striker characters by 1.25x, makes [PSY], [RCV] and [TND] orbs beneficial for Slasher and Striker characters, and reduces Burn duration by 10 turns. If your crew has 5+ [Egghead], [Worst Generation] or [Paramythia-type] characters, restores Special Cooldown of all characters by 2 turns when they are rewinded.",
-		special: "Deals 300x character's ATK in Typeless Fixed True damage to one enemy, reduces enemies' Threshold Damage Reduction duration by 7 turns, increases Orb Effects of beneficial [PSY], [RCV], [TND] and [SEMLA] orbs to 3x for 3 turns, and increases boost effects of ATK Up buffs by 1.25x (up to 10x). If your crew has 4+ [Egghead], [Worst Generation] or [Paramythia-type] characters, increases boost effects of Chain Addition buffs by +1.0x, and adds 1.6x, can be enhanced up to 2 times, to Chain Multiplier for 3 turns; adds 1.4x, can be enhanced up to 2 times, to Chain Multiplier for 1 turn otherwise.",
+		captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of Slasher and Striker characters by 5.25x, by 5.775x instead if your crew has 4+ [Egghead Arc] characters, boosts RCV of Slasher and Striker characters by 1.25x, makes [PSY], [RCV] and [TND] orbs beneficial for Slasher and Striker characters, and reduces Burn duration by 10 turns. If your crew has 5+ [Egghead Arc], [Worst Generation] or [Paramythia-type] characters, restores Special Cooldown of all characters by 2 turns when they are rewinded.",
+		special: "Deals 300x character's ATK in Typeless Fixed True damage to one enemy, reduces enemies' Threshold Damage Reduction duration by 7 turns, increases Orb Effects of beneficial [PSY], [RCV], [TND] and [SEMLA] orbs to 3x for 3 turns, and increases boost effects of ATK Up buffs by 1.25x (up to 10x). If your crew has 4+ [Egghead Arc], [Worst Generation] or [Paramythia-type] characters, increases boost effects of Chain Addition buffs by +1.0x, and adds 1.6x, can be enhanced up to 2 times, to Chain Multiplier for 3 turns; adds 1.4x, can be enhanced up to 2 times, to Chain Multiplier for 1 turn otherwise.",
 		specialName: "Strike for Her Father",
 		sailor: {
 			base: "Boosts base ATK, HP and RCV of all characters by 75; makes [RCV] and [TND] orbs beneficial for all characters.",
@@ -169420,7 +169157,7 @@ window.details = {
 	},
 	4382: {//Bluegrass
 		captain: "Reduces crew's current HP by 50% at the start of the fight, boosts ATK of [DEX] characters by 3.75x, and makes [TND] orbs beneficial for [DEX] characters.",
-		special: "Reduces enemies' Increased Defense duration by 6 turns, deals 60x character's ATK in [DEX] damage to all enemies at the end of each turn for 3 turns, and changes all orbs, including [BLOCK] orbs, into [TND] orbs. If your crew has 3+ [Navy] or [World Government] characters or 6 [Egghead] characters, boosts Orb Effects of all characters by 2.5x, can be enhanced up to 2 times, for 3 turns, and reduces Special Bind duration by 6 turns; boosts Orb Effects of all characters by 2.25x for 3 turns otherwise.",
+		special: "Reduces enemies' Increased Defense duration by 6 turns, deals 60x character's ATK in [DEX] damage to all enemies at the end of each turn for 3 turns, and changes all orbs, including [BLOCK] orbs, into [TND] orbs. If your crew has 3+ [Navy] or [World Government] characters or 6 [Egghead Arc] characters, boosts Orb Effects of all characters by 2.5x, can be enhanced up to 2 times, for 3 turns, and reduces Special Bind duration by 6 turns; boosts Orb Effects of all characters by 2.25x for 3 turns otherwise.",
 		specialName: "Riding the Battle Weapon",
 		sailor: {
 			base: "Reduces Special Bind duration by 6 turns on this character.",
@@ -169480,7 +169217,7 @@ window.details = {
 	},
 	4383: {//Doll
 		captain: "Boosts ATK of all characters by 3x-4x based on the timing of the attack of the previous unit in the chain, and recovers 1,100 HP at the end of each turn.",
-		special: "Reduces enemies' Barrier duration by 1 turn, reduces Paralysis duration by 3 turns, and reduces enemies' [DEX], [PSY] and [INT] Resistance by -15% for 1 turn. If your crew has 3+ [Navy] or [World Government] characters or 6 [Egghead] characters, enables ATK Up buffs to be enhanced up to 2 times, and reduces Special Cooldown of all characters by 1 turn.",
+		special: "Reduces enemies' Barrier duration by 1 turn, reduces Paralysis duration by 3 turns, and reduces enemies' [DEX], [PSY] and [INT] Resistance by -15% for 1 turn. If your crew has 3+ [Navy] or [World Government] characters or 6 [Egghead Arc] characters, enables ATK Up buffs to be enhanced up to 2 times, and reduces Special Cooldown of all characters by 1 turn.",
 		specialName: "Ship-Protecting Kick",
 		sailor: {
 			base: "Restores Special Cooldown of this character by 3 turns when it is rewinded.",
@@ -169540,7 +169277,7 @@ window.details = {
 	},
 	4384: {//Sanji & Franky
 		captain: "Boosts ATK of [INT], Fighter and Shooter characters by 3.75x, boosts HP of [INT], Fighter and Shooter characters by 1.25x, reduces damage received by 15%, and makes crew immune to Blow Away.",
-		special: "Reduces Special Cooldown of ship by 3 turns, allows HP Overfill up to 2x MAX HP for 1 turn, recovers 20x character's RCV in HP, reduces Bind duration by 4 turns, and increases boost effects of Chain Lock and Chain Tap Timing Bonus buffs by +0.2x. If your crew has 4+ [Straw Hat Pirates] characters or 6 [Egghead] characters, increases duration of any Chain Lock and Chain Tap Timing Bonus buffs by 1 turn.",
+		special: "Reduces Special Cooldown of ship by 3 turns, allows HP Overfill up to 2x MAX HP for 1 turn, recovers 20x character's RCV in HP, reduces Bind duration by 4 turns, and increases boost effects of Chain Lock and Chain Tap Timing Bonus buffs by +0.2x. If your crew has 4+ [Straw Hat Pirates] characters or 6 [Egghead Arc] characters, increases duration of any Chain Lock and Chain Tap Timing Bonus buffs by 1 turn.",
 		specialName: "Confirming the Safety of Friends",
 		sailor: {
 			base: "Makes [INT] orbs beneficial for all characters.",
@@ -169619,24 +169356,24 @@ window.details = {
 		],
 		superTandemBoost: {
 			characterCondition: [
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem"
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem"
 			],
 			description: [
 				"Raises Boost Level of [Straw Hat Pirates] characters by 1 for 1 turn.",
 				"Raises Boost Level of [Straw Hat Pirates] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Straw Hat Pirates] and [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Straw Hat Pirates] characters by 2 for 1 turn, and raises Boost Level of [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Straw Hat Pirates] and [Egghead] characters by 2 for 1 turn."
+				"Raises Boost Level of [Straw Hat Pirates] and [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Straw Hat Pirates] characters by 2 for 1 turn, and raises Boost Level of [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Straw Hat Pirates] and [Egghead Arc] characters by 2 for 1 turn."
 			]
 		}
 	},
 	4385: {//5+ Sanji & Franky
 		captain: "Boosts ATK of [INT], Fighter and Shooter characters by 4x, boosts HP of [INT], Fighter and Shooter characters by 1.25x, reduces damage received by 15%, and makes crew immune to Blow Away.",
-		special: "Reduces Special Cooldown of ship by 3 turns, allows HP Overfill up to 2x MAX HP for 1 turn, recovers 20x character's RCV in HP, reduces Bind duration by 4 turns, sets Chain Boundaries to 2.25x and 10.0x, can be enhanced up to 2 times, for 1 turn, and increases boost effects of Chain Lock and Chain Tap Timing Bonus buffs by +0.2x, including effects activated in the same ability. If your crew has 4+ [Straw Hat Pirates] characters or 6 [Egghead] characters, increases duration of any Chain Lock and Chain Tap Timing Bonus buffs by 1 turn, including effects activated in the same ability.",
+		special: "Reduces Special Cooldown of ship by 3 turns, allows HP Overfill up to 2x MAX HP for 1 turn, recovers 20x character's RCV in HP, reduces Bind duration by 4 turns, sets Chain Boundaries to 2.25x and 10.0x, can be enhanced up to 2 times, for 1 turn, and increases boost effects of Chain Lock and Chain Tap Timing Bonus buffs by +0.2x, including effects activated in the same ability. If your crew has 4+ [Straw Hat Pirates] characters or 6 [Egghead Arc] characters, increases duration of any Chain Lock and Chain Tap Timing Bonus buffs by 1 turn, including effects activated in the same ability.",
 		specialName: "Confirming the Safety of Friends",
 		sailor: {
 			base: "Makes [INT] orbs beneficial for all characters.",
@@ -169715,18 +169452,18 @@ window.details = {
 		],
 		superTandemBoost: {
 			characterCondition: [
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem",
-				"When an [INT] [Egghead] character performs Super Tandem"
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem",
+				"When an [INT] [Egghead Arc] character performs Super Tandem"
 			],
 			description: [
 				"Raises Boost Level of [Straw Hat Pirates] characters by 1 for 1 turn.",
 				"Raises Boost Level of [Straw Hat Pirates] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Straw Hat Pirates] and [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Straw Hat Pirates] characters by 2 for 1 turn, and raises Boost Level of [Egghead] characters by 1 for 1 turn.",
-				"Raises Boost Level of [Straw Hat Pirates] and [Egghead] characters by 2 for 1 turn."
+				"Raises Boost Level of [Straw Hat Pirates] and [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Straw Hat Pirates] characters by 2 for 1 turn, and raises Boost Level of [Egghead Arc] characters by 1 for 1 turn.",
+				"Raises Boost Level of [Straw Hat Pirates] and [Egghead Arc] characters by 2 for 1 turn."
 			]
 		}
 	},
@@ -170000,7 +169737,7 @@ window.details = {
 	},
 	4389: {//Miss Buckingham Stussy
 		captain: "Boosts ATK of [INT] characters by 3.75x, and boosts HP of Fighter and Striker characters by 1.35x.",
-		special: "Reduces Special Cooldown of Fighter and Striker characters by 2 turns, reduces Paralysis duration by 6 turns, and boosts ATK against delayed enemies and enemies inflicted with Increase Damage Taken by 2.25x for 3 turns. If your crew has 4+ [Egghead] characters, reduces Bleed duration by 3 turns, and boosts Orb Effects of Fighter and Striker characters by 1.75x, allowing override, for 1 turn.",
+		special: "Reduces Special Cooldown of Fighter and Striker characters by 2 turns, reduces Paralysis duration by 6 turns, and boosts ATK against delayed enemies and enemies inflicted with Increase Damage Taken by 2.25x for 3 turns. If your crew has 4+ [Egghead Arc] characters, reduces Bleed duration by 3 turns, and boosts Orb Effects of Fighter and Striker characters by 1.75x, allowing override, for 1 turn.",
 		specialName: "Landing in God Valley",
 		sailor: {
 			base: "Restores Special Cooldown of this character by 3 turns when it is rewinded.",
@@ -170060,7 +169797,7 @@ window.details = {
 	},
 	4390: {//Young Kaido
 		captain: "Boosts ATK of Striker and Powerhouse characters by 3.75x, and boosts HP of [STR] characters by 1.35x.",
-		special: "Delays all enemies by 1 turn, reduces crew's current HP by 85%, deals 30x the amount of HP subtracted in Typeless damage to all enemies, reduces ATK Down duration by 6 turns, and boosts Base ATK of Striker and Powerhouse characters by 1,250 for 1 turn. If your crew has 4+ [Egghead] characters or your crew has Base ATK Boost when the special is activated, inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn.",
+		special: "Delays all enemies by 1 turn, reduces crew's current HP by 85%, deals 30x the amount of HP subtracted in Typeless damage to all enemies, reduces ATK Down duration by 6 turns, and boosts Base ATK of Striker and Powerhouse characters by 1,250 for 1 turn. If your crew has 4+ [Egghead Arc] characters or your crew has Base ATK Boost when the special is activated, inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn.",
 		specialName: "Recalled Grudge",
 		sailor: {
 			base: "Boosts base ATK, HP and RCV of [STR], Striker and Powerhouse characters by 50.",
@@ -170249,11 +169986,11 @@ window.details = {
                 "When a [Revolutionary Army] character performs Super Tandem"
             ],
             description: [
-                "Raises Boost Level of [Egghead] characters by 1 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 1 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 1 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 2 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 3 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 3 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 5 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 4 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 7 for 1 turn."
+                "Raises Boost Level of [Egghead Arc] characters by 1 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 1 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 2 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 3 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 3 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 5 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 4 for 1 turn, and raises Boost Level of [Revolutionary Army] characters by 7 for 1 turn."
             ]
         }
     },
@@ -171045,68 +170782,6 @@ window.details = {
                     "Reduces damage taken from [DEX] characters by 5%"
                 ]
             }
-        ],
-        festStats: {
-            def: 146,
-            spd: 177,
-            style: "DBF"
-        },
-        festAttackPattern: [
-            "Normal Attack",
-            "Normal Attack",
-            "Power Attack",
-            "Heal Self Lv.2"
-        ],
-        festAttackTarget: "Targets closest enemies",
-        festResistance: "Completely evades Action Bind, reduce damage taken from [STR] by 30％",
-        festAbility: [
-            "[QCK]/Fighter class teammates ATK Up Lv.1, HP Up Lv.1; Shooter class enemies ATK Down Lv.1, Special CT Speed Down Lv.1; if there are 5 or more Shooter class enemies, self Special CT Speed Up Lv.1",
-            "[QCK]/Fighter class teammates ATK Up Lv.2, HP Up Lv.2; Shooter class enemies ATK Down Lv.2, Special CT Speed Down Lv.2; if there are 5 or more Shooter class enemies, self Special CT Speed Up Lv.2",
-            "[QCK]/Fighter class teammates ATK Up Lv.3, HP Up Lv.3; Shooter class enemies ATK Down Lv.3, Special CT Speed Down Lv.3; if there are 5 or more Shooter class enemies, self Special CT Speed Up Lv.3",
-            "[QCK]/Fighter class teammates ATK Up Lv.4, HP Up Lv.4; Shooter class enemies ATK Down Lv.4, Special CT Speed Down Lv.4; if there are 5 or more Shooter class enemies, self Special CT Speed Up Lv.4",
-            "[QCK]/Fighter class teammates ATK Up Lv.5, HP Up Lv.5; Shooter class enemies ATK Down Lv.5, Special CT Speed Down Lv.5; if there are 5 or more Shooter class enemies, self Special CT Speed Up Lv.5"
-        ],
-        festSpecial: [
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.2 (16 s), SPD Down Lv.2 (16 s), Miss % Up Lv.2 (16 s); targets [QCK]/Fighter class teammates for 70% chance to evade Action Bind (11 s); targets Shooter class enemies for 60% chance of Action Bind (6 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.2 (17 s), SPD Down Lv.2 (17 s), Miss % Up Lv.2 (17 s); targets [QCK]/Fighter class teammates for 73% chance to evade Action Bind (12 s); targets Shooter class enemies for 64% chance of Action Bind (6 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.3 (18 s), SPD Down Lv.3 (18 s), Miss % Up Lv.3 (18 s); targets [QCK]/Fighter class teammates for 76% chance to evade Action Bind (13 s); targets Shooter class enemies for 68% chance of Action Bind (7 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.3 (19 s), SPD Down Lv.3 (19 s), Miss % Up Lv.3 (19 s); targets [QCK]/Fighter class teammates for 79% chance to evade Action Bind (14 s); targets Shooter class enemies for 72% chance of Action Bind (7 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.4 (20 s), SPD Down Lv.4 (20 s), Miss % Up Lv.4 (20 s); targets [QCK]/Fighter class teammates for 82% chance to evade Action Bind (15 s); targets Shooter class enemies for 76% chance of Action Bind (8 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.4 (21 s), SPD Down Lv.4 (21 s), Miss % Up Lv.4 (21 s); targets [QCK]/Fighter class teammates for 85% chance to evade Action Bind (16 s); targets Shooter class enemies for 80% chance of Action Bind (8 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.5 (22 s), SPD Down Lv.5 (22 s), Miss % Up Lv.5 (22 s); targets [QCK]/Fighter class teammates for 88% chance to evade Action Bind (17 s); targets Shooter class enemies for 84% chance of Action Bind (9 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.5 (23 s), SPD Down Lv.5 (23 s), Miss % Up Lv.5 (23 s); targets [QCK]/Fighter class teammates for 91% chance to evade Action Bind (18 s); targets Shooter class enemies for 88% chance of Action Bind (9 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.6 (24 s), SPD Down Lv.6 (24 s), Miss % Up Lv.6 (24 s); targets [QCK]/Fighter class teammates for 94% chance to evade Action Bind (19 s); targets Shooter class enemies for 92% chance of Action Bind (10 s)"
-            },
-            {
-                cooldown: 25,
-                description: "Targets enemies within large range for ATK Down Lv.7 (25 s), SPD Down Lv.7 (25 s), Miss % Up Lv.7 (25 s); targets [QCK]/Fighter class teammates for 100% chance to evade Action Bind (20 s); targets Shooter class enemies for 100% chance of Action Bind (10 s)"
-            }
         ]
     },
     4401: {//Ace
@@ -171556,7 +171231,7 @@ window.details = {
         captain: "Boosts ATK of Striker and Driven characters by 3.5x, and boosts RCV of Striker and Driven characters by 1.3x.",
         special: "Changes all orbs into [DEX] orbs, and locks all orbs for 1 turn. If your Captain is a Striker or Driven character, reduces Burn duration by 6 turns. If enemies are inflicted with Poison when the special is activated, reduces the defense of all enemies by 100% for 1 turn.",
         specialName: "Clear Hierarchy",
-        sailor: "Boosts ATK of Striker and Driven characters by 60.",
+        sailor: "Boosts base ATK of Striker and Driven characters by 60.",
         support: [
             {
                 Characters: "Striker characters",
@@ -171648,7 +171323,7 @@ window.details = {
             },
             {
                 special: {
-                    base: "Deals 20% of enemies' current HP in damage to all enemies, reduces Special Bind duration by 6 turns, changes [BLOCK] orbs into Matching orbs, and becomes Mihawk & Perona for 3 turns. If your crew has 3+ [Thriller Bark Pirates], [Marineford Paramount War] or [Seven Warlords of the Sea] characters, reduces enemies' Orb-Based Damage Reduction duration by 6 turns, and boosts ATK against enemies inflicted with Negative and enemies inflicted with Increase Damage Taken by 3.25x for 1 turn; boosts ATK against enemies inflicted with Negative and enemies inflicted with Increase Damage Taken by 3x for 1 turn otherwise."
+                    base: "Deals 20% of enemies' current HP in damage to all enemies, reduces Special Bind duration by 6 turns, changes [BLOCK] orbs into Matching orbs, and becomes Mihawk & Perona for 3 turns. If your crew has 3+ [Thriller Bark Pirates], [Marineford Paramount War Arc] or [Seven Warlords of the Sea] characters, reduces enemies' Orb-Based Damage Reduction duration by 6 turns, and boosts ATK against enemies inflicted with Negative and enemies inflicted with Increase Damage Taken by 3.25x for 1 turn; boosts ATK against enemies inflicted with Negative and enemies inflicted with Increase Damage Taken by 3x for 1 turn otherwise."
                 },
                 rResilience: true
             }
@@ -171687,8 +171362,8 @@ window.details = {
         ]
     },
     4409: {//Garp
-        captain: "Boosts ATK of [Navy], [Navy Vice Admiral] and [Egghead] character by 1.1x, boosts ATK of [DEX], [INT] and Fighter characters by 5.5x, by 6.05x instead if they have the applicable tag, boosts HP of [DEX], [INT] and Fighter characters by 1.25x, makes [DEX] and [TND] orbs beneficial for all characters, boosts chances of getting [DEX] orbs, and increases duration of any Color Affinity buffs applied by Specials by 1 turn. If your crew has 5+ [Navy], [Navy Vice Admiral] or [Egghead] characters, reduces Bind duration by 10 turns; additionally, if a crew member uses a special with an ATK Up, Orb Effect or Color Affinity buff, increases boost effects of those ATK Up, Orb Amplification and Color Affinity buffs by +0.2x.",
-        special: "Reduces enemies' Threshold Damage Reduction duration by 6 turns. If your crew has ATK Up when the special is activated, boosts the Color Affinity of [DEX], [INT] and Fighter characters by 3.5x, can be enhanced up to 2 times, for 1 turn, and increases boost effects of ATK Up buffs by 1.3x (up to 6x); otherwise, boosts ATK of [DEX], [INT] and Fighter characters by 3.5x, can be enhanced up to 2 times, for 1 turn, and increases boost effects of Color Affinity buffs by 1.3x (up to 6x). If your crew has 5+ [Navy], [Navy Vice Admiral] or [Egghead] characters, recovers 2x character's RCV in HP at the end of each turn for 10 turns, and up to 1 time per adventure, reduces Special Cooldown of this character by 9 turns.",
+        captain: "Boosts ATK of [Navy], [Navy Vice Admiral] and [Egghead Arc] character by 1.1x, boosts ATK of [DEX], [INT] and Fighter characters by 5.5x, by 6.05x instead if they have the applicable tag, boosts HP of [DEX], [INT] and Fighter characters by 1.25x, makes [DEX] and [TND] orbs beneficial for all characters, boosts chances of getting [DEX] orbs, and increases duration of any Color Affinity buffs applied by Specials by 1 turn. If your crew has 5+ [Navy], [Navy Vice Admiral] or [Egghead Arc] characters, reduces Bind duration by 10 turns; additionally, if a crew member uses a special with an ATK Up, Orb Effect or Color Affinity buff, increases boost effects of those ATK Up, Orb Amplification and Color Affinity buffs by +0.2x.",
+        special: "Reduces enemies' Threshold Damage Reduction duration by 6 turns. If your crew has ATK Up when the special is activated, boosts the Color Affinity of [DEX], [INT] and Fighter characters by 3.5x, can be enhanced up to 2 times, for 1 turn, and increases boost effects of ATK Up buffs by 1.3x (up to 6x); otherwise, boosts ATK of [DEX], [INT] and Fighter characters by 3.5x, can be enhanced up to 2 times, for 1 turn, and increases boost effects of Color Affinity buffs by 1.3x (up to 6x). If your crew has 5+ [Navy], [Navy Vice Admiral] or [Egghead Arc] characters, recovers 2x character's RCV in HP at the end of each turn for 10 turns, and up to 1 time per adventure, reduces Special Cooldown of this character by 9 turns.",
         specialName: "Clenched Fist Against God Valley",
         sailor: {
             base: "When any other [Navy] character uses a special, reduces Special Cooldown of this character by 2 turns.",
@@ -171750,6 +171425,15 @@ window.details = {
             { description: "Boosts base ATK by 50" },
             { description: "Reduce base Special Cooldown by 1 turn" },
         ],
+        lLimit: [
+            null,
+            null,
+            null,
+            null,
+            {
+                rSuperSpecial: true
+            }
+        ],
         potential: [
             {
                 Name: "Nutrition/Hunger",
@@ -171800,8 +171484,8 @@ window.details = {
         }
     },
     4410: {//St. Figarland Garling
-        captain: "Reduces Special Cooldown of [Five Elders], [Celestial Dragon] and [Egghead] characters by 4 turns at the start of the fight, boosts ATK of [Five Elders], [Celestial Dragon] and [Navy] characters by 1.1x, boosts ATK of [INT], [DEX], Slasher and Driven characters by 5.25x, by 5.775x instead if they have the applicable tag, boosts ATK of this characters by 6.6x, makes [INT], [RCV] and [TND] orbs beneficial for all characters, reduces Paralysis and Special Bind duration by 10 turns on [Five Elders] and [Celestial Dragon] characters, and reduces enemies' [INT] Resistance by -6% for 1 turn when a character performs a Critical Hit. If your crew has 5+ [Five Elders], [Celestial Dragon] or [Egghead] characters and a crew member uses a special with an Orb Effect buff, increases boost effects of that Orb Amplification buff by +0.5x.",
-        special: "Deals 2,000,000 Fixed True damage, ignoring Normal Attack Only, to one enemy, and reduces Special Bind duration by 10 turns. Boosts Orb Effects of [DEX] and [INT] characters by 3.75x for 1 turn; if total cost of crew, including Friend Captain and Supports, is 750+, boosts Orb Effects of all characters by 4x for 1 turn instead. If your crew has 3+ [Five Elders], [Celestial Dragon] or [Navy] characters or your crew has 5+ [Egghead] characters, enables Orb Amplification buffs to be enhanced up to 2 times, including effects activated in the same ability, and boosts Critical Hit Damage of [DEX] and [INT] characters by 40% for 1 turn; if total cost of crew, including Friend Captain and Supports, is 750+, boosts Critical Hit Damage of all characters by 40% for 1 turn instead.",
+        captain: "Reduces Special Cooldown of [Five Elders], [Celestial Dragon] and [Egghead Arc] characters by 4 turns at the start of the fight, boosts ATK of [Five Elders], [Celestial Dragon] and [Navy] characters by 1.1x, boosts ATK of [INT], [DEX], Slasher and Driven characters by 5.25x, by 5.775x instead if they have the applicable tag, boosts ATK of this characters by 6.6x, makes [INT], [RCV] and [TND] orbs beneficial for all characters, reduces Paralysis and Special Bind duration by 10 turns on [Five Elders] and [Celestial Dragon] characters, and reduces enemies' [INT] Resistance by -6% for 1 turn when a character performs a Critical Hit. If your crew has 5+ [Five Elders], [Celestial Dragon] or [Egghead Arc] characters and a crew member uses a special with an Orb Effect buff, increases boost effects of that Orb Amplification buff by +0.5x.",
+        special: "Deals 2,000,000 Fixed True damage, ignoring Normal Attack Only, to one enemy, and reduces Special Bind duration by 10 turns. Boosts Orb Effects of [DEX] and [INT] characters by 3.75x for 1 turn; if total cost of crew, including Friend Captain and Supports, is 750+, boosts Orb Effects of all characters by 4x for 1 turn instead. If your crew has 3+ [Five Elders], [Celestial Dragon] or [Navy] characters or your crew has 5+ [Egghead Arc] characters, enables Orb Amplification buffs to be enhanced up to 2 times, including effects activated in the same ability, and boosts Critical Hit Damage of [DEX] and [INT] characters by 40% for 1 turn; if total cost of crew, including Friend Captain and Supports, is 750+, boosts Critical Hit Damage of all characters by 40% for 1 turn instead.",
         specialName: "Rabbit-Hunting Sword",
         sailor: {
             base: "Reduces Paralysis and Special Bind duration by 10 turns on this character; makes [RCV] and [TND] orbs beneficial for this character.",
@@ -171862,6 +171546,15 @@ window.details = {
             { description: "Boosts base HP by 200" },
             { description: "Boosts base ATK by 100" },
             { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        lLimit: [
+            null,
+            null,
+            null,
+            null,
+            {
+                rSuperSpecial: true
+            }
         ],
         potential: [
             {
@@ -172362,11 +172055,11 @@ window.details = {
                 "When a [Navy] or [Scientist] character performs Super Tandem"
             ],
             description: [
-                "Raises Boost Level of [Egghead], [Scientist] and [Navy] characters by 1 for 1 turn.",
-                "Raises Boost Level of [Egghead] and [Scientist] characters by 1 for 1 turn, and raises Boost Level of [Navy] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 1 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead], [Scientist] and [Navy] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 2 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 3 for 1 turn."
+                "Raises Boost Level of [Egghead Arc], [Scientist] and [Navy] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] and [Scientist] characters by 1 for 1 turn, and raises Boost Level of [Navy] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 1 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc], [Scientist] and [Navy] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 2 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 3 for 1 turn."
             ]
         }
     },
@@ -172473,75 +172166,13 @@ window.details = {
                 "When a [Navy] or [Scientist] character performs Super Tandem"
             ],
             description: [
-                "Raises Boost Level of [Egghead], [Scientist] and [Navy] characters by 1 for 1 turn.",
-                "Raises Boost Level of [Egghead] and [Scientist] characters by 1 for 1 turn, and raises Boost Level of [Navy] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 1 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead], [Scientist] and [Navy] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead] characters by 2 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 3 for 1 turn."
+                "Raises Boost Level of [Egghead Arc], [Scientist] and [Navy] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] and [Scientist] characters by 1 for 1 turn, and raises Boost Level of [Navy] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 1 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc], [Scientist] and [Navy] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] characters by 2 for 1 turn, and raises Boost Level of [Scientist] and [Navy] characters by 3 for 1 turn."
             ]
-        },
-        festStats: {
-            def: 225,
-            spd: 156,
-            style: "SPT"
-        },
-        festAttackPattern: [
-            "Normal Attack",
-            "Power Attack",
-            "Heal Lv.1 (Small Range)",
-            "Power Attack"
-        ],
-        festAttackTarget: "Targets closest enemies",
-        festResistance: "80% chance to evade Paralysis, reduce damage taken from [QCK] by 20％",
-        festAbility: [
-            "Fighter/Shooter class teammates HP Up Lv.2, ATK Up Lv.2, SPD Up Lv.2; [Egghead] teammates DEF Up Lv.1",
-            "Fighter/Shooter class teammates HP Up Lv.3, ATK Up Lv.3, SPD Up Lv.3; [Egghead] teammates DEF Up Lv.2",
-            "Fighter/Shooter class teammates HP Up Lv.4, ATK Up Lv.4, SPD Up Lv.4; [Egghead] teammates DEF Up Lv.3",
-            "Fighter/Shooter class teammates HP Up Lv.5, ATK Up Lv.5, SPD Up Lv.5; [Egghead] teammates DEF Up Lv.4",
-            "Fighter/Shooter class teammates HP Up Lv.6, ATK Up Lv.6, SPD Up Lv.6; [Egghead] teammates DEF Up Lv.5"
-        ],
-        festSpecial: [
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.3 (11 s), RCV Up Lv.3 (11 s); targets [Egghead] teammates for Shield Lv.1 (15 s), 60% chance to evade Paralysis (11 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.3 (12 s), RCV Up Lv.3 (12 s); targets [Egghead] teammates for Shield Lv.1 (15 s), 62% chance to evade Paralysis (12 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.3 (13 s), RCV Up Lv.3 (13 s); targets [Egghead] teammates for Shield Lv.1 (15 s), 64% chance to evade Paralysis (13 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.3 (14 s), RCV Up Lv.3 (14 s); targets [Egghead] teammates for Shield Lv.1 (15 s), 66% chance to evade Paralysis (14 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.3 (15 s), RCV Up Lv.3 (15 s); targets [Egghead] teammates for Shield Lv.1 (15 s), 68% chance to evade Paralysis (15 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.4 (16 s), RCV Up Lv.4 (16 s); targets [Egghead] teammates for Shield Lv.2 (15 s), 70% chance to evade Paralysis (16 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.4 (17 s), RCV Up Lv.4 (17 s); targets [Egghead] teammates for Shield Lv.2 (15 s), 72% chance to evade Paralysis (17 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.4 (18 s), RCV Up Lv.4 (18 s); targets [Egghead] teammates for Shield Lv.2 (15 s), 74% chance to evade Paralysis (18 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.4 (19 s), RCV Up Lv.4 (19 s); targets [Egghead] teammates for Shield Lv.2 (15 s), 76% chance to evade Paralysis (19 s)"
-            },
-            {
-                cooldown: 29,
-                description: "Targets teammates within medium range for ATK Up Lv.5 (20 s), RCV Up Lv.5 (20 s); targets [Egghead] teammates for Shield Lv.3 (15 s), 80% chance to evade Paralysis (20 s)"
-            }
-        ]
+        }
     },
     4418: {//OP Day Boa Hancock
         captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of [Straw Hat Pirates], [Kuja Pirates] and [Logia-type] characters by 1.2x, boosts ATK of [QCK], Striker and Powerhouse characters by 5.5x, by 6.6x instead if they have the applicable tag, boosts RCV of [QCK], Striker and Powerhouse characters by 1.35x, and increases duration of any Status ATK Boosting buffs applied by specials by 1 turn. Up to 1 time per adventure, when Monkey D. Luffy, Boa Sandersonia, or Boa Marigold uses a special as crewmate, reduces Paralysis duration by 10 turns, and advances Special Cooldown of this character to MAX.",
@@ -172607,6 +172238,15 @@ window.details = {
             { description: "Boosts base ATK by 50" },
             { description: "Reduce base Special Cooldown by 1 turn" },
         ],
+        lLimit: [
+            null,
+            null,
+            null,
+            null,
+            {
+                rSuperSpecial: true
+            }
+        ],
         potential: [
             {
                 Name: "Enrage/Increase Damage Taken",
@@ -172663,7 +172303,7 @@ window.details = {
         specialName: "Crushing Dragon Claw",
         sailor: {
             base: "Reduces Despair duration by 1 turn.",
-            level1: "If field has Territory: Cerebral or Territory: [DEX], boosts base ATK, HP and RCV of all characters by 200; boosts base HP of all characters by 200."
+            level1: "If field has Territory: Cerebral or Territory: [DEX], boosts base ATK, HP and RCV of all characters by 200; boosts base HP of all characters by 200 otherwise."
         },
         superSpecialCriteria: "This character must be captain. Your crew must consist of any 3 of the following, excluding supports and counting only 1 per unit: Monkey D. Luffy, Portgas D. Ace, Monkey D. Garp, Monkey D. Dragon, Jewelry Bonney, Koala, Emporio Ivankov, Belo Betty, Morley, Karasu, Lindbergh, Hack, Inazuma, Bartholomew Kuma, Nico Robin, Ginny",
         superSpecial: "Deals 150x character's ATK in Typeless damage to all enemies, boosts the Color Affinity of [DEX], Cerebral and Fighter characters by 2.5x for 1 turn, increases boost effects of ATK Up and Orb Amplification buffs by +0.4x, and transforms [DEX] characters into Super [DEX] characters.",
@@ -172763,11 +172403,11 @@ window.details = {
                 "When a [Revolutionary Army] character performs Super Tandem"
             ],
             description: [
-                "Raises Boost Level of [Egghead] and [Revolutionary Army] characters by 1 for 1 turn.",
-                "Raises Boost Level of [Egghead] and [Revolutionary Army] characters by 2 for 1 turn.",
-                "Raises Boost Level of [Egghead] and [Revolutionary Army] characters by 3 for 1 turn.",
-                "Raises Boost Level of [Egghead] and [Revolutionary Army] characters by 4 for 1 turn.",
-                "Raises Boost Level of [Egghead] and [Revolutionary Army] characters by 5 for 1 turn."
+                "Raises Boost Level of [Egghead Arc] and [Revolutionary Army] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] and [Revolutionary Army] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] and [Revolutionary Army] characters by 3 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] and [Revolutionary Army] characters by 4 for 1 turn.",
+                "Raises Boost Level of [Egghead Arc] and [Revolutionary Army] characters by 5 for 1 turn."
             ]
         }
     },
@@ -172887,6 +172527,1336 @@ window.details = {
                     "Reduces Sailor Despair duration by 3 turns on this character",
                     "Reduces Sailor Despair duration by 4 turns on this character",
                     "Reduces Sailor Despair duration by 5 turns on this character"
+                ]
+            }
+        ]
+    },
+    4422: {//Bonney Pirates
+        captain: "Advances Special Cooldown of Ship to MAX at the start of the fight, boosts ATK of [STR] and Free Spirit characters by 5.25x, by 5.75x instead if they have a [RCV] orb, boosts HP of [STR] and Free Spirit characters by 1.2x, boosts RCV of [STR] and Free Spirit characters by 1.3x, and makes [STR] and [RCV] orbs beneficial for [STR] and Free Spirit characters. If your crew has 3+ [Bonney Pirates] or [Egghead Arc] characters, reduces Burn duration by 6 turns, and increases duration of any ATK Up and Chain Lock buffs applied by specials by 1 turn.",
+        special: "Reduces enemies' Threshold Damage Reduction duration by 7 turns, reduces Counter-Healing and Counter-RCV duration by 4 turns, allows crew to perform Super Tandem with [RCV] orbs for 1 turn, and boosts ATK of Free Spirit and Fighter characters by 3x for 2 turns. If your Captain is a [STR] character, reduces enemies' Orb-Based Damage Reduction duration by 3 turns. If your crew has ATK Up and Chain Lock when the special is activated, boosts Advantageous Class Effect of Free Spirit characters by 1.75x for 1 turn, and applies Territory: Free Spirit class to the field, boosts ATK by 1x-1.5x and reduces damage received by 0%-25% based on number of characters matching the territory, for 1 turn.",
+        specialName: "Landing to Reunite",
+        sailor: {
+            base: "Makes [RCV] orbs beneficial for all characters. If field has Territory: Free Spirit or Territory: Fighter, boosts base ATK, HP and RCV of all characters by 200; boosts base HP of all characters by 200 otherwise.",
+            level1: "If this character has a [RCV] orb and you attack with this character, reduces enemies' [STR] Resistance by -10% for 1 turn."
+        },
+        superSpecialCriteria: "This character must be captain. Your crew must consist of any 1 of the following, excluding supports and counting only 1 per unit: Bartholomew Kuma, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Borsalino (Kizaru), Sentomaru",
+        superSpecial: "Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, increases Orb Effects of beneficial [RCV] orbs to 2.75x for 3 turns, and transforms [STR] characters into Super [STR] characters.",
+        support: [
+            {
+                Characters: "[STR] characters",
+                description: [
+                    "Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 9% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 10% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 11% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 12% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire Potential 1: Ship Bind" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Acquire Potential 2: Nutrition/Hunger" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Acquire Sailor Ability 2: Tapping on this character with a [RCV] slot will apply -10% [STR] Resistance to all enemies for 1 turn" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 60" },
+            { description: "Boosts base ATK by 60" },
+            { description: "Acquire Potential 3: Super Tandem" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Boosts base HP by 200" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "Ship Bind",
+                description: [
+                    "Reduces Ship Bind duration by 1 turn",
+                    "Reduces Ship Bind duration by 2 turns",
+                    "Reduces Ship Bind duration by 3 turns",
+                    "Reduces Ship Bind duration by 4 turns",
+                    "Reduces Ship Bind duration by 5 turns"
+                ]
+            },
+            {
+                Name: "Nutrition/Hunger",
+                description: [
+                    "Boosts base ATK by up to 50, the turn after recovering up to 3000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by up to 100, the turn after recovering up to 3000 HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by up to 150, the turn after recovering up to 3000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by up to 200, the turn after recovering up to 3000 HP and reduces Hunger stack by 2 stacks",
+                    "Boosts base ATK by up to 300, the turn after recovering up to 3000 HP and reduces Hunger stack by 3 stacks"
+                ]
+            },
+            {
+                Name: "Super Tandem",
+                description: [
+                    "Obtain Super Tandem Lv.1",
+                    "Obtain Super Tandem Lv.2",
+                    "Obtain Super Tandem Lv.3",
+                    "Obtain Super Tandem Lv.4",
+                    "Obtain Super Tandem Lv.5"
+                ]
+            }
+        ],
+        superTandem: {
+            characterCondition: [
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Bartholomew Kuma, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Borsalino (Kizaru), Sentomaru",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Bartholomew Kuma, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Borsalino (Kizaru), Sentomaru",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Bartholomew Kuma, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Borsalino (Kizaru), Sentomaru",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Bartholomew Kuma, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Borsalino (Kizaru), Sentomaru",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Bartholomew Kuma, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Dr. Vegapunk \"York the Greedy\", Borsalino (Kizaru), Sentomaru"
+            ],
+            description: [
+                "Boosts Tandem ATK of Free Spirit and Fighter characters by 1.5x for 1 turn, and boosts base ATK of Last Tap character by +500 for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit and Fighter characters by 1.6x for 1 turn, and boosts base ATK of Last Tap character by +600 for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit and Fighter characters by 1.7x for 1 turn, and boosts base ATK of Last Tap character by +700 for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit and Fighter characters by 1.8x for 1 turn, and boosts base ATK of Last Tap character by +800 for 1 turn.",
+                "Boosts Tandem ATK of Free Spirit and Fighter characters by 2x for 1 turn, and boosts base ATK of Last Tap character by +1,000 for 1 turn."
+            ]
+        }
+    },
+    4423: {//Vega Punk
+        captain: "Boosts ATK of Cerebral and Free Spirit characters by 4x, boosts HP of Cerebral and Free Spirit characters by 1.2x, and makes [STR] orbs beneficial for Cerebral and Free Spirit characters.",
+        special: "Reduces enemies' Percent Damage Reduction duration by 6 turns, reduces Paralysis duration by 6 turns, removes Poison duration completely, sets Chain Boundaries to 2.75x and 15.0x for 1 turn, randomizes all orbs into [STR], [DEX], [QCK], [INT] or [RCV] orbs, and becomes unable to change to [PSY] and [TND] orbs for 1 turn. If your crew has 6 Free Spirit characters, reduces enemies' Free Spirit Resistance by -30% for 1 turn. If your crew has 2+ [Scientist] characters, reduces enemies' Cerebral Resistance by -30% for 1 turn.",
+        specialName: "Emotional Last Words",
+        sailor: {
+            base: "Boosts base HP of Cerebral and Free Spirit characters by 150.",
+            level1: "Recovers 500 HP at the end of each turn."
+        },
+        support: [
+            {
+                Characters: "[STR] characters",
+                description: [
+                    "Adds 2% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 3% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 4% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 6% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 8% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 1: Pinch Healing" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 70" },
+            { description: "Boosts base HP by 70" },
+            { description: "Acquire Sailor Ability 2: Heals crew by 500 HP at end of turn" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Super Tandem Boost" },
+        ],
+        potential: [
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 15% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Super Tandem Boost",
+                description: [
+                    "Obtain Super Tandem Boost Lv.1",
+                    "Obtain Super Tandem Boost Lv.2",
+                    "Obtain Super Tandem Boost Lv.3",
+                    "Obtain Super Tandem Boost Lv.4",
+                    "Obtain Super Tandem Boost Lv.5"
+                ]
+            }
+        ],
+        superTandemBoost: {
+            characterCondition: [
+                "When a [Scientist] or [Bonney Pirates] character performs Super Tandem",
+                "When a [Scientist] or [Bonney Pirates] character performs Super Tandem",
+                "When a [Scientist] or [Bonney Pirates] character performs Super Tandem",
+                "When a [Scientist] or [Bonney Pirates] character performs Super Tandem",
+                "When a [Scientist] or [Bonney Pirates] character performs Super Tandem"
+            ],
+            description: [
+                "Raises Boost Level of [Scientist] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Scientist] and [Bonney Pirates] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Scientist], [Bonney Pirates] and [Egghead Arc] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Scientist] and [Bonney Pirates] characters by 2 for 1 turn, and raises Boost Level of [Egghead Arc] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Scientist] and [Bonney Pirates] characters by 3 for 1 turn, and raises Boost Level of [Egghead Arc] characters by 1 for 1 turn."
+            ]
+        }
+    },
+    4424: {//6+ Kizaru
+        captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, reduces Special Cooldown of ship by 2 turns at the start of the fight, boosts ATK of [STR], [DEX] and [QCK] characters by 4.75x, by 5.25x instead in the turn \"Warning the Genius\" is used, and boosts HP of [STR], [DEX] and [QCK] characters by 1.3x. If a crew member uses a special to boost Color Affinity, increases duration of any Color Affinity buffs by 2 turns.",
+        special: [
+            {
+                description: "Reduces Special Cooldown of all characters by 1 turn, reduces Special Bind duration by 5 turns, boosts the Color Affinity of [STR], [DEX] and [QCK] characters by 2x for 1 turn, and adds 1.2x to chain multiplier for 1 turn.",
+                cooldown: [
+                    14,
+                    9
+                ]
+            },
+            {
+                description: "Reduces Special Cooldown of all characters by 1 turn, reduces Special Bind duration by 10 turns, boosts the Color Affinity of [STR], [DEX] and [QCK] characters by 2.75x for 1 turn, and adds 1.4x to chain multiplier for 1 turn. If your crew has 3+ [Navy Admiral] or [Navy Vice Admiral] characters, reduces Pain duration by 3 turns.",
+                cooldown: [
+                    19,
+                    14
+                ]
+            }
+        ],
+        specialName: "Warning the Genius",
+        sailor: {
+            level1: "Reduces Special Bind duration by 10 turns on this character.",
+            level2: "Restores Special Cooldown of this character by 10 turns when it is rewinded."
+        },
+        support: [
+            {
+                Characters: "[DEX] Shooter characters",
+                description: [
+                    "Once per adventure, when you reach the final stage, boosts the Color Affinity of [DEX] characters by 1.1x for 1 turn.",
+                    "Once per adventure, when you reach the final stage, boosts the Color Affinity of [DEX] characters by 1.2x for 1 turn.",
+                    "Once per adventure, when you reach the final stage, boosts the Color Affinity of [DEX] characters by 1.3x for 1 turn.",
+                    "Once per adventure, when you reach the final stage, boosts the Color Affinity of [DEX] characters by 1.4x for 1 turn.",
+                    "Once per adventure, when you reach the final stage, boosts the Color Affinity of [DEX] characters by 1.5x for 1 turn."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base HP by 10" },
+            { description: "Acquire Potential 1: Slot Barrier" },
+            { description: "Boosts base HP by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Acquire Sailor Ability 1: Reduces character's Special Bind duration by 10 turns" },
+            { description: "Boosts base HP by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Acquire Potential 2: Sailor Despair" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Sailor Ability 2: Reduces character's Special Reverse by 10 turns" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 80" },
+            { description: "Boosts base ATK by 70" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 3: Barrier Penetration" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base HP by 100" },
+            { description: "Boosts base RCV by 25" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base HP by 200" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base ATK by 100" },
+        ],
+        lLimit: [
+            null,
+            {
+                rAbility: true
+            },
+            {
+                captain: {
+                    base: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, reduces Special Cooldown of ship by 2 turns at the start of the fight, boosts ATK of [STR], [DEX] and [QCK] characters by 5x, by 5.4x instead in the turn \"Warning the Genius\" is used, and boosts HP of [STR], [DEX] and [QCK] characters by 1.3x. If a crew member uses a special to boost Color Affinity, increases duration of any Color Affinity buffs by 2 turns, and increases boost effects of Color Affinity buffs by +0.25x. If this character has a [STR], [DEX] or [QCK] orb and you attack with this character, reduces enemies' Fighter, Shooter and Free Spirit Resistance by -7% for 1 turn."
+                }
+            },
+            {
+                rSpecial: true
+            },
+            {
+                special: {
+                    base: [
+                        {
+                            description: "Reduces Special Cooldown of all characters by 1 turn, reduces Special Bind duration by 6 turns, boosts the Color Affinity of [STR], [DEX] and [QCK] characters by 2x for 1 turn, and adds 1.2x to chain multiplier for 1 turn. If your crew has 3+ [Navy Admiral] or [Navy Vice Admiral] characters, increases boost effects of Color Affinity and Chain Addition buffs by +0.4x, including effects activated in the same ability.",
+                            cooldown: [
+                                14,
+                                9
+                            ]
+                        },
+                        {
+                            description: "Reduces Special Cooldown of all characters by 1 turn, reduces Special Bind duration by 10 turns, and adds 1.6x to chain multiplier for 3 turns. If your crew has Color Affinity when the special is activated, boosts Base ATK of [STR], [DEX] and [QCK] characters by 1,250 for 3 turns, and increases duration of any Status ATK Boosting buffs by 2 turns; boosts the Color Affinity of [STR], [DEX] and [QCK] characters by 2.75x for 1 turn otherwise. If your crew has 3+ [Navy Admiral] or [Navy Vice Admiral] characters, reduces Pain duration by 5 turns, and up to 1 time per adventure, reduces Special Cooldown of this character by 5 turns.",
+                            cooldown: [
+                                19,
+                                14
+                            ]
+                        }
+                    ]
+                },
+                rResilience: true
+            }
+        ],
+        potential: [
+            {
+                Name: "Slot Barrier",
+                description: [
+                    "Reduces Slot Barrier duration by 1 stack on this character",
+                    "Reduces Slot Barrier duration by 2 stacks on this character",
+                    "Reduces Slot Barrier duration by 3 stacks on this character",
+                    "Reduces Slot Barrier duration by 4 stacks on this character",
+                    "Reduces Slot Barrier duration by 5 stacks on this character"
+                ]
+            },
+            {
+                Name: "Sailor Despair",
+                description: [
+                    "Reduces Sailor Despair duration by 1 turn on this character",
+                    "Reduces Sailor Despair duration by 2 turns on this character",
+                    "Reduces Sailor Despair duration by 3 turns on this character",
+                    "Reduces Sailor Despair duration by 4 turns on this character",
+                    "Reduces Sailor Despair duration by 5 turns on this character"
+                ]
+            },
+            {
+                Name: "Barrier Penetration",
+                description: [
+                    "This character's normal attack will ignore barriers if HP is above 99% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 90% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 70% at the start of the turn",
+                    "This character's normal attack will ignore barriers if HP is above 50% at the start of the turn",
+                    "This character's normal attack will ignore barriers"
+                ]
+            }
+        ]
+    },
+    4425: {//Franky
+        captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, reduces Switch Effect of all characters by 2 at the start of the fight, boosts ATK of Powerhouse and Free Spirit characters by 5.25x, boosts HP of Powerhouse and Free Spirit characters by 1.4x, makes [QCK], [BOMB] and [SUPERBOMB] orbs beneficial for Powerhouse and Free Spirit characters, and [BOMB] and [SUPERBOMB] orbs will deal 95% less damage to the crew. If your crew has 4+ [Straw Hat Pirates], [Logia-type] or [Scientist] characters, boosts ATK of Powerhouse and Free Spirit characters by 5.775x instead; additionally, if this character has a [BOMB] or [SUPERBOMB] orb and you attack with this character, reduces enemies' Threshold Damage Reduction duration by 6 turns. If your crew has 4+ [Egghead Arc] characters, reduces Bind duration by 3 turns, and makes crew immune to Blow Away.",
+        special: "Deals 120x character's ATK in Typeless damage to all enemies. Launches the following effects depending on the Special Counter of this character when the special is activated:<ul><li><b>0:</b> Reduces Despair and Paralysis duration by 6 turns, and boosts ATK against enemies with reduced defense by 3.25x for 2 turns. If your crew has 4+ [Straw Hat Pirates], [Logia-type] or [Scientist] characters, reduces Special Cooldown of this character by 13 turns, and sets Special Counter of this character to 1.</li><li><b>1:</b> Reduces enemies' Damage Nullification duration by 2 turns, and inflicts all enemies with Set Target, increasing damage taken from Powerhouse and Free Spirit characters by 1.75x and reducing Special Cooldown of Powerhouse and Free Spirit characters by 2 turns when they defeat an enemy, for 1 turn.</li></ul>",
+        specialName: "Benefactor-Protecting Radical Beam",
+        sailor: {
+            base: "Makes [BOMB] and [SUPERBOMB] orbs beneficial for Powerhouse and Free Spirit characters. Boosts base HP of Powerhouse and Free Spirit characters by 200.",
+            level1: "This character cannot be Blown Away."
+        },
+        superSpecialCriteria: "Can be launched as crewmate. HP must be below 25% or your crew must consist of any 5 of the following, excluding supports and counting only 1 per unit: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Brook, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Bartholomew Kuma",
+        superSpecial: "Reduces Special Cooldown of ship by 5 turns, reduces Special Cooldown of top row characters by 1 turn, changes the orb, including [BLOCK] orb, of this character into a [SUPERBOMB] orb, boosts Final Tap ATK of Powerhouse and Free Spirit characters by 40%, and transforms Powerhouse characters into Super Powerhouse characters.",
+        support: [
+            {
+                Characters: "Brook",
+                description: [
+                    "Once per adventure, when the supported character uses their special, boosts ATK against enemies with reduced defense by 1.3x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, boosts ATK against enemies with reduced defense by 1.35x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces Paralysis duration by 1 turn, and boosts ATK against enemies with reduced defense by 1.4x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces Paralysis duration by 1 turn, and boosts ATK against enemies with reduced defense by 1.45x for 1 turn.",
+                    "Once per adventure, when the supported character uses their special, reduces Paralysis duration by 2 turns, and boosts ATK against enemies with reduced defense by 1.5x for 1 turn."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Enrage/Increase Damage Taken" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Sailor Ability 2: Character cannot be blown away by attack" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 3: Last Tap" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        lLimit: [
+            null,
+            null,
+            null,
+            null,
+            {
+                rSuperSpecial: true
+            }
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Enrage/Increase Damage Taken",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                Name: "Last Tap",
+                description: [
+                    "Obtain Last Tap Lv.1",
+                    "Obtain Last Tap Lv.2",
+                    "Obtain Last Tap Lv.3",
+                    "Obtain Last Tap Lv.4",
+                    "Obtain Last Tap Lv.5"
+                ]
+            }
+        ],
+        lastTap: {
+            condition: "On the last stage when this character has a [G], [BOMB] or [SUPERBOMB] orb",
+            description: [
+                "Adds 0.2x of damage dealt with normal attacks from other Powerhouse characters this turn to this character's normal attack in damage.",
+                "Adds 0.4x of damage dealt with normal attacks from other Powerhouse characters this turn to this character's normal attack in damage.",
+                "Adds 0.6x of damage dealt with normal attacks from other Powerhouse characters this turn to this character's normal attack in damage.",
+                "Adds 0.8x of damage dealt with normal attacks from other Powerhouse characters this turn to this character's normal attack in damage.",
+                "Adds 1x of damage dealt with normal attacks from other Powerhouse characters this turn to this character's normal attack in damage."
+            ]
+        }
+    },
+    4426: {//Brook
+        captain: "Reduces crew's current HP by 80% at the start of the fight, reduces Special Cooldown of all characters by 3 turns at the start of the fight, reduces VS Gauge of all characters by 3 at the start of the fight, boosts ATK of Slasher and Free Spirit characters by 5.25x, boosts HP of Slasher and Free Spirit characters by 1.4x, makes [PSY] and [TND] orbs beneficial for Slasher and Free Spirit characters, and increases duration of any Color Affinity, Advantageous Class Effect and Status ATK Boosting buffs applied by Specials by 1 turn. If your crew has 4+ [Straw Hat Pirates], [Paramythia-type] or [Scientist] characters and HP is below 25% at the start of the turn, boosts ATK of Slasher and Free Spirit characters by 6.3x instead. If your crew has 4+ [Egghead Arc] characters, reduces Bind duration by 3 turns, and restores Special Cooldown of this character by 10 turns when it is rewinded.",
+        special: "Ignores debuff protection and reduces the defense of all enemies by 100% for 1 turn, reduces Silence duration by 5 turns, reduces ATK Down duration by 6 turns, and boosts the Color Affinity of [PSY], Slasher and Free Spirit characters by 2.75x for 2 turns. If your crew has Color Affinity or Color Affinity Nullification when the special is activated, boosts Advantageous Class Effect of Slasher and Free Spirit characters by 1.75x for 2 turns. If your crew has 4+ [Straw Hat Pirates], [Paramythia-type] or [Scientist] characters, reduces Special Cooldown of middle and bottom row characters by 3 turns, and boosts Chain Multiplier Growth Rate by 1.5x, can be enhanced up to 2 times, for 2 turns.",
+        specialName: "Freezing Slash",
+        sailor: {
+            base: "Restores Special Cooldown of this character by 3 turns when it is rewinded.",
+            level1: "Makes [PSY] orbs beneficial for all characters. Boosts base ATK of Slasher and Free Spirit characters by 75."
+        },
+        superSpecialCriteria: "Can be launched as crewmate. HP must be below 25% or your crew must consist of any 3 of the following, excluding supports and counting only 1 per unit: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Bartholomew Kuma",
+        superSpecial: "Reduces damage received by 95% for 1 turn, boosts Critical Hit Damage of Slasher and Free Spirit characters by 50% for 1 turn, and transforms [PSY] characters into Super [PSY] characters.",
+        support: [
+            {
+                Characters: "Franky",
+                description: [
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces Special Cooldown of supported character by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces Special Cooldown of supported character by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 1 turn, and reduces Special Cooldown of supported character by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 1 turn, and reduces Special Cooldown of supported character by 1 turn.",
+                    "Once per adventure, when the supported character uses a Damage Dealing or Health Cutting special, reduces the defense of all enemies by 50% for 1 turn, reduces Switch Effect of all characters by 1, and reduces Special Cooldown of supported character by 1 turn."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 10" },
+            { description: "Acquire Potential 1: Cooldown Reduction" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Critical Hit" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Sailor Ability 2: Makes crew's [PSY] slots have matching slot effects, and boosts Slasher and Free Spirit characters' base ATK by 75" },
+            { description: "Boosts base RCV by 40" },
+            { description: "Boosts base HP by 80" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 3: Super Tandem Boost" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        lLimit: [
+            null,
+            null,
+            null,
+            null,
+            {
+                rSuperSpecial: true
+            }
+        ],
+        potential: [
+            {
+                Name: "Cooldown Reduction",
+                description: [
+                    "Reduces Special Cooldown of this character by 1 turn at the start of the fight",
+                    "Reduces Special Cooldown of this character by 1 turn at the start of the fight",
+                    "Reduces Special Cooldown of this character by 2 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 2 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 3 turns at the start of the fight"
+                ]
+            },
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 100% chance to deal 10% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Super Tandem Boost",
+                description: [
+                    "Obtain Super Tandem Boost Lv.1",
+                    "Obtain Super Tandem Boost Lv.2",
+                    "Obtain Super Tandem Boost Lv.3",
+                    "Obtain Super Tandem Boost Lv.4",
+                    "Obtain Super Tandem Boost Lv.5"
+                ]
+            }
+        ],
+        superTandemBoost: {
+            characterCondition: [
+                "When a [Straw Hat Pirates] or [Scientist] character performs Super Tandem",
+                "When a [Straw Hat Pirates] or [Scientist] character performs Super Tandem",
+                "When a [Straw Hat Pirates] or [Scientist] character performs Super Tandem",
+                "When a [Straw Hat Pirates] or [Scientist] character performs Super Tandem",
+                "When a [Straw Hat Pirates] or [Scientist] character performs Super Tandem"
+            ],
+            description: [
+                "Raises Boost Level of [Scientist], [Paramythia-type], [Four Emperors] and [Straw Hat Pirates] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Scientist], [Paramythia-type] and [Four Emperors] and characters by 1 for 1 turn, and raises Boost Level of [Straw Hat Pirates] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Scientist], [Paramythia-type] and [Four Emperors] and characters by 2 for 1 turn, and raises Boost Level of [Straw Hat Pirates] characters by 3 for 1 turn.",
+                "Raises Boost Level of [Scientist], [Paramythia-type] and [Four Emperors] and characters by 3 for 1 turn, and raises Boost Level of [Straw Hat Pirates] characters by 4 for 1 turn.",
+                "Raises Boost Level of [Scientist], [Paramythia-type] and [Four Emperors] and characters by 4 for 1 turn, and raises Boost Level of [Straw Hat Pirates] characters by 5 for 1 turn."
+            ]
+        }
+    },
+    4427: {//Dr. Vegapunk - Lilith
+        captain: "Reduces crew's current HP by 50% at the start of the fight, boosts ATK of [QCK] and Cerebral characters by 3.75x, and makes [TND], [BOMB] and [SUPERBOMB] orbs beneficial for [QCK] and Cerebral characters.",
+        special: "Reduces enemies' Percent Damage Reduction duration by 6 turns, changes the orbs, including [BLOCK] orbs, of top and middle row characters into [BOMB] orbs, changes the orbs, including [BLOCK] orbs, of bottom row characters into [TND] orbs, and boosts Orb Effects of Cerebral and Free Spirit characters by 2.75x, can be enhanced up to 2 times, for 2 turns. If HP is below 50% or your crew has Orb Amplification when the special is activated, sets Chain Boundaries to 2.75x and 8.0x for 2 turns. If your crew has 2+ [Vegapunk] characters, reduces Special Cooldown of Cerebral and Free Spirit characters by 2 turns, and increases boost effects of ATK Up and Orb Amplification buffs by +0.25x, including effects activated in the same ability.",
+        specialName: "Furious Remark",
+        sailor: {
+            base: "Restores Special Cooldown of this character by 2 turns when it is rewinded.",
+            level1: "Makes [BOMB] and [SUPERBOMB] orbs beneficial for Cerebral and Free Spirit characters. Boosts base ATK of Cerebral and Free Spirit characters by 70."
+        },
+        support: [
+            {
+                Characters: "Characters with the following Character Tag: [Scientist]",
+                description: [
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Percent Damage Reduction duration by 1 turn, and changes the orb of the supported character into a [BOMB] orb."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire Sailor Ability 2: Makes Cerebral and Free Spirit characters' [BOMB][S. BOMB] slots have matching slot effects, and boosts their base ATK by 70" },
+            { description: "Boosts base HP by 80" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Super Tandem" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Super Tandem",
+                description: [
+                    "Obtain Super Tandem Lv.1",
+                    "Obtain Super Tandem Lv.2",
+                    "Obtain Super Tandem Lv.3",
+                    "Obtain Super Tandem Lv.4",
+                    "Obtain Super Tandem Lv.5"
+                ]
+            }
+        ],
+        superTandem: {
+            characterCondition: [
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\""
+            ],
+            description: [
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.1x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.2x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.3x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.4x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.5x for 1 turn."
+            ]
+        }
+    },
+    4428: {//Dr. Vegapunk - Atlas
+        captain: "Reduces crew's current HP by 50% at the start of the fight, boosts ATK of [PSY] and Cerebral characters by 3.75x, and makes [TND], [BOMB] and [SUPERBOMB] orbs beneficial for [PSY] and Cerebral characters.",
+        special: "Reduces Chain Coefficient Reduction and Burn duration by 6 turns, and boosts ATK of Cerebral and Free Spirit characters by 2.75x, can be enhanced up to 2 times, for 2 turns. If HP is below 50% or your crew has ATK Up when the special is activated, boosts Advantageous Class Effect of Cerebral and Free Spirit characters by 1.5x for 1 turn. If your crew has 2+ [Vegapunk] characters, reduces Special Cooldown of Cerebral and Free Spirit characters by 2 turns, and increases boost effects of ATK Up and Orb Amplification buffs by +0.25x, including effects activated in the same ability.",
+        specialName: "Lifting the Giant Body",
+        sailor: {
+            base: "Restores Special Cooldown of this character by 2 turns when it is rewinded.",
+            level1: "Makes [RCV] and [TND] orbs beneficial for Cerebral and Free Spirit characters. Boosts base ATK of Cerebral and Free Spirit characters by 70."
+        },
+        support: [
+            {
+                Characters: "Characters with the following Character Tag: [Scientist]",
+                description: [
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, changes the orb of the supported character into a [BOMB] orb.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Threshold Damage Reduction duration by 1 turn, and changes the orb of the supported character into a [BOMB] orb."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Acquire Sailor Ability 2: Makes Cerebral and Free Spirit characters' [TND][RCV] slots have matching slot effects, and boosts their base ATK by 70" },
+            { description: "Boosts base HP by 60" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Super Tandem" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Super Tandem",
+                description: [
+                    "Obtain Super Tandem Lv.1",
+                    "Obtain Super Tandem Lv.2",
+                    "Obtain Super Tandem Lv.3",
+                    "Obtain Super Tandem Lv.4",
+                    "Obtain Super Tandem Lv.5"
+                ]
+            }
+        ],
+        superTandem: {
+            characterCondition: [
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Lilith the Evil\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Lilith the Evil\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Lilith the Evil\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Lilith the Evil\"",
+                "Your crew must consist of any 1 of the following, excluding Supports and counting only 1 per unit: Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Lilith the Evil\""
+            ],
+            description: [
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.1x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.2x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.3x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.4x for 1 turn.",
+                "Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.5x for 1 turn."
+            ]
+        }
+    },
+    4429: {//Kizaru
+        captain: "Reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of all characters by 3.5x-4.25, depending on how many previous consecutive turns you have defeated an enemy, up to 5 turns, boosts HP of all characters by 1.2x, boosts base ATK of [Navy] characters by 500, and makes [PSY] and [INT] orbs beneficial for all characters.",
+        special: "Deals 100x character's ATK in Typeless damage to one enemy, reduces enemies' Resilience duration by 6 turns, adds 1.2x to chain multiplier for 3 turns, and recovers 30% of crew's MAX HP. If HP is below 50% when the special is activated or your crew has 2+ [Navy] characters, carries over 0.1x-1.5x of Chain Multiplier on this turn to the next turn.",
+        specialNotes: "Carried-over chain amount is equal to 0.1 ✕ final chain multiplier this turn and will be added into the next turn's chain multiplier. In order to get +1.5 Chain carried over, you need to reach 15x or higher Chain Multiplier.",
+        specialName: "Piercing Ama no Murakumo Sword",
+        sailor: {
+            base: "Makes [PSY] orbs beneficial for Slasher and Powerhouse characters.",
+            level1: "If your crew has 2+ [Navy] or [World Government] characters, reduces Chain Coefficient Reduction duration by 2 turns."
+        },
+        support: [
+            {
+                Characters: "Characters with the following Character Tag: [Navy]",
+                description: [
+                    "Once per adventure, when the supported character uses their special, recovers 1,000 HP.",
+                    "Once per adventure, when the supported character uses their special, recovers 1,250 HP.",
+                    "Once per adventure, when the supported character uses their special, recovers 1,500 HP.",
+                    "Once per adventure, when the supported character uses their special, recovers 1,750 HP.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Resilience duration by 1 turn, and recovers 2,000 HP."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Potential 2: Pinch Healing" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Acquire Potential 3: Cooldown Reduction" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Acquire Sailor Ability 2: If 2 or more [Navy] [World Government] characters are on the crew, reduces decrease chain multiplier growth rate duration by 2 turns" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Cooldown Reduction",
+                description: [
+                    "Reduces Special Cooldown of this character by 5 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 6 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 7 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 8 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 9 turns at the start of the fight"
+                ]
+            }
+        ]
+    },
+    4430: {//5+ Kizaru
+        captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of all characters by 4x-4.5, depending on how many previous consecutive turns you have defeated an enemy, up to 5 turns, boosts HP of all characters by 1.2x, boosts base ATK of [Navy] characters by 500, and makes [PSY] and [INT] orbs beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, restores Special Cooldown of all characters by 3 turns when they are rewinded.",
+        special: "Reduces Special Cooldown of all characters by 1 turn, deals 100x character's ATK in Typeless damage to one enemy, reduces enemies' Resilience duration by 6 turns, adds 1.2x-1.8x to chain multiplier for 3 turns, and recovers 30% of crew's MAX HP. If HP is below 50% when the special is activated or your crew has 2+ [Navy] characters, locks all orbs for 2 turns, and carries over 0.1x-1.5x of Chain Multiplier on this turn to the next turn. If your crew has 3+ [Navy] characters, increases duration of any team Damage Nullification and Threshold Damage Reduction buffs by 1 turn.",
+        specialNotes: "For every <b>5 Special Cooldown charges</b> after this special is charged to MAX, the Chain Addition increases by +0.1x until its maximum values. Carried-over chain amount is equal to 0.1 ✕ final chain multiplier this turn and will be added into the next turn's chain multiplier; in order to get +1.5 chain carried over, you need to reach 15x or higher chain multiplier.",
+        specialName: "Piercing Ama no Murakumo Sword",
+        sailor: {
+            base: "Makes [PSY] orbs beneficial for Slasher and Powerhouse characters.",
+            level1: "If your crew has 2+ [Navy] or [World Government] characters, reduces Chain Coefficient Reduction duration by 2 turns."
+        },
+        support: [
+            {
+                Characters: "Characters with the following Character Tag: [Navy]",
+                description: [
+                    "Once per adventure, when the supported character uses their special, recovers 1,000 HP.",
+                    "Once per adventure, when the supported character uses their special, recovers 1,250 HP.",
+                    "Once per adventure, when the supported character uses their special, recovers 1,500 HP.",
+                    "Once per adventure, when the supported character uses their special, recovers 1,750 HP.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Resilience duration by 1 turn, and recovers 2,000 HP."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 20" },
+            { description: "Acquire Potential 1: Critical Hit" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire Potential 2: Pinch Healing" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Acquire Potential 3: Cooldown Reduction" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Acquire Sailor Ability 2: If 2 or more [Navy] [World Government] characters are on the crew, reduces decrease chain multiplier growth rate duration by 2 turns" },
+        ],
+        potential: [
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 30% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 7% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 8% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Cooldown Reduction",
+                description: [
+                    "Reduces Special Cooldown of this character by 5 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 6 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 7 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 8 turns at the start of the fight",
+                    "Reduces Special Cooldown of this character by 9 turns at the start of the fight"
+                ]
+            }
+        ]
+    },
+    4431: {//Jinbe
+        captain: "Reduces crew's current HP by 75% at the start of the fight, reduces Special Cooldown of all characters by 1 turn at the start of the fight, boosts ATK of [PSY], Cerebral and Free Spirit characters by 5x, by 5.75x instead if HP is below 30% at the start of the turn, boosts HP of [PSY], Cerebral and Free Spirit characters by 1.5x, makes [PSY], [RCV] and [TND] orbs beneficial for all characters, reduces damage received by 30%, and launches the following effect at start of quest: reduces damage received by 100% for 1 attack. If your crew has 4+ [Straw Hat Pirates] characters, reduces Burn duration by 6 turns.",
+        captainNotes: "Damage Nullification activates on the first instance of damage taken from the enemy.",
+        special: "Removes Target Lock duration completely, reduces Bind duration by 6 turns, and increases Chain Tap Timing Bonus of [PSY], Cerebral and Free Spirit characters to +0.3x-0.7x for 3 turns depending on Tap Timing. If your crew has 5+ [Straw Hat Pirates] characters, there is only 1 enemy on the stage, and that enemy has less than or equal to 20% of their MAX HP: instantly defeats that enemy. If HP is below 30% when the special is activated and your crew has 5+ [Egghead Arc] characters, reduces damage received by 100% for 1 attack, and boosts Final Tap ATK of Cerebral or Free Spirit characters by 30%.",
+        specialNotes: "GOOD: +0.3, GREAT: +0.5, PERFECT: +0.7",
+        specialName: "Future Island's Fish-Man Karate Secret Art: Demon Brick Fist",
+        sailor: {
+            base: "This character cannot be Blown Away.",
+            level1: "If HP is below 30%, boosts base ATK of all characters by 300."
+        },
+        support: [
+            {
+                Characters: "Characters with the following Character Tag: [Straw Hat Pirates]",
+                description: [
+                    "Reduces damage received from [INT] characters by 1%. Adds 4% of this character's base HP to the supported character's base HP.",
+                    "Reduces damage received from [INT] characters by 2%. Adds 5% of this character's base HP to the supported character's base HP.",
+                    "Reduces damage received from [INT] characters by 3%. Adds 6% of this character's base HP to the supported character's base HP.",
+                    "Reduces damage received from [INT] characters by 4%. Adds 7% of this character's base HP to the supported character's base HP.",
+                    "Reduces damage received from [INT] characters by 5%. Adds 8% of this character's base HP to the supported character's base HP."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base HP by 30" },
+            { description: "Acquire Potential 1: Enrage/Increase Damage Taken" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Critical Hit" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 60" },
+            { description: "Acquire Sailor Ability 2: Boosts crew's base ATK by 300 when HP is 30% or below" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 3: Ship Bind" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "Enrage/Increase Damage Taken",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            },
+            {
+                Name: "Critical Hit",
+                description: [
+                    "If you hit a PERFECT with this character, there is a 40% chance to deal 4% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 50% chance to deal 5% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 60% chance to deal 6% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 70% chance to deal 8% of this character's attack in extra damage",
+                    "If you hit a PERFECT with this character, there is a 80% chance to deal 10% of this character's attack in extra damage"
+                ]
+            },
+            {
+                Name: "Ship Bind",
+                description: [
+                    "Reduces Ship Bind duration by 1 turn",
+                    "Reduces Ship Bind duration by 2 turns",
+                    "Reduces Ship Bind duration by 3 turns",
+                    "Reduces Ship Bind duration by 4 turns",
+                    "Reduces Ship Bind duration by 5 turns"
+                ]
+            }
+        ]
+    },
+    4432: {// Luffy
+        captain: "Reduces Special Cooldown of all characters by 2 turns at the start of the fight, reduces VS Gauge and Switch Effect of all characters by 2 at the start of the fight, boosts ATK of [Straw Hat Pirates], [Giant], [Logia-type] and [Paramythia-type] characters by 1.1x, boosts ATK of [QCK] and Powerhouse characters by 6x-6.6x, boosts ATK of all other characters by 4.5x-4.95x, boosts HP of [QCK] and Powerhouse characters by 1.35x, makes [QCK], [RCV] and [TND] orbs beneficial for all characters, and reduces Special Bind duration by 10 turns on this character. If this character is your Captain and performs EXCELLENT with their Action Special, for 3 turns boosts ATK of [Straw Hat Pirates], [Giant], [Logia-type] and [Paramythia-type] characters by 1.3x instead, boosts ATK of [QCK] and Powerhouse characters by 6x-7.8x instead, and boosts ATK of all other characters by 4.5x-5.85x instead. If your crew has 4+ [Egghead Arc] or [Land of Wano Arc] characters, restores Special Cooldown of all characters by 10 turns when they are rewinded. If your crew has 4+ [Egghead Arc] or [Land of Wano Arc] characters and you gain an ATK Up or Orb Amplification buff, enables ATK Up and Orb Amplification buffs to be enhanced up to 2 times, and increases boost effects of ATK Up and Orb Amplification buffs by 1.2x (up to 8x).",
+        special: "Reduces Special Bind duration by 10 turns, adds 80x character's ATK as Additional Typeless Damage for 5 turns, applies Territory: [QCK] type to the field, boosts ATK by 1x-1.5x and reduces damage received by 0%-25% based on number of characters matching the territory, for 3 turns, and boosts Orb Effects of [QCK] and Powerhouse characters by 3.5x-4.25x for 2 turns depending on the outcome of Action Special. If your crew has 5+ [Straw Hat Pirates], [Giant], [Logia-type] or [Paramythia-type] characters, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 2 turns, and sets Chain Boundaries to 3.25x and 35.0x, can be enhanced up to 2 times, for 2 turns; sets Chain Boundaries to 2.5x and 30.0x for 1 turn otherwise.",
+        specialNotes: "MISS: 3.5x, GOOD: 3.7x, GREAT: 3.8x, PERFECT: 3.9x, EXCELLENT 4.25x",
+        specialName: "Gum-Gum Dawn Cymbal",
+        sailor: {
+            base: "Boosts base ATK, HP and RCV of Powerhouse characters by 200. Makes [QCK], [RCV] and [TND] orbs beneficial for Powerhouse characters.",
+            level1: "Reduces Special Bind duration by 10 turns on this character."
+        },
+        superSpecialCriteria: "This character must be captain. Your crew must consist of any 2 of the following, excluding supports and counting only 1 per unit: Roronoa Zoro, Sanji, Nami, Usopp, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", S-Snake, Sentomaru, Bartholomew Kuma, Portgas D. Ace, Sabo, Monkey D. Garp, Makino, Shanks, Dorry, Broggy, Kashii, Oimo",
+        superSpecial: "Reduces Switch Effect of Powerhouse characters by 4, changes the orb, including [BLOCK] and [SUPERBLOCK] orb, of this character into a [TND] orb, increases boost effects of Chain Lock buffs by +0.25x, boosts Advantageous Class Effect of Powerhouse characters by 2x for 2 turns, transforms [QCK] characters into Super [QCK] characters, and transforms Powerhouse characters into Super Powerhouse characters.",
+        support: [
+            {
+                Characters: "All characters",
+                description: [
+                    "Adds 5% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 7% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 9% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 10% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV.",
+                    "Adds 11% of this character's base ATK, HP and RCV to the supported character's base ATK, HP and RCV."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Acquire Potential 1: Enrage/Increase Damage Taken" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Damage Limit Break: Class" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 60" },
+            { description: "Acquire Sailor Ability 2: Reduces character's Special Bind duration by 10 turns" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 3: Super Tandem" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 50" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "Enrage/Increase Damage Taken",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                Name: "Damage Limit Break: Class",
+                description: [
+                    "Boosts Damage Limit Break effect based on number of Powerhouse characters on the crew (except as Support Characters): +0.1 for 1, +.0.1 for 2, +0.1 for 3, +0.1 for 4, +0.2 for 5, +0.3 for 6 ",
+                    "Boosts Damage Limit Break effect based on number of Powerhouse characters on the crew (except as Support Characters): +0.1 for 1, +.0.1 for 2, +0.1 for 3, +0.2 for 4, +0.3 for 5, +0.4 for 6 ",
+                    "Boosts Damage Limit Break effect based on number of Powerhouse characters on the crew (except as Support Characters): +0.1 for 1, +.0.1 for 2, +0.2 for 3, +0.3 for 4, +0.4 for 5, +0.5 for 6 ",
+                    "Boosts Damage Limit Break effect based on number of Powerhouse characters on the crew (except as Support Characters): +0.1 for 1, +.0.1 for 2, +0.2 for 3, +0.4 for 4, +0.5 for 5, +0.6 for 6 ",
+                    "Boosts Damage Limit Break effect based on number of Powerhouse characters on the crew (except as Support Characters): +0.2 for 1, +.0.3 for 2, +0.4 for 3, +0.5 for 4, +0.6 for 5, +0.75 for 6 "
+                ]
+            },
+            {
+                Name: "Super Tandem",
+                description: [
+                    "Obtain Super Tandem Lv.1",
+                    "Obtain Super Tandem Lv.2",
+                    "Obtain Super Tandem Lv.3",
+                    "Obtain Super Tandem Lv.4",
+                    "Obtain Super Tandem Lv.5"
+                ]
+            }
+        ],
+        superTandem: {
+            characterCondition: [
+                "Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Roronoa Zoro, Sanji, Nami, Usopp, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", S-Snake, Bartholomew Kuma, Portgas D. Ace, Sabo, Monkey D. Garp, Shanks, Makino, Curly Dadan, Monkey D. Dragon, Dorry, Broggy, Kashii, Oimo",
+                "Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Roronoa Zoro, Sanji, Nami, Usopp, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", S-Snake, Bartholomew Kuma, Portgas D. Ace, Sabo, Monkey D. Garp, Shanks, Makino, Curly Dadan, Monkey D. Dragon, Dorry, Broggy, Kashii, Oimo",
+                "Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Roronoa Zoro, Sanji, Nami, Usopp, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", S-Snake, Bartholomew Kuma, Portgas D. Ace, Sabo, Monkey D. Garp, Shanks, Makino, Curly Dadan, Monkey D. Dragon, Dorry, Broggy, Kashii, Oimo",
+                "Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Roronoa Zoro, Sanji, Nami, Usopp, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", S-Snake, Bartholomew Kuma, Portgas D. Ace, Sabo, Monkey D. Garp, Shanks, Makino, Curly Dadan, Monkey D. Dragon, Dorry, Broggy, Kashii, Oimo",
+                "Your crew must consist of any 3 of the following, excluding Supports and counting only 1 per unit: Roronoa Zoro, Sanji, Nami, Usopp, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", S-Snake, Bartholomew Kuma, Portgas D. Ace, Sabo, Monkey D. Garp, Shanks, Makino, Curly Dadan, Monkey D. Dragon, Dorry, Broggy, Kashii, Oimo"
+            ],
+            description: [
+                "Ignores Debuff Protection and reduces the defense of all enemies by 100% for 1 turn, boosts Tandem ATK of [QCK] and Powerhouse characters by 1.5x for 1 turn, and boosts base ATK of Last Tap character by +175 for 1 turn.",
+                "Ignores Debuff Protection and reduces the defense of all enemies by 100% for 1 turn, boosts Tandem ATK of [QCK] and Powerhouse characters by 1.75x for 1 turn, and boosts base ATK of Last Tap character by +275 for 1 turn.",
+                "Ignores Debuff Protection and reduces the defense of all enemies by 100% for 1 turn, boosts Tandem ATK of [QCK] and Powerhouse characters by 2x for 1 turn, and boosts base ATK of Last Tap character by +375 for 1 turn.",
+                "Ignores Debuff Protection and reduces the defense of all enemies by 100% for 1 turn, boosts Tandem ATK of [QCK] and Powerhouse characters by 2.5x for 1 turn, and boosts base ATK of Last Tap character by +500 for 1 turn.",
+                "Ignores Debuff Protection and reduces the defense of all enemies by 100% for 1 turn, boosts Tandem ATK of [QCK] and Powerhouse characters by 3x for 1 turn, and boosts base ATK of Last Tap character by +700 for 1 turn."
+            ]
+        }
+    },
+    4433: {//Kuma
+        captain: "Reduces Special Cooldown of [Child] and [Paramythia-type] characters by 7 turns at the start of the fight, boosts ATK of Fighter and Powerhouse characters by 5.25x, boosts HP of Fighter and Powerhouse characters by 1.4x, boosts base HP of [Child] and [Paramythia-type] characters by 1,500, makes [QCK] and [RCV] orbs beneficial for Fighter and Powerhouse characters, protects from defeat as long as HP is above 60%, and launches the following effect at start of quest: reduces any damage received above 10,000 HP by 65% for 10 turns.",
+        special: "Deals 290x character's ATK in Typeless Fixed True damage to one enemy, and reduces enemies' Threshold Damage Reduction duration by 7 turns. If your crew has ATK Up and Chain Lock when the special is activated, boosts Base ATK of [STR], Free Spirit and Powerhouse characters by 1,750 for 2 turns. If your crew has ATK Up when the special is activated, sets Chain Boundaries to 3.25x and 30.0x for 2 turns; boosts ATK of [STR], Free Spirit and Powerhouse characters by 3.25x for 2 turn otherwise. If your crew has Jewelry Bonney as a member or supporting this character, reduces damage received from [INT] enemies by 100% for 2 turns, and boosts Final Tap ATK of all characters by 50%. If your crew has 3+ [Worst Generation], [Revolutionary Army] or [Paramythia-type] characters, increases duration of any ATK Up, Base ATK Boost and Chain Lock buffs by 1 turn, including effects activated in the same ability.",
+        specialName: "Science-Defying Strike",
+        sailor: {
+            base: "Boosts base HP of Free Spirit and Powerhouse characters by 1.1x.",
+            level1: "This character cannot be Blown Away. If this character has a [RCV] orb and you attack with this character, increases boost effects of Color Affinity buffs by +0.2x."
+        },
+        superSpecialCriteria: "Can be launched as crewmate. Your crew must consist of any 1 of the following, excluding supports and counting only 1 per unit: Jewelry Bonney, Dr. Vegapunk (Stella), Dr. Vegapunk \"Shaka the Good\", Dr. Vegapunk \"Lilith the Evil\", Dr. Vegapunk \"Edison the Thinker\", Dr. Vegapunk \"Pythagoras the Wise\", Dr. Vegapunk \"Atlas the Violent\", Sentomaru",
+        superSpecial: "Changes the orb of this character into a [RCV] orb, increases boost effects of enemies' Increase Damage Taken debuffs by +0.5x, ignores debuff protection and inflicts all enemies with Increase Damage Taken by 1.5x for 1 turn, and transforms Free Spirit character into Super Free Spirit characters.",
+        support: [
+            {
+                Characters: "Jewelry Bonney",
+                description: [
+                    "Once per adventure, when the supported character uses their special, increases boost effects of enemies' Increase Damage Taken debuffs by +0.1x.",
+                    "Once per adventure, when the supported character uses their special, increases boost effects of enemies' Increase Damage Taken debuffs by +0.15x.",
+                    "Once per adventure, when the supported character uses their special, increases boost effects of enemies' Increase Damage Taken debuffs by +0.25x.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Threshold Damage Reduction duration by 1 turn, and increases boost effects of enemies' Increase Damage Taken debuffs by +0.25x.",
+                    "Once per adventure, when the supported character uses their special, reduces enemies' Threshold Damage Reduction duration by 2 turns, and increases boost effects of enemies' Increase Damage Taken debuffs by +0.25x."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Acquire Potential 1: No Healing" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base ATK by 10" },
+            { description: "Boosts base HP by 30" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Acquire Potential 2: Enrage/Increase Damage Taken" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 60" },
+            { description: "Acquire Sailor Ability 2: Character cannot be blown away by attack, and tapping on this character with a [RCV] slot will further increase crew's type effect boosts by +0.2" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Boosts base HP by 80" },
+            { description: "Boosts base RCV by 40" },
+            { description: "Boosts base HP by 80" },
+            { description: "Acquire Potential 3: Super Tandem Boost" },
+            { description: "LOCKED WITH KEY" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Boosts base HP by 150" },
+            { description: "Boosts base ATK by 50" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Boosts base HP by 200" },
+            { description: "Boosts base ATK by 100" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+        ],
+        potential: [
+            {
+                Name: "No Healing",
+                description: [
+                    "Reduces No Healing duration by 1 turn",
+                    "Reduces No Healing duration by 2 turns",
+                    "Reduces No Healing duration by 3 turns",
+                    "Reduces No Healing duration by 4 turns",
+                    "Reduces No Healing duration by 5 turns"
+                ]
+            },
+            {
+                Name: "Enrage/Increase Damage Taken",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 225 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns",
+                    "Boosts base ATK by 300 the turn after taking damage and reduces Increase Damage Taken duration by 3 turns"
+                ]
+            },
+            {
+                Name: "Super Tandem Boost",
+                description: [
+                    "Obtain Super Tandem Boost Lv.1",
+                    "Obtain Super Tandem Boost Lv.2",
+                    "Obtain Super Tandem Boost Lv.3",
+                    "Obtain Super Tandem Boost Lv.4",
+                    "Obtain Super Tandem Boost Lv.5"
+                ]
+            }
+        ],
+        superTandemBoost: {
+            characterCondition: [
+                "When a [Worst Generation], [Revolutionary Army] or [Paramythia-type] character performs Super Tandem",
+                "When a [Worst Generation], [Revolutionary Army] or [Paramythia-type] character performs Super Tandem",
+                "When a [Worst Generation], [Revolutionary Army] or [Paramythia-type] character performs Super Tandem",
+                "When a [Worst Generation], [Revolutionary Army] or [Paramythia-type] character performs Super Tandem",
+                "When a [Worst Generation], [Revolutionary Army] or [Paramythia-type] character performs Super Tandem"
+            ],
+            description: [
+                "Raises Boost Level of [Worst Generation], [Revolutionary Army] and [Paramythia-type] characters by 1 for 1 turn.",
+                "Raises Boost Level of [Worst Generation], [Revolutionary Army] and [Paramythia-type] characters by 2 for 1 turn.",
+                "Raises Boost Level of [Worst Generation], [Revolutionary Army] and [Paramythia-type] characters by 3 for 1 turn.",
+                "Raises Boost Level of [Worst Generation], [Revolutionary Army] and [Paramythia-type] characters by 4 for 1 turn.",
+                "Raises Boost Level of [Worst Generation], [Revolutionary Army] and [Paramythia-type] characters by 5 for 1 turn."
+            ]
+        }
+    },
+    4434: {//Bonney
+        captain: "Boosts ATK of Fighter and Powerhouse characters by 3.75x, boosts HP of [STR] characters by 1.3x, and makes PERFECTs consume [RCV] orbs.",
+        special: "Reduces ATK Down duration by 6 turns, removes Poison duration completely, reduces damage received by 95% for 1 turn, changes orbs, including [BLOCK] orbs, of right column characters into [TND] orbs, changes orbs, including [BLOCK] orbs, of left column characters into [RCV] orbs, and boosts the Color Affinity of Fighter and Powerhouse characters by 2.25x for 1 turn. If your crew has 2+ turns of Damage Nullification when the special is activated, decreases duration of any Damage Nullification buffs by 2 turns, and inflicts all enemies with Weaken by 1.4x, by 1.68x if enemies are inflicted with Increase Damage Taken, for 1 turn. If your crew has 3+ turns of Threshold Damage Reduction or Crew Damage Reduction to ATK when the special is activated, increases boost effects of Chain Multiplication buffs and enemies' Increase Damage Taken debuffs applied by +0.5x, and inflicts all enemies with Increase Damage Taken by 1.75x for 1 turn.",
+        specialName: "Tears for Her Kind Father",
+        sailor: {
+            base: "Boosts base ATK, HP and RCV of Fighter and Powerhouse characters by 70.",
+            level1: "Makes [RCV] and [TND] orbs beneficial for Fighter and Powerhouse characters."
+        },
+        support: [
+            {
+                Characters: "Bartholomew Kuma",
+                description: [
+                    "Once per adventure, when an enemy inflicts you with ATK Down, reduces enemies' Powerhouse Resistance by -3% for 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with ATK Down, reduces enemies' Powerhouse Resistance by -4% for 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with ATK Down, reduces enemies' Powerhouse Resistance by -5% for 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with ATK Down, reduces ATK Down duration by 1 turn, and reduces enemies' Powerhouse Resistance by -5% for 1 turn.",
+                    "Once per adventure, when an enemy inflicts you with ATK Down, reduces ATK Down duration by 2 turns, and reduces enemies' Powerhouse Resistance by -5% for 1 turn."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base HP by 60" },
+            { description: "Acquire Potential 1: Pinch Healing" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base RCV by 10" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 80" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire Sailor Ability 2: Makes Fighter and Powerhouse characters' [RCV][TND] slots have matching slot effects" },
+            { description: "Boosts base ATK by 40" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Enrage/Increase Damage Taken" },
+        ],
+        potential: [
+            {
+                Name: "Pinch Healing",
+                description: [
+                    "If HP is below 10% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 20% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 30% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 40% at the start of the turn, recovers 0.5x this character's RCV at the end of the turn for each time you hit a PERFECT with this character",
+                    "If HP is below 50% at the start of the turn, recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT with this character"
+                ]
+            },
+            {
+                Name: "Enrage/Increase Damage Taken",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
+                ]
+            }
+        ]
+    },
+    4435: {//Sanji
+        captain: "Boosts ATK of [QCK] characters by 3.75x, boosts HP of Fighter and Powerhouse characters by 1.3x, and makes PERFECTs consume [RCV] orbs.",
+        special: "Reduces enemies' Barrier duration by 1 turn, reduces enemies' Increased Defense duration by 6 turns, deals 80x character's ATK in [QCK] damage to one enemy, and adds 1.1x to chain multiplier for 1 turn. If your crew has 3+ [Straw Hat Pirates] or [Child] characters, reduces Special Cooldown of bottom row characters by 2 turns, and boosts Crew Damage Reduction to ATK of [STR] and [QCK] characters by 1x-2x, proportional to the strength of crew's Percent Damage Reduction buff, for 1 turn. If HP is below 30% when the special is activated, changes [BLOCK] orbs into [RCV] orbs, and increases boost effects of Chain Addition buffs by +0.4x, including effects activated in the same ability.",
+        specialName: "Repelling the Laws of Physics",
+        sailor: {
+            base: "Boosts base ATK, HP and RCV of [QCK] characters by 70.",
+            level1: "Makes [PSY] and [RCV] orbs beneficial for [QCK] characters."
+        },
+        support: [
+            {
+                Characters: "[QCK] characters",
+                description: [
+                    "Adds 2% of this character's base HP to the supported character's base HP.",
+                    "Adds 4% of this character's base HP to the supported character's base HP.",
+                    "Adds 6% of this character's base HP to the supported character's base HP.",
+                    "Adds 8% of this character's base HP to the supported character's base HP.",
+                    "Adds 10% of this character's base HP to the supported character's base HP."
+                ]
+            }
+        ],
+        limit: [
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 40" },
+            { description: "Boosts base RCV by 20" },
+            { description: "Acquire Potential 1: Nutrition/Hunger" },
+            { description: "Boosts base HP by 50" },
+            { description: "Boosts base ATK by 20" },
+            { description: "Boosts base HP by 50" },
+            { description: "Acquire 1 additional Socket slot" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Boosts base HP by 60" },
+            { description: "Boosts base RCV by 30" },
+            { description: "Acquire Sailor Ability 2: Makes [QCK] characters' [PSY][RCV] slots have matching slot effects" },
+            { description: "Boosts base ATK by 30" },
+            { description: "Reduce base Special Cooldown by 1 turn" },
+            { description: "Acquire Potential 2: Enrage/Increase Damage Taken" },
+        ],
+        potential: [
+            {
+                Name: "Nutrition/Hunger",
+                description: [
+                    "Boosts base ATK by 50 the turn after recovering 3000, HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 75 the turn after recovering 3000, HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 100 the turn after recovering 3000, HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 125 the turn after recovering 3000, HP and reduces Hunger stack by 1 stack",
+                    "Boosts base ATK by 150 the turn after recovering 3000, HP and reduces Hunger stack by 2 stacks"
+                ]
+            },
+            {
+                Name: "Enrage/Increase Damage Taken",
+                description: [
+                    "Boosts base ATK by 75 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 100 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 125 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 150 the turn after taking damage and reduces Increase Damage Taken duration by 1 turn",
+                    "Boosts base ATK by 200 the turn after taking damage and reduces Increase Damage Taken duration by 2 turns"
                 ]
             }
         ]
