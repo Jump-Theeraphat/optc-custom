@@ -76,6 +76,7 @@ const STUN = 'stun';
 const TAP_LIMIT = 'tap-limit';
 const TARGET_LOCK = 'target-lock';
 const TERRITORY = 'Territory';
+const TYPE_CHANGE = 'type-change';
 
 var tm_opponents = {
     // ========== Mihawk ==========
@@ -24280,6 +24281,324 @@ var tm_opponents = {
                                 { type: INTIM, turn: 3, detail: 'Atk Boost/Slot Boost, -2' },
                                 { type: RESIL, turn: 6 },
                                 { type: TERRITORY, turn: 3 },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Kizaru ==========
+    4430: {
+        4356: {
+            name: 'Mk. III',
+            type: 'PSY',
+            pos: 0,
+            rec: [3903, 4414],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Mk. III', 'PSY'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: BAR_SLOT, turn: 2, detail: '1x WANO' },
+                                { type: IMMU_EXCEPT, turn: 99, detail: 'Delay / Def Down' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4382: {
+            name: 'Bluegrass',
+            type: 'STR',
+            pos: 1,
+            rec: [4427, 4428],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Cerebral/Free Spirit/Fighter' },
+                                { type: VS_RED, turn: 5, detail: 'Cerebral/Free Spirit/Fighter' },
+                                { type: SW_RED, turn: 5, detail: 'Cerebral/Free Spirit/Fighter' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Bluegrass', 'STR'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '60%' },
+                                { type: CD_REW, turn: 2 },
+                                { type: NAO, turn: 99 },
+                                { type: BURN_P, turn: 6, detail: '20000' },
+                                { type: BAR_SLOT, turn: 3, detail: '2x TND' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4383: {
+            name: 'Doll',
+            type: 'QCK',
+            pos: 2,
+            rec: [4417, 4424],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: VS_RED, turn: 5, detail: 'STR/DEX/QCK' },
+                                { type: SW_RED, turn: 5, detail: 'STR/DEX/QCK' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Doll', 'QCK'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    weakness: 'Shooter',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 7, detail: 'Row 2 3' },
+                                { type: CD_REW, turn: 1, detail: 'Row 3, Mid-Left' },
+                                { type: NAO, turn: 99 },
+                                { type: BLOW_AWAY, turn: 2, detail: 'Mid-Right, Top-Left' },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4170: {
+            name: 'Lucci',
+            type: 'INT',
+            pos: 3,
+            rec: [4426, 4429],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Powerhouse/Slasher/Shooter' },
+                                { type: VS_RED, turn: 5, detail: 'Powerhouse/Slasher/Shooter' },
+                                { type: SW_RED, turn: 5, detail: 'Powerhouse/Slasher/Shooter' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lucci', 'INT'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    weakness: 'Slasher',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: SILENCE, turn: 2, detail: 'Row 2 3' },
+                                { type: RESIL, turn: 6 },
+                                { type: DEF, turn: 4 },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Preemp (If HP>60%)',
+                            action: [
+                                { type: SILENCE, turn: 2 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4380: {
+            name: 'St. Saturn',
+            type: 'DEX',
+            pos: 4,
+            rec: [4432, 4433, 4434],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['St. Saturn', '?'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '30%' },
+                                { type: SP_BIND, turn: 7 },
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 2, detail: '<=2.75' },
+                                { type: NAO, turn: 2 },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['St. Saturn', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK, detail: 'Col R' },
+                                { type: SLOT_POISON, detail: 'Col L' },
+                                { type: SLOT_NEG, turn: 3, detail: 'Type' },
+                                { type: POISON, turn: 99 },
+                                { type: DEF_THRES, turn: 7 },
+                                { type: DMG_NORMAL, detail: '30000' },
+                                { type: BAR_SLOT, turn: 5, detail: '4x RAINBOW' },
+                                { type: SLOT_ATK_DOWN, turn: 5, detail: 'All' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '120000' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Damage (once)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '80000' },
+                                { type: NAO, turn: 99 },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: TYPE_CHANGE, detail: 'DEX' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4430: {
+            name: 'Kizaru',
+            type: 'STR',
+            pos: 5,
+            rec: [4425, 4432, 4435],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Cerebral/Powerhouse' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Kizaru', '?'],
+                    hp_: 1500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_CHANGE, detail: 'BOMB' },
+                                { type: CD_REW, turn: 3 },
+                                { type: PARA, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: SLOT_LOCK, turn: 1 },
+                                { type: DESP, turn: 9 },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: CD_REW, turn: 3, detail: 'Row 1' },
+                                { type: CD_LOCK, detail: 'Row 1, 1x GOOD' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kizaru', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: TERRITORY, turn: 3 },
+                                { type: DEF_NULL, turn: 2 },
+                                { type: BAR_HIT, turn: 1, detail: '30x' },
+                                { type: DEF, turn: 6 },
+                                { type: SP_BIND, turn: 7 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 3, detail: '<=3.5' },
+                                { type: NAO, turn: 99 },
                                 { type: IMMU_DELAY, turn: 99 }
                             ]
                         }
