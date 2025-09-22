@@ -24434,7 +24434,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Lucci', 'INT'],
-                    hp_: 2500000,
+                    hp: 2500000,
                     atk_: 6000,
                     weakness: 'Slasher',
                     detail: [
@@ -24479,8 +24479,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['St. Saturn', '?'],
-                    hp_: 2000000,
+                    boss: ['St. Saturn', 'DEX'],
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -24557,8 +24557,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Kizaru', '?'],
-                    hp_: 1500000,
+                    boss: ['Kizaru', 'STR'],
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
