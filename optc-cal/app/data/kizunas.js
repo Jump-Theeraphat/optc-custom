@@ -246,4 +246,8 @@ var kizunas = {
         name: 'Kizaru v2 6+ (~ 6am)',
         xch_id: 4417
     },
+    4439: {
+        name: 'Nami & Usopp 6+ (~ 6am)',
+        xch_id: 4371
+    },
 };
