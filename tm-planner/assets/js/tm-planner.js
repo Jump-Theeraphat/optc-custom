@@ -872,7 +872,11 @@ function populateBoosters(boosters) {
 
         _x_pts += 'x';
 
-        if (b.x_pts == 1.4 && b.ver)
+        if (b.x_pts == 2.2 && b.ver)
+            _x_pts += '_v' + b.ver;
+        else if (b.x_pts == 1.8 && b.ver)
+            _x_pts += '_v' + b.ver;
+        else if (b.x_pts == 1.4 && b.ver)
             _x_pts += '_v' + b.ver;
         else if (b.x_pts == 1.35 && b.ver)
             _x_pts += '_v' + b.ver;
