@@ -24290,7 +24290,7 @@ var tm_opponents = {
         }
     },
 
-    // ========== Kizaru ==========
+    // ========== Kizaru (Egghead) ==========
     4430: {
         4356: {
             name: 'Mk. III',
@@ -24600,6 +24600,326 @@ var tm_opponents = {
                                 { type: CHAIN_ATK_DOWN_MIN, turn: 3, detail: '<=3.5' },
                                 { type: NAO, turn: 99 },
                                 { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Luffy (Egghead) ==========
+    4448: {
+        4284: {
+            name: 'Mk. III',
+            type: 'INT',
+            pos: 0,
+            rec: [4444],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'All' },
+                                { type: VS_RED, turn: 5, detail: 'All' },
+                                { type: SW_RED, turn: 5, detail: 'All' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Mk. III', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6000,
+                    weakness: 'Fighter',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: DEF_PERC, turn: 6 },
+                                { type: BAR_SLOT, turn: 3, detail: '2x RCV' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4428: {
+            name: 'Atlas',
+            type: 'INT',
+            pos: 1,
+            rec: [4430],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Fighter/Slasher/Free Spirit' },
+                                { type: VS_RED, turn: 5, detail: 'Fighter/Slasher/Free Spirit' },
+                                { type: SW_RED, turn: 5, detail: 'Fighter/Slasher/Free Spirit' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Atlas', 'INT'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    weakness: 'Slasher',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 6, detail: '<=2.75' },
+                                { type: NAO, turn: 99 },
+                                { type: RESIL, turn: 6 },
+                                { type: INTIM, turn: 2, detail: 'Chain x/Chain +/Set Chain, -2' },
+                                { type: IMMU_DELAY, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4435: {
+            name: 'Sanji',
+            type: 'DEX',
+            pos: 2,
+            rec: [4439, 4447],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: VS_RED, turn: 5, detail: 'STR/QCK/PSY' },
+                                { type: SW_RED, turn: 5, detail: 'STR/QCK/PSY' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sanji', 'DEX'],
+                    hp_: 1500000,
+                    atk_: 6000,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SP_BIND, turn: 15, detail: 'Row 2' },
+                                { type: SLOT_PARA },
+                                { type: DESP, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4425: {
+            name: 'Franky',
+            type: 'QCK',
+            pos: 3,
+            rec: [4441, 4445, 4446],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: VS_RED, turn: 5, detail: 'DEX/QCK/INT' },
+                                { type: SW_RED, turn: 5, detail: 'DEX/QCK/INT' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Franky', 'QCK'],
+                    hp_: 2500000,
+                    atk_: 6000,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_REW, turn: 1 },
+                                { type: STUN, detail: 'Row 2' },
+                                { type: ATK_DOWN, turn: 6 },
+                                { type: NAO, turn: 99 },
+                                { type: PARA, turn: 7, detail: 'Row 1 3' },
+                                { type: TERRITORY, turn: 1 },
+                                { type: IMMU_DEF, turn: 99 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4381: {
+            name: 'Bonney',
+            type: 'DEX',
+            pos: 4,
+            rec: [4453, 4455, 4443],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Driven/Slasher/Cerebral' },
+                                { type: VS_RED, turn: 5, detail: 'Driven/Slasher/Cerebral' },
+                                { type: SW_RED, turn: 5, detail: 'Driven/Slasher/Cerebral' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Bonney', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 1, detail: '<=2.5' },
+                                { type: CHAIN_LOCK, turn: 7 },
+                                { type: NAO, turn: 99 },
+                                { type: DEF, turn: 7 },
+                                { type: BAR_GD, turn: 2, detail: '3x' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: NAO, turn: 99 },
+                                { type: CLEAR_BUFF }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Bonney', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: SLOT_BLOCK },
+                                { type: CHAIN_DOWN, turn: 8 },
+                                { type: CHAIN_ATK_DOWN_MIN, turn: 3, detail: '<=2.75' },
+                                { type: SP_LIMIT, turn: 1, detail: '2x' },
+                                { type: BAR_SLOT, turn: 1, detail: '2x RAINBOW' },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Chain Boost (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff & Values' },
+                                { type: SLOT_ATK_DOWN, turn: 2, detail: 'All, 50%' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        4448: {
+            name: 'Luffy',
+            type: 'STR',
+            pos: 5,
+            rec: [4451, 4454, 4441],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: CD_RED, turn: 5, detail: 'Driven/Powerhouse/Striker' },
+                                { type: VS_RED, turn: 5, detail: 'Driven/Powerhouse/Striker' },
+                                { type: SW_RED, turn: 5, detail: 'Driven/Powerhouse/Striker' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: HP_CUT, detail: '70%' },
+                                { type: CD_REW, turn: 2 },
+                                { type: BIND, turn: 10, detail: 'Col R' },
+                                { type: SLOT_CHANGE, detail: 'Bad' },
+                                { type: SLOT_NEG, turn: 5, detail: 'Type' },
+                                { type: NAO, turn: 99 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '120000' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: [
+                                { type: BIND, turn: 11, detail: 'Col L' },
+                                { type: BURN_P, turn: 6, detail: '20000' },
+                                { type: NAO, turn: 99 },
+                                { type: TERRITORY, turn: 3 },
+                                { type: DEF_THRES, turn: 10 },
+                                { type: IMMU_ALL, turn: 99 }
+                            ]
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: [
+                                { type: DMG_NORMAL, detail: '150000' }
+                            ]
+                        },
+                        {
+                            type: 'Interrupt - Dmg Reduction / Threshold Dmg Reduction (once)',
+                            action: [
+                                { type: CLEAR_BUFF, detail: 'Buff & Values' },
+                                { type: BLOW_AWAY, turn: 3, detail: 'Random Row 1' },
+                                { type: DEF_NULL, turn: 2 }
                             ]
                         }
                     ]
