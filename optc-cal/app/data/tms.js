@@ -312,4 +312,7 @@ var tms = {
     4430: {
         name: 'Kizaru (Egghead) (1am ~ 6am)'
     },
+    4448: {
+        name: 'Luffy (Egghead) (1am ~ 6am)'
+    },
 };
