@@ -1851,6 +1851,8 @@ function createCloneInSlot(orig, slot, isAmbush, isAmbushClone) {
         top: 0,
         left: 0
     }).prependTo(slot);
+
+    return clone;
 }
 
 function mirrorToFriendCap(teamDiv, cap, autoFill, isAmbush) {
@@ -1882,10 +1884,24 @@ function swapHandler(swapped, dest) {
 
         // Remove swapped support if not the same team
         removeSupport(to_list.attr("id").slice(-2));
+
+        // Remove Recommended Unit check
+        swapped.find('img').closest('div').find('.rec-unit-overlay').remove();
     }
 
     swapped.data('team', assignedTeam);
     swapped.addClass('assigned');
+
+    // Add Recommended Unit check if so
+    var opId = dest.closest('.team').data('op_id');
+    var opGuide = tm_opponents[tmId][opId];
+    if (opGuide) {
+        var recUnitList = opGuide.rec;
+        if (recUnitList && recUnitList.includes(Number(swapped.data('id'))))
+            swapped.find('img').closest('div').append(createRecUnitCheckHtml(15));
+        else
+            swapped.find('img').closest('div').find('.rec-unit-overlay').remove();
+    }
 
     // Mirror to Friend Cap slot if it is empty
     if (dest.data('slot') == 1)
@@ -2309,11 +2325,22 @@ function doLoad(tmId) {
                                 var teamSlot = $('#team-slot-' + teamNum + i);
 
                                 if (isClone) {
-                                    if (b.length != 0) // is Booster
-                                        createCloneInSlot(b, teamSlot, false);
-                                    else { // Non-Booster
+                                    if (b.length != 0) { // is Booster
+                                        var clone = createCloneInSlot(b, teamSlot, false);
+
+                                        // Add Recommended Unit check if so
+                                        var opGuide = tm_opponents[tmId][opId];
+                                        if (opGuide) {
+                                            var recUnitList = opGuide.rec;
+                                            if (recUnitList && recUnitList.includes(Number(clone.data('id'))))
+                                                clone.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                                            else
+                                                clone.find('img').closest('div').find('.rec-unit-overlay').remove();
+                                        }
+                                    } else { // Non-Booster
                                         imgDiv = getNonBoosterImg(unitId, teamSlot.closest('.team').data('team'));
                                         teamSlot.append(imgDiv);
+
                                         // Mirror to Friend Cap slot if it is empty
                                         if (teamSlot.data("slot") == 1)
                                             mirrorToFriendCap(teamSlot.closest('.team'), imgDiv, true);
@@ -2325,11 +2352,21 @@ function doLoad(tmId) {
                                         top: 0,
                                         left: 0
                                     }).prependTo(teamSlot);
-                                }
 
-                                // Mirror to Friend Cap slot if it is empty
-                                if (i == 1)
-                                    mirrorToFriendCap(teamSlot.closest('.team'), b, true);
+                                    // Add Recommended Unit check if so
+                                    var opGuide = tm_opponents[tmId][opId];
+                                    if (opGuide) {
+                                        var recUnitList = opGuide.rec;
+                                        if (recUnitList && recUnitList.includes(Number(b.data('id'))))
+                                            b.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                                        else
+                                            b.find('img').closest('div').find('.rec-unit-overlay').remove();
+                                    }
+
+                                    // Mirror to Friend Cap slot if it is empty
+                                    if (i == 1)
+                                        mirrorToFriendCap(teamSlot.closest('.team'), b, true);
+                                }
                             }
                         }
                     } else {
@@ -2345,11 +2382,22 @@ function doLoad(tmId) {
                                 var b = $('#booster_' + unitId);
                                 var teamSlot = $('#team-slot-' + teamNum + i);
 
-                                if (b.length != 0) // is Booster
-                                    createCloneInSlot(b, teamSlot, true);
-                                else { // Non-Booster
+                                if (b.length != 0) { // is Booster
+                                    var clone = createCloneInSlot(b, teamSlot, true);
+
+                                    // Add Recommended Unit check if so
+                                    var opGuide = tm_opponents[tmId][opId];
+                                    if (opGuide) {
+                                        var recUnitList = opGuide.rec;
+                                        if (recUnitList && recUnitList.includes(Number(clone.data('id'))))
+                                            clone.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                                        else
+                                            clone.find('img').closest('div').find('.rec-unit-overlay').remove();
+                                    }
+                                } else { // Non-Booster
                                     imgDiv = getNonBoosterImg(unitId, teamSlot.closest('.team').data('team'));
                                     teamSlot.append(imgDiv);
+
                                     // Mirror to Friend Cap slot if it is empty
                                     if (teamSlot.data("slot") == 1)
                                         mirrorToFriendCap(teamSlot.closest('.team'), imgDiv, true);
@@ -3542,9 +3590,19 @@ $(document).ready(function () {
                                     var teamSlot = $('#team-slot-' + teamNum + i);
 
                                     if (isClone) {
-                                        if (b.length != 0) // is Booster
-                                            createCloneInSlot(b, teamSlot, false);
-                                        else { // Non-Booster
+                                        if (b.length != 0) { // is Booster
+                                            var clone = createCloneInSlot(b, teamSlot, false);
+
+                                            // Add Recommended Unit check if so
+                                            var opGuide = tm_opponents[tmId][opId];
+                                            if (opGuide) {
+                                                var recUnitList = opGuide.rec;
+                                                if (recUnitList && recUnitList.includes(Number(clone.data('id'))))
+                                                    clone.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                                                else
+                                                    clone.find('img').closest('div').find('.rec-unit-overlay').remove();
+                                            }
+                                        } else { // Non-Booster
                                             imgDiv = getNonBoosterImg(unitId, teamSlot.closest('.team').data('team'));
                                             teamSlot.append(imgDiv);
 
@@ -3558,11 +3616,21 @@ $(document).ready(function () {
                                             top: 0,
                                             left: 0
                                         }).prependTo(teamSlot);
-                                    }
 
-                                    // Mirror to Friend Cap slot if it is empty
-                                    if (i == 1)
-                                        mirrorToFriendCap(teamSlot.closest('.team'), b, true);
+                                        // Add Recommended Unit check if so
+                                        var opGuide = tm_opponents[tmId][opId];
+                                        if (opGuide) {
+                                            var recUnitList = opGuide.rec;
+                                            if (recUnitList && recUnitList.includes(Number(b.data('id'))))
+                                                b.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                                            else
+                                                b.find('img').closest('div').find('.rec-unit-overlay').remove();
+                                        }
+
+                                        // Mirror to Friend Cap slot if it is empty
+                                        if (i == 1)
+                                            mirrorToFriendCap(teamSlot.closest('.team'), b, true);
+                                    }
                                 }
                             }
                         } else {
@@ -3578,11 +3646,22 @@ $(document).ready(function () {
                                     var b = $('#booster_' + unitId);
                                     var teamSlot = $('#team-slot-' + teamNum + i);
 
-                                    if (b.length != 0) // is Booster
-                                        createCloneInSlot(b, teamSlot, true);
-                                    else { // Non-Booster
+                                    if (b.length != 0) { // is Booster
+                                        var clone = createCloneInSlot(b, teamSlot, true);
+
+                                        // Add Recommended Unit check if so
+                                        var opGuide = tm_opponents[tmId][opId];
+                                        if (opGuide) {
+                                            var recUnitList = opGuide.rec;
+                                            if (recUnitList && recUnitList.includes(Number(clone.data('id'))))
+                                                clone.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                                            else
+                                                clone.find('img').closest('div').find('.rec-unit-overlay').remove();
+                                        }
+                                    } else { // Non-Booster
                                         imgDiv = getNonBoosterImg(unitId, teamSlot.closest('.team').data('team'));
                                         teamSlot.append(imgDiv);
+
                                         // Mirror to Friend Cap slot if it is empty
                                         if (teamSlot.data("slot") == 1)
                                             mirrorToFriendCap(teamSlot.closest('.team'), imgDiv, true);
@@ -3795,6 +3874,7 @@ $(document).ready(function () {
         if ($(this).hasClass('is-clone')) {
             mirrorToFriendCap(srcDiv.closest('.team'), b, false);
         } else {
+            var clone;
             if (src == 'dont-have') {
                 b.data('team', -1);
                 b.addClass('assigned-dh');
@@ -3806,6 +3886,7 @@ $(document).ready(function () {
             } else {
                 b.data('team', srcDiv.closest('.team').data('team'));
                 removeSupport(srcDiv.attr("id").slice(-2));
+
                 if (srcDiv.closest('.team').attr('id') != 'ambush-team') {
                     b.addClass('assigned');
                     if (srcDiv.find('.booster, .booster-clone').length > 0)
@@ -3816,7 +3897,21 @@ $(document).ready(function () {
                         left: 0
                     }).prependTo(srcDiv);
                 } else
-                    createCloneInSlot(b, srcDiv, true);
+                    clone = createCloneInSlot(b, srcDiv, true);
+            }
+
+            if (clone)
+                b = clone;
+
+            // Add Recommended Unit check if so
+            var opId = to_list.closest('.team').data('op_id');
+            var opGuide = tm_opponents[tmId][opId];
+            if (opGuide) {
+                var recUnitList = opGuide.rec;
+                if (recUnitList && recUnitList.includes(Number(b.data('id'))))
+                    b.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                else
+                    b.find('img').closest('div').find('.rec-unit-overlay').remove();
             }
 
             // Mirror to Friend Cap slot if it is empty
@@ -5001,6 +5096,7 @@ $(document).ready(function () {
                 if (evt.to.id.charAt(11) == '0')
                     $(".booster-ambush-fc").remove();
 
+                var clone;
                 if (item.hasClass('booster-clone')) {
                     to_list.find(".booster-clone").each(function () {
                         if ($(this).attr("id") != item.attr("id"))
@@ -5013,10 +5109,24 @@ $(document).ready(function () {
                     } else // Swap support inside Ambush team
                         swapSupport();
                 } else {
-                    createCloneInSlot(item, to_list, true);
+                    clone = createCloneInSlot(item, to_list, true);
 
                     // Reset current support
                     removeSupport(to_list.attr("id").slice(-2));
+                }
+
+                if (clone)
+                    item = clone;
+
+                // Add Recommended Unit check if so
+                var opId = to_list.closest('.team').data('op_id');
+                var opGuide = tm_opponents[tmId][opId];
+                if (opGuide) {
+                    var recUnitList = opGuide.rec;
+                    if (recUnitList && recUnitList.includes(Number(item.data('id'))))
+                        item.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                    else
+                        item.find('img').closest('div').find('.rec-unit-overlay').remove();
                 }
 
                 // Mirror to Friend Cap slot if it is empty
@@ -5243,11 +5353,22 @@ $(document).ready(function () {
                 removeSupport(from_list.attr("id").slice(-2));
 
             if (teamSlotDiv.hasClass("ambush-team-slot")) {
-                createCloneInSlot(b, teamSlotDiv, true);
+                var clone = createCloneInSlot(b, teamSlotDiv, true);
+
+                // Add Recommended Unit check if so
+                var opId = to_list.closest('.team').data('op_id');
+                var opGuide = tm_opponents[tmId][opId];
+                if (opGuide) {
+                    var recUnitList = opGuide.rec;
+                    if (recUnitList && recUnitList.includes(Number(clone.data('id'))))
+                        clone.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                    else
+                        clone.find('img').closest('div').find('.rec-unit-overlay').remove();
+                }
 
                 // Mirror to Friend Cap slot if it is empty
                 if (teamSlotDiv.data("slot") == 1)
-                    mirrorToFriendCap(teamSlotDiv.closest('.team'), b, true, true);
+                    mirrorToFriendCap(teamSlotDiv.closest('.team'), clone, true, true);
             } else {
                 $('#booster-clone_' + unitId + '_clone').remove();
                 b.addClass('assigned');
@@ -5257,6 +5378,17 @@ $(document).ready(function () {
                     top: 0,
                     left: 0
                 }).prependTo(teamSlotDiv);
+
+                // Add Recommended Unit check if so
+                var opId = to_list.closest('.team').data('op_id');
+                var opGuide = tm_opponents[tmId][opId];
+                if (opGuide) {
+                    var recUnitList = opGuide.rec;
+                    if (recUnitList && recUnitList.includes(Number(b.data('id'))))
+                        b.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                    else
+                        b.find('img').closest('div').find('.rec-unit-overlay').remove();
+                }
 
                 // Mirror to Friend Cap slot if it is empty
                 if (teamSlotDiv.data("slot") == 1)
