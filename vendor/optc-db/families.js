@@ -264,7 +264,7 @@ const SaberCoporalNavy = [ "Saber Coporal Navy" ];
 const BazookaCoporalNavy = [ "Bazooka Coporal Navy" ];
 const KnuckleCoporalNavy = [ "Knuckle Coporal Navy" ];
 const Oimo = [ "Oimo" ];
-const Kashi = [ "Kashi" ];
+const Kashii = [ "Kashii" ];
 const WatchdogUnitOfTheLaw = [ "Watchdog Unit of the Law" ];
 const JustJuryman = [ "Just Juryman" ];
 const ThreeHeadedBaskerville = [ "Three-Headed Baskerville" ];
@@ -729,6 +729,15 @@ const Gyogyo = [ "Gyogyo" ];
 const Totts = [ "Totts" ];
 const Pert = [ "Pert" ];
 const Potato = [ "Potato" ];
+const ShepherdJuPeter = [ "Saint Shepherd Ju Peter" ];
+const EthanbaronVNusjuro = [ "Saint Ethanbaron V. Nusjuro" ];
+const Hound = [ "Hound" ];
+const Urban = [ "Urban" ];
+const Pomsky = [ "Pomsky" ];
+const TopmanWarcury = [ "Saint Topman Warcury" ];
+const MarcusMars = [ "Saint Marcus Mars" ];
+const Tosa = [ "Tosa" ];
+const Guillotine = [ "Guillotine" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -1364,7 +1373,7 @@ window.families = {
     699: [ ...BazookaCoporalNavy ],
     700: [ ...KnuckleCoporalNavy ],
     701: [ ...Oimo ],
-    702: [ ...Kashi ],
+    702: [ ...Kashii ],
     703: [ ...WatchdogUnitOfTheLaw ],
     704: [ ...JustJuryman ],
     705: [ ...ThreeHeadedBaskerville ],
@@ -5052,6 +5061,26 @@ window.families = {
     4433: [ ...BartholomewKuma ],
     4434: [ ...JewelryBonney ],
     4435: [ ...VinsmokeSanji ],
+    4436: [ ...Dorry, ...Broggy ],
+    4437: [ ...Kashii ],
+    4438: [ ...Oimo ],
+    4439: [ ...Nami, ...Usopp ],
+    4440: [ ...ShepherdJuPeter ],
+    4441: [ ...ShepherdJuPeter ],
+    4442: [ ...EthanbaronVNusjuro ],
+    4443: [ ...EthanbaronVNusjuro ],
+    4444: [ ...Hound ],
+    4445: [ ...Urban ],
+    4446: [ ...Pomsky ],
+    4447: [ ...MonkeyDLuffy ],
+    4448: [ ...MonkeyDLuffy ],
+    4449: [ ...SSnake ],
+    4450: [ ...TopmanWarcury ],
+    4451: [ ...TopmanWarcury ],
+    4452: [ ...MarcusMars ],
+    4453: [ ...MarcusMars ],
+    4454: [ ...Tosa ],
+    4455: [ ...Guillotine ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
@@ -5758,6 +5787,13 @@ const ghostFamilies = {
     686: [ ...DraculeMihawk, ...Perona ],
     687: [ ...DraculeMihawk, ...Perona ],
     688: [ ...DraculeMihawk, ...Perona ],
+    689: [ ...Dorry, ...Broggy ],
+    690: [ ...Dorry, ...Broggy ],
+    691: [ ...Dorry, ...Broggy ],
+    692: [ ...Nami, ...Usopp ],
+    693: [ ...Nami, ...Usopp ],
+    694: [ ...Nami, ...Usopp ],
+    695: [ ...Nami, ...Usopp ],
 }
 
 Object.keys(ghostFamilies).forEach(function (key) {
