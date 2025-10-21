@@ -24671,7 +24671,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Atlas', 'INT'],
-                    hp_: 1500000,
+                    hp: 1500000,
                     atk_: 6000,
                     weakness: 'Slasher',
                     detail: [
@@ -24792,8 +24792,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Bonney', 'DEX'],
-                    hp_: 2000000,
+                    boss: ['Bonney', 'INT'],
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -24866,7 +24866,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', 'STR'],
+                    boss: ['Vegapunk', 'STR'],
                     hp_: 2500000,
                     atk_: 6600,
                     detail: [
