@@ -250,4 +250,7 @@ var kizunas = {
         name: 'Nami & Usopp 6+ (~ 6am)',
         xch_id: 4371
     },
+    4458: {
+        name: 'Blackbeard v3 6+ (~ 6am)'
+    },
 };
