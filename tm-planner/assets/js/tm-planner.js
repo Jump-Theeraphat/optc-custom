@@ -977,6 +977,7 @@ var from_list = "";
 var to_list = "";
 var tmId = 0;
 function init(tmId, server, isTransfer) {
+    initDragAndDrop();
     clearTeamNotes();
     $('#tm-select').val(tmId + '_' + server);
     $('.tm-select').text($("#tm-select option:selected").text());
@@ -1027,6 +1028,178 @@ function init(tmId, server, isTransfer) {
         $('#bird-luck-div').hide();
 
     return true;
+}
+
+// Set up drag and drop for each team section
+function initDragAndDrop() {
+    for (var i = 0; i < 6; i++) {
+        for (var j = 0; j < 6; j++) {
+            var team = "team-slot-" + i + j;
+            var teamEl = document.getElementById(team);
+
+            if (tmId < 4464 && i < 5) {
+                new Sortable(teamEl, {
+                    group: {
+                        name: 'booster-group',
+                        pull: true,
+                        put: 'booster-group'
+                    },
+                    draggable: ".booster, .non-booster",
+                    animation: 150,
+                    delay: 60, // time in milliseconds to define when the sorting should start
+                    delayOnTouchOnly: true,
+                    resetPositionOnSpill: true, // Reset booster to original position it is spilled
+                    onStart: function (/**Event*/evt) {
+                        var item = $("#" + evt.item.id);
+                        from_list = item.closest('.team-slot, .ambush-team-slot');
+                        item.tooltip('hide');
+                    },
+                    onAdd: function (evt) {
+                        var item = $("#" + evt.item.id);
+
+                        var assigned = item.hasClass("assigned");
+                        to_list = $("#" + evt.to.id);
+                        from_list = $("#" + evt.from.id);
+
+                        if (evt.to.id.charAt(11) == '0')
+                            item.closest('.team').find('.booster-fc').remove();
+
+                        to_list.find('.booster-ambush').remove();
+                        to_list.find('.booster, .non-booster').each(function () {
+                            if ($(this).attr("id") != item.attr("id")) {
+                                if (assigned) {
+                                    from_list.append($(this));
+                                    swapHandler($(this), from_list);
+                                } else {
+                                    if ($(this).hasClass("non-booster"))
+                                        $(this).remove();
+                                    else
+                                        resetPosition($(this));
+                                }
+                            }
+                        });
+
+                        var assignedTeam = to_list.closest('.team').data('team');
+
+                        // Remove corresponding Clone and support if moved to another Team
+                        if (item.data('team') !== -1) {
+                            if (item.data('team') !== assignedTeam) {
+                                $('#booster-clone_' + item.data('id') + '_clone').remove();
+                                removeSupport(from_list.attr("id").slice(-2));
+                            } else if (to_list.data('slot') == 0) {
+                                removeSupport(to_list.attr("id").slice(-2));
+                                removeSupport(from_list.attr("id").slice(-2));
+                            } else {
+                                // Move unit support to current place
+                                swapSupport();
+                            }
+                        }
+
+                        item.data('team', assignedTeam);
+                        item.addClass('assigned');
+
+                        // Add Recommended Unit check if so
+                        var opId = to_list.closest('.team').data('op_id');
+                        var opGuide = tm_opponents[tmId][opId];
+                        if (opGuide) {
+                            var recUnitList = opGuide.rec;
+                            if (recUnitList && recUnitList.includes(Number(item.data('id'))))
+                                item.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                            else
+                                item.find('img').closest('div').find('.rec-unit-overlay').remove();
+                        }
+
+                        // Mirror to Friend Cap slot if it is empty
+                        if (to_list.data('slot') == 1 && !item.hasClass("booster-clone"))
+                            mirrorToFriendCap(to_list.closest('.team'), item, true);
+
+                        updateAllInfo();
+
+                        if (from_list.hasClass('team-slot'))
+                            doTeamBuildCheck(from_list.closest('.team').data('team'));
+
+                        doTeamBuildCheck(to_list.closest('.team').data('team'));
+                    },
+                    onEnd: function (evt) {
+                        updateAllInfo();
+                    }
+                });
+            } else {
+                new Sortable(teamEl, {
+                    group: {
+                        name: 'booster-group',
+                        pull: true,
+                        put: 'booster-group'
+                    },
+                    draggable: ".booster-clone, .non-booster",
+                    animation: 150,
+                    delay: 60, // time in milliseconds to define when the sorting should start
+                    delayOnTouchOnly: true,
+                    resetPositionOnSpill: true, // Reset booster to original position it is spilled
+                    onStart: function (/**Event*/evt) {
+                        var item = $("#" + evt.item.id);
+                        from_list = item.closest('.team-slot, .ambush-team-slot');
+                        item.tooltip('hide');
+                    },
+                    onAdd: function (evt) {
+                        var item = $("#" + evt.item.id);
+                        to_list = $("#" + evt.to.id);
+                        from_list = $("#" + evt.from.id);
+
+                        if (evt.to.id.charAt(11) == '0')
+                            $(".booster-ambush-fc").remove();
+
+                        var clone;
+                        if (item.hasClass('booster-clone')) {
+                            to_list.find(".booster-clone").each(function () {
+                                if ($(this).attr("id") != item.attr("id"))
+                                    from_list.append($(this));
+                            });
+
+                            if (to_list.data('slot') == 0) {
+                                removeSupport(to_list.attr("id").slice(-2));
+                                removeSupport(from_list.attr("id").slice(-2));
+                            } else // Swap support inside Ambush team
+                                swapSupport();
+                        } else {
+                            clone = createCloneInSlot(item, to_list, true);
+
+                            // Reset current support
+                            removeSupport(to_list.attr("id").slice(-2));
+                        }
+
+                        if (clone)
+                            item = clone;
+
+                        // Add Recommended Unit check if so
+                        var opId = to_list.closest('.team').data('op_id');
+                        var opGuide = tm_opponents[tmId][opId];
+                        if (opGuide) {
+                            var recUnitList = opGuide.rec;
+                            if (recUnitList && recUnitList.includes(Number(item.data('id'))))
+                                item.find('img').closest('div').append(createRecUnitCheckHtml(15));
+                            else
+                                item.find('img').closest('div').find('.rec-unit-overlay').remove();
+                        }
+
+                        // Mirror to Friend Cap slot if it is empty
+                        if (to_list.data('slot') == 1)
+                            mirrorToFriendCap(to_list.closest('.team'), item, true, true);
+
+                        updateAllInfo();
+
+                        if (from_list.hasClass('ambush-team-slot'))
+                            doTeamBuildCheck(from_list.closest('.team').data('team'));
+
+                        doTeamBuildCheck(to_list.closest('.team').data('team'));
+                    },
+                    onEnd: function () {
+                        updateAllInfo();
+                    }
+                });
+            }
+        }
+    }
 }
 
 function resetPosition(unit) {
@@ -3891,7 +4064,7 @@ $(document).ready(function () {
                 b.data('team', srcDiv.closest('.team').data('team'));
                 removeSupport(srcDiv.attr("id").slice(-2));
 
-                if (srcDiv.closest('.team').attr('id') != 'ambush-team') {
+                if (tmId < 4464 && srcDiv.closest('.team').attr('id') != 'ambush-team') {
                     b.addClass('assigned');
                     if (srcDiv.find('.booster, .booster-clone').length > 0)
                         resetPosition(srcDiv.find('.booster, .booster-clone').detach());
@@ -4977,178 +5150,6 @@ $(document).ready(function () {
         animation: 150,
         sort: false // To disable sorting: set sort to false
     });
-
-    // Set up drag and drop for each team section
-    for (var i = 0; i < 5; i++) {
-        for (var j = 0; j < 6; j++) {
-            var team = "team-slot-" + i + j;
-            var teamEl = document.getElementById(team);
-            new Sortable(teamEl, {
-                group: {
-                    name: 'booster-group',
-                    pull: true,
-                    put: 'booster-group'
-                },
-                draggable: ".booster, .non-booster",
-                animation: 150,
-                delay: 60, // time in milliseconds to define when the sorting should start
-                delayOnTouchOnly: true,
-                resetPositionOnSpill: true, // Reset booster to original position it is spilled
-                onStart: function (/**Event*/evt) {
-                    var item = $("#" + evt.item.id);
-                    from_list = item.closest('.team-slot, .ambush-team-slot');
-                    item.tooltip('hide');
-                },
-                onAdd: function (evt) {
-                    var item = $("#" + evt.item.id);
-
-                    var assigned = item.hasClass("assigned");
-                    to_list = $("#" + evt.to.id);
-                    from_list = $("#" + evt.from.id);
-
-                    if (evt.to.id.charAt(11) == '0')
-                        item.closest('.team').find('.booster-fc').remove();
-
-                    to_list.find('.booster-ambush').remove();
-                    to_list.find('.booster, .non-booster').each(function () {
-                        if ($(this).attr("id") != item.attr("id")) {
-                            if (assigned) {
-                                from_list.append($(this));
-                                swapHandler($(this), from_list);
-                            } else {
-                                if ($(this).hasClass("non-booster"))
-                                    $(this).remove();
-                                else
-                                    resetPosition($(this));
-                            }
-                        }
-                    });
-
-                    var assignedTeam = to_list.closest('.team').data('team');
-
-                    // Remove corresponding Clone and support if moved to another Team
-                    if (item.data('team') !== -1) {
-                        if (item.data('team') !== assignedTeam) {
-                            $('#booster-clone_' + item.data('id') + '_clone').remove();
-                            removeSupport(from_list.attr("id").slice(-2));
-                        } else if (to_list.data('slot') == 0) {
-                            removeSupport(to_list.attr("id").slice(-2));
-                            removeSupport(from_list.attr("id").slice(-2));
-                        } else {
-                            // Move unit support to current place
-                            swapSupport();
-                        }
-                    }
-
-                    item.data('team', assignedTeam);
-                    item.addClass('assigned');
-
-                    // Add Recommended Unit check if so
-                    var opId = to_list.closest('.team').data('op_id');
-                    var opGuide = tm_opponents[tmId][opId];
-                    if (opGuide) {
-                        var recUnitList = opGuide.rec;
-                        if (recUnitList && recUnitList.includes(Number(item.data('id'))))
-                            item.find('img').closest('div').append(createRecUnitCheckHtml(15));
-                        else
-                            item.find('img').closest('div').find('.rec-unit-overlay').remove();
-                    }
-
-                    // Mirror to Friend Cap slot if it is empty
-                    if (to_list.data('slot') == 1 && !item.hasClass("booster-clone"))
-                        mirrorToFriendCap(to_list.closest('.team'), item, true);
-
-                    updateAllInfo();
-
-                    if (from_list.hasClass('team-slot'))
-                        doTeamBuildCheck(from_list.closest('.team').data('team'));
-
-                    doTeamBuildCheck(to_list.closest('.team').data('team'));
-                },
-                onEnd: function (evt) {
-                    updateAllInfo();
-                }
-            });
-        }
-    }
-
-    // Set up drag and drop for Ambush team section
-    for (var j = 0; j < 6; j++) {
-        var team = "team-slot-5" + j;
-        var teamEl = document.getElementById(team);
-        new Sortable(teamEl, {
-            group: {
-                name: 'booster-group',
-                pull: true,
-                put: 'booster-group'
-            },
-            draggable: ".booster-clone:not(.booster-ambush-fc), .non-booster",
-            animation: 150,
-            delay: 60, // time in milliseconds to define when the sorting should start
-            delayOnTouchOnly: true,
-            resetPositionOnSpill: true, // Reset booster to original position it is spilled
-            onStart: function (/**Event*/evt) {
-                var item = $("#" + evt.item.id);
-                from_list = item.closest('.team-slot, .ambush-team-slot');
-                item.tooltip('hide');
-            },
-            onAdd: function (evt) {
-                var item = $("#" + evt.item.id);
-                to_list = $("#" + evt.to.id);
-                from_list = $("#" + evt.from.id);
-
-                if (evt.to.id.charAt(11) == '0')
-                    $(".booster-ambush-fc").remove();
-
-                var clone;
-                if (item.hasClass('booster-clone')) {
-                    to_list.find(".booster-clone").each(function () {
-                        if ($(this).attr("id") != item.attr("id"))
-                            from_list.append($(this));
-                    });
-
-                    if (to_list.data('slot') == 0) {
-                        removeSupport(to_list.attr("id").slice(-2));
-                        removeSupport(from_list.attr("id").slice(-2));
-                    } else // Swap support inside Ambush team
-                        swapSupport();
-                } else {
-                    clone = createCloneInSlot(item, to_list, true);
-
-                    // Reset current support
-                    removeSupport(to_list.attr("id").slice(-2));
-                }
-
-                if (clone)
-                    item = clone;
-
-                // Add Recommended Unit check if so
-                var opId = to_list.closest('.team').data('op_id');
-                var opGuide = tm_opponents[tmId][opId];
-                if (opGuide) {
-                    var recUnitList = opGuide.rec;
-                    if (recUnitList && recUnitList.includes(Number(item.data('id'))))
-                        item.find('img').closest('div').append(createRecUnitCheckHtml(15));
-                    else
-                        item.find('img').closest('div').find('.rec-unit-overlay').remove();
-                }
-
-                // Mirror to Friend Cap slot if it is empty
-                if (to_list.data('slot') == 1)
-                    mirrorToFriendCap(to_list.closest('.team'), item, true, true);
-
-                updateAllInfo();
-
-                if (from_list.hasClass('ambush-team-slot'))
-                    doTeamBuildCheck(from_list.closest('.team').data('team'));
-
-                doTeamBuildCheck(to_list.closest('.team').data('team'));
-            },
-            onEnd: function () {
-                updateAllInfo();
-            }
-        });
-    }
 
     // Filter button events
     $(".filter-button").click(function () {
