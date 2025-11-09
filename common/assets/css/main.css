@@ -52,6 +52,14 @@ body {
     font-size: 15px;
 }
 
+.page-title {
+    color: var(--font-color-title);
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 15px;
+}
+
 /* Scrollbar css */
 /* width */
 ::-webkit-scrollbar {

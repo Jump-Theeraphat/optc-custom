@@ -5,14 +5,6 @@
     margin-bottom: 40px;
 }
 
-.news-title {
-    color: var(--font-color-title);
-    font-weight: bold;
-    font-variant: small-caps;
-    text-align: center;
-    margin: 15px;
-}
-
 .news-card {
     padding: 5px;
     align-items: center;

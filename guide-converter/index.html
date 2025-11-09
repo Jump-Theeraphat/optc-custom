@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zl1814">
+    <meta name="keywords" content="OPTC, One Piece Treasure Cruise">
+    <meta name="description" content="OPTC Voyage Log Guide Converter">
+
+    <title>Guide Converter | OPTC Voyage Log</title>
+
+    <link rel="icon" sizes="192x192" href="/pappagu.png">
+
+    <!-- Vendor JS & CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Self JS & CSS -->
+    <link rel="stylesheet" href="/common/assets/css/main.css">
+    <link rel="stylesheet" href="/common/assets/css/guide.css">
+
+    <script src="/common/assets/js/main.js"></script>
+    <script src="/common/assets/js/guide.js"></script>
+    <script src="/guide-converter/assets/js/guide-converter.js"></script>
+    <script src="/guide-converter/assets/js/guide-replacements.js"></script>
+
+    <script src="/tm-planner/data/icon_tooltips.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DY87MN0KG9');
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h1 class="page-title">
+        Guide Converter
+    </h1>
+
+    <div class="row my-4">
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    Raw Guide (e.g. provided by 2Shankz in Discord)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <textarea class="form-control" rows="20" id="guide-raw"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    Converted Guide
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <textarea class="form-control" rows="20" id="guide-converted" disabled></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    Displayed Guide
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="guide-display-div">
+                    <div class="row" id="guide-stage-type">
+                        <div class="container-fluid guide-action-list"></div>
+                    </div>
+
+                    <div class="row align-items-center mb-2" id="guide-action-clone">
+                        <div class="col-2 guide-action-type"></div>
+                        <div class="col-1">
+                            <span class="guide-action-turn"></span>
+                        </div>
+                        <div class="col-4">
+                            <span class="guide-action-detail"></span>
+                        </div>
+                        <div class="col-5 guide-filter-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
