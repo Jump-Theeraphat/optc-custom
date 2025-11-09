@@ -86,6 +86,11 @@ function getThumb(thumbId) {
         return '/tm-planner/assets/img/new-thumbs/4231-1.png';
     if (paddedThumbId === '9016')
         return '/tm-planner/assets/img/new-thumbs/4231-2.png';
+    // Zoro VS Lucci
+    if (paddedThumbId === '9017')
+        return '/tm-planner/assets/img/new-thumbs/4469-1.png';
+    if (paddedThumbId === '9018')
+        return '/tm-planner/assets/img/new-thumbs/4469-2.png';
 
     if (
         paddedThumbId == 4321

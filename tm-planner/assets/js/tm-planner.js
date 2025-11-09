@@ -627,10 +627,12 @@ function getBoosters(tmId, server) {
         $('#info_1_2x_alt').show();
     } else if (
         tmId == 4053 ||
-        tmId == 4074
+        tmId == 4074 ||
+        tmId == 4464
     ) {
         // TM Luffy
         // TM Edward Newgate
+        // TM Pudding
         $('#div_2x').show();
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
@@ -983,18 +985,36 @@ function init(tmId, server, isTransfer) {
     }
 
     // Display Ambush Team
-    if (
-        tmId == 2109 ||
-        tmId == 2261 ||
-        tmId == 2299 ||
-        tmId == 2336 ||
-        tmId >= 2387
-    ) {
+    if (tmId >= 4464) {
+        // Ver 15.2 update
+        $('#team-1').hide();
+        $('#team-2').hide();
+        $('#team-3').hide();
+        $('#team-4').hide();
         $('#ambush-team').show();
-        $('#first-team').removeClass('offset-md-1');
+
+        $('#team-boss').addClass('offset-md-4');
     } else {
-        $('#ambush-team').hide();
-        $('#first-team').addClass('offset-md-1');
+        $('#team-1').show();
+        $('#team-2').show();
+        $('#team-3').show();
+        $('#team-4').show();
+
+        $('#team-boss').removeClass('offset-md-4');
+
+        if (
+            tmId == 2109 ||
+            tmId == 2261 ||
+            tmId == 2299 ||
+            tmId == 2336 ||
+            tmId >= 2387
+        ) {
+            $('#ambush-team').show();
+            $('#team-1').removeClass('offset-md-1');
+        } else {
+            $('#ambush-team').hide();
+            $('#team-1').addClass('offset-md-1');
+        }
     }
 
     resetAll();
@@ -1302,6 +1322,9 @@ function parseVsUnitId(vsId) {
     // Shanks VS Kid
     if (vsId == 9015 || vsId == 9016)
         return 4231;
+    // Zoro VS Lucci
+    if (vsId == 9017 || vsId == 9018)
+        return 4469;
 
     return vsId;
 }
@@ -1723,9 +1746,18 @@ function populateUnitDetail(unitId) {
                     else
                         sailorVs = sailor.character2;
 
-                    sailorVs = decorateStr(sailorVs);
-                    $('#unit-detail-sailor').append('<b>Base:</b> ' + sailorVs);
-                    $('#unit-detail-sailor').append('<br />');
+                    if (typeof sailorVs === 'object') {
+                        var i = 0;
+                        Object.values(sailorVs).forEach(value => {
+                            value = decorateStr(value);
+                            $('#unit-detail-sailor').append(`<b>Base${++i}:</b> ${value}`);
+                            $('#unit-detail-sailor').append('<br />');
+                        });
+                    } else {
+                        sailorVs = decorateStr(sailorVs);
+                        $('#unit-detail-sailor').append('<b>Base:</b> ' + sailorVs);
+                        $('#unit-detail-sailor').append('<br />');
+                    }
                 }
 
                 if (sailor.base) {

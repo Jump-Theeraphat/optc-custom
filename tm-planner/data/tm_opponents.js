@@ -24927,4 +24927,128 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Pudding ==========
+    4464: {
+        1590: {
+            name: 'Shanks',
+            type: 'PSY',
+            pos: 4,
+            rec: [9017, 4470, 4471],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "STR/DEX/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "STR/DEX/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "STR/DEX/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['?', '?'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "bind", "turn": "9", "detail": "Top-Row" },
+                                { "type": "slot-change", "detail": "Bad" },
+                                { "type": "nao", "turn": "98" },
+                                { "type": "desp", "turn": "9" },
+                                { "type": "immu-all", "turn": "98" },
+                                { "type": "intim", "turn": "2", "detail": "Crew's ATK Up /Slot Effect Boost, -1" },
+                                { "type": "def", "turn": "7", "detail": "10000x" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shanks', 'PSY'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Free Spirit',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "ca-swap", "turn": "2" },
+                                { "type": "slot-block" },
+                                { "type": "nao", "turn": "98" },
+                                { "type": "atk-down", "turn": "7" },
+                                { "type": "immu-all", "turn": "98" },
+                                { "type": "def-thres", "turn": "6" },
+                                { "type": "def-perc", "turn": "5" },
+                                { "type": "resil", "turn": "5" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4464: {
+            name: 'Pudding',
+            type: 'PSY',
+            pos: 5,
+            rec: [4459, 4460, 9018, 4471],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Powerhouse Cerebral Free Spirit" },
+                                { "type": "sw-red", "turn": "5", "detail": "Powerhouse Cerebral Free Spirit" },
+                                { "type": "cd-red", "turn": "5", "detail": "Powerhouse Cerebral Free Spirit" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Pudding', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "hp-cut", "detail": "70%" },
+                                { "type": "slot-para" },
+                                { "type": "chain-lock", "turn": "7" },
+                                { "type": "atk-down", "turn": "5" },
+                                { "type": "nao", "turn": "98" },
+                                { "type": "immu-all", "turn": "98" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "cd-rew", "turn": "5", "detail": "Top-Row" },
+                                { "type": "cd-lock", "detail": "Top-Row, 2x GREAT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Pudding', 'PSY'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "para", "turn": "7" },
+                                { "type": "chain-atk-down-min", "turn": "3", "detail": "<=2.75" },
+                                { "type": "nao", "turn": "98" },
+                                { "type": "desp", "turn": "10" },
+                                { "type": "def-thres", "turn": "9" },
+                                { "type": "immu-all", "turn": "98" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "dmg-normal", "detail": "80000" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
