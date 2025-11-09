@@ -907,9 +907,11 @@ function getOpponents(tmId, server) {
             var opPosDiv = $('#op-' + (opPos + 1));
             var opPosTeam = opPosDiv.closest('.team');
 
+            var teamNoteDiv = getTeamNoteDiv(opPos);;
             if (Array.isArray(opName) && Array.isArray(opType)) {
                 opPosDiv.empty();
-                $('.team-note-div[data-team=' + opPos + ']').find('.team-note-boss').empty();
+
+                teamNoteDiv.find('.team-note-boss').empty();
 
                 for (var j = 0; j < opName.length && j < opType.length; j++) {
                     var opHtml = $('<span></span>');
@@ -917,7 +919,7 @@ function getOpponents(tmId, server) {
                     opHtml.addClass(opType[j]);
 
                     opPosDiv.append(opHtml);
-                    $('.team-note-div[data-team=' + opPos + ']').find('.team-note-boss').append(opHtml.clone());
+                    teamNoteDiv.find('.team-note-boss').append(opHtml.clone());
                 }
             } else {
                 var opHtml = $('<span></span>');
@@ -925,7 +927,7 @@ function getOpponents(tmId, server) {
                 opHtml.addClass(opType);
 
                 opPosDiv.html(opHtml);
-                $('.team-note-div[data-team=' + opPos + ']').find('.team-note-boss').append(opHtml.clone());
+                teamNoteDiv.find('.team-note-boss').append(opHtml.clone());
             }
 
             opPosTeam.data('op_id', opId);
@@ -938,9 +940,11 @@ function getOpponents(tmId, server) {
             var opName = op.name;
             var opType = op.type;
 
+            var teamNoteDiv = getTeamNoteDiv(i);
             if (Array.isArray(opName) && Array.isArray(opType)) {
                 $('#op-' + (i + 1)).empty();
-                $('.team-note-div[data-team=' + i + ']').find('.team-note-boss').empty();
+
+                teamNoteDiv.find('.team-note-boss').empty();
 
                 for (var j = 0; j < opName.length && j < opType.length; j++) {
                     var opHtml = $('<span></span>');
@@ -948,7 +952,7 @@ function getOpponents(tmId, server) {
                     opHtml.addClass(opType[j]);
 
                     $('#op-' + (i + 1)).append(opHtml);
-                    $('.team-note-div[data-team=' + i + ']').find('.team-note-boss').append(opHtml.clone());
+                    teamNoteDiv.find('.team-note-boss').append(opHtml.clone());
                 }
             } else {
                 var opHtml = $('<span></span>');
@@ -956,7 +960,7 @@ function getOpponents(tmId, server) {
                 opHtml.addClass(opType);
 
                 $('#op-' + (i + 1)).html(opHtml);
-                $('.team-note-div[data-team=' + i + ']').find('.team-note-boss').append(opHtml.clone());
+                teamNoteDiv.find('.team-note-boss').append(opHtml.clone());
             }
         }
     }
@@ -987,18 +991,18 @@ function init(tmId, server, isTransfer) {
     // Display Ambush Team
     if (tmId >= 4464) {
         // Ver 15.2 update
+        $('#team-0').hide();
         $('#team-1').hide();
         $('#team-2').hide();
         $('#team-3').hide();
-        $('#team-4').hide();
         $('#ambush-team').show();
 
         $('#team-boss').addClass('offset-md-4');
     } else {
+        $('#team-0').show();
         $('#team-1').show();
         $('#team-2').show();
         $('#team-3').show();
-        $('#team-4').show();
 
         $('#team-boss').removeClass('offset-md-4');
 
@@ -3027,16 +3031,33 @@ function getWholeTeamFamilyName(teamId, isCheckDupe) {
     return teamFamilyNames;
 }
 
+function getTeamNoteDiv(teamId) {
+    var teamNoteDiv = $('.team-note-div[data-team=' + teamId + ']');
+
+    if (teamNoteDiv.length <= 0) {
+        teamNoteDiv = $('#team-note-div-clone').clone();
+        teamNoteDiv.addClass('team-note-div');
+        teamNoteDiv.attr('id', `team-note-div-${teamId}`);
+        teamNoteDiv.attr('data-team', teamId);
+        $(`#team-note-div-container-${teamId}`).append(teamNoteDiv.show());
+    }
+
+    return teamNoteDiv;
+}
+
 function doTeamBuildCheck(teamId) {
-    removeTeamBuildMsg(teamId);
-    getWholeTeamFamilyName(teamId, true);
-    checkSuperSpecialCriteria(teamId);
-    checkTeamMiniGuideSpecialMet(teamId);
-    checkNoteStatus();
+    if (teamId >= 4 || $(`#team-${teamId}`).css('display') !== 'none') {
+        removeTeamBuildMsg(teamId);
+        getWholeTeamFamilyName(teamId, true);
+        checkSuperSpecialCriteria(teamId);
+        checkTeamMiniGuideSpecialMet(teamId);
+        checkNoteStatus();
+    }
 }
 
 function removeTeamBuildMsg(teamId) {
-    $(".team-note-div[data-team=" + teamId + "]").find(".team-build-msg").remove();
+    var teamNoteDiv = getTeamNoteDiv(teamId);
+    teamNoteDiv.find(".team-build-msg").remove();
     $(".team[data-team=" + teamId + "]").find("img.highlight").removeClass("highlight");
 }
 
@@ -3044,7 +3065,9 @@ function putDupeCharacterMsg(teamId, name) {
     team = $(".team[data-team=" + teamId + "]");
     msgStr = ("&nbspDuplicate character: [<mark>" + name + "</mark>]");
     msgDiv = ('<li class="team-build-msg error">' + msgStr + '</li>');
-    $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
+
+    var teamNoteDiv = getTeamNoteDiv(teamId);
+    teamNoteDiv.find(".team-note-list").append(msgDiv);
 
     // Highlight all units with that name
     team.find(".team-slot:not(.friend-cap), .ambush-team-slot:not(.friend-cap), .support-slot:not(.empty)").each(function () {
@@ -3311,8 +3334,10 @@ function checkTeamMiniGuideSpecialMet(teamId) {
             if (Object.keys(specialsNeeded).length > 0 && specialsNeeded.constructor === Object) {
                 putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap);
 
-                if (g.boss && gi != op.guide.length - 1)
-                    $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append($('<hr class="team-build-msg">'));
+                if (g.boss && gi != op.guide.length - 1) {
+                    var teamNoteDiv = getTeamNoteDiv(teamId);
+                    teamNoteDiv.find(".team-note-list").append($('<hr class="team-build-msg">'));
+                }
             }
 
             // Update Units used
@@ -3328,7 +3353,8 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
     msgStr += "<br> (Testing debugging feature below to prep for other checks, may add Special order selection later)";
 
     var msgDiv = (`<li class="team-build-msg info">${msgStr}</li>`);
-    $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
+    var teamNoteDiv = getTeamNoteDiv(teamId);
+    teamNoteDiv.find(".team-note-list").append(msgDiv);
 
     for (var special in specialsNeeded) {
         var spName = special.substring(0, special.indexOf('_'));
@@ -3372,7 +3398,9 @@ function putGuideSpecialNotMetMsg(teamId, specialsNeeded, specialsUsedMap) {
 
         msgDiv.append(specialStr);
         msgDiv.append(specialsUsedDiv);
-        $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
+
+        var teamNoteDiv = getTeamNoteDiv(teamId);
+        teamNoteDiv.find(".team-note-list").append(msgDiv);
     }
 }
 
@@ -3601,13 +3629,15 @@ function putSuperNotMetMsg(teamId, msg, isFriend, capId) {
         msgStr = msgStr + "Super special criteria not met: [<mark>" + msg + "</mark>]";
 
     msgDiv = ('<li class="team-build-msg warning">' + msgStr + '</li>');
-    $(".team-note-div[data-team=" + teamId + "]").find(".team-note-list").append(msgDiv);
+
+    var teamNoteDiv = getTeamNoteDiv(teamId);
+    teamNoteDiv.find(".team-note-list").append(msgDiv);
 }
 
 function clearTeamNotes() {
     $(".team-note-boss").find("span").remove();
-    $(".team-note-div").find(".team-build-msg").remove();
-    $(".team-note-div").hide();
+    $('.team-note-div').remove();
+    $('.team-note-div-container').empty();
     $(".fixed-note-button").removeClass("error");
     $(".fixed-note-button").removeClass("warning");
     $(".op-guide-btn").removeClass("error");
