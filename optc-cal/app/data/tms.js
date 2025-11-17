@@ -144,7 +144,7 @@ var tms = {
         name: 'Jinbe'
     },
     3115: {
-        name: 'Pudding',
+        name: 'Halloween Pudding',
         info: 'i.imgur.com/TkLUvMe.png'
     },
     3150: {

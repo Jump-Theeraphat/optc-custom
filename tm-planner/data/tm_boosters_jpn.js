@@ -10902,7 +10902,7 @@ var tm_boosters_jpn = {
         },
     ],
 
-    // ========== Pudding ==========
+    // ========== Halloween Pudding ==========
     3115: [
         {   // Sanji
             id: 3112,
@@ -11091,7 +11091,7 @@ var tm_boosters_jpn = {
             ver: 2,
             x_pts: 1.25
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.25
@@ -11372,7 +11372,7 @@ var tm_boosters_jpn = {
             ver: 2,
             x_pts: 1.4
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.4
@@ -11913,7 +11913,7 @@ var tm_boosters_jpn = {
             ver: 2,
             x_pts: 1.25
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.25
@@ -13226,7 +13226,7 @@ var tm_boosters_jpn = {
             ver: 2,
             x_pts: 1.25
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.25
@@ -13712,7 +13712,7 @@ var tm_boosters_jpn = {
             ver: 2,
             x_pts: 1.25
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.25
@@ -16421,7 +16421,7 @@ var tm_boosters_jpn = {
             ver: 2,
             x_pts: 1.25
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.25

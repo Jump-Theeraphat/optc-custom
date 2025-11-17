@@ -17049,7 +17049,7 @@ var tm_boosters = {
             id: 3094,
             x_pts: 1.35
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             x_pts: 1.35
         },
@@ -17529,7 +17529,7 @@ var tm_boosters = {
         },
     ],
 
-    // ========== Pudding ==========
+    // ========== Halloween Pudding ==========
     3115: [
         {   // Sanji
             id: 3112,
@@ -17599,7 +17599,7 @@ var tm_boosters = {
             id: 3060,
             x_pts: 1.35
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             x_pts: 1.35
         },
@@ -18597,7 +18597,7 @@ var tm_boosters = {
             id: 3060,
             x_pts: 1.1
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             x_pts: 1.1
         },
@@ -18953,7 +18953,7 @@ var tm_boosters = {
             type: 'tm',
             x_pts: 1.2
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             type: 'tm',
             x_pts: 1.2
@@ -19740,7 +19740,7 @@ var tm_boosters = {
             id: 3094,
             x_pts: 1.1
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             x_pts: 1.1
         },
@@ -20169,7 +20169,7 @@ var tm_boosters = {
             type: 'tm',
             x_pts: 1.2
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             type: 'tm',
             x_pts: 1.2
@@ -20772,7 +20772,7 @@ var tm_boosters = {
             type: 'tm',
             x_pts: 1.2
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             type: 'tm',
             x_pts: 1.2
@@ -27694,7 +27694,7 @@ var tm_boosters = {
             ver: 2,
             x_pts: 1.25
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.25
@@ -31270,7 +31270,7 @@ var tm_boosters = {
             ver: 2,
             x_pts: 1.25
         },
-        {   // Pudding
+        {   // Halloween Pudding
             id: 3115,
             ver: 2,
             x_pts: 1.25
