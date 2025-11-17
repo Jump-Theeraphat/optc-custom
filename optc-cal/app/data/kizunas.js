@@ -253,4 +253,8 @@ var kizunas = {
     4458: {
         name: 'Blackbeard v3 6+ (~ 6am)'
     },
+    4475: {
+        name: 'Luffy & Law 6+ (~ 6am)',
+        xch_id: 4468
+    },
 };
