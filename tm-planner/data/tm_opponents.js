@@ -24949,8 +24949,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['?', '?'],
-                    hp_: 2000000,
+                    boss: ['Hancock', 'PSY'],
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -25006,8 +25006,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Pudding', '?'],
-                    hp_: 2500000,
+                    boss: ['Pudding', 'DEX'],
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
