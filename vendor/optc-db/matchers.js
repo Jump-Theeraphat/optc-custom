@@ -3045,7 +3045,7 @@
 
 			{
 				name: "Chain Boost: Tap Timing",
-				targets: ["special", "superSpecial", "swap", "support"],
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
 					/increases Chain Tap Timing Bonus of ([^."]+?)characters? to \+([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for (\d) turns? depending on Tap Timing/i,
 				submatchers: [
@@ -3444,7 +3444,7 @@
 
 			{
 				name: "Advantageous Class Effect",
-				targets: ["special", "superSpecial", "support"],
+				targets: ["captain", "special", "superSpecial", "support"],
 				regex:
 					/Boosts Advantageous Class Effect of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
@@ -3493,7 +3493,7 @@
 
 			{
 				name: "Crew Damage Reduction to ATK",
-				targets: ["captain", "special", "superSpecial"],
+				targets: ["captain", "special", "superSpecial", "support"],
 				regex:
 					/boosts Crew Damage Reduction to ATK of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x-([?.\d]+)x, proportional to the strength of crew's Percent Damage Reduction buff([^,]*), for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
@@ -3679,6 +3679,13 @@
 						type: "option",
 						description: "Chain Tap Timing",
 						regex: /Chain Tap Timing/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Crew Damage Reduction to ATK",
+						regex: /Crew Damage Reduction to ATK/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -3969,6 +3976,8 @@
 					"captain",
 					"special",
 					"superSpecial",
+					"support",
+					"swap"
 				],
 				regex:
 					/enables ([^."]+?) to be enhanced up to 2 times/i,
@@ -4055,6 +4064,24 @@
 						cssClasses: ["min-width-12"],
 					},
 				],
+			},
+
+			{
+				name: "Stackable: ATK Boost",
+				targets: ["captain", "special"],
+				regex: /converts ATK Up into a Stackable ATK Up/i,
+			},
+
+			{
+				name: "Stackable: Orb Boost",
+				targets: ["captain", "special"],
+				regex: /converts Orb Amplification into a Stackable Orb Amplification/i,
+			},
+
+			{
+				name: "Stackable: Color Affinity",
+				targets: ["captain", "special"],
+				regex: /converts Color Affinity into a Stackable Color Affinity/i,
 			},
 		],
 		"Ability Requirements": [
@@ -5505,7 +5532,7 @@
 
 			{
 				name: "Orb lockers",
-				targets: ["special", "superSpecial", "swap", "support"],
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				// "locks orbs for free spirit characters", "...all orbs"
 				// not "locks the chain multiplier"
 				// TODO: submatchers for group 1
@@ -6227,6 +6254,20 @@
 					...createPositionsSubmatchers([1]),
 				],
 			},
+
+			{
+				name: "Status ATK Boost Stack",
+				targets: ["special", "superSpecial"],
+				regex: /allows crew to stack 2 different Status ATK Boost buffs for ([?\d]+)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2],
+					},
+				],
+			},
+
 		],
 		"Bad Team Effects": [
 			{
@@ -7700,7 +7741,7 @@
 				name: "Poisoners",
 				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
-					/(ignores? (?:Defense Reduction )?Debuff Protection and )?(strongly poisons|poisons|Inflicts Toxic)/i,
+					/(ignores? (?:Defense Reduction )?Debuff Protection and )?(poisons|strongly poisons|inflicts all enemies with Reiju Poison|inflicts Toxic)/i,
 				submatchers: [
 					{
 						type: "option",
@@ -7726,11 +7767,19 @@
 					},
 					{
 						type: "option",
-						description: "Toxic",
-						regex: /^i/i,
+						description: "Reiju Poison",
+						regex: /inflicts all enemies with Reiju Poison/i,
 						radioGroup: "1",
 						groups: [2],
-						cssClasses: ["min-width-12"],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Toxic",
+						regex: /inflicts Toxic/i,
+						radioGroup: "1",
+						groups: [2],
+						cssClasses: ["min-width-6"],
 					},
 				],
 			},
@@ -7978,6 +8027,7 @@
 					},
 				],
 			},
+
 			{
 				name: "Marked",
 				targets: ["special", "superSpecial"],
@@ -8006,6 +8056,85 @@
 						type: "number",
 						description: "Turns:",
 						groups: [3, 4],
+					},
+				],
+			},
+
+			{
+				name: "Allow Ignore Debuff Protection",
+				targets: ["captain"],
+				regex:
+					/allows effects that inflict (?=((?:[^i]+|i(?!gnore))*))\1ignore Debuff Protection/i,
+				submatchers: [
+					{
+						type: "option",
+						description: "ATK Down",
+						regex: /ATK Down/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Burn",
+						regex: /Burn/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Delay",
+						regex: /Delay/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Melo-Melo",
+						regex: /Melo-Melo/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Negative",
+						regex: /Negative/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Paralysis",
+						regex: /Paralysis/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Poison",
+						regex: /Poison/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Weaken",
+						regex: /Weaken/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Defense Reduction",
+						regex: /Defense Reduction/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Increase Damage Taken",
+						regex: /Increase Damage Taken/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
 					},
 				],
 			},
@@ -12991,6 +13120,46 @@
 			},
 
 			{
+				name: "Stats Down",
+				targets: ["rumbleSpecial"],
+				regex:
+					/([.\d]+)% chance to evade[^.]+Stats Down[^.]+to (self|(?=((?:[^c]+|c(?!rew))*))\3crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Chance:",
+						groups: [1],
+					},
+					{
+						type: "number",
+						description: "Duration:",
+						groups: [5],
+					},
+					{
+						type: "separator",
+						description: "Targeting:",
+					},
+					{
+						type: "option",
+						description: "Universal",
+						regex: /all/i,
+						groups: [2],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Types:",
+					},
+					...createTypesSubmatchers([2]),
+					{
+						type: "separator",
+						description: "Classes:",
+					},
+					...createClassesSubmatchers([2]),
+				],
+			},
+
+			{
 				name: "Damage",
 				targets: ["rumbleSpecial"],
 				regex:
@@ -13209,6 +13378,20 @@
 				targets: ["rumbleResistance"],
 				regex:
 					/([\d]+)% chance to resist Action Bind./i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Chance:",
+						groups: [1],
+					},
+				],
+			},
+
+			{
+				name: "Confusion",
+				targets: ["rumbleResistance"],
+				regex:
+					/([\d]+)% chance to resist Confusion./i,
 				submatchers: [
 					{
 						type: "number",
@@ -13544,6 +13727,32 @@
 				regex: /Obtain Rush/i,
 			},
 
+			{
+				name: "Damage Limit Break: Class",
+				targets: ["potential"],
+				regex: /Boosts Damage Limit Break effect based on number of (?!\[)(?=((?:[^c."]+|c(?!har))*))\1characters? on the crew/i,
+				submatchers: [
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([1]),
+				]
+			},
+
+			{
+				name: "Damage Limit Break: Type",
+				targets: ["potential"],
+				regex: /Boosts Damage Limit Break effect based on number of (?=\[)(?=((?:[^c."]+|c(?!har))*))\1characters? on the crew/i,
+				submatchers: [
+					{
+						type: "separator",
+						description: "Affected types:",
+					},
+					...createTypesSubmatchers([1]),
+				]
+			},
+
 			/* * * * * Super Special Criteria * * * * */
 			{
 				name: "Top Row Only",
@@ -13623,6 +13832,12 @@
 						groups: [1],
 					}
 				],
+			},
+
+			{
+				name: "Has Assault Rumble Abilities",
+				targets: ["rumbleAbility", "rumbleSpecial"],
+				regex: /During Assault Rumble/i,
 			},
 
 			{
