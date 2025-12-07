@@ -543,7 +543,8 @@ function getBoosters(tmId, server) {
         tmId == 3758 ||
         tmId == 3778 ||
         tmId == 3842 ||
-        tmId == 3864
+        tmId == 3864 ||
+        tmId == 4481
     ) {
         // TM Halloween Robin
         // TM Moria
@@ -556,6 +557,7 @@ function getBoosters(tmId, server) {
         // TM Who's-Who
         // TM Fujitora
         // TM Bege
+        // TM Kid (Onigashima Raid)
         $('#div_2x').show();
         $('#div_1_7x').show();
         $('#div_1_4x_v2').show();

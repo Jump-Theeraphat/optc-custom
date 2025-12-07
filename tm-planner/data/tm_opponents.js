@@ -25051,4 +25051,125 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Kid (Onigashima Raid) ==========
+    4481: {
+        2500: {
+            name: ['Big ', 'Mom'],
+            type: ['INT','PSY'],
+            pos: 4,
+            rec: [4483, 4484, 4485, 4486],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Powerhouse Free Spirit Fighter" },
+                                { "type": "sw-red", "turn": "5", "detail": "Powerhouse Free Spirit Fighter" },
+                                { "type": "cd-red", "turn": "5", "detail": "Powerhouse Free Spirit Fighter" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Streusen', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "nao", "turn": "99" },
+                                { "type": "immu-delay", "turn": "99" },
+                                { "type": "type-change", "detail": "[STR][DEX][QCK][INT]" },
+                                { "type": "bind", "turn": "10", "detail": "Middle-Row " },
+                                { "type": "cd-rew", "turn": "2" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Big Mom', 'PSY'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "8" },
+                                { "type": "slot-block" },
+                                { "type": "atk-down", "turn": "6" },
+                                { "type": "chain-atk-down-min", "turn": "3", "detail": "<=2.5" },
+                                { "type": "chain-atk-down-max", "turn": "3", "detail": ">=3.25" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "dmg-normal", "detail": "150000" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4481: {
+            name: ['Ki', 'd'],
+            type: ['PSY','INT'],
+            pos: 5,
+            rec: [4483, 4484, 4485, 4486],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Powerhouse Cerebral Striker" },
+                                { "type": "sw-red", "turn": "5", "detail": "Powerhouse Cerebral Striker" },
+                                { "type": "cd-red", "turn": "5", "detail": "Powerhouse Cerebral Striker" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Killer', 'PSY'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "silence", "turn": "2", "detail": "Crewmate" },
+                                { "type": "resil", "turn": "5" },
+                                { "type": "def-perc", "turn": "2" },
+                                { "type": "def-thres", "turn": "2" },
+                                { "type": "def", "turn": "2", "detail": "10000x" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Kid', 'INT'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "bind", "turn": "5", "detail": "Crewmate " },
+                                { "type": "slot-block", "detail": "[BLOCK][BOMB]" },
+                                { "type": "def-null", "turn": "2" },
+                                { "type": "def-perc", "turn": "3" },
+                                { "type": "def-thres", "turn": "3" },
+                                { "type": "def", "turn": "3", "detail": "10000x" },
+                                { "type": "Slot Atk Down", "turn": "2", "detail": "[STR][DEX][QCK][PSY][INT]" },
+                                { "type": "resil", "turn": "6" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
