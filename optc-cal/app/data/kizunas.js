@@ -257,4 +257,7 @@ var kizunas = {
         name: 'Luffy & Law 6+ (~ 6am)',
         xch_id: 4468
     },
+    4489: {
+        name: 'Shirahoshi & Mansherry v2 6+ (~ 6am)'
+    },
 };
