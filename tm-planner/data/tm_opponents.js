@@ -25132,7 +25132,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Killer', 'PSY'],
-                    hp_: 2500000,
+                    hp: 1000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -25150,7 +25150,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Kid', 'INT'],
-                    hp_: 3500000,
+                    hp: 3500000,
                     atk_: 9600,
                     weakness: 'Powerhouse',
                     detail: [
