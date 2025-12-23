@@ -830,6 +830,11 @@ var specials = {
         name: 'Wapol\'s Assault',
         thumb: 2799
     },
+    'ev_3784': {
+        type: 'Special Event',
+        name: 'Chopper\'s Cotton Candy Gift Giveaway',
+        thumb: 3784
+    },
     'ev_2883': {
         type: 'Special Event',
         name: 'Freedom VS Strongest',
