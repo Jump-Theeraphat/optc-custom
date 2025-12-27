@@ -190,6 +190,11 @@ var specials = {
         name: 'VS Warrior of Liberation (1am ~ 6am)',
         thumb: 4432
     },
+    'bb_4491': {
+        type: 'Blitz Battle',
+        name: 'VS Five Elders (1am ~ 6am)',
+        thumb: 4491
+    },
 
     'wc_2401': {
         type: 'World Clash',
