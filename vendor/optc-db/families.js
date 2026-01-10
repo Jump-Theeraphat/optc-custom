@@ -698,16 +698,16 @@ const Yorueka = [ "Yorueka" ];
 const Aramaki = [ "Aramaki", "Ryokugyu", "Greenbull" ];
 const Tensei = [ "Tensei", "Kurouma" ];
 const Hamlet = [ "Hamlet" ];
-const Lilith = [ "Lilith", "PUNK-02" ];
+const Lilith = [ "Lilith", "PUNK-02", "Dr. Vegapunk \"Lilith the Evil\"" ];
 const Shakuyaku = [ "Shakuyaku", "Shakky" ];
 const SHawk = [ "S-Hawk" ];
 const SShark = [ "S-Shark" ];
-const Atlas = [ "Atlas", "PUNK-05" ];
-const Edison = [ "Edison", "PUNK-03" ];
-const Pythagoras = [ "Pythagoras", "PUNK-04" ];
-const York = [ "York", "PUNK-06" ];
+const Atlas = [ "Atlas", "PUNK-05", "Dr. Vegapunk \"Atlas the Violent\"" ];
+const Edison = [ "Edison", "PUNK-03", "Dr. Vegapunk \"Edison the Thinker\"" ];
+const Pythagoras = [ "Pythagoras", "PUNK-04", "Dr. Vegapunk \"Pythagoras the Wise\"" ];
+const York = [ "York", "PUNK-06", "Dr. Vegapunk \"York the Greedy\"" ];
 const Vegapunk = [ "Dr. Vegapunk", "Stella" ];
-const Shaka = [ "Shaka", "PUNK-01" ];
+const Shaka = [ "Shaka", "PUNK-01", "Dr. Vegapunk \"Shaka the Good\"" ];
 const Hakugan = [ "Hakugan" ];
 const SSnake = [ "S-Snake" ];
 const SBear = [ "S-Bear" ];
@@ -738,6 +738,8 @@ const TopmanWarcury = [ "Saint Topman Warcury" ];
 const MarcusMars = [ "Saint Marcus Mars" ];
 const Tosa = [ "Tosa" ];
 const Guillotine = [ "Guillotine" ];
+const Emet = [ "Emet" ];
+const ClouDClover = [ "Clou D. Clover" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -5112,6 +5114,21 @@ window.families = {
     4484: [ ...VinsmokeIchiji ],
     4485: [ ...VinsmokeNiji ],
     4486: [ ...VinsmokeYonji ],
+    4487: [ ...Atlas ],
+    4488: [ ...Lilith ],
+    4489: [ ...Shirahoshi, ...Mansherry ],
+    4490: [ ...MonkeyDLuffy, ...JewelryBonney ],
+    4491: [ ...JaygarciaSaturn ],
+    4492: [ ...BartholomewKuma ],
+    4493: [ ...Emet ],
+    4494: [ ...Dorry ],
+    4495: [ ...Broggy ],
+    4496: [ ...Doll, ...Bluegrass ],
+    4497: [ ...Doll, ...Bluegrass ],
+    4498: [ ...Stussy ],
+    4499: [ ...Vegapunk ],
+    4500: [ ...ClouDClover ],
+    4501: [ ...CaesarClown ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
@@ -5846,6 +5863,10 @@ const ghostFamilies = {
     714: [ ...VinsmokeSanji, ...VinsmokeReiju ],
     715: [ ...VinsmokeSanji, ...VinsmokeReiju ],
     716: [ ...VinsmokeSanji, ...VinsmokeReiju ],
+    717: [ ...Shirahoshi, ...Mansherry ],
+    718: [ ...Shirahoshi, ...Mansherry ],
+    719: [ ...Shirahoshi, ...Mansherry ],
+    720: [ ...Shirahoshi, ...Mansherry ],
 }
 
 Object.keys(ghostFamilies).forEach(function (key) {

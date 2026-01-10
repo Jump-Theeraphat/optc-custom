@@ -1079,7 +1079,70 @@
 			{
 				name: "ATK",
 				targets: ["rumbleSpecial"],
-				regex: /Deals ([.\d]+)x ATK in damage( ignoring DEF)? to (\d)?(?=((?:[^e]+|e(?!nem))*))\4enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: (\d+) times?)?/i,
+				regex: /Deals ([.\d]+)x ATK in( spread)? damage( ignoring DEF)? to (\d)?(?=((?:[^e]+|e(?!nem))*))\5enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: (\d+) times?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Amount:",
+						groups: [1],
+					},
+					{
+						type: "number",
+						description: "Repeat:",
+						groups: [8],
+					},
+					{
+						type: "option",
+						description: "Spread",
+						regex: /./i,
+						groups: [2],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Ignoring DEF",
+						regex: /./i,
+						groups: [3],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Targeting:",
+					},
+					{
+						type: "number",
+						description: "Count:",
+						groups: [4],
+					},
+					{
+						type: "option",
+						description: "Universal",
+						regex: /all/i,
+						groups: [5],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Types:",
+					},
+					...createTypesSubmatchers([5]),
+					{
+						type: "separator",
+						description: "Classes:",
+					},
+					...createClassesSubmatchers([5]),
+					{
+						type: "separator",
+						description: "Range:",
+					},
+					...createRangeSubmatcher([7]),
+				],
+			},
+
+			{
+				name: "Leader's ATK",
+				targets: ["gpSpecial"],
+				regex: /Deals ([.\d]+)x Leader's base ATK in( spread)? damage( ignoring DEF)? to (\d)?(?=((?:[^e]+|e(?!nem))*))\5enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: (\d+) times?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -1093,7 +1156,65 @@
 					},
 					{
 						type: "option",
+						description: "Spread",
+						regex: /./i,
+						groups: [2],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
 						description: "Ignoring DEF",
+						regex: /./i,
+						groups: [3],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Targeting:",
+					},
+					{
+						type: "number",
+						description: "Count:",
+						groups: [4],
+					},
+					{
+						type: "option",
+						description: "Universal",
+						regex: /all/i,
+						groups: [5],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Types:",
+					},
+					...createTypesSubmatchers([5]),
+					{
+						type: "separator",
+						description: "Classes:",
+					},
+					...createClassesSubmatchers([5]),
+				],
+			},
+
+			{
+				name: "Fixed",
+				targets: ["rumbleSpecial"],
+				regex: /Deals ([,\d]+) fixed( spread)? damage to (\d)?(?=((?:[^e]+|e(?!nem))*))\4enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: (\d+) times?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Amount:",
+						groups: [1],
+					},
+					{
+						type: "number",
+						description: "Repeat:",
+						groups: [7],
+					},
+					{
+						type: "option",
+						description: "Spread",
 						regex: /./i,
 						groups: [2],
 						cssClasses: ["min-width-6"],
@@ -1133,9 +1254,9 @@
 			},
 
 			{
-				name: "Leader's ATK",
+				name: "Fixed",
 				targets: ["gpSpecial"],
-				regex: /Deals ([.\d]+)x Leader's base ATK in damage( ignoring DEF)? to (\d)?(?=((?:[^e]+|e(?!nem))*))\4enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: (\d+) times?)?/i,
+				regex: /Deals ([,\d]+) fixed( spread)? damage to (\d)?(?=((?:[^e]+|e(?!nem))*))\4enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: (\d+) times?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -1149,7 +1270,7 @@
 					},
 					{
 						type: "option",
-						description: "Ignoring DEF",
+						description: "Spread",
 						regex: /./i,
 						groups: [2],
 						cssClasses: ["min-width-6"],
@@ -1180,99 +1301,6 @@
 						description: "Classes:",
 					},
 					...createClassesSubmatchers([4]),
-				],
-			},
-
-			{
-				name: "Fixed",
-				targets: ["rumbleSpecial"],
-				regex: /Deals ([,\d]+) fixed damage to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: (\d+) times?)?/i,
-				submatchers: [
-					{
-						type: "number",
-						description: "Amount:",
-						groups: [1],
-					},
-					{
-						type: "number",
-						description: "Repeat:",
-						groups: [6],
-					},
-					{
-						type: "separator",
-						description: "Targeting:",
-					},
-					{
-						type: "number",
-						description: "Count:",
-						groups: [2],
-					},
-					{
-						type: "option",
-						description: "Universal",
-						regex: /all/i,
-						groups: [3],
-						cssClasses: ["min-width-6"],
-					},
-					{
-						type: "separator",
-						description: "Types:",
-					},
-					...createTypesSubmatchers([3]),
-					{
-						type: "separator",
-						description: "Classes:",
-					},
-					...createClassesSubmatchers([3]),
-					{
-						type: "separator",
-						description: "Range:",
-					},
-					...createRangeSubmatcher([5]),
-				],
-			},
-
-			{
-				name: "Fixed",
-				targets: ["gpSpecial"],
-				regex: /Deals ([,\d]+) fixed damage to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: (\d+) times?)?/i,
-				submatchers: [
-					{
-						type: "number",
-						description: "Amount:",
-						groups: [1],
-					},
-					{
-						type: "number",
-						description: "Repeat:",
-						groups: [5],
-					},
-					{
-						type: "separator",
-						description: "Targeting:",
-					},
-					{
-						type: "number",
-						description: "Count:",
-						groups: [2],
-					},
-					{
-						type: "option",
-						description: "Universal",
-						regex: /all/i,
-						groups: [3],
-						cssClasses: ["min-width-6"],
-					},
-					{
-						type: "separator",
-						description: "Types:",
-					},
-					...createTypesSubmatchers([3]),
-					{
-						type: "separator",
-						description: "Classes:",
-					},
-					...createClassesSubmatchers([3]),
 				],
 			},
 
@@ -3446,17 +3474,25 @@
 				name: "Advantageous Class Effect",
 				targets: ["captain", "special", "superSpecial", "support"],
 				regex:
-					/Boosts Advantageous Class Effect of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+					/Boosts Advantageous Class Effect of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Advantageous Class Effect Boost Turns:",
-						groups: [4, 5],
+						groups: [5, 6],
 					},
 					{
 						type: "number",
 						description: "Advantageous Class Effect Boost Amount:",
 						groups: [2, 3],
+					},
+					{
+						type: "option",
+						description: "Allowing Override",
+						regex: /allowing override/,
+						radioGroup: "targets",
+						groups: [4],
+						cssClasses: ["min-width-6"],
 					},
 					{
 						type: "separator",
@@ -4068,19 +4104,19 @@
 
 			{
 				name: "Stackable: ATK Boost",
-				targets: ["captain", "special"],
+				targets: ["captain", "special", "superSpecial"],
 				regex: /converts ATK Up into a Stackable ATK Up/i,
 			},
 
 			{
 				name: "Stackable: Orb Boost",
-				targets: ["captain", "special"],
+				targets: ["captain", "special", "superSpecial"],
 				regex: /converts Orb Amplification into a Stackable Orb Amplification/i,
 			},
 
 			{
 				name: "Stackable: Color Affinity",
-				targets: ["captain", "special"],
+				targets: ["captain", "special", "superSpecial"],
 				regex: /converts Color Affinity into a Stackable Color Affinity/i,
 			},
 		],
@@ -5624,14 +5660,22 @@
 			},
 			{
 				name: "STND Expansion",
-				targets: ["special", "superSpecial", "support"],
+				targets: ["captain", "special", "superSpecial", "support"],
 				regex:
-					/allows crew to perform Super Tandem with ([^".]+?)orbs for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+					/allows crew to perform Super Tandem with ([^".]+?)orbs(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [2, 3],
+						groups: [3, 4],
+					},
+					{
+						type: "option",
+						description: "Buff Clear Immune",
+						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [2],
+						cssClasses: ["min-width-6"],
 					},
 					{
 						type: "separator",
@@ -5650,6 +5694,25 @@
 							"SUPERBOMB",
 							"RAINBOW",
 							"WANO",
+						],
+						[1]
+					),
+				],
+			},
+			{
+				name: "PERFECTs Consume RCV/SEMLA Orbs",
+				targets: ["captain"],
+				regex:
+					/makes PERFECTs consume ([^.,]+) orbs/i,
+				submatchers: [
+					{
+						type: "separator",
+						description: "Orbs:",
+					},
+					...createOrbsSubmatchers(
+						[
+							"RCV",
+							"SEMLA",
 						],
 						[1]
 					),
@@ -8371,7 +8434,7 @@
 
 			{
 				name: "Positive Buff",
-				targets: ["special", "superSpecial", "swap", "support"],
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
 					/(?:reduces|removes) enemies'[^."]+?positive buff[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
@@ -10631,7 +10694,7 @@
 		"Recharge": [
 			{
 				name: "Healer: RCV",
-				targets: ["rumbleSpecial"],
+				targets: ["rumbleAbility", "rumbleSpecial"],
 				regex:
 					/Heals ([.\d]+)x RCV of HP to (\d)?(self|(?=((?:[^c]+|c(?!rew))*))\4crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?/i,
 				submatchers: [
@@ -10986,7 +11049,7 @@
 
 			{
 				name: "Special CT",
-				targets: ["rumbleSpecial"],
+				targets: ["rumbleAbility", "rumbleSpecial"],
 				regex:
 					/Reduces ([.\d]+)% of Special CT to (\d)?(self|(?=((?:[^c]+|c(?!rew))*))\4crew members?)([. ])?(, excluding self,)?(?: ?with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: ?in a ([\w]+, [\w]+) range)?/i,
 				submatchers: [
@@ -12112,7 +12175,7 @@
 
 			{
 				name: "Special CT",
-				targets: ["rumbleSpecial"],
+				targets: ["rumbleAbility", "rumbleSpecial"],
 				regex:
 					/Removes ([.\d]+)% of Special CT to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: (\d+) times?)?/i,
 				submatchers: [
@@ -12854,6 +12917,46 @@
 						type: "number",
 						description: "Duration:",
 						groups: [4],
+					},
+					{
+						type: "separator",
+						description: "Targeting:",
+					},
+					{
+						type: "option",
+						description: "Universal",
+						regex: /all/i,
+						groups: [2],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Types:",
+					},
+					...createTypesSubmatchers([2]),
+					{
+						type: "separator",
+						description: "Classes:",
+					},
+					...createClassesSubmatchers([2]),
+				],
+			},
+
+			{
+				name: "Half Stats",
+				targets: ["rumbleSpecial"],
+				regex:
+					/([.\d]+)% chance to evade[^.]+Half Stats[^.]+to (self|(?=((?:[^c]+|c(?!rew))*))\3crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Chance:",
+						groups: [1],
+					},
+					{
+						type: "number",
+						description: "Duration:",
+						groups: [5],
 					},
 					{
 						type: "separator",
@@ -13801,7 +13904,7 @@
 
 			{
 				name: "Revive",
-				targets: ["rumbleAbility"],
+				targets: ["gpAbility", "rumbleAbility"],
 				regex:
 					/Revive to ([\d]+)% HP after death to ([^.]+) ([\d]+) times?./i,
 				submatchers: [
