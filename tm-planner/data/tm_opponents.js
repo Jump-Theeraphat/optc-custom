@@ -25172,4 +25172,127 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Doll & Bluegrass ==========
+    4497: {
+        4354: {
+            name: 'Vegapunk',
+            type: 'DEX',
+            pos: 4,
+            rec: [4499, 4500, 4501],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "STR/PSY/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "STR/PSY/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "STR/PSY/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Vegapunk', '?'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-except", "turn": "99", "detail": "Enemy's Poison" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "cd-rew", "turn": "3", "detail": "Crewmate" },
+                                { "type": "chain-lock", "turn": "5" },
+                                { "type": "desp", "turn": "10" },
+                                { "type": "resil", "turn": "8" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Vegapunk', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "cd-rew", "turn": "5" },
+                                { "type": "slot-block", "detail": "[BLOCK][POISON]" },
+                                { "type": "chain-atk-down-min", "turn": "3", "detail": "<=2.5" },
+                                { "type": "def", "turn": "5", "detail": "10000x" },
+                                { "type": "intim", "turn": "3", "detail": "Type Effect Boost, -2" },
+                                { "type": "para", "turn": "5" },
+                                { "type": "atk-down", "turn": "5" },
+                                { "type": "orb-boost", "turn": "3", "detail": "1.1x" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4497: {
+            name: 'Doll & Bluegrass',
+            type: 'PSY',
+            pos: 5,
+            rec: [4490, 4492, 4499],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Powerhouse Cerebral Free Spirit" },
+                                { "type": "sw-red", "turn": "5", "detail": "Powerhouse Cerebral Free Spirit" },
+                                { "type": "cd-red", "turn": "5", "detail": "Powerhouse Cerebral Free Spirit" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Tosa', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-except", "turn": "99", "detail": "Enemy's Poison" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "5" },
+                                { "type": "bind", "turn": "5", "detail": "Crewmate " },
+                                { "type": "desp", "turn": "10" },
+                                { "type": "def-perc", "turn": "7" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Doll & Bluegrass', 'PSY'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "7" },
+                                { "type": "Territory", "turn": "2" },
+                                { "type": "def-null", "turn": "2" },
+                                { "type": "desp", "turn": "16" },
+                                { "type": "def", "turn": "5", "detail": "10000x" },
+                                { "type": "Slot Atk Down", "turn": "3", "detail": "[STR][DEX][QCK][PSY][INT][TND]" }]`)
+                            },
+                            {
+                                type: 'Interrupt - Slot Change (once)',
+                                action: JSON.parse(`[{ "type": "bar-slot", "turn": "3", "detail": "2x RAINBOW" },
+                                    { "type": "clear-buff" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };

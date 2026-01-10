@@ -68,6 +68,11 @@ function getBoosters(tmId, server) {
     $('#info_1_2x_alt').hide();
     $('#incomplete-notice').hide();
 
+    if (tmId >= 4497)
+        $('.booster_old_div').hide();
+    else
+        $('.booster_old_div').show();
+
     // Change 2x or 2.25x version
     $('.div_x').hide();
     if (
@@ -630,11 +635,13 @@ function getBoosters(tmId, server) {
     } else if (
         tmId == 4053 ||
         tmId == 4074 ||
-        tmId == 4464
+        tmId == 4464 ||
+        tmId == 4497
     ) {
         // TM Luffy
         // TM Edward Newgate
         // TM Pudding
+        // TM Doll & Bluegrass
         $('#div_2x').show();
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
