@@ -25194,8 +25194,8 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Vegapunk', '?'],
-                    hp_: 2000000,
+                    boss: ['Vegapunk', 'DEX'],
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -25252,7 +25252,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Tosa', '?'],
+                    boss: ['Tosa', 'DEX'],
                     hp_: 2500000,
                     atk_: 6600,
                     detail: [
