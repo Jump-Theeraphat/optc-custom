@@ -260,4 +260,7 @@ var kizunas = {
     4489: {
         name: 'Shirahoshi & Mansherry v2 6+ (~ 6am)'
     },
+    4505: {
+        name: 'Kaido 6+ (~ 6am)'
+    },
 };
