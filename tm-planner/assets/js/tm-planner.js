@@ -26,7 +26,7 @@ function createTooltip(imgDiv, text) {
 }
 
 function createTooltipForUnit(imgDiv, unit) {
-    var tooltipTxt = unit[0];
+    var tooltipTxt = unit.name;
     tooltipTxt += '<br>';
 
     if (imgDiv.data('class1')) {
@@ -810,30 +810,23 @@ function populateBoosters(boosters) {
             unitId = parseVsUnitId(b.id);
 
         // Type and Class
-        imgDiv.data('type', units[unitId - 1][1]);
+        imgDiv.data('type', units[unitId].type);
 
-        var unitClass = units[unitId - 1][2];
-        if (Array.isArray(unitClass)) {
+        var unitClass = units[unitId].class;
+        if (b.id > 9000 || Array.isArray(unitClass)) {
             var class1;
             var class2;
 
-            if (Array.isArray(unitClass[0]) || Array.isArray(unitClass[1])) {
-                if (unitClass.length === 2) {
-                    // VS Units
-                    var vsClass;
-                    if (b.id % 2 === 1)
-                        vsClass = unitClass[0];
-                    else
-                        vsClass = unitClass[1];
+            if ((units[`${unitId}-1`] || units[`${unitId}-2`]) && b.id > 9000) {
+                // VS Units
+                var vsClass;
+                if (b.id % 2 === 1)
+                    vsClass = units[`${unitId}-1`].class;
+                else
+                    vsClass = units[`${unitId}-2`].class;
 
-                    class1 = vsClass[0];
-                    class2 = vsClass[1];
-                } else {
-                    // Dual Units
-                    var dualClass = unitClass[2];
-                    class1 = dualClass[0];
-                    class2 = dualClass[1];
-                }
+                class1 = vsClass[0];
+                class2 = vsClass[1];
             } else {
                 class1 = unitClass[0];
                 class2 = unitClass[1];
@@ -846,9 +839,9 @@ function populateBoosters(boosters) {
         }
 
         // Name in tooltip
-        createTooltipForUnit(imgDiv, units[unitId - 1]);
+        createTooltipForUnit(imgDiv, units[unitId]);
 
-        imgDiv.data('max_lv', units[unitId - 1][7])
+        imgDiv.data('max_lv', units[unitId].maxLevel)
         imgDiv.data('team', -1);
         imgDiv.attr('id', 'booster_' + b.id);
         imgDiv.attr('draggable', true);
@@ -1292,7 +1285,7 @@ function parseLbStats(unitId) {
 
     if (lbs) {
         for (var l in lbs) {
-            var lbDesc = lbs[l].description;
+            var lbDesc = lbs[l];
 
             if (l < keyLv) {
                 if (lbDesc.includes('Reduce base Special Cooldown by '))
@@ -1438,9 +1431,9 @@ function populateUnitDetail(unitId) {
         $('#unit-detail-thumb').append(imgHtml);
 
         // Type
-        $('#unit-modal-title').html(units[unitId - 1][0]);
+        $('#unit-modal-title').html(units[unitId].name);
         $('#unit-modal-title').removeClass('STR DEX QCK PSY INT');
-        $('#unit-modal-title').addClass(units[unitId - 1][1]);
+        $('#unit-modal-title').addClass(units[unitId].type);
 
         // Class
         $('#unit-detail-class1, #unit-detail-class2').removeClass(
@@ -1448,34 +1441,27 @@ function populateUnitDetail(unitId) {
         );
 
         // Cost
-        $('#unit-cost').text(units[unitId - 1][4]);
+        $('#unit-cost').text(units[unitId].cost);
 
         // Check for Dual Unit / VS Unit
         var isDual = unitDetail.swap != null;
         var isVS = unitDetail.VSSpecial != null || unitDetail.vsSpecial != null;
 
-        var unitClass = units[unitId - 1][2];
-        if (Array.isArray(unitClass)) {
+        var unitClass = units[unitId].class;
+        if (isVS || Array.isArray(unitClass)) {
             var class1;
             var class2;
 
-            if (isDual || isVS) {
-                if (isVS) {
-                    // VS Units
-                    var vsClass;
-                    if (origId % 2 === 1)
-                        vsClass = unitClass[0];
-                    else
-                        vsClass = unitClass[1];
+            if (isVS) {
+                // VS Units
+                var vsClass;
+                if (origId % 2 === 1)
+                    vsClass = units[`${unitId}-1`].class;
+                else
+                    vsClass = units[`${unitId}-2`].class;
 
-                    class1 = vsClass[0].replace(' ', '-').toLowerCase();
-                    class2 = vsClass[1].replace(' ', '-').toLowerCase();
-                } else {
-                    // Dual Units
-                    var dualClass = unitClass[2];
-                    class1 = dualClass[0].replace(' ', '-').toLowerCase();
-                    class2 = dualClass[1].replace(' ', '-').toLowerCase();
-                }
+                class1 = vsClass[0].replace(' ', '-').toLowerCase();
+                class2 = vsClass[1].replace(' ', '-').toLowerCase();
             } else {
                 class1 = unitClass[0].replace(' ', '-').toLowerCase();
                 class2 = unitClass[1].replace(' ', '-').toLowerCase();
@@ -1598,8 +1584,8 @@ function populateUnitDetail(unitId) {
 
             // Parse CD
             var baseCd = 'N/A';
-            if (cooldowns[unitId - 1])
-                baseCd = cooldowns[unitId - 1][1];
+            if (cooldowns[unitId])
+                baseCd = cooldowns[unitId][1];
             var lbStats = parseLbStats(unitId);
 
             var baseLbCd = 'N/A';
@@ -1851,7 +1837,7 @@ function populateUnitModal(src, selectedId, assigned) {
             imgDiv.data('src', src);
 
             // Name in tooltip
-            createTooltip(imgDiv, units[unitId - 1][0]);
+            createTooltip(imgDiv, units[unitId].name);
 
             imgDiv.addClass('select-modal-unit');
             imgDiv.css('display', 'inline-block');
@@ -1877,7 +1863,7 @@ function populateUnitModal(src, selectedId, assigned) {
                 imgDiv.data('src', src);
 
                 // Name in tooltip
-                createTooltip(imgDiv, units[unitId - 1][0]);
+                createTooltip(imgDiv, units[unitId].name);
 
                 imgDiv.addClass('select-modal-unit');
                 imgDiv.addClass('is-clone');
@@ -1907,7 +1893,7 @@ function populateUnitModal(src, selectedId, assigned) {
                 imgDiv.data('src', src);
 
                 // Name in tooltip
-                createTooltip(imgDiv, units[unitId - 1][0]);
+                createTooltip(imgDiv, units[unitId].name);
 
                 imgDiv.addClass('select-modal-unit');
                 imgDiv.css('display', 'inline-block');
@@ -1934,30 +1920,23 @@ function getNonBoosterImg(origId, team) {
         unitId = parseVsUnitId(unitId);
 
     // Type and Class
-    imgDiv.data('type', units[unitId - 1][1]);
+    imgDiv.data('type', units[unitId].type);
 
-    var unitClass = units[unitId - 1][2];
-    if (Array.isArray(unitClass)) {
+    var unitClass = units[unitId].class;
+    if (origId > 9000 || Array.isArray(unitClass)) {
         var class1;
         var class2;
 
-        if (Array.isArray(unitClass[0])) {
-            if (unitClass.length === 2) {
-                // VS Units
-                var vsClass;
-                if (origId % 2 === 1)
-                    vsClass = unitClass[0];
-                else
-                    vsClass = unitClass[1];
+        if ((units[`${unitId}-1`] || units[`${unitId}-2`]) && origId > 9000) {
+            // VS Units
+            var vsClass;
+            if (origId % 2 === 1)
+                vsClass = units[`${unitId}-1`].class;
+            else
+                vsClass = units[`${unitId}-2`].class;
 
-                class1 = vsClass[0];
-                class2 = vsClass[1];
-            } else {
-                // Dual Units
-                var dualClass = unitClass[2];
-                class1 = dualClass[0];
-                class2 = dualClass[1];
-            }
+            class1 = vsClass[0];
+            class2 = vsClass[1]
         } else {
             class1 = unitClass[0];
             class2 = unitClass[1];
@@ -1970,9 +1949,9 @@ function getNonBoosterImg(origId, team) {
     }
 
     // Name in tooltip
-    createTooltipForUnit(imgDiv, units[unitId - 1]);
+    createTooltipForUnit(imgDiv, units[unitId]);
 
-    imgDiv.data('max_lv', units[unitId - 1][7]);
+    imgDiv.data('max_lv', units[unitId].maxLevel);
     imgDiv.data('team', team);
     imgDiv.attr('id', 'booster-clone_' + unitId);
     imgDiv.attr('draggable', false);
@@ -2018,7 +1997,7 @@ function createCloneInSlot(orig, slot, isAmbush, isAmbushClone) {
     if (origId > 9000)
         origId = parseVsUnitId(origId);
 
-    createTooltipForUnit(clone, units[origId - 1]);
+    createTooltipForUnit(clone, units[origId]);
 
     clone.css({
         top: 0,
@@ -2792,26 +2771,30 @@ function getClassesForUnit(origId) {
 
     // Search for class
     var uniqueClasses = new Set();
-    var unitClass = units[unitId - 1][2];
+    var unitClass = units[unitId].class;
 
-    if (Array.isArray(unitClass)) {
-        if (Array.isArray(unitClass[0])) {
-            if (unitClass.length === 2) {
+    if (origId > 9000 || Array.isArray(unitClass)) {
+        if (units[`${unitId}-1`] || units[`${unitId}-2`]) {
+            if (origId > 9000) {
                 // VS Units
                 var vsClass;
                 if (origId % 2 === 1)
-                    vsClass = unitClass[0];
+                    vsClass = units[`${unitId}-1`].class;
                 else
-                    vsClass = unitClass[1];
+                    vsClass = units[`${unitId}-2`].class;
 
                 uniqueClasses.add(vsClass[0]);
                 uniqueClasses.add(vsClass[1]);
             } else {
                 // Dual Units
-                for (i = 0; i < 3; i++) {
-                    uniqueClasses.add(unitClass[i][0]);
-                    uniqueClasses.add(unitClass[i][1]);
-                }
+                uniqueClasses.add(unitClass[0]);
+                uniqueClasses.add(unitClass[1]);
+
+                uniqueClasses.add(units[`${unitId}-1`].class[0]);
+                uniqueClasses.add(units[`${unitId}-1`].class[1]);
+
+                uniqueClasses.add(units[`${unitId}-2`].class[0]);
+                uniqueClasses.add(units[`${unitId}-2`].class[1]);
             }
         } else {
             uniqueClasses.add(unitClass[0]);
@@ -5240,7 +5223,7 @@ $(document).ready(function () {
             });
 
             // Search for cost
-            var cost = units[parseVsUnitId(unitId) - 1][4];
+            var cost = units.parseVsUnitId(unitId).cost;
             if (cost <= 29)
                 searchStr = searchStr + "|cost 29 or less|cost 40 or less";
             else if (cost <= 40)

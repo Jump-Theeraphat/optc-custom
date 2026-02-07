@@ -5,7 +5,7 @@
 
         for (u in unitIds) {
             var uid = unitIds[u];
-            var unit = units[uid - 1];
+            var unit = units[uid];
             var unitDetail = details[uid];
 
             if (unitDetail.special) {
@@ -35,7 +35,7 @@
 
         for (u in unitIds) {
             var uid = unitIds[u];
-            var unit = units[uid - 1];
+            var unit = units[uid];
             var unitDetail = details[uid];
 
             if (unitDetail.special) {
