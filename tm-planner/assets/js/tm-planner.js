@@ -68,7 +68,7 @@ function getBoosters(tmId, server) {
     $('#info_1_2x_alt').hide();
     $('#incomplete-notice').hide();
 
-    if (tmId >= 4497)
+    if (tmId >= 4206)
         $('.booster_old_div').hide();
     else
         $('.booster_old_div').show();
@@ -636,12 +636,14 @@ function getBoosters(tmId, server) {
         tmId == 4053 ||
         tmId == 4074 ||
         tmId == 4464 ||
-        tmId == 4497
+        tmId == 4497 ||
+        tmId == 4511
     ) {
         // TM Luffy
         // TM Edward Newgate
         // TM Pudding
         // TM Doll & Bluegrass
+        // TM Reiju
         $('#div_2x').show();
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
@@ -807,10 +809,16 @@ function populateBoosters(boosters) {
 
         var unitId = b.id;
         if (b.id > 9000)
-            unitId = parseVsUnitId(b.id);
+            unitId = parseVsUnitId(b.id)
 
         // Type and Class
-        imgDiv.data('type', units[unitId].type);
+        if (b.id > 9000) {
+            if (unitId % 2 === 1)
+                imgDiv.data('type', units[`${unitId}-1`].type);
+            else
+                imgDiv.data('type', units[`${unitId}-2`].type);
+        } else
+            imgDiv.data('type', units[unitId].type);
 
         var unitClass = units[unitId].class;
         if (b.id > 9000 || Array.isArray(unitClass)) {

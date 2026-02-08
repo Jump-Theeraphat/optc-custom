@@ -25284,11 +25284,140 @@ var tm_opponents = {
                                 { "type": "desp", "turn": "16" },
                                 { "type": "def", "turn": "5", "detail": "10000x" },
                                 { "type": "Slot Atk Down", "turn": "3", "detail": "[STR][DEX][QCK][PSY][INT][TND]" }]`)
-                            },
-                            {
-                                type: 'Interrupt - Slot Change (once)',
-                                action: JSON.parse(`[{ "type": "bar-slot", "turn": "3", "detail": "2x RAINBOW" },
-                                    { "type": "clear-buff" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Slot Change (once)',
+                            action: JSON.parse(`[{ "type": "bar-slot", "turn": "3", "detail": "2x RAINBOW" },
+                                { "type": "clear-buff" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Reiju ==========
+    4511: {
+        3805: {
+            name: 'Sugar',
+            type: 'STR',
+            pos: 4,
+            rec: [4515, 4516, 4517],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Free Spirit Driven Cerebral" },
+                                { "type": "sw-red", "turn": "5", "detail": "Free Spirit Driven Cerebral" },
+                                { "type": "cd-red", "turn": "5", "detail": "Free Spirit Driven Cerebral" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Baby 5', 'STR'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-def", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "hp-cut", "detail": "50%" },
+                                { "type": "bar-p", "turn": "3", "detail": "3x" },
+                                { "type": "burn-p", "turn": "6", "detail": "10000" },
+                                { "type": "pain", "turn": "3", "detail": "10000" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Sugar', 'STR'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Free Spirit',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-def", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "cd-rew", "turn": "5", "detail": "Top-Row , Bottom-Row" },
+                                { "type": "def-perc", "turn": "6" },
+                                { "type": "chain-lock", "turn": "6" },
+                                { "type": "chain-atk-down-min", "turn": "6", "detail": "<=3.0" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Percent Dmg Reduction Not Applied (once)',
+                            action: JSON.parse(`[{ "type": "clear-buff" },
+                                { "type": "inc-dmg", "turn": "10", "detail": "2x" },
+                                { "type": "hunger", "detail": "3x" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "dmg-normal", "detail": "80000" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4511: {
+            name: 'Reiju',
+            type: 'STR',
+            pos: 5,
+            rec: [4506, 4507, 4515],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Fighter Slasher Cerebral" },
+                                { "type": "sw-red", "turn": "5", "detail": "Fighter Slasher Cerebral" },
+                                { "type": "cd-red", "turn": "5", "detail": "Fighter Slasher Cerebral" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Pudding', 'STR'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-def", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "bind", "turn": "8", "detail": "Top-Row , Middle-Row " },
+                                { "type": "bar-slot", "turn": "2", "detail": "2x RAINBOW" },
+                                { "type": "chain-atk-down-min", "turn": "2", "detail": "<=2.75" },
+                                { "type": "def", "turn": "6", "detail": "10000x" },
+                                { "type": "intim", "turn": "1", "detail": "Crew's ATK Up /Slot Effect Boost /Set Chain Multiplier, -1" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Reiju', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-poison", "turn": "99" },
+                                { "type": "immu-poison", "turn": "99", "detail": "Venom" },
+                                { "type": "immu-poison", "turn": "99", "detail": "Progressive" },
+                                { "type": "immu-delay", "turn": "99" },
+                                { "type": "immu-def", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "ca-swap", "turn": "3", "detail": "Crewmate" },
+                                { "type": "para", "turn": "10" },
+                                { "type": "slot-bind", "turn": "6" },
+                                { "type": "bar-hit", "turn": "3", "detail": "30x" },
+                                { "type": "atk-boost", "turn": "3", "detail": "1.1x" },
+                                { "type": "orb-boost", "turn": "3", "detail": "1.1x" }]`)
                         }
                     ]
                 },
