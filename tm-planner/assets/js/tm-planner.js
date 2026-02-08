@@ -5231,7 +5231,7 @@ $(document).ready(function () {
             });
 
             // Search for cost
-            var cost = units.parseVsUnitId(unitId).cost;
+            var cost = units[parseVsUnitId(unitId)].cost;
             if (cost <= 29)
                 searchStr = searchStr + "|cost 29 or less|cost 40 or less";
             else if (cost <= 40)
