@@ -263,4 +263,8 @@ var kizunas = {
     4505: {
         name: 'Kaido 6+ (~ 6am)'
     },
+    4520: {
+        name: 'Ulti & Page One 6+ (~ 6am)',
+        xch_id: 4514
+    },
 };
