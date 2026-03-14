@@ -434,6 +434,130 @@
 
 	// Structure will be changed to window.matchers[target][matcherGroup]
 	let matchers = {
+		"Auto+": [
+
+			{
+				name: "Activates: Special",
+				targets: ["support"],
+				regex:
+					/When you reach the (\d+)\w{2} stage, activates supported character's Special/i,
+				submatchers: [
+					{
+						type: "option",
+						description: "1st",
+						regex: /1/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "2nd",
+						regex: /2/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "3rd",
+						regex: /3/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "4th",
+						regex: /4/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+				],
+			},
+			{
+				name: "Activates: Super Effect",
+				targets: ["support"],
+				regex:
+					/When you reach the (\d+)\w{2} stage, activates supported character's Super Effect/i,
+				submatchers: [
+					{
+						type: "option",
+						description: "1st",
+						regex: /1/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "2nd",
+						regex: /2/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "3rd",
+						regex: /3/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "4th",
+						regex: /4/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+				],
+			},
+			{
+				name: "Activates: Switch Effect",
+				targets: ["support"],
+				regex:
+					/When you reach the (\d+)\w{2} stage, activates supported character's Switch Effect/i,
+				submatchers: [
+					{
+						type: "option",
+						description: "1st",
+						regex: /1/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "2nd",
+						regex: /2/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "3rd",
+						regex: /3/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "4th",
+						regex: /4/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+				],
+			},
+		],
+
 		Damage: [
 			{
 				name: "Old Damage dealer",
@@ -4120,6 +4244,8 @@
 				regex: /converts Color Affinity into a Stackable Color Affinity/i,
 			},
 		],
+
+		
 		"Ability Requirements": [
 			{
 				name: "Turn Limited Effects",
@@ -7683,6 +7809,7 @@
 					},
 				],
 			},
+
 			{
 				name: "Pain",
 				targets: ["captain", "special", "sailor", "support"],
@@ -7712,6 +7839,21 @@
 					},
 				],
 			},
+
+			{
+				name: "Target Lock",
+				targets: ["captain", "special", "sailor", "support"],
+				regex:
+				/(?:reduces|removes)[^."]+?(?:Target Lock|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2, 3, 4, 5],
+					},
+				],
+			},
+
 		],
 		"Apply Enemy Effects": [
 			{
@@ -8093,11 +8235,11 @@
 				name: "Marked",
 				targets: ["special", "superSpecial"],
 				regex:
-					/Marks all enemies (?:with ([?.,\d]+) or more MAX HP)/i,
+					/Marks all enemies (?:with ([?.,\d]+) or more HP)/i,
 				submatchers: [
 					{
 						type: "number",
-						description: "Enemy's Minimum MAX HP:",
+						description: "Enemy's Minimum HP:",
 						groups: [1],
 					},
 				],
@@ -8228,10 +8370,10 @@
 			},
 
 			{
-				name: "End of Turn Damage/Percent Cut",
+				name: "End of Turn Damage",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/(?:reduces|removes) enemies[^."]+?End of Turn Damage\/Percent Cut[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+					/(?:reduces|removes) enemies[^."]+?End of Turn Damage(?:\/Percent Cut)?[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -10777,7 +10919,7 @@
 
 			{
 				name: "Healer: Percentage",
-				targets: ["rumbleSpecial"],
+				targets: ["rumbleAbility", "rumbleSpecial"],
 				regex:
 					/Heals ([.\d]+)% of HP to (\d)?(self|(?=((?:[^c]+|c(?!rew))*))\4crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?/i,
 				submatchers: [
@@ -11431,6 +11573,39 @@
 						description: "Classes:",
 					},
 					...createClassesSubmatchers([2]),
+				],
+			},
+
+			{
+				name: "Sub Switch",
+				targets: ["rumbleSpecial"],
+				regex:
+					/Switches (self) with (\d+)\w{2} sub character./i,
+				submatchers: [
+					{
+						type: "option",
+						description: "1st",
+						regex: /1/i,
+						radioGroup: "sub",
+						groups: [2],
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "2nd",
+						regex: /2/i,
+						radioGroup: "sub",
+						groups: [2],
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "3rd",
+						regex: /3/i,
+						radioGroup: "sub",
+						groups: [2],
+						cssClasses: ["min-width-3"],
+					},
 				],
 			},
 		],
@@ -12172,10 +12347,10 @@
 			},
 
 			{
-				name: "Special CT",
+				name: "Special CT Delay",
 				targets: ["rumbleAbility", "rumbleSpecial"],
 				regex:
-					/Removes ([.\d]+)% of Special CT to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: (\d+) times?)?/i,
+					/([.\d]+)% Special CT Delay to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: (\d+) times?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -12222,10 +12397,10 @@
 			},
 
 			{
-				name: "Special CT",
+				name: "Special CT Delay",
 				targets: ["gpSpecial"],
 				regex:
-					/Removes ([.\d]+)% of Special CT to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: (\d+) times?)?/i,
+					/([.\d]+)% Special CT Delay to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: (\d+) times?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -13061,6 +13236,86 @@
 			},
 
 			{
+				name: "RCV Bind",
+				targets: ["rumbleSpecial"],
+				regex:
+					/([.\d]+)% chance to evade[^.]+RCV Bind[^.]+to (self|(?=((?:[^c]+|c(?!rew))*))\3crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Chance:",
+						groups: [1],
+					},
+					{
+						type: "number",
+						description: "Duration:",
+						groups: [5],
+					},
+					{
+						type: "separator",
+						description: "Targeting:",
+					},
+					{
+						type: "option",
+						description: "Universal",
+						regex: /all/i,
+						groups: [2],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Types:",
+					},
+					...createTypesSubmatchers([2]),
+					{
+						type: "separator",
+						description: "Classes:",
+					},
+					...createClassesSubmatchers([2]),
+				],
+			},
+
+			{
+				name: "RCV Bind",
+				targets: ["gpSpecial"],
+				regex:
+					/([.\d]+)% chance to evade[^.]+RCV Bind[^.]+to (?=((?:[^c]+|c(?!rew))*))\2crew members?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Chance:",
+						groups: [1],
+					},
+					{
+						type: "number",
+						description: "Duration:",
+						groups: [4],
+					},
+					{
+						type: "separator",
+						description: "Targeting:",
+					},
+					{
+						type: "option",
+						description: "Universal",
+						regex: /all/i,
+						groups: [2],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Types:",
+					},
+					...createTypesSubmatchers([2]),
+					{
+						type: "separator",
+						description: "Classes:",
+					},
+					...createClassesSubmatchers([2]),
+				],
+			},
+
+			{
 				name: "Special Bind",
 				targets: ["rumbleSpecial"],
 				regex:
@@ -13141,10 +13396,10 @@
 			},
 
 			{
-				name: "Special CT",
+				name: "Special CT Delay",
 				targets: ["rumbleSpecial"],
 				regex:
-					/([.\d]+)% chance to evade[^.]+Special CT[^.]+to (self|(?=((?:[^c]+|c(?!rew))*))\3crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
+					/([.\d]+)% chance to evade[^.]+Special CT Delay[^.]+to (self|(?=((?:[^c]+|c(?!rew))*))\3crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -13181,10 +13436,10 @@
 			},
 
 			{
-				name: "Special CT",
+				name: "Special CT Delay",
 				targets: ["gpSpecial"],
 				regex:
-					/([.\d]+)% chance to evade[^.]+Special CT[^.]+to (?=((?:[^c]+|c(?!rew))*))\2crew members?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
+					/([.\d]+)% chance to evade[^.]+Special CT Delay[^.]+to (?=((?:[^c]+|c(?!rew))*))\2crew members?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
 				submatchers: [
 					{
 						type: "number",

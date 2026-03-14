@@ -6099,29 +6099,41 @@ window.evolutions = {
         evolution: 4505,
         evolvers: [ "4505-skull", "4505-skull", "4505-skull", "4505-skull", "4505-skull" ]
     },
-    4513: {
-        evolution: 4514,
-        evolvers: [ "4514-skull", "4514-skull", "4514-skull", "4514-skull", "4514-skull" ]
-    },
     4510: {
         evolution: 4511,
         evolvers: [ "4511-skull", "4511-skull", "4511-skull", "4511-skull", "4511-skull" ]
     },
+    4513: {
+        evolution: 4514,
+        evolvers: [ "4514-skull", "4514-skull", "4514-skull", "4514-skull", "4514-skull" ]
+    },
+    3433: {
+        evolution: 4520,
+        evolvers: [ "4520-skull", "4520-skull", "4520-skull", "skullQCK", "skullDEX" ]
+    },
+    4526: {
+        evolution: 4527,
+        evolvers: [ "4527-skull", "4527-skull", "4527-skull", "4527-skull", "4527-skull" ]
+    },
     // break
-    4988: {
-        evolution: 4989,
+    5013: {
+        evolution: 5014,
+        evolvers: [ 118, 86, 266, 302, 267 ]
+    },
+    5029: {
+        evolution: 5030,
         evolvers: [ 117, 83, 86, 302, 102 ]
     },
-    4990: {
-        evolution: 4991,
+    5031: {
+        evolution: 5032,
         evolvers: [ 117, 83, 84, 300, 100 ]
     },
-    4992: {
-        evolution: 4993,
+    5046: {
+        evolution: 5047,
         evolvers: [ 117, 79, 90, 96, 101 ]
     },
-    4994: {
-        evolution: 4995,
+    5054: {
+        evolution: 5055,
         evolvers: [ 117, 84, 95, 95, 300 ]
     },
 };
