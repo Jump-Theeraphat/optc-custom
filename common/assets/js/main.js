@@ -91,6 +91,11 @@ function getThumb(thumbId) {
         return '/tm-planner/assets/img/new-thumbs/4469-1.png';
     if (paddedThumbId === '9018')
         return '/tm-planner/assets/img/new-thumbs/4469-2.png';
+    // Zoro VS St. Nusjuro
+    if (paddedThumbId === '9019')
+        return 'https://2shankz.github.io/optc-db.github.io/api/images/thumbnail/jap/4/500/4529-1.png';
+    if (paddedThumbId === '9020')
+        return 'https://2shankz.github.io/optc-db.github.io/api/images/thumbnail/jap/4/500/4529-2.png';
 
     if (
         paddedThumbId == 4321

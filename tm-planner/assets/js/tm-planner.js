@@ -752,6 +752,16 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 4527) {
+        // TM Shiryu
+        $('#div_2_2x_v2').show();
+        $('#div_1_8x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -1339,6 +1349,9 @@ function parseVsUnitId(vsId) {
     // Zoro VS Lucci
     if (vsId == 9017 || vsId == 9018)
         return 4469;
+    // Zoro VS St. Nusjuro
+    if (vsId == 9019 || vsId == 9020)
+        return 4529;
 
     return vsId;
 }

@@ -25424,4 +25424,121 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Shiryu ==========
+    4527: {
+        4522: {
+            name: 'Blackbeard & Kuzan',
+            type: 'QCK',
+            pos: 4,
+            rec: [9019, 4530, 4531],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "STR/DEX/QCK" },
+                                { "type": "sw-red", "turn": "5", "detail": "STR/DEX/QCK" },
+                                { "type": "cd-red", "turn": "5", "detail": "STR/DEX/QCK" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Burgess', 'QCK'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "bind", "turn": "8", "detail": "Crewmate " },
+                                { "type": "def-thres", "turn": "7" },
+                                { "type": "cd-rew", "turn": "3", "detail": "Top-Row" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Blackbeard & Kuzan', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Free Spirit',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "slot-para" },
+                                { "type": "def-perc", "turn": "6" },
+                                { "type": "atk-down", "turn": "6" },
+                                { "type": "def", "turn": "6", "detail": "10000x" },
+                                { "type": "cd-rew", "turn": "2", "detail": "Crewmate" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "dmg-normal", "detail": "200000" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4527: {
+            name: ['Shi', 'ryu'],
+            type: ['QCK', 'DEX'],
+            pos: 5,
+            rec: [4521, 4522, 9020],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "STR/DEX/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "STR/DEX/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "STR/DEX/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Vasco Shot', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-def", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "7", "detail": "Right-Column " },
+                                { "type": "def-thres", "turn": "7" },
+                                { "type": "cd-rew", "turn": "1", "detail": "Left-Column" },
+                                { "type": "cd-lock", "detail": "Left-Column, 2x GOOD" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shiryu', 'QCK'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Slasher',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "hp-cut", "detail": "70%" },
+                                { "type": "slot-block" },
+                                { "type": "para", "turn": "11" },
+                                { "type": "desp", "turn": "14" },
+                                { "type": "sp-bind", "turn": "10", "detail": "Crewmate " }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
