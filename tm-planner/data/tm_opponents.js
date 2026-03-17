@@ -25531,10 +25531,10 @@ var tm_opponents = {
                             action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
                                 { "type": "nao", "turn": "99" },
                                 { "type": "hp-cut", "detail": "70%" },
+                                { "type": "sp-bind", "turn": "10", "detail": "Crewmate " },
                                 { "type": "slot-block" },
                                 { "type": "para", "turn": "11" },
-                                { "type": "desp", "turn": "14" },
-                                { "type": "sp-bind", "turn": "10", "detail": "Crewmate " }]`)
+                                { "type": "desp", "turn": "14" }]`)
                         }
                     ]
                 },
