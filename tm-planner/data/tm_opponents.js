@@ -25504,7 +25504,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Vasco Shot', '?'],
+                    boss: ['Vasco Shot', 'DEX'],
                     hp_: 2500000,
                     atk_: 6600,
                     detail: [
