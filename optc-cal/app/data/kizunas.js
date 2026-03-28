@@ -267,4 +267,7 @@ var kizunas = {
         name: 'Ulti & Page One 6+ (~ 6am)',
         xch_id: 4514
     },
+    4535: {
+        name: 'Smoker 6+ (~ 6am)'
+    },
 };
