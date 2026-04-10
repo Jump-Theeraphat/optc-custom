@@ -330,4 +330,7 @@ var tms = {
     4527: {
         name: 'Shiryu (1am ~ 6am)'
     },
+    4541: {
+        name: 'Lucci (Egghead) (1am ~ 6am)'
+    },
 };
