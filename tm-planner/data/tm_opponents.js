@@ -25541,4 +25541,124 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Lucci (Egghead) ==========
+    4541: {
+        4137: {
+            name: 'Vegapunk',
+            type: 'PSY',
+            pos: 4,
+            rec: [4537, 4544, 4545],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "STR/DEX/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "STR/DEX/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "STR/DEX/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Vegapunk', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "bind", "turn": "10", "detail": "Right-Column " },
+                                { "type": "intim", "turn": "2", "detail": "Crew's ATK Up /Slot Effect Boost /Type Effect Boost, -1" },
+                                { "type": "cd-rew", "turn": "2", "detail": "Left-Column" },
+                                { "type": "cd-lock", "detail": "Left-Column, 2x GOOD" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Vegapunk', 'PSY'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "burn-p", "turn": "7", "detail": "10000" },
+                                { "type": "def", "turn": "10", "detail": "50000x" },
+                                { "type": "bind", "turn": "12", "detail": "Left-Column " },
+                                { "type": "sp-bind", "turn": "6" },
+                                { "type": "sp-limit", "turn": "3", "detail": "3x" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4541: {
+            name: 'Lucci',
+            type: 'PSY',
+            pos: 5,
+            rec: [4536, 4544, 4546],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Free Spirit Driven Cerebral" },
+                                { "type": "sw-red", "turn": "5", "detail": "Free Spirit Driven Cerebral" },
+                                { "type": "cd-red", "turn": "5", "detail": "Free Spirit Driven Cerebral" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Lucci', 'PSY'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "bar-slot", "turn": "3", "detail": "1x PSY" },
+                                { "type": "cd-rew", "turn": "2", "detail": "Top-Row" },
+                                { "type": "slot-change", "detail": "Top-Row , Bad" },
+                                { "type": "slot-change", "detail": "Crewmate , [QCK]" },
+                                { "type": "bind", "turn": "9", "detail": "Top-Row " },
+                                { "type": "cd-rew", "turn": "2", "detail": "Crewmate" },
+                                { "type": "cd-lock", "detail": "Crewmate, 2x GOOD" },
+                                { "type": "sp-limit", "turn": "3", "detail": "3x" },
+                                { "type": "slot-lock", "detail": "Top-Row , 2x GOOD" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Lucci', 'PSY'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "def-thres", "turn": "5" },
+                                { "type": "def-perc", "turn": "5" },
+                                { "type": "slot-block" },
+                                { "type": "bind", "turn": "10", "detail": "Bottom-Row " },
+                                { "type": "sp-bind", "turn": "7", "detail": "Top-Row " },
+                                { "type": "blow-away", "turn": "3", "detail": "Middle-Row  for" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
