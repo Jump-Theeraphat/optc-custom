@@ -440,7 +440,7 @@
 				name: "Activates: Special",
 				targets: ["support"],
 				regex:
-					/When you reach the (\d+)\w{2} stage, activates supported character's Special/i,
+					/When you reach the ([\w]+) stage, activates supported character's Special/i,
 				submatchers: [
 					{
 						type: "option",
@@ -473,6 +473,22 @@
 						groups: [1],
 						radioGroup: "sub",
 						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "5th",
+						regex: /5/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "Final",
+						regex: /final/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-6"],
 					},
 				],
 			},
@@ -480,7 +496,7 @@
 				name: "Activates: Super Effect",
 				targets: ["support"],
 				regex:
-					/When you reach the (\d+)\w{2} stage, activates supported character's Super Effect/i,
+					/When you reach the ([\w]+) stage, activates supported character's Super Effect/i,
 				submatchers: [
 					{
 						type: "option",
@@ -513,6 +529,22 @@
 						groups: [1],
 						radioGroup: "sub",
 						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "5th",
+						regex: /5/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "Final",
+						regex: /final/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-6"],
 					},
 				],
 			},
@@ -520,7 +552,7 @@
 				name: "Activates: Switch Effect",
 				targets: ["support"],
 				regex:
-					/When you reach the (\d+)\w{2} stage, activates supported character's Switch Effect/i,
+					/When you reach the ([\w]+) stage, activates supported character's Switch Effect/i,
 				submatchers: [
 					{
 						type: "option",
@@ -553,6 +585,22 @@
 						groups: [1],
 						radioGroup: "sub",
 						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "5th",
+						regex: /5/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "Final",
+						regex: /final/i,
+						groups: [1],
+						radioGroup: "sub",
+						cssClasses: ["min-width-6"],
 					},
 				],
 			},
@@ -1618,7 +1666,7 @@
 				name: "Damage Over Time",
 				targets: ["rumbleSpecial"],
 				regex:
-					/Inflicts Lv. (\d+) Damage Over Time to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: for (\d+) seconds)?/i,
+					/Inflicts? Lv. (\d+) Damage Over Time to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: for (\d+) seconds)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -1668,7 +1716,7 @@
 				name: "Damage Over Time",
 				targets: ["gpSpecial"],
 				regex:
-					/Inflicts Lv. (\d+) Damage Over Time to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
+					/Inflicts? Lv. (\d+) Damage Over Time to (\d)?(?=((?:[^e]+|e(?!nem))*))\3enem(?:y|ies)(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: for (\d+) seconds)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -8210,7 +8258,7 @@
 				name: "Weaken",
 				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
-					/(Ignores (?:Weakened )?Debuff Protection and )?Inflicts (?:all enemies) with Weaken by ([?.\d]+)x(?:-([?.\d]+)x)?, by ([?.\d]+)x(?:-([?.\d]+)x)? if enemies are inflicted with Increase Damage Taken, for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+					/(Ignores (?:Weakened )?Debuff Protection and )?Inflicts (?:all enemies) with Weaken by ([?.\d]+)x(?:-([?.\d]+)x)?, by ([?.\d]+)x(?:-([?.\d]+)x)? instead if enemies are inflicted with Increase Damage Taken, for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -8246,7 +8294,7 @@
 			},
 			{
 				name: "Percent Damage Reduction",
-				targets: ["special", "superSpecial"],
+				targets: ["special", "superSpecial", "support"],
 				regex:
 					/(ignores? (?:Percent Damage Reduction )?Debuff Protection and )?(?:Reduces|Removes) enemies' damage received by ([?\d]+)%(?:-([?\d]+)%)? for ([?\d]+)(?:-([?\d]+))? turns?/i,
 				submatchers: [

@@ -742,6 +742,7 @@ const Emet = [ "Emet" ];
 const ClouDClover = [ "Clou D. Clover" ];
 const Guernica = [ "Guernica" ];
 const Joseph = [ "Joseph" ];
+const Strongheart = [ "Strongheart", "Stronger" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -5161,6 +5162,20 @@ window.families = {
     4529: [ ...RoronoaZoro, ...EthanbaronVNusjuro ],
     4530: [ ...Jinbe ],
     4531: [ ...Nami ],
+    4532: [ ...DocQ, ...Strongheart ],
+    4533: [ ...JesusBurgess ],
+    4534: [ ...VanAugur ],
+    4535: [ ...Smoker ],
+    4536: [ ...Usopp, ...Dorry ],
+    4537: [ ...MonkeyDLuffy, ...Broggy ],
+    4538: [ ...Oimo ],
+    4539: [ ...Kashii ],
+    4540: [ ...RobLucci ],
+    4541: [ ...RobLucci ],
+    4543: [ ...Kaku ],
+    4544: [ ...Borsalino ],
+    4545: [ ...Sakazuki ],
+    4546: [ ...Sentomaru ],
     //break
     5013: [ ...MonkeyDLuffy ],
     5014: [ ...MonkeyDLuffy ],
