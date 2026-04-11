@@ -1045,6 +1045,18 @@ function init(tmId, server, isTransfer) {
         }
     }
 
+    // OPTC Lv
+    if (tmId >= 4527) {
+        $('#optc-lv-div').show();
+
+        var optcLv = localStorage.getItem('optcLv');
+        if (typeof optcLv !== 'undefined' && optcLv !== null) {
+            $('#optc-lv-dd').val(optcLv);
+            $('#optc-lv').val(optcLv);
+        }
+    } else
+        $('#optc-lv-div').hide();
+
     resetAll();
 
     if (!isTransfer)
@@ -1063,7 +1075,7 @@ function init(tmId, server, isTransfer) {
         doTeamBuildCheck(teamId);
 
     // Bird Luck
-    if (tmId >= 4033)
+    if (tmId >= 4033 && tmId < 4464)
         $('#bird-luck-div').show();
     else
         $('#bird-luck-div').hide();
@@ -2213,37 +2225,43 @@ function calculateTargetPts() {
                     }
                 }
             } else if (tmId >= 4033) {
+                var optcLv = Number($('#optc-lv').val());
+                if (tmId < 4527)
+                    optcLv = 1; // OPTC Lv is not introduced until v15.3
+
                 if ((navLv + 1) % 25 === 21) {
                     if (Number($(this).data('team')) < 4)
-                        totalPts += multiplier * (baseMini + growthMini * navLv) * 2
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 2 * optcLv
                     else if (Number($(this).data('team')) == 4)
-                        totalPts += multiplier * (baseMain + growthMain * navLv) * 2
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 2 * optcLv
                     else
-                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 2
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 2 * optcLv
                 } else if ((navLv + 1) % 5 === 1) {
                     if (Number($(this).data('team')) < 4)
-                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5 * optcLv
                     else if (Number($(this).data('team')) == 4)
-                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5 * optcLv
                     else
-                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5 * optcLv
                 } else {
                     var birdLuck = Number($('#bird-luck').val());
+                    if (tmId >= 4464)
+                        birdLuck = 1; // Bird is guaranteed for v15.2+
 
                     if (birdLuck === 1 ||
                         birdLuck === .75 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 4 || (navLv + 1) % 5 === 0) ||
                         birdLuck === .5 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 0)) {
                         if (Number($(this).data('team')) < 4)
-                            totalPts += multiplier * (baseMini + growthMini * navLv) * 1.2
+                            totalPts += multiplier * (baseMini + growthMini * navLv) * 1.2 * optcLv
                         else if (Number($(this).data('team')) == 4)
-                            totalPts += multiplier * (baseMain + growthMain * navLv) * 1.2
+                            totalPts += multiplier * (baseMain + growthMain * navLv) * 1.2 * optcLv
                         else
-                            totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.2
+                            totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.2 * optcLv
                     } else {
                         if (Number($(this).data('team')) < 4)
-                            totalPts += multiplier * (baseMini + growthMini * navLv)
+                            totalPts += multiplier * (baseMini + growthMini * navLv) * optcLv
                         else if (Number($(this).data('team')) == 4)
-                            totalPts += multiplier * (baseMain + growthMain * navLv)
+                            totalPts += multiplier * (baseMain + growthMain * navLv) * optcLv
                     }
                 }
             } else if (tmId >= 3801) {
@@ -4591,6 +4609,12 @@ $(document).ready(function () {
 
     $('#bird-luck-dd').change(function () {
         $('#bird-luck').val($(this).val());
+        calculateTargetPts();
+    });
+
+    $('#optc-lv-dd').change(function () {
+        $('#optc-lv').val($(this).val());
+        localStorage.setItem('optcLv', $(this).val());
         calculateTargetPts();
     });
 
