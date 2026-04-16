@@ -1045,18 +1045,6 @@ function init(tmId, server, isTransfer) {
         }
     }
 
-    // OPTC Lv
-    if (tmId >= 4527) {
-        $('#optc-lv-div').show();
-
-        var optcLv = localStorage.getItem('optcLv');
-        if (typeof optcLv !== 'undefined' && optcLv !== null) {
-            $('#optc-lv-dd').val(optcLv);
-            $('#optc-lv').val(optcLv);
-        }
-    } else
-        $('#optc-lv-div').hide();
-
     resetAll();
 
     if (!isTransfer)
@@ -2225,24 +2213,20 @@ function calculateTargetPts() {
                     }
                 }
             } else if (tmId >= 4033) {
-                var optcLv = Number($('#optc-lv').val());
-                if (tmId < 4527)
-                    optcLv = 1; // OPTC Lv is not introduced until v15.3
-
                 if ((navLv + 1) % 25 === 21) {
                     if (Number($(this).data('team')) < 4)
-                        totalPts += multiplier * (baseMini + growthMini * navLv) * 2 * optcLv
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 2
                     else if (Number($(this).data('team')) == 4)
-                        totalPts += multiplier * (baseMain + growthMain * navLv) * 2 * optcLv
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 2
                     else
-                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 2 * optcLv
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 2
                 } else if ((navLv + 1) % 5 === 1) {
                     if (Number($(this).data('team')) < 4)
-                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5 * optcLv
+                        totalPts += multiplier * (baseMini + growthMini * navLv) * 1.5
                     else if (Number($(this).data('team')) == 4)
-                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5 * optcLv
+                        totalPts += multiplier * (baseMain + growthMain * navLv) * 1.5
                     else
-                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5 * optcLv
+                        totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.5
                 } else {
                     var birdLuck = Number($('#bird-luck').val());
                     if (tmId >= 4464)
@@ -2252,16 +2236,16 @@ function calculateTargetPts() {
                         birdLuck === .75 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 4 || (navLv + 1) % 5 === 0) ||
                         birdLuck === .5 && ((navLv + 1) % 5 === 3 || (navLv + 1) % 5 === 0)) {
                         if (Number($(this).data('team')) < 4)
-                            totalPts += multiplier * (baseMini + growthMini * navLv) * 1.2 * optcLv
+                            totalPts += multiplier * (baseMini + growthMini * navLv) * 1.2
                         else if (Number($(this).data('team')) == 4)
-                            totalPts += multiplier * (baseMain + growthMain * navLv) * 1.2 * optcLv
+                            totalPts += multiplier * (baseMain + growthMain * navLv) * 1.2
                         else
-                            totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.2 * optcLv
+                            totalPts += multiplier * (baseAmbush + growthAmbush * navLv) * 1.2
                     } else {
                         if (Number($(this).data('team')) < 4)
-                            totalPts += multiplier * (baseMini + growthMini * navLv) * optcLv
+                            totalPts += multiplier * (baseMini + growthMini * navLv)
                         else if (Number($(this).data('team')) == 4)
-                            totalPts += multiplier * (baseMain + growthMain * navLv) * optcLv
+                            totalPts += multiplier * (baseMain + growthMain * navLv)
                     }
                 }
             } else if (tmId >= 3801) {
@@ -4609,12 +4593,6 @@ $(document).ready(function () {
 
     $('#bird-luck-dd').change(function () {
         $('#bird-luck').val($(this).val());
-        calculateTargetPts();
-    });
-
-    $('#optc-lv-dd').change(function () {
-        $('#optc-lv').val($(this).val());
-        localStorage.setItem('optcLv', $(this).val());
         calculateTargetPts();
     });
 
