@@ -42,6 +42,8 @@ let guideReplacements = [
     { regex: /([0-9]+) turn\(s\) Nullify Damage/g, replacement: "{ \"type\": \"def-null\", \"turn\": \"$1\" }," },
     { regex: /([0-9]+) turn\(s\) Reduce damage taken [0-9]+%/g, replacement: "{ \"type\": \"def-perc\", \"turn\": \"$1\" }," },
     { regex: /([0-9]+) turn\(s\) Damage over [0-9]+ [0-9]+% Reduction/g, replacement: "{ \"type\": \"def-thres\", \"turn\": \"$1\" }," },
+    { regex: /For ([0-9]+) turn\(s\) crew can only deal up to ([0-9]+)% of enemy's maximum HP damage per turn/g, replacement: "{ \"type\": \"dmg-limit\", \"turn\": \"$1\", \"detail\": \"$2%\" }," },
+    { regex: /([0-9]+) turn\(s\) ([A-Za-z]+)  Fear/g, replacement: "{ \"type\": \"fear\", \"turn\": \"$1\", \"detail\": \"$2\" }," },
     { regex: /Full HP Recovery/g, replacement: "{ \"type\": \"heal\", \"detail\": \"100%\" }," },
     { regex: /Fixed ([0-9]+) HP recovery/g, replacement: "{ \"type\": \"heal\", \"detail\": \"$1\" }," },
     { regex: /Percentage damage ([0-9]+%) of current HP/g, replacement: "{ \"type\": \"hp-cut\", \"detail\": \"$1\" }," },

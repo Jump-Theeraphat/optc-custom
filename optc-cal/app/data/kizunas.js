@@ -270,4 +270,7 @@ var kizunas = {
     4535: {
         name: 'Smoker 6+ (~ 6am)'
     },
+    4549: {
+        name: 'Kid v2 6+ (~ 6am)'
+    },
 };
