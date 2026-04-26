@@ -25564,7 +25564,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Vegapunk', 'PSY'],
-                    hp_: 2000000,
+                    hp: 2000000,
                     atk_: 6600,
                     detail: [
                         {
@@ -25619,7 +25619,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Lucci', 'PSY'],
-                    hp_: 2500000,
+                    hp: 2500000,
                     atk_: 6600,
                     detail: [
                         {
