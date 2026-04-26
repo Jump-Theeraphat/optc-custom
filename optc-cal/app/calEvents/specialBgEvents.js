@@ -3867,4 +3867,10 @@ var specialBgEvents = [
         start: '2026-04-01',
         pst_19: false
     },
+    {
+        id: '3rd_anni_ship',
+        start: '2026-04-26',
+        end: '2026-07-04',
+        pst_19: true
+    },
 ]
