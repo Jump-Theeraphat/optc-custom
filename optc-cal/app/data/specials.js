@@ -200,6 +200,11 @@ var specials = {
         name: 'VS Emperor Blackbeard Pirates (1am ~ 6am)',
         thumb: 4522
     },
+    'bb_4571': {
+        type: 'Blitz Battle',
+        name: '12th Anniversary (1am ~ 6am)',
+        thumb: 4571
+    },
 
     'wc_2401': {
         type: 'World Clash',
