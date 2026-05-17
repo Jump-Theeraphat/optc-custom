@@ -3873,4 +3873,9 @@ var specialBgEvents = [
         end: '2026-07-04',
         pst_19: true
     },
+    {
+        id: 'free_pull',
+        start: '2026-05-06',
+        end: '2026-05-16'
+    },
 ]
