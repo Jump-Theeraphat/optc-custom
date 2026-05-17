@@ -1,10 +1,14 @@
 let guideReplacements = [
+    { regex: /^Reduce Special Charge by ([0-9]+)/g, replacement: "{ \"type\": \"cd-red\", \"turn\": \"$1\", \"detail\": \"All\" }," },
+    { regex: /^VS Effect gauge reduction: ([0-9]+)/g, replacement: "{ \"type\": \"vs-red\", \"turn\": \"$1\", \"detail\": \"All\" }," },
+    { regex: /^Super Switch Effect requirement reduction: ([0-9]+)/g, replacement: "{ \"type\": \"sw-red\", \"turn\": \"$1\", \"detail\": \"All\" }," },
     { regex: /\[([A-Za-z]+)\]\[([A-Za-z]+)\]\[([A-Za-z]+)\] type Reduce Special Charge by ([0-9]+)/g, replacement: "{ \"type\": \"cd-red\", \"turn\": \"$4\", \"detail\": \"$1/$2/$3\" }," },
     { regex: /([A-Za-z]+( [A-Za-z]+)+)  class Reduce Special Charge by ([0-9]+)/g, replacement: "{ \"type\": \"cd-red\", \"turn\": \"$3\", \"detail\": \"$1\" }," },
     { regex: /\[([A-Za-z]+)\]\[([A-Za-z]+)\]\[([A-Za-z]+)\] type VS Effect gauge reduction: ([0-9]+)/g, replacement: "{ \"type\": \"vs-red\", \"turn\": \"$4\", \"detail\": \"$1/$2/$3\" }," },
     { regex: /([A-Za-z]+( [A-Za-z]+)+)  class VS Effect gauge reduction: ([0-9]+)/g, replacement: "{ \"type\": \"vs-red\", \"turn\": \"$3\", \"detail\": \"$1\" }," },
     { regex: /\[([A-Za-z]+)\]\[([A-Za-z]+)\]\[([A-Za-z]+)\] type Super Switch Effect requirement reduction: ([0-9]+)/g, replacement: "{ \"type\": \"sw-red\", \"turn\": \"$4\", \"detail\": \"$1/$2/$3\" }," },
     { regex: /([A-Za-z]+( [A-Za-z]+)+)  class Super Switch Effect requirement reduction: ([0-9]+)/g, replacement: "{ \"type\": \"sw-red\", \"turn\": \"$3\", \"detail\": \"$1\" }," },
+    { regex: /(.*) Reduce Special Charge by ([0-9]+)/g, replacement: "{ \"type\": \"cd-red\", \"turn\": \"$2\", \"detail\": \"$1\" }," },
 
     { regex: /For ([0-9]+) turn\(s\), convert healing effects to damage except for \[RCV\]\[SEMLA\] slots/g, replacement: "{ \"type\": \"anti-heal\", \"turn\": \"$1\" }," },
     { regex: /For ([0-9]+) turn\(s\), accumulate healing from \[RCV\]\[SEMLA\] slots and convert to damage at end of turn/g, replacement: "{ \"type\": \"anti-rcv\", \"turn\": \"$1\" }," },

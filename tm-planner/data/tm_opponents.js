@@ -25661,4 +25661,130 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Dr. Vegapunk (Combined) ==========
+    4555: {
+        4557: {
+            name: 'Luffy',
+            type: 'DEX',
+            pos: 4,
+            rec: [4571],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "All" },
+                                { "type": "sw-red", "turn": "5", "detail": "All" },
+                                { "type": "cd-red", "turn": "5", "detail": "All" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Sabo', 'DEX'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "chain-atk-down-min", "turn": "3", "detail": "<=4.0" },
+                                { "type": "cd-rew", "turn": "4", "detail": "Top-Row" },
+                                { "type": "def", "turn": "1", "detail": "100000x" },
+                                { "type": "def-thres", "turn": "1" },
+                                { "type": "def-perc", "turn": "1" },
+                                { "type": "slot-change", "detail": "Top-Row ,  Own Type " },
+                                { "type": "slot-change", "detail": "Middle-Row , Bad" },
+                                { "type": "slot-change", "detail": "Bottom-Row , [TND]" },
+                                { "type": "sp-bind", "turn": "5" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'DEX'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "Territory", "turn": "3" },
+                                { "type": "desp", "turn": "13" },
+                                { "type": "bind", "turn": "13", "detail": "Top-Row " },
+                                { "type": "sp-bind", "turn": "10" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4559: {
+            name: 'Shanks',
+            type: 'DEX',
+            pos: 5,
+            rec: [4557, 4571],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "All" },
+                                { "type": "sw-red", "turn": "5", "detail": "All" },
+                                { "type": "cd-red", "turn": "5", "detail": "All" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Beckman & Yasopp', '?'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "Territory", "turn": "1" },
+                                { "type": "slot-change", "detail": "Top-Row , [STR]" },
+                                { "type": "slot-change", "detail": "Middle-Row , [QCK]" },
+                                { "type": "slot-change", "detail": "Bottom-Row , [DEX]" },
+                                { "type": "def-null", "turn": "1" },
+                                { "type": "cd-rew", "turn": "2", "detail": "Top-Row" },
+                                { "type": "atk-down", "turn": "10" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Shanks', 'DEX'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-except", "turn": "99", "detail": "Delay" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "para", "turn": "12", "detail": "Top-Row" },
+                                { "type": "cd-red", "turn": "99", "detail": "Top-Row " },
+                                { "type": "Territory", "turn": "3" },
+                                { "type": "dmg-limit", "turn": "2", "detail": "50%" },
+                                { "type": "cd-rew", "turn": "4", "detail": "Crewmate" },
+                                { "type": "Slot Atk Down", "turn": "2", "detail": "[STR][DEX][QCK][PSY][INT][WANO][TND]" }]`)
+                        },
+                        {
+                            type: 'Preemp (if >=2 [Celestrial Dragon])',
+                            action: JSON.parse(`[{ "type": "cd-red", "turn": "99", "detail": "Top-Row " }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
