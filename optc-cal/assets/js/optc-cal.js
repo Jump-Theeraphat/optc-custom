@@ -393,7 +393,7 @@ function showFooter() {
                 }
             }
 
-            start += ' 02:30';
+            start += ' 01:00';
             res['start'] = start;
             res['end'] = end;
 
@@ -437,7 +437,7 @@ function showFooter() {
                 }
             }
 
-            start += ' 02:30';
+            start += ' 01:30';
             res['start'] = start;
             res['end'] = end;
 
