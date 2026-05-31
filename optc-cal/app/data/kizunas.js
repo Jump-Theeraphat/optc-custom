@@ -273,4 +273,8 @@ var kizunas = {
     4549: {
         name: 'Kid v2 6+ (~ 6am)'
     },
+    4579: {
+        name: 'Eneru v2 6+ (~ 6am)',
+        xch_id: [4573, 4575]
+    },
 };
