@@ -25742,7 +25742,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Beckman & Yasopp', '?'],
+                    boss: ['Beckman & Yasopp', 'QCK'],
                     hp_: 2500000,
                     atk_: 6600,
                     detail: [
@@ -25763,7 +25763,7 @@ var tm_opponents = {
                 {
                     stageNum: 3,
                     boss: ['Shanks', 'DEX'],
-                    hp_: 3500000,
+                    hp: 3500000,
                     atk_: 9600,
                     weakness: 'Powerhouse',
                     detail: [
