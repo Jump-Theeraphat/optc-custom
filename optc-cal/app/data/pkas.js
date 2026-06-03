@@ -107,4 +107,7 @@ var pkas = {
     4554: {
         name: 'Dr. Vegapunk (Broadcast)'
     },
+    4588: {
+        name: 'Rodo'
+    },
 };
