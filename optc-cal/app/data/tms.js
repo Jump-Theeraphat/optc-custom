@@ -336,4 +336,7 @@ var tms = {
     4555: {
         name: 'Dr. Vegapunk (Combined) (1am ~ 6am)'
     },
+    4589: {
+        name: 'Rodo (1am ~ 6am)'
+    },
 };
