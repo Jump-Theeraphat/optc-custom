@@ -744,6 +744,10 @@ const Guernica = [ "Guernica" ];
 const Joseph = [ "Joseph" ];
 const Strongheart = [ "Strongheart", "Stronger" ];
 const Imu = [ "Imu" ];
+const Rodo = [ "Rodo" ];
+const Stansen = [ "Stansen" ];
+const Goldberg = [ "Goldberg" ];
+const Gerd = [ "Gerd" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -5173,6 +5177,7 @@ window.families = {
     4539: [ ...Kashii ],
     4540: [ ...RobLucci ],
     4541: [ ...RobLucci ],
+    4542: [ ...DemaloBlack ],
     4543: [ ...Kaku ],
     4544: [ ...Borsalino ],
     4545: [ ...Sakazuki ],
@@ -5206,6 +5211,21 @@ window.families = {
     4573: [ ...GolDRoger ],
     4574: [ ...EthanbaronVNusjuro ],
     4575: [ ...EthanbaronVNusjuro ],
+    4576: [ ...MarcusMars, ...JaygarciaSaturn ],
+    4577: [ ...ShepherdJuPeter, ...TopmanWarcury ],
+    4578: [ ...Doberman ],
+    4579: [ ...Enel ],
+    4583: [ ...MonkeyDLuffy ],
+    4584: [ ...RoronoaZoro ],
+    4585: [ ...VinsmokeSanji ],
+    4586: [ ...Usopp ],
+    4587: [ ...TonyTonyChopper ],
+    4588: [ ...Rodo ],
+    4589: [ ...Rodo ],
+    4590: [ ...Nami ],
+    4591: [ ...Hajrudin ],
+    4592: [ ...Stansen ],
+    4593: [ ...Goldberg, ...Gerd ],
     //break
     5013: [ ...MonkeyDLuffy ],
     5014: [ ...MonkeyDLuffy ],
