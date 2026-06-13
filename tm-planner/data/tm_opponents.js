@@ -25654,7 +25654,7 @@ var tm_opponents = {
                                 { "type": "slot-block" },
                                 { "type": "bind", "turn": "10", "detail": "Bottom-Row " },
                                 { "type": "sp-bind", "turn": "7", "detail": "Top-Row " },
-                                { "type": "blow-away", "turn": "3", "detail": "Middle-Row  for" }]`)
+                                { "type": "blow-away", "turn": "3", "detail": "Middle-Row " }]`)
                         }
                     ]
                 },
@@ -25781,6 +25781,137 @@ var tm_opponents = {
                         {
                             type: 'Preemp (if >=2 [Celestrial Dragon])',
                             action: JSON.parse(`[{ "type": "cd-red", "turn": "99", "detail": "Top-Row " }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Rodo ==========
+    4589: {
+        4589: {
+            name: 'Rodo',
+            type: 'PSY',
+            pos: 4,
+            rec: [4591, 4592, 4593],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Fighter Striker Powerhouse" },
+                                { "type": "sw-red", "turn": "5", "detail": "Fighter Striker Powerhouse" },
+                                { "type": "cd-red", "turn": "5", "detail": "Fighter Striker Powerhouse" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Needle God', 'PSY'],
+                    hp_: 2000000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "7", "detail": "Crewmate " },
+                                { "type": "slot-neg", "turn": "3", "detail": "[DEX][PSY][INT]" },
+                                { "type": "slot-change", "detail": "[STR][QCK]" },
+                                { "type": "bar-hit", "turn": "2", "detail": "25x" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Increase Dmg Taken (once)',
+                            action: JSON.parse(`[{ "type": "bar-red-e", "turn": "2" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Rodo', 'PSY'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "burn-p", "turn": "7", "detail": "30000" },
+                                { "type": "desp", "turn": "10" },
+                                { "type": "bind", "turn": "10", "detail": "Top-Right , Middle-Left , Bottom-Right " },
+                                { "type": "slot-block" },
+                                { "type": "bar-slot", "turn": "2", "detail": "1x RAINBOW" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4588: {
+            name: 'Iscat',
+            type: 'PSY',
+            pos: 5,
+            rec: [4583, 4591, 4592, 4593],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "STR/QCK/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "STR/QCK/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "STR/QCK/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Iscat', 'PSY'],
+                    hp_: 2500000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "blow-away", "turn": "4", "detail": "Middle-Right , Bottom-Right " },
+                                { "type": "slot-para" },
+                                { "type": "def-null", "turn": "2" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "dmg-normal", "detail": "80000" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Iscat', 'PSY'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Striker',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "7" },
+                                { "type": "heal-bind", "turn": "10" },
+                                { "type": "Slot Atk Down", "turn": "2", "detail": "[PSY][INT][WANO][RCV][TND]" },
+                                { "type": "cd-rew", "turn": "2", "detail": "Top-Row , Middle-Row" },
+                                { "type": "slot-change", "detail": "[EMPTY][BLOCK][Unfavorable]" },
+                                { "type": "burn-p", "turn": "10", "detail": "10000" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Slot Change (once)',
+                            action: JSON.parse(`[{ "type": "enrage", "turn": "99" },
+                                { "type": "slot-change", "detail": "[S. BLOCK]" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "dmg-normal", "detail": "120000" }]`)
                         }
                     ]
                 },
