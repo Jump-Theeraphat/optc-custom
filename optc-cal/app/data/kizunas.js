@@ -277,4 +277,7 @@ var kizunas = {
         name: 'Eneru v2 6+ (~ 6am)',
         xch_id: [4573, 4575]
     },
+    4596: {
+        name: 'Black Maria 6+ (~ 6am)'
+    },
 };
