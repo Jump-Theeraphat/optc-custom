@@ -9,6 +9,7 @@ var tm_boosters = [
     // Kizunas
 
     // PKAs
+    4601,
 
     // Events
 ]
