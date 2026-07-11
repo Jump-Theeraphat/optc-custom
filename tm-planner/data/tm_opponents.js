@@ -40,6 +40,7 @@ const FEAR = 'fear';
 const INC_DMG = 'inc-dmg';
 const HEAL = 'heal';
 const HEAL_BIND = 'heal-bind';
+const HEAL_DOWN = 'heal-down';
 const HEAL_TEAM = 'Heal Team';
 const HP_CUT = 'hp-cut'
 const HUNGER = 'hunger';
@@ -52,6 +53,7 @@ const IMMU_POISON = 'immu-poison';
 const INTIM = 'intim';
 const MOB = 'Mob';
 const NAO = 'nao';
+const P_EASY = 'p-easy';
 const P_HARD = 'p-hard';
 const PA_NULL = 'Nullify Potential Ability'
 const PAIN = 'pain';
@@ -25912,6 +25914,129 @@ var tm_opponents = {
                         {
                             type: 'ON DEATH (0%)',
                             action: JSON.parse(`[{ "type": "dmg-normal", "detail": "120000" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Garp (Fullalead) ==========
+    4602: {
+        4250: {
+            name: 'Coby',
+            type: 'STR',
+            pos: 4,
+            rec: [4608, 4609, 4610],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Striker Free Spirit Driven" },
+                                { "type": "sw-red", "turn": "5", "detail": "Striker Free Spirit Driven" },
+                                { "type": "cd-red", "turn": "5", "detail": "Striker Free Spirit Driven" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Helmeppo', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "slot-change", "detail": "Bad" },
+                                { "type": "chain-atk-down-min", "turn": "1", "detail": "<=2.5" },
+                                { "type": "chain-lock", "turn": "7" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Coby', 'STR'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Striker',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "10" },
+                                { "type": "def-thres", "turn": "6" },
+                                { "type": "slot-para" },
+                                { "type": "slot-block" },
+                                { "type": "chain-atk-down-min", "turn": "5", "detail": "<=2.75" },
+                                { "type": "bind", "turn": "9", "detail": "Top-Left , Middle-Right , Bottom-Left " }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4602: {
+            name: 'Garp',
+            type: 'STR',
+            pos: 5,
+            rec: [4597, 4608, 4609, 4610],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "QCK/PSY/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "QCK/PSY/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "QCK/PSY/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Garp', 'STR'],
+                    hp_: 1600000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "para", "turn": "6" },
+                                { "type": "slot-poison" },
+                                { "type": "p-easy", "turn": "10" },
+                                { "type": "sp-bind", "turn": "7" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Garp', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Free Spirit',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-poison", "turn": "99" },
+                                { "type": "immu-poison", "turn": "99", "detail": "Venom" },
+                                { "type": "immu-poison", "turn": "99", "detail": "Progressive" },
+                                { "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "burn-p", "turn": "10", "detail": "30000" },
+                                { "type": "Territory", "turn": "3" },
+                                { "type": "slot-block" },
+                                { "type": "blind", "turn": "8" },
+                                { "type": "heal-down", "turn": "5" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Burn not applied (once)',
+                            action: JSON.parse(`[{ "type": "bind", "turn": "15", "detail": "Top-Right " },
+                                { "type": "slot-bind", "turn": "10", "detail": "Top-Row " },
+                                { "type": "desp", "turn": "10" }]`)
                         }
                     ]
                 },
