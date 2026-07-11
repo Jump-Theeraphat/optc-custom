@@ -3694,17 +3694,17 @@
 				name: "Crew Damage Reduction to ATK",
 				targets: ["captain", "special", "superSpecial", "support"],
 				regex:
-					/boosts Crew Damage Reduction to ATK of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x-([?.\d]+)x, proportional to the strength of crew's Percent Damage Reduction buff([^,]*), for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+					/boosts Crew Damage Reduction to ATK of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x-([?.\d]+)x, proportional to the strength of crew's Percent Damage Reduction buff([^,]*), for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x-([?.\d]+)x for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [2, 3],
+						groups: [2, 3, 7, 8],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [5, 6],
+						groups: [5, 6, 9, 10],
 					},
 					{
 						type: "option",
@@ -4424,7 +4424,7 @@
 					"sailor",
 					"support",
 				],
-				regex: /if HP is (below|above)/i,
+				regex: /(?:if)? HP is (below|above)/i,
 			},
 
 			{
@@ -4608,13 +4608,13 @@
 			{
 				name: "Buff Activated %target%",
 				targets: ["support"],
-				regex: /when (the|an) enemy (gains|applies)/i,
+				regex: /(?:when)? (the|an) enemy (gains|applies)/i,
 			},
 
 			{
 				name: "Debuff Activated %target%",
 				targets: ["support"],
-				regex: /when (the|an) enemy inflicts/i,
+				regex: /(?:when)? (the|an) enemy inflicts/i,
 			},
 
 			{
@@ -4683,7 +4683,7 @@
 			{
 				name: "Delayed Effect",
 				targets: ["special"],
-				regex: /(Following the activation|If during that turn|After \d+ turn)/i,
+				regex: /(Following the activation|If during (?:this|that) turn|After \d+ turn)/i,
 			},
 
 			{
@@ -4703,7 +4703,7 @@
 				name: "Delayed Effect: Tap Timing",
 				targets: ["special"],
 				regex:
-					/If during that turn you score (\d|all) (GOOD|GREAT|PERFECT) hits/i,
+					/If during (?:this|that) turn you score (\d|all) (GOOD|GREAT|PERFECT) hits/i,
 				submatchers: [
 					{
 						type: "number",
@@ -4738,7 +4738,7 @@
 				name: "Requirement: Crew Effect",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/If your crew (?:has|is) ([^."]+?) when the special is activated,/i,
+					/(?:If)? your crew (?:has|is) ([^."]+?) when the special is activated,/i,
 				submatchers: [
 					{
 						type: "separator",
@@ -11674,6 +11674,62 @@
 					},
 				],
 			},
+
+			{
+				name: "Damage Reflect",
+				targets: ["rumbleSpecial"],
+				regex:
+					/Grants Damage Reflect, reduces damage taken by ([.\d]+)% and reflects ([.\d]+)x of the damage reduced, to (\d)?(self|(?=((?:[^c]+|c(?!rew))*))\5crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?(?: in a ([\w]+, [\w]+) range)?(?: for (\d+) seconds)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Percentage:",
+						groups: [1],
+					},
+					{
+						type: "number",
+						description: "Amount:",
+						groups: [2],
+					},
+					{
+						type: "number",
+						description: "Duration:",
+						groups: [8],
+					},
+					{
+						type: "separator",
+						description: "Targeting:",
+					},
+					{
+						type: "number",
+						description: "Count:",
+						groups: [3],
+					},
+					{
+						type: "option",
+						description: "Universal",
+						regex: /all/i,
+						groups: [4],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "separator",
+						description: "Types:",
+					},
+					...createTypesSubmatchers([4]),
+					{
+						type: "separator",
+						description: "Classes:",
+					},
+					...createClassesSubmatchers([4]),
+					{
+						type: "separator",
+						description: "Range:",
+					},
+					...createRangeSubmatcher([7]),
+				],
+			},
+
 		],
 
 		"Hinderances": [
