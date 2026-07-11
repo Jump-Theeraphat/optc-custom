@@ -339,4 +339,7 @@ var tms = {
     4589: {
         name: 'Rodo (1am ~ 6am)'
     },
+    4602: {
+        name: 'Garp (Fullalead) (1am ~ 6am)'
+    },
 };
