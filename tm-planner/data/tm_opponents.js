@@ -25998,7 +25998,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Garp', 'STR'],
-                    hp_: 1600000,
+                    hp: 1200000,
                     atk_: 6600,
                     detail: [
                         {
