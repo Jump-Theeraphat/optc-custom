@@ -280,4 +280,7 @@ var kizunas = {
     4596: {
         name: 'Black Maria 6+ (~ 6am)'
     },
+    4613: {
+        name: 'Vivi 6+ (~ 6am)'
+    },
 };
