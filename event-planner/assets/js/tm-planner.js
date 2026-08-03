@@ -821,14 +821,198 @@ function getBoosters(tmId, server) {
     }
 }
 
-function getBoostersV2UnitList(query, limit) {
-    limit = limit || 100;
-    var unitsDb = window.units || {};
-    var q = String(query || '').trim().toLowerCase();
-    var list = [];
+function getAbilityFilterParams(kind, filterKey) {
+    var filterLookUp = filter_map[filterKey];
+    var filterMatcher = getFilterMatcher(kind, filterKey);
+    var filterRegex = filterMatcher.regex;
+    var filterSubType;
+    if (filterMatcher.submatchers)
+        filterSubType = filterMatcher.submatchers[filterLookUp[2]];
+    return { regex: filterRegex, subType: filterSubType };
+}
 
-    // Hidden from default latest-100 pool; still searchable by name
-    var hiddenUnlessNameFilter = {
+function unitMatchesSpecialAbility(unitId, filterRegex, filterSubType) {
+    var special = getUnitSpecial(unitId);
+    if (!Array.isArray(special))
+        special = [];
+    for (var si = 0; si < special.length; si++) {
+        if (regexTestHelper(special[si], filterRegex, filterSubType))
+            return true;
+    }
+    return false;
+}
+
+function unitMatchesSailorAbility(unitId, filterRegex, filterSubType) {
+    if (unitId > 9000)
+        unitId = parseVsUnitId(unitId);
+    var unitDetail = details[unitId];
+    if (!(unitDetail && unitDetail.sailor))
+        return false;
+
+    var sailor = unitDetail.sailor;
+    if (typeof sailor === 'object') {
+        for (var sl in sailor) {
+            if (regexTestHelper(sailor[sl], filterRegex, filterSubType))
+                return true;
+        }
+        return false;
+    }
+    return regexTestHelper(sailor, filterRegex, filterSubType);
+}
+
+function unitMatchesCaptainAbility(unitId, filterRegex, filterSubType) {
+    var captain = getUnitCaptain(unitId);
+    return captain !== null && regexTestHelper(captain, filterRegex, filterSubType);
+}
+
+function unitMatchesSuperVsAbility(unitId, filterRegex, filterSubType) {
+    var origId = unitId;
+    if (unitId > 9000)
+        unitId = parseVsUnitId(unitId);
+
+    var unitDetail = details[unitId];
+    if (!(unitDetail && (unitDetail.superSpecial || unitDetail.VSSpecial)))
+        return false;
+
+    var superVs;
+    if (origId > 9000) {
+        if (origId % 2 === 1)
+            superVs = unitDetail.VSSpecial.character1;
+        else
+            superVs = unitDetail.VSSpecial.character2;
+    } else
+        superVs = unitDetail.superSpecial;
+
+    return regexTestHelper(superVs, filterRegex, filterSubType);
+}
+
+function unitMatchesSwapAbility(unitId, filterRegex, filterSubType) {
+    var swap = getUnitSwap(unitId);
+    return swap !== null && regexTestHelper(swap, filterRegex, filterSubType);
+}
+
+function unitMatchesAbilityKind(unitId, kind, filterKey) {
+    try {
+        var params = getAbilityFilterParams(kind, filterKey);
+        if (kind === 'sp')
+            return unitMatchesSpecialAbility(unitId, params.regex, params.subType);
+        if (kind === 'sl')
+            return unitMatchesSailorAbility(unitId, params.regex, params.subType);
+        if (kind === 'ca')
+            return unitMatchesCaptainAbility(unitId, params.regex, params.subType);
+        if (kind === 'sv')
+            return unitMatchesSuperVsAbility(unitId, params.regex, params.subType);
+        if (kind === 'sw')
+            return unitMatchesSwapAbility(unitId, params.regex, params.subType);
+    } catch (err) {
+        return false;
+    }
+    return false;
+}
+
+function unitMatchesTypesV2(unit, types) {
+    if (!types.length) return true;
+    var unitType = unit.type;
+    if (Array.isArray(unitType))
+        return types.indexOf(unitType[0]) !== -1 || types.indexOf(unitType[1]) !== -1;
+    return types.indexOf(unitType) !== -1;
+}
+
+function unitMatchesClassesV2(unit, classFilters, excludeOther, excludeSingle) {
+    if (!classFilters.length) return true;
+
+    var unitClass = unit.class;
+    var class1, class2;
+    if (Array.isArray(unitClass)) {
+        class1 = unitClass[0];
+        class2 = unitClass[1];
+    } else {
+        class1 = unitClass;
+        class2 = null;
+    }
+
+    if (excludeOther) {
+        if (classFilters.indexOf(class1) === -1 ||
+            (class2 && classFilters.indexOf(class2) === -1))
+            return false;
+    } else {
+        if (classFilters.indexOf(class1) === -1 &&
+            !(class2 && classFilters.indexOf(class2) !== -1))
+            return false;
+    }
+
+    if (excludeSingle && !class2 && classFilters.length > 1)
+        return false;
+
+    return true;
+}
+
+function collectFilterV2State() {
+    var $root = $('#tm-filter-v2-container');
+    var state = {
+        query: ($root.find('#name-filter-v2').val() || '').trim(),
+        types: [],
+        classes: [],
+        excludeOther: $root.find('#exclude-other-checkbox-v2').hasClass('selected'),
+        excludeSingle: $root.find('#preset-filters-v2').val() != -1 &&
+            $root.find('#preset-filters-v2').val() != null,
+        abilities: { sp: [], sl: [], ca: [], sv: [], sw: [] }
+    };
+
+    $root.find('.type-filter-v2.selected').each(function () {
+        state.types.push($(this).data('filter'));
+    });
+    $root.find('.class-filter-v2.selected').each(function () {
+        state.classes.push($(this).data('filter'));
+    });
+
+    ['sp', 'sl', 'ca', 'sv', 'sw'].forEach(function (kind) {
+        $root.find('.' + kind + '-filter-v2.selected').each(function () {
+            state.abilities[kind].push($(this).data('filter'));
+        });
+    });
+
+    return state;
+}
+
+function unitPassesFilterV2(id, unit, state) {
+    var q = String(state.query || '').trim().toLowerCase();
+    if (q && String(unit.name).toLowerCase().indexOf(q) < 0)
+        return false;
+
+    if (!unitMatchesTypesV2(unit, state.types))
+        return false;
+
+    if (!unitMatchesClassesV2(unit, state.classes, state.excludeOther, state.excludeSingle))
+        return false;
+
+    var kinds = ['sp', 'sl', 'ca', 'sv', 'sw'];
+    for (var ki = 0; ki < kinds.length; ki++) {
+        var kind = kinds[ki];
+        var filters = state.abilities[kind];
+        for (var fi = 0; fi < filters.length; fi++) {
+            if (!unitMatchesAbilityKind(id, kind, filters[fi]))
+                return false;
+        }
+    }
+
+    return true;
+}
+
+function getBoostersV2UnitList(stateOrQuery, limit) {
+    limit = limit || 100;
+    var state;
+    if (stateOrQuery && typeof stateOrQuery === 'object' && !Array.isArray(stateOrQuery))
+        state = stateOrQuery;
+    else
+        state = { query: stateOrQuery || '', types: [], classes: [], excludeOther: false, excludeSingle: false, abilities: { sp: [], sl: [], ca: [], sv: [], sw: [] } };
+
+    var unitsDb = window.units || {};
+    var list = [];
+    var q = String(state.query || '').trim();
+
+    // Hidden unless user typed a name search (other filters alone keep them hidden)
+    var hiddenUnlessNameSearch = {
         5013: true, 5014: true,
         5029: true, 5030: true, 5031: true, 5032: true,
         5046: true, 5047: true,
@@ -836,17 +1020,15 @@ function getBoostersV2UnitList(query, limit) {
     };
 
     Object.keys(unitsDb).forEach(function (key) {
-        // Skip VS / dual keys like "4602-1"
         if (String(key).indexOf('-') >= 0) return;
         var id = Number(key);
         if (!id || isNaN(id)) return;
 
-        // Exclude special IDs unless user is searching by name
-        if (!q && hiddenUnlessNameFilter[id]) return;
+        if (!q && hiddenUnlessNameSearch[id]) return;
 
         var unit = unitsDb[key];
         if (!unit || !unit.name) return;
-        if (q && String(unit.name).toLowerCase().indexOf(q) < 0) return;
+        if (!unitPassesFilterV2(id, unit, state)) return;
 
         list.push({ id: id, unit: unit });
     });
@@ -885,10 +1067,10 @@ function createBoosterV2El(id, unit) {
 }
 
 function getBoostersV2() {
-    renderBoostersV2($('#booster-v2-name-filter').val());
+    renderBoostersV2();
 }
 
-function renderBoostersV2(query) {
+function renderBoostersV2() {
     var $pool = $('#booster_v2');
     if (!$pool.length) return;
 
@@ -901,7 +1083,8 @@ function renderBoostersV2(query) {
     // Clear only units still sitting in the V2 pool
     $pool.children('.booster').remove();
 
-    var list = getBoostersV2UnitList(query, 100);
+    var state = collectFilterV2State();
+    var list = getBoostersV2UnitList(state, 100);
     if (list.length) {
         $('#booster-v2-title-range').text('(ID ' + list[0].id + ' – ' + list[list.length - 1].id + ')');
     } else {
@@ -917,41 +1100,10 @@ function renderBoostersV2(query) {
             imgDiv.addClass('assigned-dh');
         $pool.append(imgDiv);
     });
-
-    // Re-apply active sidebar filters onto the new pool units
-    reapplyFiltersForBoosterV2();
 }
 
-function reapplyFiltersForBoosterV2() {
-    var types = [];
-    $('.type-filter.selected').each(function () {
-        types.push($(this).data('filter'));
-    });
-    applyTypeFilter(types);
-
-    var classes = [];
-    $('.class-filter.selected').each(function () {
-        classes.push($(this).data('filter'));
-    });
-    var excludeOther = $('#exclude-other-checkbox').hasClass('selected');
-    applyClassFilter(classes, excludeOther, false);
-
-    if ($('#name-filter').val())
-        $('#name-filter').trigger('keyup');
-
-    // Re-run selected ability filters so newly rendered V2 units get dark/light state
-    ['sp', 'sl', 'ca', 'sv', 'sw'].forEach(function (prefix) {
-        $('.' + prefix + '-filter.selected').each(function () {
-            var $btn = $(this);
-            // toggle off then on to reuse existing click handlers
-            $btn.removeClass('selected');
-            $btn.trigger('click');
-        });
-    });
-}
-
-function applyBoosterV2NameFilter(query) {
-    renderBoostersV2(query);
+function applyBoosterV2NameFilter() {
+    renderBoostersV2();
 }
 
 // Find booster element(s) by character id — includes getBoostersV2 pool
@@ -2843,12 +2995,24 @@ function doLoad(tmId) {
     }
 }
 
-function applyTypeFilter(typeFilters) {
+function getLegacyFilterUnits() {
+    return $('.booster, .booster-clone').filter(function () {
+        return $(this).closest('#booster_v2').length === 0;
+    });
+}
+
+function getV2FilterUnits() {
+    return $('#booster_v2 .booster');
+}
+
+function applyTypeFilter(typeFilters, $units) {
+    $units = $units || getLegacyFilterUnits();
+
     if (typeFilters.length == 0) {
         // Clear filters if no Type Filters are currently selected
-        $('.type-filtered').removeClass('type-filtered');
+        $units.removeClass('type-filtered');
     } else {
-        $('.booster, .booster-clone').each(function () {
+        $units.each(function () {
             var unitType = $(this).data('type');
 
             if (Array.isArray(unitType)) {
@@ -2867,12 +3031,14 @@ function applyTypeFilter(typeFilters) {
     }
 }
 
-function applyClassFilter(classFilters, excludeOtherClasses, excludeSingleClass) {
+function applyClassFilter(classFilters, excludeOtherClasses, excludeSingleClass, $units) {
+    $units = $units || getLegacyFilterUnits();
+
     if (classFilters.length == 0) {
         // Clear filters if no Class Filters are currently selected
-        $('.class-filtered').removeClass('class-filtered');
+        $units.removeClass('class-filtered');
     } else {
-        $('.booster, .booster-clone').each(function () {
+        $units.each(function () {
             var unitClass1 = $(this).data('class1');
             var unitClass2 = $(this).data('class2');
 
@@ -2896,59 +3062,463 @@ function applyClassFilter(classFilters, excludeOtherClasses, excludeSingleClass)
     }
 }
 
-function clearTypeFilters() {
-    $('.type-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass('type-filtered');
-}
+function applyNameFilterToUnits(name, $units) {
+    if (!name || name.length == 0) {
+        $units.removeClass('name-filtered');
+        return;
+    }
 
-function clearNameFilter() {
-    $('#name-filter').val('');
-    $('.booster, .booster-clone').removeClass('name-filtered');
-}
+    $units.each(function () {
+        var unit = $(this);
+        var unitId = unit.data('id');
+        if (unitId > 9000)
+            unitId = parseVsUnitId(unitId);
 
-function clearClassFilters() {
-    $('.class-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass('class-filtered');
+        var family = families[unitId];
+        var matched = false;
 
-    $('#exclude-other-checkbox').removeClass('selected');
-    excludeOtherClasses = false;
+        if (family) {
+            $.each(family, function (i, e) {
+                if (e.toLowerCase().includes(name)) {
+                    matched = true;
+                    return false;
+                }
+            });
+        }
 
-    $('#preset-filters').val(-1);
-}
-
-function clearSpecialFilters() {
-    $('.sp-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function (i, cName) {
-        return (cName.match(/(^|\s)sp-filtered-\S+/g) || []).join(' ');
+        if (matched)
+            unit.removeClass('name-filtered');
+        else
+            unit.addClass('name-filtered');
     });
 }
 
-function clearSailorFilters() {
-    $('.sl-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function (i, cName) {
-        return (cName.match(/(^|\s)sl-filtered-\S+/g) || []).join(' ');
+function clearAbilityFilterClasses($units, prefix) {
+    var re = new RegExp('(^|\\s)' + prefix + '-filtered-\\S+', 'g');
+    $units.removeClass(function (i, cName) {
+        return (cName.match(re) || []).join(' ');
     });
 }
 
-function clearCaptainFilters() {
-    $('.ca-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function (i, cName) {
-        return (cName.match(/(^|\s)ca-filtered-\S+/g) || []).join(' ');
+function clearTypeFilters($units, $root) {
+    $root = $root || $('#tm-filter-container');
+    $units = $units || getLegacyFilterUnits();
+    $root.find('.type-filter, .type-filter-v2').removeClass('selected');
+    $units.removeClass('type-filtered');
+}
+
+function clearNameFilter($units, $input) {
+    $units = $units || getLegacyFilterUnits();
+    $input = $input || $('#name-filter');
+    $input.val('');
+    $units.removeClass('name-filtered');
+}
+
+function clearClassFilters($units, $root) {
+    $root = $root || $('#tm-filter-container');
+    $units = $units || getLegacyFilterUnits();
+    $root.find('.class-filter, .class-filter-v2').removeClass('selected');
+    $units.removeClass('class-filtered');
+
+    $root.find('#exclude-other-checkbox, #exclude-other-checkbox-v2').removeClass('selected');
+    $root.find('#preset-filters, #preset-filters-v2').val(-1);
+}
+
+function clearSpecialFilters($units, $root) {
+    $root = $root || $('#tm-filter-container');
+    $units = $units || getLegacyFilterUnits();
+    $root.find('.sp-filter, .sp-filter-v2').removeClass('selected');
+    clearAbilityFilterClasses($units, 'sp');
+}
+
+function clearSailorFilters($units, $root) {
+    $root = $root || $('#tm-filter-container');
+    $units = $units || getLegacyFilterUnits();
+    $root.find('.sl-filter, .sl-filter-v2').removeClass('selected');
+    clearAbilityFilterClasses($units, 'sl');
+}
+
+function clearCaptainFilters($units, $root) {
+    $root = $root || $('#tm-filter-container');
+    $units = $units || getLegacyFilterUnits();
+    $root.find('.ca-filter, .ca-filter-v2').removeClass('selected');
+    clearAbilityFilterClasses($units, 'ca');
+}
+
+function clearSuperFilters($units, $root) {
+    $root = $root || $('#tm-filter-container');
+    $units = $units || getLegacyFilterUnits();
+    $root.find('.sv-filter, .sv-filter-v2').removeClass('selected');
+    clearAbilityFilterClasses($units, 'sv');
+}
+
+function clearSwapFilters($units, $root) {
+    $root = $root || $('#tm-filter-container');
+    $units = $units || getLegacyFilterUnits();
+    $root.find('.sw-filter, .sw-filter-v2').removeClass('selected');
+    clearAbilityFilterClasses($units, 'sw');
+}
+
+function toggleAbilityFilterOnUnits($btn, kind, matcherKind, shouldDimUnit, $units) {
+    var filter = $btn.data('filter');
+    var filterClass = kind + '-filtered-' + filter;
+
+    var filterLookUp = filter_map[filter];
+    var filterMatcher = getFilterMatcher(matcherKind, filter);
+    var filterRegex = filterMatcher.regex;
+
+    var filterSubType;
+    if (filterMatcher.submatchers)
+        filterSubType = filterMatcher.submatchers[filterLookUp[2]];
+
+    if ($btn.hasClass('selected')) {
+        $btn.removeClass('selected');
+        $units.filter('.' + filterClass).removeClass(filterClass);
+    } else {
+        $btn.addClass('selected');
+        $units.each(function () {
+            try {
+                if (shouldDimUnit($(this), filterRegex, filterSubType))
+                    $(this).addClass(filterClass);
+            } catch (err) {
+                $(this).addClass(filterClass);
+            }
+        });
+    }
+}
+
+function abilityDimSpecial($el, filterRegex, filterSubType) {
+    var special = getUnitSpecial($el.data('id'));
+    if (!Array.isArray(special))
+        special = [];
+
+    for (var si = 0; si < special.length; si++) {
+        if (regexTestHelper(special[si], filterRegex, filterSubType))
+            return false;
+    }
+    return true;
+}
+
+function abilityDimSailor($el, filterRegex, filterSubType) {
+    var unitId = $el.data('id');
+    if (unitId > 9000)
+        unitId = parseVsUnitId(unitId);
+
+    var unitDetail = details[unitId];
+    if (!(unitDetail && unitDetail.sailor))
+        return true;
+
+    var sailor = unitDetail.sailor;
+    if (typeof sailor === 'object') {
+        var filtered = false;
+        for (var sl in sailor) {
+            if (regexTestHelper(sailor[sl], filterRegex, filterSubType)) {
+                filtered = false;
+                break;
+            } else
+                filtered = true;
+        }
+        return filtered;
+    }
+    return !regexTestHelper(sailor, filterRegex, filterSubType);
+}
+
+function abilityDimCaptain($el, filterRegex, filterSubType) {
+    var captain = getUnitCaptain($el.data('id'));
+    return captain === null || !regexTestHelper(captain, filterRegex, filterSubType);
+}
+
+function abilityDimSuperVs($el, filterRegex, filterSubType) {
+    var unitId = $el.data('id');
+    var origId = unitId;
+
+    if (unitId > 9000)
+        unitId = parseVsUnitId(unitId);
+
+    var unitDetail = details[unitId];
+    if (!(unitDetail && (unitDetail.superSpecial || unitDetail.VSSpecial)))
+        return true;
+
+    var superVs;
+    if (origId > 9000) {
+        if (origId % 2 === 1)
+            superVs = unitDetail.VSSpecial.character1;
+        else
+            superVs = unitDetail.VSSpecial.character2;
+    } else
+        superVs = unitDetail.superSpecial;
+
+    return !regexTestHelper(superVs, filterRegex, filterSubType);
+}
+
+function abilityDimSwap($el, filterRegex, filterSubType) {
+    var swap = getUnitSwap($el.data('id'));
+    return swap === null || !regexTestHelper(swap, filterRegex, filterSubType);
+}
+
+function bindClassPresetHandlers($root, btnClass, excludeId, presetId, getUnits, state, rebuildPool) {
+    $root.find('#' + excludeId).click(function () {
+        if ($root.find('#' + presetId).val() != -1) {
+            $root.find('#' + presetId).val(-1);
+            state.classFilters = [];
+        }
+
+        if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+            state.excludeOther = false;
+        } else {
+            $(this).addClass('selected');
+            state.excludeOther = true;
+        }
+
+        if (rebuildPool)
+            rebuildPool();
+        else
+            applyClassFilter(state.classFilters, state.excludeOther, false, getUnits());
+    });
+
+    $root.find('#' + presetId).change(function () {
+        if ($(this).val() == -1) {
+            $root.find('#' + excludeId).removeClass('selected');
+            state.excludeOther = false;
+        } else {
+            $root.find('#' + excludeId).addClass('selected');
+            state.excludeOther = true;
+        }
+
+        state.classFilters = [];
+        $root.find('.' + btnClass).removeClass('selected');
+
+        if ($(this).val() == 2113)
+            state.classFilters.push('Fighter', 'Striker', 'Shooter', 'Cerebral', 'Powerhouse');
+        else if ($(this).val() == 2739)
+            state.classFilters.push('Slasher', 'Striker', 'Driven', 'Cerebral', 'Powerhouse');
+        else if ($(this).val() == 2365)
+            state.classFilters.push('Fighter', 'Slasher', 'Shooter', 'Driven', 'Powerhouse');
+        else if ($(this).val() == 2338)
+            state.classFilters.push('Fighter', 'Slasher', 'Striker', 'Shooter', 'Cerebral');
+        else if ($(this).val() == 3543)
+            state.classFilters.push('Fighter', 'Slasher', 'Striker', 'Cerebral', 'Powerhouse');
+        else if ($(this).val() == 2336)
+            state.classFilters.push('Fighter', 'Slasher', 'Cerebral', 'Free Spirit');
+
+        for (var i in state.classFilters) {
+            var cf = state.classFilters[i];
+            cf = cf.replace(' ', '-').toLowerCase();
+            $root.find('.' + btnClass + '.' + cf + '-div').addClass('selected');
+        }
+
+        $root.find('#' + excludeId).addClass('selected');
+        if (rebuildPool)
+            rebuildPool();
+        else
+            applyClassFilter(state.classFilters, state.excludeOther, true, getUnits());
+    });
+
+    $root.find('.' + btnClass).click(function () {
+        if ($root.find('#' + presetId).val() != -1) {
+            $root.find('#' + presetId).val(-1);
+            $root.find('#' + excludeId).prop('checked', false);
+            state.excludeOther = false;
+            state.classFilters = [];
+        }
+
+        var filter = $(this).data('filter');
+        if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+            state.classFilters.splice(state.classFilters.indexOf(filter), 1);
+        } else {
+            $(this).addClass('selected');
+            state.classFilters.push(filter);
+        }
+
+        if (rebuildPool)
+            rebuildPool();
+        else
+            applyClassFilter(state.classFilters, state.excludeOther, false, getUnits());
     });
 }
 
-function clearSuperFilters() {
-    $('.sv-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function (i, cName) {
-        return (cName.match(/(^|\s)sv-filtered-\S+/g) || []).join(' ');
+function bindFilterPanelHandlers($root, opts) {
+    var typeFilters = [];
+    var classState = { classFilters: [], excludeOther: false };
+    var getUnits = opts.getUnits;
+    var typeBtn = opts.typeBtn;
+    var classBtn = opts.classBtn;
+    var nameInput = opts.nameInput;
+    var excludeId = opts.excludeId;
+    var presetId = opts.presetId;
+    var clearBtn = opts.clearBtn;
+    var clearAllBtn = opts.clearAllBtn;
+    var rebuildPool = opts.rebuildPool;
+
+    $root.find('.' + typeBtn).click(function () {
+        var filter = $(this).data('filter');
+        if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+            typeFilters.splice(typeFilters.indexOf(filter), 1);
+        } else {
+            $(this).addClass('selected');
+            typeFilters.push(filter);
+        }
+        if (rebuildPool)
+            rebuildPool();
+        else
+            applyTypeFilter(typeFilters, getUnits());
+    });
+
+    $root.find('#' + nameInput).on('input keyup', function () {
+        var val = $(this).val() || '';
+        if (opts.onNameInput)
+            opts.onNameInput(val);
+        else if (rebuildPool)
+            rebuildPool();
+        else
+            applyNameFilterToUnits(val.toLowerCase(), getUnits());
+    });
+
+    bindClassPresetHandlers($root, classBtn, excludeId, presetId, getUnits, classState, rebuildPool);
+
+    $root.find('.' + opts.spBtn).click(function () {
+        if (rebuildPool) {
+            $(this).toggleClass('selected');
+            rebuildPool();
+        } else {
+            toggleAbilityFilterOnUnits($(this), 'sp', 'sp', abilityDimSpecial, getUnits());
+        }
+    });
+    $root.find('.' + opts.slBtn).click(function () {
+        if (rebuildPool) {
+            $(this).toggleClass('selected');
+            rebuildPool();
+        } else {
+            toggleAbilityFilterOnUnits($(this), 'sl', 'sl', abilityDimSailor, getUnits());
+        }
+    });
+    $root.find('.' + opts.caBtn).click(function () {
+        if (rebuildPool) {
+            $(this).toggleClass('selected');
+            rebuildPool();
+        } else {
+            toggleAbilityFilterOnUnits($(this), 'ca', 'ca', abilityDimCaptain, getUnits());
+        }
+    });
+    $root.find('.' + opts.svBtn).click(function () {
+        if (rebuildPool) {
+            $(this).toggleClass('selected');
+            rebuildPool();
+        } else {
+            toggleAbilityFilterOnUnits($(this), 'sv', 'sv', abilityDimSuperVs, getUnits());
+        }
+    });
+    $root.find('.' + opts.swBtn).click(function () {
+        if (rebuildPool) {
+            $(this).toggleClass('selected');
+            rebuildPool();
+        } else {
+            toggleAbilityFilterOnUnits($(this), 'sw', 'sw', abilityDimSwap, getUnits());
+        }
+    });
+
+    $root.find('.' + clearBtn).click(function () {
+        var target = $(this).data('target');
+        var $units = getUnits();
+        var $name = $root.find('#' + nameInput);
+
+        if ('type' === target) {
+            clearTypeFilters($units, $root);
+            typeFilters = [];
+        } else if ('name' === target) {
+            $name.val('');
+            if (!rebuildPool) {
+                if (opts.onNameClear)
+                    opts.onNameClear($name);
+                else
+                    clearNameFilter($units, $name);
+            }
+        } else if ('class' === target) {
+            clearClassFilters($units, $root);
+            classState.classFilters = [];
+            classState.excludeOther = false;
+        } else if ('special' === target) {
+            clearSpecialFilters($units, $root);
+        } else if ('sailor' === target) {
+            clearSailorFilters($units, $root);
+        } else if ('captain' === target) {
+            clearCaptainFilters($units, $root);
+        } else if ('super' === target) {
+            clearSuperFilters($units, $root);
+        } else if ('swap' === target) {
+            clearSwapFilters($units, $root);
+        }
+
+        if (rebuildPool)
+            rebuildPool();
+    });
+
+    $root.find('.' + clearAllBtn).click(function () {
+        var $units = getUnits();
+        var $name = $root.find('#' + nameInput);
+        clearTypeFilters($units, $root);
+        typeFilters = [];
+        $name.val('');
+        if (!rebuildPool) {
+            if (opts.onNameClear)
+                opts.onNameClear($name);
+            else
+                clearNameFilter($units, $name);
+        }
+        clearClassFilters($units, $root);
+        classState.classFilters = [];
+        classState.excludeOther = false;
+        clearSpecialFilters($units, $root);
+        clearSailorFilters($units, $root);
+        clearCaptainFilters($units, $root);
+        clearSuperFilters($units, $root);
+        clearSwapFilters($units, $root);
+        if (rebuildPool)
+            rebuildPool();
     });
 }
 
-function clearSwapFilters() {
-    $('.sw-filter').removeClass('selected');
-    $('.booster, .booster-clone').removeClass(function (i, cName) {
-        return (cName.match(/(^|\s)sw-filtered-\S+/g) || []).join(' ');
+function initFilterV2Panel() {
+    var $src = $('#tm-filter-container');
+    var $dest = $('#tm-filter-v2-container');
+    if (!$src.length || !$dest.length || $dest.children().length)
+        return;
+
+    var $inner = $src.children().first().clone(false, false);
+    $dest.append($inner);
+
+    $dest.find('#tm-filter-sets').attr('id', 'tm-filter-sets-v2');
+    $dest.find('#name-filter').attr({ id: 'name-filter-v2', placeholder: 'Search character name' });
+    $dest.find('#exclude-other-checkbox').attr('id', 'exclude-other-checkbox-v2');
+    $dest.find('#preset-filters').attr('id', 'preset-filters-v2');
+    $dest.find('#preset-filter-label').attr({ id: 'preset-filter-label-v2', for: 'preset-filters-v2' });
+
+    [
+        ['type-filter', 'type-filter-v2'],
+        ['class-filter', 'class-filter-v2'],
+        ['sp-filter', 'sp-filter-v2'],
+        ['sl-filter', 'sl-filter-v2'],
+        ['ca-filter', 'ca-filter-v2'],
+        ['sv-filter', 'sv-filter-v2'],
+        ['sw-filter', 'sw-filter-v2']
+    ].forEach(function (pair) {
+        $dest.find('.' + pair[0]).removeClass(pair[0]).addClass(pair[1]);
     });
+
+    $dest.find('.filter-clear-btn').removeClass('filter-clear-btn').addClass('filter-clear-btn-v2');
+    $dest.find('.filter-clear-all-btn').removeClass('filter-clear-all-btn').addClass('filter-clear-all-btn-v2');
+
+    $dest.find('.fixed-filter-button').addClass('ep-side-filter-header');
+    $dest.find('.filter-button')
+        .removeClass('filter-button')
+        .addClass('filter-button-v2-label')
+        .text('Filter V2');
+    $dest.find('.fixed-note-button').remove();
+
+    $('body').addClass('ep-has-side-filters');
 }
 
 function modifyCharStyle(chars) {
@@ -3911,6 +4481,8 @@ $(document).ready(function () {
     // Retrieve Settings
     var server = 'glb'; // Used after content merge
 
+    initFilterV2Panel();
+
     var dontHaveMode = 0;
     if (localStorage.getItem('dontHaveMode') !== null) {
         dontHaveMode = localStorage.getItem('dontHaveMode');
@@ -3930,27 +4502,27 @@ $(document).ready(function () {
         }
     }
 
-    $('.sp-filter').each(function () {
+    $('.sp-filter, .sp-filter-v2').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.sl-filter').each(function () {
+    $('.sl-filter, .sl-filter-v2').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.ca-filter').each(function () {
+    $('.ca-filter, .ca-filter-v2').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.sv-filter').each(function () {
+    $('.sv-filter, .sv-filter-v2').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
 
-    $('.sw-filter').each(function () {
+    $('.sw-filter, .sw-filter-v2').each(function () {
         var filter = $(this).data('filter');
         createTooltip($(this), getIconTooltip(filter));
     });
@@ -4791,349 +5363,43 @@ $(document).ready(function () {
 
     $('#nav-lv').change(calculateNavLv);
 
-    // Type filter
-    var typeFilters = [];
-    $('.type-filter').click(function () {
-        var filter = $(this).data('filter');
-
-        if ($(this).hasClass('selected')) {
-            $(this).removeClass('selected');
-            typeFilters.splice(typeFilters.indexOf(filter), 1);
-        } else {
-            $(this).addClass('selected');
-            typeFilters.push(filter);
-        }
-
-        applyTypeFilter(typeFilters);
+    // Legacy bottom Filter + Filter V2 (side panel) — independent state
+    bindFilterPanelHandlers($('#tm-filter-container'), {
+        getUnits: getLegacyFilterUnits,
+        typeBtn: 'type-filter',
+        classBtn: 'class-filter',
+        nameInput: 'name-filter',
+        excludeId: 'exclude-other-checkbox',
+        presetId: 'preset-filters',
+        spBtn: 'sp-filter',
+        slBtn: 'sl-filter',
+        caBtn: 'ca-filter',
+        svBtn: 'sv-filter',
+        swBtn: 'sw-filter',
+        clearBtn: 'filter-clear-btn',
+        clearAllBtn: 'filter-clear-all-btn'
     });
 
-    // Name filter
-    $('#name-filter').on('keyup', function () {
-        var name = $(this).val().toLowerCase();
-
-        if (name.length == 0) {
-            // Clear filters if input is empty
-            $('.name-filtered').removeClass('name-filtered');
-        } else {
-            $('.booster, .booster-clone').each(function () {
-                var unit = $(this);
-                var unitId = unit.data('id');
-                if (unitId > 9000)
-                    unitId = parseVsUnitId(unitId);
-
-                var family = families[unitId];
-
-                $.each(family, function (i, e) {
-                    if (e.toLowerCase().includes(name)) {
-                        unit.removeClass('name-filtered');
-                        return false;
-                    }
-
-                    unit.addClass('name-filtered');
-                });
-            });
-        }
+    bindFilterPanelHandlers($('#tm-filter-v2-container'), {
+        getUnits: getV2FilterUnits,
+        typeBtn: 'type-filter-v2',
+        classBtn: 'class-filter-v2',
+        nameInput: 'name-filter-v2',
+        excludeId: 'exclude-other-checkbox-v2',
+        presetId: 'preset-filters-v2',
+        spBtn: 'sp-filter-v2',
+        slBtn: 'sl-filter-v2',
+        caBtn: 'ca-filter-v2',
+        svBtn: 'sv-filter-v2',
+        swBtn: 'sw-filter-v2',
+        clearBtn: 'filter-clear-btn-v2',
+        clearAllBtn: 'filter-clear-all-btn-v2',
+        rebuildPool: renderBoostersV2
     });
 
-    // Units (1–100) / getBoostersV2 name filter
-    $('#booster-v2-name-filter').on('input keyup', function () {
-        applyBoosterV2NameFilter($(this).val());
-    });
-
-    // Class filter
-    var classFilters = [];
-    var excludeOtherClasses = false;
-
-    // Exclude other Classes
-    $('#exclude-other-checkbox').click(function () {
-        if ($('#preset-filters').val() != -1) {
-            $('#preset-filters').val(-1);
-            classFilters = [];
-        }
-
-        if ($(this).hasClass('selected')) {
-            $(this).removeClass('selected');
-            excludeOtherClasses = false;
-        } else {
-            $(this).addClass('selected');
-            excludeOtherClasses = true;
-        }
-
-        applyClassFilter(classFilters, excludeOtherClasses, false);
-    });
-
-    // Preset filters
-    $('#preset-filters').change(function () {
-        if ($(this).val() == -1) {
-            $('#exclude-other-checkbox').removeClass('selected');
-            excludeOtherClasses = false;
-        } else {
-            $('#exclude-other-checkbox').addClass('selected');
-            excludeOtherClasses = true;
-        }
-
-        classFilters = [];
-        $('.class-filter').removeClass('selected');
-
-        if ($(this).val() == 2113) // Katakuri
-            classFilters.push('Fighter', 'Striker', 'Shooter', 'Cerebral', 'Powerhouse');
-        else if ($(this).val() == 2739) // Katakuri 6+
-            classFilters.push('Slasher', 'Striker', 'Driven', 'Cerebral', 'Powerhouse');
-        else if ($(this).val() == 2365) // Katakuri v2
-            classFilters.push('Fighter', 'Slasher', 'Shooter', 'Driven', 'Powerhouse');
-        else if ($(this).val() == 2338) // Carrot
-            classFilters.push('Fighter', 'Slasher', 'Striker', 'Shooter', 'Cerebral');
-        else if ($(this).val() == 3543) // Carrot & Wanda
-            classFilters.push('Fighter', 'Slasher', 'Striker', 'Cerebral', 'Powerhouse');
-        else if ($(this).val() == 2336) // TM Law
-            classFilters.push('Fighter', 'Slasher', 'Cerebral', 'Free Spirit',);
-
-        for (var i in classFilters) {
-            var cf = classFilters[i];
-            cf = cf.replace(' ', '-').toLowerCase();
-            $('.class-filter.' + cf + '-div').addClass('selected');
-        }
-
-        $('#exclude-other-checkbox').addClass('selected');
-        applyClassFilter(classFilters, excludeOtherClasses, true);
-    });
-
-    $('.class-filter').click(function () {
-        if ($('#preset-filters').val() != -1) {
-            $('#preset-filters').val(-1);
-            $('#exclude-other-checkbox').prop('checked', false);
-            excludeOtherClasses = false;
-            classFilters = [];
-        }
-
-        var filter = $(this).data('filter');
-
-        if ($(this).hasClass('selected')) {
-            $(this).removeClass('selected');
-            classFilters.splice(classFilters.indexOf(filter), 1);
-        } else {
-            $(this).addClass('selected');
-            classFilters.push(filter);
-        }
-
-        applyClassFilter(classFilters, excludeOtherClasses, false);
-    });
-
-    // Special Filter
-    $('.sp-filter').click(function () {
-        var filter = $(this).data('filter');
-        var filterClass = 'sp-filtered-' + filter;
-
-        var filterLookUp = filter_map[filter];
-        var filterMatcher = getFilterMatcher('sp', filter);
-        var filterRegex = filterMatcher.regex;
-
-        var filterSubType;
-        if (filterMatcher.submatchers)
-            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
-
-        if ($(this).hasClass('selected')) {
-            // Clear filters of units filtered by this special
-            $(this).removeClass('selected');
-            $('.' + filterClass).removeClass(filterClass);
-        } else {
-            $(this).addClass('selected');
-
-            $('.booster, .booster-clone').each(function () {
-                try {
-                    var special = getUnitSpecial($(this).data('id'));
-                    if (!Array.isArray(special))
-                        special = [];
-
-                    var filtered = true;
-                    for (var si = 0; si < special.length; si++) {
-                        if (regexTestHelper(special[si], filterRegex, filterSubType))
-                            filtered = false;
-                    }
-
-                    if (filtered)
-                        $(this).addClass(filterClass);
-                } catch (err) {
-                    $(this).addClass(filterClass);
-                }
-            });
-        }
-    });
-
-    // Sailor Filter
-    $('.sl-filter').click(function () {
-        var filter = $(this).data('filter');
-        var filterClass = 'sl-filtered-' + filter;
-
-        var filterLookUp = filter_map[filter];
-        var filterMatcher = getFilterMatcher('sl', filter);
-        var filterRegex = filterMatcher.regex;
-
-        var filterSubType;
-        if (filterMatcher.submatchers)
-            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
-
-        if ($(this).hasClass('selected')) {
-            // Clear filters of units filtered by this special
-            $(this).removeClass('selected');
-            $('.' + filterClass).removeClass(filterClass);
-        } else {
-            $(this).addClass('selected');
-
-            $('.booster, .booster-clone').each(function () {
-                try {
-                    var unitId = $(this).data('id');
-                    if (unitId > 9000)
-                        unitId = parseVsUnitId(unitId);
-
-                    var unitDetail = details[unitId];
-
-                    if (unitDetail && unitDetail.sailor) {
-                        var sailor = unitDetail.sailor;
-
-                        if (typeof sailor === 'object') {
-                            var filtered = false;
-                            for (var sl in sailor) {
-                                if (regexTestHelper(sailor[sl], filterRegex, filterSubType)) {
-                                    filtered = false;
-                                    break;
-                                } else
-                                    filtered = true;
-                            }
-
-                            if (filtered)
-                                $(this).addClass(filterClass);
-                        } else {
-                            if (!regexTestHelper(sailor, filterRegex, filterSubType))
-                                $(this).addClass(filterClass);
-                        }
-                    } else
-                        $(this).addClass(filterClass);
-                } catch (err) {
-                    $(this).addClass(filterClass);
-                }
-            });
-        }
-    });
-
-    // Captain Filter
-    $('.ca-filter').click(function () {
-        var filter = $(this).data('filter');
-        var filterClass = 'ca-filtered-' + filter;
-
-        var filterLookUp = filter_map[filter];
-        var filterMatcher = getFilterMatcher('ca', filter);
-        var filterRegex = filterMatcher.regex;
-
-        var filterSubType;
-        if (filterMatcher.submatchers)
-            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
-
-        if ($(this).hasClass('selected')) {
-            // Clear filters of units filtered by this special
-            $(this).removeClass('selected');
-            $('.' + filterClass).removeClass(filterClass);
-        } else {
-            $(this).addClass('selected');
-
-            $('.booster, .booster-clone').each(function () {
-                try {
-                    var captain = getUnitCaptain($(this).data('id'));
-
-                    if (captain === null || !regexTestHelper(captain, filterRegex, filterSubType))
-                        $(this).addClass(filterClass);
-                } catch (err) {
-                    $(this).addClass(filterClass);
-                }
-            });
-        }
-    });
-
-    // Super/VS Filter
-    $('.sv-filter').click(function () {
-        var filter = $(this).data('filter');
-        var filterClass = 'sv-filtered-' + filter;
-
-        var filterLookUp = filter_map[filter];
-        var filterMatcher = getFilterMatcher('sv', filter);
-        var filterRegex = filterMatcher.regex;
-
-        var filterSubType;
-        if (filterMatcher.submatchers)
-            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
-
-        if ($(this).hasClass('selected')) {
-            // Clear filters of units filtered by this special
-            $(this).removeClass('selected');
-            $('.' + filterClass).removeClass(filterClass);
-        } else {
-            $(this).addClass('selected');
-
-            $('.booster, .booster-clone').each(function () {
-                try {
-                    var unitId = $(this).data('id');
-                    var origId = unitId;
-
-                    if (unitId > 9000)
-                        unitId = parseVsUnitId(unitId);
-
-                    var unitDetail = details[unitId];
-
-                    if (unitDetail && (unitDetail.superSpecial || unitDetail.VSSpecial)) {
-                        var superVs;
-                        if (origId > 9000) {
-                            // VS Units
-                            if (origId % 2 === 1)
-                                superVs = unitDetail.VSSpecial.character1;
-                            else
-                                superVs = unitDetail.VSSpecial.character2;
-                        } else
-                            superVs = unitDetail.superSpecial;
-
-                        if (!regexTestHelper(superVs, filterRegex, filterSubType))
-                            $(this).addClass(filterClass);
-                    } else {
-                        // Units w/ no Super/VS Special
-                        $(this).addClass(filterClass);
-                    }
-                } catch (err) {
-                    $(this).addClass(filterClass);
-                }
-            });
-        }
-    });
-
-    // Swap Filter
-    $('.sw-filter').click(function () {
-        var filter = $(this).data('filter');
-        var filterClass = 'sw-filtered-' + filter;
-
-        var filterLookUp = filter_map[filter];
-        var filterMatcher = getFilterMatcher('sw', filter);
-        var filterRegex = filterMatcher.regex;
-
-        var filterSubType;
-        if (filterMatcher.submatchers)
-            filterSubType = filterMatcher.submatchers[filterLookUp[2]];
-
-        if ($(this).hasClass('selected')) {
-            // Clear filters of units filtered by this special
-            $(this).removeClass('selected');
-            $('.' + filterClass).removeClass(filterClass);
-        } else {
-            $(this).addClass('selected');
-
-            $('.booster, .booster-clone').each(function () {
-                try {
-                    var swap = getUnitSwap($(this).data('id'));
-
-                    if (swap === null || !regexTestHelper(swap, filterRegex, filterSubType))
-                        $(this).addClass(filterClass);
-                } catch (err) {
-                    $(this).addClass(filterClass);
-                }
-            });
-        }
+    // Team-bar CLEAR ALL mirrors legacy bottom filters only
+    $('.filter-button-div .filter-clear-all-btn').on('click', function () {
+        $('#tm-filter-container .filter-clear-all-btn').first().trigger('click');
     });
 
     // Support filter
@@ -5168,51 +5434,6 @@ $(document).ready(function () {
 
             supportTable.column(2).search(filtersStr, true, false).draw();
         }
-    });
-
-    // Clear Filters
-    $('.filter-clear-btn').click(function () {
-        var target = $(this).data('target');
-
-        if ('type' === target) {
-            clearTypeFilters();
-            typeFilters = [];
-        } else if ('name' === target) {
-            clearNameFilter();
-        } else if ('class' === target) {
-            clearClassFilters();
-            classFilters = [];
-        } else if ('special' === target) {
-            clearSpecialFilters();
-        } else if ('sailor' === target) {
-            clearSailorFilters();
-        } else if ('captain' === target) {
-            clearCaptainFilters();
-        } else if ('super' === target) {
-            clearSuperFilters();
-        } else if ('swap' === target) {
-            clearSwapFilters();
-        }
-    });
-
-    $('.filter-clear-all-btn').click(function () {
-        clearTypeFilters();
-        typeFilters = [];
-
-        clearNameFilter();
-
-        clearClassFilters();
-        classFilters = [];
-
-        clearSpecialFilters();
-
-        clearSailorFilters();
-
-        clearCaptainFilters();
-
-        clearSuperFilters();
-
-        clearSwapFilters();
     });
 
     $('.sup-filter-clear-all-btn').click(function () {
@@ -5354,14 +5575,14 @@ $(document).ready(function () {
         sort: false // To disable sorting: set sort to false
     });
 
-    // Filter button events
+    // Filter button events (legacy bottom panel only — Filter V2 stays on the left)
     $(".filter-button").click(function () {
         if ($(this).hasClass("active")) {
             $("#tm-team-container").show();
-            $(".fixed-filters").fadeOut("slow");
+            $("#tm-filter-container").fadeOut("slow");
         } else {
             $("#tm-team-container.fixed-teams").hide();
-            $(".fixed-filters").fadeIn("slow");
+            $("#tm-filter-container").fadeIn("slow");
         }
     });
 

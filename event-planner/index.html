@@ -774,6 +774,7 @@
 
         <div class="row">
             <div class="col-12">
+                <div id="legacy-tm-boosters" class="legacy-tm-boosters-hidden">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-12 div_x" id="div_2_5x">
                         <h4>2.5x Booster(s)</h4>
@@ -978,12 +979,13 @@
                         <div class="booster-div" id="booster_1x"></div>
                     </div>
                 </div>
+                </div><!-- /#legacy-tm-boosters -->
 
                 <div class="row mt-3" id="div_boosters_v2">
                     <div class="col-12">
                         <h4>Units <span id="booster-v2-title-range">(latest 100)</span></h4>
-                        <div class="booster-info">Shows the latest 100 characters by ID. Search by name to show the top 100 matches (ID high → low).</div>
-                        <div class="form-group mb-2" style="max-width: 360px;">
+                        <div class="booster-info">Shows the latest 100 characters by ID. Filter V2 (left) rebuilds this list — name, type, class, and ability filters all return the top 100 matches.</div>
+                        <div class="form-group mb-2" style="max-width: 360px; display: none;">
                             <input type="text" class="form-control form-control-sm" id="booster-v2-name-filter"
                                 placeholder="Search character name" autocomplete="off">
                         </div>
@@ -991,7 +993,7 @@
                     </div>
                 </div>
 
-                <div class="row" id="dont-have-div">
+                <div class="row legacy-tm-boosters-hidden" id="dont-have-div">
                     <div class="col-12">
                         <h4>Units I Don't Have</h4>
                         <div class="booster-div" id="dont-have">
@@ -1281,6 +1283,8 @@
                 </div>
             </div>
         </div>
+
+        <div id="tm-filter-v2-container" class="fixed-filters ep-side-filters-panel" aria-label="Filter V2"></div>
 
         <div id="tm-filter-container" class="fixed-filters">
             <div>
