@@ -501,7 +501,8 @@ div#support-filters {
     box-sizing: border-box;
 }
 
-body.ep-has-side-filters .container-fluid {
+/* Only the main page shell — not nested .container-fluid inside modals (e.g. Mini Guide) */
+body.ep-has-side-filters > .container-fluid {
     padding-left: calc(min(520px, 42vw) + 16px);
 }
 
@@ -520,7 +521,7 @@ body.night-mode.ep-has-side-filters .fixed-filters.ep-side-filters-panel {
         width: min(100vw, 360px);
     }
 
-    body.ep-has-side-filters .container-fluid {
+    body.ep-has-side-filters > .container-fluid {
         padding-left: calc(min(100vw, 360px) + 12px);
     }
 }
