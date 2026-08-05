@@ -4941,6 +4941,17 @@ $(document).ready(function () {
         clearSuperFilters();
         clearSwapFilters();
 
+        // Reset Filter V2 ability selections too (keep name / type / class)
+        var $v2 = $('#tm-filter-v2-container');
+        var $v2Units = getV2FilterUnits();
+        clearSpecialFilters($v2Units, $v2);
+        clearSailorFilters($v2Units, $v2);
+        clearCaptainFilters($v2Units, $v2);
+        clearSuperFilters($v2Units, $v2);
+        clearSwapFilters($v2Units, $v2);
+        if ($v2.length)
+            renderBoostersV2();
+
         var opId = $(this).closest('.team').data('op_id');
         var op = tm_opponents[tmId][opId];
 
@@ -5059,6 +5070,10 @@ $(document).ready(function () {
         clearTypeFilters();
         clearClassFilters();
 
+        var $v2 = $('#tm-filter-v2-container');
+        clearTypeFilters(getV2FilterUnits(), $v2);
+        clearClassFilters(getV2FilterUnits(), $v2);
+
         $(this).toggleClass('selected');
 
         // Activate actual Filter
@@ -5075,10 +5090,12 @@ $(document).ready(function () {
                     if (tc.match(/(STR|DEX|QCK|PSY|INT)/g)) {
                         tcTypes.push(tc);
                         $('.type-filter.' + tc + '-div').addClass('selected');
+                        $v2.find('.type-filter-v2.' + tc + '-div').addClass('selected');
                     } else {
                         tcClasses.push(tc);
                         var c = tc.replace(' ', '-').toLowerCase();
                         $('.class-filter.' + c + '-div').addClass('selected');
+                        $v2.find('.class-filter-v2.' + c + '-div').addClass('selected');
                     }
                 }
 
@@ -5086,51 +5103,55 @@ $(document).ready(function () {
                 applyClassFilter(tcClasses, false, false);
             }
         }
+
+        if ($v2.length)
+            renderBoostersV2();
     });
 
     // Activate Counter Special Filter after clicking from Mini Guide
     $(document).on('click', '.guide-sp-filter', function () {
         $(this).toggleClass('selected');
 
-        // Activate actual Filter
+        // Activate actual Filter (legacy + Filter V2)
         var filter = $(this).data('filter');
         $('.sp-filter[data-filter=' + filter + ']').click();
+        $('#tm-filter-v2-container .sp-filter-v2[data-filter="' + filter + '"]').trigger('click');
     });
 
     // Activate Counter Sailor Filter after clicking from Mini Guide
     $(document).on('click', '.guide-sl-filter', function () {
         $(this).toggleClass('selected');
 
-        // Activate actual Filter
         var filter = $(this).data('filter');
         $('.sl-filter[data-filter=' + filter + ']').click();
+        $('#tm-filter-v2-container .sl-filter-v2[data-filter="' + filter + '"]').trigger('click');
     });
 
     // Activate Counter Captain Filter after clicking from Mini Guide
     $(document).on('click', '.guide-ca-filter', function () {
         $(this).toggleClass('selected');
 
-        // Activate actual Filter
         var filter = $(this).data('filter');
         $('.ca-filter[data-filter=' + filter + ']').click();
+        $('#tm-filter-v2-container .ca-filter-v2[data-filter="' + filter + '"]').trigger('click');
     });
 
     // Activate Counter Super/VS Filter after clicking from Mini Guide
     $(document).on('click', '.guide-sv-filter', function () {
         $(this).toggleClass('selected');
 
-        // Activate actual Filter
         var filter = $(this).data('filter');
         $('.sv-filter[data-filter=' + filter + ']').click();
+        $('#tm-filter-v2-container .sv-filter-v2[data-filter="' + filter + '"]').trigger('click');
     });
 
     // Activate Counter Swap Filter after clicking from Mini Guide
     $(document).on('click', '.guide-sw-filter', function () {
         $(this).toggleClass('selected');
 
-        // Activate actual Filter
         var filter = $(this).data('filter');
         $('.sw-filter[data-filter=' + filter + ']').click();
+        $('#tm-filter-v2-container .sw-filter-v2[data-filter="' + filter + '"]').trigger('click');
     });
 
     // Change Boss HP and ATK based on Nav Lv
