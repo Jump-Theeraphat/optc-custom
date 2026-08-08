@@ -1244,6 +1244,9 @@ function populateBoosters(boosters) {
 function getOpponents(tmId, server) {
     // Reset
     $('.thumb-div').empty();
+    $('.op-name').empty();
+    $('.team-note-boss').empty();
+    $('.team').removeData('op_id');
 
     var opponents = tm_opponents[tmId];
 
@@ -1322,10 +1325,16 @@ function getOpponents(tmId, server) {
         }
     }
 
-    var imgHtml = createImgHtml(getThumb(tmId), 50, false);
+    var thumbId = isCustomEvent(tmId) ? 'generic' : tmId;
+    var imgHtml = createImgHtml(getThumb(thumbId), 50, false);
     $('.thumb-div').append(imgHtml);
 
     return true;
+}
+
+// Custom events built in the Guide Builder have no booster csv / event thumb
+function isCustomEvent(id) {
+    return typeof epIsCustomEvent === 'function' && epIsCustomEvent(id);
 }
 
 // Save drag(from) and drop(to) position
@@ -1338,13 +1347,20 @@ function init(tmId, server, isTransfer) {
     $('#tm-select').val(tmId + '_' + server);
     $('.tm-select').text($("#tm-select option:selected").text());
 
-    getBoosters(tmId, server);
+    var custom = isCustomEvent(tmId);
+
+    if (!custom)
+        getBoosters(tmId, server);
+
     getBoostersV2();
 
     if (!getOpponents(tmId, server)) {
         alert('Invalid TM');
         return false;
     }
+
+    // Boss board is always shown unless a custom event leaves it unused
+    $('#team-boss').show();
 
     // Display Ambush Team
     if (tmId >= 4464) {
@@ -1379,6 +1395,16 @@ function init(tmId, server, isTransfer) {
         }
     }
 
+    // Custom events can define fewer than 6 opponents — hide the unused boards
+    if (custom) {
+        $('#tm-team-sets .team').each(function () {
+            if (typeof $(this).data('op_id') === 'undefined')
+                $(this).hide();
+            else
+                $(this).show();
+        });
+    }
+
     resetAll();
 
     if (!isTransfer)
@@ -1397,7 +1423,7 @@ function init(tmId, server, isTransfer) {
         doTeamBuildCheck(teamId);
 
     // Bird Luck
-    if (tmId >= 4033 && tmId < 4464)
+    if (!custom && tmId >= 4033 && tmId < 4464)
         $('#bird-luck-div').show();
     else
         $('#bird-luck-div').hide();
@@ -4980,6 +5006,8 @@ $(document).ready(function () {
 
                 $('#mini-guide-boss').html(opHtml);
             }
+
+            $('#rec-units-row').toggle(!!(op.rec && op.rec.length));
 
             if (op.rec) {
                 for (var ri in op.rec) {
