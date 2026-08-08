@@ -43,11 +43,15 @@
     <script src="/event-planner/data/filter_map.js"></script>
     <script src="/event-planner/data/counters.js"></script>
     <script src="/event-planner/data/icon_tooltips.js"></script>
+    <script src="/event-planner/data/effect_catalog.js"></script>
     <script src="/vendor/optc-db/units.js"></script>
     <script src="/vendor/optc-db/details.js"></script>
     <script src="/vendor/optc-db/cooldowns.js"></script>
     <script src="/vendor/optc-db/families.js"></script>
     <script src="/vendor/optc-db/matchers.js"></script>
+
+    <!-- Must load after tm_opponents.js so custom events can be merged in -->
+    <script src="/event-planner/assets/js/guide-builder.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
@@ -200,7 +204,7 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" id="rec-units-row">
                         <div class="col-6 col-form-label">Recommended Units:</div>
                         <div class="col-6" id="rec-units"></div>
                     </div>
@@ -1008,10 +1012,10 @@
             <div class="col-12">
                 <div class="row expand-collapse-icons-row">
                     <div class="filter-button-div col-11">
-                        <div class="filter-button" data-status="in-team">
+                        <div class="filter-button" data-status="in-team" hidden>
                             Filter
                         </div>
-                        <div class="filter-clear-all-div">
+                        <div class="filter-clear-all-div" hidden>
                             <button type="button" class="btn btn-danger filter-clear-all-btn">CLEAR ALL</button>
                         </div>
                         <div class="fixed-note-button">Team Status</div>
