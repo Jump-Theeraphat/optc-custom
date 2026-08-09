@@ -4013,7 +4013,7 @@ function checkTeamMiniGuideSpecialMet(teamId) {
 
     var countersWithoutTurns = ['bypass-def', 'c_bypass-def', 'chain-lock', 'chain-bound',
         'clear-buff', 'def-down', 'dmg-eot', 'c_dmg-eot', 'poison', 'slot-change',
-        'slot-change-block', 'stun-red'];
+        'slot-change-block', 'stun-red', 'territory'];
 
     if (op && op.guide) {
         var i = 0;

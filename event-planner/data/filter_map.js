@@ -14,6 +14,7 @@ var filter_map = {
     'chain-lock':               ['Boost Damage and Stats', 'Chain Limit: Lock'],
     'chain-bound':              ['Boost Damage and Stats', 'Chain Limit: Boundary'],
     'base-atk-boost':           ['Boost Damage and Stats', 'Base ATK Boost'],
+    'territory':                ['Boost Damage and Stats', 'Territory'],
     'slot-change':              ['Slot Change', 'Orb Control: Change'],
     'slot-change-block':        ['Slot Change', 'Orb Control: Change', 2],
     'slot-lock':                ['Slot', 'Orb lockers'],

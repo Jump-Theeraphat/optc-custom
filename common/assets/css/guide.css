@@ -138,3 +138,18 @@
 .target-lock-div            { background-image: url('/tm-planner/assets/img/special_icons/target_lock.png');        background-size: 24px 24px; }
 .intim-div                  { background-image: url('/tm-planner/assets/img/special_icons/intimidate.png');         background-size: 24px 24px; }
 .silence-div                { background-image: url('/tm-planner/assets/img/special_icons/silence.png');            background-size: 24px 24px; }
+
+/* Newly added effect icons — sources aren't square, so fit instead of stretch */
+.territory-div,
+.territory-enemy-div,
+.slot-atk-down-div,
+.nullify-potential-ability-div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.territory-div                     { background-image: url('/tm-planner/assets/img/special_icons/territory.png'); }
+.territory-enemy-div               { background-image: url('/tm-planner/assets/img/special_icons/territory_enemy.png'); }
+.slot-atk-down-div                 { background-image: url('/tm-planner/assets/img/special_icons/slot_atk_down.png'); }
+.nullify-potential-ability-div     { background-image: url('/tm-planner/assets/img/special_icons/nullify_potential_ability.png'); }
