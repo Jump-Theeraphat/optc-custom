@@ -31,5 +31,6 @@ var counters = {
     'slot-block':           ['slot-change-block', 'sv_slot-change-block', 'sw_slot-change-block'],
     'slot-para':            ['para-red', 'sv_para-red', 'sw_para-red'],
     'slot-poison':          ['poison-red', 'sv_poison-red', 'sw_poison-red'],
-    'stun':                 ['stun-red', 's_stun-red']
+    'stun':                 ['stun-red', 's_stun-red'],
+    'territory-enemy':      ['territory', 'sv_territory']
 }

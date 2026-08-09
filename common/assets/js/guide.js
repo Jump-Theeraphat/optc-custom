@@ -2,13 +2,10 @@ function decorateSpIcon(iconKey, isAction) {
     if (iconKey === 'Heal Team' ||
         iconKey === '- Max HP' ||
         iconKey === 'Bad Slot+' ||
-        iconKey === 'Slot Atk Down' ||
         iconKey === 'Slot Effect Down' ||
-        iconKey === 'Territory' ||
         iconKey === 'Immu Instant Defeat' ||
         iconKey === 'No Type Effect' ||
-        iconKey === 'Mob' ||
-        iconKey === 'Nullify Potential Ability'
+        iconKey === 'Mob'
     )
         return iconKey;
 

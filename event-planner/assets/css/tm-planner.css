@@ -1144,7 +1144,15 @@ span.team-note-boss {
 }
 
 .ep-debuff-group {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.ep-debuff-group:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .ep-debuff-group-title {
