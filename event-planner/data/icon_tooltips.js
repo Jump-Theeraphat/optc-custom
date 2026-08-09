@@ -118,5 +118,10 @@ var icon_tooltips = {
     'bleed':                  'Bleed',
     'target-lock':            'Target Lock',
     'intim':                  'Intimidate',
-    'silence':                'Action Silence'
+    'silence':                'Action Silence',
+
+    'territory':              'Territory',
+    'territory-enemy':        'Territory (Enemy)',
+    'slot-atk-down':          'Slot Atk Down',
+    'nullify-potential-ability': 'Nullify Potential Ability'
 };

@@ -19,7 +19,7 @@ var effect_catalog = [
     { key: 'immu-def', label: 'Defense Down Immunity', group: 'immunity' },
     { key: 'immu-poison', label: 'Poison Immunity', group: 'immunity' },
     { key: 'immu-except', label: 'All Immunity Except', group: 'immunity' },
-    { key: 'Immu Instant Defeat', label: 'Immu Instant Defeat', group: 'immunity' },
+    // { key: 'Immu Instant Defeat', label: 'Immu Instant Defeat', group: 'immunity' },
     { key: 'immu-blow-away', label: 'Blow Away Immunity', group: 'immunity' },
 
     // ---------- Status ----------
@@ -72,9 +72,9 @@ var effect_catalog = [
     { key: 'slot-lock', label: 'Lock Slots', group: 'slot' },
     { key: 'slot-lock-tap', label: 'Lock Slot until Certain Tap', group: 'slot' },
     { key: 'slot-pos', label: 'Treat Slots as Matching', group: 'slot' },
-    { key: 'slot-pos-pass', label: 'Treat Slots as Matching', group: 'slot' },
-    { key: 'Slot Atk Down', label: 'Slot Atk Down', group: 'slot' },
-    { key: 'Slot Effect Down', label: 'Slot Effect Down', group: 'slot' },
+    // { key: 'slot-pos-pass', label: 'Treat Slots as Matching', group: 'slot' },
+    { key: 'slot-atk-down', label: 'Slot Atk Down', group: 'slot' },
+    // { key: 'slot-effect-down', label: 'Slot Effect Down', group: 'slot' },
     { key: 'orb-boost', label: 'Slot Effect Boost', group: 'slot' },
 
     // ---------- Barrier ----------
@@ -111,9 +111,9 @@ var effect_catalog = [
     { key: 'enrage', label: 'Enrage', group: 'other' },
     { key: 'fixed-target', label: 'Fixed Target', group: 'other' },
     { key: 'heal', label: 'Heal', group: 'other' },
-    { key: 'Heal Team', label: 'Heal Team', group: 'other' },
-    { key: 'Territory', label: 'Territory', group: 'other' },
-    { key: 'Nullify Potential Ability', label: 'Nullify Potential Ability', group: 'other' },
+    { key: 'territory', label: 'Territory', group: 'other' },
+    { key: 'territory-enemy', label: 'Territory (Enemy)', group: 'other' },
+    { key: 'nullify-potential-ability', label: 'Nullify Potential Ability', group: 'other' },
     { key: 'delay', label: 'Delay', group: 'other' },
     { key: 'def-down', label: 'Reduce Enemy Defense', group: 'other' },
     { key: 'bypass-def', label: 'Bypass Enemy Defense', group: 'other' },
