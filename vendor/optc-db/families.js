@@ -454,7 +454,7 @@ const ThievesOfTehnaGehnaKingdom = [ "Thieves of Tehna Gehna Kingdom" ];
 const TequilaWolfGuard = [ "Tequila Wolf Guard" ];
 const Pekoms = [ "Pekoms" ];
 const BaronTamago = [ "Baron Tamago", "Viscount Hiyoko", "Count Niwatori" ];
-const Ronse = [ "Ronse" ];
+const Lonz = [ "Lonz", "Ronse" ];
 const Stainless = [ "Stainless" ];
 const Boo = [ "Boo" ];
 const JeanAngo = [ "Jean Ango" ];
@@ -748,6 +748,10 @@ const Rodo = [ "Rodo" ];
 const Stansen = [ "Stansen" ];
 const Goldberg = [ "Goldberg" ];
 const Gerd = [ "Gerd" ];
+const Shamrock = [ "Saint Shamrock", "St. Shamrock" ];
+const Gunko = [ "Saintess Gunko", "St. Gunko" ];
+const Collun = [ "Collun" ];
+const Jarul = [ "Jarul" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -2097,7 +2101,7 @@ window.families = {
     1414: [ ...VinsmokeSanji ],
     1415: [ ...Sengoku ],
     1416: [ ...Sengoku ],
-    1417: [ ...Ronse ],
+    1417: [ ...Lonz ],
     1418: [ ...Stainless ],
     1419: [ ...RobLucci ],
     1420: [ ...RobLucci ],
@@ -5235,10 +5239,28 @@ window.families = {
     4600: [ ...Shiryu ],
     4601: [ ...MonkeyDGarp ],
     4602: [ ...MonkeyDGarp ],
+    4603: [ ...MonkeyDLuffy ],
+    4605: [ ...RoronoaZoro ],
+    4606: [ ...VinsmokeSanji ],
     4607: [ ...Bartolomeo ],
     4608: [ ...Laffitte ],
     4609: [ ...DocQ ],
     4610: [ ...Kuzan ],
+    4611: [ ...Shamrock ],
+    4612: [ ...Gunko ],
+    4613: [ ...NefertariVivi ],
+    4614: [ ...Brook ],
+    4615: [ ...Franky ],
+    4616: [ ...Jinbe ],
+    4617: [ ...NicoRobin ],
+    4618: [ ...Collun ],
+    4619: [ ...Collun ],
+    4620: [ ...Shanks ],
+    4621: [ ...Shanks ],
+    4622: [ ...Jarul ],
+    4623: [ ...PortgasDAce, ...LittleOarsJr ],
+    4624: [ ...Lonz ],
+    4625: [ ...JohnGiant ],
     //break
     5013: [ ...MonkeyDLuffy ],
     5014: [ ...MonkeyDLuffy ],

@@ -6171,6 +6171,19 @@ window.evolutions = {
         evolution: 4602,
         evolvers: [ "4602-skull", "4602-skull", "4602-skull", "4602-skull", "4602-skull" ]
     },
+    4583: {
+        evolution: 4603,
+        evolvers: [ "4603-skull", "4603-skull", "4603-skull", "4603-skull", "4603-skull" ]
+    },
+    3405: {
+        evolution: 4613,
+        evolvers: [ "4613-skull", "4613-skull", "4613-skull", "4613-skull", "4613-skull" ]
+    },
+    // Collun 5+
+    4618: {
+        evolution: 4619,
+        evolvers: [ "4619-skull", "4619-skull", "4619-skull", "4619-skull", "4619-skull" ]
+    },
     // break
     5013: {
         evolution: 5014,
