@@ -756,12 +756,14 @@ function getBoosters(tmId, server) {
         tmId == 4527 ||
         tmId == 4541 ||
         tmId == 4589 ||
-        tmId == 4602
+        tmId == 4602 ||
+        tmId == 4619
     ) {
         // TM Shiryu
         // TM Lucci (Egghead)
         // TM Rodo
         // TM Garp (Fullalead)
+        // TM Collun
         $('#div_2_2x_v2').show();
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
