@@ -756,12 +756,14 @@ function getBoosters(tmId, server) {
         tmId == 4527 ||
         tmId == 4541 ||
         tmId == 4589 ||
-        tmId == 4602
+        tmId == 4602 ||
+        tmId == 4619
     ) {
         // TM Shiryu
         // TM Lucci (Egghead)
         // TM Rodo
         // TM Garp (Fullalead)
+        // TM Collun
         $('#div_2_2x_v2').show();
         $('#div_1_8x').show();
         $('#div_1_4x_v2').show();
@@ -5559,7 +5561,7 @@ $(document).ready(function () {
 
     // Set up drag and drop for each booster section
     var ids = ["booster_2_5x", "booster_2_3x", "booster_2_25x", "booster_2_2x", "booster_2_2x_v2", "booster_2_1x", "booster_2x",
-        "booster_1_85x", "booster_1_8x", "booster_1_8x_v2", "booster_1_75x","booster_1_7x", "booster_1_65x", "booster_1_6x",
+        "booster_1_85x", "booster_1_8x", "booster_1_8x_v2", "booster_1_75x", "booster_1_7x", "booster_1_65x", "booster_1_6x",
         "booster_1_5x", "booster_1_4x", "booster_1_4x_v2", "booster_1_35x", "booster_1_35x_valt",
         "booster_1_35x_v2", "booster_1_35x_v3", "booster_1_35x_v4", "booster_1_3x", "booster_1_3x_v2",
         "booster_1_3x_v3", "booster_1_25x", "booster_1_25x_v2", "booster_1_25x_v3", "booster_1_25x_v4",
