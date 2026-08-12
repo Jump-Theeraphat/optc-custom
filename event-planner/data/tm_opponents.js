@@ -26043,4 +26043,125 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Collun ==========
+    4619: {
+        4233: {
+            name: ['Dorry &', ' Broggy'],
+            type: ['STR', 'QCK'],
+            pos: 4,
+            rec: [4623, 4624, 4625],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Fighter Striker Powerhouse" },
+                                { "type": "sw-red", "turn": "5", "detail": "Fighter Striker Powerhouse" },
+                                { "type": "cd-red", "turn": "5", "detail": "Fighter Striker Powerhouse" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Hajrudin', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "def", "turn": "6", "detail": "100000x" },
+                                { "type": "slot-change", "detail": "[EMPTY]" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Dorry & Broggy', 'STR'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Striker',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "desp", "turn": "15" },
+                                { "type": "chain-atk-down-min", "turn": "5", "detail": "<=3.0" },
+                                { "type": "sp-bind", "turn": "6", "detail": "Middle-Row " },
+                                { "type": "cd-rew", "turn": "3", "detail": "Top-Row , Bottom-Row" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Charge Special (once)',
+                            action: JSON.parse(`[{ "type": "def-null", "turn": "2" },
+                                { "type": "enrage", "turn": "99" },
+                                { "type": "blow-away", "turn": "1", "detail": "Middle-Left , Bottom-Left " }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        3125: {
+            name: ['Oa', 'rs'],
+            type: ['STR', 'QCK'],
+            pos: 5,
+            rec: [4623, 4624, 4625],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "DEX/QCK/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "DEX/QCK/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "DEX/QCK/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Oars', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "cd-rew", "turn": "3" },
+                                { "type": "def-thres", "turn": "6" },
+                                { "type": "slot-block" },
+                                { "type": "blow-away", "turn": "4", "detail": "Middle-Left , Bottom-Left " }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Oars', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Striker',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "bind", "turn": "9", "detail": "[DEX]  type" },
+                                { "type": "intim", "turn": "2", "detail": "Slot Effect Boost /Type Effect Boost, -2" },
+                                { "type": "burn-p", "turn": "6", "detail": "30000" },
+                                { "type": "fear", "turn": "1", "detail": "Crewmate" },
+                                { "type": "def-perc", "turn": "12" }]`)
+                        },
+                        {
+                            type: 'ON DEATH (0%)',
+                            action: JSON.parse(`[{ "type": "dmg-normal", "detail": "167000" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
