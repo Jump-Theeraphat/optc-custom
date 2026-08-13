@@ -212,6 +212,46 @@ img.highlight {
     min-height: 48px;
 }
 
+#booster_v2 .booster {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    vertical-align: top;
+}
+
+#booster_v2 .booster > img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.booster-gold-overlay {
+    background: #ffd700;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.booster-xpts-overlay {
+    bottom: 1px;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    left: 50%;
+    line-height: 1;
+    pointer-events: none;
+    position: absolute;
+    text-shadow: 0 0 2px #000, 0 0 2px #000, 0 1px 2px #000;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 2;
+}
+
 /* Hide original TM Booster(s) tiers; keep DOM for getBoosters / filters */
 .legacy-tm-boosters-hidden {
     visibility: hidden;

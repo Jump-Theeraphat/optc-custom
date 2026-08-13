@@ -25,6 +25,16 @@ function createTooltip(imgDiv, text) {
     imgDiv.tooltip({ html: true });
 }
 
+// Bootstrap leaves the tip node in <body>; hide + remove so drag/drop doesn't stick it.
+function hideBoosterTooltip($el) {
+    if ($el && $el.length) {
+        try {
+            $el.tooltip('hide');
+        } catch (err) { /* ignore */ }
+    }
+    $('body > .tooltip').remove();
+}
+
 function createTooltipForUnit(imgDiv, unit) {
     var tooltipTxt = unit.name;
     tooltipTxt += '<br>';
@@ -60,9 +70,34 @@ function getUrlParameter(sParam) {
     return false;
 };
 
+// Unit id -> x_pts for the TM currently selected in #tm-select
+// (from tm-booster-raw CSV or tm_boosters / tm_boosters_jpn).
+var currentBoosterXPts = {};
+
+function setCurrentBoosterXPtsMap(boosters) {
+    currentBoosterXPts = {};
+    if (!boosters || !boosters.length)
+        return;
+
+    for (var i = 0; i < boosters.length; i++) {
+        var b = boosters[i];
+        var id = Number(b.id);
+        var x = parseFloat(b.x_pts);
+        if (!id || isNaN(x))
+            continue;
+
+        var baseId = id > 9000 ? parseVsUnitId(id) : id;
+        if (!currentBoosterXPts[baseId] || x > currentBoosterXPts[baseId])
+            currentBoosterXPts[baseId] = x;
+        if (baseId !== id && (!currentBoosterXPts[id] || x > currentBoosterXPts[id]))
+            currentBoosterXPts[id] = x;
+    }
+}
+
 function getBoosters(tmId, server) {
     // Reset
     $('.booster').remove();
+    currentBoosterXPts = {};
 
     $('#info_1_2x_main').show();
     $('#info_1_2x_alt').hide();
@@ -801,6 +836,7 @@ function getBoosters(tmId, server) {
 
         if (tmId < 4108) {
             boosters = tm_boosters[tmId];
+            setCurrentBoosterXPtsMap(boosters);
             populateBoosters(boosters);
         } else {
             $.ajax({
@@ -810,6 +846,7 @@ function getBoosters(tmId, server) {
                 async: false,
                 success: function (data) {
                     boosters = $.csv.toObjects(data);
+                    setCurrentBoosterXPtsMap(boosters);
                     populateBoosters(boosters);
                 },
                 error: function (jqxhr, status, err) {
@@ -819,6 +856,7 @@ function getBoosters(tmId, server) {
         }
     } else {
         boosters = tm_boosters_jpn[tmId];
+        setCurrentBoosterXPtsMap(boosters);
         populateBoosters(boosters);
     }
 }
@@ -1032,10 +1070,13 @@ function getBoostersV2UnitList(stateOrQuery, limit) {
         if (!unit || !unit.name) return;
         if (!unitPassesFilterV2(id, unit, state)) return;
 
-        list.push({ id: id, unit: unit });
+        list.push({ id: id, unit: unit, xPts: currentBoosterXPts[id] || 0 });
     });
 
     list.sort(function (a, b) {
+        // Current TM boosters first; higher x_pts ahead of lower
+        if (a.xPts !== b.xPts)
+            return b.xPts - a.xPts;
         return b.id - a.id;
     });
     return list.slice(0, limit);
@@ -1047,7 +1088,9 @@ function createBoosterV2El(id, unit) {
     imgDiv.addClass('booster');
     imgDiv.data('id', id);
     imgDiv.data('name', unit.name || '');
-    imgDiv.data('x_pts', 1);
+
+    var xPts = currentBoosterXPts[id] || 0;
+    imgDiv.data('x_pts', xPts || 1);
     imgDiv.data('_x_pts', 'v2');
     imgDiv.data('type', unit.type);
 
@@ -1057,6 +1100,12 @@ function createBoosterV2El(id, unit) {
         imgDiv.data('class2', unitClass[1]);
     } else {
         imgDiv.data('class1', unitClass);
+    }
+
+    if (xPts > 0) {
+        imgDiv.addClass('booster-v2-tm');
+        imgDiv.append('<div class="booster-gold-overlay" aria-hidden="true"></div>');
+        imgDiv.append($('<span class="booster-xpts-overlay"></span>').text(xPts + 'x'));
     }
 
     createTooltipForUnit(imgDiv, unit);
@@ -1093,9 +1142,16 @@ function renderBoostersV2() {
         $('#booster-v2-title-range').text('(no matches)');
     }
 
+    // A TM booster of the same unit may already sit in the Don't Have section
+    var markedDontHave = {};
+    $('.booster.assigned-dh').each(function () {
+        markedDontHave[$(this).data('id')] = true;
+    });
+
     list.forEach(function (item) {
         // Already placed on a team / in Don't Have section
         if ($('#booster_v2_' + item.id).length) return;
+        if (markedDontHave[item.id]) return;
 
         var imgDiv = createBoosterV2El(item.id, item.unit);
         if (inPlaceDontHave[item.id])
@@ -1125,22 +1181,105 @@ function findBoosterByUnitId(unitId) {
     return findBoostersByUnitId(unitId).first();
 }
 
-function markDontHaveBoosters(unitId, moveToSection) {
+// Global "Units I Don't Have" store (same idea as ep_custom_events — not per TM).
+var EP_DONT_HAVES_KEY = 'ep_dont_haves';
+
+function epReadDontHaves() {
+    try {
+        var raw = localStorage.getItem(EP_DONT_HAVES_KEY);
+        if (!raw)
+            return [];
+        var parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed))
+            return [];
+        var seen = {};
+        var out = [];
+        parsed.forEach(function (id) {
+            id = Number(id);
+            if (!id || seen[id])
+                return;
+            seen[id] = true;
+            out.push(id);
+        });
+        return out;
+    } catch (err) {
+        return [];
+    }
+}
+
+function epWriteDontHaves(ids) {
+    localStorage.setItem(EP_DONT_HAVES_KEY, JSON.stringify(ids || []));
+}
+
+function epAddDontHave(unitId) {
+    unitId = Number(unitId);
+    if (!unitId)
+        return;
+    var ids = epReadDontHaves();
+    if (ids.indexOf(unitId) === -1) {
+        ids.push(unitId);
+        epWriteDontHaves(ids);
+    }
+}
+
+function epRemoveDontHave(unitId) {
+    unitId = Number(unitId);
+    if (!unitId)
+        return;
+    epWriteDontHaves(epReadDontHaves().filter(function (id) {
+        return id !== unitId;
+    }));
+}
+
+function markDontHaveBoosters(unitId, moveToSection, skipPersist) {
     var $boosters = findBoostersByUnitId(unitId);
     if (!$boosters.length) return $boosters;
 
-    $boosters.each(function () {
-        var $b = $(this);
-        $b.addClass('assigned-dh');
-        $b.data('team', -1);
-        if (moveToSection) {
-            $b.detach().css({
-                top: 0,
-                left: 0
-            }).insertBefore($('#add-button'));
-        }
+    if (!moveToSection) {
+        $boosters.addClass('assigned-dh').data('team', -1);
+        if (!skipPersist)
+            epAddDontHave(unitId);
+        return $boosters;
+    }
+
+    // A unit can exist both as a TM booster and in the V2 pool. Keep the TM one
+    // (it carries x_pts) and drop the V2 copy so the section shows one entry.
+    var $keep = $boosters.not('[id^="booster_v2_"]').first();
+    if (!$keep.length)
+        $keep = $boosters.first();
+
+    $boosters.not($keep).filter('[id^="booster_v2_"]').remove();
+
+    $keep.addClass('assigned-dh');
+    $keep.data('team', -1);
+    $keep.detach().css({
+        top: 0,
+        left: 0
+    }).insertBefore($('#add-button'));
+
+    if (!skipPersist)
+        epAddDontHave(unitId);
+
+    return $keep;
+}
+
+function unmarkDontHaveBoosters(unitId) {
+    findBoostersByUnitId(unitId).each(function () {
+        resetPosition($(this));
     });
-    return $boosters;
+    epRemoveDontHave(unitId);
+    if (typeof renderBoostersV2 === 'function')
+        renderBoostersV2();
+}
+
+function applyStoredDontHaves() {
+    var mode = localStorage.getItem('dontHaveMode');
+    var moveToSection = (mode == null || mode == 0 || mode === '0');
+    var ids = epReadDontHaves();
+    for (var i = 0; i < ids.length; i++)
+        markDontHaveBoosters(ids[i], moveToSection, true);
+    if (typeof renderBoostersV2 === 'function')
+        renderBoostersV2();
 }
 
 function populateBoosters(boosters) {
@@ -1353,6 +1492,8 @@ function init(tmId, server, isTransfer) {
 
     if (!custom)
         getBoosters(tmId, server);
+    else
+        currentBoosterXPts = {};
 
     getBoostersV2();
 
@@ -1412,6 +1553,8 @@ function init(tmId, server, isTransfer) {
     if (!isTransfer)
         doLoad(tmId);
 
+    applyStoredDontHaves();
+
     $('#export-url-div').hide();
 
     // Retrieve last save time
@@ -1455,7 +1598,7 @@ function initDragAndDrop() {
                     onStart: function (/**Event*/evt) {
                         var item = $("#" + evt.item.id);
                         from_list = item.closest('.team-slot, .ambush-team-slot');
-                        item.tooltip('hide');
+                        hideBoosterTooltip(item);
                     },
                     onAdd: function (evt) {
                         var item = $("#" + evt.item.id);
@@ -1524,6 +1667,7 @@ function initDragAndDrop() {
                         doTeamBuildCheck(to_list.closest('.team').data('team'));
                     },
                     onEnd: function (evt) {
+                        hideBoosterTooltip($("#" + evt.item.id));
                         updateAllInfo();
                     }
                 });
@@ -1542,7 +1686,7 @@ function initDragAndDrop() {
                     onStart: function (/**Event*/evt) {
                         var item = $("#" + evt.item.id);
                         from_list = item.closest('.team-slot, .ambush-team-slot');
-                        item.tooltip('hide');
+                        hideBoosterTooltip(item);
                     },
                     onAdd: function (evt) {
                         var item = $("#" + evt.item.id);
@@ -1596,7 +1740,8 @@ function initDragAndDrop() {
 
                         doTeamBuildCheck(to_list.closest('.team').data('team'));
                     },
-                    onEnd: function () {
+                    onEnd: function (evt) {
+                        hideBoosterTooltip($("#" + evt.item.id));
                         updateAllInfo();
                     }
                 });
@@ -2987,16 +3132,13 @@ function doLoad(tmId) {
             });
         }
 
-        var dontHaveMode = localStorage.getItem('dontHaveMode');
-        var dontHaves = JSON.parse(localStorage.getItem('dontHaves_' + tmId));
-
-        for (var i = 0; i < dontHaves.length; i++) {
-            var unitId = dontHaves[i];
-
-            if (unitId !== 0) {
-                var moveToSection = (dontHaveMode == null || dontHaveMode == 0);
-                markDontHaveBoosters(unitId, moveToSection);
-            }
+        // Global Don't Have list is restored via applyStoredDontHaves() after init.
+        // Legacy per-TM keys are migrated into ep_dont_haves once if present.
+        var legacyDontHaves = JSON.parse(localStorage.getItem('dontHaves_' + tmId) || 'null');
+        if (Array.isArray(legacyDontHaves) && legacyDontHaves.length) {
+            legacyDontHaves.forEach(function (unitId) {
+                epAddDontHave(unitId);
+            });
         }
 
         var supports = JSON.parse(localStorage.getItem('supports_' + tmId));
@@ -4805,8 +4947,10 @@ $(document).ready(function () {
         var inDontHave = false;
         var src = null;
 
-        if ($(this).hasClass('assigned-dh'))
+        if ($(this).hasClass('assigned-dh')) {
             inDontHave = true;
+            src = 'dont-have';
+        }
 
         populateUnitModal(src, selectedId, inDontHave);
         $('#unit-modal').modal();
@@ -4820,11 +4964,10 @@ $(document).ready(function () {
         var unitId = $(this).data('id');
         if (dontHaveMode == 0) {
             if ($(this).hasClass('assigned-dh')) {
-                findBoostersByUnitId(unitId).each(function () {
-                    resetPosition($(this));
-                });
+                unmarkDontHaveBoosters(unitId);
             } else {
                 markDontHaveBoosters(unitId, true);
+                renderBoostersV2();
             }
         } else {
             var turnOn = !$(this).hasClass('assigned-dh');
@@ -4834,6 +4977,11 @@ $(document).ready(function () {
                 else
                     $(this).removeClass('assigned-dh');
             });
+            if (turnOn)
+                epAddDontHave(unitId);
+            else
+                epRemoveDontHave(unitId);
+            renderBoostersV2();
         }
     });
 
@@ -4885,6 +5033,7 @@ $(document).ready(function () {
             var clone;
             if (src == 'dont-have') {
                 markDontHaveBoosters(unitId, true);
+                renderBoostersV2();
             } else {
                 b.data('team', srcDiv.closest('.team').data('team'));
                 removeSupport(srcDiv.attr("id").slice(-2));
@@ -4923,7 +5072,7 @@ $(document).ready(function () {
         doTeamBuildCheck(to_list.closest('.team').data('team'));
 
         updateAllInfo();
-        $('#unit-modal').modal('hide');
+        // $('#unit-modal').modal('hide');
 
         // Hide tooltip on click
         $(this).tooltip('hide');
@@ -4931,16 +5080,23 @@ $(document).ready(function () {
 
     $('#remove-button').click(function () {
         var deleteId = $(this).data('id');
-        var teamId = $(this).data("src");
+        var src = $(this).data('src');
+
+        // Remove only from Units I Don't Have (+ localStorage)
+        if (src === 'dont-have') {
+            unmarkDontHaveBoosters(deleteId);
+            $('#unit-modal').modal('hide');
+            return;
+        }
 
         if (deleteId.toString().indexOf('_clone') == -1 && deleteId !== 0)
             resetPosition($('#booster_' + deleteId).detach());
         else if (deleteId.toString().indexOf('_clone') != -1)
-            $("#" + teamId).find(".booster-clone").remove();
+            $("#" + src).find(".booster-clone").remove();
 
-        if (teamId != null) {
-            removeSupport(teamId.slice(-2));
-            doTeamBuildCheck(teamId.slice(-2)[0]);
+        if (src != null) {
+            removeSupport(src.slice(-2));
+            doTeamBuildCheck(src.slice(-2)[0]);
             updateAllInfo();
         }
 
@@ -5582,7 +5738,10 @@ $(document).ready(function () {
             animation: 150,
             revertOnSpill: true,
             delay: 60, // time in milliseconds to define when the sorting should start
-            delayOnTouchOnly: true
+            delayOnTouchOnly: true,
+            onStart: function (evt) {
+                hideBoosterTooltip($("#" + evt.item.id));
+            }
         });
     }
 
@@ -5616,10 +5775,17 @@ $(document).ready(function () {
 
             // Remove corresponding Clone
             $('#booster-clone_' + unitId + '_clone').remove();
+            epAddDontHave(unitId);
+            renderBoostersV2();
         },
         onRemove: function (evt) {
             var item = $("#" + evt.item.id);
             item.removeClass('assigned-dh');
+            epRemoveDontHave(item.data('id'));
+            renderBoostersV2();
+        },
+        onStart: function (evt) {
+            hideBoosterTooltip($("#" + evt.item.id));
         },
         resetPositionOnSpill: true,
         animation: 150,
