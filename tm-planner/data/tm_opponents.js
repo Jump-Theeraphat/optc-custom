@@ -26124,7 +26124,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Oars', 'STR'],
-                    hp_: 1200000,
+                    hp: 1200000,
                     atk_: 6600,
                     detail: [
                         {
