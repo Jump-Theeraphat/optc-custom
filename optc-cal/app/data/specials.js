@@ -205,6 +205,11 @@ var specials = {
         name: '12th Anniversary (1am ~ 6am)',
         thumb: 4571
     },
+    'bb_4611': {
+        type: 'Blitz Battle',
+        name: 'VS Holy Knights (1am ~ 6am)',
+        thumb: 4611
+    },
 
     'wc_2401': {
         type: 'World Clash',
