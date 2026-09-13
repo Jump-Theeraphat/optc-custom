@@ -5,3 +5,5 @@ wget -N https://raw.githubusercontent.com/2shankz/optc-db.github.io/master/commo
 wget -N https://raw.githubusercontent.com/2shankz/optc-db.github.io/master/common/data/cooldowns.js
 wget -N https://raw.githubusercontent.com/2shankz/optc-db.github.io/master/common/data/families.js
 wget -N https://raw.githubusercontent.com/2shankz/optc-db.github.io/master/common/data/matchers.js
+wget -N https://raw.githubusercontent.com/2shankz/optc-db.github.io/master/common/data/tags.js
+wget -N https://raw.githubusercontent.com/2shankz/optc-db.github.io/master/common/data/availableTags.js
