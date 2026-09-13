@@ -440,7 +440,7 @@
 				name: "Activates: Special",
 				targets: ["support"],
 				regex:
-					/When you reach the ([\w]+) stage[^.]*?, activates supported character's Special/i,
+					/When you reach the ([\w]+) stage[^.]*?, activates supported character's[^.]+?Special/i,
 				submatchers: [
 					{
 						type: "option",
@@ -496,7 +496,7 @@
 				name: "Activates: Super Effect",
 				targets: ["support"],
 				regex:
-					/When you reach the ([\w]+) stage, activates supported character's Super Effect/i,
+					/When you reach the ([\w]+) stage, activates supported character's[^.]+?Super Effect/i,
 				submatchers: [
 					{
 						type: "option",
@@ -552,7 +552,7 @@
 				name: "Activates: Switch Effect",
 				targets: ["support"],
 				regex:
-					/When you reach the ([\w]+) stage, activates supported character's Switch Effect/i,
+					/When you reach the ([\w]+) stage, activates supported character's[^.]+?Switch Effect/i,
 				submatchers: [
 					{
 						type: "option",
@@ -6598,6 +6598,19 @@
 				],
 			},
 
+			{
+				name: "Nullifies Enemy Territory",
+				targets: ["captain"],
+				regex: /nullifies the application of enemy's territory ([?\d]+)(?:-([?\d]+))? times?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Times:",
+						groups: [1, 2],
+					},
+				],
+			},
+
 		],
 		"Bad Team Effects": [
 			{
@@ -11020,7 +11033,7 @@
 
 			{
 				name: "Healer: RCV",
-				targets: ["gpSpecial"],
+				targets: ["gpAbility", "gpSpecial"],
 				regex:
 					/Heals ([.\d]+)x RCV of HP to (\d)?(?=((?:[^c]+|c(?!rew))*))\3crew members?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?/i,
 				submatchers: [
@@ -11382,7 +11395,7 @@
 
 			{
 				name: "Special CT",
-				targets: ["gpSpecial"],
+				targets: ["gpAbility", "gpSpecial"],
 				regex:
 					/Reduces ([.\d]+)% of Special CT to (\d)?(?=((?:[^c]+|c(?!rew))*))\3crew members?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?/i,
 				submatchers: [
@@ -11519,7 +11532,7 @@
 
 			{
 				name: "Haste",
-				targets: ["rumbleSpecial"],
+				targets: ["rumbleAbility", "rumbleSpecial"],
 				regex:
 					/([.\d]+)% chance to grant Haste to (\d)?(self|(?=((?:[^c]+|c(?!rew))*))\4crew members?)(?:, excluding self,)?(?: with [^.]+ (ATK|DEF|HP|RCV|SPD|Special CT))?/i,
 				submatchers: [
@@ -14350,7 +14363,7 @@
 				name: "Captain Swap",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/(optionally )?swaps this unit with your captain for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
+					/(optionally )?swaps [^,]+ with your captain for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "option",
