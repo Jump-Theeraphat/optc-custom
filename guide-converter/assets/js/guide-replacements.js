@@ -15,6 +15,7 @@ let guideReplacements = [
     { regex: /([0-9]+) turn\(s\) Crew's ATK x ([0-9]*\.[0-9]+)/g, replacement: "{ \"type\": \"atk-boost\", \"turn\": \"$1\", \"detail\": \"$2x\" }," },
     { regex: /([0-9]+) turn\(s\) ATK [0-9]+% Down/g, replacement: "{ \"type\": \"atk-down\", \"turn\": \"$1\" }," },
     { regex: /([0-9]+) turn\(s\) Hit Barrier \(([0-9]+) hits\) /g, replacement: "{ \"type\": \"bar-hit\", \"turn\": \"$1\", \"detail\": \"$2x\" }," },
+    { regex: /([0-9]+) turn\(s\) Tap-Timing Barrier \(GOOD ([0-9]+) time\(s\)\)/g, replacement: "{ \"type\": \"bar-gd\", \"turn\": \"$1\", \"detail\": \"$2x\" }," },
     { regex: /([0-9]+) turn\(s\) Tap-Timing Barrier \(GREAT ([0-9]+) time\(s\)\)/g, replacement: "{ \"type\": \"bar-gt\", \"turn\": \"$1\", \"detail\": \"$2x\" }," },
     { regex: /([0-9]+) turn\(s\) Tap-Timing Barrier \(PERFECT ([0-9]+) time\(s\)\)/g, replacement: "{ \"type\": \"bar-p\", \"turn\": \"$1\", \"detail\": \"$2x\" }," },
     { regex: /([0-9]+) turn\(s\) Slot Barrier \(\[([A-Za-z0-9]+)\] Slots ([0-9]+) time\(s\)\)/g, replacement: "{ \"type\": \"bar-slot\", \"turn\": \"$1\", \"detail\": \"$3x $2\" }," },
@@ -102,6 +103,6 @@ let guideReplacements = [
     { regex: /([0-9]+) turn\(s\) Special Use Limit ([0-9]+) time\(s\)/g, replacement: "{ \"type\": \"sp-limit\", \"turn\": \"$1\", \"detail\": \"$2x\" }," },
     { regex: /(.+) Stun of [0-9]+ x damage taken/g, replacement: "{ \"type\": \"stun\", \"detail\": \"$1\" }," },
     { regex: /([0-9]+) turn\(s\) Limited Taps ([0-9]+) time\(s\)/g, replacement: "{ \"type\": \"tap-limit\", \"turn\": \"$1\", \"detail\": \"$2x\" }," },
-    { regex: /For ([0-9]+) turn\(s\), apply Territory \(Enemy\) on the field/g, replacement: "{ \"type\": \"Territory\", \"turn\": \"$1\" }," },
+    { regex: /For ([0-9]+) turn\(s\), apply Territory\s*(?:\(Enemy\)|: Enemy) on the field/g, replacement: "{ \"type\": \"Territory\", \"turn\": \"$1\" }," },
     { regex: /(.+) type change/g, replacement: "{ \"type\": \"type-change\", \"detail\": \"$1\" }," },
 ]

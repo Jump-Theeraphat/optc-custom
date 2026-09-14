@@ -73,6 +73,11 @@ function getBoosters(tmId, server) {
     else
         $('.booster_old_div').show();
 
+    if (tmId >= 4589)
+        $('.booster_old_div_2').hide();
+    else
+        $('.booster_old_div_2').show();
+
     // Change 2x or 2.25x version
     $('.div_x').hide();
     if (
@@ -781,6 +786,16 @@ function getBoosters(tmId, server) {
 
         $('#info_1_2x_main').hide();
         $('#info_1_2x_alt').show();
+    } else if (tmId == 4639) {
+        // TM Luffy (Elbaph)
+        $('#div_2_3x_v2').show();
+        $('#div_2x').show();
+        $('#div_1_4x_v2').show();
+        $('#div_1_35x_v4').show();
+        $('#div_1_25x_v2').show();
+
+        $('#info_1_2x_main').hide();
+        $('#info_1_2x_alt').show();
     } else {
         $('#div_2x').show();
         $('#div_1_5x').show();
@@ -794,7 +809,7 @@ function getBoosters(tmId, server) {
         else
             $('#div_1_2x_tm_rr').hide();
 
-        if (tmId < 3339 || tmId >= 4177)
+        if (tmId < 3339 || (tmId >= 4177 && tmId < 4589))
             $('#div_1_2x_tm').show();
         else
             $('#div_1_2x_tm').hide();
@@ -889,7 +904,9 @@ function populateBoosters(boosters) {
         if (b.x_pts == 1.2) {
             imgDiv.data('_type', b.type);
             $('#booster_' + _x_pts + 'x_' + b.type).append(imgDiv);
-        } else if (b.x_pts == 2.2 && b.ver)
+        } else if (b.x_pts == 2.3 && b.ver)
+            $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
+        else if (b.x_pts == 2.2 && b.ver)
             $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
         else if (b.x_pts == 1.8 && b.ver)
             $('#booster_' + _x_pts + 'x_v' + b.ver).append(imgDiv);
@@ -906,7 +923,9 @@ function populateBoosters(boosters) {
 
         _x_pts += 'x';
 
-        if (b.x_pts == 2.2 && b.ver)
+        if (b.x_pts == 2.3 && b.ver)
+            _x_pts += '_v' + b.ver;
+        else if (b.x_pts == 2.2 && b.ver)
             _x_pts += '_v' + b.ver;
         else if (b.x_pts == 1.8 && b.ver)
             _x_pts += '_v' + b.ver;
@@ -5083,8 +5102,8 @@ $(document).ready(function () {
     });
 
     // Set up drag and drop for each booster section
-    var ids = ["booster_2_5x", "booster_2_3x", "booster_2_25x", "booster_2_2x", "booster_2_2x_v2", "booster_2_1x", "booster_2x",
-        "booster_1_85x", "booster_1_8x", "booster_1_8x_v2", "booster_1_75x","booster_1_7x", "booster_1_65x", "booster_1_6x",
+    var ids = ["booster_2_5x", "booster_2_3x", "booster_2_3x_v2", "booster_2_25x", "booster_2_2x", "booster_2_2x_v2", "booster_2_1x", "booster_2x",
+        "booster_1_85x", "booster_1_8x", "booster_1_8x_v2", "booster_1_75x", "booster_1_7x", "booster_1_65x", "booster_1_6x",
         "booster_1_5x", "booster_1_4x", "booster_1_4x_v2", "booster_1_35x", "booster_1_35x_valt",
         "booster_1_35x_v2", "booster_1_35x_v3", "booster_1_35x_v4", "booster_1_3x", "booster_1_3x_v2",
         "booster_1_3x_v3", "booster_1_25x", "booster_1_25x_v2", "booster_1_25x_v3", "booster_1_25x_v4",
