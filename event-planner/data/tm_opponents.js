@@ -26164,4 +26164,117 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Luffy (Elbaph) ==========
+    4639: {
+        4619: {
+            name: 'Collun',
+            type: 'QCK',
+            pos: 4,
+            rec: [4619, 4641, 4642],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Slasher Striker Cerebral" },
+                                { "type": "sw-red", "turn": "5", "detail": "Slasher Striker Cerebral" },
+                                { "type": "cd-red", "turn": "5", "detail": "Slasher Striker Cerebral" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Collun', 'QCK'],
+                    hp_: 1200000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "10" },
+                                { "type": "slot-para" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Collun', 'QCK'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Striker',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "desp", "turn": "9" },
+                                { "type": "def-perc", "turn": "14" },
+                                { "type": "stun", "detail": "Left-Column " },
+                                { "type": "slot-neg", "turn": "3", "detail": "[STR][DEX][QCK][PSY][INT]" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4639: {
+            name: 'Luffy',
+            type: 'QCK',
+            pos: 5,
+            rec: [4619, 4641, 4642, 4643],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "STR/DEX/PSY" },
+                                { "type": "sw-red", "turn": "5", "detail": "STR/DEX/PSY" },
+                                { "type": "cd-red", "turn": "5", "detail": "STR/DEX/PSY" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Usopp', '?'],
+                    hp_: 1200000,
+                    atk_: 6600,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "atk-down", "turn": "6" },
+                                { "type": "poison", "turn": "98", "detail": "Progressive" },
+                                { "type": "slot-lock", "turn": "1" },
+                                { "type": "bar-hit", "turn": "3", "detail": "20x" },
+                                { "type": "slot-poison" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Luffy', 'QCK'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Striker',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "bar-gd", "turn": "3", "detail": "3x" },
+                                { "type": "Territory", "turn": "2" },
+                                { "type": "Slot Atk Down", "turn": "3", "detail": "[STR][DEX][QCK][PSY][INT][RCV][TND]" },
+                                { "type": "sp-bind", "turn": "10" },
+                                { "type": "atk-boost", "turn": "3", "detail": "1.1x" },
+                                { "type": "orb-boost", "turn": "3", "detail": "1.1x" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
