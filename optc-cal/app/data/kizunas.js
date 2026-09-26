@@ -287,4 +287,7 @@ var kizunas = {
         name: 'Reiju 6+ (~ 6am)',
         xch_id: 4621
     },
+    4647: {
+        name: 'Queen 6+ (~ 6am)'
+    },
 };
