@@ -1,6 +1,5 @@
 var tm_boosters = [
     // TMs
-    4602,
     4619,
     4639,
 
@@ -9,11 +8,8 @@ var tm_boosters = [
     // Coliseums
 
     // Kizunas
-    4621,
-    4628,
 
     // PKAs
-    4638,
 
     // Events
 ]
