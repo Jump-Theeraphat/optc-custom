@@ -119,4 +119,7 @@ var pkas = {
     4638: {
         name: 'Luffy (Elbaph)'
     },
+    4651: {
+        name: 'Halloween Crocodile'
+    },
 };
