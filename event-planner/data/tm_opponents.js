@@ -26187,7 +26187,7 @@ var tm_opponents = {
                 {
                     stageNum: 2,
                     boss: ['Collun', 'QCK'],
-                    hp_: 1200000,
+                    hp: 1400000,
                     atk_: 6600,
                     detail: [
                         {
@@ -26238,7 +26238,7 @@ var tm_opponents = {
                 },
                 {
                     stageNum: 2,
-                    boss: ['Usopp', '?'],
+                    boss: ['Usopp', 'INT'],
                     hp_: 1200000,
                     atk_: 6600,
                     detail: [
