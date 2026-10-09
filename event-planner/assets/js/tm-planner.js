@@ -997,12 +997,9 @@ function collectFilterV2State() {
         excludeSingle: $root.find('#preset-filters-v2').val() != -1 &&
             $root.find('#preset-filters-v2').val() != null,
         abilities: { sp: [], sl: [], ca: [], sv: [], sw: [] },
-        tags: []
+        tags: getSelectedChipValuesV2('ep-tag-filter'),
+        potentials: getSelectedChipValuesV2('ep-pot-filter')
     };
-
-    $root.find('.tag-filter-v2.selected').each(function () {
-        state.tags.push(String($(this).data('tag')));
-    });
 
     $root.find('.type-filter-v2.selected').each(function () {
         state.types.push($(this).data('filter'));
@@ -1038,6 +1035,12 @@ function unitPassesFilterV2(id, unit, state) {
             if (unitTags.indexOf(wantTags[ti]) < 0)
                 return false;
         }
+    }
+
+    var wantPotentials = state.potentials || [];
+    for (var pi = 0; pi < wantPotentials.length; pi++) {
+        if (!unitMatchesPotentialV2(id, wantPotentials[pi]))
+            return false;
     }
 
     var kinds = ['sp', 'sl', 'ca', 'sv', 'sw'];
@@ -3710,70 +3713,57 @@ function initFilterV2Panel() {
     $effectSearch.find('input').on('input', function () {
         filterEffectIconsV2($(this).val());
     });
-    var $tagSection = buildTagFilterV2Section();
-    if ($tagSection)
-        $dest.find('#tm-filter-sets-v2').append($tagSection);
+    [buildPotentialFilterV2Section(), buildTagFilterV2Section()].forEach(function ($section) {
+        if ($section)
+            $dest.find('#tm-filter-sets-v2').append($section);
+    });
 
     $dest.find('.filter-clear-all-btn-v2').on('click', function () {
         $('#effect-search-v2').val('');
         filterEffectIconsV2('');
-        clearTagFiltersV2();
+        clearChipFiltersV2($dest.find('.ep-chip-filter'));
     });
 
     $('body').addClass('ep-has-side-filters');
 }
 
-var TAG_CATEGORY_LABELS = {
-    1: 'Crew / Affiliation',
-    2: 'Group / Title',
-    3: 'Devil Fruit',
-    4: 'Arc'
-};
-
-function buildTagFilterV2Section() {
-    var available = window.availableTags || [];
-    if (!available.length)
+// groups: [{ label, chipClass, items: [{ label, value }] }]
+function buildChipFilterV2Section(sectionClass, title, placeholder, groups) {
+    if (!groups.length)
         return null;
 
-    var $section = $('<div class="tm-filter ep-tag-filter">' +
-        '<div class="filter-title">' +
-        '<div class="stroke-single">TAGS</div>' +
-        '<button type="button" class="btn btn-danger tag-clear-btn-v2">CLEAR</button>' +
-        '</div>' +
-        '<input type="text" class="form-control form-control-sm" id="tag-search-v2" ' +
-        'placeholder="Search tag (e.g. Straw Hat, Wano)" autocomplete="off">' +
-        '<div class="ep-tag-list"></div>' +
-        '</div>');
-    var $list = $section.find('.ep-tag-list');
+    var $section = $('<div class="tm-filter ep-chip-filter"></div>').addClass(sectionClass);
+    $section.append($('<div class="filter-title"></div>')
+        .append($('<div class="stroke-single"></div>').text(title))
+        .append('<button type="button" class="btn btn-danger ep-chip-clear-btn">CLEAR</button>'));
+    $section.append($('<input type="text" class="form-control form-control-sm ep-chip-search" autocomplete="off">')
+        .attr('placeholder', placeholder));
+    var $list = $('<div class="ep-chip-list"></div>').appendTo($section);
 
-    var byCategory = {};
-    available.forEach(function (t) {
-        (byCategory[t.category] = byCategory[t.category] || []).push(t.name);
-    });
-
-    Object.keys(byCategory).sort().forEach(function (cat) {
-        var $group = $('<div class="ep-tag-group"></div>');
-        $group.append($('<div class="ep-tag-group-title"></div>').text(TAG_CATEGORY_LABELS[cat] || ('Category ' + cat)));
-        byCategory[cat].sort().forEach(function (name) {
-            $group.append($('<span class="tag-filter-v2 ep-tag-cat-' + cat + '"></span>').text(name).attr('data-tag', name));
+    groups.forEach(function (g) {
+        var $group = $('<div class="ep-chip-group"></div>');
+        $group.append($('<div class="ep-chip-group-title"></div>').text(g.label));
+        g.items.forEach(function (item) {
+            $group.append($('<span class="ep-chip"></span>').addClass(g.chipClass)
+                .text(item.label).attr('data-value', item.value));
         });
         $list.append($group);
     });
 
-    $section.on('click', '.tag-filter-v2', function () {
+    $section.on('click', '.ep-chip', function () {
         $(this).toggleClass('selected');
         renderBoostersV2();
     });
-    $section.find('.tag-clear-btn-v2').on('click', function () {
-        clearTagFiltersV2();
+    $section.find('.ep-chip-clear-btn').on('click', function () {
+        clearChipFiltersV2($section);
         renderBoostersV2();
     });
-    $section.find('#tag-search-v2').on('input', function () {
+    $section.find('.ep-chip-search').on('input', function () {
         var q = ($(this).val() || '').toLowerCase().trim();
-        $list.find('.ep-tag-group').each(function () {
+        $list.find('.ep-chip-group').each(function () {
             var any = false;
-            $(this).find('.tag-filter-v2').each(function () {
-                var match = !q || String($(this).data('tag')).toLowerCase().indexOf(q) !== -1;
+            $(this).find('.ep-chip').each(function () {
+                var match = !q || $(this).text().toLowerCase().indexOf(q) !== -1;
                 $(this).toggle(match);
                 any = any || match;
             });
@@ -3784,10 +3774,94 @@ function buildTagFilterV2Section() {
     return $section;
 }
 
-function clearTagFiltersV2() {
-    var $section = $('#tm-filter-v2-container .ep-tag-filter');
-    $section.find('.tag-filter-v2.selected').removeClass('selected');
-    $section.find('#tag-search-v2').val('').trigger('input');
+function clearChipFiltersV2($sections) {
+    $sections.find('.ep-chip.selected').removeClass('selected');
+    $sections.find('.ep-chip-search').val('').trigger('input');
+}
+
+function getSelectedChipValuesV2(sectionClass) {
+    return $('#tm-filter-v2-container .' + sectionClass + ' .ep-chip.selected').map(function () {
+        return $(this).attr('data-value');
+    }).get();
+}
+
+var TAG_CATEGORY_LABELS = {
+    1: 'Crew / Affiliation',
+    2: 'Group / Title',
+    3: 'Devil Fruit',
+    4: 'Arc'
+};
+
+function buildTagFilterV2Section() {
+    var byCategory = {};
+    (window.availableTags || []).forEach(function (t) {
+        (byCategory[t.category] = byCategory[t.category] || []).push(t.name);
+    });
+
+    var groups = Object.keys(byCategory).sort().map(function (cat) {
+        return {
+            label: TAG_CATEGORY_LABELS[cat] || ('Category ' + cat),
+            chipClass: 'ep-tag-cat-' + cat,
+            items: byCategory[cat].sort().map(function (name) {
+                return { label: name, value: name };
+            })
+        };
+    });
+    return buildChipFilterV2Section('ep-tag-filter', 'TAGS', 'Search tag (e.g. Straw Hat, Wano)', groups);
+}
+
+var POTENTIAL_GROUP_LABELS = {
+    'Uncategorized': 'Unique Abilities'
+};
+
+function buildPotentialFilterV2Section() {
+    var potential = (window.matchers && window.matchers.potential) || {};
+    var groups = Object.keys(potential).map(function (group, gi) {
+        return {
+            label: POTENTIAL_GROUP_LABELS[group] || group,
+            chipClass: 'ep-pot-cat-' + gi,
+            items: Object.keys(potential[group]).map(function (name) {
+                return { label: name, value: group + '||' + name };
+            })
+        };
+    });
+    return buildChipFilterV2Section('ep-pot-filter', 'POTENTIAL ABILITY', 'Search potential (e.g. Critical, Rush)', groups);
+}
+
+var potentialTextCache = {};
+
+// Same target string OPTC-DB builds for its potential matchers (CharUtils.checkMatcher).
+function getUnitPotentialText(unitId) {
+    if (unitId > 9000)
+        unitId = parseVsUnitId(unitId);
+    if (unitId in potentialTextCache)
+        return potentialTextCache[unitId];
+
+    var d = window.details && window.details[unitId];
+    var text = null;
+    if (d && d.potential) {
+        var parts = [d.potential];
+        if (d.lastTap) parts.push(d.lastTap.description);
+        if (d.superTandem) parts.push(d.superTandem.description);
+        if (d.rush) parts.push(d.rush.stats);
+        if (d.superTandemBoost) parts.push(d.superTandemBoost.description);
+        text = JSON.stringify(parts);
+    }
+    potentialTextCache[unitId] = text;
+    return text;
+}
+
+function unitMatchesPotentialV2(unitId, value) {
+    var key = value.split('||');
+    var group = window.matchers.potential[key[0]];
+    var matcher = group && group[key[1]];
+    if (!matcher)
+        return false;
+    if (matcher.include && matcher.include.indexOf(unitId) !== -1)
+        return true;
+
+    var text = getUnitPotentialText(unitId);
+    return text !== null && new RegExp(matcher.regex.source, 'i').test(text);
 }
 
 var EFFECT_ICON_V2_SELECTOR = '.sp-filter-v2, .sl-filter-v2, .ca-filter-v2, .sv-filter-v2, .sw-filter-v2';
