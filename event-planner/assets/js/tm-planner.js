@@ -4841,11 +4841,344 @@ function regexTestHelper(text, regex, subType) {
     return result;
 }
 
+// ===== Team criteria checker (Super Special / Captain / Special crew conditions) =====
+var CRIT_ATTR_RE = /\b(STR|DEX|QCK|PSY|INT|Free Spirit|Fighter|Slasher|Striker|Shooter|Driven|Cerebral|Powerhouse)s?\b/g;
+var critCondCache = {};
+var critFamilyNames = null;
+
+function critEscape(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function critFlatten(v, out) {
+    out = out || [];
+    if (Array.isArray(v)) v.forEach(function (x) { critFlatten(x, out); });
+    else if (v) out.push(String(v));
+    return out;
+}
+
+var critTagNames = null;
+
+function critExtractAttrs(text) {
+    var out = [];
+    var m;
+    text = String(text);
+    CRIT_ATTR_RE.lastIndex = 0;
+    while ((m = CRIT_ATTR_RE.exec(text)) !== null) {
+        if (out.indexOf(m[1]) === -1) out.push(m[1]);
+    }
+
+    if (!critTagNames) {
+        critTagNames = {};
+        (window.availableTags || []).forEach(function (t) { critTagNames[t.name] = true; });
+    }
+    var tagRe = /\[([^\]]+)\]/g;
+    while ((m = tagRe.exec(text)) !== null) {
+        if (critTagNames[m[1]] && out.indexOf(m[1]) === -1) out.push(m[1]);
+    }
+    return out;
+}
+
+function critAbilityText(v) {
+    if (!v) return '';
+    if (typeof v === 'string') return v.replace(/<[^>]+>/g, ' ');
+    if (Array.isArray(v))
+        return v.map(function (s) { return typeof s === 'string' ? s : (s && s.description) || ''; }).join(' ').replace(/<[^>]+>/g, ' ');
+    if (typeof v === 'object') {
+        var levels = Object.keys(v).filter(function (k) { return /^level\d+$/.test(k); })
+            .sort(function (a, b) { return parseInt(a.slice(5)) - parseInt(b.slice(5)); });
+        if (levels.length) return critAbilityText(v[levels[levels.length - 1]]);
+        return Object.keys(v).map(function (k) { return critAbilityText(v[k]); }).join(' ');
+    }
+    return '';
+}
+
+function critGetFamilyNames() {
+    if (critFamilyNames) return critFamilyNames;
+    var seen = {};
+    Object.keys(window.families || {}).forEach(function (id) {
+        (window.families[id] || []).forEach(function (n) { if (n && n.length >= 3) seen[n] = true; });
+    });
+    critFamilyNames = Object.keys(seen).sort(function (a, b) { return b.length - a.length; });
+    return critFamilyNames;
+}
+
+function critParseCrewConditions(text) {
+    var conds = [];
+    var seen = {};
+    function add(c) {
+        var key = c.kind + '|' + (c.need || '') + '|' + (c.attrs || c.names || []).join(',') + '|' + (c.text || '');
+        if (seen[key]) return;
+        seen[key] = true;
+        conds.push(c);
+    }
+
+    var clauseRe = /\bif\b[^.]{0,200}?\bcrew\b[^,.]*/gi;
+    var m;
+    while ((m = clauseRe.exec(text)) !== null) {
+        var clause = m[0];
+        var count = clause.match(/(?:has|have|of|with) (?:at least )?(\d+)\s*(?:\+|or more)? (.+?) characters/i) ||
+            clause.match(/(?:has|have|of|with) (?:at least )?(\d+)\s*(?:\+|or more)? characters (?:with|of) (?!the same)(.+)/i);
+        var same = clause.match(/(\d+)\s*(?:\+|or more)? characters of the same (Type|Class)/i);
+        var each = clause.match(/there(?:'s| is) an? (.+?) characters? (?:in|on) your crew/i) ||
+            clause.match(/you have an? (.+?) (?:in|on) your crew/i);
+        var none = clause.match(/there are no (.+?) characters/i);
+        var only = clause.match(/crew has only (.+?) characters/i);
+
+        if (only && critExtractAttrs(only[1]).length)
+            add({ kind: 'only', attrs: critExtractAttrs(only[1]) });
+        else if (same)
+            add({ kind: 'same', need: Number(same[1]), attrs: [same[2].toLowerCase()] });
+        else if (count && !/orb/i.test(count[2]) && critExtractAttrs(count[2]).length)
+            add({ kind: 'count', need: Number(count[1]), attrs: critExtractAttrs(count[2]) });
+        else if (none && critExtractAttrs(none[1]).length)
+            add({ kind: 'none', attrs: critExtractAttrs(none[1]) });
+        else if (each && critExtractAttrs(each[1]).length)
+            add({ kind: 'each', attrs: critExtractAttrs(each[1]) });
+        else if (/\bcharacters?\b/i.test(clause) && /your crew (?:has|consists|includes)|(?:in|on) your crew/i.test(clause))
+            add({ kind: 'unknown', text: clause.trim() });
+    }
+
+    var namedRe = /\b(?:if|when) your crew (?:has|includes) (?:a |an )?/gi;
+    var families = critGetFamilyNames();
+    while ((m = namedRe.exec(text)) !== null) {
+        var rest = text.substr(m.index + m[0].length, 60);
+        for (var i = 0; i < families.length; i++) {
+            var name = families[i];
+            if (rest.indexOf(name) === 0 && !/[A-Za-z]/.test(rest.charAt(name.length) || '')) {
+                add({ kind: 'named', names: [name] });
+                break;
+            }
+        }
+    }
+
+    return conds;
+}
+
+function critParseSuperCriteria(text) {
+    var conds = [];
+    if (!text) return conds;
+    text = String(text);
+
+    if (/must be captain/i.test(text))
+        conds.push({ kind: 'captain' });
+
+    var rest = text.replace(/^.*?must be captain(?: and)?\s*/i, '').trim();
+    var names = rest.match(/consist of any (\d+) of the following[^:]*:\s*(.+)$/i);
+    var count = rest.match(/consist of (\d+) (.+?) characters/i);
+
+    if (names) {
+        var list = names[2].replace(/\.\s*$/, '').split(/,\s*|\s+or\s+/)
+            .map(function (s) { return s.replace(/^or\s+/i, '').trim(); }).filter(Boolean);
+        conds.push({ kind: 'superNames', need: Number(names[1]), names: list });
+    } else if (count && critExtractAttrs(count[2]).length) {
+        conds.push({ kind: 'count', need: Number(count[1]), attrs: critExtractAttrs(count[2]) });
+    } else if (rest) {
+        conds.push({ kind: 'unknown', text: rest.replace(/^your\s+/i, '') });
+    }
+    return conds;
+}
+
+function critGetUnitConditions(unitId) {
+    if (critCondCache[unitId]) return critCondCache[unitId];
+    var d = (window.details || {})[unitId] || {};
+    var res = {
+        sup: critParseSuperCriteria(d.superSpecialCriteria),
+        cap: critParseCrewConditions(critAbilityText(d.captain)),
+        sp: critParseCrewConditions(critAbilityText(d.special))
+    };
+    critCondCache[unitId] = res;
+    return res;
+}
+
+function critGetTeamMembers(teamDiv) {
+    var members = [];
+    teamDiv.find('.team-slot, .ambush-team-slot').each(function () {
+        var slot = Number($(this).data('slot'));
+        var el = $(this).children('.booster, .booster-clone').first();
+        if (!el.length) return;
+
+        var rawId = Number(el.data('id'));
+        var unitId = rawId > 9000 ? parseVsUnitId(rawId) : rawId;
+        var unit = units[unitId] || {};
+        var attrs = critFlatten([el.data('type') || unit.type, el.data('class1'), el.data('class2')]);
+        if (!el.data('class1')) attrs = attrs.concat(critFlatten(unit.class));
+        attrs = attrs.concat((window.tags && window.tags[unitId]) || []);
+        var names = (window.families && window.families[unitId]) || [];
+        var baseName = String(unit.name || '').split(' - ')[0];
+
+        members.push({ el: el, slot: slot, id: unitId, attrs: attrs, names: names.concat(baseName ? [baseName] : []) });
+    });
+    return members;
+}
+
+function critMemberHasAttr(member, attrs) {
+    return attrs.some(function (a) { return member.attrs.indexOf(a) !== -1; });
+}
+
+function critMemberMatchesName(member, name) {
+    // "Kuzan (Aokiji)" lists an alias in parentheses; either form counts.
+    var aliases = name.split(/\s*[()]\s*/).filter(Boolean).map(function (s) { return s.toLowerCase(); });
+    return member.names.some(function (x) { return aliases.indexOf(String(x).toLowerCase()) !== -1; });
+}
+
+// Super criteria entries can be a name, a Double Character ("A and B"), or a Class/Tag ("[Giant]").
+function critMemberMatchesEntry(member, entry) {
+    var attrs = critExtractAttrs(entry);
+    if (attrs.length) return critMemberHasAttr(member, attrs);
+    return entry.split(/\s+and\s+/).every(function (part) { return critMemberMatchesName(member, part); });
+}
+
+function critEvaluate(cond, self, members) {
+    var others = members.filter(function (m) { return m.id !== self.id; });
+    var n, matched;
+
+    switch (cond.kind) {
+        case 'captain':
+            return { state: self.slot <= 1 ? 'ok' : 'fail', label: 'Must be captain' };
+        case 'count':
+            n = members.filter(function (m) { return critMemberHasAttr(m, cond.attrs); }).length;
+            return { state: n >= cond.need ? 'ok' : 'fail', label: cond.need + '+ ' + cond.attrs.join(' / ') + ' (' + n + '/' + cond.need + ')' };
+        case 'same':
+            var pool = cond.attrs[0] === 'type' ? ['STR', 'DEX', 'QCK', 'PSY', 'INT'] :
+                ['Fighter', 'Slasher', 'Striker', 'Shooter', 'Free Spirit', 'Driven', 'Cerebral', 'Powerhouse'];
+            n = Math.max.apply(null, pool.map(function (a) {
+                return members.filter(function (m) { return critMemberHasAttr(m, [a]); }).length;
+            }));
+            return { state: n >= cond.need ? 'ok' : 'fail', label: cond.need + '+ of the same ' + cond.attrs[0] + ' (' + n + '/' + cond.need + ')' };
+        case 'only':
+            n = members.filter(function (m) { return !critMemberHasAttr(m, cond.attrs); }).length;
+            return { state: n === 0 ? 'ok' : 'fail', label: 'Only ' + cond.attrs.join(' / ') + (n ? ' (' + n + ' not)' : '') };
+        case 'none':
+            n = members.filter(function (m) { return critMemberHasAttr(m, cond.attrs); }).length;
+            return { state: n === 0 ? 'ok' : 'fail', label: 'No ' + cond.attrs.join(' / ') + (n ? ' (has ' + n + ')' : '') };
+        case 'each':
+            var missing = cond.attrs.filter(function (a) {
+                return !members.some(function (m) { return critMemberHasAttr(m, [a]); });
+            });
+            return { state: missing.length ? 'fail' : 'ok', label: 'Has ' + cond.attrs.join(', ') + (missing.length ? ' (missing ' + missing.join(', ') + ')' : '') };
+        case 'named':
+            n = others.some(function (m) { return critMemberMatchesName(m, cond.names[0]); });
+            return { state: n ? 'ok' : 'fail', label: 'Crew has ' + cond.names[0] };
+        case 'superNames':
+            matched = [];
+            n = 0;
+            others.forEach(function (m) {
+                var hit = cond.names.filter(function (name) { return critMemberMatchesEntry(m, name); })[0];
+                if (!hit) return;
+                n++;
+                if (matched.indexOf(hit) === -1) matched.push(hit);
+            });
+            return {
+                state: n >= cond.need ? 'ok' : 'fail',
+                label: cond.need + ' of: ' + cond.names.map(function (name) {
+                    return matched.indexOf(name) !== -1 ? '<b>' + critEscape(name) + '</b>' : critEscape(name);
+                }).join(', ') + ' (' + n + '/' + cond.need + ')',
+                html: true
+            };
+        default:
+            return { state: 'unk', label: cond.text };
+    }
+}
+
+function critBuildMemberReport(member, members) {
+    var conds = critGetUnitConditions(member.id);
+    var sections = [
+        ['Super', conds.sup],
+        ['Captain', member.slot <= 1 ? conds.cap : []],
+        ['Special', conds.sp]
+    ];
+    var html = '';
+    var states = [];
+
+    sections.forEach(function (sec) {
+        if (!sec[1].length) return;
+        html += '<div class="ep-crit-sec">' + sec[0] + '</div>';
+        sec[1].forEach(function (cond) {
+            var r = critEvaluate(cond, member, members);
+            var icon = r.state === 'ok' ? '&#10003;' : r.state === 'fail' ? '&#10007;' : '?';
+            states.push(r.state);
+            html += '<div class="ep-crit-item ' + r.state + '">' + icon + ' ' + (r.html ? r.label : critEscape(r.label)) + '</div>';
+        });
+    });
+
+    if (!states.length) return null;
+    var overall = states.indexOf('fail') !== -1 ? 'fail' : states.indexOf('unk') !== -1 ? 'unk' : 'ok';
+    return { state: overall, html: '<div class="ep-crit-tip">' + html + '</div>' };
+}
+
+function critClearElement(el) {
+    if (!el.hasClass('ep-crit-on')) return;
+    el.children('.ep-crit-dot').remove();
+    if (el.data('epCritBaseTitle') !== undefined)
+        el.attr('data-original-title', el.data('epCritBaseTitle'));
+    el.removeClass('ep-crit-on');
+    el.removeData('epCritKey');
+    el.removeData('epCritBaseTitle');
+}
+
+function critApplyElement(el, report) {
+    if (!report) {
+        critClearElement(el);
+        return;
+    }
+    var key = report.state + '|' + report.html;
+    if (el.data('epCritKey') === key) return;
+
+    // jQuery .clone() copies the class but not .data(), so cloned Friend Caps need a fresh base title.
+    if (!el.hasClass('ep-crit-on') || el.data('epCritBaseTitle') === undefined) {
+        el.data('epCritBaseTitle', el.attr('data-original-title') || el.attr('title') || '');
+        el.addClass('ep-crit-on');
+    }
+    el.data('epCritKey', key);
+    el.attr('data-original-title', el.data('epCritBaseTitle') + report.html);
+
+    var dot = el.children('.ep-crit-dot');
+    if (!dot.length)
+        dot = $('<span class="ep-crit-dot" aria-hidden="true"></span>').appendTo(el);
+    dot.attr('class', 'ep-crit-dot ' + report.state);
+}
+
+function refreshTeamCriteria() {
+    $('.ep-crit-on').each(function () {
+        if (!$(this).closest('.team-slot, .ambush-team-slot').length)
+            critClearElement($(this));
+    });
+
+    $('.team').each(function () {
+        var members = critGetTeamMembers($(this));
+        members.forEach(function (member) {
+            critApplyElement(member.el, critBuildMemberReport(member, members));
+        });
+    });
+}
+
+function initTeamCriteriaChecker() {
+    var timer = null;
+    function isOwnNode(node) {
+        return node.nodeType === 1 && (node.classList.contains('ep-crit-dot') || node.classList.contains('tooltip'));
+    }
+    var observer = new MutationObserver(function (mutations) {
+        var relevant = mutations.some(function (mu) {
+            var nodes = Array.prototype.slice.call(mu.addedNodes).concat(Array.prototype.slice.call(mu.removedNodes));
+            return nodes.some(function (node) { return !isOwnNode(node); });
+        });
+        if (!relevant) return;
+        clearTimeout(timer);
+        timer = setTimeout(refreshTeamCriteria, 150);
+    });
+    $('.team').each(function () {
+        observer.observe(this, { childList: true, subtree: true });
+    });
+    refreshTeamCriteria();
+}
+
 $(document).ready(function () {
     // Retrieve Settings
     var server = 'glb'; // Used after content merge
 
     initFilterV2Panel();
+    initTeamCriteriaChecker();
 
     var dontHaveMode = 0;
     if (localStorage.getItem('dontHaveMode') !== null) {
