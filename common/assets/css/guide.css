@@ -78,6 +78,8 @@
 .bar-red-e-div              { background-image: url('/tm-planner/assets/img/special_icons/bar_red_e.png');          background-size: 24px 24px; }
 .resil-red-e-div            { background-image: url('/tm-planner/assets/img/special_icons/resil_red_e.png');        background-size: 24px 24px; }
 .enrage-red-e-div           { background-image: url('/tm-planner/assets/img/special_icons/enrage_red_e.png');       background-size: 24px 24px; }
+.pain-red-div               { background-image: url('/tm-planner/assets/img/special_icons/pain.png');               background-size: 24px 24px; }
+.silence-red-div            { background-image: url('/tm-planner/assets/img/special_icons/silence.png');            background-size: 24px 24px; }
 
 .bind-div                   { background-image: url('/tm-planner/assets/img/special_icons/bind.png');               background-size: 24px 24px; }
 .desp-div                   { background-image: url('/tm-planner/assets/img/special_icons/desp.png');               background-size: 24px 24px; }
@@ -143,6 +145,7 @@
 .territory-div,
 .territory-enemy-div,
 .slot-atk-down-div,
+.slot-atk-down-red-div,
 .nullify-potential-ability-div {
     background-position: center;
     background-repeat: no-repeat;
@@ -151,5 +154,6 @@
 
 .territory-div                     { background-image: url('/tm-planner/assets/img/special_icons/territory.png'); }
 .territory-enemy-div               { background-image: url('/tm-planner/assets/img/special_icons/territory_enemy.png'); }
-.slot-atk-down-div                 { background-image: url('/tm-planner/assets/img/special_icons/slot_atk_down.png'); }
+.slot-atk-down-div,
+.slot-atk-down-red-div             { background-image: url('/tm-planner/assets/img/special_icons/slot_atk_down.png'); }
 .nullify-potential-ability-div     { background-image: url('/tm-planner/assets/img/special_icons/nullify_potential_ability.png'); }
