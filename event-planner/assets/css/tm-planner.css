@@ -559,26 +559,26 @@ div#support-filters {
 }
 
 /* pop_bg.png is stretched, so its rope frame eats ~20px on every side */
-.ep-side-filters-panel .ep-tag-filter {
+.ep-side-filters-panel .ep-chip-filter {
     grid-column: 1 / -1;
     padding: 0 24px 28px;
     overflow: hidden;
 }
 
-.ep-tag-filter #tag-search-v2 {
+.ep-chip-filter .ep-chip-search {
     width: 100%;
     margin: 4px 0;
     box-sizing: border-box;
 }
 
-.ep-tag-list {
+.ep-chip-list {
     max-height: 240px;
     overflow-x: hidden;
     overflow-y: auto;
     padding: 2px 4px;
 }
 
-.ep-tag-group-title {
+.ep-chip-group-title {
     font-size: 11px;
     font-weight: bold;
     margin: 6px 0 2px;
@@ -586,7 +586,7 @@ div#support-filters {
     opacity: 0.85;
 }
 
-.tag-filter-v2 {
+.ep-chip {
     display: inline-block;
     max-width: 100%;
     margin: 2px;
@@ -603,16 +603,22 @@ div#support-filters {
     opacity: 0.65;
 }
 
-.tag-filter-v2.ep-tag-cat-1 { background: #cf8b38; }
-.tag-filter-v2.ep-tag-cat-2 { background: #8ec83c; }
-.tag-filter-v2.ep-tag-cat-3 { background: #9f5aad; }
-.tag-filter-v2.ep-tag-cat-4 { background: #37bb84; }
+.ep-chip.ep-tag-cat-1 { background: #cf8b38; }
+.ep-chip.ep-tag-cat-2 { background: #8ec83c; }
+.ep-chip.ep-tag-cat-3 { background: #9f5aad; }
+.ep-chip.ep-tag-cat-4 { background: #37bb84; }
 
-.tag-filter-v2:hover {
+.ep-chip.ep-pot-cat-0 { background: #d9534f; }
+.ep-chip.ep-pot-cat-1 { background: #4cae4c; }
+.ep-chip.ep-pot-cat-2 { background: #3a9ad9; }
+.ep-chip.ep-pot-cat-3 { background: #e08e0b; }
+.ep-chip.ep-pot-cat-4 { background: #7a6fbf; }
+
+.ep-chip:hover {
     opacity: 0.9;
 }
 
-.tag-filter-v2.selected {
+.ep-chip.selected {
     opacity: 1;
     border-color: #fff;
     font-weight: bold;
