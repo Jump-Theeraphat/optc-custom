@@ -9,6 +9,7 @@ var counters = {
     'bar-hp':               ['bar-red-e', 'bypass-def', 'c_bypass-def', 'sv_bypass-def', 'sw_bypass-def'],
     'bind':                 ['bind-red', 'c_bind-red', 'sv_bind-red', 'sw_bind-red'],
     'blind':                ['blind-red', 's_blind-red'],
+    'slot-atk-down':        ['slot-atk-down-red', 's_slot-atk-down-red', 'c_slot-atk-down-red', 'sv_slot-atk-down-red', 'sw_slot-atk-down-red'],
     'burn':                 ['burn-red', 's_burn-red', 'c_burn-red', 'sv_burn-red'],
     'burn-p':               ['burn-red', 's_burn-red', 'c_burn-red', 'sv_burn-red'],
     'cd-rew':               ['cd-red', 'sv_cd-red', 'sw_cd-red', 's_cd-rew-red', 'c_cd-rew-red'],

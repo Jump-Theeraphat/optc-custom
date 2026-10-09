@@ -4349,7 +4349,7 @@ function checkTeamMiniGuideSpecialMet(teamId) {
         'c_bind-red', 'blind-red', 'burn-red', 'c_burn-red', 'cd-red', 'c_cd-rew-red',
         'chain-down-red', 'chain-lock-red', 'def-red-e', 'def-perc-red-e', 'def-thres-red-e',
         'def-null-red-e', 'desp-red', 'c_desp-red', 'para-red', 'c_para-red', 'resil-red-e',
-        'sp-bind-red', 'c_sp-bind-red'];
+        'sp-bind-red', 'c_sp-bind-red', 'slot-atk-down-red', 'c_slot-atk-down-red'];
 
     var countersWithoutTurns = ['bypass-def', 'c_bypass-def', 'chain-lock', 'chain-bound',
         'clear-buff', 'def-down', 'dmg-eot', 'c_dmg-eot', 'poison', 'slot-change',
@@ -4545,6 +4545,7 @@ function getCounterRegexResultGroup(counter) {
         counter === 'atk-down-red' ||
         counter === 'bar-red-e' ||
         counter === 'blind-red' ||
+        counter === 'slot-atk-down-red' ||
         counter === 'burn-red' ||
         counter === 'chain-down-red' ||
         counter === 'chain-lock-red' ||
@@ -4779,26 +4780,23 @@ function clearTeamNotes() {
     $("img.highlight").removeClass("highlight");
 }
 
+var FILTER_MATCHER_TARGETS = {
+    sp: 'special', sl: 'sailor', ca: 'captain', sv: 'superSpecial', sw: 'swap', spt: 'support'
+};
+
 function getFilterMatcher(type, key) {
     var filterLookUp = filter_map[key];
+    var target = FILTER_MATCHER_TARGETS[type];
+    if (!target)
+        return undefined;
 
-    if (type === 'sp')
-        return matchers.special[filterLookUp[0]][filterLookUp[1]];
+    var group = matchers[target][filterLookUp[0]];
+    if (group && group[filterLookUp[1]])
+        return group[filterLookUp[1]];
 
-    if (type === 'sl')
-        return matchers.sailor[filterLookUp[0]][filterLookUp[1]];
-
-    if (type === 'ca')
-        return matchers.captain[filterLookUp[0]][filterLookUp[1]];
-
-    if (type === 'sv')
-        return matchers.superSpecial[filterLookUp[0]][filterLookUp[1]];
-
-    if (type === 'sw')
-        return matchers.swap[filterLookUp[0]][filterLookUp[1]];
-
-    if (type === 'spt')
-        return matchers.support[filterLookUp[0]][filterLookUp[1]];
+    // OPTC-DB skips some matchers per target (e.g. Pain on Super/Swap); the Special wording is the same.
+    var spGroup = matchers.special[filterLookUp[0]];
+    return spGroup ? spGroup[filterLookUp[1]] : undefined;
 }
 
 function regexTestHelper(text, regex, subType) {
