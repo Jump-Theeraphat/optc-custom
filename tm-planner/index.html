@@ -48,6 +48,8 @@
     <script src="/vendor/optc-db/cooldowns.js"></script>
     <script src="/vendor/optc-db/families.js"></script>
     <script src="/vendor/optc-db/matchers.js"></script>
+    <script src="/vendor/optc-db/tags.js"></script>
+    <script src="/vendor/optc-db/availableTags.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY87MN0KG9"></script>
@@ -75,30 +77,36 @@
 
                 <div class="modal-body">
                     <div class="row mb-3">
-                        <div class="col-sm-1 col-2 unit-detail-el" id="unit-detail-thumb"></div>
+                        <div class="col-sm-1 col-2 align-items-center unit-basic-el" id="unit-thumb"></div>
 
-                        <div class="col-sm-3 col-6 unit-detail-el">
-                            <div id="unit-detail-class1"></div>
-                            <div id="unit-detail-class2"></div>
+                        <div class="col-sm-3 col-6 align-items-center unit-basic-el">
+                            <div id="unit-class1"></div>
+                            <div id="unit-class2"></div>
                         </div>
 
-                        <div class="col-sm-2 col-4 unit-detail-el" id="unit-cost-div">
-                            Cost: <span id="unit-cost"></span>
+                        <div class="col-sm-2 col-4 align-items-center unit-basic-el" id="unit-cost-div">
+                            Cost:&nbsp;<span id="unit-cost"></span>
                         </div>
 
-                        <div class="col-sm-3 col-6">
-                            <button type="button" class="btn btn-sm btn-info unit-detail-el" id="db-button">OPTC-DB
+                        <div class="col-sm-3 col-6 align-items-center">
+                            <button type="button" class="btn btn-sm btn-info unit-basic-el" id="db-button">OPTC-DB
                                 Page</button>
                         </div>
 
-                        <div class="col-sm-3 col-6">
+                        <div class="col-sm-3 col-6 align-items-center">
                             <button type="button" class="btn btn-sm btn-danger remove-button-el"
                                 id="remove-button">Remove</button>
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-12" id="unit-tag-el">
+
+                        </div>
+                    </div>
+
                     <form id="non-booster-form">
-                        <div class="row form-group" id="non-booster-div">
+                        <div class="row form-group align-items-center" id="non-booster-div">
                             <label for="non-booster-unit" class="col-4 col-form-label">Add a non-booster: </label>
                             <div class="col-8 input-group">
                                 <input type="number" class="form-control" id="non-booster-unit"

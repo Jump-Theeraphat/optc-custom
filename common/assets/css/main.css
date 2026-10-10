@@ -238,6 +238,11 @@ nav.navbar.navbar-expand-md.navbar-dark.navbar-bg a {
 .PSY-badge   { background-color: gold; }
 .INT-badge   { background-color: orchid; }
 
+.tag-affiliate-badge { background-color: orange; }
+.tag-title-badge     { background-color: mediumseagreen; }
+.tag-df-badge        { background-color: orchid; }
+.tag-arc-badge       { background-color: teal; }
+
 .RCV-div     { background-color: sandybrown; }
 .TND-div     { background-color: peru; }
 .BLOCK-div   { background-color: slateblue; }
@@ -252,7 +257,11 @@ nav.navbar.navbar-expand-md.navbar-dark.navbar-bg a {
 .BOMB-div,
 .RAINBOW-div,
 .G-div,
-.EMPTY-div {
+.EMPTY-div,
+.tag-affiliate-badge,
+.tag-title-badge,
+.tag-df-badge,
+.tag-arc-badge {
     color: #0a0a0a;
 }
 

@@ -46,8 +46,8 @@
     width: 25px;
 }
 
-#unit-detail-class1,
-#unit-detail-class2 {
+#unit-class1,
+#unit-class2 {
     display: inline-block;
     height: 25px;
     margin: 5px;
@@ -165,6 +165,7 @@ img.highlight {
 .available-units-el,
 .units-in-team-el,
 .units-assigned-el,
+.unit-basic-el,
 .unit-detail-el,
 #non-booster-div {
     display: none;

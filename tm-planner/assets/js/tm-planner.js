@@ -1481,13 +1481,14 @@ function populateUnitDetail(unitId) {
 
     if (unitDetail) {
         $('#db-button').data('id', unitId);
+        $('.unit-basic-el').css('display', 'flex');
         $('.unit-detail-el').show();
 
         // Thumb
-        $('#unit-detail-thumb').empty();
+        $('#unit-thumb').empty();
 
         var imgHtml = createImgHtml(getThumb(origId), 40, false);
-        $('#unit-detail-thumb').append(imgHtml);
+        $('#unit-thumb').append(imgHtml);
 
         // Type
         $('#unit-modal-title').html(units[unitId].name);
@@ -1495,7 +1496,7 @@ function populateUnitDetail(unitId) {
         $('#unit-modal-title').addClass(units[unitId].type);
 
         // Class
-        $('#unit-detail-class1, #unit-detail-class2').removeClass(
+        $('#unit-class1, #unit-class2').removeClass(
             'fighter-div slasher-div striker-div shooter-div free-spirit-div cerebral-div powerhouse-div driven-div'
         );
 
@@ -1506,6 +1507,43 @@ function populateUnitDetail(unitId) {
         var isDual = unitDetail.swap != null;
         var isVS = unitDetail.VSSpecial != null || unitDetail.vsSpecial != null;
 
+        // Tag
+        $('#unit-tag-el').empty();
+        var rawTags = tags[unitId]; // ← array of tag names for this unit
+        if (rawTags && Array.isArray(rawTags)) {
+            var unitTags = rawTags;
+
+            if (isVS) {
+                if (origId % 2 === 1)
+                    unitTags = rawTags[0];
+                else
+                    unitTags = rawTags[1];
+            } else if (isDual) {
+                unitTags = rawTags[0].concat(rawTags[1]);
+            }
+
+            unitTags.forEach(function(tagName) {
+                // locate the matching entry in availableTags (array of objects)
+                var tagInfo = availableTags.find(function(item) {
+                    return item.name === tagName;
+                });
+
+                var cls = '';
+                if (tagInfo) {
+                    switch (tagInfo.category) {
+                        case 1: cls = 'tag-affiliate-badge'; break;
+                        case 2: cls = 'tag-title-badge';    break;
+                        case 3: cls = 'tag-df-badge';       break;
+                        case 4: cls = 'tag-arc-badge';      break;
+                    }
+                }
+
+                // Append a span for each tag
+                $('#unit-tag-el').append('<span class="badge ' + cls + '">' + tagName + '</span> ');
+            });
+        }
+
+        // Class
         var unitClass = units[unitId].class;
         if (isVS || Array.isArray(unitClass)) {
             var class1;
@@ -1526,11 +1564,11 @@ function populateUnitDetail(unitId) {
                 class2 = unitClass[1].replace(' ', '-').toLowerCase();
             }
 
-            $('#unit-detail-class1').addClass(class1 + '-div');
-            $('#unit-detail-class2').addClass(class2 + '-div');
+            $('#unit-class1').addClass(class1 + '-div');
+            $('#unit-class2').addClass(class2 + '-div');
         } else {
             var class1 = unitClass.replace(' ', '-').toLowerCase();
-            $('#unit-detail-class1').addClass(class1 + '-div');
+            $('#unit-class1').addClass(class1 + '-div');
         }
 
         // Captain Ability
@@ -1860,6 +1898,7 @@ function populateUnitModal(src, selectedId, assigned) {
     $('#units-in-team').empty();
     $('.units-assigned-el').hide();
     $('#units-assigned').empty();
+    $('.unit-basic-el').hide();
     $('.unit-detail-el').hide();
     $('#unit-modal-title').empty();
     $('#non-booster-div').hide();
