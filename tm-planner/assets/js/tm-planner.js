@@ -2846,21 +2846,22 @@ function clearSwapFilters() {
     });
 }
 
-function modifyCharStyle(chars) {
-    chars = chars.replace(/\[/g, "");
-    chars = chars.replace(/\]/g, "");
+function modifySuppDescStr(desc) {
+    const types = ["STR", "DEX", "QCK", "PSY", "INT"];
+    const classes = ["Fighter", "Slasher", "Shooter", "Striker", "Driven", "Cerebral", "Free Spirit", "Powerhouse"];
 
-    if (chars.indexOf("character") != -1 || chars.indexOf("Character") != -1) {
-        chars = "[" + chars;
+    if (types.some(type => desc.includes(type)))
+        desc = desc.replace(/\[(STR|DEX|QCK|PSY|INT)\]/g, "%$1%");
 
-        chars = chars.replace(/character\b/ig, "characters");
-        chars = chars.replace(/\, /g, " characters, [");
-        chars = chars.replace(/and /g, "characters and [");
+    if (classes.some(cls => desc.includes(cls)))
+        desc = desc.replace(/(Fighter|Slasher|Shooter|Striker|Driven|Cerebral|Free Spirit|Powerhouse)/g, "@$1@");
 
-        chars = chars.replace(/characters/ig, "characters]");
-    }
+    desc = desc.replaceAll("[", "#").replaceAll("]", "#");
 
-    return chars;
+    if (desc.indexOf("character") != -1 || desc.indexOf("Character") != -1)
+        desc = desc.replace(/character\b/ig, "characters");
+
+    return desc;
 }
 
 function getClassesForUnit(origId) {
@@ -2937,8 +2938,28 @@ function getFamiliesForUnit(unitId) {
         family = ["Yamato"];
     else if (unitId == 9009)
         family = ["Edward Newgate", "Whitebeard"];
-    else if (unitId == 9008)
+    else if (unitId == 9010)
         family = ["Marshall D. Teach", "Blackbeard"];
+    else if (unitId == 9011)
+        family = ["Monkey D. Luffy"];
+    else if (unitId == 9012)
+        family = ["Kaido"];
+    else if (unitId == 9013)
+        family = ["Marshall D. Teach", "Blackbeard"];
+    else if (unitId == 9014)
+        family = ["Trafalgar D. Water Law", "Trafalgar Law"];
+    else if (unitId == 9015)
+        family = ["Shanks"];
+    else if (unitId == 9016)
+        family = ["Eustass Kid"];
+    else if (unitId == 9017)
+        family = ["Roronoa Zoro"];
+    else if (unitId == 9018)
+        family = ["Rob Lucci"];
+    else if (unitId == 9019)
+        family = ["Roronoa Zoro"];
+    else if (unitId == 9020)
+        family = ["Saint Ethanbaron V. Nusjuro", "St. Ethanbaron V. Nusjuro"];
     else
         family = families[unitId];
     return family;
@@ -3049,20 +3070,23 @@ function getUnitSwap(unitId) {
 function getSupportList() {
     var supportList = {};
     var count = 0;
+
     for (var i in details) {
         if (details[i].support && details[i].support.length > 0) {
             supportList[count] = {};
             supportList[count].id = i;
-            supportList[count].supportChar = modifyCharStyle(details[i].support[0].Characters);
+            supportList[count].supportChar = modifySuppDescStr(details[i].support[0].Characters);
             supportList[count].supportDescription = decorateStr(details[i].support[0].description[4]);
             supportList[count].name = families[i];
             count++;
         }
     }
+
     // Convert to array
     var arr = $.map(supportList, function (value, index) {
         return [value];
     });
+
     return arr;
 }
 
@@ -5286,48 +5310,80 @@ $(document).ready(function () {
         var unit = teamSlot.find(".booster, .booster-clone");
 
         if (unit.length > 0) {
-            var searchStr = "\\[All characters\\]";
+            var searchStr = "All characters|";
             var unitId = unit.data("id");
+
+            var unitDetail = details[unitId];
+            var isDual = unitDetail.swap != null;
+            var isVS = unitDetail.VSSpecial != null || unitDetail.vsSpecial != null;
 
             if (unitId > 9000)
                 unitId = parseVsUnitId(unitId);
 
-            var uniqueClasses = getClassesForUnit(unitId);
-
-            uniqueClasses.forEach(function (value) {
-                searchStr = searchStr + "|\\[" + value + " characters\\]";
-            });
-
-            // Search for type
-            types = getTypesForUnit(unitId, unit.data('type'));
-            if (Array.isArray(types)) {
-                for (var type of types) {
-                    searchStr = searchStr + "|\\[" + type + " characters\\]";
-
-                    uniqueClasses.forEach(function (value) {
-                        searchStr = searchStr + "|\\[" + type + " " + value + " characters\\]";
-                    });
-                }
-            } else {
-                searchStr = searchStr + "|\\[" + types + " characters\\]";
-
-                uniqueClasses.forEach(function (value) {
-                    searchStr = searchStr + "|\\[" + types + " " + value + " characters\\]";
-                });
-            }
-
-            // Search for name
-            var family = getFamiliesForUnit(unitId);
-            $.each(family, function (i, e) {
-                searchStr = searchStr + "|(^.*(^|, |and )" + e + "($|,| and| \\().*$)";
-            });
-
             // Search for cost
             var cost = units[parseVsUnitId(unitId)].cost;
             if (cost <= 29)
-                searchStr = searchStr + "|cost 29 or less|cost 40 or less";
+                searchStr = searchStr + "cost 29 or less|cost 40 or less|";
             else if (cost <= 40)
-                searchStr = searchStr + "|cost 40 or less";
+                searchStr = searchStr + "cost 40 or less|";
+            else if (cost >= 99)
+                searchStr = searchStr + "cost 99 or more|cost 70 or more|";
+            else if (cost >= 70)
+                searchStr = searchStr + "cost 70 or more|";
+
+            // Search for family
+            var familyList = getFamiliesForUnit(unitId);
+            familyList.forEach(function (f) {
+                searchStr = searchStr + "(^.*(^|, |and )" + f + "($|,| and| \\().*$)|";
+            });
+
+            // Serach for class
+            var uniqueClasses = getClassesForUnit(unitId);
+            const classSearchStr = uniqueClasses.size > 0 ? [...uniqueClasses].map(c => `@${c}@`).join("|") : "";
+
+            // Search for type
+            var types = getTypesForUnit(unitId, unit.data('type'));
+            const typeSearchStr = Array.isArray(types) && types.length > 0 ? types.map(t => `%${t}%`).join("|") : `%${types}%`;
+
+            // Search for tag
+            var rawTags = tags[unitId];
+            var unitTags = rawTags;
+            if (isVS) {
+                if (origId % 2 === 1)
+                    unitTags = rawTags[0];
+                else
+                    unitTags = rawTags[1];
+            } else if (isDual) {
+                unitTags = rawTags[0].concat(rawTags[1]);
+            }
+            const tagSearchStr = unitTags.length > 0 ? unitTags.map(t => `#${t.replace("Former / ", "").replace("[", "").replace("]", "")}#`).join("|") : "";
+
+            const separator = "(?:, | and | )";
+            const allowedTypes = Array.isArray(types) ? types.join("|") : types;
+            const allowedClasses = [...uniqueClasses].join("|");
+            const allowedTags = unitTags.map(t => t.replace("Former / ", "").replace("[", "").replace("]", "")).join("|");
+
+            const blockedTypes = `(?!.*?(?!(?:${allowedTypes})%)\\w+%)`;
+            const blockedClasses = `(?!.*?(?!(?:${allowedClasses})@)\\w+@)`;
+            const blockedTags = `(?!.*?(?!(?:${allowedTags})#)\\w+#)`;
+
+            const charSearchStr =
+                `^(?:` +
+                    // Type + Class
+                    `(${typeSearchStr})(?:${separator}(?:${typeSearchStr}))* +.*?(${classSearchStr})|` +
+                    // Type + Tag
+                    `(${typeSearchStr})(?:${separator}(?:${typeSearchStr}))* +.*?()(${tagSearchStr})|` +
+                    // Class + Tag
+                    `()(${classSearchStr})(?:${separator}(?:${classSearchStr}))* +.*?(${tagSearchStr})|` +
+                    // Type only
+                    `${blockedClasses}${blockedTags}.*?(${typeSearchStr}).*?()()|` +
+                    // Class only
+                    `${blockedTypes}${blockedTags}.*?()(${classSearchStr}).*?()|` +
+                    // Tag only
+                    `${blockedTypes}${blockedClasses}.*?()()(${tagSearchStr})` +
+                `) characters$`;
+
+            searchStr = searchStr + charSearchStr;
 
             supportTable.column(0).search("");
             supportTable.column(1).search(searchStr, true, false);
@@ -5335,7 +5391,7 @@ $(document).ready(function () {
             // Exclude supports that have the same family name of supported unit
             // Family names of other team members will be evaluated in rowCallback
             var nameStr = "^";
-            for (var name of family)
+            for (var name of familyList)
                 nameStr = nameStr + "(?!.*(^|,)" + name + "($|,))";
 
             nameStr += ".*$";
