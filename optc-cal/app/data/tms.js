@@ -348,4 +348,7 @@ var tms = {
     4639: {
         name: 'Luffy (Elbaph) (1am ~ 6am)'
     },
+    4656: {
+        name: 'Halloween Pudding 5+ (1am ~ 6am)'
+    },
 };
