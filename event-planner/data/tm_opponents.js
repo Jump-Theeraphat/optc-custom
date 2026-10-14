@@ -2,6 +2,7 @@ const CD_RED = 'cd-red';
 const VS_RED = 'vs-red';
 const SW_RED = 'sw-red';
 
+const AFFINITY_BOOST = 'affinity';
 const AFFINITY_NULL = 'No Type Effect';
 const ANTI_HEAL = 'anti-heal';
 const ANTI_RCV = 'anti-rcv';
@@ -26271,6 +26272,129 @@ var tm_opponents = {
                                 { "type": "sp-bind", "turn": "10" },
                                 { "type": "atk-boost", "turn": "3", "detail": "1.1x" },
                                 { "type": "orb-boost", "turn": "3", "detail": "1.1x" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
+
+    // ========== Halloween Pudding 5+ ==========
+    4656: {
+        4263: {
+            name: 'Perona',
+            type: 'INT',
+            pos: 4,
+            rec: [4649, 4653, 4654, 4655],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "7", "detail": "DEX/PSY/INT" },
+                                { "type": "sw-red", "turn": "7", "detail": "DEX/PSY/INT" },
+                                { "type": "cd-red", "turn": "7", "detail": "DEX/PSY/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Hancock', 'INT'],
+                    hp_: 1400000,
+                    atk_: 6600,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "5", "detail": "Crewmate " },
+                                { "type": "chain-atk-down-min", "turn": "1", "detail": "<=2.5" },
+                                { "type": "slot-block" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Perona', 'INT'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "chain-atk-down-min", "turn": "5", "detail": "<=3.0" },
+                                { "type": "para", "turn": "6" },
+                                { "type": "slot-block" },
+                                { "type": "desp", "turn": "9" },
+                                { "type": "bar-slot", "turn": "2", "detail": "2x RCV" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Chain Boost (once)',
+                            action: JSON.parse(`[{ "type": "clear-buff", "detail": "Buff + Values" },
+                                { "type": "def-null", "turn": "1" },
+                                { "type": "tap-limit", "turn": "2", "detail": "3x" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4656: {
+            name: 'Pudding',
+            type: 'INT',
+            pos: 5,
+            rec: [4648, 4653, 4654, 4655],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "7", "detail": "Free Spirit Cerebral Powerhouse" },
+                                { "type": "sw-red", "turn": "7", "detail": "Free Spirit Cerebral Powerhouse" },
+                                { "type": "cd-red", "turn": "7", "detail": "Free Spirit Cerebral Powerhouse" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Chiffon', 'INT'],
+                    hp_: 1200000,
+                    atk_: 6600,
+                    weakness: 'Powerhouse',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-def", "turn": "99" },
+                                { "type": "burn-p", "turn": "7", "detail": "20000" },
+                                { "type": "target-lock", "turn": "1" },
+                                { "type": "slot-change", "detail": "[RCV][TND]" },
+                                { "type": "silence", "turn": "1", "detail": "Top-Row , Bottom-Row" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Pudding', 'INT'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Cerebral',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-def", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "Territory", "turn": "2" },
+                                { "type": "atk-boost", "turn": "3", "detail": "1.1x" },
+                                { "type": "affinity", "turn": "3", "detail": "1.1x" },
+                                { "type": "def-perc", "turn": "6" },
+                                { "type": "resil", "turn": "6" },
+                                { "type": "slot-para" },
+                                { "type": "slot-block" },
+                                { "type": "blow-away", "turn": "2", "detail": "Crewmate , Top-Left , Random 3" }]`)
                         }
                     ]
                 },
