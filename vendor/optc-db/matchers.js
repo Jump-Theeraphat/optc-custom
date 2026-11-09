@@ -3766,7 +3766,7 @@
 
 			{
 				name: "Super Effect Boost",
-				targets: ["special", "superSpecial", "swap", "support"],
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
 					/Boosts Super (?:Type|Class) Effects of (?=((?:[^c."]+|c(?!har))*))\1characters to ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
@@ -5099,6 +5099,13 @@
 						type: "option",
 						description: "Defense Reduction",
 						regex: /reduced defense/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Increase Damage Taken",
+						regex: /Increase Damage Taken/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -7851,7 +7858,7 @@
 					"support",
 				],
 				regex:
-					/(?:reduces|removes)[^."]+?(?:Chain Multiplier Limit|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+					/(?:reduces|removes)[^."]+?(?:Chain Multiplier Limit|Chain Lock|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -7999,6 +8006,20 @@
 				targets: ["captain", "special", "sailor", "support"],
 				regex:
 				/(?:reduces|removes)[^."]+?(?:Target Lock|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2, 3, 4, 5],
+					},
+				],
+			},
+
+			{
+				name: "Tap Limit",
+				targets: ["captain", "special", "superSpecial"],
+				regex:
+				/(?:reduces|removes)[^."]+?(?:Tap Limit|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14234,7 +14255,7 @@
 				name: "Action Bind",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist Action Bind./i,
+					/([\d]+)% chance to resist Action Bind/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14248,7 +14269,7 @@
 				name: "Confusion",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist Confusion./i,
+					/([\d]+)% chance to resist Confusion/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14262,7 +14283,7 @@
 				name: "Damage Over Time",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist Damage Over Time./i,
+					/([\d]+)% chance to resist Damage Over Time/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14276,7 +14297,7 @@
 				name: "Forced Out",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist Forced Out./i,
+					/([\d]+)% chance to resist Forced Out/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14290,7 +14311,7 @@
 				name: "Half Stats",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist Half Stats./i,
+					/([\d]+)% chance to resist Half Stats/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14304,7 +14325,7 @@
 				name: "Paralysis",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist Paralysis./i,
+					/([\d]+)% chance to resist Paralysis/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14318,7 +14339,7 @@
 				name: "RCV Bind",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist RCV Bind./i,
+					/([\d]+)% chance to resist RCV Bind/i,
 				submatchers: [
 					{
 						type: "number",
@@ -14332,7 +14353,21 @@
 				name: "Special Bind",
 				targets: ["rumbleResistance"],
 				regex:
-					/([\d]+)% chance to resist Special Bind./i,
+					/([\d]+)% chance to resist Special Bind/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Chance:",
+						groups: [1],
+					},
+				],
+			},
+
+			{
+				name: "Special CT Delay",
+				targets: ["rumbleResistance"],
+				regex:
+					/([\d]+)% chance to resist Special CT Delay/i,
 				submatchers: [
 					{
 						type: "number",

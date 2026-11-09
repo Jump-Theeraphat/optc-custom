@@ -758,6 +758,12 @@ const Tusk = [ "Tusk" ];
 const Blade = [ "Blade" ];
 const Biblo = [ "Biblo" ];
 const Ange = [ "Ange" ];
+const Jiron = [ "Jiron" ];
+const Gambo = [ "Gambo" ];
+const Ahiru = [ "Ahiru" ];
+const Ushiano = [ "Ushiano" ];
+const Killingham = [ "Saint Killingham", "St. Killingham", "Saint Rimoshifu Killingham", "St. Rimoshifu Killingham" ];
+const Sommers = [ "Saint Sommers", "St. Sommers", "Saint Shepherd Sommers", "St. Shepherd Sommers" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -5298,6 +5304,25 @@ window.families = {
     4654: [ ...VinsmokeSanji ],
     4655: [ ...Brook ],
     4656: [ ...CharlottePudding ],
+    4657: [ ...BeloBetty, ...Morley, ...Lindbergh, ...Karasu ],
+    4658: [ ...Jiron ],
+    4659: [ ...Gambo ],
+    4660: [ ...Ahiru ],
+    4661: [ ...Ushiano ],
+    4662: [ ...Koala ],
+    4663: [ ...Gunko, ...Imu ],
+    4664: [ ...Dorry ],
+    4665: [ ...Broggy ],
+    4666: [ ...Jarul ],
+    4667: [ ...Kashii ],
+    4668: [ ...DraculeMihawk ],
+    4669: [ ...Gaban ],
+    4670: [ ...Gaban ],
+    4671: [ ...Brook ],
+    4672: [ ...Brook ],
+    4673: [ ...Collun ],
+    4674: [ ...Killingham ],
+    4675: [ ...Sommers ],
     //break
     5013: [ ...MonkeyDLuffy ],
     5014: [ ...MonkeyDLuffy ],
