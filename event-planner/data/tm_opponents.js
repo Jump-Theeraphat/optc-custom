@@ -26401,4 +26401,129 @@ var tm_opponents = {
             ]
         }
     },
+
+    // ========== Gaban ==========
+    4670: {
+        4622: {
+            name: 'Jarul',
+            type: 'STR',
+            pos: 4,
+            rec: [4663, 4674, 4675],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "DEX/QCK/INT" },
+                                { "type": "sw-red", "turn": "5", "detail": "DEX/QCK/INT" },
+                                { "type": "cd-red", "turn": "5", "detail": "DEX/QCK/INT" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Jarul', 'STR'],
+                    hp_: 1400000,
+                    atk_: 6600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-delay", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "def-null", "turn": "3" },
+                                { "type": "intim", "turn": "1", "detail": "Crew's ATK Up /Slot Effect Boost, -1" },
+                                { "type": "slot-change", "detail": "[EMPTY][Unfavorable]" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Jarul', 'STR'],
+                    hp: 3500000,
+                    atk: 9600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-def", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "sp-bind", "turn": "10", "detail": "Left-Column" },
+                                { "type": "stun", "detail": "Middle-Right , Bottom-Right" },
+                                { "type": "intim", "turn": "2", "detail": "Crew's ATK Up /Slot Effect Boost, -2" },
+                                { "type": "slot-neg", "turn": "3", "detail": "[STR][DEX][PSY][INT]" },
+                                { "type": "slot-change", "detail": "[EMPTY]" }]`)
+                        }
+                    ]
+                }
+            ]
+        },
+        4670: {
+            name: 'Gaban',
+            type: 'STR',
+            pos: 5,
+            rec: [4663, 4674, 4675],
+            guide: [
+                {
+                    stageNum: 1,
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "vs-red", "turn": "5", "detail": "Striker Driven Powerhouse" },
+                                { "type": "sw-red", "turn": "5", "detail": "Striker Driven Powerhouse" },
+                                { "type": "cd-red", "turn": "5", "detail": "Striker Driven Powerhouse" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 2,
+                    boss: ['Gaban', 'STR'],
+                    hp_: 1200000,
+                    atk_: 6600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "chain-atk-down-max", "turn": "1", "detail": ">=1.6" },
+                                { "type": "slot-block" },
+                                { "type": "bar-slot", "turn": "3", "detail": "2x TND" }]`)
+                        },
+                        {
+                            type: 'Interrupt - Slot Change (once)',
+                            action: JSON.parse(`[{ "type": "enrage", "turn": "99" },
+                                { "type": "silence", "turn": "1", "detail": "Crewmate" },
+                                { "type": "slot-para" },
+                                { "type": "slot-poison" }]`)
+                        }
+                    ]
+                },
+                {
+                    stageNum: 3,
+                    boss: ['Gaban', 'STR'],
+                    hp_: 3500000,
+                    atk_: 9600,
+                    weakness: 'Driven',
+                    detail: [
+                        {
+                            type: 'Preemp',
+                            action: JSON.parse(`[{ "type": "immu-all", "turn": "99" },
+                                { "type": "nao", "turn": "99" },
+                                { "type": "Territory", "turn": "2" },
+                                { "type": "def-null", "turn": "3" },
+                                { "type": "def", "turn": "12", "detail": "100000x" },
+                                { "type": "stun", "detail": "Top-Row , Bottom-Row" },
+                                { "type": "slot-block" }]`)
+                        },
+                        {
+                            type: 'Preemp (If HP<71%)',
+                            action: JSON.parse(`[{ "type": "chain-atk-down-max", "turn": "2", "detail": ">=1.6" }]`)
+                        }
+                    ]
+                },
+            ]
+        }
+    },
 };
